@@ -242,7 +242,25 @@ Unit (e.g. SI): mm"""@en ;
 
 ###  https://w3id.org/pmd/tto/DiameterAfterFracture
 :DiameterAfterFracture rdf:type owl:Class ;
-                       rdfs:subClassOf pmd:Diameter ;
+                       rdfs:subClassOf [ owl:intersectionOf ( pmd:Diameter
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000417> ;
+                                                                owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000032>
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                                                                                            owl:someValuesFrom :TensileTest
+                                                                                                          ]
+                                                                                                        ) ;
+                                                                                     rdf:type owl:Class
+                                                                                   ]
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
+                                                                owl:someValuesFrom pmd:TestPiece
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                        rdfs:label "Diameter After Fracture"@en ,
                                   "End-Probendurchmesser"@de ;
@@ -444,7 +462,21 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/OriginalDiameter
 :OriginalDiameter rdf:type owl:Class ;
-                  rdfs:subClassOf pmd:Diameter ;
+                  rdfs:subClassOf [ owl:intersectionOf ( pmd:Diameter
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
+                                                           owl:someValuesFrom [ owl:intersectionOf ( pmd:TestPiece
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000295> ;
+                                                                                                       owl:someValuesFrom :TensileTest
+                                                                                                     ]
+                                                                                                   ) ;
+                                                                                rdf:type owl:Class
+                                                                              ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
                   rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                   rdfs:label "Anfangs-Probendurchmesser"@de ,
                              "Original Diameter"@en ;
@@ -468,7 +500,21 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/OriginalThickness
 :OriginalThickness rdf:type owl:Class ;
-                   rdfs:subClassOf pmd:Thickness ;
+                   rdfs:subClassOf [ owl:intersectionOf ( pmd:Thickness
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
+                                                            owl:someValuesFrom [ owl:intersectionOf ( pmd:TestPiece
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000295> ;
+                                                                                                        owl:someValuesFrom :TensileTest
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
+                                                                               ]
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
                    <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                    rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                    rdfs:label "Anfangs-Dicke"@de ,
@@ -479,7 +525,21 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/OriginalWidth
 :OriginalWidth rdf:type owl:Class ;
-               rdfs:subClassOf pmd:Width ;
+               rdfs:subClassOf [ owl:intersectionOf ( pmd:Width
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
+                                                        owl:someValuesFrom [ owl:intersectionOf ( pmd:TestPiece
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000295> ;
+                                                                                                    owl:someValuesFrom :TensileTest
+                                                                                                  ]
+                                                                                                ) ;
+                                                                             rdf:type owl:Class
+                                                                           ]
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                rdfs:label "Anfangs-Breite"@de ,
@@ -849,7 +909,23 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 
 ###  https://w3id.org/pmd/tto/TensileTest
 :TensileTest rdf:type owl:Class ;
-             owl:equivalentClass [ rdf:type owl:Restriction ;
+             owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000011>
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                          owl:someValuesFrom pmd:TestPiece
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000030>
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                          owl:someValuesFrom pmd:TestPiece
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty pmd:participant ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass pmd:TestPiece
@@ -859,9 +935,8 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass :TensileTestingMachine
                                  ] ;
-             rdfs:subClassOf pmd:MechanicalTestingProcess ;
              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
-             rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+             rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
              rdfs:label "Tensile Test"@en ,
                         "Zugversuch"@de ;
              <http://www.w3.org/2004/02/skos/core#definition> """Tensile tests (tension tests) on materials provide information on their strength, ductility as well as other characteristic values under uniaxial tensile stress.
@@ -886,7 +961,25 @@ Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bi
 
 ###  https://w3id.org/pmd/tto/ThicknessAfterFracture
 :ThicknessAfterFracture rdf:type owl:Class ;
-                        rdfs:subClassOf pmd:Thickness ;
+                        rdfs:subClassOf [ owl:intersectionOf ( pmd:Thickness
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000417> ;
+                                                                 owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000032>
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                                                                                             owl:someValuesFrom :TensileTest
+                                                                                                           ]
+                                                                                                         ) ;
+                                                                                      rdf:type owl:Class
+                                                                                    ]
+                                                               ]
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
+                                                                 owl:someValuesFrom pmd:TestPiece
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
                         <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                         rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                         rdfs:label "End-Dicke"@de ,
@@ -952,7 +1045,25 @@ Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bi
 
 ###  https://w3id.org/pmd/tto/WidthAfterFracture
 :WidthAfterFracture rdf:type owl:Class ;
-                    rdfs:subClassOf pmd:Width ;
+                    rdfs:subClassOf [ owl:intersectionOf ( pmd:Width
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000417> ;
+                                                             owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000032>
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                                                                                         owl:someValuesFrom :TensileTest
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ]
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
+                                                             owl:someValuesFrom pmd:TestPiece
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                     rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                     rdfs:label "End-Breite"@de ,
