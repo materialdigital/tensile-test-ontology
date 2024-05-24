@@ -44,6 +44,10 @@ pmd:symbol rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/pmd/co/executes
+pmd:executes rdf:type owl:ObjectProperty .
+
+
 ###  https://w3id.org/pmd/co/participant
 pmd:participant rdf:type owl:ObjectProperty .
 
@@ -922,18 +926,16 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
                                                           owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
                                                           owl:someValuesFrom pmd:TestPiece
                                                         ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty pmd:executes ;
+                                                          owl:someValuesFrom :TensileTestMethod
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty pmd:participant ;
+                                                          owl:someValuesFrom :TensileTestingMachine
+                                                        ]
                                                       ) ;
                                    rdf:type owl:Class
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty pmd:participant ;
-                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass pmd:TestPiece
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty pmd:participant ;
-                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass :TensileTestingMachine
                                  ] ;
              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
              rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
@@ -946,6 +948,11 @@ The tensile test involves straining a test piece by tensile force, generally to 
 
 Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bis zum Bruch, um eine oder mehrere mechanische Eigenschaften zu bestimmen, die durch die semantisch verknüpften und definierten Begriffe festgelegt sind."""@de ;
              pmd:definitionSource "DIN EN ISO 6892-1:2019"@en .
+
+
+###  https://w3id.org/pmd/tto/TensileTestMethod
+:TensileTestMethod rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> .
 
 
 ###  https://w3id.org/pmd/tto/TensileTestingMachine
