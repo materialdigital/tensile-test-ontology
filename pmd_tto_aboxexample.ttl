@@ -47,45 +47,45 @@ qudt:MilliM rdf:type owl:NamedIndividual ;
 
 ###  https://w3id.org/pmd/tto_ex/TensileTestSpecimen_1_OriginalDiameter
 :TensileTestSpecimen_1_OriginalDiameter rdf:type owl:NamedIndividual ,
-                                                tto:OriginalDiameter .
+                                                 tto:OriginalDiameter .
 
 
 ###  https://w3id.org/pmd/tto_ex/TensileTestSpecimen_1_OriginalDiameter_measurement_datum
 :TensileTestSpecimen_1_OriginalDiameter_measurement_datum rdf:type owl:NamedIndividual ,
-                                                                  obo:IAO_0000032 ;
-                                                         obo:IAO_0000221 :TensileTestSpecimen_1_OriginalDiameter ;
-                                                         obo:OBI_0001938 :TensileTestSpecimen_1_OriginalDiameter_value_specification .
+                                                                   obo:IAO_0000032 ;
+                                                          obo:IAO_0000221 :TensileTestSpecimen_1_OriginalDiameter ;
+                                                          obo:OBI_0001938 :TensileTestSpecimen_1_OriginalDiameter_value_specification .
 
 
 ###  https://w3id.org/pmd/tto_ex/TensileTestSpecimen_1_OriginalDiameter_value_specification
 :TensileTestSpecimen_1_OriginalDiameter_value_specification rdf:type owl:NamedIndividual ,
-                                                                    obo:OBI_0001931 ;
-                                                           obo:IAO_0000039 :unit_mm ;
-                                                           obo:OBI_0001937 "5.0"^^xsd:float .
+                                                                     obo:OBI_0001931 ;
+                                                            obo:IAO_0000039 :unit_mm ;
+                                                            obo:OBI_0001937 "5.0"^^xsd:float .
 
 
 ###  https://w3id.org/pmd/tto_ex/TensileTestSpecimen_1_OriginalGaugeLength
 :TensileTestSpecimen_1_OriginalGaugeLength rdf:type owl:NamedIndividual ,
-                                                       tto:OriginalGaugeLength .
+                                                    tto:OriginalGaugeLength .
 
 
 ###  https://w3id.org/pmd/tto_ex/TensileTestSpecimen_1_OriginalGaugeLength_measurement_datum
 :TensileTestSpecimen_1_OriginalGaugeLength_measurement_datum rdf:type owl:NamedIndividual ,
-                                                                         obo:IAO_0000032 ;
-                                                                obo:IAO_0000221 :TensileTestSpecimen_1_OriginalGaugeLength ;
-                                                                obo:OBI_0001938 :TensileTestSpecimen_1_OriginalGaugeLength_value_specification .
+                                                                      obo:IAO_0000032 ;
+                                                             obo:IAO_0000221 :TensileTestSpecimen_1_OriginalGaugeLength ;
+                                                             obo:OBI_0001938 :TensileTestSpecimen_1_OriginalGaugeLength_value_specification .
 
 
 ###  https://w3id.org/pmd/tto_ex/TensileTestSpecimen_1_OriginalGaugeLength_value_specification
 :TensileTestSpecimen_1_OriginalGaugeLength_value_specification rdf:type owl:NamedIndividual ,
-                                                                           obo:OBI_0001931 ;
-                                                                  obo:IAO_0000039 :unit_mm ;
-                                                           obo:OBI_0001937 "25.0"^^xsd:float .
+                                                                        obo:OBI_0001931 ;
+                                                               obo:IAO_0000039 :unit_mm ;
+                                                               obo:OBI_0001937 "25.0"^^xsd:float .
 
 
 ###  https://w3id.org/pmd/tto_ex/TensileTestSpecimen_1_role
 :TensileTestSpecimen_1_role rdf:type owl:NamedIndividual ,
-                                     pmd:TestPiece .
+                                     obo:OBI_0000112 .
 
 
 ###  https://w3id.org/pmd/tto_ex/unit_mm
