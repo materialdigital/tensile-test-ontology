@@ -12,6 +12,7 @@
                             owl:imports <https://w3id.org/pmd/co/characterization/3.0.0> ,
                                         <https://w3id.org/pmd/co/devices/3.0.0> ,
                                         <https://w3id.org/pmd/co/qualities/3.0.0> ;
+                            <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0003-0086-5808> ;
                             <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0001-7192-7143> ,
                                                                       <https://orcid.org/0000-0002-3717-7104> ,
                                                                       <https://orcid.org/0000-0002-7094-5371> ,
@@ -481,12 +482,16 @@ Note: It is recommended to measure the original cross-sectional area of the para
                                                        ) ;
                                     rdf:type owl:Class
                                   ] ;
+                  <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                  <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
+                  rdfs:comment "The definition seems kind of impractical. Is there a reason why we don't use the text from the ISO 6892-1? \"original diameter of the parallel length of a circular test piece, or diameter of round wire or internal diameter of a tube\" (maybe without the part of the internal diameter, we could define a subclass for that if needed)." ;
                   rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                   rdfs:label "Anfangs-Probendurchmesser"@de ,
                              "Original Diameter"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfkörpers), die vor einer Prüfung gemessen wird."@de ,
                                                                    "The length of a straight line through the center of an object (tensile test piece) as measured prior to a tensile test."@en ;
-                  pmd:definitionSource "DIN EN ISO 6892-1:2019"@en .
+                  pmd:definitionSource "DIN EN ISO 6892-1:2019"@en ;
+                  pmd:symbol "d_{o}" .
 
 
 ###  https://w3id.org/pmd/tto/OriginalGaugeLength
@@ -794,6 +799,36 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
                              pmd:symbol "R_t"@en .
 
 
+###  https://w3id.org/pmd/tto/RoundTensileTestSpecimen
+:RoundTensileTestSpecimen rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                       owl:someValuesFrom :OriginalDiameter
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                       owl:someValuesFrom :OriginalGaugeLength
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                owl:someValuesFrom pmd:Circular
+                                              ] ;
+                          rdfs:subClassOf :TensileTestSpecimen ;
+                          <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                          <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ,
+                                                                       "PERSON: Matthias Jung" ;
+                          <http://purl.obolibrary.org/obo/IAO_0000119> "DIN EN ISO 6892-1:2020-03"@de ,
+                                                                       "ISO 6892-1:2019"@en ;
+                          rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                          rdfs:label "Round Tensile Test Specimen"@en ,
+                                     "Rundzugprobe"@de ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "A tensile test specimen with round cross-section."@en ,
+                                                                           "Eine Zugprobe mit rundem Prüfquerschnitt."@de .
+
+
 ###  https://w3id.org/pmd/tto/Rp01
 :Rp01 rdf:type owl:Class ;
       owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -955,15 +990,73 @@ Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bi
                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> .
 
 
+###  https://w3id.org/pmd/tto/TensileTestSpecimen
+:TensileTestSpecimen rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                     <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ,
+                                                                  "PERSON: Matthias Jung" ;
+                     <http://purl.obolibrary.org/obo/IAO_0000119> "DIN EN ISO 6892-1:2020-03"@de ,
+                                                                  "ISO 6892-1:2019"@en ;
+                     rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                     rdfs:label "Tensile Test Specimen"@en ,
+                                "Zugprobe"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "An object that is specifically designed to be a specimen for a tensile test. The test section of the specimen shall have an uniform cross-section."@en ,
+                                                                      "Ein Objekt, das spezifisch als Probe für einen Zugversuch gestaltet wurde. Die zu prüfende Sektion der Probe muss einen einheitlichen Querschnitt haben."@de .
+
+
 ###  https://w3id.org/pmd/tto/TensileTestingMachine
 :TensileTestingMachine rdf:type owl:Class ;
                        rdfs:subClassOf pmd:TestingMachine ;
+                       <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                       <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                        rdfs:label "Tensile Testing Machine"@en ,
                                   "Zugprüfmaschine"@de ;
                        <http://www.w3.org/2004/02/skos/core#definition> "Maschine zur Durchführung eines Zugversuches; die Regelung und Überwachung des Versuches, die Messungen und die Datenverarbeitung werden üblicherweise mithilfe eines Computers durchgeführt."@de ,
                                                                         "machine to conduct a tensile test; the control and monitoring of the test, the measurements, and the data processing are usually undertaken by computer"@en ;
                        pmd:definitionSource "DIN EN ISO 6892-1:2019"@en .
+
+
+###  https://w3id.org/pmd/tto/TensileTestingMachineISO6892-1
+:TensileTestingMachineISO6892-1 rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( :TensileTestingMachine
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0002180> ;
+                                                                             owl:someValuesFrom [ owl:intersectionOf ( pmd:Extensometer
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000235> ;
+                                                                                                                         owl:hasValue :ISO9513_2012
+                                                                                                                       ]
+                                                                                                                     ) ;
+                                                                                                  rdf:type owl:Class
+                                                                                                ]
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0002180> ;
+                                                                             owl:someValuesFrom [ owl:intersectionOf ( pmd:ForceMeasuringSystem
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000235> ;
+                                                                                                                         owl:hasValue :ISO7500-1_2018
+                                                                                                                       ]
+                                                                                                                     ) ;
+                                                                                                  rdf:type owl:Class
+                                                                                                ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ;
+                                rdfs:subClassOf :TensileTestingMachine ;
+                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ,
+                                                                             <https://w3id.org/pmd/tto> ;
+                                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ,
+                                                                             "PERSON: Matthias Jung" ;
+                                <http://purl.obolibrary.org/obo/IAO_0000119> "DIN EN ISO 6892-1:2020-06"@de ,
+                                                                             "ISO 6892-1:2019"@en ;
+                                rdfs:label "Tensile Testing Machine (ISO 6892-1)"@en ,
+                                           "Zugprüfmaschine (ISO 6892-1)"@de ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "A tensile testing machine that is in accordance with ISO 6892-1:2019"@en ,
+                                                                                 "Eine Zugprüfmaschine, die die Anforderungen aus ISO 6892-1:2019 erfüllt."@de .
 
 
 ###  https://w3id.org/pmd/tto/ThicknessAfterFracture
@@ -1095,4 +1188,36 @@ Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bi
                pmd:definitionSource "DIN EN ISO 6892-1:2019"@en .
 
 
-###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/pmd/tto/ISO7500-1_2018
+:ISO7500-1_2018 rdf:type owl:NamedIndividual ,
+                         <http://purl.obolibrary.org/obo/OBI_0500024> ;
+                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Matthias Jung" ;
+                <http://purl.obolibrary.org/obo/IAO_0000119> "DIN EN ISO 7500-1:2018-06"@de ,
+                                                             "ISO 7500-1:2018"@en ;
+                rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                rdfs:label "DIN EN ISO 7500-1:2018-06"@de ,
+                           "ISO 7500-1:2018"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Metallic materials - Calibration and verification of static uniaxial testing machines - Part 1: Tension/compression testing machines - Calibration and verification of the force-measuring system"@en ,
+                                                                 "Metallische Werkstoffe - Kalibrierung und Überprüfung von statischen einachsigen Prüfmaschinen - Teil 1: Zug- und Druckprüfmaschinen - Kalibrierung und Überprüfung der Kraftmesseinrichtung"@de .
+
+
+###  https://w3id.org/pmd/tto/ISO9513_2012
+:ISO9513_2012 rdf:type owl:NamedIndividual ,
+                       <http://purl.obolibrary.org/obo/OBI_0500024> ;
+              <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Matthias Jung" ;
+              <http://purl.obolibrary.org/obo/IAO_0000119> "DIN EN ISO 9513:2013-05"@de ,
+                                                           "ISO 9513:2012+Cor. 1:2013"@en ;
+              rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+              rdfs:label "DIN EN ISO 9513:2013-05"@de ,
+                         "ISO 9513:2012"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Metallic materials - Calibration of extensometer systems used in uniaxial testing"@en ,
+                                                               "Metallische Werkstoffe - Kalibrierung von Längenänderungs­Messeinrichtungen für die Prüfung mit einachsiger Beanspruchung"@de .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
