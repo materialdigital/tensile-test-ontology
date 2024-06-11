@@ -1,5 +1,8 @@
 name: Ontology publish workflow
 
+env:
+  ontology_file: pmd_tto.ttl
+
 on:
   push:
     branches: ["develop_publish"]
@@ -19,12 +22,12 @@ jobs:
       - name: get ontology version
         id: ontoversion
         run: |
-             java -jar robot.jar query --input checkout/pmd_tto.ttl --query checkout/.github/workflow_resources/query_version.sparql query_version_output.csv
+             java -jar robot.jar query --input checkout/${{env.ontology_file}} --query checkout/.github/workflow_resources/query_version.sparql query_version_output.csv
              echo "ONTO_VERSION=$(sed -n '2{p;q}' query_version_output.csv)" >> "$GITHUB_OUTPUT"
       - name: check_onto_version
         if: ${{ github.event_name == 'release' && github.event.action == 'published' && github.ref_name != steps.ontoversion.outputs.ONTO_VERSION}}
         run: |
-             echo "::error file=pmd_tto.ttl::Ontology version does not match release tag"
+             echo "::error file=${{env.ontology_file}}::Ontology version does not match release tag"
   reason:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -64,7 +67,7 @@ jobs:
     - name: Run style guide validator
       run: |
            pip install rdflib numpy
-           python styleguide_checkout/.github/workflow_resources/styleguide_checker.py styleguide_checkout/ontology.ttl --report_file styleguide_report.json --create_badge --badge_cmdfile _styleguide_badge.sh --badge_svgfile styleguide_badge.svg
+           python styleguide_checkout/.github/workflow_resources/styleguide_checker.py styleguide_checkout/${{env.ontology_file}} --report_file styleguide_report.json --create_badge --badge_cmdfile _styleguide_badge.sh --badge_svgfile styleguide_badge.svg
       continue-on-error: true
     - name: Keep styleguide report as artifact
       uses: actions/upload-artifact@v4
@@ -98,7 +101,7 @@ jobs:
     - name: get report from OOPS API
       run: |
            pip install rdflib
-           python oops_checkout/.github/workflow_resources/oops_report.py --ontology-file oops_checkout/pmd_tto.ttl --ontology-file-type turtle --restriction https://example.org --verbose
+           python oops_checkout/.github/workflow_resources/oops_report.py --ontology-file oops_checkout/${{env.ontology_file}} --ontology-file-type turtle --restriction https://example.org --verbose
       continue-on-error: true
     - name: Keep oops report as artifact
       uses: actions/upload-artifact@v4
@@ -135,7 +138,7 @@ jobs:
              wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.17/java-11-widoco-1.4.17-jar-with-dependencies.jar
              mkdir public
              mkdir public/${{ github.ref_name }}
-             java -jar widoco.jar -ontFile deploy_checkout/ontology.ttl -outFolder public/${{ github.ref_name }} -htaccess -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+             java -jar widoco.jar -ontFile deploy_checkout/${{env.ontology_file}} -outFolder public/${{ github.ref_name }} -htaccess -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
              cp public/${{ github.ref_name }}/index-en.html public/${{ github.ref_name }}/index.html
       - name: Deploy to gh-pages
         if: success()
