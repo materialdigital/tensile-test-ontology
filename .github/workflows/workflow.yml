@@ -28,6 +28,7 @@ jobs:
         if: ${{ github.event_name == 'release' && github.event.action == 'published' && github.ref_name != steps.ontoversion.outputs.ONTO_VERSION}}
         run: |
              echo "::error file=${{env.ontology_file}}::Ontology version does not match release tag"
+             exit 1
   reason:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
