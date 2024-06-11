@@ -9,7 +9,6 @@ on:
 jobs:
   check_version_tag:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'release' && github.event.action == 'published'}}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -18,11 +17,12 @@ jobs:
         run: |
              curl -L -o robot.jar "https://github.com/ontodev/robot/releases/latest/download/robot.jar"
       - name: get ontology version
+        id: ontoversion
         run: |
              java -jar robot.jar query --input checkout/pmd_tto.ttl --query checkout/.github/workflow_resources/query_version.sparql query_version_output.csv
-             echo "ONTO_VERSION=$(sed -n '2{p;q}' query_version_output.csv)" >> "$GITHUB_ENV"
+             echo "ONTO_VERSION=$(sed -n '2{p;q}' query_version_output.csv)" >> "$GITHUB_OUTPUT"
       - name: check_onto_version
-        if: ${{github.ref_name}} != $ONTO_VERSION
+        if: ${{ github.event_name == 'release' && github.event.action == 'published' && github.ref_name != steps.ontoversion.outputs.ONTO_VERSION}}
         run: |
              echo "::error file=pmd_tto.ttl::Ontology version does not match release tag"
   reason:
