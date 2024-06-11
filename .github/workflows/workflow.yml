@@ -28,8 +28,11 @@ jobs:
         if: ${{ github.event_name == 'release' && github.event.action == 'published' && github.ref_name != steps.ontoversion.outputs.ONTO_VERSION}}
         run: |
              echo ${{github.ref_name}}
+             printf %s ${{github.ref_name}} | od -vtc -to1
              echo ${{steps.ontoversion.outputs.ONTO_VERSION}}
+             printf %s ${{steps.ontoversion.outputs.ONTO_VERSION}} | od -vtc -to1
              echo ${{github.ref_name != steps.ontoversion.outputs.ONTO_VERSION}}
+             echo ${{ !contains(steps.ontoversion.outputs.ONTO_VERSION, github.ref_name) }}
              echo "::error file=${{env.ontology_file}}::Ontology version does not match release tag"
              exit 1
   reason:
