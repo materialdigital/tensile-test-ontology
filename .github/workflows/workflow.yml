@@ -29,6 +29,7 @@ jobs:
         run: |
              echo ${{github.ref_name}}
              echo ${{steps.ontoversion.outputs.ONTO_VERSION}}
+             echo ${{github.ref_name != steps.ontoversion.outputs.ONTO_VERSION}}
              echo "::error file=${{env.ontology_file}}::Ontology version does not match release tag"
              exit 1
   reason:
