@@ -1,0 +1,158 @@
+name: Ontology publish workflow
+
+env:
+  ontology_file: pmd_tto.ttl
+
+on:
+  push:
+    branches: ["develop_publish"]
+  release:
+    types: ["published"]
+
+jobs:
+  check_version_tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: checkout
+      - name: get OBO robot
+        run: |
+             curl -L -o robot.jar "https://github.com/ontodev/robot/releases/latest/download/robot.jar"
+      - name: get ontology version
+        id: ontoversion
+        run: |
+             java -jar robot.jar query --input checkout/${{env.ontology_file}} --query checkout/.github/workflow_resources/query_version.sparql query_version_output.csv
+             echo "ONTO_VERSION=v$(sed -n '2{p;q}' query_version_output.csv)" >> "$GITHUB_OUTPUT"
+      - name: check_onto_version
+        if: ${{ github.event_name == 'release' && github.event.action == 'published' && !contains(steps.ontoversion.outputs.ONTO_VERSION, github.ref_name)}}
+        run: |
+             echo ${{github.ref_name}}
+             printf %s ${{github.ref_name}} | od -vtc -to1
+             echo ${{steps.ontoversion.outputs.ONTO_VERSION}}
+             printf %s ${{steps.ontoversion.outputs.ONTO_VERSION}} | od -vtc -to1
+             echo ${{github.ref_name != steps.ontoversion.outputs.ONTO_VERSION}}
+             echo ${{ !contains(steps.ontoversion.outputs.ONTO_VERSION, github.ref_name) }}
+             echo "::error file=${{env.ontology_file}}::Ontology version does not match release tag"
+             exit 1
+  reason:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    needs: check_version_tag
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        with:
+          path: main
+      - name: Merge
+        run: |
+             curl -L -o robot.jar "https://github.com/ontodev/robot/releases/latest/download/robot.jar"
+             java -jar robot.jar merge -vv --input main/pmd_tto_aboxexample.ttl --output pmd_tto_aboxexample-merged.ttl
+      - name: Archive merged ontology
+        uses: actions/upload-artifact@v4
+        with:
+          name: pmd_tto_aboxexample-merged
+          path: |
+            pmd_tto_aboxexample-merged.ttl
+      - name: Reason
+        run: |
+             java -jar robot.jar reason -vv --reasoner elk --input pmd_tto_aboxexample-merged.ttl --output pmd_tto_aboxexample-reasoned.ttl
+      - name: Archive reason artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pmd_tto_aboxexample-reasoned
+          path: |
+            pmd_tto_aboxexample-reasoned.ttl
+  styleguide:
+    runs-on: ubuntu-latest
+    needs: check_version_tag
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        path: styleguide_checkout
+    - name: Run style guide validator
+      run: |
+           pip install rdflib numpy
+           python styleguide_checkout/.github/workflow_resources/styleguide_checker.py styleguide_checkout/${{env.ontology_file}} --report_file styleguide_report.json --create_badge --badge_cmdfile _styleguide_badge.sh --badge_svgfile styleguide_badge.svg
+      continue-on-error: true
+    - name: Keep styleguide report as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: styleguide_report
+        path: ./style*
+    - name: Create badge
+      if: ${{ success() && github.event_name == 'release' && github.event.action == 'published' }}
+      run: |
+           npm install -g badge-maker
+           chmod u+x _styleguide_badge.sh
+           ./_styleguide_badge.sh
+           mkdir public
+           cp styleguide_badge.svg "public/${{ github.ref_name }}_styleguide_badge.svg"
+    - name: Deploy to GitHub Pages
+      if: ${{ success() && github.event_name == 'release' && github.event.action == 'published' }}
+      uses: crazy-max/ghaction-github-pages@v3
+      with:
+        target_branch: gh-pages
+        build_dir: public
+        keep_history: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  oops:
+    runs-on: ubuntu-latest
+    needs: [check_version_tag, styleguide]
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        path: oops_checkout
+    - name: get report from OOPS API
+      run: |
+           pip install rdflib
+           python oops_checkout/.github/workflow_resources/oops_report.py --ontology-file oops_checkout/${{env.ontology_file}} --ontology-file-type turtle --restriction https://example.org --verbose
+      continue-on-error: true
+    - name: Keep oops report as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: oops_report
+        path: ./oops*
+    - name: create badge
+      if: ${{ success() && github.event_name == 'release' && github.event.action == 'published' }}
+      run: |
+           npm install -g badge-maker
+           chmod u+x _oops_badge_command.sh
+           ./_oops_badge_command.sh
+           mkdir -p public/branches
+           cp oops_badge.svg "public/${{ github.ref_name }}_oops_badge.svg"
+    - name: Deploy to GitHub Pages
+      if: ${{ success() && github.event_name == 'release' && github.event.action == 'published' }}
+      uses: crazy-max/ghaction-github-pages@v4
+      with:
+        target_branch: gh-pages
+        build_dir: public
+        keep_history: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  publish:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'release' && github.event.action == 'published' }}
+    needs: [check_version_tag, reason, styleguide]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: deploy_checkout
+      - name: Build HTML for main
+        run: |
+             wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.17/java-11-widoco-1.4.17-jar-with-dependencies.jar
+             mkdir public
+             mkdir public/${{ github.ref_name }}
+             java -jar widoco.jar -ontFile deploy_checkout/${{env.ontology_file}} -outFolder public/${{ github.ref_name }} -htaccess -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+             cp public/${{ github.ref_name }}/index-en.html public/${{ github.ref_name }}/index.html
+      - name: Deploy to gh-pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: public
+          keep_history: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
