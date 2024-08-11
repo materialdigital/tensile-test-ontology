@@ -1,0 +1,3 @@
+SELECT ?v WHERE {
+    <https://w3id.org/pmd/tto> <http://www.w3.org/2002/07/owl#versionInfo> ?v
+}
