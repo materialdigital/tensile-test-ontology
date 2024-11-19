@@ -9,17 +9,15 @@
 
 <https://w3id.org/pmd/tto> rdf:type owl:Ontology ;
                             owl:versionIRI <https://w3id.org/pmd/tto/3.0.0> ;
-                            owl:imports <https://w3id.org/pmd/co/characterization/3.0.0> ,
-                                        <https://w3id.org/pmd/co/devices/3.0.0> ,
-                                        <https://w3id.org/pmd/co/qualities/3.0.0> ;
+                            owl:imports <https://w3id.org/pmd/co/3.0.0-dev> ;
                             <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0001-7192-7143> ,
                                                                       <https://orcid.org/0000-0002-3717-7104> ,
                                                                       <https://orcid.org/0000-0002-7094-5371> ,
                                                                       <https://orcid.org/0000-0002-9014-2920> ,
                                                                       <https://orcid.org/0000-0003-4971-3645> ;
                             <http://purl.org/dc/elements/1.1/license> <http://creativecommons.org/licenses/by/4.0/> ;
-                            <http://purl.org/dc/terms/bibliographicCitation> "Markus Schilling, Bernd Bayerlein, Henk Birkholz, Philipp von Hartrott, Jörg Waitelonis. (May 22nd, 2024) TTO: Tensile Test Ontology. Version 3.0.0, https://w3id.org/pmd/tto"@en ;
-                            <http://purl.org/dc/terms/created> "2024-05-22"@en ;
+                            <http://purl.org/dc/terms/bibliographicCitation> "Markus Schilling, Bernd Bayerlein, Henk Birkholz, Philipp von Hartrott, Jörg Waitelonis. (November 19th, 2024) TTO: Tensile Test Ontology. Version 3.0.0, https://w3id.org/pmd/tto"@en ;
+                            <http://purl.org/dc/terms/created> "2024-11-19"@en ;
                             <http://purl.org/dc/terms/title> "Tensile Test Ontology (TTO)"@en ;
                             rdfs:comment """This is the Tensile Test Ontology (TTO) as developed in the joint project Platform MaterialDigital (PMD) on the basis of the testing standard ISO 6892-1: Metallic materials - Tensile Testing - Part 1: Method of test at room temperature.
 
@@ -31,6 +29,10 @@ TTO of PMD at GitHub: https://github.com/materialdigital/tensile-test-ontology""
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
 
 ###  https://w3id.org/pmd/co/definitionSource
 pmd:definitionSource rdf:type owl:AnnotationProperty .
@@ -77,6 +79,16 @@ pmd:relatesTo rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
+###  https://w3id.org/pmd/co/Area
+pmd:Area rdf:type owl:Class ;
+         rdfs:subClassOf pmd:PMD_0000863 ;
+         rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+         rdfs:label "Area"@en ,
+                    "Fläche"@de ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Die Ausdehnung oder Messung einer Fläche."@de ,
+                                                          "The extent or measurement of a surface."@en .
+
+
 ###  https://w3id.org/pmd/co/CrossSectionArea
 pmd:CrossSectionArea rdf:type owl:Class ;
                      rdfs:subClassOf pmd:Area ;
@@ -90,12 +102,19 @@ pmd:CrossSectionArea rdf:type owl:Class ;
 
 
 ###  https://w3id.org/pmd/co/Diameter
-pmd:Diameter rdf:type owl:Class .
+pmd:Diameter rdf:type owl:Class ;
+             rdfs:subClassOf :Length ;
+             rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+             rdfs:label "Diameter"@en ,
+                        "Durchmesser"@de ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de ,
+                                                              "The length of a straight line through the center of an object or space."@en ;
+             pmd:definitionSource "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022." .
 
 
 ###  https://w3id.org/pmd/co/Extension
 pmd:Extension rdf:type owl:Class ;
-              rdfs:subClassOf pmd:Length ;
+              rdfs:subClassOf pmd:PMD_0000848 ;
               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
               <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
               rdfs:comment """Dimensional analysis: L
@@ -114,24 +133,14 @@ Note: Optical extensometry may require a specific data storage method."""@en ;
               pmd:definitionSource "DIN EN ISO 6892-1:2019" .
 
 
-###  https://w3id.org/pmd/co/Extensometer
-pmd:Extensometer rdf:type owl:Class .
-
-
 ###  https://w3id.org/pmd/co/Force
-pmd:Force rdf:type owl:Class .
-
-
-###  https://w3id.org/pmd/co/Length
-pmd:Length rdf:type owl:Class .
-
-
-###  https://w3id.org/pmd/co/LoadCell
-pmd:LoadCell rdf:type owl:Class .
-
-
-###  https://w3id.org/pmd/co/MechanicalTestingProcess
-pmd:MechanicalTestingProcess rdf:type owl:Class .
+pmd:Force rdf:type owl:Class ;
+          rdfs:subClassOf pmd:PMD_0000848 ;
+          rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+          rdfs:label "Force"@en ,
+                     "Kraft"@de ;
+          <http://www.w3.org/2004/02/skos/core#definition> "A force is a realizable entity that inheres in a material entity and represents the potential to effect change in the motion, shape, or state of another material entity through physical interaction. A force is realized during interactions that produce acceleration, deformation, or other physical effects, and it is quantified as the product of mass and acceleration according to Newtonian mechanics."@en ,
+                                                           "Eine Kraft ist eine realisierbare Entität, die einer materiellen Entität innewohnt und das Potenzial darstellt, durch physikalische Interaktion eine Veränderung der Bewegung, der Form oder des Zustands einer anderen materiellen Entität zu bewirken. Eine Kraft wird bei Interaktionen realisiert, die Beschleunigung, Verformung oder andere physikalische Effekte hervorrufen, und sie wird gemäß der Newtonschen Mechanik als das Produkt aus Masse und Beschleunigung quantifiziert."@de .
 
 
 ###  https://w3id.org/pmd/co/PercentageExtension
@@ -140,7 +149,7 @@ pmd:PercentageExtension rdf:type owl:Class ;
                                               owl:onProperty pmd:relatesTo ;
                                               owl:someValuesFrom :ExtensometerGaugeLength
                                             ] ;
-                        rdfs:subClassOf :SizeRelation ;
+                        rdfs:subClassOf pmd:Extension ;
                         <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                         rdfs:isDefinedBy <https://w3id.org/pmd/co/3.0.0> ;
                         rdfs:label "Extensometer-Dehnung"@de ,
@@ -156,21 +165,20 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
                         pmd:definitionSource "DIN EN ISO 6892-1:2019" .
 
 
-###  https://w3id.org/pmd/co/Stress
-pmd:Stress rdf:type owl:Class .
+###  https://w3id.org/pmd/co/Shape
+pmd:Shape rdf:type owl:Class ;
+          rdfs:subClassOf pmd:PMD_0000863 ;
+          rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+          rdfs:label "Form"@de ,
+                     "Shape"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Das sichtbare Ausstattungsmerkmal (räumliche Form oder Kontur) eines bestimmten Objektes oder einer Art von Objekt."@de ,
+                                                           "The visible makeup characteristic (spatial form or contour) of a particular item or kind of item."@en ;
+          pmd:definitionSource "“Shape.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/shape. Accessed 13 Jan. 2023." .
 
 
 ###  https://w3id.org/pmd/co/TestPiece
 pmd:TestPiece rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0100051>
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/OBI_0000112>
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ;
-              rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0100051> ;
+              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
               <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
               rdfs:isDefinedBy <https://w3id.org/pmd/co/3.0.0> ;
               rdfs:label "Prüfkörper"@de ,
@@ -180,34 +188,30 @@ pmd:TestPiece rdf:type owl:Class ;
               pmd:definitionSource "EN 10021:2006-12 (European standardization committee: CEN/TC 459/SC 12/WG 4)" .
 
 
-###  https://w3id.org/pmd/co/TestingMachine
-pmd:TestingMachine rdf:type owl:Class .
-
-
-###  https://w3id.org/pmd/co/TestingRate
-pmd:TestingRate rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001906> ;
-                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
-                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
-                rdfs:isDefinedBy <https://w3id.org/pmd/co/3.0.0> ;
-                rdfs:label "Prüfgeschwindigkeit"@de ,
-                           "Testing Rate"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "rate (resp. rates) used during a test"@en ,
-                                                                 "während eines Versuchs verwendete Geschwindigkeit(en)"@de ;
-                pmd:definitionSource "DIN EN ISO 6892-1:2019" .
-
-
 ###  https://w3id.org/pmd/co/Thickness
-pmd:Thickness rdf:type owl:Class .
+pmd:Thickness rdf:type owl:Class ;
+              rdfs:subClassOf :Length ;
+              rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+              rdfs:label "Dicke"@de ,
+                         "Thickness"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de ,
+                                                               "This class describes the measured dimension in one direction of a test piece."@en .
 
 
 ###  https://w3id.org/pmd/co/Width
-pmd:Width rdf:type owl:Class .
+pmd:Width rdf:type owl:Class ;
+          rdfs:subClassOf :Length ;
+          rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+          rdfs:label "Breite"@de ,
+                     "Width"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird."@de ,
+                                                           "This class describes a horizontal measurement of an object taken at right angles to the length of the object."@en ;
+          pmd:definitionSource <https://www.merriam-webster.com/dictionary/width> .
 
 
 ###  https://w3id.org/pmd/tto/ChangeOfTransverseDimension
 :ChangeOfTransverseDimension rdf:type owl:Class ;
-                             rdfs:subClassOf pmd:Length ;
+                             rdfs:subClassOf :Length ;
                              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                              rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                              rdfs:label "Change Of Transverse Dimension"@en ,
@@ -219,7 +223,7 @@ pmd:Width rdf:type owl:Class .
 
 ###  https://w3id.org/pmd/tto/CrossheadSeparation
 :CrossheadSeparation rdf:type owl:Class ;
-                     rdfs:subClassOf pmd:Length ;
+                     rdfs:subClassOf :Length ;
                      <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                      rdfs:comment """Dimensional analysis: L
 Unit (e.g. SI): mm"""@en ;
@@ -233,7 +237,7 @@ Unit (e.g. SI): mm"""@en ;
 
 ###  https://w3id.org/pmd/tto/CrossheadSeparationRate
 :CrossheadSeparationRate rdf:type owl:Class ;
-                         rdfs:subClassOf pmd:TestingRate ;
+                         rdfs:subClassOf :MovementQuality ;
                          <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                          rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                          rdfs:label "Crosshead Separation Rate"@en ,
@@ -246,25 +250,7 @@ Unit (e.g. SI): mm"""@en ;
 
 ###  https://w3id.org/pmd/tto/DiameterAfterFracture
 :DiameterAfterFracture rdf:type owl:Class ;
-                       rdfs:subClassOf [ owl:intersectionOf ( pmd:Diameter
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000417> ;
-                                                                owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000032>
-                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
-                                                                                                            owl:someValuesFrom :TensileTest
-                                                                                                          ]
-                                                                                                        ) ;
-                                                                                     rdf:type owl:Class
-                                                                                   ]
-                                                              ]
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
-                                                                owl:someValuesFrom pmd:TestPiece
-                                                              ]
-                                                            ) ;
-                                         rdf:type owl:Class
-                                       ] ;
+                       rdfs:subClassOf pmd:Diameter ;
                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                        rdfs:label "Diameter After Fracture"@en ,
                                   "End-Probendurchmesser"@de ;
@@ -278,7 +264,7 @@ Unit (e.g. SI): mm"""@en ;
                                   owl:onProperty pmd:relatesTo ;
                                   owl:someValuesFrom :OriginalGaugeLength
                                 ] ;
-            rdfs:subClassOf pmd:Length ;
+            rdfs:subClassOf :Length ;
             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
             rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
             rdfs:label "Elongation"@en ,
@@ -290,7 +276,7 @@ Unit (e.g. SI): mm"""@en ;
 
 ###  https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength
 :EstimatedStrainRateOverTheParallelLength rdf:type owl:Class ;
-                                          rdfs:subClassOf pmd:TestingRate ;
+                                          rdfs:subClassOf :MovementQuality ;
                                           <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                                           rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                                           rdfs:label "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de ,
@@ -333,7 +319,7 @@ Note: For the determination of several properties which are based (partly or com
 
 ###  https://w3id.org/pmd/tto/GaugeLength
 :GaugeLength rdf:type owl:Class ;
-             rdfs:subClassOf pmd:Length ;
+             rdfs:subClassOf :Length ;
              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
              rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
              rdfs:label "Gauge Length"@en ,
@@ -342,6 +328,18 @@ Note: For the determination of several properties which are based (partly or com
                                                               "length of the parallel portion of the test piece on which elongation is measured at any moment during the test"@en ;
              pmd:definitionSource "DIN EN ISO 6892-1:2019"@en ;
              pmd:symbol "L"@en .
+
+
+###  https://w3id.org/pmd/tto/GaugeLengthMarks
+:GaugeLengthMarks rdf:type owl:Class ;
+                  rdfs:subClassOf pmd:PMD_0000602 ;
+                  <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                  <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
+                  rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
+                  rdfs:label "Gauge Length Marks"@en ,
+                             "Messlängenmarkierungen"@de ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Dieses Konzept wird verwendet, um die sichtbaren Markierungen zu beschreiben, die in der Regel während eines Zugversuchs zur Messung der Dehnung an den Prüfkörpern angebracht werden."@de ,
+                                                                   "This concept is used to describe the visible markers usually attached to test pieces during a tensile test for elongation / extension measurements."@en .
 
 
 ###  https://w3id.org/pmd/tto/GeometryShape
@@ -357,12 +355,19 @@ Note: For the determination of several properties which are based (partly or com
                pmd:definitionSource "DIN EN ISO 6892-1:2019"@en .
 
 
+###  https://w3id.org/pmd/tto/Length
+:Length rdf:type owl:Class ;
+        rdfs:subClassOf pmd:PMD_0000863 ;
+        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+        rdfs:label "Length"@en ,
+                   "Länge"@de ;
+        <http://www.w3.org/2004/02/skos/core#definition> "A measured distance or dimension of an object, usually the longer or longest dimension of the object."@en ,
+                                                         "Eine gemessene Entfernung oder Abmessung eines Objekts, normalerweise die längere oder längste Abmessung des Objekts."@de ;
+        pmd:definitionSource <https://www.merriam-webster.com/dictionary/length> .
+
+
 ###  https://w3id.org/pmd/tto/LowerYieldStrength
 :LowerYieldStrength rdf:type owl:Class ;
-                    owl:equivalentClass [ rdf:type owl:Restriction ;
-                                          owl:onProperty pmd:relatesTo ;
-                                          owl:someValuesFrom pmd:Stress
-                                        ] ;
                     rdfs:subClassOf :YieldStrength ;
                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                     rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
@@ -433,6 +438,16 @@ Note: It is recommended to measure the original cross-sectional area of the para
                                         pmd:definitionSource "DIN EN ISO 6892-1:2019" .
 
 
+###  https://w3id.org/pmd/tto/MovementQuality
+:MovementQuality rdf:type owl:Class ;
+                 rdfs:subClassOf :PhysicalQuality ;
+                 rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
+                 rdfs:label "Bewegungsqualität"@de ,
+                            "Movement Quality"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "A movement quality is a physical quality that inheres in a material entity and represents a property of the entity's motion or change of position over time."@en ,
+                                                                  "Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt."@de .
+
+
 ###  https://w3id.org/pmd/tto/OriginalCrossSectionalArea
 :OriginalCrossSectionalArea rdf:type owl:Class ;
                             owl:equivalentClass [ rdf:type owl:Class ;
@@ -466,21 +481,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/OriginalDiameter
 :OriginalDiameter rdf:type owl:Class ;
-                  rdfs:subClassOf [ owl:intersectionOf ( pmd:Diameter
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
-                                                           owl:someValuesFrom [ owl:intersectionOf ( pmd:TestPiece
-                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000295> ;
-                                                                                                       owl:someValuesFrom :TensileTest
-                                                                                                     ]
-                                                                                                   ) ;
-                                                                                rdf:type owl:Class
-                                                                              ]
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ;
+                  rdfs:subClassOf pmd:Diameter ;
                   rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                   rdfs:label "Anfangs-Probendurchmesser"@de ,
                              "Original Diameter"@en ;
@@ -504,21 +505,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/OriginalThickness
 :OriginalThickness rdf:type owl:Class ;
-                   rdfs:subClassOf [ owl:intersectionOf ( pmd:Thickness
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
-                                                            owl:someValuesFrom [ owl:intersectionOf ( pmd:TestPiece
-                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000295> ;
-                                                                                                        owl:someValuesFrom :TensileTest
-                                                                                                      ]
-                                                                                                    ) ;
-                                                                                 rdf:type owl:Class
-                                                                               ]
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
+                   rdfs:subClassOf pmd:Thickness ;
                    <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                    rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                    rdfs:label "Anfangs-Dicke"@de ,
@@ -529,21 +516,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/OriginalWidth
 :OriginalWidth rdf:type owl:Class ;
-               rdfs:subClassOf [ owl:intersectionOf ( pmd:Width
-                                                      [ rdf:type owl:Restriction ;
-                                                        owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
-                                                        owl:someValuesFrom [ owl:intersectionOf ( pmd:TestPiece
-                                                                                                  [ rdf:type owl:Restriction ;
-                                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000295> ;
-                                                                                                    owl:someValuesFrom :TensileTest
-                                                                                                  ]
-                                                                                                ) ;
-                                                                             rdf:type owl:Class
-                                                                           ]
-                                                      ]
-                                                    ) ;
-                                 rdf:type owl:Class
-                               ] ;
+               rdfs:subClassOf pmd:Width ;
                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                rdfs:label "Anfangs-Breite"@de ,
@@ -554,7 +527,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/ParallelLength
 :ParallelLength rdf:type owl:Class ;
-                rdfs:subClassOf pmd:Length ;
+                rdfs:subClassOf :Length ;
                 <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                 rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                 rdfs:label "Parallel Length"@en ,
@@ -736,9 +709,19 @@ Note: The concept of parallel length is replaced by the concept of distance betw
                                pmd:symbol "A_e"@en .
 
 
+###  https://w3id.org/pmd/tto/PhysicalQuality
+:PhysicalQuality rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                 rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
+                 rdfs:label "Physical Quality"@en ,
+                            "Physikalische Qualität"@de ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en ,
+                                                                  "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de .
+
+
 ###  https://w3id.org/pmd/tto/ProofStrength
 :ProofStrength rdf:type owl:Class ;
-               rdfs:subClassOf pmd:Stress ;
+               rdfs:subClassOf pmd:PMD_0000952 ;
                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                rdfs:label "Dehngrenze"@de ,
@@ -836,7 +819,7 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
 
 ###  https://w3id.org/pmd/tto/SizeRelation
 :SizeRelation rdf:type owl:Class ;
-              rdfs:subClassOf pmd:PhysicalRelationalQuality ;
+              rdfs:subClassOf :PhysicalQuality ;
               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
               <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
               rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
@@ -846,7 +829,7 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
 
 ###  https://w3id.org/pmd/tto/SlopeOfTheElasticPart
 :SlopeOfTheElasticPart rdf:type owl:Class ;
-                       rdfs:subClassOf pmd:ElasticModulus ;
+                       rdfs:subClassOf pmd:PMD_0000618 ;
                        <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                        rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                        rdfs:label "Slope Of The Elastic Part"@en ,
@@ -858,7 +841,7 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
 
 ###  https://w3id.org/pmd/tto/StrainRate
 :StrainRate rdf:type owl:Class ;
-            rdfs:subClassOf pmd:TestingRate ;
+            rdfs:subClassOf :MovementQuality ;
             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
             rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
             rdfs:label "Dehngeschwindigkeit"@de ,
@@ -871,7 +854,7 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
 
 ###  https://w3id.org/pmd/tto/StressRate
 :StressRate rdf:type owl:Class ;
-            rdfs:subClassOf pmd:TestingRate ;
+            rdfs:subClassOf :MovementQuality ;
             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
             rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
             rdfs:label "Spannungsgeschwindigkeit"@de ,
@@ -888,18 +871,7 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 
 ###  https://w3id.org/pmd/tto/TensileStrength
 :TensileStrength rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                              owl:onProperty pmd:relatesTo ;
-                                                              owl:someValuesFrom pmd:Stress
-                                                            ]
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty pmd:relatesTo ;
-                                                              owl:someValuesFrom :MaximumForce
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ;
-                 rdfs:subClassOf pmd:Stress ;
+                 rdfs:subClassOf pmd:PMD_0000952 ;
                  <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
                  <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                  rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
@@ -911,82 +883,19 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
                  pmd:symbol "R_m"@en .
 
 
-###  https://w3id.org/pmd/tto/TensileTest
-:TensileTest rdf:type owl:Class ;
-             owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000011>
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
-                                                          owl:someValuesFrom pmd:TestPiece
-                                                        ]
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
-                                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000030>
-                                                        ]
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
-                                                          owl:someValuesFrom pmd:TestPiece
-                                                        ]
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty pmd:executes ;
-                                                          owl:someValuesFrom :TensileTestMethod
-                                                        ]
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty pmd:participant ;
-                                                          owl:someValuesFrom :TensileTestingMachine
-                                                        ]
-                                                      ) ;
-                                   rdf:type owl:Class
-                                 ] ;
-             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
-             rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
-             rdfs:label "Tensile Test"@en ,
-                        "Zugversuch"@de ;
-             <http://www.w3.org/2004/02/skos/core#definition> """Tensile tests (tension tests) on materials provide information on their strength, ductility as well as other characteristic values under uniaxial tensile stress.
-
-The tensile test involves straining a test piece by tensile force, generally to fracture, for the determination of one or more mechanical properties specified by the semantically related and defined terms."""@en ,
-                                                              """Zugversuche (Zugprüfungen) an Werkstoffen geben Auskunft über deren Festigkeit, Duktilität sowie weitere Kennwerte unter einachsiger Zugbeanspruchung.
-
-Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bis zum Bruch, um eine oder mehrere mechanische Eigenschaften zu bestimmen, die durch die semantisch verknüpften und definierten Begriffe festgelegt sind."""@de ;
-             pmd:definitionSource "DIN EN ISO 6892-1:2019"@en .
-
-
 ###  https://w3id.org/pmd/tto/TensileTestMethod
 :TensileTestMethod rdf:type owl:Class ;
-                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> .
-
-
-###  https://w3id.org/pmd/tto/TensileTestingMachine
-:TensileTestingMachine rdf:type owl:Class ;
-                       rdfs:subClassOf pmd:TestingMachine ;
-                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                       rdfs:label "Tensile Testing Machine"@en ,
-                                  "Zugprüfmaschine"@de ;
-                       <http://www.w3.org/2004/02/skos/core#definition> "Maschine zur Durchführung eines Zugversuches; die Regelung und Überwachung des Versuches, die Messungen und die Datenverarbeitung werden üblicherweise mithilfe eines Computers durchgeführt."@de ,
-                                                                        "machine to conduct a tensile test; the control and monitoring of the test, the measurements, and the data processing are usually undertaken by computer"@en ;
-                       pmd:definitionSource "DIN EN ISO 6892-1:2019"@en .
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ;
+                   rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                   rdfs:label "Tensile Test Method"@en ,
+                              "Zugversuchsmethode"@de ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "A tensile test method is a plan specification that prescribes the execution of a controlled experiment designed to determine the mechanical properties of a material under uniaxial tensile loading. The plan specifies procedural steps, conditions, and measurement criteria to assess properties such as ultimate tensile strength, yield strength, and elongation at break."@en ,
+                                                                    "Eine Zugversuchsmethode ist eine Planspezifikation, die die Durchführung eines kontrollierten Versuchs zur Bestimmung der mechanischen Eigenschaften eines Materials unter einachsiger Zugbelastung vorschreibt. Der Plan legt Verfahrensschritte, Bedingungen und Messkriterien fest, um Eigenschaften wie die Zugfestigkeit, die Streckgrenze und die Bruchdehnung zu bestimmen."@de .
 
 
 ###  https://w3id.org/pmd/tto/ThicknessAfterFracture
 :ThicknessAfterFracture rdf:type owl:Class ;
-                        rdfs:subClassOf [ owl:intersectionOf ( pmd:Thickness
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000417> ;
-                                                                 owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000032>
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
-                                                                                                             owl:someValuesFrom :TensileTest
-                                                                                                           ]
-                                                                                                         ) ;
-                                                                                      rdf:type owl:Class
-                                                                                    ]
-                                                               ]
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
-                                                                 owl:someValuesFrom pmd:TestPiece
-                                                               ]
-                                                             ) ;
-                                          rdf:type owl:Class
-                                        ] ;
+                        rdfs:subClassOf pmd:Thickness ;
                         <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                         rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                         rdfs:label "End-Dicke"@de ,
@@ -997,7 +906,7 @@ Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bi
 
 ###  https://w3id.org/pmd/tto/TransitionPoint
 :TransitionPoint rdf:type owl:Class ;
-                 rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000007> ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ;
                  <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                  rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                  rdfs:label "Transition Point"@en ,
@@ -1008,10 +917,6 @@ Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bi
 
 ###  https://w3id.org/pmd/tto/TransitionPointTestingRate
 :TransitionPointTestingRate rdf:type owl:Class ;
-                            owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                  owl:onProperty pmd:relatesTo ;
-                                                  owl:someValuesFrom pmd:TestingRate
-                                                ] ;
                             rdfs:subClassOf :TransitionPoint ;
                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                             rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
@@ -1021,24 +926,8 @@ Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bi
                                                                              "This entity describes the the transition point of the testing rate during an analysis / test process, e.g. the point referring to the strain or the stress at which the testing rate is changed during a tensile test. Typically, this transition point is associated with a removal of the extensometer from the test piece during a strain-controlled tensile test."@en .
 
 
-###  https://w3id.org/pmd/tto/TypeGaugeLengthMarks
-:TypeGaugeLengthMarks rdf:type owl:Class ;
-                      rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000968> ;
-                      <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
-                      <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
-                      rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
-                      rdfs:label "Typ Der Messlängenmarkierungen"@de ,
-                                 "Type Gauge Length Marks"@en ;
-                      <http://www.w3.org/2004/02/skos/core#definition> "Dieses Konzept wird verwendet, um die sichtbaren Markierungen zu beschreiben, die in der Regel während eines Zugversuchs zur Messung der Dehnung an den Prüfkörpern angebracht werden."@de ,
-                                                                       "This concept is used to describe the visible markers usually attached to test pieces during a tensile test for elongation / extension measurements."@en .
-
-
 ###  https://w3id.org/pmd/tto/UpperYieldStrength
 :UpperYieldStrength rdf:type owl:Class ;
-                    owl:equivalentClass [ rdf:type owl:Restriction ;
-                                          owl:onProperty pmd:relatesTo ;
-                                          owl:someValuesFrom pmd:Stress
-                                        ] ;
                     rdfs:subClassOf :YieldStrength ;
                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                     rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
@@ -1052,25 +941,7 @@ Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bi
 
 ###  https://w3id.org/pmd/tto/WidthAfterFracture
 :WidthAfterFracture rdf:type owl:Class ;
-                    rdfs:subClassOf [ owl:intersectionOf ( pmd:Width
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000417> ;
-                                                             owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000032>
-                                                                                                       [ rdf:type owl:Restriction ;
-                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
-                                                                                                         owl:someValuesFrom :TensileTest
-                                                                                                       ]
-                                                                                                     ) ;
-                                                                                  rdf:type owl:Class
-                                                                                ]
-                                                           ]
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000080> ;
-                                                             owl:someValuesFrom pmd:TestPiece
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] ;
+                    rdfs:subClassOf pmd:Width ;
                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                     rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                     rdfs:label "End-Breite"@de ,
@@ -1081,11 +952,7 @@ Beim Zugversuch wird ein Prüfkörper durch Zugkraft belastet, im Allgemeinen bi
 
 ###  https://w3id.org/pmd/tto/YieldStrength
 :YieldStrength rdf:type owl:Class ;
-               owl:equivalentClass [ rdf:type owl:Restriction ;
-                                     owl:onProperty pmd:relatesTo ;
-                                     owl:someValuesFrom pmd:Stress
-                                   ] ;
-               rdfs:subClassOf pmd:Stress ;
+               rdfs:subClassOf pmd:PMD_0000952 ;
                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                rdfs:label "Streckgrenze"@de ,
