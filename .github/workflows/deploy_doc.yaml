@@ -23,11 +23,11 @@ jobs:
       # Build HTML documentation for pmd_tto.ttl
       - name: Build HTML docs for TTO 3.0
         run: |
-          mkdir -p public/tto
-          java -jar widoco.jar -ontFile deploy_checkout/pmd_tto.ttl -outFolder public/tto \
+          mkdir -p public
+          java -jar widoco.jar -ontFile deploy_checkout/pmd_tto.ttl -outFolder public \
             -htaccess -uniteSections -includeAnnotationProperties -lang en-de \
             -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
-          cp public/tto/index-en.html public/tto/index.html
+          cp public/index-en.html public/index.html
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
