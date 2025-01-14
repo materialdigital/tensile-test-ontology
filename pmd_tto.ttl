@@ -62,7 +62,7 @@ pmd:relatesTo rdf:type owl:ObjectProperty .
 :relatesToExtension rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf pmd:relatesTo ;
                     rdfs:domain :ProofStrengthPlasticExtension ;
-                    rdfs:range pmd:PercentageExtension ;
+                    rdfs:range :PercentageExtension ;
                     rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                     rdfs:label "relates to extension"@en .
 
@@ -79,134 +79,14 @@ pmd:relatesTo rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
-###  https://w3id.org/pmd/co/Area
-pmd:Area rdf:type owl:Class ;
-         rdfs:subClassOf pmd:PMD_0000863 ;
-         rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-         rdfs:label "Area"@en ,
-                    "Fläche"@de ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Die Ausdehnung oder Messung einer Fläche."@de ,
-                                                          "The extent or measurement of a surface."@en .
-
-
-###  https://w3id.org/pmd/co/CrossSectionArea
-pmd:CrossSectionArea rdf:type owl:Class ;
-                     rdfs:subClassOf pmd:Area ;
-                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
-                     rdfs:isDefinedBy <https://w3id.org/pmd/co/3.0.0> ;
-                     rdfs:label "Cross Section Area"@en ,
-                                "Querschnittsfläche"@de ;
-                     <http://www.w3.org/2004/02/skos/core#definition> "Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse."@de ,
-                                                                      "The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis."@en ;
-                     pmd:definitionSource <https://www.merriam-webster.com/dictionary/cross%20section> .
-
-
-###  https://w3id.org/pmd/co/Diameter
-pmd:Diameter rdf:type owl:Class ;
-             rdfs:subClassOf :Length ;
-             rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-             rdfs:label "Diameter"@en ,
-                        "Durchmesser"@de ;
-             <http://www.w3.org/2004/02/skos/core#definition> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de ,
-                                                              "The length of a straight line through the center of an object or space."@en ;
-             pmd:definitionSource "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022." .
-
-
-###  https://w3id.org/pmd/co/Extension
-pmd:Extension rdf:type owl:Class ;
-              rdfs:subClassOf pmd:PMD_0000848 ;
-              <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
-              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
-              rdfs:comment """Dimensional analysis: L
-Unit (e.g. SI): mm"""@en ,
-                           """Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
-
-Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der Datenspeicherung erfordern."""@de ,
-                           """Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
-
-Note: Optical extensometry may require a specific data storage method."""@en ;
-              rdfs:isDefinedBy <https://w3id.org/pmd/co/3.0.0> ;
-              rdfs:label "Extension"@en ,
-                         "Verlängerung (der Extensometer-Messlänge)"@de ;
-              <http://www.w3.org/2004/02/skos/core#definition> "Increase in the extensometer gauge length at any moment during a test"@en ,
-                                                               "Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs"@de ;
-              pmd:definitionSource "DIN EN ISO 6892-1:2019" .
-
-
-###  https://w3id.org/pmd/co/Force
-pmd:Force rdf:type owl:Class ;
-          rdfs:subClassOf pmd:PMD_0000848 ;
-          rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-          rdfs:label "Force"@en ,
-                     "Kraft"@de ;
-          <http://www.w3.org/2004/02/skos/core#definition> "A force is a realizable entity that inheres in a material entity and represents the potential to effect change in the motion, shape, or state of another material entity through physical interaction. A force is realized during interactions that produce acceleration, deformation, or other physical effects, and it is quantified as the product of mass and acceleration according to Newtonian mechanics."@en ,
-                                                           "Eine Kraft ist eine realisierbare Entität, die einer materiellen Entität innewohnt und das Potenzial darstellt, durch physikalische Interaktion eine Veränderung der Bewegung, der Form oder des Zustands einer anderen materiellen Entität zu bewirken. Eine Kraft wird bei Interaktionen realisiert, die Beschleunigung, Verformung oder andere physikalische Effekte hervorrufen, und sie wird gemäß der Newtonschen Mechanik als das Produkt aus Masse und Beschleunigung quantifiziert."@de .
-
-
-###  https://w3id.org/pmd/co/PercentageExtension
-pmd:PercentageExtension rdf:type owl:Class ;
-                        owl:equivalentClass [ rdf:type owl:Restriction ;
-                                              owl:onProperty pmd:relatesTo ;
-                                              owl:someValuesFrom :ExtensometerGaugeLength
-                                            ] ;
-                        rdfs:subClassOf pmd:Extension ;
-                        <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
-                        rdfs:isDefinedBy <https://w3id.org/pmd/co/3.0.0> ;
-                        rdfs:label "Extensometer-Dehnung"@de ,
-                                   "Percentage Extension"@en ;
-                        <http://www.w3.org/2004/02/skos/core#altLabel> "(engineering) strain"@en ,
-                                                                       "technische Dehnung"@de ;
-                        <http://www.w3.org/2004/02/skos/core#definition> """extension expressed as a percentage of the extensometer gauge length
-
-Note: The percentage extension is commonly called engineering strain."""@en ,
-                                                                         """in Prozent angegebene Verlängerung der Extensometer-Messlänge
-
-Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.""" ;
-                        pmd:definitionSource "DIN EN ISO 6892-1:2019" .
-
-
-###  https://w3id.org/pmd/co/Shape
-pmd:Shape rdf:type owl:Class ;
-          rdfs:subClassOf pmd:PMD_0000863 ;
-          rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-          rdfs:label "Form"@de ,
-                     "Shape"@en ;
-          <http://www.w3.org/2004/02/skos/core#definition> "Das sichtbare Ausstattungsmerkmal (räumliche Form oder Kontur) eines bestimmten Objektes oder einer Art von Objekt."@de ,
-                                                           "The visible makeup characteristic (spatial form or contour) of a particular item or kind of item."@en ;
-          pmd:definitionSource "“Shape.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/shape. Accessed 13 Jan. 2023." .
-
-
-###  https://w3id.org/pmd/co/TestPiece
-pmd:TestPiece rdf:type owl:Class ;
-              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
-              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
-              rdfs:isDefinedBy <https://w3id.org/pmd/co/3.0.0> ;
-              rdfs:label "Prüfkörper"@de ,
-                         "Test Piece"@en ;
-              <http://www.w3.org/2004/02/skos/core#definition> "Part of a sample with specified dimensions, machined or un-machined, brought to a required condition for submission to a given test."@en ,
-                                                               "Teil einer Probe mit bestimmten Dimensionen, bearbeitet oder unbearbeitet, der in einen erforderlichen Zustand gebracht wird, um einer bestimmten Prüfung unterzogen zu werden."@de ;
-              pmd:definitionSource "EN 10021:2006-12 (European standardization committee: CEN/TC 459/SC 12/WG 4)" .
-
-
-###  https://w3id.org/pmd/co/Thickness
-pmd:Thickness rdf:type owl:Class ;
-              rdfs:subClassOf :Length ;
-              rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-              rdfs:label "Dicke"@de ,
-                         "Thickness"@en ;
-              <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de ,
-                                                               "This class describes the measured dimension in one direction of a test piece."@en .
-
-
-###  https://w3id.org/pmd/co/Width
-pmd:Width rdf:type owl:Class ;
-          rdfs:subClassOf :Length ;
-          rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-          rdfs:label "Breite"@de ,
-                     "Width"@en ;
-          <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird."@de ,
-                                                           "This class describes a horizontal measurement of an object taken at right angles to the length of the object."@en ;
-          pmd:definitionSource <https://www.merriam-webster.com/dictionary/width> .
+###  https://w3id.org/pmd/tto/Area
+:Area rdf:type owl:Class ;
+      rdfs:subClassOf pmd:PMD_0000863 ;
+      rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+      rdfs:label "Area"@en ,
+                 "Fläche"@de ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Die Ausdehnung oder Messung einer Fläche."@de ,
+                                                       "The extent or measurement of a surface."@en .
 
 
 ###  https://w3id.org/pmd/tto/ChangeOfTransverseDimension
@@ -219,6 +99,18 @@ pmd:Width rdf:type owl:Class ;
                              <http://www.w3.org/2004/02/skos/core#definition> "Dieses Konzept beschreibt eine Variation der Abmessungen eines Prüfkörpers in Bezug auf seine Querachse, die sich auf seine Querschnittsfläche auswirkt und möglicherweise während eines Zugversuchs auftritt. Das Verhältnis der wahren plastischen Breitendehnung und der wahren plastischen Dickendehnung in einem in uniaxialem Zug beanspruchten Prüfkörper (vertikale Anisotropie) kann anhand dieser Information berechnet werden."@de ,
                                                                               "This concept describes a variation in the dimension of a test piece referring to its transversal axis affecting its cross-sectional area that may potentially occur during a tensile test. The ratio of the true plastic strain in width and the true plastic strain in thickness in a test piece loaded in uniaxial tension (vertical anisotropy) may be calculated using this information."@en ;
                              pmd:definitionSource "DIN EN ISO 10113:2021-06" .
+
+
+###  https://w3id.org/pmd/tto/CrossSectionArea
+:CrossSectionArea rdf:type owl:Class ;
+                  rdfs:subClassOf :Area ;
+                  <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
+                  rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                  rdfs:label "Cross Section Area"@en ,
+                             "Querschnittsfläche"@de ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse."@de ,
+                                                                   "The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis."@en ;
+                  pmd:definitionSource <https://www.merriam-webster.com/dictionary/cross%20section> .
 
 
 ###  https://w3id.org/pmd/tto/CrossheadSeparation
@@ -248,9 +140,20 @@ Unit (e.g. SI): mm"""@en ;
                          pmd:symbol "v_c"@en .
 
 
+###  https://w3id.org/pmd/tto/Diameter
+:Diameter rdf:type owl:Class ;
+          rdfs:subClassOf :Length ;
+          rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+          rdfs:label "Diameter"@en ,
+                     "Durchmesser"@de ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de ,
+                                                           "The length of a straight line through the center of an object or space."@en ;
+          pmd:definitionSource "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022." .
+
+
 ###  https://w3id.org/pmd/tto/DiameterAfterFracture
 :DiameterAfterFracture rdf:type owl:Class ;
-                       rdfs:subClassOf pmd:Diameter ;
+                       rdfs:subClassOf :Diameter ;
                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                        rdfs:label "Diameter After Fracture"@en ,
                                   "End-Probendurchmesser"@de ;
@@ -287,6 +190,27 @@ Unit (e.g. SI): mm"""@en ;
                                           pmd:symbol "e^._L_c"@en .
 
 
+###  https://w3id.org/pmd/tto/Extension
+:Extension rdf:type owl:Class ;
+           rdfs:subClassOf pmd:PMD_0000848 ;
+           <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+           <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
+           rdfs:comment """Dimensional analysis: L
+Unit (e.g. SI): mm"""@en ,
+                        """Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
+
+Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der Datenspeicherung erfordern."""@de ,
+                        """Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
+
+Note: Optical extensometry may require a specific data storage method."""@en ;
+           rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+           rdfs:label "Extension"@en ,
+                      "Verlängerung (der Extensometer-Messlänge)"@de ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Increase in the extensometer gauge length at any moment during a test"@en ,
+                                                            "Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs"@de ;
+           pmd:definitionSource "DIN EN ISO 6892-1:2019" .
+
+
 ###  https://w3id.org/pmd/tto/ExtensometerGaugeLength
 :ExtensometerGaugeLength rdf:type owl:Class ;
                          rdfs:subClassOf :GaugeLength ;
@@ -317,6 +241,16 @@ Note: For the determination of several properties which are based (partly or com
                                pmd:symbol "L_u"@en .
 
 
+###  https://w3id.org/pmd/tto/Force
+:Force rdf:type owl:Class ;
+       rdfs:subClassOf pmd:PMD_0000848 ;
+       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+       rdfs:label "Force"@en ,
+                  "Kraft"@de ;
+       <http://www.w3.org/2004/02/skos/core#definition> "A force is a realizable entity that inheres in a material entity and represents the potential to effect change in the motion, shape, or state of another material entity through physical interaction. A force is realized during interactions that produce acceleration, deformation, or other physical effects, and it is quantified as the product of mass and acceleration according to Newtonian mechanics."@en ,
+                                                        "Eine Kraft ist eine realisierbare Entität, die einer materiellen Entität innewohnt und das Potenzial darstellt, durch physikalische Interaktion eine Veränderung der Bewegung, der Form oder des Zustands einer anderen materiellen Entität zu bewirken. Eine Kraft wird bei Interaktionen realisiert, die Beschleunigung, Verformung oder andere physikalische Effekte hervorrufen, und sie wird gemäß der Newtonschen Mechanik als das Produkt aus Masse und Beschleunigung quantifiziert."@de .
+
+
 ###  https://w3id.org/pmd/tto/GaugeLength
 :GaugeLength rdf:type owl:Class ;
              rdfs:subClassOf :Length ;
@@ -344,10 +278,10 @@ Note: For the determination of several properties which are based (partly or com
 
 ###  https://w3id.org/pmd/tto/GeometryShape
 :GeometryShape rdf:type owl:Class ;
-               rdfs:subClassOf pmd:Shape ;
+               rdfs:subClassOf :Shape ;
                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
-               rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
+               rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                rdfs:label "Geometrische Form"@de ,
                           "Geometry Shape"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "Dieses Konzept beschreibt die geometrischen Abmessungen und das Erscheinungsbild (Form und Abmaße) einer Probe, eines Prüfkörpers oder eines Prüfstücks, wie sie üblicherweise durch eine entsprechende Norm definiert sind. Dementsprechend ist der angegebene Formwert in Übereinstimmung mit der definierenden Norm anzugeben, z. B. \"Zugprüfstück Form 1 gemäß Anhang B\"."@de ,
@@ -381,7 +315,7 @@ Note: For the determination of several properties which are based (partly or com
 
 ###  https://w3id.org/pmd/tto/MaximumForce
 :MaximumForce rdf:type owl:Class ;
-              rdfs:subClassOf pmd:Force ;
+              rdfs:subClassOf :Force ;
               rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
               rdfs:label "Höchstkraft"@de ,
                          "Maximum Force"@en ;
@@ -419,7 +353,7 @@ Note: For materials which display discontinuous yielding, but where no work-hard
                                                                             ]
                                                                           )
                                                             ] ;
-                                        rdfs:subClassOf pmd:CrossSectionArea ;
+                                        rdfs:subClassOf :CrossSectionArea ;
                                         <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                                         rdfs:comment "Symbol: S_u" ;
                                         rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
@@ -468,7 +402,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
                                                                 ]
                                                               )
                                                 ] ;
-                            rdfs:subClassOf pmd:CrossSectionArea ;
+                            rdfs:subClassOf :CrossSectionArea ;
                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                             rdfs:comment "Symbol: S_o" ;
                             rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
@@ -481,7 +415,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/OriginalDiameter
 :OriginalDiameter rdf:type owl:Class ;
-                  rdfs:subClassOf pmd:Diameter ;
+                  rdfs:subClassOf :Diameter ;
                   rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                   rdfs:label "Anfangs-Probendurchmesser"@de ,
                              "Original Diameter"@en ;
@@ -505,7 +439,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/OriginalThickness
 :OriginalThickness rdf:type owl:Class ;
-                   rdfs:subClassOf pmd:Thickness ;
+                   rdfs:subClassOf :Thickness ;
                    <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                    rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                    rdfs:label "Anfangs-Dicke"@de ,
@@ -516,7 +450,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
 
 ###  https://w3id.org/pmd/tto/OriginalWidth
 :OriginalWidth rdf:type owl:Class ;
-               rdfs:subClassOf pmd:Width ;
+               rdfs:subClassOf :Width ;
                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                rdfs:label "Anfangs-Breite"@de ,
@@ -575,6 +509,28 @@ Note: The concept of parallel length is replaced by the concept of distance betw
                                    pmd:symbol "A"@en .
 
 
+###  https://w3id.org/pmd/tto/PercentageExtension
+:PercentageExtension rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty pmd:relatesTo ;
+                                           owl:someValuesFrom :ExtensometerGaugeLength
+                                         ] ;
+                     rdfs:subClassOf :Extension ;
+                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
+                     rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+                     rdfs:label "Extensometer-Dehnung"@de ,
+                                "Percentage Extension"@en ;
+                     <http://www.w3.org/2004/02/skos/core#altLabel> "(engineering) strain"@en ,
+                                                                    "technische Dehnung"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> """extension expressed as a percentage of the extensometer gauge length
+
+Note: The percentage extension is commonly called engineering strain."""@en ,
+                                                                      """in Prozent angegebene Verlängerung der Extensometer-Messlänge
+
+Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.""" ;
+                     pmd:definitionSource "DIN EN ISO 6892-1:2019" .
+
+
 ###  https://w3id.org/pmd/tto/PercentagePermanentElongation
 :PercentagePermanentElongation rdf:type owl:Class ;
                                owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -597,7 +553,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
                                                     owl:onProperty pmd:relatesTo ;
                                                     owl:someValuesFrom :ExtensometerGaugeLength
                                                   ] ;
-                              rdfs:subClassOf pmd:Extension ;
+                              rdfs:subClassOf :Extension ;
                               <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                               rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                               rdfs:label "Bleibende Extensometer-Dehnung"@de ,
@@ -620,7 +576,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
                                                                                    ) ;
                                                                 rdf:type owl:Class
                                                               ] ;
-                                          rdfs:subClassOf pmd:Extension ;
+                                          rdfs:subClassOf :Extension ;
                                           <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                                           rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                                           rdfs:label "Percentage Plastic Extension At Maximum Force"@en ,
@@ -661,7 +617,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
                                                           owl:onProperty pmd:relatesTo ;
                                                           owl:someValuesFrom :ExtensometerGaugeLength
                                                         ] ;
-                                    rdfs:subClassOf pmd:Extension ;
+                                    rdfs:subClassOf :Extension ;
                                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                                     rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                                     rdfs:label "Gesamte Extensometer-Dehnung beim Bruch"@de ,
@@ -685,7 +641,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
                                                                                  ) ;
                                                               rdf:type owl:Class
                                                             ] ;
-                                        rdfs:subClassOf pmd:Extension ;
+                                        rdfs:subClassOf :Extension ;
                                         <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                                         rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                                         rdfs:label "Gesamte Extensometer-Dehnung bei Höchstkraft"@de ,
@@ -698,7 +654,7 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
 ###  https://w3id.org/pmd/tto/PercentageYieldPointExtension
 :PercentageYieldPointExtension rdf:type owl:Class ;
-                               rdfs:subClassOf pmd:Extension ;
+                               rdfs:subClassOf :Extension ;
                                <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                                rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                                rdfs:label "Percentage Yield Point Extension"@en ,
@@ -817,6 +773,29 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
       pmd:symbol "R_p_0.2"@en .
 
 
+###  https://w3id.org/pmd/tto/Shape
+:Shape rdf:type owl:Class ;
+       rdfs:subClassOf pmd:PMD_0000863 ;
+       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+       rdfs:label "Form"@de ,
+                  "Shape"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Das sichtbare Ausstattungsmerkmal (räumliche Form oder Kontur) eines bestimmten Objektes oder einer Art von Objekt."@de ,
+                                                        "The visible makeup characteristic (spatial form or contour) of a particular item or kind of item."@en ;
+       pmd:definitionSource "“Shape.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/shape. Accessed 13 Jan. 2023." .
+
+
+###  https://w3id.org/pmd/tto/Shape3D
+:Shape3D rdf:type owl:Class ;
+         rdfs:subClassOf :GeometryShape ;
+         rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+         rdfs:label "3D Geometrie"@de ,
+                    "Shape 3D"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "A shape 3D is a geometry shape that exists in three dimensions, having length, width, and height, and can be defined by its spatial properties such as volume and surface area."@en ,
+                                                          "Eine 3D Geometrie ist eine geometrische Form, die in drei Dimensionen existiert, mit Länge, Breite und Höhe, und die durch ihre räumlichen Eigenschaften wie Volumen und Oberfläche definiert werden kann."@de ;
+         <http://www.w3.org/2004/02/skos/core#example> "Beispiele sind Formen wie Würfel, Kugeln und Pyramiden."@de ,
+                                                       "Examples include shapes like cubes, spheres, and pyramids."@en .
+
+
 ###  https://w3id.org/pmd/tto/SizeRelation
 :SizeRelation rdf:type owl:Class ;
               rdfs:subClassOf :PhysicalQuality ;
@@ -893,9 +872,31 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
                                                                     "Eine Zugversuchsmethode ist eine Planspezifikation, die die Durchführung eines kontrollierten Versuchs zur Bestimmung der mechanischen Eigenschaften eines Materials unter einachsiger Zugbelastung vorschreibt. Der Plan legt Verfahrensschritte, Bedingungen und Messkriterien fest, um Eigenschaften wie die Zugfestigkeit, die Streckgrenze und die Bruchdehnung zu bestimmen."@de .
 
 
+###  https://w3id.org/pmd/tto/TestPiece
+:TestPiece rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+           <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
+           rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+           rdfs:label "Prüfkörper"@de ,
+                      "Test Piece"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Part of a sample with specified dimensions, machined or un-machined, brought to a required condition for submission to a given test."@en ,
+                                                            "Teil einer Probe mit bestimmten Dimensionen, bearbeitet oder unbearbeitet, der in einen erforderlichen Zustand gebracht wird, um einer bestimmten Prüfung unterzogen zu werden."@de ;
+           pmd:definitionSource "EN 10021:2006-12 (European standardization committee: CEN/TC 459/SC 12/WG 4)" .
+
+
+###  https://w3id.org/pmd/tto/Thickness
+:Thickness rdf:type owl:Class ;
+           rdfs:subClassOf :Length ;
+           rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+           rdfs:label "Dicke"@de ,
+                      "Thickness"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de ,
+                                                            "This class describes the measured dimension in one direction of a test piece."@en .
+
+
 ###  https://w3id.org/pmd/tto/ThicknessAfterFracture
 :ThicknessAfterFracture rdf:type owl:Class ;
-                        rdfs:subClassOf pmd:Thickness ;
+                        rdfs:subClassOf :Thickness ;
                         <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                         rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                         rdfs:label "End-Dicke"@de ,
@@ -939,9 +940,20 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
                     pmd:symbol "R_eH"@en .
 
 
+###  https://w3id.org/pmd/tto/Width
+:Width rdf:type owl:Class ;
+       rdfs:subClassOf :Length ;
+       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
+       rdfs:label "Breite"@de ,
+                  "Width"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird."@de ,
+                                                        "This class describes a horizontal measurement of an object taken at right angles to the length of the object."@en ;
+       pmd:definitionSource <https://www.merriam-webster.com/dictionary/width> .
+
+
 ###  https://w3id.org/pmd/tto/WidthAfterFracture
 :WidthAfterFracture rdf:type owl:Class ;
-                    rdfs:subClassOf pmd:Width ;
+                    rdfs:subClassOf :Width ;
                     <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Markus Schilling" ;
                     rdfs:isDefinedBy <https://w3id.org/pmd/tto/3.0.0> ;
                     rdfs:label "End-Breite"@de ,

@@ -1,0 +1,40 @@
+name: Create HTML documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the repository
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref_name }}
+          path: deploy_checkout
+
+      # Download the Widoco JAR file
+      - name: Get widoco.jar
+        run: |
+          wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.17/java-11-widoco-1.4.17-jar-with-dependencies.jar
+
+      # Build HTML documentation for pmd_tto.ttl
+      - name: Build HTML docs for TTO 3.0
+        run: |
+          mkdir -p public/tto
+          java -jar widoco.jar -ontFile deploy_checkout/pmd_tto.ttl -outFolder public/tto \
+            -htaccess -uniteSections -includeAnnotationProperties -lang en-de \
+            -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+          cp public/tto/index-en.html public/tto/index.html
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

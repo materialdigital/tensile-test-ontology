@@ -1,14 +1,14 @@
 # Tensile Test Ontology (TTO)
 
-This [repository](https://github.com/materialdigital/tensile-test-ontology) comprises the newest version 3.0 of the Tensile Test Ontology (TTO) that is based on the PMDco 3.0 and was developed within the frame of the joint project [Platform MaterialDigital (PMD)](https://materialdigital.de/).
+This [repository](https://github.com/materialdigital/tensile-test-ontology) comprises the newest version 3.0 of the Tensile Test Ontology (TTO) that is based on the [PMDco 3.0](https://github.com/materialdigital/core-ontology/tree/main) and was developed within the frame of the joint project [Platform MaterialDigital (PMD)](https://materialdigital.de/).
 The semantic concepts represented in TTO are in accordance with the associated testing standard [ISO 6892-1:2019-11](https://www.beuth.de/de/norm/iso-6892-1/316885984) for tensile testing of metals at room temperature. 
 
-There is an earlier version 2.0 of the TTO which is still available in a [dedicated repository](https://github.com/materialdigital/application-ontologies/tree/main/tensile_test_ontology_TTO) and used in some demonstrators. The associated information regarding the development of this ontology
+> There is an earlier [version 2.0 of the TTO](https://github.com/materialdigital/tensile-test-ontology/blob/c378ac40b155cb8a20f7bb4eeb18a087f55a2289/pmd_tto_2.0.ttl) which is still available in a [dedicated repository](https://github.com/materialdigital/application-ontologies/tree/main/tensile_test_ontology_TTO) and used in some demonstrators. The associated information regarding the development of this ontology
  is also inherently still valid.
 
 ## Example Dataset
 
-An dataset (TTL file) is provided in this repository as an example which resulted from mapping of typical tensile test data that was published in an open access [Zenodo repository](https://zenodo.org/record/6778336). 
+A dataset is provided in ttl and rdf data formats in this repository as an example, which resulted from mapping of typical tensile test data that was published in an open access [Zenodo repository](https://zenodo.org/record/6778336). 
 For this data mapping procedure, a simple Python script was used in a Jupyter Notebook environment. This Jupyter Notebook script entitled [PMDCO_3_0_RDF_TTO_Data_Mapping](https://github.com/materialdigital/tensile-test-ontology/PMDCO_3_0_RDF_TTO_Data_Mapping.ipynb) can also be found in this repository. 
 
 ## Scientific Publication
