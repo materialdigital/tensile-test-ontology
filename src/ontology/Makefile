@@ -716,4 +716,4 @@ Updating the repository:
 endef
 export data
 
-include tto.Makefile
+include TTO.Makefile
