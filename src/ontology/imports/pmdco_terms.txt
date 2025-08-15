@@ -1,0 +1,989 @@
+http://purl.obolibrary.org/obo/BFO_0000002 # continuant
+http://purl.obolibrary.org/obo/BFO_0000003 # occurrent
+http://purl.obolibrary.org/obo/BFO_0000004 # independent continuant
+http://purl.obolibrary.org/obo/BFO_0000006 # spatial region
+http://purl.obolibrary.org/obo/BFO_0000008 # temporal region
+http://purl.obolibrary.org/obo/BFO_0000009 # two-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000011 # spatiotemporal region
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/BFO_0000016 # disposition
+http://purl.obolibrary.org/obo/BFO_0000017 # realizable entity
+http://purl.obolibrary.org/obo/BFO_0000018 # zero-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000019 # quality
+http://purl.obolibrary.org/obo/BFO_0000020 # specifically dependent continuant
+http://purl.obolibrary.org/obo/BFO_0000023 # role
+http://purl.obolibrary.org/obo/BFO_0000024 # fiat object part
+http://purl.obolibrary.org/obo/BFO_0000026 # one-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000027 # object aggregate
+http://purl.obolibrary.org/obo/BFO_0000028 # three-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000029 # site
+http://purl.obolibrary.org/obo/BFO_0000030 # object
+http://purl.obolibrary.org/obo/BFO_0000031 # generically dependent continuant
+http://purl.obolibrary.org/obo/BFO_0000034 # function
+http://purl.obolibrary.org/obo/BFO_0000035 # process boundary
+http://purl.obolibrary.org/obo/BFO_0000038 # one-dimensional temporal region
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000140 # continuant fiat boundary
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000142 # fiat line
+http://purl.obolibrary.org/obo/BFO_0000145 # relational quality
+http://purl.obolibrary.org/obo/BFO_0000146 # fiat surface
+http://purl.obolibrary.org/obo/BFO_0000147 # fiat point
+http://purl.obolibrary.org/obo/BFO_0000148 # zero-dimensional temporal region
+http://purl.obolibrary.org/obo/BFO_0000182 # history
+http://purl.obolibrary.org/obo/BFO_0000202 # temporal interval
+http://purl.obolibrary.org/obo/BFO_0000203 # temporal instant
+http://purl.obolibrary.org/obo/IAO_0000005 # objective specification
+http://purl.obolibrary.org/obo/IAO_0000007 # action specification
+http://purl.obolibrary.org/obo/IAO_0000027 # data item
+http://purl.obolibrary.org/obo/IAO_0000030 # information content entity
+http://purl.obolibrary.org/obo/IAO_0000033 # directive information entity
+http://purl.obolibrary.org/obo/IAO_0000078 # curation status specification
+http://purl.obolibrary.org/obo/IAO_0000102 # data about an ontology part
+http://purl.obolibrary.org/obo/IAO_0000109 # measurement datum
+http://purl.obolibrary.org/obo/IAO_0000225 # obsolescence reason specification
+http://purl.obolibrary.org/obo/IAO_0000409 # denotator type
+http://purl.obolibrary.org/obo/OBI_0000379 # mechanical function
+http://purl.obolibrary.org/obo/OBI_0001930 # categorical value specification
+http://purl.obolibrary.org/obo/OBI_0001933 # value specification
+https://w3id.org/pmd/co/PMD_0000000 # Material
+https://w3id.org/pmd/co/PMD_0000000 # material
+https://w3id.org/pmd/co/PMD_0000001 # portion of matter
+https://w3id.org/pmd/co/PMD_0000002 # engineered material
+https://w3id.org/pmd/co/PMD_0000003 # plan specification
+https://w3id.org/pmd/co/PMD_0000005 # behavioral material property
+https://w3id.org/pmd/co/PMD_0000008 # process characteristic
+https://w3id.org/pmd/co/PMD_0000014 # plan
+https://w3id.org/pmd/co/PMD_0000017 # identifier
+https://w3id.org/pmd/co/PMD_0000022 # scalar value specification
+https://w3id.org/pmd/co/PMD_0000023 # scalar measurement datum
+https://w3id.org/pmd/co/PMD_0000051 # simulation entity role
+https://w3id.org/pmd/co/PMD_0000053 # Schmelzprozess
+https://w3id.org/pmd/co/PMD_0000053 # melting process
+https://w3id.org/pmd/co/PMD_0000054 # Heizfunktion
+https://w3id.org/pmd/co/PMD_0000054 # heating function
+https://w3id.org/pmd/co/PMD_0000055 # Kühlfunktion
+https://w3id.org/pmd/co/PMD_0000055 # cooling function
+https://w3id.org/pmd/co/PMD_0000056 # Schmelzofen
+https://w3id.org/pmd/co/PMD_0000056 # melting furnace
+https://w3id.org/pmd/co/PMD_0000057 # Schmelzfunktion
+https://w3id.org/pmd/co/PMD_0000057 # melting function
+https://w3id.org/pmd/co/PMD_0000501 # 1D
+https://w3id.org/pmd/co/PMD_0000502 # 2D
+https://w3id.org/pmd/co/PMD_0000503 # ASTM  Grainsize
+https://w3id.org/pmd/co/PMD_0000504 # Ab Initio MD Simulation
+https://w3id.org/pmd/co/PMD_0000504 # ab initio molecular dynamics simulation
+https://w3id.org/pmd/co/PMD_0000505 # accoustic absorption coefficient
+https://w3id.org/pmd/co/PMD_0000506 # accoustic property
+https://w3id.org/pmd/co/PMD_0000507 # Akustische Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000507 # acoustical property analyzing process
+https://w3id.org/pmd/co/PMD_0000508 # Additive Fertigungsgerät
+https://w3id.org/pmd/co/PMD_0000508 # additive manufacturing device
+https://w3id.org/pmd/co/PMD_0000509 # Adhäsionsprüfverfahren
+https://w3id.org/pmd/co/PMD_0000509 # adhesion testing process
+https://w3id.org/pmd/co/PMD_0000510 # Einstellungsgeräterolle
+https://w3id.org/pmd/co/PMD_0000510 # adjustment device role
+https://w3id.org/pmd/co/PMD_0000511 # age
+https://w3id.org/pmd/co/PMD_0000512 # aggregate state
+https://w3id.org/pmd/co/PMD_0000513 # Alterungsprozess
+https://w3id.org/pmd/co/PMD_0000513 # aging process
+https://w3id.org/pmd/co/PMD_0000517 # application of accoustic wave
+https://w3id.org/pmd/co/PMD_0000518 # application of elastic impact
+https://w3id.org/pmd/co/PMD_0000519 # application of electric field
+https://w3id.org/pmd/co/PMD_0000520 # application of heat flux
+https://w3id.org/pmd/co/PMD_0000521 # application of magnetic field
+https://w3id.org/pmd/co/PMD_0000522 # application of mechanical load
+https://w3id.org/pmd/co/PMD_0000523 # application of substance
+https://w3id.org/pmd/co/PMD_0000524 # Assemblierungsprozess
+https://w3id.org/pmd/co/PMD_0000524 # assembling process
+https://w3id.org/pmd/co/PMD_0000525 # Atomkraftmikroskop
+https://w3id.org/pmd/co/PMD_0000525 # atomic force microscope
+https://w3id.org/pmd/co/PMD_0000526 # atomic structure
+https://w3id.org/pmd/co/PMD_0000527 # Atomistische Monte Carlo Simulation
+https://w3id.org/pmd/co/PMD_0000527 # atomistic monte carlo simulation
+https://w3id.org/pmd/co/PMD_0000528 # Bandsäge
+https://w3id.org/pmd/co/PMD_0000528 # bandsaw
+https://w3id.org/pmd/co/PMD_0000529 # Biegeversuchmaschine
+https://w3id.org/pmd/co/PMD_0000529 # bending testing machine
+https://w3id.org/pmd/co/PMD_0000530 # Biegeprüfverfahren
+https://w3id.org/pmd/co/PMD_0000530 # bending testing process
+https://w3id.org/pmd/co/PMD_0000531 # Analyseverfahren der Biokompatibilität
+https://w3id.org/pmd/co/PMD_0000531 # biocompatibility analyzing process
+https://w3id.org/pmd/co/PMD_0000532 # Biologische Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000532 # biological property analyzing process
+https://w3id.org/pmd/co/PMD_0000534 # Rohling-Rolle
+https://w3id.org/pmd/co/PMD_0000534 # blank role
+https://w3id.org/pmd/co/PMD_0000535 # boiling point
+https://w3id.org/pmd/co/PMD_0000536 # Brinell 2.5 62.5 ISO 6506
+https://w3id.org/pmd/co/PMD_0000537 # brinell hardness
+https://w3id.org/pmd/co/PMD_0000538 # bulk
+https://w3id.org/pmd/co/PMD_0000539 # bulk modulus
+https://w3id.org/pmd/co/PMD_0000540 # Brennen
+https://w3id.org/pmd/co/PMD_0000540 # burning
+https://w3id.org/pmd/co/PMD_0000541 # CNC-Maschine
+https://w3id.org/pmd/co/PMD_0000541 # cnc machine
+https://w3id.org/pmd/co/PMD_0000542 # CNC-Schweißmaschine
+https://w3id.org/pmd/co/PMD_0000542 # cnc welding machine
+https://w3id.org/pmd/co/PMD_0000543 # Kalibrierungsgeräterolle
+https://w3id.org/pmd/co/PMD_0000543 # calibration device role
+https://w3id.org/pmd/co/PMD_0000544 # Messschieber
+https://w3id.org/pmd/co/PMD_0000544 # caliper
+https://w3id.org/pmd/co/PMD_0000546 # ceramic
+https://w3id.org/pmd/co/PMD_0000547 # change of aggregate state
+https://w3id.org/pmd/co/PMD_0000548 # change of phase
+https://w3id.org/pmd/co/PMD_0000549 # change of temperature
+https://w3id.org/pmd/co/PMD_0000550 # Stoffeigenschaft Ändern
+https://w3id.org/pmd/co/PMD_0000550 # changing properties of material
+https://w3id.org/pmd/co/PMD_0000551 # chemical composition
+https://w3id.org/pmd/co/PMD_0000552 # Analyseverfahren für die chemische Zusammensetzung
+https://w3id.org/pmd/co/PMD_0000552 # chemical composition analyzing process
+https://w3id.org/pmd/co/PMD_0000553 # chemical potential
+https://w3id.org/pmd/co/PMD_0000554 # Chemische Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000554 # chemical property analyzing process
+https://w3id.org/pmd/co/PMD_0000555 # Chromatographiefunktion
+https://w3id.org/pmd/co/PMD_0000555 # chromatography function
+https://w3id.org/pmd/co/PMD_0000556 # Chromatographieverfahren
+https://w3id.org/pmd/co/PMD_0000556 # chromatography process
+https://w3id.org/pmd/co/PMD_0000557 # Chromatographiesystem
+https://w3id.org/pmd/co/PMD_0000557 # chromatography system
+https://w3id.org/pmd/co/PMD_0000558 # Kreissäge
+https://w3id.org/pmd/co/PMD_0000558 # circular saw
+https://w3id.org/pmd/co/PMD_0000559 # Tischkreissäge
+https://w3id.org/pmd/co/PMD_0000559 # circular table saw
+https://w3id.org/pmd/co/PMD_0000560 # Reinigen
+https://w3id.org/pmd/co/PMD_0000560 # cleaning
+https://w3id.org/pmd/co/PMD_0000561 # Reinigungsgerät
+https://w3id.org/pmd/co/PMD_0000561 # cleaning device
+https://w3id.org/pmd/co/PMD_0000562 # Coarse Grained Simulation
+https://w3id.org/pmd/co/PMD_0000562 # coarse grained simulation
+https://w3id.org/pmd/co/PMD_0000563 # Beschichten
+https://w3id.org/pmd/co/PMD_0000563 # coating
+https://w3id.org/pmd/co/PMD_0000564 # Beschichtungsanwendungsfunktion
+https://w3id.org/pmd/co/PMD_0000564 # coating application function
+https://w3id.org/pmd/co/PMD_0000565 # Beschichten Durch Löten
+https://w3id.org/pmd/co/PMD_0000565 # coating by soldering
+https://w3id.org/pmd/co/PMD_0000566 # Beschichten Durch Schweissen
+https://w3id.org/pmd/co/PMD_0000566 # coating by welding
+https://w3id.org/pmd/co/PMD_0000567 # Beschichtungsgerät
+https://w3id.org/pmd/co/PMD_0000567 # coating device
+https://w3id.org/pmd/co/PMD_0000569 # Beschichten Aus Dem Gasförmigen Oder Dampfförmigen Zustand
+https://w3id.org/pmd/co/PMD_0000569 # coating from the gaseous or vapour state
+https://w3id.org/pmd/co/PMD_0000570 # Beschichten Aus Dem Körnigen Oder Pulverförmigen Zustand
+https://w3id.org/pmd/co/PMD_0000570 # coating from the granular or powdery state
+https://w3id.org/pmd/co/PMD_0000571 # Beschichten Aus Dem Ionisierten Zustand
+https://w3id.org/pmd/co/PMD_0000571 # coating from the ionized state
+https://w3id.org/pmd/co/PMD_0000572 # Beschichten Aus Dem Flüssigen Zustand
+https://w3id.org/pmd/co/PMD_0000572 # coating from the liquid state
+https://w3id.org/pmd/co/PMD_0000573 # Beschichten Aus Dem Plastischen Zustand
+https://w3id.org/pmd/co/PMD_0000573 # coating from the plastic state
+https://w3id.org/pmd/co/PMD_0000574 # Beschichten Aus Dem Breiigen Oder Pastösen Zustand
+https://w3id.org/pmd/co/PMD_0000574 # coating from the pulpy or pasty state
+https://w3id.org/pmd/co/PMD_0000575 # Beschichtungsfunktion
+https://w3id.org/pmd/co/PMD_0000575 # coating function
+https://w3id.org/pmd/co/PMD_0000576 # Farbmessgerät
+https://w3id.org/pmd/co/PMD_0000576 # colorimeter
+https://w3id.org/pmd/co/PMD_0000577 # composite material
+https://w3id.org/pmd/co/PMD_0000578 # Zusammensetzen
+https://w3id.org/pmd/co/PMD_0000578 # compounding
+https://w3id.org/pmd/co/PMD_0000579 # Compoundiermaschine
+https://w3id.org/pmd/co/PMD_0000579 # compounding machine
+https://w3id.org/pmd/co/PMD_0000580 # Druckprüfmaschine
+https://w3id.org/pmd/co/PMD_0000580 # compression testing machine
+https://w3id.org/pmd/co/PMD_0000581 # Druckprüfverfahren
+https://w3id.org/pmd/co/PMD_0000581 # compression testing process
+https://w3id.org/pmd/co/PMD_0000582 # Computer
+https://w3id.org/pmd/co/PMD_0000582 # computing device
+https://w3id.org/pmd/co/PMD_0000583 # Datenverarbeitung
+https://w3id.org/pmd/co/PMD_0000583 # Rechenprozess
+https://w3id.org/pmd/co/PMD_0000583 # computing process
+https://w3id.org/pmd/co/PMD_0000584 # Konditionierungsprozess
+https://w3id.org/pmd/co/PMD_0000584 # conditioning process
+https://w3id.org/pmd/co/PMD_0000585 # continuous simulation
+https://w3id.org/pmd/co/PMD_0000586 # corpuscular irradiation
+https://w3id.org/pmd/co/PMD_0000587 # crack growth
+https://w3id.org/pmd/co/PMD_0000588 # Kriechprüfmaschine
+https://w3id.org/pmd/co/PMD_0000588 # creep testing machine
+https://w3id.org/pmd/co/PMD_0000589 # Kriechprüfverfahren
+https://w3id.org/pmd/co/PMD_0000589 # creep testing process
+https://w3id.org/pmd/co/PMD_0000590 # Kryogefrierschrank
+https://w3id.org/pmd/co/PMD_0000590 # cryogenic freezer
+https://w3id.org/pmd/co/PMD_0000591 # crystal structure
+https://w3id.org/pmd/co/PMD_0000592 # Trennen Funktion
+https://w3id.org/pmd/co/PMD_0000592 # cut function
+https://w3id.org/pmd/co/PMD_0000594 # Deep Learning
+https://w3id.org/pmd/co/PMD_0000594 # deep learning
+https://w3id.org/pmd/co/PMD_0000595 # defect density
+https://w3id.org/pmd/co/PMD_0000596 # deformation
+https://w3id.org/pmd/co/PMD_0000597 # density
+https://w3id.org/pmd/co/PMD_0000598 # Abteilung
+https://w3id.org/pmd/co/PMD_0000598 # department
+https://w3id.org/pmd/co/PMD_0000599 # department role
+https://w3id.org/pmd/co/PMD_0000600 # deteriorative property
+https://w3id.org/pmd/co/PMD_0000601 # deterministic simulation
+https://w3id.org/pmd/co/PMD_0000602 # Gerät
+https://w3id.org/pmd/co/PMD_0000602 # device
+https://w3id.org/pmd/co/PMD_0000603 # Rolle eines Gerätes
+https://w3id.org/pmd/co/PMD_0000603 # device role
+https://w3id.org/pmd/co/PMD_0000604 # dielectric constant
+https://w3id.org/pmd/co/PMD_0000605 # Differential-Scanning-Kalorimeter
+https://w3id.org/pmd/co/PMD_0000605 # differential scanning calorimeter
+https://w3id.org/pmd/co/PMD_0000606 # Dynamische Differenzkalorimetrie-Verfahren
+https://w3id.org/pmd/co/PMD_0000606 # differential scanning calorimetry process
+https://w3id.org/pmd/co/PMD_0000607 # Differenzthermoanalyse-Verfahren
+https://w3id.org/pmd/co/PMD_0000607 # differential thermal analysis process
+https://w3id.org/pmd/co/PMD_0000608 # Differentialthermometer
+https://w3id.org/pmd/co/PMD_0000608 # differential thermal analyzer
+https://w3id.org/pmd/co/PMD_0000610 # Dimensionierungsfunktion
+https://w3id.org/pmd/co/PMD_0000610 # dimension measuring function
+https://w3id.org/pmd/co/PMD_0000611 # Dimensions Messprozess
+https://w3id.org/pmd/co/PMD_0000611 # dimension measuring process
+https://w3id.org/pmd/co/PMD_0000612 # Zerlegen
+https://w3id.org/pmd/co/PMD_0000612 # disassembling
+https://w3id.org/pmd/co/PMD_0000613 # discrete-event simulation
+https://w3id.org/pmd/co/PMD_0000614 # Zerteilen
+https://w3id.org/pmd/co/PMD_0000614 # dividing
+https://w3id.org/pmd/co/PMD_0000615 # Bohrmaschine
+https://w3id.org/pmd/co/PMD_0000615 # drilling machine
+https://w3id.org/pmd/co/PMD_0000616 # Dynamisch-mechanische Analyse-Verfahren
+https://w3id.org/pmd/co/PMD_0000616 # dynamic mechanical analysis process
+https://w3id.org/pmd/co/PMD_0000617 # Dynamischer mechanischer Analysator
+https://w3id.org/pmd/co/PMD_0000617 # dynamic mechanical analyzer
+https://w3id.org/pmd/co/PMD_0000618 # elastic modulus
+https://w3id.org/pmd/co/PMD_0000619 # electric potential
+https://w3id.org/pmd/co/PMD_0000620 # electrical conductivity
+https://w3id.org/pmd/co/PMD_0000621 # electrical property
+https://w3id.org/pmd/co/PMD_0000622 # Elektrische Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000622 # electrical property analyzing process
+https://w3id.org/pmd/co/PMD_0000623 # Elektronenstrahlschweißmaschine
+https://w3id.org/pmd/co/PMD_0000623 # electron beam welding machine
+https://w3id.org/pmd/co/PMD_0000624 # Elektronenmikroskop
+https://w3id.org/pmd/co/PMD_0000624 # electron microscope
+https://w3id.org/pmd/co/PMD_0000625 # Elektronenmikroskopie
+https://w3id.org/pmd/co/PMD_0000625 # electron microscopy
+https://w3id.org/pmd/co/PMD_0000626 # Elektronenspektroskopie
+https://w3id.org/pmd/co/PMD_0000626 # electron spectroscopy
+https://w3id.org/pmd/co/PMD_0000627 # emission of accoustic wave
+https://w3id.org/pmd/co/PMD_0000628 # emission of corpuscular radiation
+https://w3id.org/pmd/co/PMD_0000629 # emission of radiation
+https://w3id.org/pmd/co/PMD_0000630 # emission of wave radiation
+https://w3id.org/pmd/co/PMD_0000631 # Empirische Potential MD Simulation
+https://w3id.org/pmd/co/PMD_0000631 # empirical potential molecular dynamics simulation
+https://w3id.org/pmd/co/PMD_0000633 # Umweltschrank
+https://w3id.org/pmd/co/PMD_0000633 # environmental chamber
+https://w3id.org/pmd/co/PMD_0000635 # evolution of damage
+https://w3id.org/pmd/co/PMD_0000636 # extensometer
+https://w3id.org/pmd/co/PMD_0000637 # Materialermüdungsprüfmaschine
+https://w3id.org/pmd/co/PMD_0000637 # fatigue testing machine
+https://w3id.org/pmd/co/PMD_0000638 # Ermüdungsprüfverfahren
+https://w3id.org/pmd/co/PMD_0000638 # fatigue testing process
+https://w3id.org/pmd/co/PMD_0000639 # ferrous alloy
+https://w3id.org/pmd/co/PMD_0000641 # Füllen
+https://w3id.org/pmd/co/PMD_0000641 # filling
+https://w3id.org/pmd/co/PMD_0000642 # Durchflusszytometer
+https://w3id.org/pmd/co/PMD_0000642 # flow cytometer
+https://w3id.org/pmd/co/PMD_0000644 # Kraftmessfunktion
+https://w3id.org/pmd/co/PMD_0000644 # force measuring function
+https://w3id.org/pmd/co/PMD_0000645 # formation of notch or scratch
+https://w3id.org/pmd/co/PMD_0000646 # Umformen
+https://w3id.org/pmd/co/PMD_0000646 # forming
+https://w3id.org/pmd/co/PMD_0000647 # Biegeumformen
+https://w3id.org/pmd/co/PMD_0000647 # forming by bending
+https://w3id.org/pmd/co/PMD_0000648 # Formmaschine
+https://w3id.org/pmd/co/PMD_0000648 # forming machine
+https://w3id.org/pmd/co/PMD_0000649 # Zugdruckumformen
+https://w3id.org/pmd/co/PMD_0000649 # forming under compressive and tensile conditions
+https://w3id.org/pmd/co/PMD_0000650 # Druckumformen
+https://w3id.org/pmd/co/PMD_0000650 # forming under compressive conditions
+https://w3id.org/pmd/co/PMD_0000651 # Schubumformen
+https://w3id.org/pmd/co/PMD_0000651 # forming under shearing conditions
+https://w3id.org/pmd/co/PMD_0000652 # Zugumformen
+https://w3id.org/pmd/co/PMD_0000652 # forming under tensile conditions
+https://w3id.org/pmd/co/PMD_0000653 # Bruchzähigkeitsprüfverfahren
+https://w3id.org/pmd/co/PMD_0000653 # fracture toughness testing process
+https://w3id.org/pmd/co/PMD_0000654 # functional material
+https://w3id.org/pmd/co/PMD_0000655 # Ofen
+https://w3id.org/pmd/co/PMD_0000655 # furnace
+https://w3id.org/pmd/co/PMD_0000656 # Gaschromatographie Verfahren
+https://w3id.org/pmd/co/PMD_0000656 # gas chromatography process
+https://w3id.org/pmd/co/PMD_0000657 # Gaschromatographiesystem
+https://w3id.org/pmd/co/PMD_0000657 # gas chromatography system
+https://w3id.org/pmd/co/PMD_0000658 # Gel-Permeations-Chromatographie Verfahren
+https://w3id.org/pmd/co/PMD_0000658 # gel permeation chromatography process
+https://w3id.org/pmd/co/PMD_0000659 # Gelpermeations-Chromatographiesystem
+https://w3id.org/pmd/co/PMD_0000659 # gel permeation chromatography system
+https://w3id.org/pmd/co/PMD_0000660 # Generatives Deep Learning
+https://w3id.org/pmd/co/PMD_0000660 # generative deep learning
+https://w3id.org/pmd/co/PMD_0000661 # glass
+https://w3id.org/pmd/co/PMD_0000662 # Kleben
+https://w3id.org/pmd/co/PMD_0000662 # glueing
+https://w3id.org/pmd/co/PMD_0000663 # Korn
+https://w3id.org/pmd/co/PMD_0000663 # crystal grain
+https://w3id.org/pmd/co/PMD_0000665 # Gravimetrischer Analysator
+https://w3id.org/pmd/co/PMD_0000665 # gravimetric analyzer
+https://w3id.org/pmd/co/PMD_0000666 # Gravimetrisches Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000666 # gravimetrical analyzing process
+https://w3id.org/pmd/co/PMD_0000667 # Schleifmaschine
+https://w3id.org/pmd/co/PMD_0000667 # grinding machine
+https://w3id.org/pmd/co/PMD_0000668 # Halterungsklemmen
+https://w3id.org/pmd/co/PMD_0000668 # grips
+https://w3id.org/pmd/co/PMD_0000767 # Bügelsäge
+https://w3id.org/pmd/co/PMD_0000767 # hacksaw
+https://w3id.org/pmd/co/PMD_0000768 # half-life
+https://w3id.org/pmd/co/PMD_0000769 # Handbetriebenes Geräterolle
+https://w3id.org/pmd/co/PMD_0000769 # hand held device role
+https://w3id.org/pmd/co/PMD_0000770 # Handkreissäge
+https://w3id.org/pmd/co/PMD_0000770 # hand circular saw
+https://w3id.org/pmd/co/PMD_0000771 # Handsäge
+https://w3id.org/pmd/co/PMD_0000771 # handsaw
+https://w3id.org/pmd/co/PMD_0000772 # Verfestigen Durch Umformen
+https://w3id.org/pmd/co/PMD_0000772 # hardening by forming
+https://w3id.org/pmd/co/PMD_0000773 # hardness
+https://w3id.org/pmd/co/PMD_0000774 # Härteprüfgerät
+https://w3id.org/pmd/co/PMD_0000774 # hardness tester
+https://w3id.org/pmd/co/PMD_0000775 # Härteprüfmaschine
+https://w3id.org/pmd/co/PMD_0000775 # hardness testing machine
+https://w3id.org/pmd/co/PMD_0000776 # Härteprüfverfahren
+https://w3id.org/pmd/co/PMD_0000776 # hardness testing process
+https://w3id.org/pmd/co/PMD_0000777 # heat capacity
+https://w3id.org/pmd/co/PMD_0000779 # Wärmebehandlung
+https://w3id.org/pmd/co/PMD_0000779 # heat treatment
+https://w3id.org/pmd/co/PMD_0000780 # Wärmebehandlungsgerät
+https://w3id.org/pmd/co/PMD_0000780 # heat treatment device
+https://w3id.org/pmd/co/PMD_0000781 # Wärmebehandlungsfunktion
+https://w3id.org/pmd/co/PMD_0000781 # heat treatment function
+https://w3id.org/pmd/co/PMD_0000782 # Hochleistungsflüssigkeitschromatographie Verfahren
+https://w3id.org/pmd/co/PMD_0000782 # high-performance liquid chromatography process
+https://w3id.org/pmd/co/PMD_0000783 # Hochdurchsatzsimulation
+https://w3id.org/pmd/co/PMD_0000783 # high throughput simulation
+https://w3id.org/pmd/co/PMD_0000784 # Hochleistungsflüssigkeitschromatographiesystem
+https://w3id.org/pmd/co/PMD_0000784 # high performance liquid chromatography system
+https://w3id.org/pmd/co/PMD_0000785 # Hochtemperatur-Gaschromatographiesystem
+https://w3id.org/pmd/co/PMD_0000785 # high temperature gas chromatography system
+https://w3id.org/pmd/co/PMD_0000786 # hybrid simulation
+https://w3id.org/pmd/co/PMD_0000787 # image
+https://w3id.org/pmd/co/PMD_0000788 # Schlagprüfverfahren
+https://w3id.org/pmd/co/PMD_0000788 # impact testing process
+https://w3id.org/pmd/co/PMD_0000789 # indentation hardness
+https://w3id.org/pmd/co/PMD_0000790 # index of refraction
+https://w3id.org/pmd/co/PMD_0000791 # Induktionsofen
+https://w3id.org/pmd/co/PMD_0000791 # induction furnace
+https://w3id.org/pmd/co/PMD_0000793 # initiator role
+https://w3id.org/pmd/co/PMD_0000794 # Spritzgießmaschine
+https://w3id.org/pmd/co/PMD_0000794 # injection molding machine
+https://w3id.org/pmd/co/PMD_0000795 # Ionenaustauschchromatographie Verfahren
+https://w3id.org/pmd/co/PMD_0000795 # ion exchange chromatography process
+https://w3id.org/pmd/co/PMD_0000796 # Ionenaustausch-Chromatographiesystem
+https://w3id.org/pmd/co/PMD_0000796 # ion exchange chromatography system
+https://w3id.org/pmd/co/PMD_0000797 # Ionenmikroskop
+https://w3id.org/pmd/co/PMD_0000797 # ion microscope
+https://w3id.org/pmd/co/PMD_0000798 # Ionenmikroskopie
+https://w3id.org/pmd/co/PMD_0000798 # ion microscopy
+https://w3id.org/pmd/co/PMD_0000799 # Ionen-Spektrometer
+https://w3id.org/pmd/co/PMD_0000799 # ion spectrometer
+https://w3id.org/pmd/co/PMD_0000800 # Ionenspektroskopie
+https://w3id.org/pmd/co/PMD_0000800 # ion spectroscopy
+https://w3id.org/pmd/co/PMD_0000801 # Bestrahlen
+https://w3id.org/pmd/co/PMD_0000801 # irradiating
+https://w3id.org/pmd/co/PMD_0000802 # irradiation process
+https://w3id.org/pmd/co/PMD_0000803 # Irradiationsgerät
+https://w3id.org/pmd/co/PMD_0000803 # irradiation device
+https://w3id.org/pmd/co/PMD_0000805 # Irradiationsfunktion
+https://w3id.org/pmd/co/PMD_0000805 # irradiation function
+https://w3id.org/pmd/co/PMD_0000806 # Fügen
+https://w3id.org/pmd/co/PMD_0000806 # joining
+https://w3id.org/pmd/co/PMD_0000807 # Fügen durch Urformen
+https://w3id.org/pmd/co/PMD_0000807 # joining by primary shaping
+https://w3id.org/pmd/co/PMD_0000808 # Fügen Durch Umformen
+https://w3id.org/pmd/co/PMD_0000808 # joining by shaping
+https://w3id.org/pmd/co/PMD_0000809 # Fügen Durch Löten
+https://w3id.org/pmd/co/PMD_0000809 # joining by soldering
+https://w3id.org/pmd/co/PMD_0000810 # Fügen Durch Schweißen
+https://w3id.org/pmd/co/PMD_0000810 # joining by welding
+https://w3id.org/pmd/co/PMD_0000811 # Verbindungsgerät
+https://w3id.org/pmd/co/PMD_0000811 # joining device
+https://w3id.org/pmd/co/PMD_0000812 # Verbindungsfunktion
+https://w3id.org/pmd/co/PMD_0000812 # joining function
+https://w3id.org/pmd/co/PMD_0000813 # Messer
+https://w3id.org/pmd/co/PMD_0000813 # knife
+https://w3id.org/pmd/co/PMD_0000814 # Labor
+https://w3id.org/pmd/co/PMD_0000814 # laboratory
+https://w3id.org/pmd/co/PMD_0000815 # laboratory role
+https://w3id.org/pmd/co/PMD_0000816 # Laserspektroskopie
+https://w3id.org/pmd/co/PMD_0000816 # laser spectroscopy
+https://w3id.org/pmd/co/PMD_0000817 # Laserschneider
+https://w3id.org/pmd/co/PMD_0000817 # lasercutter
+https://w3id.org/pmd/co/PMD_0000818 # Drehmaschine
+https://w3id.org/pmd/co/PMD_0000818 # lathe
+https://w3id.org/pmd/co/PMD_0000819 # Lichtmikroskopie
+https://w3id.org/pmd/co/PMD_0000819 # light microscopy
+https://w3id.org/pmd/co/PMD_0000820 # Kraftmessdose
+https://w3id.org/pmd/co/PMD_0000820 # load cell
+https://w3id.org/pmd/co/PMD_0000821 # Maschinelles Lernen
+https://w3id.org/pmd/co/PMD_0000821 # machine learning
+https://w3id.org/pmd/co/PMD_0000822 # Spanen Mit Geometrisch Bestimmten Schneiden
+https://w3id.org/pmd/co/PMD_0000822 # machining geometrically defined
+https://w3id.org/pmd/co/PMD_0000823 # Spanen Mit Geometrisch Unbestimmten Schneiden
+https://w3id.org/pmd/co/PMD_0000823 # machining geometrically undefined
+https://w3id.org/pmd/co/PMD_0000825 # magnetic property
+https://w3id.org/pmd/co/PMD_0000826 # Magnetisieren
+https://w3id.org/pmd/co/PMD_0000826 # magnetizing
+https://w3id.org/pmd/co/PMD_0000827 # Magnetisierungsgerät
+https://w3id.org/pmd/co/PMD_0000827 # magnetizing device
+https://w3id.org/pmd/co/PMD_0000828 # Magnetisierungsfunktion
+https://w3id.org/pmd/co/PMD_0000828 # magnetizing function
+https://w3id.org/pmd/co/PMD_0000829 # Magnetische Elektrische Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000829 # magneto electrical property analyzing process
+https://w3id.org/pmd/co/PMD_0000830 # Hersteller
+https://w3id.org/pmd/co/PMD_0000830 # manufacturer company
+https://w3id.org/pmd/co/PMD_0000831 # manufacturer role
+https://w3id.org/pmd/co/PMD_0000832 # Fertigungsfunktion
+https://w3id.org/pmd/co/PMD_0000832 # manufacturing function
+https://w3id.org/pmd/co/PMD_0000833 # Herstellungsprozess
+https://w3id.org/pmd/co/PMD_0000833 # manufacturing process
+https://w3id.org/pmd/co/PMD_0000834 # map
+https://w3id.org/pmd/co/PMD_0000835 # Massenspektrometer
+https://w3id.org/pmd/co/PMD_0000835 # mass spectrometer
+https://w3id.org/pmd/co/PMD_0000836 # Massenspektroskopie
+https://w3id.org/pmd/co/PMD_0000836 # mass spectrometry
+https://w3id.org/pmd/co/PMD_0000845 # matrix role
+https://w3id.org/pmd/co/PMD_0000847 # Messfunktion
+https://w3id.org/pmd/co/PMD_0000847 # measuring function
+https://w3id.org/pmd/co/PMD_0000848 # mechanical property
+https://w3id.org/pmd/co/PMD_0000849 # Mechanische Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000849 # mechanical property analyzing process
+https://w3id.org/pmd/co/PMD_0000851 # melting point
+https://w3id.org/pmd/co/PMD_0000852 # metal
+https://w3id.org/pmd/co/PMD_0000853 # metallographic texture
+https://w3id.org/pmd/co/PMD_0000854 # Bügelmessschraube
+https://w3id.org/pmd/co/PMD_0000854 # micrometer gauge
+https://w3id.org/pmd/co/PMD_0000855 # Mikroskop
+https://w3id.org/pmd/co/PMD_0000855 # microscope
+https://w3id.org/pmd/co/PMD_0000856 # Mikroskopie Verfahren
+https://w3id.org/pmd/co/PMD_0000856 # microscopy process
+https://w3id.org/pmd/co/PMD_0000857 # microstructure
+https://w3id.org/pmd/co/PMD_0000858 # Mikrotom
+https://w3id.org/pmd/co/PMD_0000858 # microtome
+https://w3id.org/pmd/co/PMD_0000859 # Fräsmaschine
+https://w3id.org/pmd/co/PMD_0000859 # milling machine
+https://w3id.org/pmd/co/PMD_0000861 # mohs hardness
+https://w3id.org/pmd/co/PMD_0000862 # Monte Carlo Simulation
+https://w3id.org/pmd/co/PMD_0000862 # monte carlo simulation
+https://w3id.org/pmd/co/PMD_0000864 # morphological property
+https://w3id.org/pmd/co/PMD_0000865 # Multimodales Deep Learning
+https://w3id.org/pmd/co/PMD_0000865 # multimodal deep learning
+https://w3id.org/pmd/co/PMD_0000866 # Multiskalensimulation
+https://w3id.org/pmd/co/PMD_0000866 # multiscale simulation
+https://w3id.org/pmd/co/PMD_0000867 # Nanoindentationsverfahren
+https://w3id.org/pmd/co/PMD_0000867 # nanoindentation process
+https://w3id.org/pmd/co/PMD_0000868 # natural organic material
+https://w3id.org/pmd/co/PMD_0000869 # occurence of chemical reaction
+https://w3id.org/pmd/co/PMD_0000870 # occurence of electic field
+https://w3id.org/pmd/co/PMD_0000871 # occurence of magnetic field
+https://w3id.org/pmd/co/PMD_0000873 # operator role
+https://w3id.org/pmd/co/PMD_0000874 # Optisches Mikroskop
+https://w3id.org/pmd/co/PMD_0000874 # optical microscope
+"https://w3id.org/pmd/co/PMD_0000875,""Ein Mikroskopieverfahren, das sichtbares Licht und Linsen verwendet, um eine Probe zu vergrößern und abzubilden, und weit verbreitet zur Untersuchung der Mikrostruktur und Morphologie von Materialien ist."" # "
+https://w3id.org/pmd/co/PMD_0000875 # Optische Mikroskopie
+https://w3id.org/pmd/co/PMD_0000875 # optical microscopy
+https://w3id.org/pmd/co/PMD_0000876 # Optisches Profilometer
+https://w3id.org/pmd/co/PMD_0000876 # optical profilometer
+https://w3id.org/pmd/co/PMD_0000877 # optical property
+https://w3id.org/pmd/co/PMD_0000878 # Optische Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000878 # optical property analyzing process
+https://w3id.org/pmd/co/PMD_0000879 # organization
+https://w3id.org/pmd/co/PMD_0000880 # passing of time
+https://w3id.org/pmd/co/PMD_0000881 # person
+https://w3id.org/pmd/co/PMD_0000882 # phase boundary
+https://w3id.org/pmd/co/PMD_0000883 # Photochemische Verfahren
+https://w3id.org/pmd/co/PMD_0000883 # photochemical process
+https://w3id.org/pmd/co/PMD_0000884 # physical simulation
+https://w3id.org/pmd/co/PMD_0000885 # pole figure
+https://w3id.org/pmd/co/PMD_0000886 # Poliermaschine
+https://w3id.org/pmd/co/PMD_0000886 # polishing machine
+https://w3id.org/pmd/co/PMD_0000888 # polymer
+https://w3id.org/pmd/co/PMD_0000889 # pore growth
+https://w3id.org/pmd/co/PMD_0000890 # connected material entity aggregate
+https://w3id.org/pmd/co/PMD_0000891 # disconnected material entity aggregate
+https://w3id.org/pmd/co/PMD_0000893 # powder
+https://w3id.org/pmd/co/PMD_0000894 # Präzisionsdrehmaschine
+https://w3id.org/pmd/co/PMD_0000894 # precision lathe
+https://w3id.org/pmd/co/PMD_0000895 # Anpressen - Einpressen
+https://w3id.org/pmd/co/PMD_0000895 # pressing on - in
+https://w3id.org/pmd/co/PMD_0000896 # pressure
+https://w3id.org/pmd/co/PMD_0000898 # Druckmessfunktion
+https://w3id.org/pmd/co/PMD_0000898 # pressure measuring function
+https://w3id.org/pmd/co/PMD_0000899 # Urformen
+https://w3id.org/pmd/co/PMD_0000899 # primary shaping
+https://w3id.org/pmd/co/PMD_0000900 # Urformen Durch Additive Fertigung
+https://w3id.org/pmd/co/PMD_0000900 # primary shaping by additive manufacturing
+https://w3id.org/pmd/co/PMD_0000901 # Urformen Durch Schweissen
+https://w3id.org/pmd/co/PMD_0000901 # primary shaping by welding
+https://w3id.org/pmd/co/PMD_0000902 # Urformen Aus Dem Spanförmigen Oder Faserförmigen Zustand
+https://w3id.org/pmd/co/PMD_0000902 # primary shaping from the chip or fiber state
+https://w3id.org/pmd/co/PMD_0000903 # Urformen Aus Dem Gasförmigen Oder Dampfförmigen Zustand
+https://w3id.org/pmd/co/PMD_0000903 # primary shaping from the gaseous or vapor state
+https://w3id.org/pmd/co/PMD_0000904 # Urformen Aus Dem Körnerförmigen Oder Pulverförmigen Zustand
+https://w3id.org/pmd/co/PMD_0000904 # primary shaping from the granular or powdered state
+https://w3id.org/pmd/co/PMD_0000905 # Urformen Aus DemIonisierten Zustand
+https://w3id.org/pmd/co/PMD_0000905 # primary shaping from the ionized state
+https://w3id.org/pmd/co/PMD_0000906 # Urformen Aus Dem Flüssigen Zustand
+https://w3id.org/pmd/co/PMD_0000906 # primary shaping from the liquid state
+https://w3id.org/pmd/co/PMD_0000907 # Urformen Aus Dem Plastischen Zustand
+https://w3id.org/pmd/co/PMD_0000907 # primary shaping from the plastic state
+https://w3id.org/pmd/co/PMD_0000908 # Urformen Aus Dem Breiigen Oder Pastösen Zustand
+https://w3id.org/pmd/co/PMD_0000908 # primary shaping from the pulpy or pasty state
+https://w3id.org/pmd/co/PMD_0000909 # Projekt
+https://w3id.org/pmd/co/PMD_0000909 # project
+https://w3id.org/pmd/co/PMD_0000910 # rebound hardness
+https://w3id.org/pmd/co/PMD_0000911 # reflectivity
+https://w3id.org/pmd/co/PMD_0000913 # Reinforcement Learning
+https://w3id.org/pmd/co/PMD_0000913 # reinforcement learning
+https://w3id.org/pmd/co/PMD_0000914 # Abtragen
+https://w3id.org/pmd/co/PMD_0000914 # removing
+https://w3id.org/pmd/co/PMD_0000915 # responding process
+https://w3id.org/pmd/co/PMD_0000916 # Rheologische Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000916 # rheological property analyzing process
+https://w3id.org/pmd/co/PMD_0000917 # Rheometer
+https://w3id.org/pmd/co/PMD_0000917 # rheometer
+https://w3id.org/pmd/co/PMD_0000918 # Rheometry
+https://w3id.org/pmd/co/PMD_0000918 # rheometry
+https://w3id.org/pmd/co/PMD_0000919 # Probe-Rolle
+https://w3id.org/pmd/co/PMD_0000919 # sample role
+https://w3id.org/pmd/co/PMD_0000920 # saw
+https://w3id.org/pmd/co/PMD_0000922 # Rasterelektronenmikroskop
+https://w3id.org/pmd/co/PMD_0000922 # scanning electron microscope
+https://w3id.org/pmd/co/PMD_0000923 # Schere
+https://w3id.org/pmd/co/PMD_0000923 # pair of scissors
+https://w3id.org/pmd/co/PMD_0000924 # scratch hardness
+https://w3id.org/pmd/co/PMD_0000925 # Kratzprüfmaschine
+https://w3id.org/pmd/co/PMD_0000925 # scratch testing machine
+https://w3id.org/pmd/co/PMD_0000926 # Ritzhärteprüfverfahren
+https://w3id.org/pmd/co/PMD_0000926 # scratch testing process
+https://w3id.org/pmd/co/PMD_0000927 # Trennen
+https://w3id.org/pmd/co/PMD_0000927 # separating
+https://w3id.org/pmd/co/PMD_0000928 # Schubprüfmaschine
+https://w3id.org/pmd/co/PMD_0000928 # shear testing machine
+https://w3id.org/pmd/co/PMD_0000929 # Schubprüfverfahren
+https://w3id.org/pmd/co/PMD_0000929 # shear testing process
+https://w3id.org/pmd/co/PMD_0000931 # simulation method specification
+https://w3id.org/pmd/co/PMD_0000932 # Simulationsknoten
+https://w3id.org/pmd/co/PMD_0000932 # simulation device
+https://w3id.org/pmd/co/PMD_0000933 # Simulationsprozess
+https://w3id.org/pmd/co/PMD_0000933 # simulation process
+https://w3id.org/pmd/co/PMD_0000934 # Sintern
+https://w3id.org/pmd/co/PMD_0000934 # sintering
+https://w3id.org/pmd/co/PMD_0000935 # Formatkreissäge
+https://w3id.org/pmd/co/PMD_0000935 # sizing saw
+https://w3id.org/pmd/co/PMD_0000936 # Schlitten
+https://w3id.org/pmd/co/PMD_0000936 # slide
+https://w3id.org/pmd/co/PMD_0000937 # Lötgerät
+https://w3id.org/pmd/co/PMD_0000937 # soldering device
+https://w3id.org/pmd/co/PMD_0000939 # Lötfunktion
+https://w3id.org/pmd/co/PMD_0000939 # soldering function
+https://w3id.org/pmd/co/PMD_0000940 # Abplatzprüfmaschine
+https://w3id.org/pmd/co/PMD_0000940 # spalling testing machine
+https://w3id.org/pmd/co/PMD_0000941 # Abplatzprüfverfahren
+https://w3id.org/pmd/co/PMD_0000941 # spalling testing process
+https://w3id.org/pmd/co/PMD_0000942 # specific surface area
+https://w3id.org/pmd/co/PMD_0000943 # Prüfling-Rolle
+https://w3id.org/pmd/co/PMD_0000943 # specimen role
+https://w3id.org/pmd/co/PMD_0000944 # Spektrometer
+https://w3id.org/pmd/co/PMD_0000944 # spectrometer
+https://w3id.org/pmd/co/PMD_0000945 # Spektroskopie Verfahren
+https://w3id.org/pmd/co/PMD_0000945 # spectroscopy process
+https://w3id.org/pmd/co/PMD_0000946 # spectrum
+https://w3id.org/pmd/co/PMD_0000947 # speed of sound
+https://w3id.org/pmd/co/PMD_0000949 # stiffness
+https://w3id.org/pmd/co/PMD_0000950 # stimulating process
+https://w3id.org/pmd/co/PMD_0000951 # stochastic simulation
+https://w3id.org/pmd/co/PMD_0000952 # strength
+https://w3id.org/pmd/co/PMD_0000953 # structural and chemical decay
+https://w3id.org/pmd/co/PMD_0000955 # structural material
+https://w3id.org/pmd/co/PMD_0000956 # Strukturoptimierungssimulation
+https://w3id.org/pmd/co/PMD_0000956 # structural optimization simulation
+https://w3id.org/pmd/co/PMD_0000957 # Struktur Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000957 # structural property analyzing process
+https://w3id.org/pmd/co/PMD_0000959 # Einstellungsgegenstandsrolle
+https://w3id.org/pmd/co/PMD_0000959 # subject of adjustment role
+https://w3id.org/pmd/co/PMD_0000960 # Kalibrierungsgegenstandsrolle
+https://w3id.org/pmd/co/PMD_0000960 # subject of calibration role
+https://w3id.org/pmd/co/PMD_0000961 # sublimation point
+https://w3id.org/pmd/co/PMD_0000962 # supercritical fluid chromatography process
+https://w3id.org/pmd/co/PMD_0000962 # Überkritische Fluidchromatographie Verfahren
+https://w3id.org/pmd/co/PMD_0000963 # supercritical fluid chromatography system
+https://w3id.org/pmd/co/PMD_0000963 # Überkritisches Fluid-Chromatographiesystem
+https://w3id.org/pmd/co/PMD_0000964 # supervised learning
+https://w3id.org/pmd/co/PMD_0000964 # supervised machine learning
+https://w3id.org/pmd/co/PMD_0000965 # surface layer (fiat object part)
+https://w3id.org/pmd/co/PMD_0000966 # Oberflächenprofilometer
+https://w3id.org/pmd/co/PMD_0000966 # surface profilometer
+https://w3id.org/pmd/co/PMD_0000967 # temperature
+https://w3id.org/pmd/co/PMD_0000968 # Temperaturänderungswerkzeug
+https://w3id.org/pmd/co/PMD_0000968 # temperature change device
+https://w3id.org/pmd/co/PMD_0000969 # Temperaturänderungsfunktion
+https://w3id.org/pmd/co/PMD_0000969 # temperature change function
+https://w3id.org/pmd/co/PMD_0000971 # Temperaturmessfunktion
+https://w3id.org/pmd/co/PMD_0000971 # temperature measuring function
+https://w3id.org/pmd/co/PMD_0000972 # temporal property
+https://w3id.org/pmd/co/PMD_0000973 # Zugprüfmaschine
+https://w3id.org/pmd/co/PMD_0000973 # tensile testing machine
+https://w3id.org/pmd/co/PMD_0000974 # Zugprüfverfahren
+https://w3id.org/pmd/co/PMD_0000974 # tensile testing process
+https://w3id.org/pmd/co/PMD_0000975 # Proben-Rolle
+https://w3id.org/pmd/co/PMD_0000975 # test piece role
+https://w3id.org/pmd/co/PMD_0000976 # Testfunktion
+https://w3id.org/pmd/co/PMD_0000976 # testing function
+https://w3id.org/pmd/co/PMD_0000977 # Textiles Fügen
+https://w3id.org/pmd/co/PMD_0000977 # textile joining
+https://w3id.org/pmd/co/PMD_0000978 # thermal conductivity
+https://w3id.org/pmd/co/PMD_0000979 # Wärmeleitfähigkeitsmessverfahren
+https://w3id.org/pmd/co/PMD_0000979 # thermal conductivity measurement process
+https://w3id.org/pmd/co/PMD_0000980 # Wärmeleitfähigkeitsmessfunktion
+https://w3id.org/pmd/co/PMD_0000980 # thermal conductivity measuring function
+https://w3id.org/pmd/co/PMD_0000981 # thermal property
+https://w3id.org/pmd/co/PMD_0000982 # Thermische Eigenschaften Analyseverfahren
+https://w3id.org/pmd/co/PMD_0000982 # thermal property analyzing process
+https://w3id.org/pmd/co/PMD_0000983 # Thermoelement
+https://w3id.org/pmd/co/PMD_0000983 # thermocouple
+https://w3id.org/pmd/co/PMD_0000984 # Thermocycler
+https://w3id.org/pmd/co/PMD_0000984 # thermocycler
+https://w3id.org/pmd/co/PMD_0000986 # Thermogravimetrische Analyse-Verfahren
+https://w3id.org/pmd/co/PMD_0000986 # thermogravimetric analysis process
+https://w3id.org/pmd/co/PMD_0000987 # Thermomechanische Analyse-Verfahren
+https://w3id.org/pmd/co/PMD_0000987 # thermomechanical analysis process
+https://w3id.org/pmd/co/PMD_0000988 # Thermomechanisches Behandeln
+https://w3id.org/pmd/co/PMD_0000988 # thermomechanical treatment
+https://w3id.org/pmd/co/PMD_0000989 # Dünnschichtchromatographie Verfahren
+https://w3id.org/pmd/co/PMD_0000989 # thin-layer chromatography process
+https://w3id.org/pmd/co/PMD_0000990 # Dünnschichtchromatographiesystem
+https://w3id.org/pmd/co/PMD_0000990 # thin layer chromatography system
+https://w3id.org/pmd/co/PMD_0000991 # 3D-Drucker
+https://w3id.org/pmd/co/PMD_0000991 # 3d printer
+https://w3id.org/pmd/co/PMD_0000992 # time series
+https://w3id.org/pmd/co/PMD_0000994 # Torsionsprüfmaschine
+https://w3id.org/pmd/co/PMD_0000994 # torsion testing machine
+https://w3id.org/pmd/co/PMD_0000995 # Torsionsprüfverfahren
+https://w3id.org/pmd/co/PMD_0000995 # torsion testing process
+https://w3id.org/pmd/co/PMD_0000996 # triple point
+https://w3id.org/pmd/co/PMD_0000997 # Ultraschallreiniger
+https://w3id.org/pmd/co/PMD_0000997 # ultrasonic cleaner
+https://w3id.org/pmd/co/PMD_0000998 # Ultraviolett-Visible-Spektrophotometer
+https://w3id.org/pmd/co/PMD_0000998 # ultraviolet visible spectrophotometer
+https://w3id.org/pmd/co/PMD_0001003 # Unsupervised Learning
+https://w3id.org/pmd/co/PMD_0001003 # unsupervised machine learning
+https://w3id.org/pmd/co/PMD_0001004 # Viskosimeter
+https://w3id.org/pmd/co/PMD_0001004 # viscometer
+https://w3id.org/pmd/co/PMD_0001005 # Viskosimetrie
+https://w3id.org/pmd/co/PMD_0001005 # viscometry
+https://w3id.org/pmd/co/PMD_0001006 # Wasseraufbereitungssystem
+https://w3id.org/pmd/co/PMD_0001006 # water purification system
+https://w3id.org/pmd/co/PMD_0001007 # Wasserstrahlschneider
+https://w3id.org/pmd/co/PMD_0001007 # waterjet cutter
+https://w3id.org/pmd/co/PMD_0001008 # waver irradiation
+https://w3id.org/pmd/co/PMD_0001009 # Verschleißprüfmaschine
+https://w3id.org/pmd/co/PMD_0001009 # wear testing machine
+https://w3id.org/pmd/co/PMD_0001010 # Verschleißprüfverfahren
+https://w3id.org/pmd/co/PMD_0001010 # wear testing process
+https://w3id.org/pmd/co/PMD_0001011 # Schweißgerät
+https://w3id.org/pmd/co/PMD_0001011 # welding device
+https://w3id.org/pmd/co/PMD_0001013 # Schweißfunktion
+https://w3id.org/pmd/co/PMD_0001013 # welding function
+https://w3id.org/pmd/co/PMD_0001014 # Röntgen Analyseverfahren
+https://w3id.org/pmd/co/PMD_0001014 # x-ray analyzing process
+https://w3id.org/pmd/co/PMD_0001015 # Röntgen-Computertomographie
+https://w3id.org/pmd/co/PMD_0001015 # x-ray computed tomography
+https://w3id.org/pmd/co/PMD_0001016 # Beugungsprozess
+https://w3id.org/pmd/co/PMD_0001016 # x-ray diffraction process
+https://w3id.org/pmd/co/PMD_0001017 # Röntgen-Mapping
+https://w3id.org/pmd/co/PMD_0001017 # x-ray mapping
+https://w3id.org/pmd/co/PMD_0001018 # Röntgen-Mikroanalyse
+https://w3id.org/pmd/co/PMD_0001018 # x-ray microanalysis
+https://w3id.org/pmd/co/PMD_0001019 # Röntgenspektroskopie
+https://w3id.org/pmd/co/PMD_0001019 # x-ray spectroscopy
+https://w3id.org/pmd/co/PMD_0001020 # Röntgenbeugungsgerät
+https://w3id.org/pmd/co/PMD_0001020 # x-ray diffractometer
+https://w3id.org/pmd/co/PMD_0001021 # Röntgenanalysator
+https://w3id.org/pmd/co/PMD_0001021 # x-ray analyzer
+https://w3id.org/pmd/co/PMD_0001022 # Röntgen-Computertomographiesystem
+https://w3id.org/pmd/co/PMD_0001022 # x-ray computed tomography system
+https://w3id.org/pmd/co/PMD_0001023 # Röntgenkartierungsgerät
+https://w3id.org/pmd/co/PMD_0001023 # x-ray mapping device
+https://w3id.org/pmd/co/PMD_0001024 # Röntgenmikroanalyssystem
+https://w3id.org/pmd/co/PMD_0001024 # x-ray microanalysis system
+https://w3id.org/pmd/co/PMD_0001025 # Analyse
+https://w3id.org/pmd/co/PMD_0001025 # assay
+https://w3id.org/pmd/co/PMD_0020000 # phase (spatial)
+https://w3id.org/pmd/co/PMD_0020001 # filler role
+https://w3id.org/pmd/co/PMD_0020002 # precipitate role
+https://w3id.org/pmd/co/PMD_0020003 # crystal
+https://w3id.org/pmd/co/PMD_0020004 # chemical composition specification
+https://w3id.org/pmd/co/PMD_0020023 # metallic grain structures
+https://w3id.org/pmd/co/PMD_0020024 # hydrogen bond
+https://w3id.org/pmd/co/PMD_0020025 # pure substance
+https://w3id.org/pmd/co/PMD_0020026 # portion of iron
+https://w3id.org/pmd/co/PMD_0020028 # portion of indium
+https://w3id.org/pmd/co/PMD_0020029 # portion of chromium
+https://w3id.org/pmd/co/PMD_0020030 # portion of carbon
+https://w3id.org/pmd/co/PMD_0020031 # portion of germanium
+https://w3id.org/pmd/co/PMD_0020032 # portion of tungsten
+https://w3id.org/pmd/co/PMD_0020033 # portion of erbium
+https://w3id.org/pmd/co/PMD_0020034 # portion of molybdenum
+https://w3id.org/pmd/co/PMD_0020035 # portion of niobium
+https://w3id.org/pmd/co/PMD_0020036 # portion of rhenium
+https://w3id.org/pmd/co/PMD_0020037 # portion of lithium
+https://w3id.org/pmd/co/PMD_0020038 # portion of nitrogen
+https://w3id.org/pmd/co/PMD_0020039 # portion of cobalt
+https://w3id.org/pmd/co/PMD_0020040 # portion of gold
+https://w3id.org/pmd/co/PMD_0020041 # portion of argon
+https://w3id.org/pmd/co/PMD_0020042 # portion of cadmium
+https://w3id.org/pmd/co/PMD_0020043 # portion of barium
+https://w3id.org/pmd/co/PMD_0020044 # portion of tantalum
+https://w3id.org/pmd/co/PMD_0020045 # portion of antimony
+https://w3id.org/pmd/co/PMD_0020046 # portion of potassium
+https://w3id.org/pmd/co/PMD_0020047 # portion of phosphorus
+https://w3id.org/pmd/co/PMD_0020048 # portion of boron
+https://w3id.org/pmd/co/PMD_0020049 # portion of helium
+https://w3id.org/pmd/co/PMD_0020050 # portion of silicon
+https://w3id.org/pmd/co/PMD_0020051 # portion of nickel
+https://w3id.org/pmd/co/PMD_0020052 # portion of yttrium
+https://w3id.org/pmd/co/PMD_0020053 # portion of zirconium
+https://w3id.org/pmd/co/PMD_0020054 # portion of copper
+https://w3id.org/pmd/co/PMD_0020055 # portion of bohrium
+https://w3id.org/pmd/co/PMD_0020056 # portion of fluorine
+https://w3id.org/pmd/co/PMD_0020057 # portion of platinum
+https://w3id.org/pmd/co/PMD_0020058 # portion of cerium
+https://w3id.org/pmd/co/PMD_0020059 # portion of sulfur
+https://w3id.org/pmd/co/PMD_0020060 # portion of lead
+https://w3id.org/pmd/co/PMD_0020061 # portion of krypton
+https://w3id.org/pmd/co/PMD_0020062 # portion of bismuth
+https://w3id.org/pmd/co/PMD_0020063 # portion of neon
+https://w3id.org/pmd/co/PMD_0020064 # portion of thallium
+https://w3id.org/pmd/co/PMD_0020065 # portion of selenium
+https://w3id.org/pmd/co/PMD_0020066 # portion of ruthenium
+https://w3id.org/pmd/co/PMD_0020067 # portion of magnesium
+https://w3id.org/pmd/co/PMD_0020068 # portion of zinc
+https://w3id.org/pmd/co/PMD_0020069 # portion of mercury
+https://w3id.org/pmd/co/PMD_0020070 # portion of xenon
+https://w3id.org/pmd/co/PMD_0020071 # portion of aluminium
+https://w3id.org/pmd/co/PMD_0020072 # portion of sodium
+https://w3id.org/pmd/co/PMD_0020073 # portion of iodine
+https://w3id.org/pmd/co/PMD_0020074 # portion of caesium
+https://w3id.org/pmd/co/PMD_0020075 # portion of chlorine
+https://w3id.org/pmd/co/PMD_0020076 # portion of silver
+https://w3id.org/pmd/co/PMD_0020077 # portion of samarium
+https://w3id.org/pmd/co/PMD_0020078 # portion of manganese
+https://w3id.org/pmd/co/PMD_0020079 # portion of arsenic
+https://w3id.org/pmd/co/PMD_0020080 # portion of beryllium
+https://w3id.org/pmd/co/PMD_0020081 # portion of calcium
+https://w3id.org/pmd/co/PMD_0020082 # portion of neodymium
+https://w3id.org/pmd/co/PMD_0020083 # portion of hydrogen
+https://w3id.org/pmd/co/PMD_0020084 # portion of osmium
+https://w3id.org/pmd/co/PMD_0020085 # portion of iridium
+https://w3id.org/pmd/co/PMD_0020086 # portion of gallium
+https://w3id.org/pmd/co/PMD_0020087 # portion of bromine
+https://w3id.org/pmd/co/PMD_0020088 # portion of tin
+https://w3id.org/pmd/co/PMD_0020089 # portion of hafnium
+https://w3id.org/pmd/co/PMD_0020090 # portion of uranium
+https://w3id.org/pmd/co/PMD_0020091 # portion of oxygen
+https://w3id.org/pmd/co/PMD_0020092 # portion of palladium
+https://w3id.org/pmd/co/PMD_0020093 # portion of vanadium
+https://w3id.org/pmd/co/PMD_0020094 # portion of scandium
+https://w3id.org/pmd/co/PMD_0020095 # portion of titanium
+https://w3id.org/pmd/co/PMD_0020096 # steel
+https://w3id.org/pmd/co/PMD_0020098 # nature constant
+https://w3id.org/pmd/co/PMD_0020099 # bravais lattice (3d)
+https://w3id.org/pmd/co/PMD_0020101 # proportion
+https://w3id.org/pmd/co/PMD_0020102 # mass proportion
+https://w3id.org/pmd/co/PMD_0020103 # molar proportion
+https://w3id.org/pmd/co/PMD_0020104 # volume proportion
+https://w3id.org/pmd/co/PMD_0020105 # mineral
+https://w3id.org/pmd/co/PMD_0020106 # polycrystal
+https://w3id.org/pmd/co/PMD_0020108 # graphite
+https://w3id.org/pmd/co/PMD_0020112 # grain size distribution
+https://w3id.org/pmd/co/PMD_0020115 # aerosol
+https://w3id.org/pmd/co/PMD_0020116 # aggregate state value
+https://w3id.org/pmd/co/PMD_0020126 # foam
+https://w3id.org/pmd/co/PMD_0020128 # thermodynamic system
+https://w3id.org/pmd/co/PMD_0020129 # reversible process
+https://w3id.org/pmd/co/PMD_0020131 # intensive quality
+https://w3id.org/pmd/co/PMD_0020132 # size
+https://w3id.org/pmd/co/PMD_0020133 # mass
+https://w3id.org/pmd/co/PMD_0020134 # stimulus role
+https://w3id.org/pmd/co/PMD_0020135 # stimulation target role
+https://w3id.org/pmd/co/PMD_0020138 # lot
+https://w3id.org/pmd/co/PMD_0020139 # Schmelze
+https://w3id.org/pmd/co/PMD_0020139 # melt
+https://w3id.org/pmd/co/PMD_0020142 # energy
+https://w3id.org/pmd/co/PMD_0020143 # process chain
+https://w3id.org/pmd/co/PMD_0020144 # product (chemical reaction)
+https://w3id.org/pmd/co/PMD_0020145 # educt
+https://w3id.org/pmd/co/PMD_0020146 # catalyst
+https://w3id.org/pmd/co/PMD_0020148 # extensive quality
+https://w3id.org/pmd/co/PMD_0020150 # volume
+https://w3id.org/pmd/co/PMD_0020151 # internal energy
+https://w3id.org/pmd/co/PMD_0020152 # component
+https://w3id.org/pmd/co/PMD_0020153 # technical system
+https://w3id.org/pmd/co/PMD_0020155 # interatomic interaction energy
+https://w3id.org/pmd/co/PMD_0020166 # heat (metallurgy)
+https://w3id.org/pmd/co/PMD_0020200 # force
+https://w3id.org/pmd/co/PMD_0020202 # crack
+https://w3id.org/pmd/co/PMD_0020203 # notch
+https://w3id.org/pmd/co/PMD_0020204 # pore
+https://w3id.org/pmd/co/PMD_0020205 # defect (role)
+https://w3id.org/pmd/co/PMD_0040001 # Length
+https://w3id.org/pmd/co/PMD_0050000 # bond
+https://w3id.org/pmd/co/PMD_0050001 # covalent bond
+https://w3id.org/pmd/co/PMD_0050002 # metallic bond
+https://w3id.org/pmd/co/PMD_0050003 # ionic bond
+https://w3id.org/pmd/co/PMD_0050004 # thermoplastics
+https://w3id.org/pmd/co/PMD_0050005 # polyethylene
+https://w3id.org/pmd/co/PMD_0050006 # low-density polyethylene
+https://w3id.org/pmd/co/PMD_0050007 # high-density polyethylene
+https://w3id.org/pmd/co/PMD_0050008 # linear low-density polyethylene
+https://w3id.org/pmd/co/PMD_0050009 # polypropylene
+https://w3id.org/pmd/co/PMD_0050010 # isotactic polypropylene
+https://w3id.org/pmd/co/PMD_0050011 # syndiotactic polypropylene
+https://w3id.org/pmd/co/PMD_0050012 # atactic polypropylene
+https://w3id.org/pmd/co/PMD_0050013 # polyvinyl chloride
+https://w3id.org/pmd/co/PMD_0050014 # Rigid PVC (uPVC)
+https://w3id.org/pmd/co/PMD_0050015 # Flexible PVC (fPVC)
+https://w3id.org/pmd/co/PMD_0050016 # polystyrene
+https://w3id.org/pmd/co/PMD_0050017 # general purpose polystyrene
+https://w3id.org/pmd/co/PMD_0050018 # high impact polystyrene
+https://w3id.org/pmd/co/PMD_0050019 # polyethylene terephthalate
+https://w3id.org/pmd/co/PMD_0050020 # Amorphous PET (APET)
+https://w3id.org/pmd/co/PMD_0050021 # Crystalline PET (CPET)
+https://w3id.org/pmd/co/PMD_0050022 # thermosetting polymers
+https://w3id.org/pmd/co/PMD_0050023 # epoxy resins
+https://w3id.org/pmd/co/PMD_0050024 # bisphenol a epoxy
+https://w3id.org/pmd/co/PMD_0050025 # novolac epoxy
+https://w3id.org/pmd/co/PMD_0050026 # phenolic resins
+https://w3id.org/pmd/co/PMD_0050027 # phenol-formaldehyde resin
+https://w3id.org/pmd/co/PMD_0050028 # melamine formaldehyde
+https://w3id.org/pmd/co/PMD_0050029 # urea formaldehyde
+https://w3id.org/pmd/co/PMD_0050030 # elastomers
+https://w3id.org/pmd/co/PMD_0050031 # natural rubber
+https://w3id.org/pmd/co/PMD_0050032 # synthetic rubber
+https://w3id.org/pmd/co/PMD_0050033 # styrene-butadiene rubber
+https://w3id.org/pmd/co/PMD_0050034 # nitrile butadiene rubber
+https://w3id.org/pmd/co/PMD_0050035 # ethylene propylene diene monomer
+https://w3id.org/pmd/co/PMD_0050036 # biodegradable polymers
+https://w3id.org/pmd/co/PMD_0050037 # polylactic acid
+https://w3id.org/pmd/co/PMD_0050038 # polyhydroxyalkanoates
+https://w3id.org/pmd/co/PMD_0050039 # polybutylene succinate
+https://w3id.org/pmd/co/PMD_0050040 # natural ceramics
+https://w3id.org/pmd/co/PMD_0050041 # silicate ceramics
+https://w3id.org/pmd/co/PMD_0050042 # clay-based ceramics
+https://w3id.org/pmd/co/PMD_0050043 # earthenware
+https://w3id.org/pmd/co/PMD_0050044 # stoneware
+https://w3id.org/pmd/co/PMD_0050045 # porcelain
+https://w3id.org/pmd/co/PMD_0050046 # aluminosilicates
+https://w3id.org/pmd/co/PMD_0050047 # mullite
+https://w3id.org/pmd/co/PMD_0050048 # kaolinite
+https://w3id.org/pmd/co/PMD_0050049 # non-clay ceramics
+https://w3id.org/pmd/co/PMD_0050050 # glass-ceramics
+https://w3id.org/pmd/co/PMD_0050052 # leucite-based glass-ceramics
+https://w3id.org/pmd/co/PMD_0050053 # fritted ceramics
+https://w3id.org/pmd/co/PMD_0050054 # technical ceramics
+https://w3id.org/pmd/co/PMD_0050055 # oxide ceramics
+https://w3id.org/pmd/co/PMD_0050056 # Alumina (Al₂O₃)
+https://w3id.org/pmd/co/PMD_0050057 # Zirconia (ZrO₂)
+https://w3id.org/pmd/co/PMD_0050058 # Yttria-Stabilized Zirconia (YSZ)
+https://w3id.org/pmd/co/PMD_0050059 # magnesia-stabilized zirconia
+https://w3id.org/pmd/co/PMD_0050060 # Titania (TiO₂)
+https://w3id.org/pmd/co/PMD_0050061 # Beryllia (BeO)
+https://w3id.org/pmd/co/PMD_0050062 # Non-Oxide Ceramics
+https://w3id.org/pmd/co/PMD_0050063 # Carbide Ceramics
+https://w3id.org/pmd/co/PMD_0050064 # Silicon Carbide (SiC)
+https://w3id.org/pmd/co/PMD_0050065 # Tungsten Carbide (WC)
+https://w3id.org/pmd/co/PMD_0050066 # Boron Carbide (B₄C)
+https://w3id.org/pmd/co/PMD_0050067 # Nitride Ceramics
+https://w3id.org/pmd/co/PMD_0050068 # Silicon Nitride (Si₃N₄)
+https://w3id.org/pmd/co/PMD_0050069 # Aluminum Nitride (AlN)
+https://w3id.org/pmd/co/PMD_0050070 # Boron Nitride (BN)
+https://w3id.org/pmd/co/PMD_0050071 # boride ceramics
+https://w3id.org/pmd/co/PMD_0050072 # Titanium Diboride (TiB₂)
+https://w3id.org/pmd/co/PMD_0050073 # Zirconium Diboride (ZrB₂)
+https://w3id.org/pmd/co/PMD_0050074 # composite ceramics
+https://w3id.org/pmd/co/PMD_0050075 # oxide-oxide composites
+https://w3id.org/pmd/co/PMD_0050076 # alumina matrix composites
+https://w3id.org/pmd/co/PMD_0050077 # zirconia matrix composites
+https://w3id.org/pmd/co/PMD_0050078 # non-oxide composites
+https://w3id.org/pmd/co/PMD_0050079 # SiC Matrix Composites
+https://w3id.org/pmd/co/PMD_0050080 # C-SiC Composites (Carbon-Silicon Carbide)
+https://w3id.org/pmd/co/PMD_0050081 # electroceramics
+https://w3id.org/pmd/co/PMD_0050082 # dielectric ceramics
+https://w3id.org/pmd/co/PMD_0050083 # Barium Titanate (BaTiO₃)
+https://w3id.org/pmd/co/PMD_0050084 # lead zirconate titanate (pzt)
+https://w3id.org/pmd/co/PMD_0050085 # magnetic ceramics (ferrites)
+https://w3id.org/pmd/co/PMD_0050086 # soft ferrites
+https://w3id.org/pmd/co/PMD_0050087 # hard ferrites
+https://w3id.org/pmd/co/PMD_0050088 # superconducting ceramics
+https://w3id.org/pmd/co/PMD_0050089 # yttrium barium copper oxide
+https://w3id.org/pmd/co/PMD_0050090 # bismuth strontium calcium copper oxide
+https://w3id.org/pmd/co/PMD_0050091 # bioceramics
+https://w3id.org/pmd/co/PMD_0050092 # bioinert ceramics
+https://w3id.org/pmd/co/PMD_0050093 # alumina-based ceramics
+https://w3id.org/pmd/co/PMD_0050094 # zirconia-based ceramics
+https://w3id.org/pmd/co/PMD_0050095 # bioactive ceramics
+https://w3id.org/pmd/co/PMD_0050096 # hydroxyapatite
+https://w3id.org/pmd/co/PMD_0050097 # bioglass
+https://w3id.org/pmd/co/PMD_0050098 # bioresorbable ceramics
+https://w3id.org/pmd/co/PMD_0050099 # tricalcium phosphate
+https://w3id.org/pmd/co/PMD_0050100 # calcium sulfate
+https://w3id.org/pmd/co/PMD_0050101 # silicate glasses
+https://w3id.org/pmd/co/PMD_0050102 # soda-lime glass
+https://w3id.org/pmd/co/PMD_0050103 # clear float glass
+https://w3id.org/pmd/co/PMD_0050104 # patterned glass
+https://w3id.org/pmd/co/PMD_0050105 # tinted glass
+https://w3id.org/pmd/co/PMD_0050106 # borosilicate glass
+https://w3id.org/pmd/co/PMD_0050107 # pyrex-type glass
+https://w3id.org/pmd/co/PMD_0050108 # aluminosilicate glass
+https://w3id.org/pmd/co/PMD_0050109 # lead glass
+https://w3id.org/pmd/co/PMD_0050110 # potash lead glass
+https://w3id.org/pmd/co/PMD_0050111 # barium glass
+https://w3id.org/pmd/co/PMD_0050112 # high-temperature resistant glass
+https://w3id.org/pmd/co/PMD_0050113 # non-silicate glasses
+https://w3id.org/pmd/co/PMD_0050114 # phosphate glass
+https://w3id.org/pmd/co/PMD_0050115 # borate glass
+https://w3id.org/pmd/co/PMD_0050116 # germanate glass
+https://w3id.org/pmd/co/PMD_0050118 # optical glass
+https://w3id.org/pmd/co/PMD_0050119 # fused silica glass
+https://w3id.org/pmd/co/PMD_0050120 # crown glass
+https://w3id.org/pmd/co/PMD_0050121 # flint glass
+https://w3id.org/pmd/co/PMD_0050122 # specialty glasses
+https://w3id.org/pmd/co/PMD_0050123 # chemically strengthened glass
+https://w3id.org/pmd/co/PMD_0050124 # ion-exchanged glass
+https://w3id.org/pmd/co/PMD_0050125 # aluminosilicate gorilla glass
+https://w3id.org/pmd/co/PMD_0050126 # toughened (tempered) glass
+https://w3id.org/pmd/co/PMD_0050127 # laminated glass
+https://w3id.org/pmd/co/PMD_0050128 # electrochromic glass
+https://w3id.org/pmd/co/PMD_0050129 # photochromic glass
+https://w3id.org/pmd/co/PMD_0050130 # thermochromic glass
+https://w3id.org/pmd/co/PMD_0050131 # lithium disilicate glass-ceramics
+https://w3id.org/pmd/co/PMD_0050132 # transparent glass-ceramics
+https://w3id.org/pmd/co/PMD_0050133 # functional glass
+https://w3id.org/pmd/co/PMD_0050134 # conductive glass
+https://w3id.org/pmd/co/PMD_0050135 # indium tin oxide coated glass
+https://w3id.org/pmd/co/PMD_0050136 # fluorine-doped tin oxide glass
+https://w3id.org/pmd/co/PMD_0050137 # magnetic glass
+https://w3id.org/pmd/co/PMD_0050138 # iron-borosilicate glass
+https://w3id.org/pmd/co/PMD_0050139 # cobalt-borosilicate glass
+https://w3id.org/pmd/co/PMD_0050140 # nonlinear optical glass
+https://w3id.org/pmd/co/PMD_0050141 # chalcogenide glass
+https://w3id.org/pmd/co/PMD_0050142 # tellurite glass
+https://w3id.org/pmd/co/PMD_0050143 # bioactive glass
+https://w3id.org/pmd/co/PMD_0050144 # silicate-based bioactive glass
+https://w3id.org/pmd/co/PMD_0050145 # 45S5 Bioglass
+https://w3id.org/pmd/co/PMD_0050146 # S53P4 Bioglass
+https://w3id.org/pmd/co/PMD_0050147 # phosphate-based bioactive glass
+https://w3id.org/pmd/co/PMD_0050148 # borate-based bioactive glass
+https://w3id.org/pmd/co/PMD_0050149 # amorphous metal glass
+https://w3id.org/pmd/co/PMD_0050150 # iron-based metallic glass
+https://w3id.org/pmd/co/PMD_0050151 # magnesium-based metallic glass
+https://w3id.org/pmd/co/PMD_0050152 # zirconium-based metallic glass
+https://w3id.org/pmd/co/PMD_0060005 # categorical measurement datum
+https://w3id.org/pmd/co/PMD_0060006 # device specification
+https://w3id.org/pmd/co/PMD_0060007 # material specification
+https://w3id.org/pmd/co/PMD_0060008 # recipe
+https://w3id.org/pmd/co/PMD_0060009 # specification datum
