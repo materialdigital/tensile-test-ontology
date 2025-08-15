@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                982fc54435e8eabbcf4629f2f2f088a5a2d6892374bd68475d1b2666185b1f22
+CONFIG_HASH=                52dcf35a1c66087d45fa1f9b557a4c7676f0414cb7b9e52f01ce31840b85ef32
 
 
 # ----------------------------------------
@@ -417,6 +417,15 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: pmdco (mirror)
+$(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --base-iri https://w3id.org/pmd/ao \
+		               --subset-decls true --synonym-decls true \
+		               --add-source true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -454,7 +463,7 @@ ifeq ($(MIR),true)
 .PHONY: mirror-pmdco
 .PRECIOUS: $(MIRRORDIR)/pmdco.owl
 mirror-pmdco: | $(TMPDIR)
-	$(ROBOT) convert -I https://w3id.org/pmd/co -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://materialdigital.github.io/core-ontology/ontology.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

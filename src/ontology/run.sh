@@ -74,11 +74,7 @@ if [ -n "$TAG_IN_IMAGE" ]; then
 fi
 ODK_TAG=${ODK_TAG:-latest}
 
-if [ -z "$USE_SINGULARITY" ]; then
-    DEFAULT_MAX_MEM=$(bc <<<"($(docker info --format={{.MemTotal}}) * .9) / (1024*1024*1024)")G
-else
-    DEFAULT_MAX_MEM=8G
-fi
+DEFAULT_MAX_MEM=8G
 ODK_JAVA_OPTS=${ODK_JAVA_OPTS:--Xmx$DEFAULT_MAX_MEM}
 
 ODK_DEBUG=${ODK_DEBUG:-no}
