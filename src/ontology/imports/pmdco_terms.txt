@@ -987,3 +987,111 @@ https://w3id.org/pmd/co/PMD_0060006 # device specification
 https://w3id.org/pmd/co/PMD_0060007 # material specification
 https://w3id.org/pmd/co/PMD_0060008 # recipe
 https://w3id.org/pmd/co/PMD_0060009 # specification datum
+http://purl.obolibrary.org/obo/BFO_0000055 # realizes
+http://purl.obolibrary.org/obo/BFO_0000056 # participates in
+http://purl.obolibrary.org/obo/BFO_0000057 # has participant
+http://purl.obolibrary.org/obo/BFO_0000058 # is concretized by
+http://purl.obolibrary.org/obo/BFO_0000059 # concretizes
+http://purl.obolibrary.org/obo/BFO_0000062 # preceded by
+http://purl.obolibrary.org/obo/BFO_0000063 # precedes
+http://purl.obolibrary.org/obo/BFO_0000066 # occurs in
+http://purl.obolibrary.org/obo/BFO_0000084 # generically depends on
+http://purl.obolibrary.org/obo/BFO_0000101 # is carrier of
+http://purl.obolibrary.org/obo/BFO_0000108 # exists at
+http://purl.obolibrary.org/obo/BFO_0000115 # has member part
+http://purl.obolibrary.org/obo/BFO_0000117 # has occurrent part
+http://purl.obolibrary.org/obo/BFO_0000121 # has temporal part
+http://purl.obolibrary.org/obo/BFO_0000124 # location of
+http://purl.obolibrary.org/obo/BFO_0000127 # material basis of
+http://purl.obolibrary.org/obo/BFO_0000129 # member part of
+http://purl.obolibrary.org/obo/BFO_0000132 # occurrent part of
+http://purl.obolibrary.org/obo/BFO_0000139 # temporal part of
+http://purl.obolibrary.org/obo/BFO_0000153 # temporally projects onto
+http://purl.obolibrary.org/obo/BFO_0000171 # located in
+http://purl.obolibrary.org/obo/BFO_0000176 # continuant part of
+http://purl.obolibrary.org/obo/BFO_0000178 # has continuant part
+http://purl.obolibrary.org/obo/BFO_0000179 # 
+http://purl.obolibrary.org/obo/BFO_0000180 # 
+http://purl.obolibrary.org/obo/BFO_0000183 # environs
+http://purl.obolibrary.org/obo/BFO_0000184 # history of
+http://purl.obolibrary.org/obo/BFO_0000185 # has history
+http://purl.obolibrary.org/obo/BFO_0000194 # specifically depended on by
+http://purl.obolibrary.org/obo/BFO_0000195 # specifically depends on
+http://purl.obolibrary.org/obo/BFO_0000196 # bearer of
+http://purl.obolibrary.org/obo/BFO_0000197 # inheres in
+http://purl.obolibrary.org/obo/BFO_0000199 # occupies temporal region
+http://purl.obolibrary.org/obo/BFO_0000200 # occupies spatiotemporal region
+http://purl.obolibrary.org/obo/BFO_0000210 # occupies spatial region
+http://purl.obolibrary.org/obo/BFO_0000216 # spatially projects onto
+http://purl.obolibrary.org/obo/BFO_0000218 # has material basis
+http://purl.obolibrary.org/obo/BFO_0000221 # first instant of
+http://purl.obolibrary.org/obo/BFO_0000222 # has first instant
+http://purl.obolibrary.org/obo/BFO_0000223 # last instant of
+http://purl.obolibrary.org/obo/BFO_0000224 # has last instant
+http://purl.obolibrary.org/obo/IAO_0000111 # 
+http://purl.obolibrary.org/obo/IAO_0000112 # 
+http://purl.obolibrary.org/obo/IAO_0000114 # Has Curation Status
+http://purl.obolibrary.org/obo/IAO_0000115 # 
+http://purl.obolibrary.org/obo/IAO_0000116 # 
+http://purl.obolibrary.org/obo/IAO_0000117 # Term Editor
+http://purl.obolibrary.org/obo/IAO_0000118 # 
+http://purl.obolibrary.org/obo/IAO_0000119 # Definition Source
+http://purl.obolibrary.org/obo/IAO_0000136 # is about
+http://purl.obolibrary.org/obo/IAO_0000219 # denotes
+http://purl.obolibrary.org/obo/IAO_0000221 # is quality measurement of
+http://purl.obolibrary.org/obo/IAO_0000233 # 
+http://purl.obolibrary.org/obo/IAO_0000234 # 
+http://purl.obolibrary.org/obo/IAO_0000235 # denoted by
+http://purl.obolibrary.org/obo/IAO_0000412 # Imported From
+http://purl.obolibrary.org/obo/IAO_0000417 # is quality measured as
+http://purl.obolibrary.org/obo/IAO_0000600 # 
+http://purl.obolibrary.org/obo/IAO_0000601 # 
+http://purl.obolibrary.org/obo/IAO_0000602 # 
+http://purl.obolibrary.org/obo/IAO_0010000 # 
+http://purl.obolibrary.org/obo/chebi#3_STAR # 
+http://purl.org/dc/elements/1.1/contributor # 
+http://purl.org/dc/elements/1.1/description # 
+http://purl.org/dc/elements/1.1/identifier # 
+http://purl.org/dc/elements/1.1/license # 
+http://purl.org/dc/elements/1.1/source # 
+http://purl.org/dc/elements/1.1/title # 
+http://purl.org/dc/terms/bibliographicCitation # 
+http://purl.org/dc/terms/contributor # 
+http://purl.org/dc/terms/created # 
+http://purl.org/dc/terms/creator # 
+http://purl.org/dc/terms/description # 
+http://purl.org/dc/terms/license # 
+http://purl.org/dc/terms/source # 
+http://purl.org/dc/terms/title # 
+http://www.geneontology.org/formats/oboInOwl#SubsetProperty # 
+http://www.geneontology.org/formats/oboInOwl#hasAlternativeId # 
+http://www.geneontology.org/formats/oboInOwl#hasOBONamespace # 
+http://www.geneontology.org/formats/oboInOwl#id # 
+http://www.geneontology.org/formats/oboInOwl#inSubset # 
+http://www.w3.org/2004/02/skos/core#altLabel # 
+http://www.w3.org/2004/02/skos/core#definition # 
+http://www.w3.org/2004/02/skos/core#example # 
+http://www.w3.org/2004/02/skos/core#prefLabel # 
+http://www.w3.org/2004/02/skos/core#scopeNote # 
+https://w3id.org/pmd/co/PMD_0000004 # is subject of
+https://w3id.org/pmd/co/PMD_0000006 # has value
+https://w3id.org/pmd/co/PMD_0000009 # 
+https://w3id.org/pmd/co/PMD_0000015 # has input
+https://w3id.org/pmd/co/PMD_0000016 # has output
+https://w3id.org/pmd/co/PMD_0000020 # has measurement unit label
+https://w3id.org/pmd/co/PMD_0001026 # complies with
+https://w3id.org/pmd/co/PMD_0001028 # in response to
+https://w3id.org/pmd/co/PMD_0001029 # responds with
+https://w3id.org/pmd/co/PMD_0001030 # stimulated by
+https://w3id.org/pmd/co/PMD_0001031 # stimulates
+https://w3id.org/pmd/co/PMD_0001032 # term tracker annotation
+https://w3id.org/pmd/co/PMD_0020005 # consists of
+https://w3id.org/pmd/co/PMD_0020020 # interacts with
+https://w3id.org/pmd/co/PMD_0020021 # causally influences
+https://w3id.org/pmd/co/PMD_0020022 # intensive bearer of
+https://w3id.org/pmd/co/PMD_0020141 # integral bearer of
+https://w3id.org/pmd/co/PMD_0060000 # has value specification
+https://w3id.org/pmd/co/PMD_0060001 # specifies value of
+https://w3id.org/pmd/co/PMD_0060002 # starts with
+https://w3id.org/pmd/co/PMD_0060003 # ends with
+https://w3id.org/pmd/co/PMD_0060004 # simultaneous with
