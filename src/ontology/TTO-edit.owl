@@ -270,7 +270,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://pur
 AnnotationAssertion(pmd:definitionSource <http://purl.obolibrary.org/obo/TTO.owl#Extension> "DIN EN ISO 6892-1:2019")
 SubClassOf(<http://purl.obolibrary.org/obo/TTO.owl#Extension> pmd:PMD_0000848)
 
-# Class: <http://purl.obolibrary.org/obo/TTO.owl#ExtensometerGaugeLength> (Extensometer Gauge Length)
+# Class: <http://purl.obolibrary.org/obo/TTO.owl#ExtensometerGaugeLength> (Extensometer-Messlänge)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TTO.owl#ExtensometerGaugeLength> "PERSON: Markus Schilling")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/TTO.owl#ExtensometerGaugeLength> <https://w3id.org/pmd/tto/3.0.0>)
@@ -448,7 +448,7 @@ AnnotationAssertion(pmd:definitionSource <http://purl.obolibrary.org/obo/TTO.owl
 AnnotationAssertion(pmd:symbol <http://purl.obolibrary.org/obo/TTO.owl#OriginalGaugeLength> "L_o"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TTO.owl#OriginalGaugeLength> <http://purl.obolibrary.org/obo/TTO.owl#GaugeLength>)
 
-# Class: <http://purl.obolibrary.org/obo/TTO.owl#OriginalThickness> (Anfangs-Dicke)
+# Class: <http://purl.obolibrary.org/obo/TTO.owl#OriginalThickness> (Original Thickness)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TTO.owl#OriginalThickness> "PERSON: Markus Schilling")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/TTO.owl#OriginalThickness> <https://w3id.org/pmd/tto/3.0.0>)
@@ -827,7 +827,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/TTO.owl#TransitionPoint> "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TTO.owl#TransitionPoint> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/TTO.owl#TransitionPointTestingRate> (Transition Point Testing Rate)
+# Class: <http://purl.obolibrary.org/obo/TTO.owl#TransitionPointTestingRate> (Umschaltpunkt der Prüfgeschwindigkeit)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/TTO.owl#TransitionPointTestingRate> "PERSON: Markus Schilling")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/TTO.owl#TransitionPointTestingRate> <https://w3id.org/pmd/tto/3.0.0>)
