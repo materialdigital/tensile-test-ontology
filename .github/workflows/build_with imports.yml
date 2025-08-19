@@ -1,6 +1,6 @@
 # Basic ODK workflow
 
-name: CI
+name: BUILD_WITH_IMPORTS
 
 # Controls when the action will run. 
 on:
