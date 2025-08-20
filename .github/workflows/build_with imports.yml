@@ -26,7 +26,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Run ontology QC checks
+      - name: Build ontology
         env:
           DEFAULT_BRANCH: main
         run: cd src/ontology && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G'
+      - name: Commit files # commit the src folder
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'updated example output'
+          add: '*.* --force'
+          cwd: './src/'
