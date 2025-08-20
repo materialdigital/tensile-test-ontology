@@ -1003,14 +1003,14 @@ Declaration(AnnotationProperty(dc:identifier))
 Declaration(AnnotationProperty(dc:license))
 Declaration(AnnotationProperty(dc:source))
 Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(terms:TTO_0000000))
+Declaration(AnnotationProperty(terms:TTO_0000001))
+Declaration(AnnotationProperty(terms:TTO_0000009))
 Declaration(AnnotationProperty(terms:bibliographicCitation))
 Declaration(AnnotationProperty(terms:contributor))
 Declaration(AnnotationProperty(terms:created))
 Declaration(AnnotationProperty(terms:creator))
-Declaration(AnnotationProperty(terms:description))
-Declaration(AnnotationProperty(terms:license))
 Declaration(AnnotationProperty(terms:source))
-Declaration(AnnotationProperty(terms:title))
 Declaration(AnnotationProperty(oboInOwl:SubsetProperty))
 Declaration(AnnotationProperty(oboInOwl:hasAlternativeId))
 Declaration(AnnotationProperty(oboInOwl:hasOBONamespace))
@@ -1053,6 +1053,18 @@ AnnotationAssertion(rdfs:label obo:IAO_0000412 "Importiert Aus"@de)
 # Annotation Property: chebi:_STAR (chebi:_STAR)
 
 SubAnnotationPropertyOf(chebi:_STAR oboInOwl:SubsetProperty)
+
+# Annotation Property: terms:TTO_0000000 (description)
+
+AnnotationAssertion(rdfs:label terms:TTO_0000000 "dcterms:description"@en)
+
+# Annotation Property: terms:TTO_0000001 (license)
+
+AnnotationAssertion(rdfs:label terms:TTO_0000001 "dcterms:license"@en)
+
+# Annotation Property: terms:TTO_0000009 (title)
+
+AnnotationAssertion(rdfs:label terms:TTO_0000009 "dcterms:title"@en)
 
 # Annotation Property: co:PMD_0001032 (term tracker annotation)
 
@@ -3677,7 +3689,7 @@ AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum
 SubClassOf(co:PMD_0000053 co:PMD_0000833)
 SubClassOf(co:PMD_0000053 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(co:PMD_0000015 obo:BFO_0000040) ObjectSomeValuesFrom(co:PMD_0000016 co:PMD_0020139)))
 
-# Class: co:PMD_0000054 (Heizfunktion)
+# Class: co:PMD_0000054 (heating function)
 
 AnnotationAssertion(rdfs:label co:PMD_0000054 "Heizfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000054 "heating function"@en)
@@ -3704,7 +3716,7 @@ AnnotationAssertion(skos:definition co:PMD_0000056 "A melting furnace is a devic
 AnnotationAssertion(skos:definition co:PMD_0000056 "Ein Schmelzofen ist ein Gerät, das eine Schmelzfunktion hat und in der Regel dazu dient, die Temperatur eines festen Materials zu erhöhen, um seine Umwandlung in eine Schmelze einzuleiten und aufrechtzuerhalten."@de)
 SubClassOf(co:PMD_0000056 ObjectIntersectionOf(co:PMD_0000655 ObjectSomeValuesFrom(obo:BFO_0000196 co:PMD_0000057)))
 
-# Class: co:PMD_0000057 (Schmelzfunktion)
+# Class: co:PMD_0000057 (melting function)
 
 AnnotationAssertion(rdfs:label co:PMD_0000057 "Schmelzfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000057 "melting function"@en)
@@ -3928,7 +3940,7 @@ AnnotationAssertion(skos:definition co:PMD_0000530 "Ein Mechanische Eigenschafte
 AnnotationAssertion(skos:example co:PMD_0000530 "Testing the flexural strength of a plastic beam to ensure it can withstand the required load in an engineering application."@en)
 SubClassOf(co:PMD_0000530 co:PMD_0000849)
 
-# Class: co:PMD_0000531 (biocompatibility analyzing process)
+# Class: co:PMD_0000531 (Analyseverfahren der Biokompatibilität)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000531 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000531 "Analyseverfahren der Biokompatibilität"@de)
@@ -4211,7 +4223,7 @@ AnnotationAssertion(skos:definition co:PMD_0000564 "A subfunction of coating per
 AnnotationAssertion(skos:definition co:PMD_0000564 "Eine Unterfunktion der Beschichtung, die durchgeführt wird, um eine Beschichtung auf eine Oberfläche aufzutragen."@de)
 SubClassOf(co:PMD_0000564 co:PMD_0000575)
 
-# Class: co:PMD_0000565 (coating by soldering)
+# Class: co:PMD_0000565 (Beschichten Durch Löten)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000565 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000565 "PMDco Team")
@@ -4426,7 +4438,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000587 "crack growth"@en)
 AnnotationAssertion(skos:definition co:PMD_0000587 "The crack growth is an evolution of damage describing the progressive extension of a crack in a material under stress."@en)
 SubClassOf(co:PMD_0000587 co:PMD_0000635)
 
-# Class: co:PMD_0000588 (Kriechprüfmaschine)
+# Class: co:PMD_0000588 (creep testing machine)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000588 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000588 "Kriechprüfmaschine"@de)
@@ -5456,7 +5468,7 @@ AnnotationAssertion(skos:definition co:PMD_0000807 "Ein Fügeverfahren, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000807 "Pouring, Embedding, Encasing"@en)
 SubClassOf(co:PMD_0000807 co:PMD_0000806)
 
-# Class: co:PMD_0000808 (Fügen Durch Umformen)
+# Class: co:PMD_0000808 (joining by shaping)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000808 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000808 "PMDco Team")
@@ -6522,7 +6534,7 @@ AnnotationAssertion(skos:definition co:PMD_0000943 "Role of an object which has 
 AnnotationAssertion(skos:definition co:PMD_0000943 "Rolle eines Objektes, das aus einem Probenabschnitt (Sample) entnommen wurde (durch Umformen und/oder maschinelles Bearbeiten und/oder Wärmebehandlung) mit dem Zweck Proben (Test Pieces) aus diesem Objekt herzustellen."@de)
 SubClassOf(co:PMD_0000943 obo:BFO_0000023)
 
-# Class: co:PMD_0000944 (spectrometer)
+# Class: co:PMD_0000944 (Spektrometer)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000944 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000944 "Spektrometer"@de)
