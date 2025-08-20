@@ -15,10 +15,7 @@ jobs:
            
            mkdir public
            java -jar widoco.jar -ontFile src/ontology/tto-full.owl -outFolder public  -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl           
-           ls public/doc           
-           cp public/doc/index-en.html public/doc/index.html
-           cp public/doc/ontology.owl public/doc/ontology.rdf
-
+           ls public
            pip install mkdocs
            mkdocs build -f mkdocs.yaml
 
