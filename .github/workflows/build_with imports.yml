@@ -29,10 +29,10 @@ jobs:
       - name: Build ontology
         env:
           DEFAULT_BRANCH: main
-        run: cd src/ontology && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G'
+        run: cd src/ontology && make refresh-imports tto.ttl ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' 
       - name: Commit files # commit the src folder
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'updated example output'
+          message: 'updated ontology'
           add: '*.* --force'
           cwd: './src/'
