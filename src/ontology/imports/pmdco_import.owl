@@ -4426,7 +4426,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000587 "crack growth"@en)
 AnnotationAssertion(skos:definition co:PMD_0000587 "The crack growth is an evolution of damage describing the progressive extension of a crack in a material under stress."@en)
 SubClassOf(co:PMD_0000587 co:PMD_0000635)
 
-# Class: co:PMD_0000588 (Kriechprüfmaschine)
+# Class: co:PMD_0000588 (creep testing machine)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000588 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000588 "Kriechprüfmaschine"@de)
@@ -4924,7 +4924,7 @@ AnnotationAssertion(skos:definition co:PMD_0000649 "Ein Umform Prozess, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000649 "Stripping, Deep Drawing, Spinning"@en)
 SubClassOf(co:PMD_0000649 co:PMD_0000646)
 
-# Class: co:PMD_0000650 (Druckumformen)
+# Class: co:PMD_0000650 (forming under compressive conditions)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000650 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000650 "PMDco Team")
@@ -5384,7 +5384,7 @@ AnnotationAssertion(skos:definition co:PMD_0000799 "A device used for analyzing 
 AnnotationAssertion(skos:definition co:PMD_0000799 "Ein Gerät zur Analyse von Ionen in einer Probe zur Bestimmung ihrer Zusammensetzung und Konzentration."@de)
 SubClassOf(co:PMD_0000799 co:PMD_0000602)
 
-# Class: co:PMD_0000800 (ion spectroscopy)
+# Class: co:PMD_0000800 (Ionenspektroskopie)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000800 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000800 "Ionenspektroskopie"@de)
@@ -5755,7 +5755,7 @@ TODO: Check general class axiom and defintion altogether !!!"@en)
 SubClassOf(co:PMD_0000848 co:PMD_0000005)
 SubClassOf(co:PMD_0000848 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000522))
 
-# Class: co:PMD_0000849 (mechanical property analyzing process)
+# Class: co:PMD_0000849 (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000849 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000849 "Mechanische Eigenschaften Analyseverfahren"@de)
@@ -5943,7 +5943,7 @@ AnnotationAssertion(skos:definition co:PMD_0000875 "A Microscopy Process that us
 AnnotationAssertion(skos:example co:PMD_0000875 "An example is Light Microscopy."@en)
 SubClassOf(co:PMD_0000875 co:PMD_0000856)
 
-# Class: co:PMD_0000876 (optical profilometer)
+# Class: co:PMD_0000876 (Optisches Profilometer)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000876 "PMDco Team"@en)
 AnnotationAssertion(rdfs:label co:PMD_0000876 "Optisches Profilometer"@de)
@@ -6122,7 +6122,7 @@ AnnotationAssertion(skos:definition co:PMD_0000899 "Ein Herstellungsprozess, der
 AnnotationAssertion(skos:example co:PMD_0000899 "Casting, Sintering"@en)
 SubClassOf(co:PMD_0000899 co:PMD_0000833)
 
-# Class: co:PMD_0000900 (Urformen Durch Additive Fertigung)
+# Class: co:PMD_0000900 (primary shaping by additive manufacturing)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000900 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000900 "PMDco Team")
@@ -6639,7 +6639,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000961 "sublimation point"@en)
 AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a phase boundary that describes the temperature at which a material transitions directly from a solid to a gaseous state without passing through the liquid phase."@en)
 SubClassOf(co:PMD_0000961 co:PMD_0000882)
 
-# Class: co:PMD_0000962 (supercritical fluid chromatography process)
+# Class: co:PMD_0000962 (Überkritische Fluidchromatographie Verfahren)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000962 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000962 "supercritical fluid chromatography process"@en)
