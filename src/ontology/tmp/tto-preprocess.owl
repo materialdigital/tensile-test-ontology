@@ -1,6 +1,7 @@
 Prefix(:=<https://w3id.org/pmd/ao/tto.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(pmd:=<https://w3id.org/pmd/co/>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
@@ -10,6 +11,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<https://w3id.org/pmd/ao/tto.owl>
 Import(<https://w3id.org/pmd/ao/tto/imports/pmdco_import.owl>)
+Annotation(dcterms:contributor "https://orcid.org/0000-0003-1649-6832")
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Tensile Test Ontology")

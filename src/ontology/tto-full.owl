@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/pmd/ao/tto/tto-full.owl#"
      xml:base="https://w3id.org/pmd/ao/tto/tto-full.owl"
-     xmlns:co="https://w3id.org/pmd/co/"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pmd="https://w3id.org/pmd/co/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -16,6 +16,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/ao/tto/tto-full.owl">
         <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/tto/releases/2025-08-20/tto-full.owl"/>
+        <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Tensile Test Ontology</dcterms:title>
@@ -7748,7 +7749,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000814"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:nodeID="genid345"/>
-        <co:PMD_0001032>issue: https://github.com/materialdigital/core-ontology/issues/101</co:PMD_0001032>
+        <pmd:PMD_0001032>issue: https://github.com/materialdigital/core-ontology/issues/101</pmd:PMD_0001032>
     </owl:Axiom>
     
 
@@ -8489,7 +8490,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <obo:IAO_0000119 rdf:resource="http://openenergy-platform.org/ontology/oeo/OEO_00030022"/>
         <rdfs:label xml:lang="en">organization</rdfs:label>
         <skos:definition xml:lang="en">An organization is an immaterial entity that has the organisation role and there exists some sort of legal framework that recognises the entity and its continued existence.</skos:definition>
-        <co:PMD_0001032>issue: https://github.com/materialdigital/core-ontology/issues/101</co:PMD_0001032>
+        <pmd:PMD_0001032>issue: https://github.com/materialdigital/core-ontology/issues/101</pmd:PMD_0001032>
     </owl:Class>
     
 
@@ -8517,7 +8518,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000881"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/102</co:PMD_0001032>
+        <pmd:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/102</pmd:PMD_0001032>
     </owl:Axiom>
     
 
