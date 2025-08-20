@@ -1,6 +1,6 @@
-Prefix(:=<https://w3id.org/pmd/ao/tto/imports/pmdco_import.owl#>)
+Prefix(:=<https://w3id.org/pmd/ao/tto.owl#>)
 Prefix(co:=<https://w3id.org/pmd/co/>)
-Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -9,14 +9,16 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(chebi:=<http://purl.obolibrary.org/obo/chebi#3>)
-Prefix(terms:=<http://purl.org/dc/terms/>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Prefix(protege:=<http://protege.stanford.edu/plugins/owl/protege#>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
-Ontology(<https://w3id.org/pmd/ao/tto/imports/pmdco_import.owl>
-<https://w3id.org/pmd/ao/tto/releases/2025-08-20/imports/pmdco_import.owl>
-Annotation(dc:source <https://w3id.org/pmd/co/3.0.0-alpha2>)
+Ontology(<https://w3id.org/pmd/ao/tto.owl>
+<https://w3id.org/pmd/ao/tto/releases/2025-08-20/tto.owl>
+Annotation(dcterms:description "None")
+Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:title "Tensile Test Ontology")
 Annotation(owl:versionInfo "2025-08-20")
 
 Declaration(Class(obo:BFO_0000001))
@@ -194,6 +196,7 @@ Declaration(Class(obo:IAO_0000409))
 Declaration(Class(obo:OBI_0000379))
 Declaration(Class(obo:OBI_0001930))
 Declaration(Class(obo:OBI_0001933))
+Declaration(Class(<https://w3id.org/pmd/ao/TTO_0000000>))
 Declaration(Class(co:PMD_0000000))
 Declaration(Class(co:PMD_0000001))
 Declaration(Class(co:PMD_0000002))
@@ -997,20 +1000,20 @@ Declaration(AnnotationProperty(obo:IAO_0000601))
 Declaration(AnnotationProperty(obo:IAO_0000602))
 Declaration(AnnotationProperty(obo:IAO_0010000))
 Declaration(AnnotationProperty(chebi:_STAR))
-Declaration(AnnotationProperty(dc:contributor))
-Declaration(AnnotationProperty(dc:description))
-Declaration(AnnotationProperty(dc:identifier))
-Declaration(AnnotationProperty(dc:license))
-Declaration(AnnotationProperty(dc:source))
-Declaration(AnnotationProperty(dc:title))
-Declaration(AnnotationProperty(terms:bibliographicCitation))
-Declaration(AnnotationProperty(terms:contributor))
-Declaration(AnnotationProperty(terms:created))
-Declaration(AnnotationProperty(terms:creator))
-Declaration(AnnotationProperty(terms:description))
-Declaration(AnnotationProperty(terms:license))
-Declaration(AnnotationProperty(terms:source))
-Declaration(AnnotationProperty(terms:title))
+Declaration(AnnotationProperty(dce:contributor))
+Declaration(AnnotationProperty(dce:description))
+Declaration(AnnotationProperty(dce:identifier))
+Declaration(AnnotationProperty(dce:license))
+Declaration(AnnotationProperty(dce:source))
+Declaration(AnnotationProperty(dce:title))
+Declaration(AnnotationProperty(dcterms:bibliographicCitation))
+Declaration(AnnotationProperty(dcterms:contributor))
+Declaration(AnnotationProperty(dcterms:created))
+Declaration(AnnotationProperty(dcterms:creator))
+Declaration(AnnotationProperty(dcterms:description))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:source))
+Declaration(AnnotationProperty(dcterms:title))
 Declaration(AnnotationProperty(oboInOwl:SubsetProperty))
 Declaration(AnnotationProperty(oboInOwl:hasAlternativeId))
 Declaration(AnnotationProperty(oboInOwl:hasOBONamespace))
@@ -1054,6 +1057,18 @@ AnnotationAssertion(rdfs:label obo:IAO_0000412 "Importiert Aus"@de)
 
 SubAnnotationPropertyOf(chebi:_STAR oboInOwl:SubsetProperty)
 
+# Annotation Property: dcterms:description (description)
+
+AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
+AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
+AnnotationAssertion(rdfs:label dcterms:title "title")
+
 # Annotation Property: co:PMD_0001032 (term tracker annotation)
 
 AnnotationAssertion(obo:IAO_0000115 co:PMD_0001032 "A term tracker annotation is an editor note used to track the history of an entity. For each change, it records the related GitHub issue and pull request."@en)
@@ -1068,7 +1083,7 @@ SubAnnotationPropertyOf(co:PMD_0001032 obo:IAO_0000116)
 
 # Object Property: obo:BFO_0000054 (has realization)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000054 "206-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000054 "206-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000054 "has realization"@en)
 AnnotationAssertion(skos:altLabel obo:BFO_0000054 "realized in"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000054 "b has realization c =Def c realizes b"@en)
@@ -1079,7 +1094,7 @@ ObjectPropertyRange(obo:BFO_0000054 obo:BFO_0000015)
 
 # Object Property: obo:BFO_0000055 (realizes)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000055 "059-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000055 "059-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000055 "realizes"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000055 "(Elucidation) realizes is a relation between a process b and realizable entity c such that c inheres in some d & for all t, if b has participant d then c exists & the type instantiated by b is correlated with the type instantiated by c"@en)
 AnnotationAssertion(skos:example obo:BFO_0000055 "A balding process realizes a disposition to go bald; a studying process realizes a student role; a process of pumping blood realizes the pumping function of a heart"@en)
@@ -1089,7 +1104,7 @@ ObjectPropertyRange(obo:BFO_0000055 obo:BFO_0000017)
 
 # Object Property: obo:BFO_0000056 (participates in)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000056 "250-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000056 "250-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000056 "participates in"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000056 "(Elucidation) participates in holds between some b that is either a specifically dependent continuant or generically dependent continuant or independent continuant that is not a spatial region & some process p such that b participates in p some way"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000056 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1099,7 +1114,7 @@ ObjectPropertyRange(obo:BFO_0000056 obo:BFO_0000015)
 
 # Object Property: obo:BFO_0000057 (has participant)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000057 "248-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000057 "248-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000057 "has participant"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000057 "p has participant c =Def c participates in p"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000057 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1108,7 +1123,7 @@ ObjectPropertyRange(obo:BFO_0000057 ObjectUnionOf(obo:BFO_0000020 obo:BFO_000003
 
 # Object Property: obo:BFO_0000058 (is concretized by)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000058 "258-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000058 "258-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000058 "is concretized by"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000058 "c is concretized by b =Def b concretizes c"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000058 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1118,7 +1133,7 @@ ObjectPropertyRange(obo:BFO_0000058 ObjectUnionOf(obo:BFO_0000015 obo:BFO_000002
 
 # Object Property: obo:BFO_0000059 (concretizes)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000059 "256-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000059 "256-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000059 "concretizes"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000059 "b concretizes c =Def b is a process or a specifically dependent continuant & c is a generically dependent continuant & there is some time t such that c is the pattern or content which b shares at t with actual or potential copies"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000059 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1127,7 +1142,7 @@ ObjectPropertyRange(obo:BFO_0000059 obo:BFO_0000031)
 
 # Object Property: obo:BFO_0000062 (preceded by)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000062 "213-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000062 "213-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded by"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000062 "b preceded by c =Def b precedes c"@en)
 AnnotationAssertion(skos:example obo:BFO_0000062 "The temporal region occupied by the second half of the match is preceded by the temporal region occupied by the first half of the match"@en)
@@ -1138,7 +1153,7 @@ ObjectPropertyRange(obo:BFO_0000062 obo:BFO_0000003)
 
 # Object Property: obo:BFO_0000063 (precedes)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000063 "270-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000063 "270-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000063 "precedes"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000063 "(Elucidation) precedes is a relation between occurrents o, o' such that if t is the temporal extent of o & t' is the temporal extent of o' then either the last instant of o is before the first instant of o' or the last instant of o is the first instant of o' & neither o nor o' are temporal instants"@en)
 AnnotationAssertion(skos:example obo:BFO_0000063 "The temporal region occupied by Mary's birth precedes the temporal region occupied by Mary's death."@en)
@@ -1150,7 +1165,7 @@ ObjectPropertyRange(obo:BFO_0000063 obo:BFO_0000003)
 
 # Object Property: obo:BFO_0000066 (occurs in)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000066 "143-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000066 "143-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000066 "occurs in"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000066 "b occurs in c =Def b is a process or a process boundary & c is a material entity or site & there exists a spatiotemporal region r & b occupies spatiotemporal region r & for all time t, if b exists at t then c exists at t & there exist spatial regions s and s' where b spatially projects onto s at t & c occupies spatial region s' at t & s is a continuant part of s' at t"@en)
 AnnotationAssertion(skos:example obo:BFO_0000066 "A process of digestion occurs in the interior of an organism; a process of loading artillery rounds into a tank cannon occurs in the interior of the tank"@en)
@@ -1160,7 +1175,7 @@ ObjectPropertyRange(obo:BFO_0000066 ObjectUnionOf(obo:BFO_0000029 obo:BFO_000004
 
 # Object Property: obo:BFO_0000084 (generically depends on)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000084 "252-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000084 "252-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000084 "generically depends on"@en)
 AnnotationAssertion(skos:altLabel obo:BFO_0000084 "g-depends on"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000084 "b generically depends on c =Def b is a generically dependent continuant & c is an independent continuant that is not a spatial region & at some time t there inheres in c a specifically dependent continuant which concretizes b at t"@en)
@@ -1171,7 +1186,7 @@ ObjectPropertyRange(obo:BFO_0000084 ObjectIntersectionOf(obo:BFO_0000004 ObjectC
 
 # Object Property: obo:BFO_0000101 (is carrier of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000101 "254-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000101 "254-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000101 "is carrier of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000101 "b is carrier of c =Def there is some time t such that c generically depends on b at t"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000101 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1180,7 +1195,7 @@ ObjectPropertyRange(obo:BFO_0000101 obo:BFO_0000031)
 
 # Object Property: obo:BFO_0000108 (exists at)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000108 "118-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000108 "118-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000108 "exists at"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000108 "(Elucidation) exists at is a relation between a particular and some temporal region at which the particular exists"@en)
 AnnotationAssertion(skos:example obo:BFO_0000108 "First World War exists at 1914-1916; Mexico exists at January 1, 2000"@en)
@@ -1189,7 +1204,7 @@ ObjectPropertyRange(obo:BFO_0000108 obo:BFO_0000008)
 
 # Object Property: obo:BFO_0000115 (has member part)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000115 "230-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000115 "230-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000115 "has member part"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000115 "b has member part c =Def c member part of b"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000115 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1200,7 +1215,7 @@ ObjectPropertyRange(obo:BFO_0000115 obo:BFO_0000040)
 
 # Object Property: obo:BFO_0000117 (has occurrent part)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000117 "202-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000117 "202-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000117 "has occurrent part"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000117 "b has occurrent part c =Def c occurrent part of b"@en)
 AnnotationAssertion(skos:example obo:BFO_0000117 "Mary's life has occurrent part Mary's 5th birthday"@en)
@@ -1211,7 +1226,7 @@ ObjectPropertyRange(obo:BFO_0000117 obo:BFO_0000003)
 
 # Object Property: obo:BFO_0000121 (has temporal part)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000121 "211-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000121 "211-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000121 "has temporal part"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000121 "b has temporal part c =Def c temporal part of b"@en)
 AnnotationAssertion(skos:example obo:BFO_0000121 "Your life has temporal part the first year of your life"@en)
@@ -1223,7 +1238,7 @@ ObjectPropertyRange(obo:BFO_0000121 obo:BFO_0000003)
 
 # Object Property: obo:BFO_0000124 (location of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000124 "236-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000124 "236-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000124 "location of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000124 "b location of c =Def c located in b"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000124 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1233,7 +1248,7 @@ ObjectPropertyRange(obo:BFO_0000124 ObjectIntersectionOf(obo:BFO_0000004 ObjectC
 
 # Object Property: obo:BFO_0000127 (material basis of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000127 "244-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000127 "244-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000127 "material basis of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000127 "b material basis of c =Def c has material basis b"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000127 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1243,7 +1258,7 @@ ObjectPropertyRange(obo:BFO_0000127 obo:BFO_0000016)
 
 # Object Property: obo:BFO_0000129 (member part of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000129 "228-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000129 "228-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000129 "member part of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000129 "b member part of c =Def b is an object & c is a material entity & there is some time t such that b continuant part of c at t & there is a mutually exhaustive and pairwise disjoint partition of c into objects x1, ..., xn (for some n ≠ 1) with b = xi (for some 1 <= i <= n)"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000129 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1253,7 +1268,7 @@ ObjectPropertyRange(obo:BFO_0000129 obo:BFO_0000040)
 
 # Object Property: obo:BFO_0000132 (occurrent part of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000132 "003-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000132 "003-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000132 "occurrent part of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000132 "(Elucidation) occurrent part of is a relation between occurrents b and c when b is part of c"@en)
 AnnotationAssertion(skos:example obo:BFO_0000132 "Mary's 5th birthday is an occurrent part of Mary's life; the first set of the tennis match is an occurrent part of the tennis match"@en)
@@ -1263,7 +1278,7 @@ ObjectPropertyRange(obo:BFO_0000132 obo:BFO_0000003)
 
 # Object Property: obo:BFO_0000139 (temporal part of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000139 "078-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000139 "078-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000139 "temporal part of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000139 "b temporal part of c =Def b occurrent part of c & (b and c are temporal regions) or (b and c are spatiotemporal regions & b temporally projects onto an occurrent part of the temporal region that c temporally projects onto) or (b and c are processes or process boundaries & b occupies a temporal region that is an occurrent part of the temporal region that c occupies)"@en)
 AnnotationAssertion(skos:example obo:BFO_0000139 "Your heart beating from 4pm to 5pm today is a temporal part of the process of your heart beating; the 4th year of your life is a temporal part of your life, as is the process boundary which separates the 3rd and 4th years of your life; the first quarter of a game of football is a temporal part of the whole game"@en)
@@ -1274,7 +1289,7 @@ ObjectPropertyRange(obo:BFO_0000139 obo:BFO_0000003)
 
 # Object Property: obo:BFO_0000153 (temporally projects onto)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000153 "080-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000153 "080-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000153 "temporally projects onto"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000153 "(Elucidation) temporally projects onto is a relation between a spatiotemporal region s and some temporal region which is the temporal extent of s"@en)
 AnnotationAssertion(skos:example obo:BFO_0000153 "The world line of a particle temporally projects onto the temporal region extending from the beginning to the end of the existence of the particle"@en)
@@ -1284,7 +1299,7 @@ ObjectPropertyRange(obo:BFO_0000153 obo:BFO_0000008)
 
 # Object Property: obo:BFO_0000171 (located in)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000171 "234-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000171 "234-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000171 "located in"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000171 "b located in c =Def b is an independent continuant & c is an independent & neither is a spatial region & there is some time t such that the spatial region which b occupies at t is continuant part of the spatial region which c occupies at t"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000171 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1293,7 +1308,7 @@ ObjectPropertyRange(obo:BFO_0000171 ObjectIntersectionOf(obo:BFO_0000004 ObjectC
 
 # Object Property: obo:BFO_0000176 (continuant part of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000176 "221-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000176 "221-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000176 "continuant part of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000176 "b continuant part of c =Def b and c are continuants & there is some time t such that b and c exist at t & b continuant part of c at t"@en)
 AnnotationAssertion(skos:example obo:BFO_0000176 "Milk teeth continuant part of human; surgically removed tumour continuant part of organism"@en)
@@ -1304,7 +1319,7 @@ ObjectPropertyRange(obo:BFO_0000176 obo:BFO_0000002)
 
 # Object Property: obo:BFO_0000178 (has continuant part)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000178 "271-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000178 "271-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000178 "has continuant part"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000178 "b has continuant part c =Def c continuant part of b"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000178 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1313,7 +1328,7 @@ ObjectPropertyRange(obo:BFO_0000178 obo:BFO_0000002)
 
 # Object Property: obo:BFO_0000183 (environs)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000183 "267-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000183 "267-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000183 "environs"@en)
 AnnotationAssertion(skos:altLabel obo:BFO_0000183 "contains process"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000183 "b environs c =Def c occurs in b"@en)
@@ -1323,7 +1338,7 @@ ObjectPropertyRange(obo:BFO_0000183 ObjectUnionOf(obo:BFO_0000015 obo:BFO_000003
 
 # Object Property: obo:BFO_0000184 (history of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000184 "144-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000184 "144-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000184 "history of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000184 "(Elucidation) history of is a relation between history b and material entity c such that b is the unique history of c"@en)
 AnnotationAssertion(skos:example obo:BFO_0000184 "This life is the history of this organism"@en)
@@ -1335,7 +1350,7 @@ ObjectPropertyRange(obo:BFO_0000184 obo:BFO_0000040)
 
 # Object Property: obo:BFO_0000185 (has history)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000185 "145-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000185 "145-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000185 "has history"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000185 "b has history c =Def c history of b"@en)
 AnnotationAssertion(skos:example obo:BFO_0000185 "This organism has history this life"@en)
@@ -1344,7 +1359,7 @@ ObjectPropertyRange(obo:BFO_0000185 obo:BFO_0000182)
 
 # Object Property: obo:BFO_0000194 (specifically depended on by)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000194 "260-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000194 "260-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000194 "specifically depended on by"@en)
 AnnotationAssertion(skos:altLabel obo:BFO_0000194 "s-depended on by"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000194 "b specifically depended on by c =Def c specifically depends on b"@en)
@@ -1355,7 +1370,7 @@ ObjectPropertyRange(obo:BFO_0000194 obo:BFO_0000020)
 
 # Object Property: obo:BFO_0000195 (specifically depends on)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000195 "012-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000195 "012-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000195 "specifically depends on"@en)
 AnnotationAssertion(skos:altLabel obo:BFO_0000195 "s-depends on"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000195 "(Elucidation) specifically depends on is a relation between a specifically dependent continuant b and specifically dependent continuant or independent continuant that is not a spatial region c such that b and c share no parts in common & b is of a nature such that at all times t it cannot exist unless c exists & b is not a boundary of c"@en)
@@ -1366,7 +1381,7 @@ ObjectPropertyRange(obo:BFO_0000195 ObjectUnionOf(obo:BFO_0000020 ObjectIntersec
 
 # Object Property: obo:BFO_0000196 (bearer of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000196 "053-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000196 "053-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000196 "bearer of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000196 "b bearer of c =Def c inheres in b"@en)
 AnnotationAssertion(skos:example obo:BFO_0000196 "A patch of ink is the bearer of a colour quality; an organism is the bearer of a temperature quality"@en)
@@ -1377,7 +1392,7 @@ ObjectPropertyRange(obo:BFO_0000196 obo:BFO_0000020)
 
 # Object Property: obo:BFO_0000197 (inheres in)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000197 "051-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000197 "051-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000197 "inheres in"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000197 "b inheres in c =Def b is a specifically dependent continuant & c is an independent continuant that is not a spatial region & b specifically depends on c"@en)
 AnnotationAssertion(skos:example obo:BFO_0000197 "A shape inheres in a shaped object; a mass inheres in a material entity"@en)
@@ -1387,7 +1402,7 @@ ObjectPropertyRange(obo:BFO_0000197 ObjectIntersectionOf(obo:BFO_0000004 ObjectC
 
 # Object Property: obo:BFO_0000199 (occupies temporal region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000199 "132-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000199 "132-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000199 "occupies temporal region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000199 "p occupies temporal region t =Def p is a process or process boundary & the spatiotemporal region occupied by p temporally projects onto t"@en)
 AnnotationAssertion(skos:example obo:BFO_0000199 "The Second World War occupies the temporal region September 1, 1939 - September 2, 1945"@en)
@@ -1397,7 +1412,7 @@ ObjectPropertyRange(obo:BFO_0000199 obo:BFO_0000008)
 
 # Object Property: obo:BFO_0000200 (occupies spatiotemporal region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000200 "082-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000200 "082-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000200 "occupies spatiotemporal region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000200 "(Elucidation) occupies spatiotemporal region is a relation between a process or process boundary p and the spatiotemporal region s which is its spatiotemporal extent"@en)
 AnnotationAssertion(skos:example obo:BFO_0000200 "A particle emitted by a nuclear reactor occupies the spatiotemporal region which is its trajectory"@en)
@@ -1407,7 +1422,7 @@ ObjectPropertyRange(obo:BFO_0000200 obo:BFO_0000011)
 
 # Object Property: obo:BFO_0000210 (occupies spatial region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000210 "232-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000210 "232-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000210 "occupies spatial region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000210 "b occupies spatial region r =Def b is an independent continuant that is not a spatial region & r is a spatial region & there is some time t such that every continuant part of b occupies some continuant part of r at t and no continuant part of b occupies any spatial region that is not a continuant part of r at t"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000210 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1416,7 +1431,7 @@ ObjectPropertyRange(obo:BFO_0000210 obo:BFO_0000006)
 
 # Object Property: obo:BFO_0000216 (spatially projects onto)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000216 "246-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000216 "246-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000216 "spatially projects onto"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000216 "(Elucidation) spatially projects onto is a relation between some spatiotemporal region b and spatial region c such that at some time t, c is the spatial extent of b at t"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000216 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1425,7 +1440,7 @@ ObjectPropertyRange(obo:BFO_0000216 obo:BFO_0000006)
 
 # Object Property: obo:BFO_0000218 (has material basis)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000218 "242-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000218 "242-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000218 "has material basis"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000218 "b has material basis c =Def b is a disposition & c is a material entity & there is some d bearer of b & there is some time t such that c is a continuant part of d at t & d has disposition b because c is a continuant part of d at t"@en)
 AnnotationAssertion(skos:scopeNote obo:BFO_0000218 "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
@@ -1434,7 +1449,7 @@ ObjectPropertyRange(obo:BFO_0000218 obo:BFO_0000040)
 
 # Object Property: obo:BFO_0000221 (first instant of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000221 "268-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000221 "268-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000221 "first instant of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000221 "t first instant of t' =Def t is a temporal instant & t' is a temporal region t' & t precedes all temporal parts of t' other than t"@en)
 AnnotationAssertion(skos:example obo:BFO_0000221 "An hour starting at midnight yesterday has first instant midnight yesterday"@en)
@@ -1444,7 +1459,7 @@ ObjectPropertyRange(obo:BFO_0000221 obo:BFO_0000008)
 
 # Object Property: obo:BFO_0000222 (has first instant)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000222 "261-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000222 "261-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000222 "has first instant"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000222 "t has first instant t' =Def t' first instant of t"@en)
 AnnotationAssertion(skos:example obo:BFO_0000222 "The first hour of a year has first instant midnight on December 31"@en)
@@ -1454,7 +1469,7 @@ ObjectPropertyRange(obo:BFO_0000222 obo:BFO_0000203)
 
 # Object Property: obo:BFO_0000223 (last instant of)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000223 "269-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000223 "269-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000223 "last instant of"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000223 "t last instant of t' =Def t is a temporal instant & t' is a temporal region & all temporal parts of t' other than t precede t"@en)
 AnnotationAssertion(skos:example obo:BFO_0000223 "Last midnight is the last instant of yesterday"@en)
@@ -1464,7 +1479,7 @@ ObjectPropertyRange(obo:BFO_0000223 obo:BFO_0000008)
 
 # Object Property: obo:BFO_0000224 (has last instant)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000224 "215-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000224 "215-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000224 "has last instant"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000224 "t has last instant t' =Def t' last instant of t"@en)
 AnnotationAssertion(skos:example obo:BFO_0000224 "The last hour of a year has last instant midnight December 31"@en)
@@ -1748,7 +1763,7 @@ AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000001 "your body mass index"@en)
 AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000001 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81"@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000004>) Annotation(rdfs:comment "per discussion with Barry Smith") Annotation(rdfs:seeAlso <http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf>) obo:IAO_0000116 obo:BFO_0000001 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/001-001>) obo:IAO_0000600 obo:BFO_0000001 "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])"@en)
-AnnotationAssertion(dc:identifier obo:BFO_0000001 "001-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000001 "001-BFO")
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000001 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000001 "entity"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000001 "(Elucidation) An entity is anything that exists or has existed or will exist"@en)
@@ -1769,7 +1784,7 @@ AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/b
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/126-001>) obo:IAO_0000602 obo:BFO_0000002 "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] ")
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/008-002>) obo:IAO_0000602 obo:BFO_0000002 "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] ")
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/011-002>) obo:IAO_0000602 obo:BFO_0000002 "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] ")
-AnnotationAssertion(dc:identifier obo:BFO_0000002 "008-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000002 "008-BFO")
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000002 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000002 "continuant"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000002 "(Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity"@en)
@@ -1780,7 +1795,7 @@ DisjointClasses(obo:BFO_0000002 obo:BFO_0000003)
 
 # Class: obo:BFO_0000003 (occurrent)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000003 "077-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000003 "077-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000003 "occurrent"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000003 "(Elucidation) An occurrent is an entity that unfolds itself in time or it is the start or end of such an entity or it is a temporal or spatiotemporal region"@en)
 AnnotationAssertion(skos:example obo:BFO_0000003 "As for process, history, process boundary, spatiotemporal region, zero-dimensional temporal region, one-dimensional temporal region, temporal interval, temporal instant."@en)
@@ -1806,7 +1821,7 @@ AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/b
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/134-001>) obo:IAO_0000602 obo:BFO_0000004 "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] ")
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/018-002>) obo:IAO_0000602 obo:BFO_0000004 "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] ")
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/017-002>) obo:IAO_0000602 obo:BFO_0000004 "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] ")
-AnnotationAssertion(dc:identifier obo:BFO_0000004 "017-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000004 "017-BFO")
 AnnotationAssertion(rdfs:comment obo:BFO_0000004 "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything."@en)
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000004 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant"@en)
@@ -1819,7 +1834,7 @@ DisjointClasses(obo:BFO_0000004 obo:BFO_0000031)
 
 # Class: obo:BFO_0000006 (spatial region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000006 "035-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000006 "035-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000006 "spatial region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000006 "(Elucidation) A spatial region is a continuant entity that is a continuant part of the spatial projection of a portion of spacetime at a given time"@en)
 AnnotationAssertion(skos:example obo:BFO_0000006 "As for zero-dimensional spatial region, one-dimensional spatial region, two-dimensional spatial region, three-dimensional spatial region"@en)
@@ -1828,7 +1843,7 @@ SubClassOf(obo:BFO_0000006 ObjectAllValuesFrom(obo:BFO_0000176 obo:BFO_0000006))
 
 # Class: obo:BFO_0000008 (temporal region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000008 "100-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000008 "100-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000008 "temporal region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000008 "(Elucidation) A temporal region is an occurrent over which processes can unfold"@en)
 AnnotationAssertion(skos:example obo:BFO_0000008 "As for zero-dimensional temporal region and one-dimensional temporal region"@en)
@@ -1838,7 +1853,7 @@ SubClassOf(obo:BFO_0000008 ObjectAllValuesFrom(obo:BFO_0000139 obo:BFO_0000008))
 
 # Class: obo:BFO_0000009 (two-dimensional spatial region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000009 "039-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000009 "039-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000009 "two-dimensional spatial region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000009 "(Elucidation) A two-dimensional spatial region is a spatial region that is a whole consisting of a surface together with zero or more surfaces which may have spatial regions of lower dimension as parts"@en)
 AnnotationAssertion(skos:example obo:BFO_0000009 "The surface of a sphere-shaped part of space; an infinitely thin plane in space"@en)
@@ -1847,7 +1862,7 @@ SubClassOf(obo:BFO_0000009 ObjectAllValuesFrom(obo:BFO_0000178 ObjectUnionOf(obo
 
 # Class: obo:BFO_0000011 (spatiotemporal region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000011 "095-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000011 "095-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000011 "spatiotemporal region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000011 "(Elucidation) A spatiotemporal region is an occurrent that is an occurrent part of spacetime"@en)
 AnnotationAssertion(skos:example obo:BFO_0000011 "The spatiotemporal region occupied by the development of a cancer tumour; the spatiotemporal region occupied by an orbiting satellite"@en)
@@ -1858,7 +1873,7 @@ SubClassOf(obo:BFO_0000011 ObjectAllValuesFrom(obo:BFO_0000139 obo:BFO_0000011))
 
 # Class: obo:BFO_0000015 (process)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000015 "083-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000015 "083-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000015 "process"@en)
 AnnotationAssertion(skos:altLabel obo:BFO_0000015 "event"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000015 "(Elucidation) p is a process means p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en)
@@ -1881,7 +1896,7 @@ AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/b
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/063-002>) obo:IAO_0000601 obo:BFO_0000016 "If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])"@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/063-002>) obo:IAO_0000602 obo:BFO_0000016 "(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] ")
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/062-002>) obo:IAO_0000602 obo:BFO_0000016 "(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] ")
-AnnotationAssertion(dc:identifier obo:BFO_0000016 "062-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000016 "062-BFO")
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000016 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000016 "disposition"@en)
 AnnotationAssertion(skos:altLabel obo:BFO_0000016 "internally-grounded realizable entity"@en)
@@ -1904,7 +1919,7 @@ AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/b
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/060-002>) obo:IAO_0000601 obo:BFO_0000017 "All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])"@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/060-002>) obo:IAO_0000602 obo:BFO_0000017 "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] ")
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/058-002>) obo:IAO_0000602 obo:BFO_0000017 "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] ")
-AnnotationAssertion(dc:identifier obo:BFO_0000017 "058-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000017 "058-BFO")
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000017 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000017 "realizable entity"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000017 "(Elucidation) A realizable entity is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region & which is of a type some instances of which are realized in processes of a correlated type"@en)
@@ -1914,7 +1929,7 @@ DisjointClasses(obo:BFO_0000017 obo:BFO_0000019)
 
 # Class: obo:BFO_0000018 (zero-dimensional spatial region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000018 "037-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000018 "037-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000018 "zero-dimensional spatial region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000018 "(Elucidation) A zero-dimensional spatial region is one or a collection of more than one spatially disjoint points in space"@en)
 AnnotationAssertion(skos:example obo:BFO_0000018 "The spatial region occupied at some time instant by the North Pole"@en)
@@ -1935,7 +1950,7 @@ AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/b
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/105-001>) obo:IAO_0000601 obo:BFO_0000019 "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])"@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/055-001>) obo:IAO_0000602 obo:BFO_0000019 "(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] ")
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/105-001>) obo:IAO_0000602 obo:BFO_0000019 "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] ")
-AnnotationAssertion(dc:identifier obo:BFO_0000019 "055-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000019 "055-BFO")
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000019 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000019 "quality"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000019 "(Elucidation) A quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized"@en)
@@ -1963,7 +1978,7 @@ AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/b
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:pato.owl)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/131-004>) obo:IAO_0000602 obo:BFO_0000020 "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] ")
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/050-003>) obo:IAO_0000602 obo:BFO_0000020 "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] ")
-AnnotationAssertion(dc:identifier obo:BFO_0000020 "050-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000020 "050-BFO")
 AnnotationAssertion(rdfs:comment obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en)
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000020 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
@@ -1988,7 +2003,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000023 "A realizable entity  the ma
 AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000023 "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives."@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/061-001>) obo:IAO_0000600 obo:BFO_0000023 "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])"@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/061-001>) obo:IAO_0000602 obo:BFO_0000023 "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] ")
-AnnotationAssertion(dc:identifier obo:BFO_0000023 "061-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000023 "061-BFO")
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000023 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000023 "role"@en)
 AnnotationAssertion(skos:altLabel obo:BFO_0000023 "externally-grounded realizable entity"@en)
@@ -1998,7 +2013,7 @@ SubClassOf(obo:BFO_0000023 obo:BFO_0000017)
 
 # Class: obo:BFO_0000024 (fiat object part)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000024 "027-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000024 "027-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000024 "fiat object part"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000024 "(Elucidation) A fiat object part b is a material entity & such that if b exists then it is continuant part of some object c & demarcated from the remainder of c by one or more fiat surfaces"@en)
 AnnotationAssertion(skos:example obo:BFO_0000024 "The upper and lower lobes of the left lung; the dorsal and ventral surfaces of the body; the Western hemisphere of the Earth; the FMA:regional parts of an intact human body"@en)
@@ -2006,7 +2021,7 @@ SubClassOf(obo:BFO_0000024 obo:BFO_0000040)
 
 # Class: obo:BFO_0000026 (one-dimensional spatial region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000026 "038-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000026 "038-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000026 "one-dimensional spatial region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000026 "(Elucidation) A one-dimensional spatial region is a whole consisting of a line together with zero or more lines which may have points as parts"@en)
 AnnotationAssertion(skos:example obo:BFO_0000026 "An edge of a cube-shaped portion of space; a line connecting two points; two parallel lines extended in space"@en)
@@ -2015,7 +2030,7 @@ SubClassOf(obo:BFO_0000026 ObjectAllValuesFrom(obo:BFO_0000178 ObjectUnionOf(obo
 
 # Class: obo:BFO_0000027 (object aggregate)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000027 "025-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000027 "025-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000027 "object aggregate"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000027 "(Elucidation) An object aggregate is a material entity consisting exactly of a plurality (≥1) of objects as member parts which together form a unit"@en)
 AnnotationAssertion(skos:example obo:BFO_0000027 "The aggregate of the musicians in a symphony orchestra and their instruments; the aggregate of bearings in a constant velocity axle joint; the nitrogen atoms in the atmosphere; a collection of cells in a blood biobank"@en)
@@ -2025,7 +2040,7 @@ SubClassOf(obo:BFO_0000027 obo:BFO_0000040)
 
 # Class: obo:BFO_0000028 (three-dimensional spatial region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000028 "040-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000028 "040-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000028 "three-dimensional spatial region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000028 "(Elucidation) A three-dimensional spatial region is a whole consisting of a spatial volume together with zero or more spatial volumes which may have spatial regions of lower dimension as parts"@en)
 AnnotationAssertion(skos:example obo:BFO_0000028 "A cube-shaped region of space; a sphere-shaped region of space; the region of space occupied by all and only the planets in the solar system at some point in time"@en)
@@ -2034,7 +2049,7 @@ SubClassOf(obo:BFO_0000028 ObjectAllValuesFrom(obo:BFO_0000178 obo:BFO_0000006))
 
 # Class: obo:BFO_0000029 (site)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000029 "034-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000029 "034-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000029 "site"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000029 "(Elucidation) A site is a three-dimensional immaterial entity whose boundaries either (partially or wholly) coincide with the boundaries of one or more material entities or have locations determined in relation to some material entity"@en)
 AnnotationAssertion(skos:example obo:BFO_0000029 "A hole in a portion of cheese; a rabbit hole; the Grand Canyon; the Piazza San Marco; the kangaroo-joey-containing hole of a kangaroo pouch; your left nostril (a fiat part - the opening - of your left nasal cavity); the lumen of your gut; the hold of a ship; the interior of the trunk of your car; hole in an engineered floor joist"@en)
@@ -2045,7 +2060,7 @@ SubClassOf(obo:BFO_0000029 ObjectAllValuesFrom(obo:BFO_0000210 obo:BFO_0000028))
 
 # Class: obo:BFO_0000030 (object)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000030 "024-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000030 "024-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000030 "object"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000030 "(Elucidation) An object is a material entity which manifests causal unity & is of a type instances of which are maximal relative to the sort of causal unity manifested"@en)
 AnnotationAssertion(skos:example obo:BFO_0000030 "An organism; a fish tank; a planet; a laptop; a valve; a block of marble; an ice cube"@en)
@@ -2061,7 +2076,7 @@ AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000031 "the pdf file on your laptop
 AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000031 "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule."@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/074-001>) obo:IAO_0000115 obo:BFO_0000031 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/074-001>) obo:IAO_0000602 obo:BFO_0000031 "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] ")
-AnnotationAssertion(dc:identifier obo:BFO_0000031 "074-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000031 "074-BFO")
 AnnotationAssertion(rdfs:comment obo:BFO_0000031 "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time."@en)
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000031 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000031 "generically dependent continuant"@en)
@@ -2080,7 +2095,7 @@ AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000034 "the function of amylase in 
 AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000034 "BFO 2 Reference: In the past, we have distinguished two varieties of function, artifactual function and biological function. These are not asserted subtypes of BFO:function however, since the same function – for example: to pump, to transport – can exist both in artifacts and in biological entities. The asserted subtypes of function that would be needed in order to yield a separate monoheirarchy are not artifactual function, biological function, etc., but rather transporting function, pumping function, etc."@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/064-001>) obo:IAO_0000600 obo:BFO_0000034 "A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])"@en)
 AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/064-001>) obo:IAO_0000602 obo:BFO_0000034 "(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] ")
-AnnotationAssertion(dc:identifier obo:BFO_0000034 "064-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000034 "064-BFO")
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000034 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000034 "function"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000034 "(Elucidation) A function is a disposition that exists in virtue of its bearer's physical make-up & this physical make-up is something the bearer possesses because it came into being either through evolution (in the case of natural biological entities) or through intentional design (in the case of artefacts) in order to realize processes of a certain sort"@en)
@@ -2089,7 +2104,7 @@ SubClassOf(obo:BFO_0000034 obo:BFO_0000016)
 
 # Class: obo:BFO_0000035 (process boundary)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000035 "084-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000035 "084-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000035 "process boundary"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000035 "p is a process boundary =Def p is a temporal part of a process & p has no proper temporal parts"@en)
 AnnotationAssertion(skos:example obo:BFO_0000035 "The boundary between the 2nd and 3rd year of your life"@en)
@@ -2101,7 +2116,7 @@ SubClassOf(obo:BFO_0000035 ObjectAllValuesFrom(obo:BFO_0000139 ObjectUnionOf(obo
 
 # Class: obo:BFO_0000038 (one-dimensional temporal region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000038 "103-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000038 "103-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000038 "one-dimensional temporal region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000038 "(Elucidation) A one-dimensional temporal region is a temporal region that is a whole that has a temporal interval and zero or more temporal intervals and temporal instants as parts"@en)
 AnnotationAssertion(skos:example obo:BFO_0000038 "The temporal region during which a process occurs"@en)
@@ -2112,7 +2127,7 @@ DisjointClasses(obo:BFO_0000038 obo:BFO_0000148)
 
 # Class: obo:BFO_0000040 (material entity)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000040 "019-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000040 "019-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000040 "(Elucidation) A material entity is an independent continuant has some portion of matter as continuant part"@en)
 AnnotationAssertion(skos:example obo:BFO_0000040 "A human being; the undetached arm of a human being; an aggregate of human beings"@en)
@@ -2123,7 +2138,7 @@ DisjointClasses(obo:BFO_0000040 obo:BFO_0000141)
 
 # Class: obo:BFO_0000140 (continuant fiat boundary)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000140 "029-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000140 "029-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000140 "continuant fiat boundary"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000140 "(Elucidation) A continuant fiat boundary b is an immaterial entity that is of zero, one or two dimensions & such that there is no time t when b has a spatial region as continuant part & whose location is determined in relation to some material entity"@en)
 AnnotationAssertion(skos:example obo:BFO_0000140 "As for fiat point, fiat line, fiat surface"@en)
@@ -2133,7 +2148,7 @@ SubClassOf(obo:BFO_0000140 ObjectAllValuesFrom(obo:BFO_0000178 obo:BFO_0000140))
 
 # Class: obo:BFO_0000141 (immaterial entity)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000141 "028-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000141 "028-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000141 "immaterial entity"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000141 "b is an immaterial entity =Def b is an independent continuant which is such that there is no time t when it has a material entity as continuant part"@en)
 AnnotationAssertion(skos:example obo:BFO_0000141 "As for fiat point, fiat line, fiat surface, site"@en)
@@ -2141,7 +2156,7 @@ SubClassOf(obo:BFO_0000141 obo:BFO_0000004)
 
 # Class: obo:BFO_0000142 (fiat line)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000142 "032-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000142 "032-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000142 "fiat line"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000142 "(Elucidation) A fiat line is a one-dimensional continuant fiat boundary that is continuous"@en)
 AnnotationAssertion(skos:example obo:BFO_0000142 "The Equator; all geopolitical boundaries; all lines of latitude and longitude; the median sulcus of your tongue; the line separating the outer surface of the mucosa of the lower lip from the outer surface of the skin of the chin"@en)
@@ -2150,7 +2165,7 @@ SubClassOf(obo:BFO_0000142 ObjectAllValuesFrom(obo:BFO_0000178 ObjectUnionOf(obo
 
 # Class: obo:BFO_0000145 (relational quality)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000145 "057-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000145 "057-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000145 "relational quality"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000145 "b is a relational quality =Def b is a quality & there exists c and d such that c and d are not identical & b specifically depends on c & b specifically depends on d"@en)
 AnnotationAssertion(skos:example obo:BFO_0000145 "A marriage bond; an instance of love; an obligation between one person and another"@en)
@@ -2158,7 +2173,7 @@ SubClassOf(obo:BFO_0000145 obo:BFO_0000019)
 
 # Class: obo:BFO_0000146 (fiat surface)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000146 "033-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000146 "033-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000146 "fiat surface"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000146 "(Elucidation) A fiat surface is a two-dimensional continuant fiat boundary that is self-connected"@en)
 AnnotationAssertion(skos:example obo:BFO_0000146 "The surface of the Earth; the plane separating the smoking from the non-smoking zone in a restaurant"@en)
@@ -2167,7 +2182,7 @@ SubClassOf(obo:BFO_0000146 ObjectAllValuesFrom(obo:BFO_0000178 obo:BFO_0000140))
 
 # Class: obo:BFO_0000147 (fiat point)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000147 "031-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000147 "031-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000147 "fiat point"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000147 "(Elucidation) A fiat point is a zero-dimensional continuant fiat boundary that consists of a single point"@en)
 AnnotationAssertion(skos:example obo:BFO_0000147 "The geographic North Pole; the quadripoint where the boundaries of Colorado, Utah, New Mexico and Arizona meet; the point of origin of some spatial coordinate system"@en)
@@ -2176,7 +2191,7 @@ SubClassOf(obo:BFO_0000147 ObjectAllValuesFrom(obo:BFO_0000178 obo:BFO_0000147))
 
 # Class: obo:BFO_0000148 (zero-dimensional temporal region)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000148 "102-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000148 "102-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000148 "zero-dimensional temporal region"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000148 "(Elucidation) A zero-dimensional temporal region is a temporal region that is a whole consisting of one or more separated temporal instants as parts"@en)
 AnnotationAssertion(skos:example obo:BFO_0000148 "A temporal region that is occupied by a process boundary; the moment at which a finger is detached in an industrial accident"@en)
@@ -2185,7 +2200,7 @@ SubClassOf(obo:BFO_0000148 ObjectAllValuesFrom(obo:BFO_0000121 obo:BFO_0000148))
 
 # Class: obo:BFO_0000182 (history)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000182 "138-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000182 "138-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000182 "history"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000182 "(Elucidation) A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by the material part of a material entity"@en)
 AnnotationAssertion(skos:example obo:BFO_0000182 "The life of an organism from the beginning to the end of its existence"@en)
@@ -2193,7 +2208,7 @@ SubClassOf(obo:BFO_0000182 obo:BFO_0000015)
 
 # Class: obo:BFO_0000202 (temporal interval)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000202 "155-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000202 "155-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000202 "temporal interval"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000202 "(Elucidation) A temporal interval is a one-dimensional temporal region that is continuous, thus without gaps or breaks"@en)
 AnnotationAssertion(skos:example obo:BFO_0000202 "The year 2018."@en)
@@ -2202,7 +2217,7 @@ SubClassOf(obo:BFO_0000202 obo:BFO_0000038)
 
 # Class: obo:BFO_0000203 (temporal instant)
 
-AnnotationAssertion(dc:identifier obo:BFO_0000203 "209-BFO")
+AnnotationAssertion(dce:identifier obo:BFO_0000203 "209-BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000203 "temporal instant"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000203 "(Elucidation) A temporal instant is a zero-dimensional temporal region that has no proper temporal part"@en)
 AnnotationAssertion(skos:example obo:BFO_0000203 "The millennium"@en)
@@ -3571,6 +3586,10 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001933 "PERSON:Bjoern Peters")
 AnnotationAssertion(rdfs:label obo:OBI_0001933 "value specification")
 SubClassOf(obo:OBI_0001933 obo:IAO_0000030)
 
+# Class: <https://w3id.org/pmd/ao/TTO_0000000> (root node)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/TTO_0000000> "root node"@en)
+
 # Class: co:PMD_0000000 (Material)
 
 AnnotationAssertion(rdfs:comment co:PMD_0000000 "Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a Manufacturing Process may be SemiFinishedProdcuts."@en)
@@ -3677,7 +3696,7 @@ AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum
 SubClassOf(co:PMD_0000053 co:PMD_0000833)
 SubClassOf(co:PMD_0000053 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(co:PMD_0000015 obo:BFO_0000040) ObjectSomeValuesFrom(co:PMD_0000016 co:PMD_0020139)))
 
-# Class: co:PMD_0000054 (heating function)
+# Class: co:PMD_0000054 (Heizfunktion)
 
 AnnotationAssertion(rdfs:label co:PMD_0000054 "Heizfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000054 "heating function"@en)
@@ -3704,7 +3723,7 @@ AnnotationAssertion(skos:definition co:PMD_0000056 "A melting furnace is a devic
 AnnotationAssertion(skos:definition co:PMD_0000056 "Ein Schmelzofen ist ein Gerät, das eine Schmelzfunktion hat und in der Regel dazu dient, die Temperatur eines festen Materials zu erhöhen, um seine Umwandlung in eine Schmelze einzuleiten und aufrechtzuerhalten."@de)
 SubClassOf(co:PMD_0000056 ObjectIntersectionOf(co:PMD_0000655 ObjectSomeValuesFrom(obo:BFO_0000196 co:PMD_0000057)))
 
-# Class: co:PMD_0000057 (melting function)
+# Class: co:PMD_0000057 (Schmelzfunktion)
 
 AnnotationAssertion(rdfs:label co:PMD_0000057 "Schmelzfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000057 "melting function"@en)
@@ -4010,7 +4029,7 @@ AnnotationAssertion(skos:definition co:PMD_0000541 "A CNC Machine is a Forming M
 AnnotationAssertion(skos:definition co:PMD_0000541 "Eine CNC-Maschine ist eine Formmaschine, die zur präzisen Steuerung von Bearbeitungswerkzeugen für Schneid-, Bohr-, Fräs- und andere Aufgaben computergestützte numerische Steuerung verwendet."@de)
 SubClassOf(co:PMD_0000541 co:PMD_0000648)
 
-# Class: co:PMD_0000542 (CNC-Schweißmaschine)
+# Class: co:PMD_0000542 (cnc welding machine)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000542 "PMDco Team"@en)
 AnnotationAssertion(rdfs:label co:PMD_0000542 "CNC-Schweißmaschine"@de)
@@ -4211,7 +4230,7 @@ AnnotationAssertion(skos:definition co:PMD_0000564 "A subfunction of coating per
 AnnotationAssertion(skos:definition co:PMD_0000564 "Eine Unterfunktion der Beschichtung, die durchgeführt wird, um eine Beschichtung auf eine Oberfläche aufzutragen."@de)
 SubClassOf(co:PMD_0000564 co:PMD_0000575)
 
-# Class: co:PMD_0000565 (Beschichten Durch Löten)
+# Class: co:PMD_0000565 (coating by soldering)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000565 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000565 "PMDco Team")
@@ -4426,7 +4445,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000587 "crack growth"@en)
 AnnotationAssertion(skos:definition co:PMD_0000587 "The crack growth is an evolution of damage describing the progressive extension of a crack in a material under stress."@en)
 SubClassOf(co:PMD_0000587 co:PMD_0000635)
 
-# Class: co:PMD_0000588 (Kriechprüfmaschine)
+# Class: co:PMD_0000588 (creep testing machine)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000588 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000588 "Kriechprüfmaschine"@de)
@@ -4558,7 +4577,7 @@ AnnotationAssertion(skos:definition co:PMD_0000604 "The dielectric constant is a
 SubClassOf(co:PMD_0000604 co:PMD_0000621)
 DisjointClasses(co:PMD_0000604 co:PMD_0000620)
 
-# Class: co:PMD_0000605 (differential scanning calorimeter)
+# Class: co:PMD_0000605 (Differential-Scanning-Kalorimeter)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000605 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000605 "Differential-Scanning-Kalorimeter"@de)
@@ -4894,7 +4913,7 @@ SubClassOf(co:PMD_0000646 co:PMD_0000833)
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000647 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000647 "PMDco Team")
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000647 "Official definition can be found in: DIN 8586"@en)
-AnnotationAssertion(terms:source co:PMD_0000647 "Offizielle Definition findet man in: DIN 8586"@de)
+AnnotationAssertion(dcterms:source co:PMD_0000647 "Offizielle Definition findet man in: DIN 8586"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000647 "Biegeumformen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000647 "forming by bending"@en)
 AnnotationAssertion(skos:definition co:PMD_0000647 "A forming process that involves bending materials, typically used in manipulating sheets, tubes, or profiles into curved shapes or angles, common in metalworking and fabrication industries."@en)
@@ -4916,7 +4935,7 @@ SubClassOf(co:PMD_0000648 co:PMD_0000602)
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000649 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000649 "PMDco Team")
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000649 "Official definition can be found in: DIN 8584-1"@en)
-AnnotationAssertion(terms:source co:PMD_0000649 "Offizielle Definition findet man in: DIN 8584-1"@de)
+AnnotationAssertion(dcterms:source co:PMD_0000649 "Offizielle Definition findet man in: DIN 8584-1"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000649 "Zugdruckumformen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000649 "forming under compressive and tensile conditions"@en)
 AnnotationAssertion(skos:definition co:PMD_0000649 "A forming process that involves applying both tensile and compressive forces to a material."@en)
@@ -4924,12 +4943,12 @@ AnnotationAssertion(skos:definition co:PMD_0000649 "Ein Umform Prozess, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000649 "Stripping, Deep Drawing, Spinning"@en)
 SubClassOf(co:PMD_0000649 co:PMD_0000646)
 
-# Class: co:PMD_0000650 (forming under compressive conditions)
+# Class: co:PMD_0000650 (Druckumformen)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000650 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000650 "PMDco Team")
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000650 "Official definition can be found in: DIN 8583-1"@en)
-AnnotationAssertion(terms:source co:PMD_0000650 "Offizielle Definition findet man in: DIN 8583-1"@de)
+AnnotationAssertion(dcterms:source co:PMD_0000650 "Offizielle Definition findet man in: DIN 8583-1"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000650 "Druckumformen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000650 "forming under compressive conditions"@en)
 AnnotationAssertion(skos:definition co:PMD_0000650 "A forming process that involves deforming materials under compressive forces, commonly used in techniques like rolling and die forming where metal is shaped by applying pressure."@en)
@@ -4942,7 +4961,7 @@ SubClassOf(co:PMD_0000650 co:PMD_0000646)
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000651 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000651 "PMDco Team")
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000651 "Official definition can be found in: DIN 8587"@en)
-AnnotationAssertion(terms:source co:PMD_0000651 "Offizielle Definition findet man in: DIN 8587"@de)
+AnnotationAssertion(dcterms:source co:PMD_0000651 "Offizielle Definition findet man in: DIN 8587"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000651 "Schubumformen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000651 "forming under shearing conditions"@en)
 AnnotationAssertion(skos:definition co:PMD_0000651 "A forming process that involves displacement or twisting materials to achieve deformation, often used in operations where materials are shaped by applying torsional forces."@en)
@@ -4982,7 +5001,7 @@ SubClassOf(co:PMD_0000654 co:PMD_0000002)
 SubClassOf(co:PMD_0000654 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(ObjectInverseOf(co:PMD_0020005) ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:BFO_0000196 obo:BFO_0000034)))))
 SubClassOf(co:PMD_0000654 ObjectSomeValuesFrom(ObjectInverseOf(co:PMD_0020005) ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:BFO_0000196 obo:BFO_0000034))))
 
-# Class: co:PMD_0000655 (Ofen)
+# Class: co:PMD_0000655 (furnace)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000655 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000655 "“Furnace.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/furnace. Accessed 13 Jan. 2023."@en)
@@ -5011,7 +5030,7 @@ AnnotationAssertion(skos:definition co:PMD_0000657 "A device used for separating
 AnnotationAssertion(skos:definition co:PMD_0000657 "Ein Gerät zur Trennung und Analyse von Verbindungen in einem Gasgemisch unter Verwendung einer chromatographischen Säule."@de)
 SubClassOf(co:PMD_0000657 co:PMD_0000557)
 
-# Class: co:PMD_0000658 (gel permeation chromatography process)
+# Class: co:PMD_0000658 (Gel-Permeations-Chromatographie Verfahren)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000658 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000658 "Gel-Permeations-Chromatographie Verfahren"@de)
@@ -5384,7 +5403,7 @@ AnnotationAssertion(skos:definition co:PMD_0000799 "A device used for analyzing 
 AnnotationAssertion(skos:definition co:PMD_0000799 "Ein Gerät zur Analyse von Ionen in einer Probe zur Bestimmung ihrer Zusammensetzung und Konzentration."@de)
 SubClassOf(co:PMD_0000799 co:PMD_0000602)
 
-# Class: co:PMD_0000800 (Ionenspektroskopie)
+# Class: co:PMD_0000800 (ion spectroscopy)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000800 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000800 "Ionenspektroskopie"@de)
@@ -5933,7 +5952,7 @@ AnnotationAssertion(skos:definition co:PMD_0000874 "A microscope that uses visib
 AnnotationAssertion(skos:definition co:PMD_0000874 "Ein Mikroskop, das sichtbares Licht und Linsen verwendet, um kleine Objekte oder Details zu vergrößern und zu betrachten."@de)
 SubClassOf(co:PMD_0000874 co:PMD_0000855)
 
-# Class: co:PMD_0000875 (Optische Mikroskopie)
+# Class: co:PMD_0000875 (optical microscopy)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000875 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000875 "Ein Mikroskopieverfahren, das sichtbares Licht und Linsen verwendet, um eine Probe zu vergrößern und abzubilden, und weit verbreitet zur Untersuchung der Mikrostruktur und Morphologie von Materialien ist."@de)
@@ -5943,7 +5962,7 @@ AnnotationAssertion(skos:definition co:PMD_0000875 "A Microscopy Process that us
 AnnotationAssertion(skos:example co:PMD_0000875 "An example is Light Microscopy."@en)
 SubClassOf(co:PMD_0000875 co:PMD_0000856)
 
-# Class: co:PMD_0000876 (Optisches Profilometer)
+# Class: co:PMD_0000876 (optical profilometer)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000876 "PMDco Team"@en)
 AnnotationAssertion(rdfs:label co:PMD_0000876 "Optisches Profilometer"@de)
@@ -6221,7 +6240,7 @@ AnnotationAssertion(skos:definition co:PMD_0000908 "Ein Urformprozess, der das F
 AnnotationAssertion(skos:example co:PMD_0000908 "Pottery"@en)
 SubClassOf(co:PMD_0000908 co:PMD_0000899)
 
-# Class: co:PMD_0000909 (project)
+# Class: co:PMD_0000909 (Projekt)
 
 AnnotationAssertion(rdfs:label co:PMD_0000909 "Projekt"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000909 "project"@en)
@@ -6606,7 +6625,7 @@ AnnotationAssertion(skos:definition co:PMD_0000956 "Ein Simulationsprozess, der 
 AnnotationAssertion(skos:example co:PMD_0000956 "Optimizing the atomic structure of a catalyst to enhance its performance."@en)
 SubClassOf(co:PMD_0000956 co:PMD_0000933)
 
-# Class: co:PMD_0000957 (structural property analyzing process)
+# Class: co:PMD_0000957 (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000957 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000957 "Struktur Eigenschaften Analyseverfahren"@de)
@@ -6639,7 +6658,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000961 "sublimation point"@en)
 AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a phase boundary that describes the temperature at which a material transitions directly from a solid to a gaseous state without passing through the liquid phase."@en)
 SubClassOf(co:PMD_0000961 co:PMD_0000882)
 
-# Class: co:PMD_0000962 (Überkritische Fluidchromatographie Verfahren)
+# Class: co:PMD_0000962 (supercritical fluid chromatography process)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000962 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000962 "supercritical fluid chromatography process"@en)
@@ -6803,7 +6822,7 @@ AnnotationAssertion(skos:definition co:PMD_0000979 "Ein Thermische Eigenschaften
 AnnotationAssertion(skos:example co:PMD_0000979 "Measuring the thermal conductivity of a composite material used in aerospace applications to ensure efficient heat dissipation."@en)
 SubClassOf(co:PMD_0000979 co:PMD_0000982)
 
-# Class: co:PMD_0000980 (thermal conductivity measuring function)
+# Class: co:PMD_0000980 (Wärmeleitfähigkeitsmessfunktion)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000980 "PMDco Team")
 AnnotationAssertion(rdfs:label co:PMD_0000980 "Wärmeleitfähigkeitsmessfunktion"@de)
