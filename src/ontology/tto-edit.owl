@@ -26,6 +26,7 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Tensile Test Ontology (TTO)")
 
+Declaration(Class(<https://w3id.org/pmd/ao/TTO_0000000>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000002>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000004>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000005>))
@@ -99,6 +100,14 @@ Declaration(AnnotationProperty(pmd:symbol))
 ############################
 #   Classes
 ############################
+
+# Class: <https://w3id.org/pmd/ao/TTO_0000000> (funder role)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/TTO_0000000> "Förderungsrolle"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/TTO_0000000> "funder role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/TTO_0000000> "A funder role is a role that describes the capacity in which a party provides financial support to a project or initiative. This role is realized when the party participates in the project specifically as a source of funding, regardless of other potential involvements."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/TTO_0000000> "Eine Förderungsrolle (Rolle einer fördernden Partei) ist eine Rolle, die die Funktion beschreibt, in der eine Partei finanzielle Unterstützung für ein Projekt oder eine Initiative bereitstellt. Diese Rolle wird verwirklicht, wenn die Partei speziell als Geldgeber am Projekt teilnimmt, unabhängig von anderen möglichen Beteiligungen."@de)
+SubClassOf(<https://w3id.org/pmd/ao/TTO_0000000> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000002> (Diameter)
 
@@ -265,7 +274,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000001
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000016> "e^._L_c"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000016> <https://w3id.org/pmd/ao/tto/TTO_0000025>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000017> (Extensometer Gauge Length)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000017> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000017> "Extensometer Gauge Length"@en)
@@ -768,7 +777,7 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000055> <http
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000055> "Part of a sample with specified dimensions, machined or un-machined, brought to a required condition for submission to a given test."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000055> "Teil einer Probe mit bestimmten Dimensionen, bearbeitet oder unbearbeitet, der in einen erforderlichen Zustand gebracht wird, um einer bestimmten Prüfung unterzogen zu werden."@de)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000055> "EN 10021:2006-12 (European standardization committee: CEN/TC 459/SC 12/WG 4)")
-SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000055> <http://purl.obolibrary.org/obo/BFO_0000030>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> pmd:PMD_0000975)))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000056> (End-Dicke)
 
