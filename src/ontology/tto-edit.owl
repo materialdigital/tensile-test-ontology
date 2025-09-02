@@ -26,7 +26,8 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Tensile Test Ontology (TTO)")
 
-Declaration(Class(<https://w3id.org/pmd/ao/TTO_0000000>))
+Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000000>))
+Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000001>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000002>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000004>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000005>))
@@ -85,7 +86,6 @@ Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000057>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000058>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000059>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000060>))
-Declaration(ObjectProperty(<https://w3id.org/pmd/ao/tto/TTO_0000001>))
 Declaration(ObjectProperty(pmd:relatesTo))
 Declaration(DataProperty(<http://www.w3.org/ns/prov#value>))
 Declaration(AnnotationProperty(dcterms:description))
@@ -101,13 +101,21 @@ Declaration(AnnotationProperty(pmd:symbol))
 #   Classes
 ############################
 
-# Class: <https://w3id.org/pmd/ao/TTO_0000000> (funder role)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000000> (Förderungsrolle)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/TTO_0000000> "Förderungsrolle"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/TTO_0000000> "funder role"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/TTO_0000000> "A funder role is a role that describes the capacity in which a party provides financial support to a project or initiative. This role is realized when the party participates in the project specifically as a source of funding, regardless of other potential involvements."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/TTO_0000000> "Eine Förderungsrolle (Rolle einer fördernden Partei) ist eine Rolle, die die Funktion beschreibt, in der eine Partei finanzielle Unterstützung für ein Projekt oder eine Initiative bereitstellt. Diese Rolle wird verwirklicht, wenn die Partei speziell als Geldgeber am Projekt teilnimmt, unabhängig von anderen möglichen Beteiligungen."@de)
-SubClassOf(<https://w3id.org/pmd/ao/TTO_0000000> <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000000> "Förderungsrolle"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000000> "funder role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000000> "A funder role is a role that describes the capacity in which a party provides financial support to a project or initiative. This role is realized when the party participates in the project specifically as a source of funding, regardless of other potential involvements."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000000> "Eine Förderungsrolle (Rolle einer fördernden Partei) ist eine Rolle, die die Funktion beschreibt, in der eine Partei finanzielle Unterstützung für ein Projekt oder eine Initiative bereitstellt. Diese Rolle wird verwirklicht, wenn die Partei speziell als Geldgeber am Projekt teilnimmt, unabhängig von anderen möglichen Beteiligungen."@de)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000000> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000001> (Höchstkraft der Kraftmessdose)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000001> "Höchstkraft der Kraftmessdose"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000001> "load cell maximum force"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000001> "Die Maximalkraft bezeichnet die größte Kraft, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000001> "The maximum force is the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur."@en)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000001> pmd:PMD_0020200)
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000002> (Diameter)
 
@@ -262,7 +270,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000015> "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000015> <https://w3id.org/pmd/ao/tto/TTO_0000002>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000016> (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000016> (Estimated Strain Rate Over The Parallel Length)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000016> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000016> "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -436,7 +444,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000002
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000028> "L_o"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000028> <https://w3id.org/pmd/ao/tto/TTO_0000019>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000029> (Original Thickness)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000029> (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000029> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000029> "Anfangs-Dicke"@de)
@@ -527,7 +535,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000003
 EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000035> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000035> <https://w3id.org/pmd/ao/tto/TTO_0000004>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000036> (Percentage Permanent Extension)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000036> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)
@@ -639,7 +647,6 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
 Source: ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000044> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000044> "R_p"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000044> ObjectSomeValuesFrom(<https://w3id.org/pmd/ao/tto/TTO_0000001> DataSomeValuesFrom(<http://www.w3.org/ns/prov#value> xsd:float)))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000044> <https://w3id.org/pmd/ao/tto/TTO_0000043>)
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000045> (Dehngrenze bei gesamter Extensometer-Dehnung)
@@ -669,7 +676,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000046> "stress at which the plastic extension is equal to 0.1 percent of the extensometer gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000046> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000046> "R_p_0.1"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000046> ObjectSomeValuesFrom(<https://w3id.org/pmd/ao/tto/TTO_0000001> DataHasValue(<http://www.w3.org/ns/prov#value> "0.1"^^xsd:float)))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000046> <https://w3id.org/pmd/ao/tto/TTO_0000044>)
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000047> (Dehngrenze bei plastischer Extensometer-Dehnung Rp02)
@@ -682,7 +688,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000047> "stress at which the plastic extension is equal to 0.2 percent of the extensometer gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000047> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000047> "R_p_0.2"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000047> ObjectSomeValuesFrom(<https://w3id.org/pmd/ao/tto/TTO_0000001> DataHasValue(<http://www.w3.org/ns/prov#value> "0.2"^^xsd:float)))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000047> <https://w3id.org/pmd/ao/tto/TTO_0000044>)
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000048> (3D Geometrie)
@@ -799,7 +804,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000057> "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000057> pmd:PMD_0000003)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000058> (Umschaltpunkt der Prüfgeschwindigkeit)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000058> (Transition Point Testing Rate)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000058> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000058> "Transition Point Testing Rate"@en)
