@@ -520,8 +520,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 
 Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.")
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000034> "DIN EN ISO 6892-1:2019")
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000034> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000034> <https://w3id.org/pmd/ao/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000034> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000035> (Percentage Permanent Elongation)
 
@@ -544,8 +544,8 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000036> <http
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000036> "Vergrößerung der Extensometer-Messlänge nach Entfernen einer festgelegten, auf die Probe aufgebrachten Zugspannung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000036> "increase in the extensometer gauge length, after removal of a specified stress from the test piece, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000036> "DIN EN ISO 6892-1:2019"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000036> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000036> <https://w3id.org/pmd/ao/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000036> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000037> (Plastische Extensometer-Dehnung bei Höchstkraft)
 
@@ -557,8 +557,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000037> "plastische Verlängerung der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000037> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000037> "A_g"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000037> ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000023>)))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000037> <https://w3id.org/pmd/ao/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000037> ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000023>)))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000038> (Percentage Reduction Of Area)
 
@@ -583,8 +583,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000039> "total extension (elastic extension plus plastic extension) at the moment of fracture, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000039> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000039> "A_t"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000039> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000039> <https://w3id.org/pmd/ao/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000039> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000040> (Gesamte Extensometer-Dehnung bei Höchstkraft)
 
@@ -596,8 +596,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000040> "total extension (elastic extension plus plastic extension) at maximum force, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000040> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000040> "A_gt"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000040> ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000023>)))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000040> <https://w3id.org/pmd/ao/tto/TTO_0000005>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000040> ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000023>)))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000041> (Percentage Yield Point Extension)
 
@@ -663,8 +663,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 Note: A suffix is added to the subscript to indicate the prescribed percentage, e.g. R_t_0.5."@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000045> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000045> "R_t"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000045> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000045> <https://w3id.org/pmd/ao/tto/TTO_0000043>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000045> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000046> (Dehngrenze bei plastischer Extensometer-Dehnung Rp01)
 
