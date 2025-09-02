@@ -23,7 +23,7 @@ When editing this verion, a branch can be created that may be further considered
 ## Exemplary Dataset
 
 An exemplary dataset ([TTL](https://github.com/materialdigital/tensile-test-ontology/blob/main/tensile_test_data/S355_data_tto.ttl) and [RDF](https://github.com/materialdigital/tensile-test-ontology/blob/main/tensile_test_data/S355_data_tto.rdf) files) is provided in this repository ([data section](https://github.com/materialdigital/tensile-test-ontology/tree/main/tensile_test_data)) which resulted from mapping of typical tensile test data that was published in an open access [Zenodo repository](https://zenodo.org/record/6778336). 
-For this data mapping procedure, a simple Python script was used in a Jupyter Notebook environment. This Jupyter Notebook script entitled [PMDCO_3_0_RDF_TTO_Data_Mapping](https://github.com/materialdigital/tensile-test-ontology/PMDCO_3_0_RDF_TTO_Data_Mapping.ipynb) can also be found in this repository. 
+For this data mapping procedure, a simple Python script was used in a Jupyter Notebook environment. This Jupyter Notebook script entitled [PMDCO_3_0_TTO_Data_Mapping](https://github.com/materialdigital/tensile-test-ontology/blob/main/tensile_test_data/PMDCO_3_0_TTO_Data_Mapping.ipynb) can also be found in this repository as well as the data obtained from the test performances (frequently denoted as "raw data"). 
 
 ## Scientific Publication
 
