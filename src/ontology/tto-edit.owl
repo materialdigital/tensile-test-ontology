@@ -137,8 +137,8 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000004> <http
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000004> "Zunahme der Anfangsmesslänge zu einem beliebigen Zeitpunkt während des Versuchs"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000004> "increase in the original gauge length at any moment during the test"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000004> "DIN EN ISO 6892-1:2019"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000004> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000004> pmd:PMD_0040001)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000004> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000005> (Extension)
 
@@ -395,8 +395,8 @@ Note: It is typically measured perpendicular to the direction of the applied for
 
 Note: It is recommended to measure the original cross-sectional area of the parallel length to an accuracy of ±2 %. However, measuring the original cross-sectional area of the parallel length with an accuracy of ±2 % on small diameter round test pieces, or test pieces with other cross-sectional geometries, may not be possible."@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000024> "DIN EN ISO 6892-1:2019")
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000024> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000056>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000060>)) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000015>)))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000024> <https://w3id.org/pmd/ao/tto/TTO_0000012>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000024> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000056>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000060>)) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000015>)))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000025> (Movement Quality)
 
@@ -418,8 +418,8 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000026> <http
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000026> "Dieses Konzept beschreibt die initiale Querschnittsfläche des Zugprüfkörpers entlang seiner parallelen Länge, bevor eine Verformung auftritt."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000026> "This concept describes the initial area of the tensile test piece before any deformation occurs."@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000026> "DIN EN ISO 6892-1:2019")
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000026> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000029>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000030>)) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000027>)))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000026> <https://w3id.org/pmd/ao/tto/TTO_0000012>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000026> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000029>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000030>)) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000027>)))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000027> (Original Diameter)
 
@@ -489,8 +489,8 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000032> <http
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000032> "Verlängerung, angegeben in Prozent, bezogen auf die Anfangsmesslänge"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000032> "elongation expressed as a percentage of the original gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000032> "DIN EN ISO 6892-1:2019"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000032> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000032> <https://w3id.org/pmd/ao/tto/TTO_0000004>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000032> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000033> (Bruchdehnung)
 
@@ -502,8 +502,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000033> "permanent elongation of the gauge length after fracture (L_u − L_o), expressed as a percentage of the original gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000033> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000033> "A"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000033> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000033> <https://w3id.org/pmd/ao/tto/TTO_0000004>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000033> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000034> (Extensometer-Dehnung)
 
@@ -532,8 +532,8 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000035> <http
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000035> "Zunahme der Anfangsmesslänge einer Probe nach Entfernen einer festgelegten Zugspannung, angegeben in Prozent, bezogen auf die Anfangsmesslänge"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000035> "increase in the original gauge length of a test piece after removal of a specified stress, expressed as a percentage of the original gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000035> "DIN EN ISO 6892-1:2019"@en)
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000035> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000035> <https://w3id.org/pmd/ao/tto/TTO_0000004>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000035> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
 
@@ -570,8 +570,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000038> "maximum change in cross-sectional area which has occurred during the test (S_o − S_u), expressed as a percentage of the original cross-sectional area, S_o"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000038> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000038> "Z")
-EquivalentClasses(<https://w3id.org/pmd/ao/tto/TTO_0000038> ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000024>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000026>)))
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000038> <https://w3id.org/pmd/ao/tto/TTO_0000049>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000038> ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000024>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000026>)))
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000039> (Percentage Total Extension At Fracture)
 
