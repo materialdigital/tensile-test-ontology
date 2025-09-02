@@ -1,14 +1,14 @@
 # Basic ODK workflow
 
-name: BUILD_WITH_IMPORTS
+name: build
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ '*' ]
+    branches: ["*"]
   pull_request:
-    branches: [ '*' ]
+    branches: ["*"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -29,10 +29,11 @@ jobs:
       - name: Build ontology
         env:
           DEFAULT_BRANCH: main
-        run: cd src/ontology && make refresh-imports tto.ttl ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' 
+        run: cd src/ontology && make refresh-imports all_assets ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G'
       - name: Commit files # commit the src folder
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'updated ontology'
-          add: '*.* --force'
-          cwd: './src/'
+          message: "updated ontology"
+          add: "*.* --force"
+          cwd: "./src/"
+          default_author: github_actions
