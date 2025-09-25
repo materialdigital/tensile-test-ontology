@@ -1,0 +1,24 @@
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX pmdco: <https://w3id.org/pmd/co/>
+PREFIX prefix: <https://w3id.org/pmd/ao/demodata/tensiletest_S355/>
+
+SELECT ?subprocessShort
+WHERE {
+  {
+    SELECT ?mainProcess
+    WHERE {
+      ?mainProcess a pmdco:PMD_0000974 .
+      FILTER(CONTAINS(STR(?mainProcess), "_process"))
+    }
+    LIMIT 1
+  }
+
+  ?subprocess obo:BFO_0000132 ?mainProcess .
+  OPTIONAL { ?subprocess (obo:BFO_0000062)+ ?prev }
+
+  # Abkürzen auf "prefix:..."
+  BIND(REPLACE(STR(?subprocess), "^https://w3id.org/pmd/ao/demodata/tensiletest_S355/pmdao-tto-tt-S355-1_process_", "") AS ?subprocessShort)
+}
+GROUP BY ?subprocessShort
+ORDER BY (COUNT(?prev))

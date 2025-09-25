@@ -1,0 +1,45 @@
+PREFIX pmdco: <https://w3id.org/pmd/co/>
+PREFIX obo:   <http://purl.obolibrary.org/obo/>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?processLabel 
+       (SAMPLE(?Rp02) AS ?Rp02) (SAMPLE(?Rp02_unit) AS ?Rp02_unit)
+       (SAMPLE(?Rm) AS ?Rm) (SAMPLE(?Rm_unit) AS ?Rm_unit)
+       (SAMPLE(?E) AS ?E) (SAMPLE(?E_unit) AS ?E_unit)
+
+WHERE {
+  ?experiment rdfs:label ?processLabel ;
+              obo:IAO_0000219 ?process .
+
+  # Rp02
+  OPTIONAL {
+    ?process pmdco:PMD_0000016 ?Rp02_quality .
+    ?Rp02_quality obo:IAO_0000417 ?Rp02_smd .
+    ?Rp02_smd pmdco:PMD_0060000 ?Rp02_svs .
+    ?Rp02_svs pmdco:PMD_0000006 ?Rp02 .
+    FILTER(CONTAINS(STR(?Rp02_quality), "proofStrength_Rp02"))
+    OPTIONAL { ?Rp02_svs pmdco:PMD_0000020 ?Rp02_unit }
+  }
+
+  # Rm
+  OPTIONAL {
+    ?process pmdco:PMD_0000016 ?Rm_quality .
+    ?Rm_quality obo:IAO_0000417 ?Rm_smd .
+    ?Rm_smd pmdco:PMD_0060000 ?Rm_svs .
+    ?Rm_svs pmdco:PMD_0000006 ?Rm .
+    FILTER(CONTAINS(STR(?Rm_quality), "tensileStrength_Rm"))
+    OPTIONAL { ?Rm_svs pmdco:PMD_0000020 ?Rm_unit }
+  }
+
+  # E
+  OPTIONAL {
+    ?process pmdco:PMD_0000016 ?E_quality .
+    ?E_quality obo:IAO_0000417 ?E_smd .
+    ?E_smd pmdco:PMD_0060000 ?E_svs .
+    ?E_svs pmdco:PMD_0000006 ?E .
+    FILTER(CONTAINS(STR(?E_quality), "modulusOfElasticity_E"))
+    OPTIONAL { ?E_svs pmdco:PMD_0000020 ?E_unit }
+  }
+}
+GROUP BY ?processLabel 
+ORDER BY ?processLabel

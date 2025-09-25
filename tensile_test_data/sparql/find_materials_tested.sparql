@@ -1,0 +1,14 @@
+PREFIX pmdco: <https://w3id.org/pmd/co/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?material_tested
+WHERE {
+  # Find the instance describing the material identification
+  ?identifier pmdco:PMD_0060000 ?material_value .
+  FILTER(CONTAINS(STR(?material_value), "_material_identifier_value"))
+
+  # Get the actual value (literal), regardless of whether it is rdfs:label or rdf:value or similar.
+  ?material_value ?p ?material_tested .
+  FILTER(isLiteral(?material_tested))
+}
