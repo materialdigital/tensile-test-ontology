@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="https://w3id.org/pmd/ao/tto/tto-simple.owl#"
      xml:base="https://w3id.org/pmd/ao/tto/tto-simple.owl"
      xmlns:co="https://w3id.org/pmd/co/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,10 +9,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/ao/tto/tto-simple.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/tto/releases/2025-09-25/tto-simple.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/tto/releases/2025-11-06/tto-simple.owl"/>
         <terms:contributor>https://orcid.org/0000-0003-1649-6832</terms:contributor>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
@@ -28,7 +26,7 @@ Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualis
 The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Tensile Test Ontology (TTO)</terms:title>
-        <owl:versionInfo>2025-09-25</owl:versionInfo>
+        <owl:versionInfo>2025-11-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -47,18 +45,6 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/identifier -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
     
 
 
@@ -83,7 +69,6 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <obo:IAO_0000117>Mark Miller</obo:IAO_0000117>
         <rdfs:label>dcterms:license</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -92,12 +77,6 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     
 
 
@@ -145,7 +124,6 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- http://purl.obolibrary.org/obo/BFO_0000196 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000196">
-        <dc:identifier>053-BFO</dc:identifier>
         <rdfs:label xml:lang="en">bearer of</rdfs:label>
         <skos:definition xml:lang="en">b bearer of c =Def c inheres in b</skos:definition>
         <skos:example xml:lang="en">A patch of ink is the bearer of a colour quality; an organism is the bearer of a temperature quality</skos:example>
