@@ -32,7 +32,6 @@ Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000002>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000004>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000005>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000006>))
-Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000007>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000008>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000009>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000010>))
@@ -88,6 +87,7 @@ Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000059>))
 Declaration(Class(<https://w3id.org/pmd/ao/tto/TTO_0000060>))
 Declaration(ObjectProperty(pmd:relatesTo))
 Declaration(DataProperty(<http://www.w3.org/ns/prov#value>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -117,11 +117,11 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000001> "The maximum force is the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur."@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000001> pmd:PMD_0020200)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000002> (Diameter)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000002> (diameter)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000002> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000002> "diameter"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000002> "Durchmesser"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000002> "diameter"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000002> <https://w3id.org/pmd/co/2.0.8/Diameter>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000002> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000002> "The length of a straight line through the center of an object or space."@en)
@@ -131,8 +131,8 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000002> pmd:PMD_0040001)
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000004> (Verlängerung)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000004> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000004> "elongation"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000004> "Verlängerung"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000004> "elongation"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000004> <https://w3id.org/pmd/tto/Elongation>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000004> "Zunahme der Anfangsmesslänge zu einem beliebigen Zeitpunkt während des Versuchs"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000004> "increase in the original gauge length at any moment during the test"@en)
@@ -140,7 +140,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000000
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000004> pmd:PMD_0040001)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000004> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000005> (Extension)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000005> (extension)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/ao/tto/TTO_0000005> <http://purl.obolibrary.org/obo/IAO_0000428>)
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/ao/tto/TTO_0000005> "Dimensional analysis: L
@@ -152,15 +152,15 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/ao/tto/TTO_0000005> "Note
 
 Note: Optical extensometry may require a specific data storage method."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000005> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000005> "extension"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000005> "Verlängerung (der Extensometer-Messlänge)"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000005> "extension"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000005> <https://w3id.org/pmd/co/2.0.8/Extension>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000005> "Increase in the extensometer gauge length at any moment during a test"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000005> "Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs"@de)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000005> "DIN EN ISO 6892-1:2019")
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000005> pmd:PMD_0000848)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000006> (Thickness)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000006> (thickness)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000006> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000006> "Dicke"@de)
@@ -169,16 +169,6 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000006> <http
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000006> "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000006> "This class describes the measured dimension in one direction of a test piece."@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000006> pmd:PMD_0040001)
-
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000007> (Area)
-
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000007> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000007> "area"@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000007> "Fläche"@de)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000007> <https://w3id.org/pmd/co/2.0.8/Area>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000007> "Die Ausdehnung oder Messung einer Fläche."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000007> "The extent or measurement of a surface."@en)
-SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000007> pmd:PMD_0020132)
 
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000008> (Form)
 
@@ -202,7 +192,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000009> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000009> pmd:PMD_0000952)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000010> (Width)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000010> (width)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000010> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000010> "Breite"@de)
@@ -227,32 +217,32 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000011> pmd:PMD_0040001)
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000012> (Querschnittsfläche)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000012> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000012> "cross section area"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000012> "Querschnittsfläche"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000012> "cross section area"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000012> <https://w3id.org/pmd/co/2.0.8/CrossSectionArea>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000012> "Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000012> "The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis."@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000012> <https://www.merriam-webster.com/dictionary/cross%20section>)
-SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000012> <https://w3id.org/pmd/ao/tto/TTO_0000007>)
+SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000012> pmd:PMD_0020199)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000013> (Crosshead Separation)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000013> (crosshead separation)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/ao/tto/TTO_0000013> "Dimensional analysis: L
 Unit (e.g. SI): mm"@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000013> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000013> "crosshead separation"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000013> "Querhaupttrennung"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000013> "crosshead separation"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000013> <https://w3id.org/pmd/tto/CrossheadSeparation>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000013> "Dieses Konzept beschreibt die Verschiebung der Traverse einer Zugprüfmaschine."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000013> "This concept describes the displacement of the crossheads of a tensile testing machine."@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000013> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000013> pmd:PMD_0040001)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000014> (Crosshead Separation Rate)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000014> (crosshead separation rate)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000014> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000014> "crosshead separation rate"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000014> "Traversengeschwindigkeit"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000014> "crosshead separation rate"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000014> <https://w3id.org/pmd/tto/CrossheadSeparationRate>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000014> "Traversenweg je Zeiteinheit"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000014> "displacement of the crossheads per time"@en)
@@ -263,14 +253,14 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000014> <https://w3id.org/pmd/ao/tt
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000015> (End-Probendurchmesser)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000015> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000015> "diameter after fracture"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000015> "End-Probendurchmesser"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000015> "diameter after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000015> <https://w3id.org/pmd/tto/DiameterAfterFracture>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000015> "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000015> "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000015> <https://w3id.org/pmd/ao/tto/TTO_0000002>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000016> (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000016> (estimated strain rate over the parallel length)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000016> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000016> "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -285,8 +275,8 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000016> <https://w3id.org/pmd/ao/tt
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000017> (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000017> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000017> "extensometer gauge length"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000017> "Extensometer-Messlänge"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000017> "extensometer gauge length"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000017> <https://w3id.org/pmd/tto/ExtensometerGaugeLength>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000017> "Anfangsmesslänge des Dehnungsaufnehmers (Extensometer), die zum Messen der Verlängerung benutzt wird
 
@@ -298,11 +288,11 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000001
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000017> "L_e"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000017> <https://w3id.org/pmd/ao/tto/TTO_0000019>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000018> (Final Gauge Length After Fracture)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000018> (final gauge length after fracture)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000018> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000018> "final gauge length after fracture"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000018> "Messlänge nach dem Bruch"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000018> "final gauge length after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000018> <https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000018> "Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die nach dem Bruch bei Raumtemperatur gemessen wird, nachdem die beiden Probenbruchstücke sorgfältig so zusammengefügt wurden, dass ihre Achsen in einer Geraden liegen"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000018> "length between gauge length marks on the test piece measured after rupture, at room temperature, the two pieces having been carefully fitted back together so that their axes lie in a straight line"@en)
@@ -313,8 +303,8 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000018> <https://w3id.org/pmd/ao/tt
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000019> (Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000019> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000019> "gauge length"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000019> "Messlänge"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000019> "gauge length"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000019> <https://w3id.org/pmd/tto/GaugeLength>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000019> "Länge des parallelen Teils der Probe, an dem zu einem beliebigen Zeitpunkt während des Versuchs die Verlängerung gemessen wird"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000019> "length of the parallel portion of the test piece on which elongation is measured at any moment during the test"@en)
@@ -322,18 +312,18 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000001
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000019> "L"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000019> pmd:PMD_0040001)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000020> (Gauge Length Marks)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000020> (gauge length marks)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/ao/tto/TTO_0000020> <http://purl.obolibrary.org/obo/IAO_0000428>)
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000020> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000020> "gauge length marks"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000020> "Messlängenmarkierungen"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000020> "gauge length marks"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000020> <https://w3id.org/pmd/tto/GaugeLengthMarks>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000020> "Dieses Konzept wird verwendet, um die sichtbaren Markierungen zu beschreiben, die in der Regel während eines Zugversuchs zur Messung der Dehnung an den Prüfkörpern angebracht werden."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000020> "This concept is used to describe the visible markers usually attached to test pieces during a tensile test for elongation / extension measurements."@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000020> pmd:PMD_0000602)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000021> (Geometry Shape)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000021> (geometry shape)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/ao/tto/TTO_0000021> <http://purl.obolibrary.org/obo/IAO_0000428>)
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000021> <https://w3id.org/pmd/tto>)
@@ -377,7 +367,7 @@ Note: For materials which display discontinuous yielding, but where no work-hard
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000023> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000023> pmd:PMD_0020200)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000024> (Minimum cross-sectional area after fracture)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000024> (minimum cross-sectional area after fracture)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/ao/tto/TTO_0000024> "Symbol: S_u")
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000024> <https://w3id.org/pmd/ao/tto>)
@@ -398,7 +388,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000002
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000024> <https://w3id.org/pmd/ao/tto/TTO_0000012>)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000024> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000056>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000060>)) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000015>)))
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000025> (Movement Quality)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000025> (movement quality)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000025> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000025> "Bewegungsqualität"@de)
@@ -421,7 +411,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000002
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000026> <https://w3id.org/pmd/ao/tto/TTO_0000012>)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000026> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000029>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000030>)) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000027>)))
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000027> (Original Diameter)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000027> (original diameter)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000027> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000027> "Anfangs-Probendurchmesser"@de)
@@ -432,7 +422,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_0000027> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000027> <https://w3id.org/pmd/ao/tto/TTO_0000002>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000028> (Original Gauge Length)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000028> (original gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000028> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000028> "Anfangsmesslänge"@de)
@@ -454,7 +444,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000029> "This entity describes the measured dimension in one direction of a test piece, as measured before the test."@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000029> <https://w3id.org/pmd/ao/tto/TTO_0000006>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000030> (Original Width)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000030> (original width)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000030> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000030> "Anfangs-Breite"@de)
@@ -467,8 +457,8 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000030> <https://w3id.org/pmd/ao/tt
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000031> (Parallele Länge)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000031> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000031> "parallel length"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000031> "Parallele Länge"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000031> "parallel length"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000031> <https://w3id.org/pmd/tto/ParallelLength>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000031> "Länge des parallelen reduzierten Querschnitts der Probe
 
@@ -523,7 +513,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000003
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000034> <https://w3id.org/pmd/ao/tto/TTO_0000005>)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000034> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>))
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000035> (Percentage Permanent Elongation)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000035> (percentage permanent elongation)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000035> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000035> "Bleibende Dehnung"@de)
@@ -535,7 +525,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000003
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000035> <https://w3id.org/pmd/ao/tto/TTO_0000004>)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000035> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000028>))
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000036> (Percentage Permanent Extension)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000036> (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000036> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)
@@ -550,8 +540,8 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000036> ObjectSomeValuesFrom(pmd:re
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000037> (Plastische Extensometer-Dehnung bei Höchstkraft)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000037> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000037> "percentage plastic extension at maximum force"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000037> "Plastische Extensometer-Dehnung bei Höchstkraft"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000037> "percentage plastic extension at maximum force"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000037> <https://w3id.org/pmd/tto/PercentagePlasticExtensionAtMaximumForce>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000037> "plastic extension at maximum force, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000037> "plastische Verlängerung der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de)
@@ -560,7 +550,7 @@ AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000037> "A_g"@e
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000037> <https://w3id.org/pmd/ao/tto/TTO_0000005>)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000037> ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000023>)))
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000038> (Percentage Reduction Of Area)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000038> (percentage reduction of area)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000038> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000038> "Brucheinschnürung"@de)
@@ -573,7 +563,7 @@ AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000038> "Z")
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000038> <https://w3id.org/pmd/ao/tto/TTO_0000049>)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000038> ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000024>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000026>)))
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000039> (Percentage Total Extension At Fracture)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000039> (percentage total extension at fracture)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000039> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000039> "Gesamte Extensometer-Dehnung beim Bruch"@de)
@@ -599,11 +589,11 @@ AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000040> "A_gt"@
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000040> <https://w3id.org/pmd/ao/tto/TTO_0000005>)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000040> ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000017>) ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/ao/tto/TTO_0000023>)))
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000041> (Percentage Yield Point Extension)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000041> (percentage yield point extension)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000041> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000041> "percentage yield point extension"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000041> "Streckgrenzen-Extensometer-Dehnung"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000041> "percentage yield point extension"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000041> <https://w3id.org/pmd/tto/PercentageYieldPointExtension>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000041> "Bei Werkstoffen, die ein diskontinuierliches Fließen zeigen: Verlängerung der Extensometer-Messlänge zwischen dem Beginn örtlichen Fließens und dem Einsetzen gleichmäßiger Verfestigung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000041> "For discontinuous yielding materials: extension between the start of yielding and the start of uniform work-hardening, expressed as a percentage of the extensometer gauge length"@en)
@@ -611,11 +601,11 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000004
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000041> "A_e"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000041> <https://w3id.org/pmd/ao/tto/TTO_0000005>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000042> (Physical Quality)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000042> (physical quality)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000042> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000042> "physical quality"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000042> "Physikalische Qualität"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000042> "physical quality"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000042> <https://w3id.org/pmd/tto/PhysicalQuality>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000042> "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000042> "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de)
@@ -631,7 +621,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000043> "stress at which the a specific extension value is equal to a specified percentage of the extensometer gauge length"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000043> pmd:PMD_0000952)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000044> (Proof Strength Plastic Extension)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000044> (proof strength plastic extension)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000044> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000044> "Dehngrenze bei plastischer Extensometer-Dehnung"@de)
@@ -702,7 +692,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/ao/tto/TTO_0000048> "Examples include shapes like cubes, spheres, and pyramids."@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000048> <https://w3id.org/pmd/ao/tto/TTO_0000021>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000049> (Size Relation)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000049> (size relation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/ao/tto/TTO_0000049> <http://purl.obolibrary.org/obo/IAO_0000428>)
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000049> <https://w3id.org/pmd/ao/tto>)
@@ -714,8 +704,8 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000049> <https://w3id.org/pmd/ao/tt
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000050> (Steigung des elastischen Bereichs)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000050> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000050> "slope of the elastic part"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000050> "Steigung des elastischen Bereichs"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000050> "slope of the elastic part"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000050> <https://w3id.org/pmd/tto/SlopeOfTheElasticPart>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000050> "Dieses Konzept beschreibt den Wert der Steigung des ersten linear ansteigenden Teils (\"elastischer Teil\") in der bei einem Zugversuch erhaltenen Spannungs-Dehnungs-Kurve. Im elastischen Teil der Spannungs-Dehnungs-Kurve muss der Wert der Steigung nicht unbedingt dem Elastizitätsmodul entsprechen. Dieser Wert kann mit dem Wert des Elastizitätsmoduls (nur) sehr gut übereinstimmen, wenn optimale Bedingungen herrschten."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000050> "This concept describes the value of the slope of the first linear increasing part (‘elastic part’) in the stress-percentage extension curve obtained during a tensile test. In the elastic part of the stress‐percentage extension curve, the value of the slope may not necessarily represent the modulus of elasticity. This value may closely agree with the value of the modulus of elasticity if optimal conditions were used."@en)
@@ -734,7 +724,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000005
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000051> "e^._L_e"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000051> <https://w3id.org/pmd/ao/tto/TTO_0000025>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000052> (Stress Rate)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000052> (stress rate)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000052> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000052> "Spannungsgeschwindigkeit"@de)
@@ -750,12 +740,12 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/ao/tto/TTO_000005
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/ao/tto/TTO_0000052> "R"@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000052> <https://w3id.org/pmd/ao/tto/TTO_0000025>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000053> (Tensile Strength)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000053> (tensile strength)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/ao/tto/TTO_0000053> <http://purl.obolibrary.org/obo/IAO_0000428>)
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000053> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000053> "tensile strength"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000053> "Zugfestigkeit"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000053> "tensile strength"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000053> <https://w3id.org/pmd/tto/TensileStrength>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000053> "Spannung, die der Höchstkraft entspricht"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000053> "stress corresponding to the maximum force"@en)
@@ -766,14 +756,14 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000053> pmd:PMD_0000952)
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000054> (Zugversuchsmethode)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000054> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000054> "tensile test method"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000054> "Zugversuchsmethode"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000054> "tensile test method"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000054> <https://w3id.org/pmd/tto/TensileTestMethod>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000054> "A tensile test method is a plan specification that prescribes the execution of a controlled experiment designed to determine the mechanical properties of a material under uniaxial tensile loading. The plan specifies procedural steps, conditions, and measurement criteria to assess properties such as ultimate tensile strength, yield strength, and elongation at break."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000054> "Eine Zugversuchsmethode ist eine Planspezifikation, die die Durchführung eines kontrollierten Versuchs zur Bestimmung der mechanischen Eigenschaften eines Materials unter einachsiger Zugbelastung vorschreibt. Der Plan legt Verfahrensschritte, Bedingungen und Messkriterien fest, um Eigenschaften wie die Zugfestigkeit, die Streckgrenze und die Bruchdehnung zu bestimmen."@de)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000054> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000055> (Test Piece)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000055> (test piece)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000055> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000055> "Prüfkörper"@de)
@@ -797,8 +787,8 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000056> <https://w3id.org/pmd/ao/tt
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000057> (Umschaltpunkt)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000057> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000057> "transition point"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000057> "Umschaltpunkt"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000057> "transition point"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000057> <https://w3id.org/pmd/tto/TransitionPoint>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000057> "Diese Entität beschreibt einen einzelnen Punkt, an dem ein Übergang von einer Bedingung oder einem Zustand in einen anderen erfolgt, z. B. der Punkt, an dem verschiedene Phasen von Materie im Gleichgewicht miteinander existieren können (auch Inversionspunkt genannt) oder wenn Prozessparameter geändert werden, die zu einem Übergang des Prozesses während seiner Ausführung führen."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000057> "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
@@ -807,14 +797,14 @@ SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000057> pmd:PMD_0000008)
 # Class: <https://w3id.org/pmd/ao/tto/TTO_0000058> (Umschaltpunkt der Prüfgeschwindigkeit)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000058> <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000058> "transition point testing rate"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000058> "Umschaltpunkt der Prüfgeschwindigkeit"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000058> "transition point testing rate"@en)
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/ao/tto/TTO_0000058> <https://w3id.org/pmd/tto/TransitionPointTestingRate>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000058> "Diese Entität beschreibt den Umschaltpunkt der Prüfgeschwindigkeit während eines Analyse- / Testprozesses, z.B. den Punkt bezogen auf die Dehnung oder Spannung, an welchem die Prüfgeschwindigkeit während eines Zugversuchs geändert wird. Typischerweise ist dieser Punkt mit einer Abnahme des Extensometers (Dehnungsaufnehmers) vom Prüfkörper während eines dehnungsgeregelten Zugversuchs verbunden."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/ao/tto/TTO_0000058> "This entity describes the the transition point of the testing rate during an analysis / test process, e.g. the point referring to the strain or the stress at which the testing rate is changed during a tensile test. Typically, this transition point is associated with a removal of the extensometer from the test piece during a strain-controlled tensile test."@en)
 SubClassOf(<https://w3id.org/pmd/ao/tto/TTO_0000058> pmd:PMD_0000008)
 
-# Class: <https://w3id.org/pmd/ao/tto/TTO_0000059> (Upper Yield Strength)
+# Class: <https://w3id.org/pmd/ao/tto/TTO_0000059> (upper yield strength)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/ao/tto/TTO_0000059> <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/ao/tto/TTO_0000059> "Obere Streckgrenze"@de)
