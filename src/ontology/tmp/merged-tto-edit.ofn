@@ -35,7 +35,6 @@ Declaration(Class(:TTO_0000002))
 Declaration(Class(:TTO_0000004))
 Declaration(Class(:TTO_0000005))
 Declaration(Class(:TTO_0000006))
-Declaration(Class(:TTO_0000007))
 Declaration(Class(:TTO_0000008))
 Declaration(Class(:TTO_0000009))
 Declaration(Class(:TTO_0000010))
@@ -95,8 +94,8 @@ Declaration(Class(pmd:PMD_0000618))
 Declaration(Class(pmd:PMD_0000848))
 Declaration(Class(pmd:PMD_0000952))
 Declaration(Class(pmd:PMD_0000975))
-Declaration(Class(pmd:PMD_0020132))
 Declaration(Class(pmd:PMD_0020148))
+Declaration(Class(pmd:PMD_0020199))
 Declaration(Class(pmd:PMD_0020200))
 Declaration(Class(pmd:PMD_0040001))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000196>))
@@ -190,16 +189,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000000
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000006 "This class describes the measured dimension in one direction of a test piece."@en)
 SubClassOf(:TTO_0000006 pmd:PMD_0040001)
 
-# Class: :TTO_0000007 (area)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000007 <https://w3id.org/pmd/ao/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000007 "Fläche"@de)
-AnnotationAssertion(rdfs:label :TTO_0000007 "area"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000007 <https://w3id.org/pmd/co/2.0.8/Area>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000007 "Die Ausdehnung oder Messung einer Fläche."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000007 "The extent or measurement of a surface."@en)
-SubClassOf(:TTO_0000007 pmd:PMD_0020132)
-
 # Class: :TTO_0000008 (Form)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000008 <https://w3id.org/pmd/ao/tto>)
@@ -253,7 +242,7 @@ AnnotationAssertion(rdfs:seeAlso :TTO_0000012 <https://w3id.org/pmd/co/2.0.8/Cro
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000012 "Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000012 "The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis."@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000012 <https://www.merriam-webster.com/dictionary/cross%20section>)
-SubClassOf(:TTO_0000012 :TTO_0000007)
+SubClassOf(:TTO_0000012 pmd:PMD_0020199)
 
 # Class: :TTO_0000013 (crosshead separation)
 
@@ -555,7 +544,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000035 "DIN EN ISO 6892-1:2019"@e
 SubClassOf(:TTO_0000035 :TTO_0000004)
 SubClassOf(:TTO_0000035 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
 
-# Class: :TTO_0000036 (Bleibende Extensometer-Dehnung)
+# Class: :TTO_0000036 (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000036 <https://w3id.org/pmd/ao/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000036 "Bleibende Extensometer-Dehnung"@de)

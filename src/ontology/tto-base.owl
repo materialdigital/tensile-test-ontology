@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/ao/tto/tto-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/tto/releases/2025-11-06/tto-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/tto/releases/2025-11-07/tto-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
@@ -26,7 +26,7 @@ Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualis
 The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Tensile Test Ontology (TTO)</dcterms:title>
-        <owl:versionInfo>2025-11-06</owl:versionInfo>
+        <owl:versionInfo>2025-11-07</owl:versionInfo>
     </owl:Ontology>
     
 

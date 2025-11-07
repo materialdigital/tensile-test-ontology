@@ -11,8 +11,6 @@ ERROR	multiple_labels	extension	rdfs:label	Verlängerung (der Extensometer-Messl
 ERROR	multiple_labels	extension	rdfs:label	extension@en
 ERROR	multiple_labels	thickness	rdfs:label	Dicke@de
 ERROR	multiple_labels	thickness	rdfs:label	thickness@en
-ERROR	multiple_labels	area	rdfs:label	Fläche@de
-ERROR	multiple_labels	area	rdfs:label	area@en
 ERROR	multiple_labels	Form	rdfs:label	Form@de
 ERROR	multiple_labels	Form	rdfs:label	shape@en
 ERROR	multiple_labels	Streckgrenze	rdfs:label	Streckgrenze@de
@@ -29,10 +27,10 @@ ERROR	multiple_labels	crosshead separation rate	rdfs:label	Traversengeschwindigk
 ERROR	multiple_labels	crosshead separation rate	rdfs:label	crosshead separation rate@en
 ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	End-Probendurchmesser@de
 ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	diameter after fracture@en
-ERROR	multiple_labels	estimated strain rate over the parallel length	rdfs:label	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge@de
-ERROR	multiple_labels	estimated strain rate over the parallel length	rdfs:label	estimated strain rate over the parallel length@en
-ERROR	multiple_labels	extensometer gauge length	rdfs:label	Extensometer-Messlänge@de
-ERROR	multiple_labels	extensometer gauge length	rdfs:label	extensometer gauge length@en
+ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge@de
+ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	estimated strain rate over the parallel length@en
+ERROR	multiple_labels	Extensometer-Messlänge	rdfs:label	Extensometer-Messlänge@de
+ERROR	multiple_labels	Extensometer-Messlänge	rdfs:label	extensometer gauge length@en
 ERROR	multiple_labels	final gauge length after fracture	rdfs:label	Messlänge nach dem Bruch@de
 ERROR	multiple_labels	final gauge length after fracture	rdfs:label	final gauge length after fracture@en
 ERROR	multiple_labels	Messlänge	rdfs:label	Messlänge@de
@@ -55,8 +53,8 @@ ERROR	multiple_labels	original diameter	rdfs:label	Anfangs-Probendurchmesser@de
 ERROR	multiple_labels	original diameter	rdfs:label	original diameter@en
 ERROR	multiple_labels	original gauge length	rdfs:label	Anfangsmesslänge@de
 ERROR	multiple_labels	original gauge length	rdfs:label	original gauge length@en
-ERROR	multiple_labels	original thickness	rdfs:label	Anfangs-Dicke@de
-ERROR	multiple_labels	original thickness	rdfs:label	original thickness@en
+ERROR	multiple_labels	Anfangs-Dicke	rdfs:label	Anfangs-Dicke@de
+ERROR	multiple_labels	Anfangs-Dicke	rdfs:label	original thickness@en
 ERROR	multiple_labels	original width	rdfs:label	Anfangs-Breite@de
 ERROR	multiple_labels	original width	rdfs:label	original width@en
 ERROR	multiple_labels	Parallele Länge	rdfs:label	Parallele Länge@de
@@ -69,8 +67,8 @@ ERROR	multiple_labels	Extensometer-Dehnung	rdfs:label	Extensometer-Dehnung@de
 ERROR	multiple_labels	Extensometer-Dehnung	rdfs:label	percentage extension@en
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	Bleibende Dehnung@de
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	percentage permanent elongation@en
-ERROR	multiple_labels	percentage permanent extension	rdfs:label	Bleibende Extensometer-Dehnung@de
-ERROR	multiple_labels	percentage permanent extension	rdfs:label	percentage permanent extension@en
+ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	Bleibende Extensometer-Dehnung@de
+ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	percentage permanent extension@en
 ERROR	multiple_labels	Plastische Extensometer-Dehnung bei Höchstkraft	rdfs:label	Plastische Extensometer-Dehnung bei Höchstkraft@de
 ERROR	multiple_labels	Plastische Extensometer-Dehnung bei Höchstkraft	rdfs:label	percentage plastic extension at maximum force@en
 ERROR	multiple_labels	percentage reduction of area	rdfs:label	Brucheinschnürung@de
@@ -125,7 +123,6 @@ WARN	missing_definition	diameter	IAO:0000115
 WARN	missing_definition	Verlängerung	IAO:0000115	
 WARN	missing_definition	extension	IAO:0000115	
 WARN	missing_definition	thickness	IAO:0000115	
-WARN	missing_definition	area	IAO:0000115	
 WARN	missing_definition	Form	IAO:0000115	
 WARN	missing_definition	Streckgrenze	IAO:0000115	
 WARN	missing_definition	width	IAO:0000115	
@@ -134,8 +131,8 @@ WARN	missing_definition	Querschnittsfläche	IAO:0000115
 WARN	missing_definition	crosshead separation	IAO:0000115	
 WARN	missing_definition	crosshead separation rate	IAO:0000115	
 WARN	missing_definition	End-Probendurchmesser	IAO:0000115	
-WARN	missing_definition	estimated strain rate over the parallel length	IAO:0000115	
-WARN	missing_definition	extensometer gauge length	IAO:0000115	
+WARN	missing_definition	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	IAO:0000115	
+WARN	missing_definition	Extensometer-Messlänge	IAO:0000115	
 WARN	missing_definition	final gauge length after fracture	IAO:0000115	
 WARN	missing_definition	Messlänge	IAO:0000115	
 WARN	missing_definition	gauge length marks	IAO:0000115	
@@ -147,14 +144,14 @@ WARN	missing_definition	movement quality	IAO:0000115
 WARN	missing_definition	Anfangsquerschnitt innerhalb der parallelen Länge	IAO:0000115	
 WARN	missing_definition	original diameter	IAO:0000115	
 WARN	missing_definition	original gauge length	IAO:0000115	
-WARN	missing_definition	original thickness	IAO:0000115	
+WARN	missing_definition	Anfangs-Dicke	IAO:0000115	
 WARN	missing_definition	original width	IAO:0000115	
 WARN	missing_definition	Parallele Länge	IAO:0000115	
 WARN	missing_definition	Dehnung	IAO:0000115	
 WARN	missing_definition	Bruchdehnung	IAO:0000115	
 WARN	missing_definition	Extensometer-Dehnung	IAO:0000115	
 WARN	missing_definition	percentage permanent elongation	IAO:0000115	
-WARN	missing_definition	percentage permanent extension	IAO:0000115	
+WARN	missing_definition	Bleibende Extensometer-Dehnung	IAO:0000115	
 WARN	missing_definition	Plastische Extensometer-Dehnung bei Höchstkraft	IAO:0000115	
 WARN	missing_definition	percentage reduction of area	IAO:0000115	
 WARN	missing_definition	percentage total extension at fracture	IAO:0000115	

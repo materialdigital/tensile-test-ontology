@@ -14,7 +14,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/ao/tto.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/tto/releases/2025-11-06/tto.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/tto/releases/2025-11-07/tto.owl"/>
         <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
@@ -29,7 +29,7 @@ Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualis
 The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Tensile Test Ontology (TTO)</dcterms:title>
-        <owl:versionInfo>2025-11-06</owl:versionInfo>
+        <owl:versionInfo>2025-11-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4458,20 +4458,6 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000007 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000007">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
-        <rdfs:label xml:lang="de">Fläche</rdfs:label>
-        <rdfs:label xml:lang="en">area</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Area"/>
-        <skos:definition xml:lang="de">Die Ausdehnung oder Messung einer Fläche.</skos:definition>
-        <skos:definition xml:lang="en">The extent or measurement of a surface.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/ao/tto/TTO_0000008 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000008">
@@ -4535,7 +4521,7 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     <!-- https://w3id.org/pmd/ao/tto/TTO_0000012 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000012">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000007"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020199"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Querschnittsfläche</rdfs:label>
         <rdfs:label xml:lang="en">cross section area</rdfs:label>
