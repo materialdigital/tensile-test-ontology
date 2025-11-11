@@ -1,1 +1,178 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	multiple_labels	funder role	rdfs:label	Förderungsrolle@de
+ERROR	multiple_labels	funder role	rdfs:label	funder role@en
+ERROR	multiple_labels	load cell maximum force	rdfs:label	Höchstkraft der Kraftmessdose@de
+ERROR	multiple_labels	load cell maximum force	rdfs:label	load cell maximum force@en
+ERROR	multiple_labels	Durchmesser	rdfs:label	Durchmesser@de
+ERROR	multiple_labels	Durchmesser	rdfs:label	diameter@en
+ERROR	multiple_labels	elongation	rdfs:label	Verlängerung@de
+ERROR	multiple_labels	elongation	rdfs:label	elongation@en
+ERROR	multiple_labels	extension	rdfs:label	Verlängerung (der Extensometer-Messlänge)@de
+ERROR	multiple_labels	extension	rdfs:label	extension@en
+ERROR	multiple_labels	Dicke	rdfs:label	Dicke@de
+ERROR	multiple_labels	Dicke	rdfs:label	thickness@en
+ERROR	multiple_labels	Form	rdfs:label	Form@de
+ERROR	multiple_labels	Form	rdfs:label	shape@en
+ERROR	multiple_labels	Streckgrenze	rdfs:label	Streckgrenze@de
+ERROR	multiple_labels	Streckgrenze	rdfs:label	yield strength@en
+ERROR	multiple_labels	width	rdfs:label	Breite@de
+ERROR	multiple_labels	width	rdfs:label	width@en
+ERROR	multiple_labels	change of transverse dimension	rdfs:label	change of transverse dimension@en
+ERROR	multiple_labels	change of transverse dimension	rdfs:label	Änderung der transversalen Dimension@de
+ERROR	multiple_labels	cross section area	rdfs:label	Querschnittsfläche@de
+ERROR	multiple_labels	cross section area	rdfs:label	cross section area@en
+ERROR	multiple_labels	crosshead separation	rdfs:label	Querhaupttrennung@de
+ERROR	multiple_labels	crosshead separation	rdfs:label	crosshead separation@en
+ERROR	multiple_labels	crosshead separation rate	rdfs:label	Traversengeschwindigkeit@de
+ERROR	multiple_labels	crosshead separation rate	rdfs:label	crosshead separation rate@en
+ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	End-Probendurchmesser@de
+ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	diameter after fracture@en
+ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge@de
+ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	estimated strain rate over the parallel length@en
+ERROR	multiple_labels	extensometer gauge length	rdfs:label	Extensometer-Messlänge@de
+ERROR	multiple_labels	extensometer gauge length	rdfs:label	extensometer gauge length@en
+ERROR	multiple_labels	final gauge length after fracture	rdfs:label	Messlänge nach dem Bruch@de
+ERROR	multiple_labels	final gauge length after fracture	rdfs:label	final gauge length after fracture@en
+ERROR	multiple_labels	gauge length	rdfs:label	Messlänge@de
+ERROR	multiple_labels	gauge length	rdfs:label	gauge length@en
+ERROR	multiple_labels	gauge length marks	rdfs:label	Messlängenmarkierungen@de
+ERROR	multiple_labels	gauge length marks	rdfs:label	gauge length marks@en
+ERROR	multiple_labels	Geometrische Form	rdfs:label	Geometrische Form@de
+ERROR	multiple_labels	Geometrische Form	rdfs:label	geometry shape@en
+ERROR	multiple_labels	lower yield strength	rdfs:label	lower yield strength@en
+ERROR	multiple_labels	lower yield strength	rdfs:label	untere Streckgrenze@de
+ERROR	multiple_labels	Höchstkraft	rdfs:label	Höchstkraft@de
+ERROR	multiple_labels	Höchstkraft	rdfs:label	maximum force@en
+ERROR	multiple_labels	Kleinster Querschnitt nach dem Bruch	rdfs:label	Kleinster Querschnitt nach dem Bruch@de
+ERROR	multiple_labels	Kleinster Querschnitt nach dem Bruch	rdfs:label	minimum cross-sectional area after fracture@en
+ERROR	multiple_labels	Bewegungsqualität	rdfs:label	Bewegungsqualität@de
+ERROR	multiple_labels	Bewegungsqualität	rdfs:label	movement quality@en
+ERROR	multiple_labels	Anfangsquerschnitt innerhalb der parallelen Länge	rdfs:label	Anfangsquerschnitt innerhalb der parallelen Länge@de
+ERROR	multiple_labels	Anfangsquerschnitt innerhalb der parallelen Länge	rdfs:label	original cross-sectional area of the parallel length@en
+ERROR	multiple_labels	original diameter	rdfs:label	Anfangs-Probendurchmesser@de
+ERROR	multiple_labels	original diameter	rdfs:label	original diameter@en
+ERROR	multiple_labels	original gauge length	rdfs:label	Anfangsmesslänge@de
+ERROR	multiple_labels	original gauge length	rdfs:label	original gauge length@en
+ERROR	multiple_labels	original thickness	rdfs:label	Anfangs-Dicke@de
+ERROR	multiple_labels	original thickness	rdfs:label	original thickness@en
+ERROR	multiple_labels	original width	rdfs:label	Anfangs-Breite@de
+ERROR	multiple_labels	original width	rdfs:label	original width@en
+ERROR	multiple_labels	Parallele Länge	rdfs:label	Parallele Länge@de
+ERROR	multiple_labels	Parallele Länge	rdfs:label	parallel length@en
+ERROR	multiple_labels	percentage elongation	rdfs:label	Dehnung@de
+ERROR	multiple_labels	percentage elongation	rdfs:label	percentage elongation@en
+ERROR	multiple_labels	percentage elongation after fracture	rdfs:label	Bruchdehnung@de
+ERROR	multiple_labels	percentage elongation after fracture	rdfs:label	percentage elongation after fracture@en
+ERROR	multiple_labels	percentage extension	rdfs:label	Extensometer-Dehnung@de
+ERROR	multiple_labels	percentage extension	rdfs:label	percentage extension@en
+ERROR	multiple_labels	percentage permanent elongation	rdfs:label	Bleibende Dehnung@de
+ERROR	multiple_labels	percentage permanent elongation	rdfs:label	percentage permanent elongation@en
+ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	Bleibende Extensometer-Dehnung@de
+ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	percentage permanent extension@en
+ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	Plastische Extensometer-Dehnung bei Höchstkraft@de
+ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	percentage plastic extension at maximum force@en
+ERROR	multiple_labels	percentage reduction of area	rdfs:label	Brucheinschnürung@de
+ERROR	multiple_labels	percentage reduction of area	rdfs:label	percentage reduction of area@en
+ERROR	multiple_labels	percentage total extension at fracture	rdfs:label	Gesamte Extensometer-Dehnung beim Bruch@de
+ERROR	multiple_labels	percentage total extension at fracture	rdfs:label	percentage total extension at fracture@en
+ERROR	multiple_labels	Gesamte Extensometer-Dehnung bei Höchstkraft	rdfs:label	Gesamte Extensometer-Dehnung bei Höchstkraft@de
+ERROR	multiple_labels	Gesamte Extensometer-Dehnung bei Höchstkraft	rdfs:label	percentage total extension at maximum force@en
+ERROR	multiple_labels	Streckgrenzen-Extensometer-Dehnung	rdfs:label	Streckgrenzen-Extensometer-Dehnung@de
+ERROR	multiple_labels	Streckgrenzen-Extensometer-Dehnung	rdfs:label	percentage yield point extension@en
+ERROR	multiple_labels	physical quality	rdfs:label	Physikalische Qualität@de
+ERROR	multiple_labels	physical quality	rdfs:label	physical quality@en
+ERROR	multiple_labels	proof strength	rdfs:label	Dehngrenze@de
+ERROR	multiple_labels	proof strength	rdfs:label	proof strength@en
+ERROR	multiple_labels	proof strength plastic extension	rdfs:label	Dehngrenze bei plastischer Extensometer-Dehnung@de
+ERROR	multiple_labels	proof strength plastic extension	rdfs:label	proof strength plastic extension@en
+ERROR	multiple_labels	proof strength total extension	rdfs:label	Dehngrenze bei gesamter Extensometer-Dehnung@de
+ERROR	multiple_labels	proof strength total extension	rdfs:label	proof strength total extension@en
+ERROR	multiple_labels	Dehngrenze bei plastischer Extensometer-Dehnung Rp01	rdfs:label	Dehngrenze bei plastischer Extensometer-Dehnung Rp01@de
+ERROR	multiple_labels	Dehngrenze bei plastischer Extensometer-Dehnung Rp01	rdfs:label	proof strength plastic extension rp01@en
+ERROR	multiple_labels	proof strength plastic extension rp02	rdfs:label	Dehngrenze bei plastischer Extensometer-Dehnung Rp02@de
+ERROR	multiple_labels	proof strength plastic extension rp02	rdfs:label	proof strength plastic extension rp02@en
+ERROR	multiple_labels	3D Geometrie	rdfs:label	3D Geometrie@de
+ERROR	multiple_labels	3D Geometrie	rdfs:label	shape 3d@en
+ERROR	multiple_labels	size relation	rdfs:label	Größenrelation@de
+ERROR	multiple_labels	size relation	rdfs:label	size relation@en
+ERROR	multiple_labels	Steigung des elastischen Bereichs	rdfs:label	Steigung des elastischen Bereichs@de
+ERROR	multiple_labels	Steigung des elastischen Bereichs	rdfs:label	slope of the elastic part@en
+ERROR	multiple_labels	strain rate	rdfs:label	Dehngeschwindigkeit@de
+ERROR	multiple_labels	strain rate	rdfs:label	strain rate@en
+ERROR	multiple_labels	stress rate	rdfs:label	Spannungsgeschwindigkeit@de
+ERROR	multiple_labels	stress rate	rdfs:label	stress rate@en
+ERROR	multiple_labels	tensile strength	rdfs:label	Zugfestigkeit@de
+ERROR	multiple_labels	tensile strength	rdfs:label	tensile strength@en
+ERROR	multiple_labels	tensile test method	rdfs:label	Zugversuchsmethode@de
+ERROR	multiple_labels	tensile test method	rdfs:label	tensile test method@en
+ERROR	multiple_labels	test piece	rdfs:label	Prüfkörper@de
+ERROR	multiple_labels	test piece	rdfs:label	test piece@en
+ERROR	multiple_labels	thickness after fracture	rdfs:label	End-Dicke@de
+ERROR	multiple_labels	thickness after fracture	rdfs:label	thickness after fracture@en
+ERROR	multiple_labels	Umschaltpunkt	rdfs:label	Umschaltpunkt@de
+ERROR	multiple_labels	Umschaltpunkt	rdfs:label	transition point@en
+ERROR	multiple_labels	Umschaltpunkt der Prüfgeschwindigkeit	rdfs:label	Umschaltpunkt der Prüfgeschwindigkeit@de
+ERROR	multiple_labels	Umschaltpunkt der Prüfgeschwindigkeit	rdfs:label	transition point testing rate@en
+ERROR	multiple_labels	Obere Streckgrenze	rdfs:label	Obere Streckgrenze@de
+ERROR	multiple_labels	Obere Streckgrenze	rdfs:label	upper yield strength@en
+ERROR	multiple_labels	End-Breite	rdfs:label	End-Breite@de
+ERROR	multiple_labels	End-Breite	rdfs:label	width after fracture@en
+WARN	missing_definition	funder role	IAO:0000115	
+WARN	missing_definition	load cell maximum force	IAO:0000115	
+WARN	missing_definition	Durchmesser	IAO:0000115	
+WARN	missing_definition	elongation	IAO:0000115	
+WARN	missing_definition	extension	IAO:0000115	
+WARN	missing_definition	Dicke	IAO:0000115	
+WARN	missing_definition	Form	IAO:0000115	
+WARN	missing_definition	Streckgrenze	IAO:0000115	
+WARN	missing_definition	width	IAO:0000115	
+WARN	missing_definition	change of transverse dimension	IAO:0000115	
+WARN	missing_definition	cross section area	IAO:0000115	
+WARN	missing_definition	crosshead separation	IAO:0000115	
+WARN	missing_definition	crosshead separation rate	IAO:0000115	
+WARN	missing_definition	End-Probendurchmesser	IAO:0000115	
+WARN	missing_definition	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	IAO:0000115	
+WARN	missing_definition	extensometer gauge length	IAO:0000115	
+WARN	missing_definition	final gauge length after fracture	IAO:0000115	
+WARN	missing_definition	gauge length	IAO:0000115	
+WARN	missing_definition	gauge length marks	IAO:0000115	
+WARN	missing_definition	Geometrische Form	IAO:0000115	
+WARN	missing_definition	lower yield strength	IAO:0000115	
+WARN	missing_definition	Höchstkraft	IAO:0000115	
+WARN	missing_definition	Kleinster Querschnitt nach dem Bruch	IAO:0000115	
+WARN	missing_definition	Bewegungsqualität	IAO:0000115	
+WARN	missing_definition	Anfangsquerschnitt innerhalb der parallelen Länge	IAO:0000115	
+WARN	missing_definition	original diameter	IAO:0000115	
+WARN	missing_definition	original gauge length	IAO:0000115	
+WARN	missing_definition	original thickness	IAO:0000115	
+WARN	missing_definition	original width	IAO:0000115	
+WARN	missing_definition	Parallele Länge	IAO:0000115	
+WARN	missing_definition	percentage elongation	IAO:0000115	
+WARN	missing_definition	percentage elongation after fracture	IAO:0000115	
+WARN	missing_definition	percentage extension	IAO:0000115	
+WARN	missing_definition	percentage permanent elongation	IAO:0000115	
+WARN	missing_definition	Bleibende Extensometer-Dehnung	IAO:0000115	
+WARN	missing_definition	percentage plastic extension at maximum force	IAO:0000115	
+WARN	missing_definition	percentage reduction of area	IAO:0000115	
+WARN	missing_definition	percentage total extension at fracture	IAO:0000115	
+WARN	missing_definition	Gesamte Extensometer-Dehnung bei Höchstkraft	IAO:0000115	
+WARN	missing_definition	Streckgrenzen-Extensometer-Dehnung	IAO:0000115	
+WARN	missing_definition	physical quality	IAO:0000115	
+WARN	missing_definition	proof strength	IAO:0000115	
+WARN	missing_definition	proof strength plastic extension	IAO:0000115	
+WARN	missing_definition	proof strength total extension	IAO:0000115	
+WARN	missing_definition	Dehngrenze bei plastischer Extensometer-Dehnung Rp01	IAO:0000115	
+WARN	missing_definition	proof strength plastic extension rp02	IAO:0000115	
+WARN	missing_definition	3D Geometrie	IAO:0000115	
+WARN	missing_definition	size relation	IAO:0000115	
+WARN	missing_definition	Steigung des elastischen Bereichs	IAO:0000115	
+WARN	missing_definition	strain rate	IAO:0000115	
+WARN	missing_definition	stress rate	IAO:0000115	
+WARN	missing_definition	tensile strength	IAO:0000115	
+WARN	missing_definition	tensile test method	IAO:0000115	
+WARN	missing_definition	test piece	IAO:0000115	
+WARN	missing_definition	thickness after fracture	IAO:0000115	
+WARN	missing_definition	Umschaltpunkt	IAO:0000115	
+WARN	missing_definition	Umschaltpunkt der Prüfgeschwindigkeit	IAO:0000115	
+WARN	missing_definition	Obere Streckgrenze	IAO:0000115	
+WARN	missing_definition	End-Breite	IAO:0000115	
