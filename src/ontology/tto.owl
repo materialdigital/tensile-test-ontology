@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/pmd/tto.owl#"
-     xml:base="https://w3id.org/pmd/tto.owl"
+<rdf:RDF xmlns="https://w3id.org/pmd/ao/tto.owl#"
+     xml:base="https://w3id.org/pmd/ao/tto.owl"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,8 +13,8 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:dcterms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/tto.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2025-11-07/tto.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/ao/tto.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2025-11-11/tto.owl"/>
         <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
@@ -29,7 +29,7 @@ Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualis
 The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Tensile Test Ontology (TTO)</dcterms:title>
-        <owl:versionInfo>2025-11-07</owl:versionInfo>
+        <owl:versionInfo>2025-11-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4360,1080 +4360,6 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_0000000 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label xml:lang="de">Förderungsrolle</rdfs:label>
-        <rdfs:label xml:lang="en">funder role</rdfs:label>
-        <skos:definition xml:lang="en">A funder role is a role that describes the capacity in which a party provides financial support to a project or initiative. This role is realized when the party participates in the project specifically as a source of funding, regardless of other potential involvements.</skos:definition>
-        <skos:definition xml:lang="de">Eine Förderungsrolle (Rolle einer fördernden Partei) ist eine Rolle, die die Funktion beschreibt, in der eine Partei finanzielle Unterstützung für ein Projekt oder eine Initiative bereitstellt. Diese Rolle wird verwirklicht, wenn die Partei speziell als Geldgeber am Projekt teilnimmt, unabhängig von anderen möglichen Beteiligungen.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000001 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000001">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
-        <rdfs:label xml:lang="de">Höchstkraft der Kraftmessdose</rdfs:label>
-        <rdfs:label xml:lang="en">load cell maximum force</rdfs:label>
-        <skos:definition xml:lang="de">Die Maximalkraft bezeichnet die größte Kraft, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können.</skos:definition>
-        <skos:definition xml:lang="en">The maximum force is the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000002 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000002">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Durchmesser</rdfs:label>
-        <rdfs:label xml:lang="en">diameter</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Diameter"/>
-        <skos:definition xml:lang="de">Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums.</skos:definition>
-        <skos:definition xml:lang="en">The length of a straight line through the center of an object or space.</skos:definition>
-        <pmd:definitionSource>“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022.</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000004 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000004">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Verlängerung</rdfs:label>
-        <rdfs:label xml:lang="en">elongation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Elongation"/>
-        <skos:definition xml:lang="de">Zunahme der Anfangsmesslänge zu einem beliebigen Zeitpunkt während des Versuchs</skos:definition>
-        <skos:definition xml:lang="en">increase in the original gauge length at any moment during the test</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000005 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000005">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <rdfs:comment xml:lang="en">Dimensional analysis: L
-Unit (e.g. SI): mm</rdfs:comment>
-        <rdfs:comment xml:lang="de">Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
-
-Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der Datenspeicherung erfordern.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
-
-Note: Optical extensometry may require a specific data storage method.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Verlängerung (der Extensometer-Messlänge)</rdfs:label>
-        <rdfs:label xml:lang="en">extension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Extension"/>
-        <skos:definition xml:lang="en">Increase in the extensometer gauge length at any moment during a test</skos:definition>
-        <skos:definition xml:lang="de">Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs</skos:definition>
-        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000006 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000006">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Dicke</rdfs:label>
-        <rdfs:label xml:lang="en">thickness</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Thickness"/>
-        <skos:definition xml:lang="de">Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers.</skos:definition>
-        <skos:definition xml:lang="en">This class describes the measured dimension in one direction of a test piece.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000008 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000008">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Form</rdfs:label>
-        <rdfs:label xml:lang="en">shape</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Shape"/>
-        <skos:definition xml:lang="de">Das sichtbare Ausstattungsmerkmal (räumliche Form oder Kontur) eines bestimmten Objektes oder einer Art von Objekt.</skos:definition>
-        <skos:definition xml:lang="en">The visible makeup characteristic (spatial form or contour) of a particular item or kind of item.</skos:definition>
-        <pmd:definitionSource>“Shape.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/shape. Accessed 13 Jan. 2023.</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000009 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000009">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Streckgrenze</rdfs:label>
-        <rdfs:label xml:lang="en">yield strength</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/YieldStrength"/>
-        <skos:definition xml:lang="de">Wenn der metallische Werkstoff diese Eigenschaft aufweist: die Spannung zu einem bestimmten Zeitpunkt während des Versuchs bei dem eine plastische Verformung ohne Zunahme der Kraft auftritt</skos:definition>
-        <skos:definition xml:lang="en">when the metallic material exhibits a yield phenomenon, stress corresponding to the point reached during the test at which plastic deformation occurs without any increase in the force</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000010 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000010">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Breite</rdfs:label>
-        <rdfs:label xml:lang="en">width</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Width"/>
-        <skos:definition xml:lang="de">Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird.</skos:definition>
-        <skos:definition xml:lang="en">This class describes a horizontal measurement of an object taken at right angles to the length of the object.</skos:definition>
-        <pmd:definitionSource rdf:resource="https://www.merriam-webster.com/dictionary/width"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000011 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000011">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="en">change of transverse dimension</rdfs:label>
-        <rdfs:label xml:lang="de">Änderung der transversalen Dimension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ChangeOfTransverseDimension"/>
-        <skos:definition xml:lang="de">Dieses Konzept beschreibt eine Variation der Abmessungen eines Prüfkörpers in Bezug auf seine Querachse, die sich auf seine Querschnittsfläche auswirkt und möglicherweise während eines Zugversuchs auftritt. Das Verhältnis der wahren plastischen Breitendehnung und der wahren plastischen Dickendehnung in einem in uniaxialem Zug beanspruchten Prüfkörper (vertikale Anisotropie) kann anhand dieser Information berechnet werden.</skos:definition>
-        <skos:definition xml:lang="en">This concept describes a variation in the dimension of a test piece referring to its transversal axis affecting its cross-sectional area that may potentially occur during a tensile test. The ratio of the true plastic strain in width and the true plastic strain in thickness in a test piece loaded in uniaxial tension (vertical anisotropy) may be calculated using this information.</skos:definition>
-        <pmd:definitionSource>DIN EN ISO 10113:2021-06</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000012 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000012">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020199"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Querschnittsfläche</rdfs:label>
-        <rdfs:label xml:lang="en">cross section area</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/CrossSectionArea"/>
-        <skos:definition xml:lang="de">Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse.</skos:definition>
-        <skos:definition xml:lang="en">The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis.</skos:definition>
-        <pmd:definitionSource rdf:resource="https://www.merriam-webster.com/dictionary/cross%20section"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000013 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000013">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:comment xml:lang="en">Dimensional analysis: L
-Unit (e.g. SI): mm</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Querhaupttrennung</rdfs:label>
-        <rdfs:label xml:lang="en">crosshead separation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/CrossheadSeparation"/>
-        <skos:definition xml:lang="de">Dieses Konzept beschreibt die Verschiebung der Traverse einer Zugprüfmaschine.</skos:definition>
-        <skos:definition xml:lang="en">This concept describes the displacement of the crossheads of a tensile testing machine.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000014 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000014">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Traversengeschwindigkeit</rdfs:label>
-        <rdfs:label xml:lang="en">crosshead separation rate</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/CrossheadSeparationRate"/>
-        <skos:definition xml:lang="de">Traversenweg je Zeiteinheit</skos:definition>
-        <skos:definition xml:lang="en">displacement of the crossheads per time</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">v_c</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000015 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000015">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000002"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">End-Probendurchmesser</rdfs:label>
-        <rdfs:label xml:lang="en">diameter after fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/DiameterAfterFracture"/>
-        <skos:definition xml:lang="de">Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist.</skos:definition>
-        <skos:definition xml:lang="en">The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000016 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000016">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge</rdfs:label>
-        <rdfs:label xml:lang="en">estimated strain rate over the parallel length</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength"/>
-        <skos:definition xml:lang="de">Zunahme der Dehnung über die parallele Länge der Probe je Zeiteinheit, basierend auf der Traversengeschwindigkeit und der parallelen Länge der Probe</skos:definition>
-        <skos:definition xml:lang="en">value of the increase of strain over the parallel length of the test piece per time based on the crosshead separation rate and the parallel length of the test piece</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">e^._L_c</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000017 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000017">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Extensometer-Messlänge</rdfs:label>
-        <rdfs:label xml:lang="en">extensometer gauge length</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ExtensometerGaugeLength"/>
-        <skos:definition xml:lang="de">Anfangsmesslänge des Dehnungsaufnehmers (Extensometer), die zum Messen der Verlängerung benutzt wird
-
-Anmerkung: Für die Bestimmung mehrerer Eigenschaften, die (teilweise oder vollständig) von der Verlängerung abhängig sind, z. B. R_p, A_e oder A_g, ist die Verwendung eines Extensometers zwingend erforderlich.</skos:definition>
-        <skos:definition xml:lang="en">initial gauge length of the extensometer used for measurement of extension
-
-Note: For the determination of several properties which are based (partly or complete) on extension, e. g. R_p, A_e or A_g, the use of an extensometer is mandatory.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">L_e</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000018 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000018">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Messlänge nach dem Bruch</rdfs:label>
-        <rdfs:label xml:lang="en">final gauge length after fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture"/>
-        <skos:definition xml:lang="de">Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die nach dem Bruch bei Raumtemperatur gemessen wird, nachdem die beiden Probenbruchstücke sorgfältig so zusammengefügt wurden, dass ihre Achsen in einer Geraden liegen</skos:definition>
-        <skos:definition xml:lang="en">length between gauge length marks on the test piece measured after rupture, at room temperature, the two pieces having been carefully fitted back together so that their axes lie in a straight line</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">L_u</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000019 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000019">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Messlänge</rdfs:label>
-        <rdfs:label xml:lang="en">gauge length</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/GaugeLength"/>
-        <skos:definition xml:lang="de">Länge des parallelen Teils der Probe, an dem zu einem beliebigen Zeitpunkt während des Versuchs die Verlängerung gemessen wird</skos:definition>
-        <skos:definition xml:lang="en">length of the parallel portion of the test piece on which elongation is measured at any moment during the test</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">L</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000020 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000020">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Messlängenmarkierungen</rdfs:label>
-        <rdfs:label xml:lang="en">gauge length marks</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/GaugeLengthMarks"/>
-        <skos:definition xml:lang="de">Dieses Konzept wird verwendet, um die sichtbaren Markierungen zu beschreiben, die in der Regel während eines Zugversuchs zur Messung der Dehnung an den Prüfkörpern angebracht werden.</skos:definition>
-        <skos:definition xml:lang="en">This concept is used to describe the visible markers usually attached to test pieces during a tensile test for elongation / extension measurements.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000021 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000021">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000008"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Geometrische Form</rdfs:label>
-        <rdfs:label xml:lang="en">geometry shape</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/GeometryShape"/>
-        <skos:definition xml:lang="de">Dieses Konzept beschreibt die geometrischen Abmessungen und das Erscheinungsbild (Form und Abmaße) einer Probe, eines Prüfkörpers oder eines Prüfstücks, wie sie üblicherweise durch eine entsprechende Norm definiert sind. Dementsprechend ist der angegebene Formwert in Übereinstimmung mit der definierenden Norm anzugeben, z. B. &quot;Zugprüfstück Form 1 gemäß Anhang B&quot;.</skos:definition>
-        <skos:definition xml:lang="en">This concept describes the geometric dimensions and appearance (shape and dimensions) of a sample, specimen, or test piece as usually defined by a corresponding standard. Accordingly, the shape value given is in accordance with the defining standard, e.g., ‘tensile test piece shape 1 in accordance with annex B’.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000022 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000022">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="en">lower yield strength</rdfs:label>
-        <rdfs:label xml:lang="de">untere Streckgrenze</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/LowerYieldStrength"/>
-        <skos:definition xml:lang="de">kleinste Spannung während des plastischen Fließens, wobei Einschwingerscheinungen nicht berücksichtigt werden</skos:definition>
-        <skos:definition xml:lang="en">lowest value of stress during plastic yielding, ignoring any initial transient effects</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">R_eL</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000023 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000023">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Höchstkraft</rdfs:label>
-        <rdfs:label xml:lang="en">maximum force</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MaximumForce"/>
-        <skos:definition xml:lang="de">Bei Werkstoffen, die kein diskontinuierliches Fließen zeigen: größte Kraft, der die Probe während des Versuchs standhält
-
-Bei Werkstoffen, die ein diskontinuierliches Fließen zeigen: größte Kraft, der die Probe während des Versuchs nach dem Beginn der Verfestigung standhält
-
-Anmerkung: Für Werkstoffe, die ein diskontinuierliches Fließen zeigen, aber keine Verfestigung erzielt werden kann, ist die Höchstkraft nicht definiert
-.</skos:definition>
-        <skos:definition xml:lang="en">For materials displaying no discontinuous yielding: highest force that the test piece withstands during the test
-
-For materials displaying discontinuous yielding: highest force that the test piece withstands during the test after the beginning of work-hardening
-
-Note: For materials which display discontinuous yielding, but where no work-hardening can be established, the maximum force is not defined.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000024 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000056"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000060"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000015"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment>Symbol: S_u</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Kleinster Querschnitt nach dem Bruch</rdfs:label>
-        <rdfs:label xml:lang="en">minimum cross-sectional area after fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MinimumCrossSectionalAreaAfterFracture"/>
-        <skos:definition xml:lang="de">Dieses Konzept beschreibt die kleinste Querschnittsfläche des Zugprüfkörers, die nach dem Bruch infolge der aufgebrachten Zugkraft erhalten wird.
-
-Anmerkung: Sie wird in der Regel senkrecht zur Richtung der aufgebrachten Kraft gemessen und dient zur Berechnung der technischen Spannung während der Prüfung.
-
-Anmerkung: Es wird empfohlen, den Anfangsquerschnitt innerhalb der parallelen Länge mit einer Genauigkeit von ±2 % zu messen. Bei runden Prüfkörpern mit kleinem Durchmesser oder Prüfkörpern mit anderen Querschnittsgeometrien ist es jedoch möglicherweise nicht möglich, den Anfangsquerschnitt innerhalb der parallelen Länge mit einer Genauigkeit von ±2 % zu messen.</skos:definition>
-        <skos:definition xml:lang="en">This concept describes the smallest cross-sectional area of the tensile test piece observed after it has fractured under the applied tensile force.
-
-Note: It is typically measured perpendicular to the direction of the applied force and is used to calculate engineering stress during the test.
-
-Note: It is recommended to measure the original cross-sectional area of the parallel length to an accuracy of ±2 %. However, measuring the original cross-sectional area of the parallel length with an accuracy of ±2 % on small diameter round test pieces, or test pieces with other cross-sectional geometries, may not be possible.</skos:definition>
-        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000025 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000025">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Bewegungsqualität</rdfs:label>
-        <rdfs:label xml:lang="en">movement quality</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MovementQuality"/>
-        <skos:definition xml:lang="en">A movement quality is a physical quality that inheres in a material entity and represents a property of the entity&apos;s motion or change of position over time.</skos:definition>
-        <skos:definition xml:lang="de">Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000026 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000026">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000029"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000030"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000027"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment>Symbol: S_o</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Anfangsquerschnitt innerhalb der parallelen Länge</rdfs:label>
-        <rdfs:label xml:lang="en">original cross-sectional area of the parallel length</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalCrossSectionalArea"/>
-        <skos:definition xml:lang="de">Dieses Konzept beschreibt die initiale Querschnittsfläche des Zugprüfkörpers entlang seiner parallelen Länge, bevor eine Verformung auftritt.</skos:definition>
-        <skos:definition xml:lang="en">This concept describes the initial area of the tensile test piece before any deformation occurs.</skos:definition>
-        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000027 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000027">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000002"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Anfangs-Probendurchmesser</rdfs:label>
-        <rdfs:label xml:lang="en">original diameter</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalDiameter"/>
-        <skos:definition xml:lang="de">Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfkörpers), die vor einer Prüfung gemessen wird.</skos:definition>
-        <skos:definition xml:lang="en">The length of a straight line through the center of an object (tensile test piece) as measured prior to a tensile test.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000028 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000028">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Anfangsmesslänge</rdfs:label>
-        <rdfs:label xml:lang="en">original gauge length</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalGaugeLength"/>
-        <skos:definition xml:lang="de">Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird</skos:definition>
-        <skos:definition xml:lang="en">length between gauge length marks on the test piece measured at room temperature before the test</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">L_o</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000029 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000029">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000006"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Anfangs-Dicke</rdfs:label>
-        <rdfs:label xml:lang="en">original thickness</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalThickness"/>
-        <skos:definition xml:lang="de">Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde.</skos:definition>
-        <skos:definition xml:lang="en">This entity describes the measured dimension in one direction of a test piece, as measured before the test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000030 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000030">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000010"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Anfangs-Breite</rdfs:label>
-        <rdfs:label xml:lang="en">original width</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalWidth"/>
-        <skos:definition xml:lang="de">Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie vor einer Prüfung gemessen wird.</skos:definition>
-        <skos:definition xml:lang="en">This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured before a test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000031 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000031">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Parallele Länge</rdfs:label>
-        <rdfs:label xml:lang="en">parallel length</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ParallelLength"/>
-        <skos:definition xml:lang="de">Länge des parallelen reduzierten Querschnitts der Probe
-
-Anmerkung: Bei unbearbeiteten Proben tritt an die Stelle der parallelen Länge der Abstand zwischen den Einspannungen.</skos:definition>
-        <skos:definition xml:lang="en">length of the parallel reduced section of the test piece
-
-Note: The concept of parallel length is replaced by the concept of distance between grips for unmachined test pieces.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">L_c</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000032 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000032">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage elongation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageElongation"/>
-        <skos:definition xml:lang="de">Verlängerung, angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
-        <skos:definition xml:lang="en">elongation expressed as a percentage of the original gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000033 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Bruchdehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage elongation after fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageElongationAfterFracture"/>
-        <skos:definition xml:lang="de">bleibende Verlängerung der Messlänge nach dem Bruch (L_u − L_o), angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
-        <skos:definition xml:lang="en">permanent elongation of the gauge length after fracture (L_u − L_o), expressed as a percentage of the original gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">A</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000034 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000034">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Extensometer-Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage extension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/PercentageExtension"/>
-        <skos:altLabel xml:lang="en">(engineering) strain</skos:altLabel>
-        <skos:altLabel xml:lang="de">technische Dehnung</skos:altLabel>
-        <skos:definition xml:lang="en">extension expressed as a percentage of the extensometer gauge length
-
-Note: The percentage extension is commonly called engineering strain.</skos:definition>
-        <skos:definition>in Prozent angegebene Verlängerung der Extensometer-Messlänge
-
-Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.</skos:definition>
-        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000035 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000035">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Bleibende Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage permanent elongation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePermanentElongation"/>
-        <skos:definition xml:lang="de">Zunahme der Anfangsmesslänge einer Probe nach Entfernen einer festgelegten Zugspannung, angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
-        <skos:definition xml:lang="en">increase in the original gauge length of a test piece after removal of a specified stress, expressed as a percentage of the original gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000036 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000036">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Bleibende Extensometer-Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage permanent extension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePermanentExtension"/>
-        <skos:definition xml:lang="de">Vergrößerung der Extensometer-Messlänge nach Entfernen einer festgelegten, auf die Probe aufgebrachten Zugspannung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
-        <skos:definition xml:lang="en">increase in the extensometer gauge length, after removal of a specified stress from the test piece, expressed as a percentage of the extensometer gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000037 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000037">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Plastische Extensometer-Dehnung bei Höchstkraft</rdfs:label>
-        <rdfs:label xml:lang="en">percentage plastic extension at maximum force</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePlasticExtensionAtMaximumForce"/>
-        <skos:definition xml:lang="en">plastic extension at maximum force, expressed as a percentage of the extensometer gauge length</skos:definition>
-        <skos:definition xml:lang="de">plastische Verlängerung der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">A_g</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000049"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000024"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000026"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Brucheinschnürung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage reduction of area</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageReductionOfArea"/>
-        <skos:definition xml:lang="de">größte während des Versuchs aufgetretene Änderung des Querschnitts (S_o − S_u), angegeben in Prozent, bezogen auf den Anfangsquerschnitt S_o</skos:definition>
-        <skos:definition xml:lang="en">maximum change in cross-sectional area which has occurred during the test (S_o − S_u), expressed as a percentage of the original cross-sectional area, S_o</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol>Z</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000039 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000039">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Gesamte Extensometer-Dehnung beim Bruch</rdfs:label>
-        <rdfs:label xml:lang="en">percentage total extension at fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageTotalExtensionAtFracture"/>
-        <skos:definition xml:lang="de">gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge beim Bruch, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
-        <skos:definition xml:lang="en">total extension (elastic extension plus plastic extension) at the moment of fracture, expressed as a percentage of the extensometer gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">A_t</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000040 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000040">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Gesamte Extensometer-Dehnung bei Höchstkraft</rdfs:label>
-        <rdfs:label xml:lang="en">percentage total extension at maximum force</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageTotalExtensionAtMaximumForce"/>
-        <skos:definition xml:lang="de">gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
-        <skos:definition xml:lang="en">total extension (elastic extension plus plastic extension) at maximum force, expressed as a percentage of the extensometer gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">A_gt</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000041 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000041">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Streckgrenzen-Extensometer-Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage yield point extension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageYieldPointExtension"/>
-        <skos:definition xml:lang="de">Bei Werkstoffen, die ein diskontinuierliches Fließen zeigen: Verlängerung der Extensometer-Messlänge zwischen dem Beginn örtlichen Fließens und dem Einsetzen gleichmäßiger Verfestigung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
-        <skos:definition xml:lang="en">For discontinuous yielding materials: extension between the start of yielding and the start of uniform work-hardening, expressed as a percentage of the extensometer gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">A_e</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000042 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Physikalische Qualität</rdfs:label>
-        <rdfs:label xml:lang="en">physical quality</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PhysicalQuality"/>
-        <skos:definition xml:lang="en">A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state.</skos:definition>
-        <skos:definition xml:lang="de">Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000043 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000043">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Dehngrenze</rdfs:label>
-        <rdfs:label xml:lang="en">proof strength</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrength"/>
-        <skos:definition xml:lang="de">Spannung, bei der ein bestimmter Dehnungswert gleich einem bestimmten Prozentsatz der Messlänge des Dehnungsmessers ist</skos:definition>
-        <skos:definition xml:lang="en">stress at which the a specific extension value is equal to a specified percentage of the extensometer gauge length</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000044 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000044">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000043"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Dehngrenze bei plastischer Extensometer-Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">proof strength plastic extension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrengthPlasticExtension"/>
-        <skos:definition xml:lang="de">Spannung, bei der die plastische Extensometer-Dehnung einem vorgegebenen Prozentanteil der Extensometer-Messlänge entspricht
-
-Anmerkung: Der Index wird durch den Zahlenwert ergänzt, der den vorgegebenen Zahlenwert der plastischen Extensometer-Dehnung in Prozent angibt, z. B. R_p_0,2.</skos:definition>
-        <skos:definition xml:lang="en">stress at which the plastic extension is equal to a specified percentage of the extensometer gauge length
-
-Note: A suffix is added to the subscript to indicate the prescribed percentage, e.g. R_p_0.2.
-
-Source: ISO 6892-1:2019</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">R_p</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000045 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000045">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000043"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Dehngrenze bei gesamter Extensometer-Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">proof strength total extension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrengthTotalExtension"/>
-        <skos:definition xml:lang="de">Spannung, bei der die gesamte Extensometer-Dehnung (elastische und plastische Extensometer-Dehnung) einem vorgegebenen Prozentanteil der Extensometer-Messlänge entspricht
-
-Anmerkung: Der Index wird durch den Zahlenwert ergänzt, der den vorgegebenen Zahlenwert der gesamten Extensometer-Dehnung in Prozent angibt, z. B. R_t_0,5.</skos:definition>
-        <skos:definition xml:lang="en">stress at which total extension (elastic extension plus plastic extension) is equal to a specified percentage of the extensometer gauge length
-
-Note: A suffix is added to the subscript to indicate the prescribed percentage, e.g. R_t_0.5.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">R_t</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000046 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000046">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Dehngrenze bei plastischer Extensometer-Dehnung Rp01</rdfs:label>
-        <rdfs:label xml:lang="en">proof strength plastic extension rp01</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Rp01"/>
-        <skos:definition xml:lang="de">Spannung bei einer plastischen Extensometer-Dehnung, die 0,1 Prozent der Extensometer-Messlänge entspricht</skos:definition>
-        <skos:definition xml:lang="en">stress at which the plastic extension is equal to 0.1 percent of the extensometer gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">R_p_0.1</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000047 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000047">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Dehngrenze bei plastischer Extensometer-Dehnung Rp02</rdfs:label>
-        <rdfs:label xml:lang="en">proof strength plastic extension rp02</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Rp02"/>
-        <skos:definition xml:lang="de">Spannung bei einer plastischen Extensometer-Dehnung, die 0,2 Prozent der Extensometer-Messlänge entspricht</skos:definition>
-        <skos:definition xml:lang="en">stress at which the plastic extension is equal to 0.2 percent of the extensometer gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">R_p_0.2</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000048 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000048">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000021"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">3D Geometrie</rdfs:label>
-        <rdfs:label xml:lang="en">shape 3d</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Shape3D"/>
-        <skos:definition xml:lang="en">A shape 3D is a geometry shape that exists in three dimensions, having length, width, and height, and can be defined by its spatial properties such as volume and surface area.</skos:definition>
-        <skos:definition xml:lang="de">Eine 3D Geometrie ist eine geometrische Form, die in drei Dimensionen existiert, mit Länge, Breite und Höhe, und die durch ihre räumlichen Eigenschaften wie Volumen und Oberfläche definiert werden kann.</skos:definition>
-        <skos:example xml:lang="de">Beispiele sind Formen wie Würfel, Kugeln und Pyramiden.</skos:example>
-        <skos:example xml:lang="en">Examples include shapes like cubes, spheres, and pyramids.</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000049 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000049">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Größenrelation</rdfs:label>
-        <rdfs:label xml:lang="en">size relation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/SizeRelation"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000050 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000050">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000618"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Steigung des elastischen Bereichs</rdfs:label>
-        <rdfs:label xml:lang="en">slope of the elastic part</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/SlopeOfTheElasticPart"/>
-        <skos:definition xml:lang="de">Dieses Konzept beschreibt den Wert der Steigung des ersten linear ansteigenden Teils (&quot;elastischer Teil&quot;) in der bei einem Zugversuch erhaltenen Spannungs-Dehnungs-Kurve. Im elastischen Teil der Spannungs-Dehnungs-Kurve muss der Wert der Steigung nicht unbedingt dem Elastizitätsmodul entsprechen. Dieser Wert kann mit dem Wert des Elastizitätsmoduls (nur) sehr gut übereinstimmen, wenn optimale Bedingungen herrschten.</skos:definition>
-        <skos:definition xml:lang="en">This concept describes the value of the slope of the first linear increasing part (‘elastic part’) in the stress-percentage extension curve obtained during a tensile test. In the elastic part of the stress‐percentage extension curve, the value of the slope may not necessarily represent the modulus of elasticity. This value may closely agree with the value of the modulus of elasticity if optimal conditions were used.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000051 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000051">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Dehngeschwindigkeit</rdfs:label>
-        <rdfs:label xml:lang="en">strain rate</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/StrainRate"/>
-        <skos:definition xml:lang="de">Zunahme der mit einem Extensometer in der Extensometer-Messlänge gemessenen Dehnung je Zeiteinheit</skos:definition>
-        <skos:definition xml:lang="en">increase of strain, measured with an extensometer, in extensometer gauge length, per time</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">e^._L_e</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000052 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000052">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Spannungsgeschwindigkeit</rdfs:label>
-        <rdfs:label xml:lang="en">stress rate</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/StressRate"/>
-        <skos:definition xml:lang="de">Zunahme der Spannung je Zeiteinheit
-
-Anmerkung: Die Spannungsgeschwindigkeit wird nur im elastischen Bereich des Versuchs verwendet.</skos:definition>
-        <skos:definition xml:lang="en">increase of stress per time
-
-Note: Stress rate is only used in the elastic part of the test.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">R</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000053 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000053">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Zugfestigkeit</rdfs:label>
-        <rdfs:label xml:lang="en">tensile strength</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TensileStrength"/>
-        <skos:definition xml:lang="de">Spannung, die der Höchstkraft entspricht</skos:definition>
-        <skos:definition xml:lang="en">stress corresponding to the maximum force</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">R_m</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000054 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Zugversuchsmethode</rdfs:label>
-        <rdfs:label xml:lang="en">tensile test method</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TensileTestMethod"/>
-        <skos:definition xml:lang="en">A tensile test method is a plan specification that prescribes the execution of a controlled experiment designed to determine the mechanical properties of a material under uniaxial tensile loading. The plan specifies procedural steps, conditions, and measurement criteria to assess properties such as ultimate tensile strength, yield strength, and elongation at break.</skos:definition>
-        <skos:definition xml:lang="de">Eine Zugversuchsmethode ist eine Planspezifikation, die die Durchführung eines kontrollierten Versuchs zur Bestimmung der mechanischen Eigenschaften eines Materials unter einachsiger Zugbelastung vorschreibt. Der Plan legt Verfahrensschritte, Bedingungen und Messkriterien fest, um Eigenschaften wie die Zugfestigkeit, die Streckgrenze und die Bruchdehnung zu bestimmen.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000055 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000055">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Prüfkörper</rdfs:label>
-        <rdfs:label xml:lang="en">test piece</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/TestPiece"/>
-        <skos:definition xml:lang="en">Part of a sample with specified dimensions, machined or un-machined, brought to a required condition for submission to a given test.</skos:definition>
-        <skos:definition xml:lang="de">Teil einer Probe mit bestimmten Dimensionen, bearbeitet oder unbearbeitet, der in einen erforderlichen Zustand gebracht wird, um einer bestimmten Prüfung unterzogen zu werden.</skos:definition>
-        <pmd:definitionSource>EN 10021:2006-12 (European standardization committee: CEN/TC 459/SC 12/WG 4)</pmd:definitionSource>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000056 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000056">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000006"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">End-Dicke</rdfs:label>
-        <rdfs:label xml:lang="en">thickness after fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ThicknessAfterFracture"/>
-        <skos:definition xml:lang="de">Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde.</skos:definition>
-        <skos:definition xml:lang="en">This entity describes the measured dimension in one direction of a test piece, as measured after the test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000057 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000057">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Umschaltpunkt</rdfs:label>
-        <rdfs:label xml:lang="en">transition point</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TransitionPoint"/>
-        <skos:definition xml:lang="de">Diese Entität beschreibt einen einzelnen Punkt, an dem ein Übergang von einer Bedingung oder einem Zustand in einen anderen erfolgt, z. B. der Punkt, an dem verschiedene Phasen von Materie im Gleichgewicht miteinander existieren können (auch Inversionspunkt genannt) oder wenn Prozessparameter geändert werden, die zu einem Übergang des Prozesses während seiner Ausführung führen.</skos:definition>
-        <skos:definition xml:lang="en">This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000058 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000058">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Umschaltpunkt der Prüfgeschwindigkeit</rdfs:label>
-        <rdfs:label xml:lang="en">transition point testing rate</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TransitionPointTestingRate"/>
-        <skos:definition xml:lang="de">Diese Entität beschreibt den Umschaltpunkt der Prüfgeschwindigkeit während eines Analyse- / Testprozesses, z.B. den Punkt bezogen auf die Dehnung oder Spannung, an welchem die Prüfgeschwindigkeit während eines Zugversuchs geändert wird. Typischerweise ist dieser Punkt mit einer Abnahme des Extensometers (Dehnungsaufnehmers) vom Prüfkörper während eines dehnungsgeregelten Zugversuchs verbunden.</skos:definition>
-        <skos:definition xml:lang="en">This entity describes the the transition point of the testing rate during an analysis / test process, e.g. the point referring to the strain or the stress at which the testing rate is changed during a tensile test. Typically, this transition point is associated with a removal of the extensometer from the test piece during a strain-controlled tensile test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000059 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000059">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Obere Streckgrenze</rdfs:label>
-        <rdfs:label xml:lang="en">upper yield strength</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/UpperYieldStrength"/>
-        <skos:definition xml:lang="de">höchste Spannung, bevor der erste Kraftabfall auftritt</skos:definition>
-        <skos:definition xml:lang="en">maximum value of stress prior to the first decrease in force</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">R_eH</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000060 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000060">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000010"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">End-Breite</rdfs:label>
-        <rdfs:label xml:lang="en">width after fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/WidthAfterFracture"/>
-        <skos:definition xml:lang="de">Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie nach einer Prüfung gemessen wird.</skos:definition>
-        <skos:definition xml:lang="en">This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured after a test.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0000000 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000000">
@@ -8529,7 +7455,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
     <!-- https://w3id.org/pmd/co/PMD_0000814 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000814">
-        <owl:equivalentClass rdf:nodeID="genid385"/>
+        <owl:equivalentClass rdf:nodeID="genid343"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8543,7 +7469,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         <skos:definition xml:lang="en">A place equipped for experimental study in a science or for testing and analysis.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid385">
+    <owl:Class rdf:nodeID="genid343">
         <owl:intersectionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
             <owl:Restriction>
@@ -8555,7 +7481,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000814"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid385"/>
+        <owl:annotatedTarget rdf:nodeID="genid343"/>
         <pmd:PMD_0001032>issue: https://github.com/materialdigital/core-ontology/issues/101</pmd:PMD_0001032>
     </owl:Axiom>
     
@@ -15012,6 +13938,1080 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
         <skos:definition xml:lang="en">&quot;[Biodegradabilty] [...] is understood as the microbial conversion of all its organic constituents to carbon dioxide (or carbon dioxide and methane in conditions where oxygen is not present), new microbial biomass and mineral salts, within a timescale short enough not to lead to lasting harm or accumulation in the open environment.&quot;</skos:definition>
         <skos:definition xml:lang="de">&quot;[Biologische Abbaubarkeit] [...] beschreibt die mikrobielle Umwandlung all seiner organischen Bestandteile in Kohlendioxid oder – unter sauerstofffreien Bedingungen – in Kohlendioxid und Methan, neue mikrobielle Biomasse und Mineralsalze verstanden, und zwar innerhalb eines Zeitraums, der so kurz ist, dass es nicht zu dauerhaften Schäden oder Anreicherungen in der offenen Umwelt kommt.&quot;</skos:definition>
         <pmd:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/126</pmd:PMD_0001032>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000000 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="de">Förderungsrolle</rdfs:label>
+        <rdfs:label xml:lang="en">funder role</rdfs:label>
+        <skos:definition xml:lang="en">A funder role is a role that describes the capacity in which a party provides financial support to a project or initiative. This role is realized when the party participates in the project specifically as a source of funding, regardless of other potential involvements.</skos:definition>
+        <skos:definition xml:lang="de">Eine Förderungsrolle (Rolle einer fördernden Partei) ist eine Rolle, die die Funktion beschreibt, in der eine Partei finanzielle Unterstützung für ein Projekt oder eine Initiative bereitstellt. Diese Rolle wird verwirklicht, wenn die Partei speziell als Geldgeber am Projekt teilnimmt, unabhängig von anderen möglichen Beteiligungen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000001">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
+        <rdfs:label xml:lang="de">Höchstkraft der Kraftmessdose</rdfs:label>
+        <rdfs:label xml:lang="en">load cell maximum force</rdfs:label>
+        <skos:definition xml:lang="de">Die Maximalkraft bezeichnet die größte Kraft, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können.</skos:definition>
+        <skos:definition xml:lang="en">The maximum force is the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000002 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Durchmesser</rdfs:label>
+        <rdfs:label xml:lang="en">diameter</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Diameter"/>
+        <skos:definition xml:lang="de">Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums.</skos:definition>
+        <skos:definition xml:lang="en">The length of a straight line through the center of an object or space.</skos:definition>
+        <pmd:definitionSource>“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022.</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000004 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Verlängerung</rdfs:label>
+        <rdfs:label xml:lang="en">elongation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Elongation"/>
+        <skos:definition xml:lang="de">Zunahme der Anfangsmesslänge zu einem beliebigen Zeitpunkt während des Versuchs</skos:definition>
+        <skos:definition xml:lang="en">increase in the original gauge length at any moment during the test</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000005 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:comment xml:lang="en">Dimensional analysis: L
+Unit (e.g. SI): mm</rdfs:comment>
+        <rdfs:comment xml:lang="de">Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
+
+Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der Datenspeicherung erfordern.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
+
+Note: Optical extensometry may require a specific data storage method.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Verlängerung (der Extensometer-Messlänge)</rdfs:label>
+        <rdfs:label xml:lang="en">extension</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Extension"/>
+        <skos:definition xml:lang="en">Increase in the extensometer gauge length at any moment during a test</skos:definition>
+        <skos:definition xml:lang="de">Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs</skos:definition>
+        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000006 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000006">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Dicke</rdfs:label>
+        <rdfs:label xml:lang="en">thickness</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Thickness"/>
+        <skos:definition xml:lang="de">Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers.</skos:definition>
+        <skos:definition xml:lang="en">This class describes the measured dimension in one direction of a test piece.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Form</rdfs:label>
+        <rdfs:label xml:lang="en">shape</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Shape"/>
+        <skos:definition xml:lang="de">Das sichtbare Ausstattungsmerkmal (räumliche Form oder Kontur) eines bestimmten Objektes oder einer Art von Objekt.</skos:definition>
+        <skos:definition xml:lang="en">The visible makeup characteristic (spatial form or contour) of a particular item or kind of item.</skos:definition>
+        <pmd:definitionSource>“Shape.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/shape. Accessed 13 Jan. 2023.</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000009 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000009">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Streckgrenze</rdfs:label>
+        <rdfs:label xml:lang="en">yield strength</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/YieldStrength"/>
+        <skos:definition xml:lang="de">Wenn der metallische Werkstoff diese Eigenschaft aufweist: die Spannung zu einem bestimmten Zeitpunkt während des Versuchs bei dem eine plastische Verformung ohne Zunahme der Kraft auftritt</skos:definition>
+        <skos:definition xml:lang="en">when the metallic material exhibits a yield phenomenon, stress corresponding to the point reached during the test at which plastic deformation occurs without any increase in the force</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000010 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Breite</rdfs:label>
+        <rdfs:label xml:lang="en">width</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Width"/>
+        <skos:definition xml:lang="de">Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird.</skos:definition>
+        <skos:definition xml:lang="en">This class describes a horizontal measurement of an object taken at right angles to the length of the object.</skos:definition>
+        <pmd:definitionSource rdf:resource="https://www.merriam-webster.com/dictionary/width"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000011 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000011">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="en">change of transverse dimension</rdfs:label>
+        <rdfs:label xml:lang="de">Änderung der transversalen Dimension</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ChangeOfTransverseDimension"/>
+        <skos:definition xml:lang="de">Dieses Konzept beschreibt eine Variation der Abmessungen eines Prüfkörpers in Bezug auf seine Querachse, die sich auf seine Querschnittsfläche auswirkt und möglicherweise während eines Zugversuchs auftritt. Das Verhältnis der wahren plastischen Breitendehnung und der wahren plastischen Dickendehnung in einem in uniaxialem Zug beanspruchten Prüfkörper (vertikale Anisotropie) kann anhand dieser Information berechnet werden.</skos:definition>
+        <skos:definition xml:lang="en">This concept describes a variation in the dimension of a test piece referring to its transversal axis affecting its cross-sectional area that may potentially occur during a tensile test. The ratio of the true plastic strain in width and the true plastic strain in thickness in a test piece loaded in uniaxial tension (vertical anisotropy) may be calculated using this information.</skos:definition>
+        <pmd:definitionSource>DIN EN ISO 10113:2021-06</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000012 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000012">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020199"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Querschnittsfläche</rdfs:label>
+        <rdfs:label xml:lang="en">cross section area</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/CrossSectionArea"/>
+        <skos:definition xml:lang="de">Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse.</skos:definition>
+        <skos:definition xml:lang="en">The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis.</skos:definition>
+        <pmd:definitionSource rdf:resource="https://www.merriam-webster.com/dictionary/cross%20section"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000013 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000013">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:comment xml:lang="en">Dimensional analysis: L
+Unit (e.g. SI): mm</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Querhaupttrennung</rdfs:label>
+        <rdfs:label xml:lang="en">crosshead separation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/CrossheadSeparation"/>
+        <skos:definition xml:lang="de">Dieses Konzept beschreibt die Verschiebung der Traverse einer Zugprüfmaschine.</skos:definition>
+        <skos:definition xml:lang="en">This concept describes the displacement of the crossheads of a tensile testing machine.</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000014 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Traversengeschwindigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">crosshead separation rate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/CrossheadSeparationRate"/>
+        <skos:definition xml:lang="de">Traversenweg je Zeiteinheit</skos:definition>
+        <skos:definition xml:lang="en">displacement of the crossheads per time</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">v_c</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000015 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000002"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">End-Probendurchmesser</rdfs:label>
+        <rdfs:label xml:lang="en">diameter after fracture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/DiameterAfterFracture"/>
+        <skos:definition xml:lang="de">Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist.</skos:definition>
+        <skos:definition xml:lang="en">The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000016 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge</rdfs:label>
+        <rdfs:label xml:lang="en">estimated strain rate over the parallel length</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength"/>
+        <skos:definition xml:lang="de">Zunahme der Dehnung über die parallele Länge der Probe je Zeiteinheit, basierend auf der Traversengeschwindigkeit und der parallelen Länge der Probe</skos:definition>
+        <skos:definition xml:lang="en">value of the increase of strain over the parallel length of the test piece per time based on the crosshead separation rate and the parallel length of the test piece</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">e^._L_c</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000017 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Extensometer-Messlänge</rdfs:label>
+        <rdfs:label xml:lang="en">extensometer gauge length</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ExtensometerGaugeLength"/>
+        <skos:definition xml:lang="de">Anfangsmesslänge des Dehnungsaufnehmers (Extensometer), die zum Messen der Verlängerung benutzt wird
+
+Anmerkung: Für die Bestimmung mehrerer Eigenschaften, die (teilweise oder vollständig) von der Verlängerung abhängig sind, z. B. R_p, A_e oder A_g, ist die Verwendung eines Extensometers zwingend erforderlich.</skos:definition>
+        <skos:definition xml:lang="en">initial gauge length of the extensometer used for measurement of extension
+
+Note: For the determination of several properties which are based (partly or complete) on extension, e. g. R_p, A_e or A_g, the use of an extensometer is mandatory.</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">L_e</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000018 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Messlänge nach dem Bruch</rdfs:label>
+        <rdfs:label xml:lang="en">final gauge length after fracture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture"/>
+        <skos:definition xml:lang="de">Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die nach dem Bruch bei Raumtemperatur gemessen wird, nachdem die beiden Probenbruchstücke sorgfältig so zusammengefügt wurden, dass ihre Achsen in einer Geraden liegen</skos:definition>
+        <skos:definition xml:lang="en">length between gauge length marks on the test piece measured after rupture, at room temperature, the two pieces having been carefully fitted back together so that their axes lie in a straight line</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">L_u</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000019 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Messlänge</rdfs:label>
+        <rdfs:label xml:lang="en">gauge length</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/GaugeLength"/>
+        <skos:definition xml:lang="de">Länge des parallelen Teils der Probe, an dem zu einem beliebigen Zeitpunkt während des Versuchs die Verlängerung gemessen wird</skos:definition>
+        <skos:definition xml:lang="en">length of the parallel portion of the test piece on which elongation is measured at any moment during the test</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">L</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Messlängenmarkierungen</rdfs:label>
+        <rdfs:label xml:lang="en">gauge length marks</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/GaugeLengthMarks"/>
+        <skos:definition xml:lang="de">Dieses Konzept wird verwendet, um die sichtbaren Markierungen zu beschreiben, die in der Regel während eines Zugversuchs zur Messung der Dehnung an den Prüfkörpern angebracht werden.</skos:definition>
+        <skos:definition xml:lang="en">This concept is used to describe the visible markers usually attached to test pieces during a tensile test for elongation / extension measurements.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000008"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Geometrische Form</rdfs:label>
+        <rdfs:label xml:lang="en">geometry shape</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/GeometryShape"/>
+        <skos:definition xml:lang="de">Dieses Konzept beschreibt die geometrischen Abmessungen und das Erscheinungsbild (Form und Abmaße) einer Probe, eines Prüfkörpers oder eines Prüfstücks, wie sie üblicherweise durch eine entsprechende Norm definiert sind. Dementsprechend ist der angegebene Formwert in Übereinstimmung mit der definierenden Norm anzugeben, z. B. &quot;Zugprüfstück Form 1 gemäß Anhang B&quot;.</skos:definition>
+        <skos:definition xml:lang="en">This concept describes the geometric dimensions and appearance (shape and dimensions) of a sample, specimen, or test piece as usually defined by a corresponding standard. Accordingly, the shape value given is in accordance with the defining standard, e.g., ‘tensile test piece shape 1 in accordance with annex B’.</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000022 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="en">lower yield strength</rdfs:label>
+        <rdfs:label xml:lang="de">untere Streckgrenze</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/LowerYieldStrength"/>
+        <skos:definition xml:lang="de">kleinste Spannung während des plastischen Fließens, wobei Einschwingerscheinungen nicht berücksichtigt werden</skos:definition>
+        <skos:definition xml:lang="en">lowest value of stress during plastic yielding, ignoring any initial transient effects</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">R_eL</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000023 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Höchstkraft</rdfs:label>
+        <rdfs:label xml:lang="en">maximum force</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MaximumForce"/>
+        <skos:definition xml:lang="de">Bei Werkstoffen, die kein diskontinuierliches Fließen zeigen: größte Kraft, der die Probe während des Versuchs standhält
+
+Bei Werkstoffen, die ein diskontinuierliches Fließen zeigen: größte Kraft, der die Probe während des Versuchs nach dem Beginn der Verfestigung standhält
+
+Anmerkung: Für Werkstoffe, die ein diskontinuierliches Fließen zeigen, aber keine Verfestigung erzielt werden kann, ist die Höchstkraft nicht definiert
+.</skos:definition>
+        <skos:definition xml:lang="en">For materials displaying no discontinuous yielding: highest force that the test piece withstands during the test
+
+For materials displaying discontinuous yielding: highest force that the test piece withstands during the test after the beginning of work-hardening
+
+Note: For materials which display discontinuous yielding, but where no work-hardening can be established, the maximum force is not defined.</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000024 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000056"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000060"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000015"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Symbol: S_u</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Kleinster Querschnitt nach dem Bruch</rdfs:label>
+        <rdfs:label xml:lang="en">minimum cross-sectional area after fracture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MinimumCrossSectionalAreaAfterFracture"/>
+        <skos:definition xml:lang="de">Dieses Konzept beschreibt die kleinste Querschnittsfläche des Zugprüfkörers, die nach dem Bruch infolge der aufgebrachten Zugkraft erhalten wird.
+
+Anmerkung: Sie wird in der Regel senkrecht zur Richtung der aufgebrachten Kraft gemessen und dient zur Berechnung der technischen Spannung während der Prüfung.
+
+Anmerkung: Es wird empfohlen, den Anfangsquerschnitt innerhalb der parallelen Länge mit einer Genauigkeit von ±2 % zu messen. Bei runden Prüfkörpern mit kleinem Durchmesser oder Prüfkörpern mit anderen Querschnittsgeometrien ist es jedoch möglicherweise nicht möglich, den Anfangsquerschnitt innerhalb der parallelen Länge mit einer Genauigkeit von ±2 % zu messen.</skos:definition>
+        <skos:definition xml:lang="en">This concept describes the smallest cross-sectional area of the tensile test piece observed after it has fractured under the applied tensile force.
+
+Note: It is typically measured perpendicular to the direction of the applied force and is used to calculate engineering stress during the test.
+
+Note: It is recommended to measure the original cross-sectional area of the parallel length to an accuracy of ±2 %. However, measuring the original cross-sectional area of the parallel length with an accuracy of ±2 % on small diameter round test pieces, or test pieces with other cross-sectional geometries, may not be possible.</skos:definition>
+        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000025 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000025">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Bewegungsqualität</rdfs:label>
+        <rdfs:label xml:lang="en">movement quality</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MovementQuality"/>
+        <skos:definition xml:lang="en">A movement quality is a physical quality that inheres in a material entity and represents a property of the entity&apos;s motion or change of position over time.</skos:definition>
+        <skos:definition xml:lang="de">Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000026 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000026">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000029"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000030"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000027"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Symbol: S_o</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Anfangsquerschnitt innerhalb der parallelen Länge</rdfs:label>
+        <rdfs:label xml:lang="en">original cross-sectional area of the parallel length</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalCrossSectionalArea"/>
+        <skos:definition xml:lang="de">Dieses Konzept beschreibt die initiale Querschnittsfläche des Zugprüfkörpers entlang seiner parallelen Länge, bevor eine Verformung auftritt.</skos:definition>
+        <skos:definition xml:lang="en">This concept describes the initial area of the tensile test piece before any deformation occurs.</skos:definition>
+        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000027 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000002"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Anfangs-Probendurchmesser</rdfs:label>
+        <rdfs:label xml:lang="en">original diameter</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalDiameter"/>
+        <skos:definition xml:lang="de">Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfkörpers), die vor einer Prüfung gemessen wird.</skos:definition>
+        <skos:definition xml:lang="en">The length of a straight line through the center of an object (tensile test piece) as measured prior to a tensile test.</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000028 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000028">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Anfangsmesslänge</rdfs:label>
+        <rdfs:label xml:lang="en">original gauge length</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalGaugeLength"/>
+        <skos:definition xml:lang="de">Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird</skos:definition>
+        <skos:definition xml:lang="en">length between gauge length marks on the test piece measured at room temperature before the test</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">L_o</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000029 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000029">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000006"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Anfangs-Dicke</rdfs:label>
+        <rdfs:label xml:lang="en">original thickness</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalThickness"/>
+        <skos:definition xml:lang="de">Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde.</skos:definition>
+        <skos:definition xml:lang="en">This entity describes the measured dimension in one direction of a test piece, as measured before the test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000030 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000030">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000010"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Anfangs-Breite</rdfs:label>
+        <rdfs:label xml:lang="en">original width</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalWidth"/>
+        <skos:definition xml:lang="de">Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie vor einer Prüfung gemessen wird.</skos:definition>
+        <skos:definition xml:lang="en">This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured before a test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000031 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Parallele Länge</rdfs:label>
+        <rdfs:label xml:lang="en">parallel length</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ParallelLength"/>
+        <skos:definition xml:lang="de">Länge des parallelen reduzierten Querschnitts der Probe
+
+Anmerkung: Bei unbearbeiteten Proben tritt an die Stelle der parallelen Länge der Abstand zwischen den Einspannungen.</skos:definition>
+        <skos:definition xml:lang="en">length of the parallel reduced section of the test piece
+
+Note: The concept of parallel length is replaced by the concept of distance between grips for unmachined test pieces.</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">L_c</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000032 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">percentage elongation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageElongation"/>
+        <skos:definition xml:lang="de">Verlängerung, angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
+        <skos:definition xml:lang="en">elongation expressed as a percentage of the original gauge length</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000033 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000033">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Bruchdehnung</rdfs:label>
+        <rdfs:label xml:lang="en">percentage elongation after fracture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageElongationAfterFracture"/>
+        <skos:definition xml:lang="de">bleibende Verlängerung der Messlänge nach dem Bruch (L_u − L_o), angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
+        <skos:definition xml:lang="en">permanent elongation of the gauge length after fracture (L_u − L_o), expressed as a percentage of the original gauge length</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">A</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000034 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000034">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Extensometer-Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">percentage extension</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/PercentageExtension"/>
+        <skos:altLabel xml:lang="en">(engineering) strain</skos:altLabel>
+        <skos:altLabel xml:lang="de">technische Dehnung</skos:altLabel>
+        <skos:definition xml:lang="en">extension expressed as a percentage of the extensometer gauge length
+
+Note: The percentage extension is commonly called engineering strain.</skos:definition>
+        <skos:definition>in Prozent angegebene Verlängerung der Extensometer-Messlänge
+
+Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.</skos:definition>
+        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000035 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000035">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Bleibende Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">percentage permanent elongation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePermanentElongation"/>
+        <skos:definition xml:lang="de">Zunahme der Anfangsmesslänge einer Probe nach Entfernen einer festgelegten Zugspannung, angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
+        <skos:definition xml:lang="en">increase in the original gauge length of a test piece after removal of a specified stress, expressed as a percentage of the original gauge length</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000036 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000036">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Bleibende Extensometer-Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">percentage permanent extension</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePermanentExtension"/>
+        <skos:definition xml:lang="de">Vergrößerung der Extensometer-Messlänge nach Entfernen einer festgelegten, auf die Probe aufgebrachten Zugspannung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
+        <skos:definition xml:lang="en">increase in the extensometer gauge length, after removal of a specified stress from the test piece, expressed as a percentage of the extensometer gauge length</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000037 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000037">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Plastische Extensometer-Dehnung bei Höchstkraft</rdfs:label>
+        <rdfs:label xml:lang="en">percentage plastic extension at maximum force</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePlasticExtensionAtMaximumForce"/>
+        <skos:definition xml:lang="en">plastic extension at maximum force, expressed as a percentage of the extensometer gauge length</skos:definition>
+        <skos:definition xml:lang="de">plastische Verlängerung der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">A_g</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000049"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000024"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000026"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Brucheinschnürung</rdfs:label>
+        <rdfs:label xml:lang="en">percentage reduction of area</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageReductionOfArea"/>
+        <skos:definition xml:lang="de">größte während des Versuchs aufgetretene Änderung des Querschnitts (S_o − S_u), angegeben in Prozent, bezogen auf den Anfangsquerschnitt S_o</skos:definition>
+        <skos:definition xml:lang="en">maximum change in cross-sectional area which has occurred during the test (S_o − S_u), expressed as a percentage of the original cross-sectional area, S_o</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol>Z</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000039 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000039">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Gesamte Extensometer-Dehnung beim Bruch</rdfs:label>
+        <rdfs:label xml:lang="en">percentage total extension at fracture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageTotalExtensionAtFracture"/>
+        <skos:definition xml:lang="de">gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge beim Bruch, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
+        <skos:definition xml:lang="en">total extension (elastic extension plus plastic extension) at the moment of fracture, expressed as a percentage of the extensometer gauge length</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">A_t</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000040 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Gesamte Extensometer-Dehnung bei Höchstkraft</rdfs:label>
+        <rdfs:label xml:lang="en">percentage total extension at maximum force</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageTotalExtensionAtMaximumForce"/>
+        <skos:definition xml:lang="de">gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
+        <skos:definition xml:lang="en">total extension (elastic extension plus plastic extension) at maximum force, expressed as a percentage of the extensometer gauge length</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">A_gt</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000041 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Streckgrenzen-Extensometer-Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">percentage yield point extension</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageYieldPointExtension"/>
+        <skos:definition xml:lang="de">Bei Werkstoffen, die ein diskontinuierliches Fließen zeigen: Verlängerung der Extensometer-Messlänge zwischen dem Beginn örtlichen Fließens und dem Einsetzen gleichmäßiger Verfestigung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
+        <skos:definition xml:lang="en">For discontinuous yielding materials: extension between the start of yielding and the start of uniform work-hardening, expressed as a percentage of the extensometer gauge length</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">A_e</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000042 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Physikalische Qualität</rdfs:label>
+        <rdfs:label xml:lang="en">physical quality</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PhysicalQuality"/>
+        <skos:definition xml:lang="en">A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state.</skos:definition>
+        <skos:definition xml:lang="de">Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000043 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000043">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Dehngrenze</rdfs:label>
+        <rdfs:label xml:lang="en">proof strength</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrength"/>
+        <skos:definition xml:lang="de">Spannung, bei der ein bestimmter Dehnungswert gleich einem bestimmten Prozentsatz der Messlänge des Dehnungsmessers ist</skos:definition>
+        <skos:definition xml:lang="en">stress at which the a specific extension value is equal to a specified percentage of the extensometer gauge length</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000044 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000044">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000043"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Dehngrenze bei plastischer Extensometer-Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">proof strength plastic extension</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrengthPlasticExtension"/>
+        <skos:definition xml:lang="de">Spannung, bei der die plastische Extensometer-Dehnung einem vorgegebenen Prozentanteil der Extensometer-Messlänge entspricht
+
+Anmerkung: Der Index wird durch den Zahlenwert ergänzt, der den vorgegebenen Zahlenwert der plastischen Extensometer-Dehnung in Prozent angibt, z. B. R_p_0,2.</skos:definition>
+        <skos:definition xml:lang="en">stress at which the plastic extension is equal to a specified percentage of the extensometer gauge length
+
+Note: A suffix is added to the subscript to indicate the prescribed percentage, e.g. R_p_0.2.
+
+Source: ISO 6892-1:2019</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">R_p</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000045 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000043"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Dehngrenze bei gesamter Extensometer-Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">proof strength total extension</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrengthTotalExtension"/>
+        <skos:definition xml:lang="de">Spannung, bei der die gesamte Extensometer-Dehnung (elastische und plastische Extensometer-Dehnung) einem vorgegebenen Prozentanteil der Extensometer-Messlänge entspricht
+
+Anmerkung: Der Index wird durch den Zahlenwert ergänzt, der den vorgegebenen Zahlenwert der gesamten Extensometer-Dehnung in Prozent angibt, z. B. R_t_0,5.</skos:definition>
+        <skos:definition xml:lang="en">stress at which total extension (elastic extension plus plastic extension) is equal to a specified percentage of the extensometer gauge length
+
+Note: A suffix is added to the subscript to indicate the prescribed percentage, e.g. R_t_0.5.</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">R_t</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000046 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Dehngrenze bei plastischer Extensometer-Dehnung Rp01</rdfs:label>
+        <rdfs:label xml:lang="en">proof strength plastic extension rp01</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Rp01"/>
+        <skos:definition xml:lang="de">Spannung bei einer plastischen Extensometer-Dehnung, die 0,1 Prozent der Extensometer-Messlänge entspricht</skos:definition>
+        <skos:definition xml:lang="en">stress at which the plastic extension is equal to 0.1 percent of the extensometer gauge length</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">R_p_0.1</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000047 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Dehngrenze bei plastischer Extensometer-Dehnung Rp02</rdfs:label>
+        <rdfs:label xml:lang="en">proof strength plastic extension rp02</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Rp02"/>
+        <skos:definition xml:lang="de">Spannung bei einer plastischen Extensometer-Dehnung, die 0,2 Prozent der Extensometer-Messlänge entspricht</skos:definition>
+        <skos:definition xml:lang="en">stress at which the plastic extension is equal to 0.2 percent of the extensometer gauge length</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">R_p_0.2</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000048 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000048">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000021"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">3D Geometrie</rdfs:label>
+        <rdfs:label xml:lang="en">shape 3d</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Shape3D"/>
+        <skos:definition xml:lang="en">A shape 3D is a geometry shape that exists in three dimensions, having length, width, and height, and can be defined by its spatial properties such as volume and surface area.</skos:definition>
+        <skos:definition xml:lang="de">Eine 3D Geometrie ist eine geometrische Form, die in drei Dimensionen existiert, mit Länge, Breite und Höhe, und die durch ihre räumlichen Eigenschaften wie Volumen und Oberfläche definiert werden kann.</skos:definition>
+        <skos:example xml:lang="de">Beispiele sind Formen wie Würfel, Kugeln und Pyramiden.</skos:example>
+        <skos:example xml:lang="en">Examples include shapes like cubes, spheres, and pyramids.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000049 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000049">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Größenrelation</rdfs:label>
+        <rdfs:label xml:lang="en">size relation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/SizeRelation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000050 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000050">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000618"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Steigung des elastischen Bereichs</rdfs:label>
+        <rdfs:label xml:lang="en">slope of the elastic part</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/SlopeOfTheElasticPart"/>
+        <skos:definition xml:lang="de">Dieses Konzept beschreibt den Wert der Steigung des ersten linear ansteigenden Teils (&quot;elastischer Teil&quot;) in der bei einem Zugversuch erhaltenen Spannungs-Dehnungs-Kurve. Im elastischen Teil der Spannungs-Dehnungs-Kurve muss der Wert der Steigung nicht unbedingt dem Elastizitätsmodul entsprechen. Dieser Wert kann mit dem Wert des Elastizitätsmoduls (nur) sehr gut übereinstimmen, wenn optimale Bedingungen herrschten.</skos:definition>
+        <skos:definition xml:lang="en">This concept describes the value of the slope of the first linear increasing part (‘elastic part’) in the stress-percentage extension curve obtained during a tensile test. In the elastic part of the stress‐percentage extension curve, the value of the slope may not necessarily represent the modulus of elasticity. This value may closely agree with the value of the modulus of elasticity if optimal conditions were used.</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000051 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000051">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Dehngeschwindigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">strain rate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/StrainRate"/>
+        <skos:definition xml:lang="de">Zunahme der mit einem Extensometer in der Extensometer-Messlänge gemessenen Dehnung je Zeiteinheit</skos:definition>
+        <skos:definition xml:lang="en">increase of strain, measured with an extensometer, in extensometer gauge length, per time</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">e^._L_e</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000052 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000052">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Spannungsgeschwindigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">stress rate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/StressRate"/>
+        <skos:definition xml:lang="de">Zunahme der Spannung je Zeiteinheit
+
+Anmerkung: Die Spannungsgeschwindigkeit wird nur im elastischen Bereich des Versuchs verwendet.</skos:definition>
+        <skos:definition xml:lang="en">increase of stress per time
+
+Note: Stress rate is only used in the elastic part of the test.</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">R</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000053 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000053">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Zugfestigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">tensile strength</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TensileStrength"/>
+        <skos:definition xml:lang="de">Spannung, die der Höchstkraft entspricht</skos:definition>
+        <skos:definition xml:lang="en">stress corresponding to the maximum force</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">R_m</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000054 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Zugversuchsmethode</rdfs:label>
+        <rdfs:label xml:lang="en">tensile test method</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TensileTestMethod"/>
+        <skos:definition xml:lang="en">A tensile test method is a plan specification that prescribes the execution of a controlled experiment designed to determine the mechanical properties of a material under uniaxial tensile loading. The plan specifies procedural steps, conditions, and measurement criteria to assess properties such as ultimate tensile strength, yield strength, and elongation at break.</skos:definition>
+        <skos:definition xml:lang="de">Eine Zugversuchsmethode ist eine Planspezifikation, die die Durchführung eines kontrollierten Versuchs zur Bestimmung der mechanischen Eigenschaften eines Materials unter einachsiger Zugbelastung vorschreibt. Der Plan legt Verfahrensschritte, Bedingungen und Messkriterien fest, um Eigenschaften wie die Zugfestigkeit, die Streckgrenze und die Bruchdehnung zu bestimmen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000055 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000055">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Prüfkörper</rdfs:label>
+        <rdfs:label xml:lang="en">test piece</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/TestPiece"/>
+        <skos:definition xml:lang="en">Part of a sample with specified dimensions, machined or un-machined, brought to a required condition for submission to a given test.</skos:definition>
+        <skos:definition xml:lang="de">Teil einer Probe mit bestimmten Dimensionen, bearbeitet oder unbearbeitet, der in einen erforderlichen Zustand gebracht wird, um einer bestimmten Prüfung unterzogen zu werden.</skos:definition>
+        <pmd:definitionSource>EN 10021:2006-12 (European standardization committee: CEN/TC 459/SC 12/WG 4)</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000056 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000056">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000006"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">End-Dicke</rdfs:label>
+        <rdfs:label xml:lang="en">thickness after fracture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ThicknessAfterFracture"/>
+        <skos:definition xml:lang="de">Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde.</skos:definition>
+        <skos:definition xml:lang="en">This entity describes the measured dimension in one direction of a test piece, as measured after the test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000057 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000057">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Umschaltpunkt</rdfs:label>
+        <rdfs:label xml:lang="en">transition point</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TransitionPoint"/>
+        <skos:definition xml:lang="de">Diese Entität beschreibt einen einzelnen Punkt, an dem ein Übergang von einer Bedingung oder einem Zustand in einen anderen erfolgt, z. B. der Punkt, an dem verschiedene Phasen von Materie im Gleichgewicht miteinander existieren können (auch Inversionspunkt genannt) oder wenn Prozessparameter geändert werden, die zu einem Übergang des Prozesses während seiner Ausführung führen.</skos:definition>
+        <skos:definition xml:lang="en">This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000058 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000058">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Umschaltpunkt der Prüfgeschwindigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">transition point testing rate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TransitionPointTestingRate"/>
+        <skos:definition xml:lang="de">Diese Entität beschreibt den Umschaltpunkt der Prüfgeschwindigkeit während eines Analyse- / Testprozesses, z.B. den Punkt bezogen auf die Dehnung oder Spannung, an welchem die Prüfgeschwindigkeit während eines Zugversuchs geändert wird. Typischerweise ist dieser Punkt mit einer Abnahme des Extensometers (Dehnungsaufnehmers) vom Prüfkörper während eines dehnungsgeregelten Zugversuchs verbunden.</skos:definition>
+        <skos:definition xml:lang="en">This entity describes the the transition point of the testing rate during an analysis / test process, e.g. the point referring to the strain or the stress at which the testing rate is changed during a tensile test. Typically, this transition point is associated with a removal of the extensometer from the test piece during a strain-controlled tensile test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000059 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000059">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Obere Streckgrenze</rdfs:label>
+        <rdfs:label xml:lang="en">upper yield strength</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/UpperYieldStrength"/>
+        <skos:definition xml:lang="de">höchste Spannung, bevor der erste Kraftabfall auftritt</skos:definition>
+        <skos:definition xml:lang="en">maximum value of stress prior to the first decrease in force</skos:definition>
+        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <pmd:symbol xml:lang="en">R_eH</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000060 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000060">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000010"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">End-Breite</rdfs:label>
+        <rdfs:label xml:lang="en">width after fracture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/WidthAfterFracture"/>
+        <skos:definition xml:lang="de">Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie nach einer Prüfung gemessen wird.</skos:definition>
+        <skos:definition xml:lang="en">This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured after a test.</skos:definition>
     </owl:Class>
     
 
