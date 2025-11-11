@@ -13,7 +13,7 @@ There is an earlier version 2.0 of the TTO which is still available in a [dedica
 
 The latest version of the ontology can always be found at:
 
-[https://w3id.org/pmd/ao/tto.owl]([https://w3id.org/pmd/ao/tto.owl)
+[https://w3id.org/pmd/tto/tto.owl]([https://w3id.org/pmd/tto/tto.owl)
 
 ### Editors' version
 

@@ -1,4 +1,4 @@
-Prefix(:=<https://w3id.org/pmd/ao/tto/imports/pmdco_import.owl#>)
+Prefix(:=<https://w3id.org/pmd/tto/imports/pmdco_import.owl#>)
 Prefix(co:=<https://w3id.org/pmd/co/>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
@@ -13,8 +13,8 @@ Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
 
 
-Ontology(<https://w3id.org/pmd/ao/tto/imports/pmdco_import.owl>
-<https://w3id.org/pmd/ao/tto/releases/2025-11-07/imports/pmdco_import.owl>
+Ontology(<https://w3id.org/pmd/tto/imports/pmdco_import.owl>
+<https://w3id.org/pmd/tto/releases/2025-11-07/imports/pmdco_import.owl>
 Annotation(dc:source <https://w3id.org/pmd/co/3.0.0-alpha4>)
 Annotation(owl:versionInfo "2025-11-07")
 

@@ -1,7 +1,7 @@
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX pmdco: <https://w3id.org/pmd/co/>
-PREFIX prefix: <https://w3id.org/pmd/ao/demodata/tensiletest_S355/>
+PREFIX prefix: <https://w3id.org/pmd/demodata/tensiletest_S355/>
 
 SELECT ?subprocessShort
 WHERE {
@@ -18,7 +18,7 @@ WHERE {
   OPTIONAL { ?subprocess (obo:BFO_0000062)+ ?prev }
 
   # Abkürzen auf "prefix:..."
-  BIND(REPLACE(STR(?subprocess), "^https://w3id.org/pmd/ao/demodata/tensiletest_S355/pmdao-tto-tt-S355-1_process_", "") AS ?subprocessShort)
+  BIND(REPLACE(STR(?subprocess), "^https://w3id.org/pmd/demodata/tensiletest_S355/pmdao-tto-tt-S355-1_process_", "") AS ?subprocessShort)
 }
 GROUP BY ?subprocessShort
 ORDER BY (COUNT(?prev))

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/pmd/ao/tto/tto-simple.owl#"
-     xml:base="https://w3id.org/pmd/ao/tto/tto-simple.owl"
+<rdf:RDF xmlns="https://w3id.org/pmd/tto/tto-simple.owl#"
+     xml:base="https://w3id.org/pmd/tto/tto-simple.owl"
      xmlns:co="https://w3id.org/pmd/co/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/ao/tto/tto-simple.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/tto/releases/2025-11-07/tto-simple.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/tto/tto-simple.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2025-11-07/tto-simple.owl"/>
         <terms:contributor>https://orcid.org/0000-0003-1649-6832</terms:contributor>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>

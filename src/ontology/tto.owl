@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/pmd/ao/tto.owl#"
-     xml:base="https://w3id.org/pmd/ao/tto.owl"
+<rdf:RDF xmlns="https://w3id.org/pmd/tto.owl#"
+     xml:base="https://w3id.org/pmd/tto.owl"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,8 +13,8 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:dcterms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/ao/tto.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ao/tto/releases/2025-11-07/tto.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/tto.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2025-11-07/tto.owl"/>
         <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
@@ -4360,9 +4360,9 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000000 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000000 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000000">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label xml:lang="de">Förderungsrolle</rdfs:label>
         <rdfs:label xml:lang="en">funder role</rdfs:label>
@@ -4372,9 +4372,9 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000001 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000001 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000001">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000001">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
         <rdfs:label xml:lang="de">Höchstkraft der Kraftmessdose</rdfs:label>
         <rdfs:label xml:lang="en">load cell maximum force</rdfs:label>
@@ -4384,11 +4384,11 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000002 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000002 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000002">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000002">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Durchmesser</rdfs:label>
         <rdfs:label xml:lang="en">diameter</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Diameter"/>
@@ -4399,17 +4399,17 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000004 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000004 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000004">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000004">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000028"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Verlängerung</rdfs:label>
         <rdfs:label xml:lang="en">elongation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Elongation"/>
@@ -4420,9 +4420,9 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000005 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000005 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000005">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000005">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <rdfs:comment xml:lang="en">Dimensional analysis: L
@@ -4433,7 +4433,7 @@ Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der D
         <rdfs:comment xml:lang="en">Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
 
 Note: Optical extensometry may require a specific data storage method.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Verlängerung (der Extensometer-Messlänge)</rdfs:label>
         <rdfs:label xml:lang="en">extension</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Extension"/>
@@ -4444,11 +4444,11 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000006 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000006 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000006">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000006">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dicke</rdfs:label>
         <rdfs:label xml:lang="en">thickness</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Thickness"/>
@@ -4458,11 +4458,11 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000008 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000008 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000008">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000008">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Form</rdfs:label>
         <rdfs:label xml:lang="en">shape</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Shape"/>
@@ -4473,11 +4473,11 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000009 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000009 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000009">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000009">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Streckgrenze</rdfs:label>
         <rdfs:label xml:lang="en">yield strength</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/YieldStrength"/>
@@ -4488,11 +4488,11 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000010 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000010 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000010">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000010">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Breite</rdfs:label>
         <rdfs:label xml:lang="en">width</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Width"/>
@@ -4503,11 +4503,11 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000011 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000011 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000011">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000011">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="en">change of transverse dimension</rdfs:label>
         <rdfs:label xml:lang="de">Änderung der transversalen Dimension</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ChangeOfTransverseDimension"/>
@@ -4518,9 +4518,9 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000012 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000012 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000012">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000012">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020199"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Querschnittsfläche</rdfs:label>
@@ -4533,13 +4533,13 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000013 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000013 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000013">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000013">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
         <rdfs:comment xml:lang="en">Dimensional analysis: L
 Unit (e.g. SI): mm</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Querhaupttrennung</rdfs:label>
         <rdfs:label xml:lang="en">crosshead separation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/CrossheadSeparation"/>
@@ -4550,11 +4550,11 @@ Unit (e.g. SI): mm</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000014 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000014 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000014">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000025"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Traversengeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">crosshead separation rate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/CrossheadSeparationRate"/>
@@ -4566,10 +4566,10 @@ Unit (e.g. SI): mm</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000015 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000015 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000015">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000002"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000002"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">End-Probendurchmesser</rdfs:label>
         <rdfs:label xml:lang="en">diameter after fracture</rdfs:label>
@@ -4580,11 +4580,11 @@ Unit (e.g. SI): mm</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000016 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000016 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000016">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000025"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge</rdfs:label>
         <rdfs:label xml:lang="en">estimated strain rate over the parallel length</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength"/>
@@ -4596,11 +4596,11 @@ Unit (e.g. SI): mm</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000017 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000017 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000017">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Extensometer-Messlänge</rdfs:label>
         <rdfs:label xml:lang="en">extensometer gauge length</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ExtensometerGaugeLength"/>
@@ -4616,11 +4616,11 @@ Note: For the determination of several properties which are based (partly or com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000018 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000018 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000018">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Messlänge nach dem Bruch</rdfs:label>
         <rdfs:label xml:lang="en">final gauge length after fracture</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture"/>
@@ -4632,11 +4632,11 @@ Note: For the determination of several properties which are based (partly or com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000019 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000019 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000019">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000019">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Messlänge</rdfs:label>
         <rdfs:label xml:lang="en">gauge length</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/GaugeLength"/>
@@ -4648,12 +4648,12 @@ Note: For the determination of several properties which are based (partly or com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000020 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000020 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000020">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000020">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Messlängenmarkierungen</rdfs:label>
         <rdfs:label xml:lang="en">gauge length marks</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/GaugeLengthMarks"/>
@@ -4663,10 +4663,10 @@ Note: For the determination of several properties which are based (partly or com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000021 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000021 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000021">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000008"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000008"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Geometrische Form</rdfs:label>
@@ -4679,11 +4679,11 @@ Note: For the determination of several properties which are based (partly or com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000022 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000022 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000022">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000009"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="en">lower yield strength</rdfs:label>
         <rdfs:label xml:lang="de">untere Streckgrenze</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/LowerYieldStrength"/>
@@ -4695,9 +4695,9 @@ Note: For the determination of several properties which are based (partly or com
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000023 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000023 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000023">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000023">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Höchstkraft</rdfs:label>
@@ -4719,10 +4719,10 @@ Note: For materials which display discontinuous yielding, but where no work-hard
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000024 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000024 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000012"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000012"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -4730,23 +4730,23 @@ Note: For materials which display discontinuous yielding, but where no work-hard
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000056"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000056"/>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000060"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000060"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000015"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000015"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:comment>Symbol: S_u</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Kleinster Querschnitt nach dem Bruch</rdfs:label>
         <rdfs:label xml:lang="en">minimum cross-sectional area after fracture</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MinimumCrossSectionalAreaAfterFracture"/>
@@ -4765,11 +4765,11 @@ Note: It is recommended to measure the original cross-sectional area of the para
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000025 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000025 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000025">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000042"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000025">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Bewegungsqualität</rdfs:label>
         <rdfs:label xml:lang="en">movement quality</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/MovementQuality"/>
@@ -4779,10 +4779,10 @@ Note: It is recommended to measure the original cross-sectional area of the para
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000026 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000026 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000026">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000012"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000026">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000012"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -4790,23 +4790,23 @@ Note: It is recommended to measure the original cross-sectional area of the para
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000029"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000029"/>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000030"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000030"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000027"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000027"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:comment>Symbol: S_o</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Anfangsquerschnitt innerhalb der parallelen Länge</rdfs:label>
         <rdfs:label xml:lang="en">original cross-sectional area of the parallel length</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalCrossSectionalArea"/>
@@ -4817,10 +4817,10 @@ Note: It is recommended to measure the original cross-sectional area of the para
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000027 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000027 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000027">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000002"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000002"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Anfangs-Probendurchmesser</rdfs:label>
         <rdfs:label xml:lang="en">original diameter</rdfs:label>
@@ -4832,11 +4832,11 @@ Note: It is recommended to measure the original cross-sectional area of the para
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000028 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000028 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000028">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000028">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Anfangsmesslänge</rdfs:label>
         <rdfs:label xml:lang="en">original gauge length</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalGaugeLength"/>
@@ -4848,11 +4848,11 @@ Note: It is recommended to measure the original cross-sectional area of the para
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000029 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000029 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000029">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000006"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000029">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000006"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Anfangs-Dicke</rdfs:label>
         <rdfs:label xml:lang="en">original thickness</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalThickness"/>
@@ -4862,11 +4862,11 @@ Note: It is recommended to measure the original cross-sectional area of the para
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000030 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000030 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000030">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000010"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000030">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000010"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Anfangs-Breite</rdfs:label>
         <rdfs:label xml:lang="en">original width</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalWidth"/>
@@ -4876,11 +4876,11 @@ Note: It is recommended to measure the original cross-sectional area of the para
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000031 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000031 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000031">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000031">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Parallele Länge</rdfs:label>
         <rdfs:label xml:lang="en">parallel length</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ParallelLength"/>
@@ -4896,11 +4896,11 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000032 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000032 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000032">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000004"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehnung</rdfs:label>
         <rdfs:label xml:lang="en">percentage elongation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageElongation"/>
@@ -4911,11 +4911,11 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000033 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000033 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000004"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000033">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Bruchdehnung</rdfs:label>
         <rdfs:label xml:lang="en">percentage elongation after fracture</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageElongationAfterFracture"/>
@@ -4927,14 +4927,14 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000034 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000034 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000034">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000005"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000034">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000017"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
@@ -4954,11 +4954,11 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000035 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000035 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000035">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000004"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000035">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Bleibende Dehnung</rdfs:label>
         <rdfs:label xml:lang="en">percentage permanent elongation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePermanentElongation"/>
@@ -4969,17 +4969,17 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000036 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000036 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000036">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000005"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000036">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000017"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Bleibende Extensometer-Dehnung</rdfs:label>
         <rdfs:label xml:lang="en">percentage permanent extension</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePermanentExtension"/>
@@ -4990,25 +4990,25 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000037 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000037 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000037">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000005"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000037">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000023"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Plastische Extensometer-Dehnung bei Höchstkraft</rdfs:label>
         <rdfs:label xml:lang="en">percentage plastic extension at maximum force</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePlasticExtensionAtMaximumForce"/>
@@ -5020,25 +5020,25 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000038 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000049"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000049"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000024"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000024"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000026"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000026"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Brucheinschnürung</rdfs:label>
         <rdfs:label xml:lang="en">percentage reduction of area</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageReductionOfArea"/>
@@ -5050,17 +5050,17 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000039 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000039 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000039">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000005"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000039">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000017"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Gesamte Extensometer-Dehnung beim Bruch</rdfs:label>
         <rdfs:label xml:lang="en">percentage total extension at fracture</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageTotalExtensionAtFracture"/>
@@ -5072,25 +5072,25 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000040 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000040 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000040">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000005"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000017"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000023"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Gesamte Extensometer-Dehnung bei Höchstkraft</rdfs:label>
         <rdfs:label xml:lang="en">percentage total extension at maximum force</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageTotalExtensionAtMaximumForce"/>
@@ -5102,11 +5102,11 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000041 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000041 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000041">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000005"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Streckgrenzen-Extensometer-Dehnung</rdfs:label>
         <rdfs:label xml:lang="en">percentage yield point extension</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageYieldPointExtension"/>
@@ -5118,11 +5118,11 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000042 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000042 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000042">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Physikalische Qualität</rdfs:label>
         <rdfs:label xml:lang="en">physical quality</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PhysicalQuality"/>
@@ -5132,11 +5132,11 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000043 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000043 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000043">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000043">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngrenze</rdfs:label>
         <rdfs:label xml:lang="en">proof strength</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrength"/>
@@ -5146,11 +5146,11 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000044 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000044 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000044">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000043"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000044">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000043"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngrenze bei plastischer Extensometer-Dehnung</rdfs:label>
         <rdfs:label xml:lang="en">proof strength plastic extension</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrengthPlasticExtension"/>
@@ -5168,17 +5168,17 @@ Source: ISO 6892-1:2019</skos:definition>
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000045 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000045 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000045">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000043"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000043"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000017"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngrenze bei gesamter Extensometer-Dehnung</rdfs:label>
         <rdfs:label xml:lang="en">proof strength total extension</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ProofStrengthTotalExtension"/>
@@ -5194,11 +5194,11 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000046 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000046 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000046">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000044"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngrenze bei plastischer Extensometer-Dehnung Rp01</rdfs:label>
         <rdfs:label xml:lang="en">proof strength plastic extension rp01</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Rp01"/>
@@ -5210,11 +5210,11 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000047 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000047 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000047">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000044"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngrenze bei plastischer Extensometer-Dehnung Rp02</rdfs:label>
         <rdfs:label xml:lang="en">proof strength plastic extension rp02</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Rp02"/>
@@ -5226,10 +5226,10 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000048 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000048 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000048">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000021"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000048">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000021"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">3D Geometrie</rdfs:label>
         <rdfs:label xml:lang="en">shape 3d</rdfs:label>
@@ -5242,12 +5242,12 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000049 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000049 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000049">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000042"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000049">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000042"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Größenrelation</rdfs:label>
         <rdfs:label xml:lang="en">size relation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/SizeRelation"/>
@@ -5255,11 +5255,11 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000050 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000050 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000050">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000050">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000618"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Steigung des elastischen Bereichs</rdfs:label>
         <rdfs:label xml:lang="en">slope of the elastic part</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/SlopeOfTheElasticPart"/>
@@ -5270,11 +5270,11 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000051 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000051 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000051">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000025"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000051">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehngeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">strain rate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/StrainRate"/>
@@ -5286,11 +5286,11 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000052 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000052 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000052">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000025"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000052">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Spannungsgeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">stress rate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/StressRate"/>
@@ -5306,12 +5306,12 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000053 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000053 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000053">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000053">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000952"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Zugfestigkeit</rdfs:label>
         <rdfs:label xml:lang="en">tensile strength</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TensileStrength"/>
@@ -5323,9 +5323,9 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000054 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000054 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000054">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Zugversuchsmethode</rdfs:label>
@@ -5337,9 +5337,9 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000055 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000055 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000055">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000055">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -5362,11 +5362,11 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000056 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000056 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000056">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000006"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000056">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000006"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">End-Dicke</rdfs:label>
         <rdfs:label xml:lang="en">thickness after fracture</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ThicknessAfterFracture"/>
@@ -5376,11 +5376,11 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000057 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000057 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000057">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000057">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Umschaltpunkt</rdfs:label>
         <rdfs:label xml:lang="en">transition point</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TransitionPoint"/>
@@ -5390,11 +5390,11 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000058 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000058 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000058">
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000058">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Umschaltpunkt der Prüfgeschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">transition point testing rate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/TransitionPointTestingRate"/>
@@ -5404,11 +5404,11 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000059 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000059 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000059">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000009"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000059">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Obere Streckgrenze</rdfs:label>
         <rdfs:label xml:lang="en">upper yield strength</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/UpperYieldStrength"/>
@@ -5420,11 +5420,11 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
-    <!-- https://w3id.org/pmd/ao/tto/TTO_0000060 -->
+    <!-- https://w3id.org/pmd/tto/TTO_0000060 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/ao/tto/TTO_0000060">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/ao/tto/TTO_0000010"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ao/tto"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000060">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000010"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">End-Breite</rdfs:label>
         <rdfs:label xml:lang="en">width after fracture</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/WidthAfterFracture"/>

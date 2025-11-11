@@ -1,5 +1,5 @@
 ?cls	?pred	?val	?synType
-<https://w3id.org/pmd/ao/TTO_0000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"root node"@en	
+<https://w3id.org/pmd/TTO_0000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"root node"@en	
 <http://purl.obolibrary.org/obo/CHEBI_27573>	<http://www.w3.org/2000/01/rdf-schema#label>	"silicon atom"	
 <https://w3id.org/pmd/co/PMD_0020202>	<http://www.w3.org/2000/01/rdf-schema#label>	"crack"@en	
 <https://w3id.org/pmd/co/PMD_0000965>	<http://www.w3.org/2000/01/rdf-schema#label>	"surface layer (fiat object part)"@en	

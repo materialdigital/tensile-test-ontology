@@ -1,4 +1,4 @@
-Prefix(:=<https://w3id.org/pmd/ao/tto/>)
+Prefix(:=<https://w3id.org/pmd/tto/>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(pmd:=<https://w3id.org/pmd/co/>)
@@ -9,7 +9,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
-Ontology(<https://w3id.org/pmd/ao/tto/>
+Ontology(<https://w3id.org/pmd/tto/>
 Annotation(dcterms:contributor "https://orcid.org/0000-0003-1649-6832")
 Annotation(dcterms:creator <https://orcid.org/0000-0001-7192-7143>)
 Annotation(dcterms:creator <https://orcid.org/0000-0002-3717-7104>)
@@ -138,7 +138,7 @@ SubClassOf(:TTO_0000001 pmd:PMD_0020200)
 
 # Class: :TTO_0000002 (diameter)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000002 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000002 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000002 "Durchmesser"@de)
 AnnotationAssertion(rdfs:label :TTO_0000002 "diameter"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000002 <https://w3id.org/pmd/co/2.0.8/Diameter>)
@@ -149,7 +149,7 @@ SubClassOf(:TTO_0000002 pmd:PMD_0040001)
 
 # Class: :TTO_0000004 (Verlängerung)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000004 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000004 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000004 "Verlängerung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000004 "elongation"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000004 <https://w3id.org/pmd/tto/Elongation>)
@@ -170,7 +170,7 @@ Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der D
 AnnotationAssertion(rdfs:comment :TTO_0000005 "Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
 
 Note: Optical extensometry may require a specific data storage method."@en)
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000005 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000005 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000005 "Verlängerung (der Extensometer-Messlänge)"@de)
 AnnotationAssertion(rdfs:label :TTO_0000005 "extension"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000005 <https://w3id.org/pmd/co/2.0.8/Extension>)
@@ -181,7 +181,7 @@ SubClassOf(:TTO_0000005 pmd:PMD_0000848)
 
 # Class: :TTO_0000006 (thickness)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000006 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000006 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000006 "Dicke"@de)
 AnnotationAssertion(rdfs:label :TTO_0000006 "thickness"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000006 <https://w3id.org/pmd/co/2.0.8/Thickness>)
@@ -191,7 +191,7 @@ SubClassOf(:TTO_0000006 pmd:PMD_0040001)
 
 # Class: :TTO_0000008 (Form)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000008 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000008 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000008 "Form"@de)
 AnnotationAssertion(rdfs:label :TTO_0000008 "shape"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000008 <https://w3id.org/pmd/tto/Shape>)
@@ -202,7 +202,7 @@ SubClassOf(:TTO_0000008 pmd:PMD_0020148)
 
 # Class: :TTO_0000009 (Streckgrenze)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000009 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000009 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000009 "Streckgrenze"@de)
 AnnotationAssertion(rdfs:label :TTO_0000009 "yield strength"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000009 <https://w3id.org/pmd/tto/YieldStrength>)
@@ -213,7 +213,7 @@ SubClassOf(:TTO_0000009 pmd:PMD_0000952)
 
 # Class: :TTO_0000010 (width)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000010 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000010 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000010 "Breite"@de)
 AnnotationAssertion(rdfs:label :TTO_0000010 "width"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000010 <https://w3id.org/pmd/co/2.0.8/Width>)
@@ -224,7 +224,7 @@ SubClassOf(:TTO_0000010 pmd:PMD_0040001)
 
 # Class: :TTO_0000011 (Änderung der transversalen Dimension)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000011 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000011 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000011 "change of transverse dimension"@en)
 AnnotationAssertion(rdfs:label :TTO_0000011 "Änderung der transversalen Dimension"@de)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000011 <https://w3id.org/pmd/tto/ChangeOfTransverseDimension>)
@@ -248,7 +248,7 @@ SubClassOf(:TTO_0000012 pmd:PMD_0020199)
 
 AnnotationAssertion(rdfs:comment :TTO_0000013 "Dimensional analysis: L
 Unit (e.g. SI): mm"@en)
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000013 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000013 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000013 "Querhaupttrennung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000013 "crosshead separation"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000013 <https://w3id.org/pmd/tto/CrossheadSeparation>)
@@ -259,7 +259,7 @@ SubClassOf(:TTO_0000013 pmd:PMD_0040001)
 
 # Class: :TTO_0000014 (crosshead separation rate)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000014 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000014 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000014 "Traversengeschwindigkeit"@de)
 AnnotationAssertion(rdfs:label :TTO_0000014 "crosshead separation rate"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000014 <https://w3id.org/pmd/tto/CrossheadSeparationRate>)
@@ -281,7 +281,7 @@ SubClassOf(:TTO_0000015 :TTO_0000002)
 
 # Class: :TTO_0000016 (estimated strain rate over the parallel length)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000016 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000016 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000016 "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
 AnnotationAssertion(rdfs:label :TTO_0000016 "estimated strain rate over the parallel length"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000016 <https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength>)
@@ -293,7 +293,7 @@ SubClassOf(:TTO_0000016 :TTO_0000025)
 
 # Class: :TTO_0000017 (extensometer gauge length)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)
 AnnotationAssertion(rdfs:label :TTO_0000017 "extensometer gauge length"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000017 <https://w3id.org/pmd/tto/ExtensometerGaugeLength>)
@@ -309,7 +309,7 @@ SubClassOf(:TTO_0000017 :TTO_0000019)
 
 # Class: :TTO_0000018 (final gauge length after fracture)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000018 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000018 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000018 "Messlänge nach dem Bruch"@de)
 AnnotationAssertion(rdfs:label :TTO_0000018 "final gauge length after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000018 <https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture>)
@@ -321,7 +321,7 @@ SubClassOf(:TTO_0000018 :TTO_0000019)
 
 # Class: :TTO_0000019 (Messlänge)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000019 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000019 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000019 "Messlänge"@de)
 AnnotationAssertion(rdfs:label :TTO_0000019 "gauge length"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000019 <https://w3id.org/pmd/tto/GaugeLength>)
@@ -334,7 +334,7 @@ SubClassOf(:TTO_0000019 pmd:PMD_0040001)
 # Class: :TTO_0000020 (gauge length marks)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> :TTO_0000020 <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000020 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000020 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000020 "Messlängenmarkierungen"@de)
 AnnotationAssertion(rdfs:label :TTO_0000020 "gauge length marks"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000020 <https://w3id.org/pmd/tto/GaugeLengthMarks>)
@@ -356,7 +356,7 @@ SubClassOf(:TTO_0000021 :TTO_0000008)
 
 # Class: :TTO_0000022 (untere Streckgrenze)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000022 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000022 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000022 "lower yield strength"@en)
 AnnotationAssertion(rdfs:label :TTO_0000022 "untere Streckgrenze"@de)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000022 <https://w3id.org/pmd/tto/LowerYieldStrength>)
@@ -389,7 +389,7 @@ SubClassOf(:TTO_0000023 pmd:PMD_0020200)
 # Class: :TTO_0000024 (minimum cross-sectional area after fracture)
 
 AnnotationAssertion(rdfs:comment :TTO_0000024 "Symbol: S_u")
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000024 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000024 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000024 "Kleinster Querschnitt nach dem Bruch"@de)
 AnnotationAssertion(rdfs:label :TTO_0000024 "minimum cross-sectional area after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000024 <https://w3id.org/pmd/tto/MinimumCrossSectionalAreaAfterFracture>)
@@ -409,7 +409,7 @@ SubClassOf(:TTO_0000024 ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(
 
 # Class: :TTO_0000025 (movement quality)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000025 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000025 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000025 "Bewegungsqualität"@de)
 AnnotationAssertion(rdfs:label :TTO_0000025 "movement quality"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000025 <https://w3id.org/pmd/tto/MovementQuality>)
@@ -420,7 +420,7 @@ SubClassOf(:TTO_0000025 :TTO_0000042)
 # Class: :TTO_0000026 (Anfangsquerschnitt innerhalb der parallelen Länge)
 
 AnnotationAssertion(rdfs:comment :TTO_0000026 "Symbol: S_o")
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000026 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000026 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000026 "Anfangsquerschnitt innerhalb der parallelen Länge"@de)
 AnnotationAssertion(rdfs:label :TTO_0000026 "original cross-sectional area of the parallel length"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000026 <https://w3id.org/pmd/tto/OriginalCrossSectionalArea>)
@@ -443,7 +443,7 @@ SubClassOf(:TTO_0000027 :TTO_0000002)
 
 # Class: :TTO_0000028 (original gauge length)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000028 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000028 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000028 "Anfangsmesslänge"@de)
 AnnotationAssertion(rdfs:label :TTO_0000028 "original gauge length"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000028 <https://w3id.org/pmd/tto/OriginalGaugeLength>)
@@ -455,7 +455,7 @@ SubClassOf(:TTO_0000028 :TTO_0000019)
 
 # Class: :TTO_0000029 (Anfangs-Dicke)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
 AnnotationAssertion(rdfs:label :TTO_0000029 "original thickness"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000029 <https://w3id.org/pmd/tto/OriginalThickness>)
@@ -465,7 +465,7 @@ SubClassOf(:TTO_0000029 :TTO_0000006)
 
 # Class: :TTO_0000030 (original width)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000030 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000030 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000030 "Anfangs-Breite"@de)
 AnnotationAssertion(rdfs:label :TTO_0000030 "original width"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000030 <https://w3id.org/pmd/tto/OriginalWidth>)
@@ -475,7 +475,7 @@ SubClassOf(:TTO_0000030 :TTO_0000010)
 
 # Class: :TTO_0000031 (Parallele Länge)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000031 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000031 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000031 "Parallele Länge"@de)
 AnnotationAssertion(rdfs:label :TTO_0000031 "parallel length"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000031 <https://w3id.org/pmd/tto/ParallelLength>)
@@ -491,7 +491,7 @@ SubClassOf(:TTO_0000031 pmd:PMD_0040001)
 
 # Class: :TTO_0000032 (Dehnung)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000032 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000032 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000032 "Dehnung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000032 "percentage elongation"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000032 <https://w3id.org/pmd/tto/PercentageElongation>)
@@ -503,7 +503,7 @@ SubClassOf(:TTO_0000032 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
 
 # Class: :TTO_0000033 (Bruchdehnung)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000033 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000033 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000033 "Bruchdehnung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000033 "percentage elongation after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000033 <https://w3id.org/pmd/tto/PercentageElongationAfterFracture>)
@@ -534,7 +534,7 @@ SubClassOf(:TTO_0000034 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000017))
 
 # Class: :TTO_0000035 (percentage permanent elongation)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000035 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000035 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000035 "Bleibende Dehnung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000035 "percentage permanent elongation"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000035 <https://w3id.org/pmd/tto/PercentagePermanentElongation>)
@@ -546,7 +546,7 @@ SubClassOf(:TTO_0000035 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
 
 # Class: :TTO_0000036 (percentage permanent extension)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000036 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000036 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000036 "Bleibende Extensometer-Dehnung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000036 "percentage permanent extension"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000036 <https://w3id.org/pmd/tto/PercentagePermanentExtension>)
@@ -558,7 +558,7 @@ SubClassOf(:TTO_0000036 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000017))
 
 # Class: :TTO_0000037 (Plastische Extensometer-Dehnung bei Höchstkraft)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000037 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000037 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000037 "Plastische Extensometer-Dehnung bei Höchstkraft"@de)
 AnnotationAssertion(rdfs:label :TTO_0000037 "percentage plastic extension at maximum force"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000037 <https://w3id.org/pmd/tto/PercentagePlasticExtensionAtMaximumForce>)
@@ -571,7 +571,7 @@ SubClassOf(:TTO_0000037 ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo 
 
 # Class: :TTO_0000038 (percentage reduction of area)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000038 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000038 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000038 "Brucheinschnürung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000038 "percentage reduction of area"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000038 <https://w3id.org/pmd/tto/PercentageReductionOfArea>)
@@ -584,7 +584,7 @@ SubClassOf(:TTO_0000038 ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo 
 
 # Class: :TTO_0000039 (percentage total extension at fracture)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000039 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000039 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000039 "Gesamte Extensometer-Dehnung beim Bruch"@de)
 AnnotationAssertion(rdfs:label :TTO_0000039 "percentage total extension at fracture"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000039 <https://w3id.org/pmd/tto/PercentageTotalExtensionAtFracture>)
@@ -597,7 +597,7 @@ SubClassOf(:TTO_0000039 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000017))
 
 # Class: :TTO_0000040 (Gesamte Extensometer-Dehnung bei Höchstkraft)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000040 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000040 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000040 "Gesamte Extensometer-Dehnung bei Höchstkraft"@de)
 AnnotationAssertion(rdfs:label :TTO_0000040 "percentage total extension at maximum force"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000040 <https://w3id.org/pmd/tto/PercentageTotalExtensionAtMaximumForce>)
@@ -610,7 +610,7 @@ SubClassOf(:TTO_0000040 ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo 
 
 # Class: :TTO_0000041 (percentage yield point extension)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000041 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000041 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000041 "Streckgrenzen-Extensometer-Dehnung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000041 "percentage yield point extension"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000041 <https://w3id.org/pmd/tto/PercentageYieldPointExtension>)
@@ -622,7 +622,7 @@ SubClassOf(:TTO_0000041 :TTO_0000005)
 
 # Class: :TTO_0000042 (physical quality)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000042 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000042 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000042 "Physikalische Qualität"@de)
 AnnotationAssertion(rdfs:label :TTO_0000042 "physical quality"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000042 <https://w3id.org/pmd/tto/PhysicalQuality>)
@@ -632,7 +632,7 @@ SubClassOf(:TTO_0000042 <http://purl.obolibrary.org/obo/BFO_0000019>)
 
 # Class: :TTO_0000043 (Dehngrenze)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000043 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000043 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000043 "Dehngrenze"@de)
 AnnotationAssertion(rdfs:label :TTO_0000043 "proof strength"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000043 <https://w3id.org/pmd/tto/ProofStrength>)
@@ -642,7 +642,7 @@ SubClassOf(:TTO_0000043 pmd:PMD_0000952)
 
 # Class: :TTO_0000044 (proof strength plastic extension)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000044 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000044 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000044 "Dehngrenze bei plastischer Extensometer-Dehnung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000044 "proof strength plastic extension"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000044 <https://w3id.org/pmd/tto/ProofStrengthPlasticExtension>)
@@ -660,7 +660,7 @@ SubClassOf(:TTO_0000044 :TTO_0000043)
 
 # Class: :TTO_0000045 (Dehngrenze bei gesamter Extensometer-Dehnung)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000045 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000045 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000045 "Dehngrenze bei gesamter Extensometer-Dehnung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000045 "proof strength total extension"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000045 <https://w3id.org/pmd/tto/ProofStrengthTotalExtension>)
@@ -677,7 +677,7 @@ SubClassOf(:TTO_0000045 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000017))
 
 # Class: :TTO_0000046 (Dehngrenze bei plastischer Extensometer-Dehnung Rp01)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000046 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000046 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000046 "Dehngrenze bei plastischer Extensometer-Dehnung Rp01"@de)
 AnnotationAssertion(rdfs:label :TTO_0000046 "proof strength plastic extension rp01"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000046 <https://w3id.org/pmd/tto/Rp01>)
@@ -689,7 +689,7 @@ SubClassOf(:TTO_0000046 :TTO_0000044)
 
 # Class: :TTO_0000047 (Dehngrenze bei plastischer Extensometer-Dehnung Rp02)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000047 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000047 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000047 "Dehngrenze bei plastischer Extensometer-Dehnung Rp02"@de)
 AnnotationAssertion(rdfs:label :TTO_0000047 "proof strength plastic extension rp02"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000047 <https://w3id.org/pmd/tto/Rp02>)
@@ -714,7 +714,7 @@ SubClassOf(:TTO_0000048 :TTO_0000021)
 # Class: :TTO_0000049 (size relation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> :TTO_0000049 <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000049 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000049 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000049 "Größenrelation"@de)
 AnnotationAssertion(rdfs:label :TTO_0000049 "size relation"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000049 <https://w3id.org/pmd/tto/SizeRelation>)
@@ -722,7 +722,7 @@ SubClassOf(:TTO_0000049 :TTO_0000042)
 
 # Class: :TTO_0000050 (Steigung des elastischen Bereichs)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000050 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000050 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000050 "Steigung des elastischen Bereichs"@de)
 AnnotationAssertion(rdfs:label :TTO_0000050 "slope of the elastic part"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000050 <https://w3id.org/pmd/tto/SlopeOfTheElasticPart>)
@@ -733,7 +733,7 @@ SubClassOf(:TTO_0000050 pmd:PMD_0000618)
 
 # Class: :TTO_0000051 (Dehngeschwindigkeit)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000051 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000051 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000051 "Dehngeschwindigkeit"@de)
 AnnotationAssertion(rdfs:label :TTO_0000051 "strain rate"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000051 <https://w3id.org/pmd/tto/StrainRate>)
@@ -745,7 +745,7 @@ SubClassOf(:TTO_0000051 :TTO_0000025)
 
 # Class: :TTO_0000052 (stress rate)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000052 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000052 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000052 "Spannungsgeschwindigkeit"@de)
 AnnotationAssertion(rdfs:label :TTO_0000052 "stress rate"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000052 <https://w3id.org/pmd/tto/StressRate>)
@@ -762,7 +762,7 @@ SubClassOf(:TTO_0000052 :TTO_0000025)
 # Class: :TTO_0000053 (tensile strength)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> :TTO_0000053 <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000053 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000053 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000053 "Zugfestigkeit"@de)
 AnnotationAssertion(rdfs:label :TTO_0000053 "tensile strength"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000053 <https://w3id.org/pmd/tto/TensileStrength>)
@@ -795,7 +795,7 @@ SubClassOf(:TTO_0000055 ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO
 
 # Class: :TTO_0000056 (End-Dicke)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000056 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000056 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000056 "End-Dicke"@de)
 AnnotationAssertion(rdfs:label :TTO_0000056 "thickness after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000056 <https://w3id.org/pmd/tto/ThicknessAfterFracture>)
@@ -805,7 +805,7 @@ SubClassOf(:TTO_0000056 :TTO_0000006)
 
 # Class: :TTO_0000057 (Umschaltpunkt)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000057 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000057 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000057 "Umschaltpunkt"@de)
 AnnotationAssertion(rdfs:label :TTO_0000057 "transition point"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000057 <https://w3id.org/pmd/tto/TransitionPoint>)
@@ -815,7 +815,7 @@ SubClassOf(:TTO_0000057 pmd:PMD_0000008)
 
 # Class: :TTO_0000058 (Umschaltpunkt der Prüfgeschwindigkeit)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000058 "Umschaltpunkt der Prüfgeschwindigkeit"@de)
 AnnotationAssertion(rdfs:label :TTO_0000058 "transition point testing rate"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000058 <https://w3id.org/pmd/tto/TransitionPointTestingRate>)
@@ -825,7 +825,7 @@ SubClassOf(:TTO_0000058 pmd:PMD_0000008)
 
 # Class: :TTO_0000059 (upper yield strength)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000059 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000059 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000059 "Obere Streckgrenze"@de)
 AnnotationAssertion(rdfs:label :TTO_0000059 "upper yield strength"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000059 <https://w3id.org/pmd/tto/UpperYieldStrength>)
@@ -837,7 +837,7 @@ SubClassOf(:TTO_0000059 :TTO_0000009)
 
 # Class: :TTO_0000060 (End-Breite)
 
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000060 <https://w3id.org/pmd/ao/tto>)
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000060 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000060 "End-Breite"@de)
 AnnotationAssertion(rdfs:label :TTO_0000060 "width after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000060 <https://w3id.org/pmd/tto/WidthAfterFracture>)
