@@ -279,7 +279,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000015 "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(:TTO_0000015 :TTO_0000002)
 
-# Class: :TTO_0000016 (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
+# Class: :TTO_0000016 (estimated strain rate over the parallel length)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000016 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000016 "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -544,7 +544,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000035 "DIN EN ISO 6892-1:2019"@e
 SubClassOf(:TTO_0000035 :TTO_0000004)
 SubClassOf(:TTO_0000035 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
 
-# Class: :TTO_0000036 (Bleibende Extensometer-Dehnung)
+# Class: :TTO_0000036 (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000036 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000036 "Bleibende Extensometer-Dehnung"@de)
