@@ -3,7 +3,7 @@ title: "Tensile Test Ontology"
 github_org: materialdigital
 git_main_branch: main
 repo: tensile-test-ontology
-uribase: https://w3id.org/pmd/ao
+uribase: https://w3id.org/pmd
 uribase_suffix: tto
 
 release_artefacts:
