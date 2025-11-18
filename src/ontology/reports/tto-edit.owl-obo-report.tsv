@@ -53,8 +53,8 @@ ERROR	multiple_labels	original diameter	rdfs:label	Anfangs-Probendurchmesser@de
 ERROR	multiple_labels	original diameter	rdfs:label	original diameter@en
 ERROR	multiple_labels	original gauge length	rdfs:label	Anfangsmesslänge@de
 ERROR	multiple_labels	original gauge length	rdfs:label	original gauge length@en
-ERROR	multiple_labels	original thickness	rdfs:label	Anfangs-Dicke@de
-ERROR	multiple_labels	original thickness	rdfs:label	original thickness@en
+ERROR	multiple_labels	Anfangs-Dicke	rdfs:label	Anfangs-Dicke@de
+ERROR	multiple_labels	Anfangs-Dicke	rdfs:label	original thickness@en
 ERROR	multiple_labels	original width	rdfs:label	Anfangs-Breite@de
 ERROR	multiple_labels	original width	rdfs:label	original width@en
 ERROR	multiple_labels	Parallele Länge	rdfs:label	Parallele Länge@de
@@ -67,8 +67,8 @@ ERROR	multiple_labels	percentage extension	rdfs:label	Extensometer-Dehnung@de
 ERROR	multiple_labels	percentage extension	rdfs:label	percentage extension@en
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	Bleibende Dehnung@de
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	percentage permanent elongation@en
-ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	Bleibende Extensometer-Dehnung@de
-ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	percentage permanent extension@en
+ERROR	multiple_labels	percentage permanent extension	rdfs:label	Bleibende Extensometer-Dehnung@de
+ERROR	multiple_labels	percentage permanent extension	rdfs:label	percentage permanent extension@en
 ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	Plastische Extensometer-Dehnung bei Höchstkraft@de
 ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	percentage plastic extension at maximum force@en
 ERROR	multiple_labels	percentage reduction of area	rdfs:label	Brucheinschnürung@de
@@ -111,8 +111,8 @@ ERROR	multiple_labels	thickness after fracture	rdfs:label	End-Dicke@de
 ERROR	multiple_labels	thickness after fracture	rdfs:label	thickness after fracture@en
 ERROR	multiple_labels	Umschaltpunkt	rdfs:label	Umschaltpunkt@de
 ERROR	multiple_labels	Umschaltpunkt	rdfs:label	transition point@en
-ERROR	multiple_labels	Umschaltpunkt der Prüfgeschwindigkeit	rdfs:label	Umschaltpunkt der Prüfgeschwindigkeit@de
-ERROR	multiple_labels	Umschaltpunkt der Prüfgeschwindigkeit	rdfs:label	transition point testing rate@en
+ERROR	multiple_labels	transition point testing rate	rdfs:label	Umschaltpunkt der Prüfgeschwindigkeit@de
+ERROR	multiple_labels	transition point testing rate	rdfs:label	transition point testing rate@en
 ERROR	multiple_labels	Obere Streckgrenze	rdfs:label	Obere Streckgrenze@de
 ERROR	multiple_labels	Obere Streckgrenze	rdfs:label	upper yield strength@en
 ERROR	multiple_labels	End-Breite	rdfs:label	End-Breite@de
@@ -144,14 +144,14 @@ WARN	missing_definition	Bewegungsqualität	IAO:0000115
 WARN	missing_definition	Anfangsquerschnitt innerhalb der parallelen Länge	IAO:0000115	
 WARN	missing_definition	original diameter	IAO:0000115	
 WARN	missing_definition	original gauge length	IAO:0000115	
-WARN	missing_definition	original thickness	IAO:0000115	
+WARN	missing_definition	Anfangs-Dicke	IAO:0000115	
 WARN	missing_definition	original width	IAO:0000115	
 WARN	missing_definition	Parallele Länge	IAO:0000115	
 WARN	missing_definition	percentage elongation	IAO:0000115	
 WARN	missing_definition	percentage elongation after fracture	IAO:0000115	
 WARN	missing_definition	percentage extension	IAO:0000115	
 WARN	missing_definition	percentage permanent elongation	IAO:0000115	
-WARN	missing_definition	Bleibende Extensometer-Dehnung	IAO:0000115	
+WARN	missing_definition	percentage permanent extension	IAO:0000115	
 WARN	missing_definition	percentage plastic extension at maximum force	IAO:0000115	
 WARN	missing_definition	percentage reduction of area	IAO:0000115	
 WARN	missing_definition	percentage total extension at fracture	IAO:0000115	
@@ -173,6 +173,6 @@ WARN	missing_definition	tensile test method	IAO:0000115
 WARN	missing_definition	test piece	IAO:0000115	
 WARN	missing_definition	thickness after fracture	IAO:0000115	
 WARN	missing_definition	Umschaltpunkt	IAO:0000115	
-WARN	missing_definition	Umschaltpunkt der Prüfgeschwindigkeit	IAO:0000115	
+WARN	missing_definition	transition point testing rate	IAO:0000115	
 WARN	missing_definition	Obere Streckgrenze	IAO:0000115	
 WARN	missing_definition	End-Breite	IAO:0000115	
