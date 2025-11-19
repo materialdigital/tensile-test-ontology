@@ -67,8 +67,8 @@ ERROR	multiple_labels	percentage extension	rdfs:label	Extensometer-Dehnung@de
 ERROR	multiple_labels	percentage extension	rdfs:label	percentage extension@en
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	Bleibende Dehnung@de
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	percentage permanent elongation@en
-ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	Bleibende Extensometer-Dehnung@de
-ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	percentage permanent extension@en
+ERROR	multiple_labels	percentage permanent extension	rdfs:label	Bleibende Extensometer-Dehnung@de
+ERROR	multiple_labels	percentage permanent extension	rdfs:label	percentage permanent extension@en
 ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	Plastische Extensometer-Dehnung bei Höchstkraft@de
 ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	percentage plastic extension at maximum force@en
 ERROR	multiple_labels	percentage reduction of area	rdfs:label	Brucheinschnürung@de
@@ -151,7 +151,7 @@ WARN	missing_definition	percentage elongation	IAO:0000115
 WARN	missing_definition	percentage elongation after fracture	IAO:0000115	
 WARN	missing_definition	percentage extension	IAO:0000115	
 WARN	missing_definition	percentage permanent elongation	IAO:0000115	
-WARN	missing_definition	Bleibende Extensometer-Dehnung	IAO:0000115	
+WARN	missing_definition	percentage permanent extension	IAO:0000115	
 WARN	missing_definition	percentage plastic extension at maximum force	IAO:0000115	
 WARN	missing_definition	percentage reduction of area	IAO:0000115	
 WARN	missing_definition	percentage total extension at fracture	IAO:0000115	
