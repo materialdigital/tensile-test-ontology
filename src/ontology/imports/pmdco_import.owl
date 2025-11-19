@@ -3563,7 +3563,7 @@ AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum
 SubClassOf(co:PMD_0000053 co:PMD_0000833)
 SubClassOf(co:PMD_0000053 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 co:PMD_0020139)))
 
-# Class: co:PMD_0000054 (Heizfunktion)
+# Class: co:PMD_0000054 (heating function)
 
 AnnotationAssertion(rdfs:label co:PMD_0000054 "Heizfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000054 "heating function"@en)
@@ -3837,7 +3837,7 @@ AnnotationAssertion(skos:definition co:PMD_0000530 "Ein Mechanische Eigenschafte
 AnnotationAssertion(skos:example co:PMD_0000530 "Testing the flexural strength of a plastic beam to ensure it can withstand the required load in an engineering application."@en)
 SubClassOf(co:PMD_0000530 co:PMD_0000849)
 
-# Class: co:PMD_0000531 (Analyseverfahren der Biokompatibilität)
+# Class: co:PMD_0000531 (biocompatibility analyzing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000531 "Analyseverfahren der Biokompatibilität"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000531 "biocompatibility analyzing process"@en)
@@ -4106,7 +4106,7 @@ AnnotationAssertion(skos:definition co:PMD_0000564 "Eine Unterfunktion der Besch
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000564 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000564 co:PMD_0000575)
 
-# Class: co:PMD_0000565 (Beschichten Durch Löten)
+# Class: co:PMD_0000565 (coating by soldering)
 
 AnnotationAssertion(rdfs:label co:PMD_0000565 "Beschichten Durch Löten"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000565 "coating by soldering"@en)
@@ -4431,7 +4431,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0000604 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000604 co:PMD_0000621)
 DisjointClasses(co:PMD_0000604 co:PMD_0000620)
 
-# Class: co:PMD_0000605 (differential scanning calorimeter)
+# Class: co:PMD_0000605 (Differential-Scanning-Kalorimeter)
 
 AnnotationAssertion(rdfs:label co:PMD_0000605 "Differential-Scanning-Kalorimeter"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000605 "differential scanning calorimeter"@en)
@@ -5255,7 +5255,7 @@ AnnotationAssertion(skos:definition co:PMD_0000807 "Ein Fügeverfahren, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000807 "Pouring, Embedding, Encasing"@en)
 SubClassOf(co:PMD_0000807 co:PMD_0000806)
 
-# Class: co:PMD_0000808 (Fügen Durch Umformen)
+# Class: co:PMD_0000808 (joining by shaping)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Official definition can be found in: DIN 8593-5"@en)
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Offizielle Definition findet man in: DIN 8593-5"@de)
@@ -5874,7 +5874,7 @@ AnnotationAssertion(skos:definition co:PMD_0000899 "Ein Herstellungsprozess, der
 AnnotationAssertion(skos:example co:PMD_0000899 "Casting, Sintering"@en)
 SubClassOf(co:PMD_0000899 co:PMD_0000833)
 
-# Class: co:PMD_0000900 (primary shaping by additive manufacturing)
+# Class: co:PMD_0000900 (Urformen Durch Additive Fertigung)
 
 AnnotationAssertion(rdfs:label co:PMD_0000900 "Urformen Durch Additive Fertigung"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000900 "primary shaping by additive manufacturing"@en)
@@ -5955,7 +5955,7 @@ AnnotationAssertion(skos:definition co:PMD_0000908 "Ein Urformprozess, der das F
 AnnotationAssertion(skos:example co:PMD_0000908 "Pottery"@en)
 SubClassOf(co:PMD_0000908 co:PMD_0000899)
 
-# Class: co:PMD_0000909 (project)
+# Class: co:PMD_0000909 (Projekt)
 
 AnnotationAssertion(rdfs:label co:PMD_0000909 "Projekt"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000909 "project"@en)
@@ -6332,7 +6332,7 @@ AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a p
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000961 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000961 co:PMD_0000882)
 
-# Class: co:PMD_0000962 (supercritical fluid chromatography process)
+# Class: co:PMD_0000962 (Überkritische Fluidchromatographie Verfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000962 "supercritical fluid chromatography process"@en)
 AnnotationAssertion(rdfs:label co:PMD_0000962 "Überkritische Fluidchromatographie Verfahren"@de)
@@ -6487,7 +6487,7 @@ AnnotationAssertion(skos:example co:PMD_0000979 "Measuring the thermal conductiv
 AnnotationAssertion(co:PMD_0050117 co:PMD_0000979 "TCMP"@en)
 SubClassOf(co:PMD_0000979 co:PMD_0000982)
 
-# Class: co:PMD_0000980 (thermal conductivity measuring function)
+# Class: co:PMD_0000980 (Wärmeleitfähigkeitsmessfunktion)
 
 AnnotationAssertion(rdfs:label co:PMD_0000980 "Wärmeleitfähigkeitsmessfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000980 "thermal conductivity measuring function"@en)
