@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/pmd/tto/"
+     xml:base="https://w3id.org/pmd/tto/"
+     xmlns:co="https://w3id.org/pmd/co/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/pmd/tto/">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/3.0.0-alpha4"/>
+        <terms:bibliographicCitation>M. Schilling, B. Bayerlein, P. v. Hartrott, J. Waitelonis, H. Birkholz, P. D. Portella, B. Skrotzki, Advanced Engineering Materials 2024, 2400138.</terms:bibliographicCitation>
+        <terms:contributor>https://orcid.org/0000-0003-1649-6832</terms:contributor>
+        <terms:created>2025-11-19</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-7094-5371"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-9014-2920"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0003-4971-3645"/>
+        <terms:description xml:lang="de">Dies ist die PMD-Ontologie für Zugversuche (Tensile Test Ontology – TTO), die auf der Grundlage der Prüfnorm &quot;ISO 6892-1: Metallische Werkstoffe – Zugversuche – Teil 1: Prüfverfahren bei Raumtemperatur&quot; entwickelt wurde.
+
+Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualisierungen, die für die Beschreibung von Zugversuchen und entsprechenden Daten gemäß der jeweiligen Prüfnorm gültig sind. Durch die Verwendung der TTO zur Speicherung von Zugversuchsdaten sind alle Daten gut strukturiert und basieren auf einem gemeinsamen Vokabular, das von einer Expertengruppe vereinbart wurde (Erzeugung von FAIRen-Daten), was zu einer verbesserten Dateninteroperabilität führen wird. Durch den Import der PMD Core Ontology (PMDco) wird die Interoperabilität von Zugprüfungsdaten verbessert und die Abfrage in Kombination mit anderen Aspekten und Daten aus dem breiten Feld der Materialwissenschaft und Werkstofftechnik (MSE) erleichtert.</terms:description>
+        <terms:description xml:lang="en">This is thePMD ontology of the tensile test (Tensile Test Ontology - TTO) as developed on the basis of the test standard ISO 6892-1: Metallic materials - Tensile Testing - Part 1: Method of test at room temperature.
+
+The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated.</terms:description>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title>Tensile Test Ontology (TTO)</terms:title>
+        <owl:priorVersion rdf:resource="https://w3id.org/pmd/tto/2.0.1"/>
+        <owl:versionInfo>3.0.0-alpha4</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:label>dcterms:license</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/definitionSource -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/definitionSource"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/symbol -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/symbol"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000196 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000196">
+        <rdfs:label xml:lang="en">bearer of</rdfs:label>
+        <skos:definition xml:lang="en">b bearer of c =Def c inheres in b</skos:definition>
+        <skos:example xml:lang="en">A patch of ink is the bearer of a colour quality; an organism is the bearer of a temperature quality</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/co/relatesTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/relatesTo"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

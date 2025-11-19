@@ -16,7 +16,6 @@ export_formats:
   - ttl
 remove_owl_nothing: true
 
-#maybe raw link needed to explizit version
 import_group:
   products:
   - id: pmdco
