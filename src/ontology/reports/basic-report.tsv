@@ -2,76 +2,83 @@
 <https://w3id.org/pmd/co/PMD_0050005>		
 <https://w3id.org/pmd/co/PMD_0000014>		
 <https://w3id.org/pmd/co/PMD_0050029>		
+<https://w3id.org/pmd/tto/TTO_0000042>		
+<http://purl.obolibrary.org/obo/IAO_0020010>	"A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity."@en	
 <https://w3id.org/pmd/co/PMD_0050072>		
-<http://purl.obolibrary.org/obo/CHEBI_33377>	"A lanthanoid atom that has formula Dy."	
 <http://purl.obolibrary.org/obo/BFO_0000018>		
 <https://w3id.org/pmd/co/PMD_0000583>		
 <https://w3id.org/pmd/co/PMD_0001017>		
 <https://w3id.org/pmd/co/PMD_0050096>		
-<http://purl.obolibrary.org/obo/CHEBI_25555>	"A pnictogen that has formula N."	
 <https://w3id.org/pmd/co/PMD_0050006>		
+<https://w3id.org/pmd/tto/TTO_0000043>		
 <https://w3id.org/pmd/co/PMD_0050071>		
 <https://w3id.org/pmd/co/PMD_0000584>		
 <https://w3id.org/pmd/co/PMD_0001016>		
 <https://w3id.org/pmd/co/PMD_0000560>		
 <https://w3id.org/pmd/co/PMD_0050095>		
+<https://w3id.org/pmd/tto/TTO_0000040>		
 <https://w3id.org/pmd/co/PMD_0050007>		
 <https://w3id.org/pmd/co/PMD_0050094>		
 <https://w3id.org/pmd/co/PMD_0050070>		
 <https://w3id.org/pmd/co/PMD_0000585>		
+<https://w3id.org/pmd/co/PMD_0200001>		
+<http://purl.obolibrary.org/obo/OBI_0100051>	"A material entity that is collected for potential use as an input upon which measurements or observations are performed."@en	
 <http://purl.obolibrary.org/obo/CHEBI_23367>	"Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity."	
 <https://w3id.org/pmd/co/PMD_0001015>		
 <https://w3id.org/pmd/co/PMD_0000561>		
 <http://purl.obolibrary.org/obo/BFO_0000023>	"A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts."@en	
-<http://purl.obolibrary.org/obo/CHEBI_25805>	"A chalcogen that has formula O."	
+<https://w3id.org/pmd/tto/TTO_0000041>		
 <https://w3id.org/pmd/co/PMD_0050008>		
-<https://w3id.org/pmd/co/PMD_0000017>		
-<http://purl.obolibrary.org/obo/CHEBI_27698>	"A vanadium group element atom that has formula V."	
 <https://w3id.org/pmd/co/PMD_0050093>		
 <https://w3id.org/pmd/co/PMD_0000562>		
 <http://purl.obolibrary.org/obo/BFO_0000019>		
 <https://w3id.org/pmd/co/PMD_0000586>		
 <https://w3id.org/pmd/co/PMD_0000780>		
 <https://w3id.org/pmd/co/PMD_0001014>		
-<http://purl.obolibrary.org/obo/CHEBI_25195>	"A zinc group element atom that has formula Hg."	
 <https://w3id.org/pmd/co/PMD_0000915>		
 <https://w3id.org/pmd/co/PMD_0000806>		
 <https://w3id.org/pmd/co/PMD_0000939>		
 <https://w3id.org/pmd/co/PMD_0050009>		
 <https://w3id.org/pmd/co/PMD_0050092>		
 <https://w3id.org/pmd/co/PMD_0020080>		
+<http://purl.obolibrary.org/obo/OBI_0000571>	"Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process."@en	
 <http://purl.obolibrary.org/obo/CHEBI_33368>	"A copper group element atom with atomic number 111. The the ninth member of the 6d series of transition metals, it is an extremely radioactive, synthetic element. Average mass is around 281."	
 <https://w3id.org/pmd/co/PMD_0000916>		
 <https://w3id.org/pmd/co/PMD_0000807>		
-<http://purl.obolibrary.org/obo/CHEBI_25107>	"An alkaline earth metal atom that has formula Mg."	
+<http://purl.obolibrary.org/obo/CHEBI_27998>		
 <https://w3id.org/pmd/co/PMD_0050091>		
 <https://w3id.org/pmd/co/PMD_0020081>		
 <https://w3id.org/pmd/co/PMD_0000580>		
 <http://purl.obolibrary.org/obo/CHEBI_18248>	"An iron group element atom that has atomic number 26."	
 <https://w3id.org/pmd/co/PMD_0000917>		
 <https://w3id.org/pmd/co/PMD_0000808>		
-<http://purl.obolibrary.org/obo/CHEBI_30430>	"A metallic element first identified and named from the brilliant indigo (Latin indicum) blue line in its flame spectrum."	
+<http://purl.obolibrary.org/obo/CHEBI_33314>		
 <https://w3id.org/pmd/co/PMD_0050090>		
 <https://w3id.org/pmd/co/PMD_0020082>		
 <https://w3id.org/pmd/co/PMD_0000581>		
+<http://purl.obolibrary.org/obo/CHEBI_22927>		
 <https://w3id.org/pmd/co/PMD_0001019>		
+<http://purl.obolibrary.org/obo/IAO_0000104>	"A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en	
 <https://w3id.org/pmd/co/PMD_0000809>		
 <https://w3id.org/pmd/co/PMD_0000918>		
+<http://purl.obolibrary.org/obo/CHEBI_25555>		
 <https://w3id.org/pmd/co/PMD_0020083>		
+<http://purl.obolibrary.org/obo/CHEBI_33337>		
 <http://purl.obolibrary.org/obo/CHEBI_33359>	"A cobalt group element atom of atomic number 45."	
-<https://w3id.org/pmd/TTO_0000000>		
 <https://w3id.org/pmd/co/PMD_0000582>		
-<http://purl.obolibrary.org/obo/CHEBI_33376>	"A lanthanoid atom that has formula Tb."	
 <https://w3id.org/pmd/co/PMD_0001018>		
 <https://w3id.org/pmd/co/PMD_0000919>		
+<https://w3id.org/pmd/tto/TTO_0000060>		
 <https://w3id.org/pmd/co/PMD_0000567>		
 <https://w3id.org/pmd/co/PMD_0000870>		
+<http://purl.obolibrary.org/obo/CHEBI_32999>		
 <https://w3id.org/pmd/co/PMD_0000894>		
 <https://w3id.org/pmd/co/PMD_0000543>		
 <https://w3id.org/pmd/co/PMD_0000785>		
 <https://w3id.org/pmd/co/PMD_0000652>		
 <https://w3id.org/pmd/co/PMD_0020101>		
-<http://purl.obolibrary.org/obo/CHEBI_33386>	"An actinoid atom that has formula Pa."	
+<https://w3id.org/pmd/co/PMD_0020210>		
+<http://purl.obolibrary.org/obo/CHEBI_23116>		
 <https://w3id.org/pmd/co/PMD_0000786>		
 <https://w3id.org/pmd/co/PMD_0000544>		
 <https://w3id.org/pmd/co/PMD_0000980>		
@@ -82,16 +89,15 @@
 <https://w3id.org/pmd/co/PMD_0020126>		
 <https://w3id.org/pmd/co/PMD_0020102>		
 <https://w3id.org/pmd/co/PMD_0000896>		
-<https://w3id.org/pmd/co/PMD_0000787>		
 <https://w3id.org/pmd/co/PMD_0000654>		
 <https://w3id.org/pmd/co/PMD_0000569>		
 <https://w3id.org/pmd/co/PMD_0000981>		
 <https://w3id.org/pmd/co/PMD_0000521>		
 <https://w3id.org/pmd/co/PMD_0000630>		
+<http://purl.obolibrary.org/obo/CHEBI_30687>		
 <https://w3id.org/pmd/co/PMD_0020103>		
 <https://w3id.org/pmd/co/PMD_0040001>		
 <https://w3id.org/pmd/co/PMD_0050119>		
-<http://purl.obolibrary.org/obo/CHEBI_33373>	"A lanthanoid atom that has formula Pm."	
 <https://w3id.org/pmd/co/PMD_0000655>		
 <https://w3id.org/pmd/co/PMD_0000522>		
 <https://w3id.org/pmd/co/PMD_0000788>		
@@ -100,52 +106,46 @@
 <https://w3id.org/pmd/co/PMD_0000631>		
 <https://w3id.org/pmd/co/PMD_0000873>		
 <https://w3id.org/pmd/co/PMD_0020104>		
-<http://purl.obolibrary.org/obo/CHEBI_33346>	"A titanium group element atom that has formula Rf."	
-<http://purl.obolibrary.org/obo/CHEBI_25016>	"A carbon group element atom that has formula Pb."	
 <http://purl.obolibrary.org/obo/CHEBI_33250>	"A chemical entity constituting the smallest component of an element having the chemical properties of the element."	
 <http://purl.obolibrary.org/obo/CHEBI_29362>		
 <https://w3id.org/pmd/co/PMD_0050118>		
 <https://w3id.org/pmd/co/PMD_0020128>		
-<http://purl.obolibrary.org/obo/CHEBI_33375>	"A lanthanoid atom that has formula Gd."	
+<http://purl.obolibrary.org/obo/OBI_0001931>	"A value specification that consists of two parts: a numeral and a unit label"@en	
 <https://w3id.org/pmd/co/PMD_0000563>		
 <https://w3id.org/pmd/co/PMD_0000587>		
 <https://w3id.org/pmd/co/PMD_0020105>		
 <https://w3id.org/pmd/co/PMD_0000890>		
 <https://w3id.org/pmd/co/PMD_0000781>		
-<http://purl.obolibrary.org/obo/CHEBI_49696>	"A noble gas atom that has formula Kr."	
 <https://w3id.org/pmd/co/PMD_0020129>		
+<http://purl.obolibrary.org/obo/CHEBI_49637>		
 <https://w3id.org/pmd/co/PMD_0000588>		
 <https://w3id.org/pmd/co/PMD_0000782>		
 <https://w3id.org/pmd/co/PMD_0000540>		
 <https://w3id.org/pmd/co/PMD_0000564>		
 <https://w3id.org/pmd/co/PMD_0000891>		
 <http://purl.obolibrary.org/obo/CHEBI_33319>		
-<http://purl.obolibrary.org/obo/CHEBI_29287>	"A copper group element atom that has formula Au."	
 <https://w3id.org/pmd/co/PMD_0050116>		
 <https://w3id.org/pmd/co/PMD_0020106>		
-<http://purl.obolibrary.org/obo/CHEBI_33337>	"A scandium group element atom that has formula Ac."	
-<http://purl.obolibrary.org/obo/CHEBI_33313>	"A radioactive metallic element discovered in 1898 by Marie Sklodowska Curie and named after her home country, Poland (Latin Polonia)."	
 <https://w3id.org/pmd/co/PMD_0000589>		
 <http://purl.obolibrary.org/obo/CHEBI_28073>	"A chromium group element atom that has atomic number 24."	
+<http://purl.obolibrary.org/obo/IAO_0000311>	"A document that is the output of a publishing process."@en	
 <https://w3id.org/pmd/co/PMD_0000541>		
-<http://purl.obolibrary.org/obo/CHEBI_33310>	"A noble gas atom that has formula Ne."	
 <https://w3id.org/pmd/co/PMD_0000783>		
 <https://w3id.org/pmd/co/PMD_0000650>		
-<http://purl.obolibrary.org/obo/CHEBI_33325>	"An alkaline earth metal atom that has formula Ra."	
 <https://w3id.org/pmd/co/PMD_0000565>		
-<http://purl.obolibrary.org/obo/CHEBI_30415>	"A halogen that has formula At."	
+<http://purl.obolibrary.org/obo/CHEBI_30441>		
 <https://w3id.org/pmd/co/PMD_0050139>		
 <https://w3id.org/pmd/co/PMD_0050115>		
+<http://purl.obolibrary.org/obo/IAO_0000009>	"A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label"@en	
 <https://w3id.org/pmd/co/PMD_0000566>		
 <https://w3id.org/pmd/co/PMD_0000651>		
 <https://w3id.org/pmd/co/PMD_0000893>		
 <https://w3id.org/pmd/co/PMD_0000784>		
 <https://w3id.org/pmd/co/PMD_0000542>		
-<http://purl.obolibrary.org/obo/CHEBI_33342>	"A titanium group element atom that has formula Zr."	
+<http://purl.obolibrary.org/obo/CHEBI_30682>		
 <https://w3id.org/pmd/co/PMD_0020108>		
 <https://w3id.org/pmd/co/PMD_0050138>		
 <https://w3id.org/pmd/co/PMD_0050114>		
-<http://purl.obolibrary.org/obo/CHEBI_33380>	"A lanthanoid atom that has formula Tm."	
 <https://w3id.org/pmd/co/PMD_0000648>		
 <https://w3id.org/pmd/co/PMD_0000539>		
 <https://w3id.org/pmd/co/PMD_0000951>		
@@ -158,14 +158,10 @@
 <https://w3id.org/pmd/co/PMD_0020153>		
 <https://w3id.org/pmd/co/PMD_0020044>		
 <https://w3id.org/pmd/co/PMD_0050137>		
-<http://purl.obolibrary.org/obo/CHEBI_27560>	"A boron group element atom that has formula B."	
 <https://w3id.org/pmd/co/PMD_0000867>		
-<http://purl.obolibrary.org/obo/CHEBI_28694>	"A copper group element atom that has formula Cu."	
 <https://w3id.org/pmd/co/PMD_0000625>		
-<http://purl.obolibrary.org/obo/CHEBI_33374>	"A lanthanoid atom that has formula Sm."	
 <https://w3id.org/pmd/co/PMD_0000649>		
 <https://w3id.org/pmd/co/PMD_0000952>		
-<http://purl.obolibrary.org/obo/CHEBI_33390>	"An actinoid atom that has formula Cm."	
 <http://purl.obolibrary.org/obo/CHEBI_33517>	"A zinc group element atom with a symbol Cn and atomic number 112. All its isotopes are intensely radioactive. Prior to its discovery, it had the placeholder name ununbium (in accordance with IUPAC recommendations). Following its discovery (in Darmstadt, 1996) and subsequent confirmation, the name copernicium was adopted in 2010."	
 <https://w3id.org/pmd/co/PMD_0000976>		
 <https://w3id.org/pmd/co/PMD_0000601>		
@@ -180,34 +176,38 @@
 <https://w3id.org/pmd/co/PMD_0000517>		
 <https://w3id.org/pmd/co/PMD_0000820>		
 <http://purl.obolibrary.org/obo/IAO_0000109>	"A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device."@en	
-<http://purl.obolibrary.org/obo/CHEBI_33393>	"An actinoid atom that has formula Es."	
 <https://w3id.org/pmd/co/PMD_0000953>		
 <https://w3id.org/pmd/co/PMD_0000602>		
+<http://purl.obolibrary.org/obo/CHEBI_30514>		
+<http://purl.obolibrary.org/obo/CHEBI_33386>		
+<https://w3id.org/pmd/tto/TTO_0000008>		
 <https://w3id.org/pmd/co/PMD_0050135>		
 <https://w3id.org/pmd/co/PMD_0050111>		
 <https://w3id.org/pmd/co/PMD_0020155>		
 <https://w3id.org/pmd/co/PMD_0020046>		
 <https://w3id.org/pmd/co/PMD_0020131>		
-<http://purl.obolibrary.org/obo/BFO_0000040>		
 <http://purl.obolibrary.org/obo/IAO_0000225>	"The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en	
 <http://purl.obolibrary.org/obo/CHEBI_33361>		
+<http://purl.obolibrary.org/obo/CHEBI_33385>		
 <https://w3id.org/pmd/co/PMD_0000845>		
 <https://w3id.org/pmd/co/PMD_0000978>		
 <https://w3id.org/pmd/co/PMD_0000603>		
 <https://w3id.org/pmd/co/PMD_0000869>		
 <https://w3id.org/pmd/co/PMD_0000518>		
 <https://w3id.org/pmd/co/PMD_0000627>		
-<http://purl.obolibrary.org/obo/CHEBI_30452>	"A chalcogen that has formula Te."	
 <https://w3id.org/pmd/co/PMD_0000821>		
+<https://w3id.org/pmd/tto/TTO_0000009>		
+<http://purl.obolibrary.org/obo/CHEBI_25195>		
+<http://purl.obolibrary.org/obo/CHEBI_30513>		
 <https://w3id.org/pmd/co/PMD_0050134>		
-<http://purl.obolibrary.org/obo/CHEBI_27998>	"A chromium group element atom that has formula W."	
 <https://w3id.org/pmd/co/PMD_0020047>		
 <https://w3id.org/pmd/co/PMD_0050110>		
 <https://w3id.org/pmd/co/PMD_0020023>		
 <https://w3id.org/pmd/co/PMD_0020132>		
+<https://w3id.org/pmd/co/PMD_0001999>		
 <https://w3id.org/pmd/co/PMD_0050049>		
-<http://purl.obolibrary.org/obo/CHEBI_33372>	"A lanthanoid atom that has formula Nd."	
 <https://w3id.org/pmd/co/PMD_0000559>		
+<http://purl.obolibrary.org/obo/CHEBI_33380>		
 <https://w3id.org/pmd/co/PMD_0000995>		
 <https://w3id.org/pmd/co/PMD_0000644>		
 <https://w3id.org/pmd/co/PMD_0000886>		
@@ -215,16 +215,22 @@
 <https://w3id.org/pmd/co/PMD_0000668>		
 <https://w3id.org/pmd/co/PMD_0000777>		
 <https://w3id.org/pmd/co/PMD_0000535>		
+<https://w3id.org/pmd/tto/TTO_0000006>		
 <https://w3id.org/pmd/co/PMD_0000971>		
 <https://w3id.org/pmd/co/PMD_0000620>		
+<http://purl.obolibrary.org/obo/CHEBI_30512>		
 <https://w3id.org/pmd/co/PMD_0000862>		
+<http://purl.obolibrary.org/obo/CHEBI_30440>	"A metallic element first identified and named from the brilliant green line in its flame spectrum (from Greek θαλλοσ, a green shoot)."	
 <https://w3id.org/pmd/co/PMD_0050133>		
 <https://w3id.org/pmd/co/PMD_0020048>		
 <https://w3id.org/pmd/co/PMD_0020133>		
 <https://w3id.org/pmd/co/PMD_0020024>		
 <https://w3id.org/pmd/co/PMD_0020000>		
 <http://purl.obolibrary.org/obo/OBI_0001933>	"An information content entity that specifies a value within a classification scheme or on a quantitative scale."@en	
+<http://purl.obolibrary.org/obo/CHEBI_49828>		
 <https://w3id.org/pmd/co/PMD_0050048>		
+<http://purl.obolibrary.org/obo/CHEBI_27594>		
+<http://purl.obolibrary.org/obo/CHEBI_22984>		
 <https://w3id.org/pmd/co/PMD_0000512>		
 <https://w3id.org/pmd/co/PMD_0000621>		
 <https://w3id.org/pmd/co/PMD_0000996>		
@@ -237,16 +243,20 @@
 <https://w3id.org/pmd/co/PMD_0050132>		
 <https://w3id.org/pmd/co/PMD_0020001>		
 <https://w3id.org/pmd/co/PMD_0020134>		
+<http://purl.obolibrary.org/obo/CHEBI_33382>		
+<http://purl.obolibrary.org/obo/CHEBI_27573>		
 <https://w3id.org/pmd/co/PMD_0000779>		
 <https://w3id.org/pmd/co/PMD_0000537>		
 <https://w3id.org/pmd/co/PMD_0000973>		
 <https://w3id.org/pmd/co/PMD_0000622>		
 <https://w3id.org/pmd/co/PMD_0000864>		
+<https://w3id.org/pmd/tto/TTO_0000004>		
 <https://w3id.org/pmd/co/PMD_0000997>		
 <https://w3id.org/pmd/co/PMD_0000646>		
 <https://w3id.org/pmd/co/PMD_0000513>		
 <https://w3id.org/pmd/co/PMD_0000888>		
-<http://purl.obolibrary.org/obo/CHEBI_33330>	"A rare earth metal atom that has formula Sc."	
+<https://w3id.org/pmd/tto/TTO_0000028>		
+<http://purl.obolibrary.org/obo/CHEBI_26708>		
 <https://w3id.org/pmd/co/PMD_0050046>		
 <https://w3id.org/pmd/co/PMD_0020135>		
 <https://w3id.org/pmd/co/PMD_0020026>		
@@ -257,19 +267,23 @@
 <https://w3id.org/pmd/co/PMD_0000538>		
 <https://w3id.org/pmd/co/PMD_0000647>		
 <http://purl.obolibrary.org/obo/BFO_0000004>	"b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en	
+<http://purl.obolibrary.org/obo/CHEBI_33381>		
+<https://w3id.org/pmd/tto/TTO_0000005>		
 <https://w3id.org/pmd/co/PMD_0000974>		
 <https://w3id.org/pmd/co/PMD_0000865>		
 <https://w3id.org/pmd/co/PMD_0050020>		
+<https://w3id.org/pmd/tto/TTO_0000029>		
 <https://w3id.org/pmd/co/PMD_0000998>		
 <https://w3id.org/pmd/co/PMD_0000623>		
 <https://w3id.org/pmd/co/PMD_0000950>		
 <https://w3id.org/pmd/co/PMD_0050069>		
 <https://w3id.org/pmd/co/PMD_0020003>		
 <https://w3id.org/pmd/co/PMD_0050045>		
-<http://purl.obolibrary.org/obo/CHEBI_33314>	"A noble gas atom that has formula Rn."	
 <https://w3id.org/pmd/co/PMD_0050130>		
 <https://w3id.org/pmd/co/PMD_0020112>		
-<http://purl.obolibrary.org/obo/CHEBI_33396>	"An actinoid atom that has formula No."	
+<http://purl.obolibrary.org/obo/CHEBI_28685>		
+<http://purl.obolibrary.org/obo/CHEBI_49631>	"A metallic element predicted as eka-aluminium by Mendeleev in 1870 and discovered by Paul-Emile Lecoq de Boisbaudran in 1875. Named in honour of France (Latin <em>Gallia</em>) and perhaps also from the Latin <em>gallus</em> cock, a translation of Lecoq."	
+<http://purl.obolibrary.org/obo/CHEBI_24061>		
 <https://w3id.org/pmd/co/PMD_0000959>		
 <https://w3id.org/pmd/co/PMD_0000608>		
 <http://purl.obolibrary.org/obo/CHEBI_194531>	"A carbon group element atom with a symbol Fl and atomic number 114."	
@@ -277,22 +291,25 @@
 <https://w3id.org/pmd/co/PMD_0000802>		
 <https://w3id.org/pmd/co/PMD_0000935>		
 <https://w3id.org/pmd/co/PMD_0000826>		
+<https://w3id.org/pmd/tto/TTO_0000002>		
+<https://w3id.org/pmd/tto/TTO_0000026>		
 <https://w3id.org/pmd/co/PMD_0050021>		
 <https://w3id.org/pmd/co/PMD_0020084>		
 <https://w3id.org/pmd/co/PMD_0020060>		
+<http://purl.obolibrary.org/obo/CHEBI_33344>		
 <https://w3id.org/pmd/co/PMD_0050068>		
 <https://w3id.org/pmd/co/PMD_0050044>		
-<http://purl.obolibrary.org/obo/CHEBI_33369>	"A lanthanoid atom that has formula Ce."	
 <https://w3id.org/pmd/co/PMD_0000054>		
-<http://purl.obolibrary.org/obo/CHEBI_33387>	"An actinoid atom that has formula Np."	
 <https://w3id.org/pmd/co/PMD_0000827>		
 <http://purl.obolibrary.org/obo/CHEBI_28112>	"Chemical element (nickel group element atom) with atomic number 28."	
 <https://w3id.org/pmd/co/PMD_0000803>		
 <https://w3id.org/pmd/co/PMD_0000936>		
-<http://purl.obolibrary.org/obo/CHEBI_30440>	"A metallic element first identified and named from the brilliant green line in its flame spectrum (from Greek thetaalphalambdalambdaomicronsigma, a green shoot)."	
 <https://w3id.org/pmd/co/PMD_0020085>		
+<https://w3id.org/pmd/tto/TTO_0000027>		
 <https://w3id.org/pmd/co/PMD_0020061>		
 <https://w3id.org/pmd/co/PMD_0050022>		
+<http://purl.obolibrary.org/obo/CHEBI_33343>		
+<http://purl.obolibrary.org/obo/CHEBI_33367>		
 <https://w3id.org/pmd/co/PMD_0050067>		
 <https://w3id.org/pmd/co/PMD_0050043>		
 <https://w3id.org/pmd/co/PMD_0050152>		
@@ -300,23 +317,30 @@
 <https://w3id.org/pmd/co/PMD_0000056>		
 <https://w3id.org/pmd/co/PMD_0000937>		
 <https://w3id.org/pmd/co/PMD_0000828>		
+<https://w3id.org/pmd/tto/TTO_0000000>		
 <https://w3id.org/pmd/co/PMD_0000913>		
+<https://w3id.org/pmd/tto/TTO_0000024>		
+<http://purl.obolibrary.org/obo/CHEBI_33346>		
 <https://w3id.org/pmd/co/PMD_0020086>		
+<https://w3id.org/pmd/tto/TTO_0000048>		
 <http://purl.obolibrary.org/obo/CHEBI_194537>	"A chalcogen atom with a symbol Lv and atomic number 116."	
 <https://w3id.org/pmd/co/PMD_0020062>		
 <https://w3id.org/pmd/co/PMD_0050023>		
+<http://purl.obolibrary.org/obo/CHEBI_33322>		
 <http://purl.obolibrary.org/obo/BFO_0000024>		
 <https://w3id.org/pmd/co/PMD_0050066>		
 <https://w3id.org/pmd/co/PMD_0050042>		
-<http://purl.obolibrary.org/obo/CHEBI_49828>	"A lanthanoid atom that has formula Pr."	
 <https://w3id.org/pmd/co/PMD_0050151>		
-<http://purl.obolibrary.org/obo/CHEBI_33367>	"A nickel group element atom that has formula Ds."	
 <https://w3id.org/pmd/co/PMD_0000805>		
 <https://w3id.org/pmd/co/PMD_0000057>		
-<http://purl.obolibrary.org/obo/CHEBI_49631>	"A metallic element predicted as eka-aluminium by Mendeleev in 1870 and discovered by Paul-Emile Lecoq de Boisbaudran in 1875. Named in honour of France (Latin Gallia) and perhaps also from the Latin gallus cock, a translation of Lecoq."	
 <https://w3id.org/pmd/co/PMD_0000829>		
+<https://w3id.org/pmd/tto/TTO_0000001>		
+<https://w3id.org/pmd/tto/TTO_0000025>		
 <https://w3id.org/pmd/co/PMD_0000914>		
 <https://w3id.org/pmd/co/PMD_0020063>		
+<https://w3id.org/pmd/tto/TTO_0000049>		
+<http://purl.obolibrary.org/obo/CHEBI_33369>		
+<http://purl.obolibrary.org/obo/CHEBI_27007>		
 <https://w3id.org/pmd/co/PMD_0050000>		
 <https://w3id.org/pmd/co/PMD_0050024>		
 <https://w3id.org/pmd/co/PMD_0050089>		
@@ -325,20 +349,20 @@
 <https://w3id.org/pmd/co/PMD_0020087>		
 <https://w3id.org/pmd/co/PMD_0050150>		
 <https://w3id.org/pmd/co/PMD_0000519>		
-<http://purl.obolibrary.org/obo/CHEBI_26216>	"An alkali metal atom that has formula K."	
 <https://w3id.org/pmd/co/PMD_0000955>		
 <https://w3id.org/pmd/co/PMD_0000604>		
+<https://w3id.org/pmd/tto/TTO_0000022>		
 <https://w3id.org/pmd/co/PMD_0000979>		
 <https://w3id.org/pmd/co/PMD_0000628>		
+<https://w3id.org/pmd/tto/TTO_0000046>		
 <https://w3id.org/pmd/co/PMD_0020064>		
 <https://w3id.org/pmd/co/PMD_0000931>		
 <https://w3id.org/pmd/co/PMD_0020040>		
 <https://w3id.org/pmd/co/PMD_0000822>		
-<http://purl.obolibrary.org/obo/CHEBI_33382>	"A d-block element atom that has formula Lu."	
-<http://purl.obolibrary.org/obo/CHEBI_33364>	"A nickel group element atom that has formula Pt."	
+<http://purl.obolibrary.org/obo/CHEBI_33364>		
 <https://w3id.org/pmd/co/PMD_0050001>		
+<http://purl.obolibrary.org/obo/CHEBI_33388>		
 <https://w3id.org/pmd/co/PMD_0050025>		
-<http://purl.obolibrary.org/obo/CHEBI_33392>	"An actinoid atom that has formula Cf."	
 <http://purl.obolibrary.org/obo/BFO_0000026>		
 <https://w3id.org/pmd/co/PMD_0001013>		
 <https://w3id.org/pmd/co/PMD_0050088>		
@@ -347,31 +371,32 @@
 <https://w3id.org/pmd/co/PMD_0050040>		
 <https://w3id.org/pmd/co/PMD_0050026>		
 <https://w3id.org/pmd/co/PMD_0000629>		
-<http://purl.obolibrary.org/obo/CHEBI_30512>	"A copper group element atom that has formula Ag."	
 <http://purl.obolibrary.org/obo/IAO_0000027>	"An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en	
 <https://w3id.org/pmd/co/PMD_0000823>		
+<https://w3id.org/pmd/tto/TTO_0000023>		
 <https://w3id.org/pmd/co/PMD_0000956>		
 <https://w3id.org/pmd/co/PMD_0000847>		
+<https://w3id.org/pmd/tto/TTO_0000047>		
 <https://w3id.org/pmd/co/PMD_0000605>		
-<http://purl.obolibrary.org/obo/CHEBI_23116>	"A halogen that has formula Cl."	
 <https://w3id.org/pmd/co/PMD_0020041>		
-<http://purl.obolibrary.org/obo/CHEBI_27363>	"A zinc group element atom that has formula Zn."	
 <https://w3id.org/pmd/co/PMD_0020150>		
 <https://w3id.org/pmd/co/PMD_0000932>		
+<http://purl.obolibrary.org/obo/CHEBI_33387>		
 <https://w3id.org/pmd/co/PMD_0050002>		
+<http://purl.obolibrary.org/obo/CHEBI_49475>		
 <http://purl.obolibrary.org/obo/BFO_0000001>		
 <http://purl.obolibrary.org/obo/CHEBI_33363>	"Chemical element (nickel group element atom) with atomic number 46."	
 <https://w3id.org/pmd/co/PMD_0050087>		
 <https://w3id.org/pmd/co/PMD_0020089>		
 <https://w3id.org/pmd/co/PMD_0050063>		
 <https://w3id.org/pmd/co/PMD_0020065>		
-<http://purl.obolibrary.org/obo/CHEBI_30513>	"A pnictogen that has formula Sb."	
-<http://purl.obolibrary.org/obo/CHEBI_30687>	"An iron group element atom that has formula Os."	
 <https://w3id.org/pmd/co/PMD_0000051>		
 <http://purl.obolibrary.org/obo/CHEBI_33521>	"An atom of an element that exhibits typical metallic properties, being typically shiny, with high electrical and thermal conductivity."	
 <https://w3id.org/pmd/co/PMD_0050027>		
+<https://w3id.org/pmd/tto/TTO_0000020>		
 <http://purl.obolibrary.org/obo/BFO_0000002>	"An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en	
 <https://w3id.org/pmd/co/PMD_0000933>		
+<https://w3id.org/pmd/tto/TTO_0000044>		
 <https://w3id.org/pmd/co/PMD_0000957>		
 <https://w3id.org/pmd/co/PMD_0000606>		
 <https://w3id.org/pmd/co/PMD_0000848>		
@@ -379,35 +404,45 @@
 <https://w3id.org/pmd/co/PMD_0020042>		
 <https://w3id.org/pmd/co/PMD_0000800>		
 <https://w3id.org/pmd/co/PMD_0001011>		
+<http://purl.obolibrary.org/obo/CHEBI_33342>		
 <http://purl.obolibrary.org/obo/BFO_0000028>		
-<http://purl.obolibrary.org/obo/CHEBI_30441>	"A carbon group element atom that has formula Ge."	
+<http://purl.obolibrary.org/obo/CHEBI_49696>		
 <https://w3id.org/pmd/co/PMD_0050003>		
+<https://w3id.org/pmd/co/PMD_0020199>		
 <https://w3id.org/pmd/co/PMD_0050086>		
+<http://purl.obolibrary.org/obo/IAO_0000416>	"A scalar measurement datum that is the result of measuring a temporal interval"@en	
 <https://w3id.org/pmd/co/PMD_0050062>		
 <https://w3id.org/pmd/co/PMD_0020066>		
-<http://purl.obolibrary.org/obo/CHEBI_33322>	"An alkali metal atom that has formula Rb."	
 <https://w3id.org/pmd/co/PMD_0050004>		
 <https://w3id.org/pmd/co/PMD_0000849>		
 <https://w3id.org/pmd/co/PMD_0000607>		
+<http://purl.obolibrary.org/obo/CHEBI_18291>		
 <https://w3id.org/pmd/co/PMD_0050028>		
+<https://w3id.org/pmd/tto/TTO_0000021>		
+<http://purl.obolibrary.org/obo/CHEBI_33341>		
 <https://w3id.org/pmd/co/PMD_0000801>		
+<https://w3id.org/pmd/tto/TTO_0000045>		
 <https://w3id.org/pmd/co/PMD_0000934>		
 <https://w3id.org/pmd/co/PMD_0000825>		
 <https://w3id.org/pmd/co/PMD_0050061>		
 <https://w3id.org/pmd/co/PMD_0020152>		
-<http://purl.obolibrary.org/obo/CHEBI_26833>	"A chalcogen that has formula S."	
 <https://w3id.org/pmd/co/PMD_0000910>		
 <http://purl.obolibrary.org/obo/BFO_0000027>		
+<http://purl.obolibrary.org/obo/CHEBI_33389>		
 <https://w3id.org/pmd/co/PMD_0001010>		
-<http://purl.obolibrary.org/obo/BFO_0000003>		
 <https://w3id.org/pmd/co/PMD_0020067>		
+<http://purl.obolibrary.org/obo/IAO_0000003>	"A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure."@en	
 <https://w3id.org/pmd/co/PMD_0020043>		
 <https://w3id.org/pmd/co/PMD_0050085>		
+<http://purl.obolibrary.org/obo/BFO_0000040>	"An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en	
 <http://purl.obolibrary.org/obo/IAO_0000409>	"A denotator type indicates how a term should be interpreted from an ontological perspective."@en	
 <https://w3id.org/pmd/co/PMD_0000053>		
+<https://w3id.org/pmd/tto/TTO_0000030>		
 <https://w3id.org/pmd/co/PMD_0000002>		
 <https://w3id.org/pmd/co/PMD_0050017>		
+<https://w3id.org/pmd/tto/TTO_0000054>		
 <https://w3id.org/pmd/co/PMD_0000907>		
+<http://purl.obolibrary.org/obo/UO_0000003>		
 <https://w3id.org/pmd/co/PMD_0050060>		
 <http://purl.obolibrary.org/obo/BFO_0000006>		
 <https://w3id.org/pmd/co/PMD_0000595>		
@@ -415,18 +450,24 @@
 <https://w3id.org/pmd/co/PMD_0000571>		
 <https://w3id.org/pmd/co/PMD_0050084>		
 <https://w3id.org/pmd/co/PMD_0000908>		
-<https://w3id.org/pmd/co/PMD_0000003>		
+<http://purl.obolibrary.org/obo/IAO_0020000>	"An information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity."@en	
+<http://purl.obolibrary.org/obo/OBI_0000112>	"A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen."@en	
 <https://w3id.org/pmd/co/PMD_0050018>		
+<https://w3id.org/pmd/tto/TTO_0000031>		
+<https://w3id.org/pmd/tto/TTO_0000055>		
 <https://w3id.org/pmd/co/PMD_0050083>		
 <https://w3id.org/pmd/co/PMD_0000596>		
 <http://purl.obolibrary.org/obo/BFO_0000029>		
 <https://w3id.org/pmd/co/PMD_0001004>		
 <https://w3id.org/pmd/co/PMD_0000790>		
 <https://w3id.org/pmd/co/PMD_0000572>		
-<http://purl.obolibrary.org/obo/CHEBI_32999>	"A lanthanoid atom that has formula Eu."	
+<http://purl.obolibrary.org/obo/BFO_0000015>	"p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en	
+<http://purl.obolibrary.org/obo/CHEBI_28659>		
 <https://w3id.org/pmd/co/PMD_0000909>		
-<http://purl.obolibrary.org/obo/CHEBI_18291>	"A manganese group element atom that has formula Mn."	
+<https://w3id.org/pmd/co/PMD_0020207>		
+<https://w3id.org/pmd/tto/TTO_0000052>		
 <https://w3id.org/pmd/co/PMD_0050019>		
+<http://purl.obolibrary.org/obo/CHEBI_49648>		
 <https://w3id.org/pmd/co/PMD_0050082>		
 <https://w3id.org/pmd/co/PMD_0000573>		
 <https://w3id.org/pmd/co/PMD_0020090>		
@@ -435,70 +476,74 @@
 <https://w3id.org/pmd/co/PMD_0000791>		
 <https://w3id.org/pmd/co/PMD_0001003>		
 <http://purl.obolibrary.org/obo/BFO_0000202>		
+<http://purl.obolibrary.org/obo/OBI_0000245>	"An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en	
+<https://w3id.org/pmd/tto/TTO_0000053>		
 <https://w3id.org/pmd/co/PMD_0000005>		
-<http://purl.obolibrary.org/obo/CHEBI_22927>	"A halogen that has formula Br."	
 <https://w3id.org/pmd/co/PMD_0050081>		
 <https://w3id.org/pmd/co/PMD_0000574>		
 <https://w3id.org/pmd/co/PMD_0000598>		
 <https://w3id.org/pmd/co/PMD_0020091>		
 <https://w3id.org/pmd/co/PMD_0000550>		
+<http://purl.obolibrary.org/obo/CHEBI_30145>		
+<http://purl.obolibrary.org/obo/CHEBI_26216>		
+<https://w3id.org/pmd/co/PMD_0020209>		
 <https://w3id.org/pmd/co/PMD_0000927>		
+<http://purl.obolibrary.org/obo/CHEBI_49666>		
 <http://purl.obolibrary.org/obo/BFO_0000017>	"A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."@en	
 <https://w3id.org/pmd/co/PMD_0000818>		
+<http://purl.obolibrary.org/obo/OBI_0000835>	"A person or organization that has a manufacturer role."@en	
 <https://w3id.org/pmd/co/PMD_0000903>		
+<http://purl.obolibrary.org/obo/CHEBI_33324>		
+<http://purl.obolibrary.org/obo/CHEBI_33348>		
 <https://w3id.org/pmd/co/PMD_0050080>		
 <https://w3id.org/pmd/co/PMD_0020092>		
 <https://w3id.org/pmd/co/PMD_0000591>		
-<http://purl.obolibrary.org/obo/CHEBI_32594>	"An alkaline earth metal atom that has formula Ba."	
-<http://purl.obolibrary.org/obo/CHEBI_30145>	"An alkali metal atom that has formula Li."	
 <https://w3id.org/pmd/co/PMD_0001009>		
-<http://purl.obolibrary.org/obo/CHEBI_30514>	"An alkali metal atom that has formula Cs."	
-<https://w3id.org/pmd/co/PMD_0000022>		
 <https://w3id.org/pmd/co/PMD_0000904>		
-<https://w3id.org/pmd/co/PMD_0000023>		
+<https://w3id.org/pmd/tto/TTO_0000051>		
 <https://w3id.org/pmd/co/PMD_0000928>		
 <https://w3id.org/pmd/co/PMD_0000819>		
 <http://purl.obolibrary.org/obo/BFO_0000009>		
 <http://purl.obolibrary.org/obo/BFO_0000203>		
 <https://w3id.org/pmd/co/PMD_0020093>		
+<http://purl.obolibrary.org/obo/CHEBI_33323>		
 <https://w3id.org/pmd/co/PMD_0000592>		
 <https://w3id.org/pmd/co/PMD_0001008>		
-<http://purl.obolibrary.org/obo/CHEBI_33394>	"An actinoid atom that has formula Fm."	
 <http://purl.obolibrary.org/obo/BFO_0000031>	"b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en	
+<https://w3id.org/pmd/tto/TTO_0000050>		
 <https://w3id.org/pmd/co/PMD_0000905>		
 <https://w3id.org/pmd/co/PMD_0000929>		
 <https://w3id.org/pmd/co/PMD_0020094>		
 <https://w3id.org/pmd/co/PMD_0020070>		
 <https://w3id.org/pmd/co/PMD_0001007>		
-<http://purl.obolibrary.org/obo/CHEBI_33323>	"An alkali metal atom that has formula Fr."	
-<http://purl.obolibrary.org/obo/CHEBI_22977>	"A zinc group element atom that has formula Cd."	
-<http://purl.obolibrary.org/obo/CHEBI_27568>	"A chalcogen that has formula Se."	
 <https://w3id.org/pmd/co/PMD_0000000>		
 <https://w3id.org/pmd/co/PMD_0000001>		
 <https://w3id.org/pmd/co/PMD_0000906>		
-<http://purl.obolibrary.org/obo/CHEBI_33397>	"A d-block element atom that has formula Lr."	
-<http://purl.obolibrary.org/obo/CHEBI_33348>	"A vanadium group element atom that has formula Ta."	
+<http://purl.obolibrary.org/obo/CHEBI_25107>		
+<http://purl.obolibrary.org/obo/CHEBI_33325>		
 <https://w3id.org/pmd/co/PMD_0020095>		
 <http://purl.obolibrary.org/obo/CHEBI_33349>		
 <https://w3id.org/pmd/co/PMD_0020071>		
+<http://purl.obolibrary.org/obo/CHEBI_33301>		
 <https://w3id.org/pmd/co/PMD_0000570>		
 <https://w3id.org/pmd/co/PMD_0000594>		
 <http://purl.obolibrary.org/obo/IAO_0000030>	"A generically dependent continuant that is about some thing."@en	
 <https://w3id.org/pmd/co/PMD_0001006>		
-<http://purl.obolibrary.org/obo/CHEBI_49882>	"A manganese group element atom that has formula Re."	
+<http://purl.obolibrary.org/obo/CHEBI_29287>		
+<http://purl.obolibrary.org/obo/CHEBI_49957>		
 <https://w3id.org/pmd/co/PMD_0000797>		
 <https://w3id.org/pmd/co/PMD_0000555>		
 <http://purl.obolibrary.org/obo/CHEBI_24859>	"Chemical element with atomic number 53."	
 <https://w3id.org/pmd/co/PMD_0000579>		
 <https://w3id.org/pmd/co/PMD_0000991>		
 <https://w3id.org/pmd/co/PMD_0000882>		
+<http://purl.obolibrary.org/obo/CHEBI_30217>		
 <https://w3id.org/pmd/co/PMD_0000773>		
 <https://w3id.org/pmd/co/PMD_0000531>		
 <https://w3id.org/pmd/co/PMD_0020028>		
+<https://w3id.org/pmd/co/PMD_0020113>		
 <https://w3id.org/pmd/co/PMD_0020004>		
 <https://w3id.org/pmd/co/PMD_0050109>		
-<http://purl.obolibrary.org/obo/CHEBI_22984>	"An alkaline earth metal atom that has formula Ca."	
-<http://purl.obolibrary.org/obo/CHEBI_49475>	"A noble gas atom that has formula Ar."	
 <https://w3id.org/pmd/co/PMD_0000556>		
 <https://w3id.org/pmd/co/PMD_0000798>		
 <https://w3id.org/pmd/co/PMD_0000665>		
@@ -506,16 +551,14 @@
 <https://w3id.org/pmd/co/PMD_0000883>		
 <https://w3id.org/pmd/co/PMD_0000532>		
 <https://w3id.org/pmd/co/PMD_0000774>		
-<http://purl.obolibrary.org/obo/CHEBI_27594>	"A carbon group element atom that has formula C."	
 <https://w3id.org/pmd/co/PMD_0000641>		
 <https://w3id.org/pmd/co/PMD_0020138>		
 <http://purl.obolibrary.org/obo/IAO_0000078>	"The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en	
+<https://w3id.org/pmd/co/PMD_0020114>		
 <http://purl.obolibrary.org/obo/CHEBI_194539>	"A halogen atom with a symbol Ts and atomic number 117."	
 <https://w3id.org/pmd/co/PMD_0050108>		
-<http://purl.obolibrary.org/obo/CHEBI_24061>	"A halogen that has formula F."	
-<http://purl.obolibrary.org/obo/CHEBI_33301>	"A pnictogen that has formula Bi."	
 <https://w3id.org/pmd/co/PMD_0020029>		
-<http://purl.obolibrary.org/obo/CHEBI_28659>	"A pnictogen that has formula P."	
+<http://purl.obolibrary.org/obo/CHEBI_33390>		
 <https://w3id.org/pmd/co/PMD_0000666>		
 <https://w3id.org/pmd/co/PMD_0000775>		
 <https://w3id.org/pmd/co/PMD_0000799>		
@@ -530,49 +573,50 @@
 <https://w3id.org/pmd/co/PMD_0000885>		
 <https://w3id.org/pmd/co/PMD_0000534>		
 <https://w3id.org/pmd/co/PMD_0000776>		
+<http://purl.obolibrary.org/obo/OBI_0000067>	"a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role"@en	
 <https://w3id.org/pmd/co/PMD_0000558>		
 <https://w3id.org/pmd/co/PMD_0000667>		
 <https://w3id.org/pmd/co/PMD_0000510>		
 <https://w3id.org/pmd/co/PMD_0000861>		
 <https://w3id.org/pmd/co/PMD_0000994>		
+<https://w3id.org/pmd/co/PMD_0020201>		
 <https://w3id.org/pmd/co/PMD_0020116>		
-<http://purl.obolibrary.org/obo/CHEBI_33324>	"An alkaline earth metal atom that has formula Sr."	
 <https://w3id.org/pmd/co/PMD_0050106>		
-<http://purl.obolibrary.org/obo/CHEBI_27573>	"A carbon group element atom that has formula Si."	
 <https://w3id.org/pmd/co/PMD_0000599>		
 <https://w3id.org/pmd/co/PMD_0000793>		
 <https://w3id.org/pmd/co/PMD_0000551>		
 <https://w3id.org/pmd/co/PMD_0000575>		
 <https://w3id.org/pmd/co/PMD_0020202>		
 <https://w3id.org/pmd/co/PMD_0000660>		
+<https://w3id.org/pmd/co/PMD_0001998>		
 <https://w3id.org/pmd/co/PMD_0050129>		
 <https://w3id.org/pmd/co/PMD_0050105>		
+<https://w3id.org/pmd/co/PMD_0000007>		
 <https://w3id.org/pmd/co/PMD_0000552>		
 <https://w3id.org/pmd/co/PMD_0000794>		
 <https://w3id.org/pmd/co/PMD_0000661>		
 <https://w3id.org/pmd/co/PMD_0000576>		
 <https://w3id.org/pmd/co/PMD_0000770>		
 <https://w3id.org/pmd/co/PMD_0020203>		
-<http://purl.obolibrary.org/obo/CHEBI_27214>	"An actinoid atom that has formula U."	
 <https://w3id.org/pmd/co/PMD_0050128>		
 <https://w3id.org/pmd/co/PMD_0050104>		
-<http://purl.obolibrary.org/obo/CHEBI_33341>	"A titanium group element atom that has formula Ti."	
+<http://purl.obolibrary.org/obo/IAO_0000444>	"A planned process of making information, such as literature, music, and software etc., available to the public for sale or for free."@en	
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>		
 <https://w3id.org/pmd/co/PMD_0000008>		
 <https://w3id.org/pmd/co/PMD_0000577>		
 <https://w3id.org/pmd/co/PMD_0000662>		
 <https://w3id.org/pmd/co/PMD_0000771>		
 <https://w3id.org/pmd/co/PMD_0000795>		
 <https://w3id.org/pmd/co/PMD_0000553>		
+<http://purl.obolibrary.org/obo/CHEBI_33313>	"A radioactive metallic element discovered in 1898 by Marie Sklodowska Curie and named after her home country, Poland (Latin <em>Polonia</em>)."	
 <https://w3id.org/pmd/co/PMD_0020204>		
 <https://w3id.org/pmd/co/PMD_0000880>		
-<http://purl.obolibrary.org/obo/CHEBI_33391>	"An actinoid atom that has formula Bk."	
-<http://purl.obolibrary.org/obo/CHEBI_33343>	"A titanium group element atom that has formula Hf."	
+<http://purl.obolibrary.org/obo/CHEBI_26833>		
 <http://purl.obolibrary.org/obo/CHEBI_24431>	"A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances."	
 <https://w3id.org/pmd/co/PMD_0050127>		
 <https://w3id.org/pmd/co/PMD_0050103>		
 <http://purl.obolibrary.org/obo/CHEBI_194535>	"A pnictogen atom with a symbol Mc and atomic number 115."	
 <http://purl.obolibrary.org/obo/BFO_0000020>	"b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en	
-<http://purl.obolibrary.org/obo/CHEBI_33344>	"A vanadium group element atom that has formula Nb."	
 <https://w3id.org/pmd/co/PMD_0000578>		
 <https://w3id.org/pmd/co/PMD_0000772>		
 <https://w3id.org/pmd/co/PMD_0000881>		
@@ -582,35 +626,37 @@
 <https://w3id.org/pmd/co/PMD_0000663>		
 <https://w3id.org/pmd/co/PMD_0050102>		
 <https://w3id.org/pmd/co/PMD_0000990>		
+<http://purl.obolibrary.org/obo/CHEBI_30452>		
 <https://w3id.org/pmd/co/PMD_0020205>		
 <https://w3id.org/pmd/co/PMD_0050126>		
+<http://purl.obolibrary.org/obo/CHEBI_33372>		
+<http://purl.obolibrary.org/obo/CHEBI_33396>		
 <https://w3id.org/pmd/co/PMD_0000769>		
 <https://w3id.org/pmd/co/PMD_0000878>		
 <https://w3id.org/pmd/co/PMD_0000527>		
 <https://w3id.org/pmd/co/PMD_0000636>		
-<https://w3id.org/pmd/co/PMD_0000830>		
 <https://w3id.org/pmd/co/PMD_0000503>		
 <https://w3id.org/pmd/co/PMD_0000963>		
 <https://w3id.org/pmd/co/PMD_0000854>		
 <https://w3id.org/pmd/co/PMD_0000612>		
 <https://w3id.org/pmd/co/PMD_0000987>		
+<http://purl.obolibrary.org/obo/OBI_0000070>	"A planned process that has the objective to produce information about a material entity (the evaluant) by examining it."@en	
 <https://w3id.org/pmd/co/PMD_0050101>		
 <https://w3id.org/pmd/co/PMD_0020056>		
 <https://w3id.org/pmd/co/PMD_0020032>		
-<http://purl.obolibrary.org/obo/CHEBI_30217>	"A s-block element atom that has formula He."	
 <https://w3id.org/pmd/co/PMD_0050149>		
 <https://w3id.org/pmd/co/PMD_0050125>		
+<http://purl.obolibrary.org/obo/CHEBI_33395>		
 <https://w3id.org/pmd/co/PMD_0000988>		
 <https://w3id.org/pmd/co/PMD_0000637>		
-<https://w3id.org/pmd/co/PMD_0000879>		
 <https://w3id.org/pmd/co/PMD_0000504>		
 <https://w3id.org/pmd/co/PMD_0000528>		
 <https://w3id.org/pmd/co/PMD_0000940>		
-<https://w3id.org/pmd/co/PMD_0000831>		
 <https://w3id.org/pmd/co/PMD_0000964>		
 <https://w3id.org/pmd/co/PMD_0000613>		
 <https://w3id.org/pmd/co/PMD_0000855>		
 <https://w3id.org/pmd/co/PMD_0050124>		
+<http://purl.obolibrary.org/obo/BFO_0000003>	"An entity that has temporal parts and that happens, unfolds or develops through time."@en	
 <https://w3id.org/pmd/co/PMD_0050100>		
 <https://w3id.org/pmd/co/PMD_0020166>		
 <https://w3id.org/pmd/co/PMD_0020057>		
@@ -618,6 +664,8 @@
 <https://w3id.org/pmd/co/PMD_0020033>		
 <http://purl.obolibrary.org/obo/BFO_0000182>		
 <https://w3id.org/pmd/co/PMD_0050148>		
+<http://purl.obolibrary.org/obo/CHEBI_27363>		
+<http://purl.obolibrary.org/obo/CHEBI_33374>		
 <https://w3id.org/pmd/co/PMD_0000856>		
 <https://w3id.org/pmd/co/PMD_0000614>		
 <https://w3id.org/pmd/co/PMD_0000989>		
@@ -629,9 +677,11 @@
 <https://w3id.org/pmd/co/PMD_0000965>		
 <https://w3id.org/pmd/co/PMD_0050123>		
 <https://w3id.org/pmd/co/PMD_0020058>		
+<http://purl.obolibrary.org/obo/CHEBI_28694>		
 <https://w3id.org/pmd/co/PMD_0020034>		
 <https://w3id.org/pmd/co/PMD_0020143>		
 <https://w3id.org/pmd/co/PMD_0050147>		
+<http://purl.obolibrary.org/obo/CHEBI_33373>		
 <https://w3id.org/pmd/co/PMD_0000615>		
 <https://w3id.org/pmd/co/PMD_0000506>		
 <https://w3id.org/pmd/co/PMD_0000966>		
@@ -639,27 +689,32 @@
 <https://w3id.org/pmd/co/PMD_0000639>		
 <https://w3id.org/pmd/co/PMD_0000942>		
 <https://w3id.org/pmd/co/PMD_0000833>		
+<http://purl.obolibrary.org/obo/CHEBI_33397>		
 <https://w3id.org/pmd/co/PMD_0050146>		
 <https://w3id.org/pmd/co/PMD_0050122>		
 <https://w3id.org/pmd/co/PMD_0020059>		
 <https://w3id.org/pmd/co/PMD_0020144>		
 <https://w3id.org/pmd/co/PMD_0020035>		
-<http://purl.obolibrary.org/obo/CHEBI_28685>	"A chromium group element atom that has formula Mo."	
-<http://purl.obolibrary.org/obo/CHEBI_49666>	"A cobalt group element atom that has formula Ir."	
+<http://purl.obolibrary.org/obo/IAO_0000032>	"A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label."@en	
+<http://purl.obolibrary.org/obo/CHEBI_33392>		
 <https://w3id.org/pmd/co/PMD_0000874>		
 <https://w3id.org/pmd/co/PMD_0000523>		
 <https://w3id.org/pmd/co/PMD_0060006>		
 <https://w3id.org/pmd/co/PMD_0000898>		
 <https://w3id.org/pmd/co/PMD_0000547>		
+<https://w3id.org/pmd/tto/TTO_0000018>		
 <https://w3id.org/pmd/co/PMD_0000789>		
 <https://w3id.org/pmd/co/PMD_0000656>		
+<http://purl.obolibrary.org/obo/CHEBI_30415>		
 <https://w3id.org/pmd/co/PMD_0000983>		
 <https://w3id.org/pmd/co/PMD_0050145>		
 <https://w3id.org/pmd/co/PMD_0020036>		
+<http://purl.obolibrary.org/obo/CHEBI_30430>	"A metallic element first identified and named from the brilliant indigo (Latin <em>indicum</em>) blue line in its flame spectrum."	
 <https://w3id.org/pmd/co/PMD_0050121>		
 <http://purl.obolibrary.org/obo/BFO_0000030>		
 <https://w3id.org/pmd/co/PMD_0020145>		
 <https://w3id.org/pmd/co/PMD_0000548>		
+<http://purl.obolibrary.org/obo/CHEBI_33391>		
 <https://w3id.org/pmd/co/PMD_0000984>		
 <https://w3id.org/pmd/co/PMD_0000633>		
 <http://purl.obolibrary.org/obo/IAO_0000007>	"A directive information entity that describes an action the bearer will take."@en	
@@ -668,18 +723,20 @@
 <https://w3id.org/pmd/co/PMD_0000657>		
 <https://w3id.org/pmd/co/PMD_0000899>		
 <https://w3id.org/pmd/co/PMD_0000524>		
+<https://w3id.org/pmd/tto/TTO_0000019>		
 <https://w3id.org/pmd/co/PMD_0000960>		
 <https://w3id.org/pmd/co/PMD_0000851>		
 <https://w3id.org/pmd/co/PMD_0060007>		
-<http://purl.obolibrary.org/obo/CHEBI_49637>	"A s-block element atom that has formula H."	
 <https://w3id.org/pmd/co/PMD_0050144>		
 <https://w3id.org/pmd/co/PMD_0020146>		
 <https://w3id.org/pmd/co/PMD_0020037>		
 <https://w3id.org/pmd/co/PMD_0050120>		
 <https://w3id.org/pmd/co/PMD_0050059>		
+<http://purl.obolibrary.org/obo/CHEBI_33394>		
 <https://w3id.org/pmd/co/PMD_0000549>		
 <https://w3id.org/pmd/co/PMD_0000658>		
 <https://w3id.org/pmd/co/PMD_0000852>		
+<https://w3id.org/pmd/tto/TTO_0000016>		
 <https://w3id.org/pmd/co/PMD_0000610>		
 <https://w3id.org/pmd/co/PMD_0000767>		
 <https://w3id.org/pmd/co/PMD_0050031>		
@@ -691,8 +748,9 @@
 <https://w3id.org/pmd/co/PMD_0020038>		
 <https://w3id.org/pmd/co/PMD_0050143>		
 <http://purl.obolibrary.org/obo/BFO_0000141>		
-<http://purl.obolibrary.org/obo/CHEBI_33379>	"A lanthanoid atom that has formula Er."	
 <http://purl.obolibrary.org/obo/CHEBI_194533>	"A boron group element atom with a symbol Nh and atomic number 113."	
+<http://purl.obolibrary.org/obo/CHEBI_33393>		
+<http://purl.obolibrary.org/obo/CHEBI_27560>		
 <https://w3id.org/pmd/co/PMD_0000659>		
 <https://w3id.org/pmd/co/PMD_0000768>		
 <https://w3id.org/pmd/co/PMD_0000526>		
@@ -705,32 +763,39 @@
 <https://w3id.org/pmd/co/PMD_0000635>		
 <https://w3id.org/pmd/co/PMD_0050032>		
 <https://w3id.org/pmd/co/PMD_0000877>		
+<https://w3id.org/pmd/tto/TTO_0000017>		
 <https://w3id.org/pmd/co/PMD_0020148>		
 <https://w3id.org/pmd/co/PMD_0050057>		
 <https://w3id.org/pmd/co/PMD_0020039>		
 <https://w3id.org/pmd/co/PMD_0050142>		
 <http://purl.obolibrary.org/obo/BFO_0000140>		
-<http://purl.obolibrary.org/obo/CHEBI_33385>	"An actinoid atom that has formula Th."	
-<http://purl.obolibrary.org/obo/BFO_0000020>	"b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en	
+<http://purl.obolibrary.org/obo/CHEBI_27563>		
 <https://w3id.org/pmd/co/PMD_0000923>		
 <https://w3id.org/pmd/co/PMD_0000814>		
+<https://w3id.org/pmd/tto/TTO_0000014>		
 <https://w3id.org/pmd/co/PMD_0000947>		
 <https://w3id.org/pmd/co/PMD_0020096>		
+<https://w3id.org/pmd/tto/TTO_0000038>		
 <https://w3id.org/pmd/co/PMD_0020072>		
 <https://w3id.org/pmd/co/PMD_0050033>		
 <https://w3id.org/pmd/co/PMD_0001021>		
 <http://purl.obolibrary.org/obo/BFO_0000034>		
 <https://w3id.org/pmd/co/PMD_0050056>		
+<http://purl.obolibrary.org/obo/CHEBI_22977>		
 <https://w3id.org/pmd/co/PMD_0050141>		
 <http://purl.obolibrary.org/obo/IAO_0000005>	"A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en	
-<http://purl.obolibrary.org/obo/CHEBI_33353>	"A manganese group element atom that has formula Tc."	
+<https://w3id.org/pmd/co/PMD_0000066>		
+<https://w3id.org/pmd/co/PMD_0000067>		
 <https://w3id.org/pmd/co/PMD_0000900>		
 <http://purl.obolibrary.org/obo/CHEBI_27638>	"A cobalt group element atom that has atomic number 27."	
 <https://w3id.org/pmd/co/PMD_0000924>		
 <https://w3id.org/pmd/co/PMD_0000815>		
-<http://purl.obolibrary.org/obo/CHEBI_28984>	"A boron group element atom that has formula Al."	
+<http://purl.obolibrary.org/obo/CHEBI_33379>		
+<https://w3id.org/pmd/tto/TTO_0000015>		
 <https://w3id.org/pmd/co/PMD_0050010>		
 <https://w3id.org/pmd/co/PMD_0020073>		
+<https://w3id.org/pmd/tto/TTO_0000039>		
+<http://purl.obolibrary.org/obo/CHEBI_33331>		
 <https://w3id.org/pmd/co/PMD_0050034>		
 <http://purl.obolibrary.org/obo/CHEBI_33355>		
 <https://w3id.org/pmd/co/PMD_0001020>		
@@ -738,16 +803,21 @@
 <https://w3id.org/pmd/co/PMD_0050055>		
 <https://w3id.org/pmd/co/PMD_0050140>		
 <http://purl.obolibrary.org/obo/BFO_0000142>		
-<http://purl.obolibrary.org/obo/CHEBI_27563>	"A pnictogen that has formula As."	
 <https://w3id.org/pmd/co/PMD_0000816>		
 <https://w3id.org/pmd/co/PMD_0000949>		
-<http://purl.obolibrary.org/obo/CHEBI_33389>	"An actinoid atom that has formula Am."	
+<https://w3id.org/pmd/co/PMD_0000068>		
+<http://purl.obolibrary.org/obo/IAO_0000028>	"An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity."@en	
+<https://w3id.org/pmd/tto/TTO_0000012>		
 <https://w3id.org/pmd/co/PMD_0000901>		
+<http://purl.obolibrary.org/obo/CHEBI_27214>		
+<https://w3id.org/pmd/tto/TTO_0000036>		
 <https://w3id.org/pmd/co/PMD_0000925>		
 <https://w3id.org/pmd/co/PMD_0020074>		
+<http://purl.obolibrary.org/obo/CHEBI_27698>		
 <https://w3id.org/pmd/co/PMD_0020050>		
-<http://purl.obolibrary.org/obo/CHEBI_49957>	"A noble gas atom that has formula Xe."	
 <https://w3id.org/pmd/co/PMD_0050011>		
+<http://purl.obolibrary.org/obo/CHEBI_49882>		
+<http://purl.obolibrary.org/obo/CHEBI_33310>		
 <https://w3id.org/pmd/co/PMD_0060008>		
 <https://w3id.org/pmd/co/PMD_0050035>		
 <http://purl.obolibrary.org/obo/BFO_0000145>		
@@ -755,12 +825,14 @@
 <https://w3id.org/pmd/co/PMD_0050054>		
 <http://purl.obolibrary.org/obo/IAO_0000102>	"Data about an ontology part is a data item about a part of an ontology, for example a term"@en	
 <https://w3id.org/pmd/co/PMD_0020098>		
+<http://purl.obolibrary.org/obo/CHEBI_25805>		
 <https://w3id.org/pmd/co/PMD_0000926>		
 <https://w3id.org/pmd/co/PMD_0000817>		
-<http://purl.obolibrary.org/obo/CHEBI_33395>	"An actinoid atom that has formula Md."	
 <https://w3id.org/pmd/co/PMD_0000902>		
+<https://w3id.org/pmd/tto/TTO_0000013>		
 <http://purl.obolibrary.org/obo/CHEBI_33357>		
 <https://w3id.org/pmd/co/PMD_0020075>		
+<https://w3id.org/pmd/tto/TTO_0000037>		
 <https://w3id.org/pmd/co/PMD_0020051>		
 <https://w3id.org/pmd/co/PMD_0050012>		
 <https://w3id.org/pmd/co/PMD_0060009>		
@@ -771,39 +843,46 @@
 <https://w3id.org/pmd/co/PMD_0000590>		
 <http://purl.obolibrary.org/obo/BFO_0000011>		
 <https://w3id.org/pmd/co/PMD_0020099>		
+<http://purl.obolibrary.org/obo/CHEBI_32594>		
 <https://w3id.org/pmd/co/PMD_0050037>		
+<https://w3id.org/pmd/tto/TTO_0000010>		
 <https://w3id.org/pmd/co/PMD_0000834>		
+<https://w3id.org/pmd/tto/TTO_0000034>		
 <https://w3id.org/pmd/co/PMD_0000507>		
 <https://w3id.org/pmd/co/PMD_0000967>		
 <https://w3id.org/pmd/co/PMD_0000858>		
+<https://w3id.org/pmd/tto/TTO_0000058>		
 <https://w3id.org/pmd/co/PMD_0000616>		
 <https://w3id.org/pmd/co/PMD_0020052>		
 <https://w3id.org/pmd/co/PMD_0000810>		
-<https://w3id.org/pmd/co/PMD_0000943>		
 <http://purl.obolibrary.org/obo/OBI_0001930>	"A value specification that is specifies one category out of a fixed number of nominal categories"@en	
-<http://purl.obolibrary.org/obo/CHEBI_27007>	"A carbon group element atom that has formula Sn."	
 <http://purl.obolibrary.org/obo/BFO_0000038>		
+<http://purl.obolibrary.org/obo/CHEBI_33376>		
 <https://w3id.org/pmd/co/PMD_0050013>		
-<https://w3id.org/pmd/co/PMD_0001025>		
 <http://purl.obolibrary.org/obo/BFO_0000147>		
 <https://w3id.org/pmd/co/PMD_0050076>		
 <https://w3id.org/pmd/co/PMD_0050052>		
 <https://w3id.org/pmd/co/PMD_0020076>		
-<http://purl.obolibrary.org/obo/CHEBI_26708>	"An alkali metal atom that has formula Na."	
 <http://purl.obolibrary.org/obo/CHEBI_137980>	"An atom of an element that exhibits properties that are between those of metals and nonmetals, or that has a mixture of them. The term generally includes boron, silicon, germanium, arsenic, antimony, and tellurium, while carbon, aluminium, selenium, polonium, and astatine are less commonly included."	
+<http://purl.obolibrary.org/obo/OBI_0000011>	"A process that realizes a plan which is the concretization of a plan specification."@en	
 <http://purl.obolibrary.org/obo/CHEBI_30501>	"Alkaline earth metal atom with atomic number 4."	
 <https://w3id.org/pmd/co/PMD_0050038>		
 <https://w3id.org/pmd/co/PMD_0000508>		
 <http://purl.obolibrary.org/obo/CHEBI_33351>		
 <https://w3id.org/pmd/co/PMD_0000944>		
 <https://w3id.org/pmd/co/PMD_0000835>		
+<https://w3id.org/pmd/tto/TTO_0000011>		
 <https://w3id.org/pmd/co/PMD_0000968>		
 <https://w3id.org/pmd/co/PMD_0000617>		
+<http://purl.obolibrary.org/obo/CHEBI_25016>		
 <https://w3id.org/pmd/co/PMD_0000859>		
+<https://w3id.org/pmd/tto/TTO_0000035>		
 <https://w3id.org/pmd/co/PMD_0020053>		
+<https://w3id.org/pmd/tto/TTO_0000059>		
 <http://purl.obolibrary.org/obo/CHEBI_25585>		
 <https://w3id.org/pmd/co/PMD_0000920>		
 <https://w3id.org/pmd/co/PMD_0000811>		
+<http://purl.obolibrary.org/obo/CHEBI_33375>		
 <https://w3id.org/pmd/co/PMD_0050014>		
 <https://w3id.org/pmd/co/PMD_0001024>		
 <http://purl.obolibrary.org/obo/BFO_0000146>		
@@ -811,14 +890,15 @@
 <https://w3id.org/pmd/co/PMD_0050099>		
 <https://w3id.org/pmd/co/PMD_0050075>		
 <https://w3id.org/pmd/co/PMD_0020077>		
-<http://purl.obolibrary.org/obo/CHEBI_33331>	"A rare earth metal atom that has formula Y."	
-<http://purl.obolibrary.org/obo/CHEBI_30682>	"An iron group element atom that has formula Ru."	
-<http://purl.obolibrary.org/obo/CHEBI_33388>	"An actinoid atom that has formula Pu."	
+<http://purl.obolibrary.org/obo/IAO_0000310>	"A collection of information content entities intended to be understood together as a whole"@en	
 <https://w3id.org/pmd/co/PMD_0050015>		
 <https://w3id.org/pmd/co/PMD_0000618>		
 <https://w3id.org/pmd/co/PMD_0050039>		
+<https://w3id.org/pmd/tto/TTO_0000032>		
 <https://w3id.org/pmd/co/PMD_0000509>		
+<http://purl.obolibrary.org/obo/CHEBI_33330>		
 <https://w3id.org/pmd/co/PMD_0000812>		
+<https://w3id.org/pmd/tto/TTO_0000056>		
 <https://w3id.org/pmd/co/PMD_0000945>		
 <https://w3id.org/pmd/co/PMD_0000836>		
 <https://w3id.org/pmd/co/PMD_0000969>		
@@ -828,20 +908,23 @@
 <https://w3id.org/pmd/co/PMD_0001023>		
 <https://w3id.org/pmd/co/PMD_0020078>		
 <https://w3id.org/pmd/co/PMD_0050098>		
-<http://purl.obolibrary.org/obo/CHEBI_49648>	"A lanthanoid atom that has formula Ho."	
 <https://w3id.org/pmd/co/PMD_0050074>		
 <https://w3id.org/pmd/co/PMD_0020054>		
 <https://w3id.org/pmd/co/PMD_0000619>		
 <https://w3id.org/pmd/co/PMD_0050016>		
 <https://w3id.org/pmd/co/PMD_0000922>		
 <https://w3id.org/pmd/co/PMD_0000813>		
+<https://w3id.org/pmd/tto/TTO_0000033>		
 <https://w3id.org/pmd/co/PMD_0000946>		
+<https://w3id.org/pmd/tto/TTO_0000057>		
 <https://w3id.org/pmd/co/PMD_0020031>		
+<http://purl.obolibrary.org/obo/CHEBI_27568>		
 <http://purl.obolibrary.org/obo/BFO_0000148>		
 <https://w3id.org/pmd/co/PMD_0001022>		
-<http://purl.obolibrary.org/obo/BFO_0000015>		
+<http://purl.obolibrary.org/obo/CHEBI_33353>		
+<http://purl.obolibrary.org/obo/CHEBI_33377>		
 <https://w3id.org/pmd/co/PMD_0050097>		
 <https://w3id.org/pmd/co/PMD_0020079>		
+<http://purl.obolibrary.org/obo/CHEBI_28984>		
 <https://w3id.org/pmd/co/PMD_0050073>		
 <https://w3id.org/pmd/co/PMD_0020055>		
-<http://purl.obolibrary.org/obo/CHEBI_33381>	"A lanthanoid atom that has formula Yb."	

@@ -1,6 +1,8 @@
 ?prefix	?numberOfClasses
-"OBI"	3
-"IAO"	10
+"OBI"	12
+"IAO"	21
 "BFO"	36
+"UO"	1
+"NCBITaxon"	1
 "CHEBI"	126
-""	670
+""	732
