@@ -3563,7 +3563,7 @@ AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum
 SubClassOf(co:PMD_0000053 co:PMD_0000833)
 SubClassOf(co:PMD_0000053 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 co:PMD_0020139)))
 
-# Class: co:PMD_0000054 (heating function)
+# Class: co:PMD_0000054 (Heizfunktion)
 
 AnnotationAssertion(rdfs:label co:PMD_0000054 "Heizfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000054 "heating function"@en)
@@ -3837,7 +3837,7 @@ AnnotationAssertion(skos:definition co:PMD_0000530 "Ein Mechanische Eigenschafte
 AnnotationAssertion(skos:example co:PMD_0000530 "Testing the flexural strength of a plastic beam to ensure it can withstand the required load in an engineering application."@en)
 SubClassOf(co:PMD_0000530 co:PMD_0000849)
 
-# Class: co:PMD_0000531 (biocompatibility analyzing process)
+# Class: co:PMD_0000531 (Analyseverfahren der Biokompatibilität)
 
 AnnotationAssertion(rdfs:label co:PMD_0000531 "Analyseverfahren der Biokompatibilität"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000531 "biocompatibility analyzing process"@en)
@@ -4106,7 +4106,7 @@ AnnotationAssertion(skos:definition co:PMD_0000564 "Eine Unterfunktion der Besch
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000564 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000564 co:PMD_0000575)
 
-# Class: co:PMD_0000565 (coating by soldering)
+# Class: co:PMD_0000565 (Beschichten Durch Löten)
 
 AnnotationAssertion(rdfs:label co:PMD_0000565 "Beschichten Durch Löten"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000565 "coating by soldering"@en)
@@ -4431,7 +4431,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0000604 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000604 co:PMD_0000621)
 DisjointClasses(co:PMD_0000604 co:PMD_0000620)
 
-# Class: co:PMD_0000605 (Differential-Scanning-Kalorimeter)
+# Class: co:PMD_0000605 (differential scanning calorimeter)
 
 AnnotationAssertion(rdfs:label co:PMD_0000605 "Differential-Scanning-Kalorimeter"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000605 "differential scanning calorimeter"@en)
@@ -4774,7 +4774,7 @@ AnnotationAssertion(skos:definition co:PMD_0000649 "Ein Umform Prozess, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000649 "Stripping, Deep Drawing, Spinning"@en)
 SubClassOf(co:PMD_0000649 co:PMD_0000646)
 
-# Class: co:PMD_0000650 (Druckumformen)
+# Class: co:PMD_0000650 (forming under compressive conditions)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000650 "Official definition can be found in: DIN 8583-1"@en)
 AnnotationAssertion(terms:source co:PMD_0000650 "Offizielle Definition findet man in: DIN 8583-1"@de)
@@ -5521,7 +5521,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0000848 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000848 co:PMD_0000005)
 SubClassOf(co:PMD_0000848 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000522))
 
-# Class: co:PMD_0000849 (Mechanische Eigenschaften Analyseverfahren)
+# Class: co:PMD_0000849 (mechanical property analyzing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000849 "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000849 "mechanical property analyzing process"@en)
@@ -5695,7 +5695,7 @@ AnnotationAssertion(skos:definition co:PMD_0000874 "A microscope that uses visib
 AnnotationAssertion(skos:definition co:PMD_0000874 "Ein Mikroskop, das sichtbares Licht und Linsen verwendet, um kleine Objekte oder Details zu vergrößern und zu betrachten."@de)
 SubClassOf(co:PMD_0000874 co:PMD_0000855)
 
-# Class: co:PMD_0000875 (optical microscopy)
+# Class: co:PMD_0000875 (Optische Mikroskopie)
 
 AnnotationAssertion(rdfs:label co:PMD_0000875 "Ein Mikroskopieverfahren, das sichtbares Licht und Linsen verwendet, um eine Probe zu vergrößern und abzubilden, und weit verbreitet zur Untersuchung der Mikrostruktur und Morphologie von Materialien ist."@de)
 AnnotationAssertion(rdfs:label co:PMD_0000875 "Optische Mikroskopie"@de)
@@ -6300,7 +6300,7 @@ AnnotationAssertion(skos:definition co:PMD_0000956 "Ein Simulationsprozess, der 
 AnnotationAssertion(skos:example co:PMD_0000956 "Optimizing the atomic structure of a catalyst to enhance its performance."@en)
 SubClassOf(co:PMD_0000956 co:PMD_0000933)
 
-# Class: co:PMD_0000957 (Struktur Eigenschaften Analyseverfahren)
+# Class: co:PMD_0000957 (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000957 "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000957 "structural property analyzing process"@en)

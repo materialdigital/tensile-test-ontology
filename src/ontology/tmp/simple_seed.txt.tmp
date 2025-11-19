@@ -1,0 +1,14 @@
+cls
+http://purl.org/dc/terms/description
+http://www.w3.org/2004/02/skos/core#altLabel
+https://w3id.org/pmd/co/symbol
+https://w3id.org/pmd/co/definitionSource
+http://purl.org/dc/terms/contributor
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.org/dc/terms/title
+http://www.w3.org/2004/02/skos/core#example
+http://www.w3.org/2004/02/skos/core#definition
+http://purl.org/dc/terms/creator
+http://purl.org/dc/terms/license
+https://w3id.org/pmd/co/relatesTo
+http://purl.obolibrary.org/obo/BFO_0000196
