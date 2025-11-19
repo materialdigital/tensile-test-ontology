@@ -29,8 +29,8 @@ ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	End-Probendurchmesser@de
 ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	diameter after fracture@en
 ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge@de
 ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	estimated strain rate over the parallel length@en
-ERROR	multiple_labels	extensometer gauge length	rdfs:label	Extensometer-Messlänge@de
-ERROR	multiple_labels	extensometer gauge length	rdfs:label	extensometer gauge length@en
+ERROR	multiple_labels	Extensometer-Messlänge	rdfs:label	Extensometer-Messlänge@de
+ERROR	multiple_labels	Extensometer-Messlänge	rdfs:label	extensometer gauge length@en
 ERROR	multiple_labels	final gauge length after fracture	rdfs:label	Messlänge nach dem Bruch@de
 ERROR	multiple_labels	final gauge length after fracture	rdfs:label	final gauge length after fracture@en
 ERROR	multiple_labels	gauge length	rdfs:label	Messlänge@de
@@ -53,8 +53,8 @@ ERROR	multiple_labels	original diameter	rdfs:label	Anfangs-Probendurchmesser@de
 ERROR	multiple_labels	original diameter	rdfs:label	original diameter@en
 ERROR	multiple_labels	original gauge length	rdfs:label	Anfangsmesslänge@de
 ERROR	multiple_labels	original gauge length	rdfs:label	original gauge length@en
-ERROR	multiple_labels	original thickness	rdfs:label	Anfangs-Dicke@de
-ERROR	multiple_labels	original thickness	rdfs:label	original thickness@en
+ERROR	multiple_labels	Anfangs-Dicke	rdfs:label	Anfangs-Dicke@de
+ERROR	multiple_labels	Anfangs-Dicke	rdfs:label	original thickness@en
 ERROR	multiple_labels	original width	rdfs:label	Anfangs-Breite@de
 ERROR	multiple_labels	original width	rdfs:label	original width@en
 ERROR	multiple_labels	Parallele Länge	rdfs:label	Parallele Länge@de
@@ -132,7 +132,7 @@ WARN	missing_definition	crosshead separation	IAO:0000115
 WARN	missing_definition	crosshead separation rate	IAO:0000115	
 WARN	missing_definition	End-Probendurchmesser	IAO:0000115	
 WARN	missing_definition	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	IAO:0000115	
-WARN	missing_definition	extensometer gauge length	IAO:0000115	
+WARN	missing_definition	Extensometer-Messlänge	IAO:0000115	
 WARN	missing_definition	final gauge length after fracture	IAO:0000115	
 WARN	missing_definition	gauge length	IAO:0000115	
 WARN	missing_definition	gauge length marks	IAO:0000115	
@@ -144,7 +144,7 @@ WARN	missing_definition	Bewegungsqualität	IAO:0000115
 WARN	missing_definition	Anfangsquerschnitt innerhalb der parallelen Länge	IAO:0000115	
 WARN	missing_definition	original diameter	IAO:0000115	
 WARN	missing_definition	original gauge length	IAO:0000115	
-WARN	missing_definition	original thickness	IAO:0000115	
+WARN	missing_definition	Anfangs-Dicke	IAO:0000115	
 WARN	missing_definition	original width	IAO:0000115	
 WARN	missing_definition	Parallele Länge	IAO:0000115	
 WARN	missing_definition	percentage elongation	IAO:0000115	
