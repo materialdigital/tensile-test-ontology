@@ -52,7 +52,6 @@ Declaration(Class(:TTO_0000021))
 Declaration(Class(:TTO_0000022))
 Declaration(Class(:TTO_0000023))
 Declaration(Class(:TTO_0000024))
-Declaration(Class(:TTO_0000025))
 Declaration(Class(:TTO_0000026))
 Declaration(Class(:TTO_0000027))
 Declaration(Class(:TTO_0000028))
@@ -69,7 +68,6 @@ Declaration(Class(:TTO_0000038))
 Declaration(Class(:TTO_0000039))
 Declaration(Class(:TTO_0000040))
 Declaration(Class(:TTO_0000041))
-Declaration(Class(:TTO_0000042))
 Declaration(Class(:TTO_0000043))
 Declaration(Class(:TTO_0000044))
 Declaration(Class(:TTO_0000045))
@@ -103,21 +101,31 @@ Declaration(AnnotationProperty(pmd:symbol))
 #   Classes
 ############################
 
-# Class: <https://w3id.org/pmd/TTO_0000000> (broken tested piece role)
+# Class: <https://w3id.org/pmd/TTO_0000000> (broken tested test piece role)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000000> "broken tested piece role"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000000> "broken tested test piece role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000000> "The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test."@en)
 SubClassOf(<https://w3id.org/pmd/TTO_0000000> pmd:PMD_0000975)
 
-# Class: <https://w3id.org/pmd/TTO_0000001> (unbroken tested piece role)
+# Class: <https://w3id.org/pmd/TTO_0000001> (unbroken tested test piece role)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000001> "unbroken tested piece role"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/TTO_0000001> "An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000001> "unbroken tested test piece role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000001> "The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test."@en)
 SubClassOf(<https://w3id.org/pmd/TTO_0000001> pmd:PMD_0000975)
 
-# Class: <https://w3id.org/pmd/TTO_0000002> (tensile test result)
+# Class: <https://w3id.org/pmd/TTO_0000002> (Ergebnis eines Zugversuches)
 
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000002> "Ergebnis eines Zugversuches"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000002> "tensile test result"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000002> "Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000002> "Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung."@de)
 SubClassOf(<https://w3id.org/pmd/TTO_0000002> <http://purl.obolibrary.org/obo/IAO_0000027>)
-SubClassOf(<https://w3id.org/pmd/TTO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> pmd:PMD_0000618))))
+SubClassOf(<https://w3id.org/pmd/TTO_0000002> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000109>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> pmd:PMD_0000974)))
+
+# Class: pmd:PMD_0000973 (tensile testing machine)
+
+SubClassOf(pmd:PMD_0000973 ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> pmd:PMD_0000636) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> pmd:PMD_0000820)))
 
 # Class: pmd:PMD_0000974 (Zugprüfverfahren)
 
@@ -195,7 +203,7 @@ AnnotationAssertion(rdfs:label :TTO_0000008 "Form"@de)
 AnnotationAssertion(rdfs:label :TTO_0000008 "shape"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000008 :Shape)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000008 "Das sichtbare Ausstattungsmerkmal (räumliche Form oder Kontur) eines bestimmten Objektes oder einer Art von Objekt."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000008 "The visible makeup characteristic (spatial form or contour) of a particular item or kind of item."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000008 "The visible makeup characteristic (spatial form or contour) of a particular item or kind of item.a"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000008 "“Shape.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/shape. Accessed 13 Jan. 2023.")
 SubClassOf(:TTO_0000008 pmd:PMD_0020148)
 
@@ -266,7 +274,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000014 "displacement of the crossheads per time"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000014 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000014 "v_c"@en)
-SubClassOf(:TTO_0000014 :TTO_0000025)
+SubClassOf(:TTO_0000014 pmd:PMD_0000008)
 
 # Class: :TTO_0000015 (End-Probendurchmesser)
 
@@ -288,9 +296,9 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000016 "value of the increase of strain over the parallel length of the test piece per time based on the crosshead separation rate and the parallel length of the test piece"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000016 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000016 "e^._L_c"@en)
-SubClassOf(:TTO_0000016 :TTO_0000025)
+SubClassOf(:TTO_0000016 pmd:PMD_0000008)
 
-# Class: :TTO_0000017 (Extensometer-Messlänge)
+# Class: :TTO_0000017 (extensometer gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)
@@ -406,16 +414,6 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000024 "DIN EN ISO 6892-1:2019")
 SubClassOf(:TTO_0000024 :TTO_0000012)
 SubClassOf(:TTO_0000024 ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000056) ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000060)) ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000015)))
 
-# Class: :TTO_0000025 (Bewegungsqualität)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000025 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000025 "Bewegungsqualität"@de)
-AnnotationAssertion(rdfs:label :TTO_0000025 "movement quality"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000025 :MovementQuality)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000025 "A movement quality is a physical quality that inheres in a material entity and represents a property of the entity's motion or change of position over time."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000025 "Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt."@de)
-SubClassOf(:TTO_0000025 :TTO_0000042)
-
 # Class: :TTO_0000026 (Anfangsquerschnitt innerhalb der parallelen Länge)
 
 AnnotationAssertion(rdfs:comment :TTO_0000026 "Symbol: S_o")
@@ -452,7 +450,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (original thickness)
+# Class: :TTO_0000029 (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
@@ -543,7 +541,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000035 "DIN EN ISO 6892-1:2019"@e
 SubClassOf(:TTO_0000035 :TTO_0000004)
 SubClassOf(:TTO_0000035 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
 
-# Class: :TTO_0000036 (percentage permanent extension)
+# Class: :TTO_0000036 (Bleibende Extensometer-Dehnung)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000036 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000036 "Bleibende Extensometer-Dehnung"@de)
@@ -618,16 +616,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000004
 AnnotationAssertion(pmd:definitionSource :TTO_0000041 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000041 "A_e"@en)
 SubClassOf(:TTO_0000041 :TTO_0000005)
-
-# Class: :TTO_0000042 (physical quality)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000042 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000042 "Physikalische Qualität"@de)
-AnnotationAssertion(rdfs:label :TTO_0000042 "physical quality"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000042 :PhysicalQuality)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000042 "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000042 "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de)
-SubClassOf(:TTO_0000042 <http://purl.obolibrary.org/obo/BFO_0000019>)
 
 # Class: :TTO_0000043 (proof strength)
 
@@ -717,7 +705,7 @@ AnnotationAssertion(rdfs:isDefinedBy :TTO_0000049 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000049 "Größenrelation"@de)
 AnnotationAssertion(rdfs:label :TTO_0000049 "size relation"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000049 :SizeRelation)
-SubClassOf(:TTO_0000049 :TTO_0000042)
+SubClassOf(:TTO_0000049 pmd:PMD_0000008)
 
 # Class: :TTO_0000050 (Steigung des elastischen Bereichs)
 
@@ -740,7 +728,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000051 "increase of strain, measured with an extensometer, in extensometer gauge length, per time"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000051 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000051 "e^._L_e"@en)
-SubClassOf(:TTO_0000051 :TTO_0000025)
+SubClassOf(:TTO_0000051 pmd:PMD_0000008)
 
 # Class: :TTO_0000052 (stress rate)
 
@@ -756,7 +744,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 Note: Stress rate is only used in the elastic part of the test."@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000052 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000052 "R"@en)
-SubClassOf(:TTO_0000052 :TTO_0000025)
+SubClassOf(:TTO_0000052 pmd:PMD_0000008)
 
 # Class: :TTO_0000053 (tensile strength)
 
@@ -801,7 +789,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000057 "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(:TTO_0000057 pmd:PMD_0000008)
 
-# Class: :TTO_0000058 (Umschaltpunkt der Prüfgeschwindigkeit)
+# Class: :TTO_0000058 (transition point testing rate)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000058 "Umschaltpunkt der Prüfgeschwindigkeit"@de)
