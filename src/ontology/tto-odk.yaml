@@ -17,7 +17,13 @@ export_formats:
 remove_owl_nothing: true
 
 import_group:
+  annotation_properties: ['rdfs:label','rdfs:comment', 'IAO:0000119','IAO:0000115', 'IAO:0000116', 'IAO:0000112', 'skos:definition', 'skos:example', 'skos:comment' ]
   products:
   - id: pmdco
     mirror_from: https://w3id.org/pmd/co/3.0.0-alpha4
     module_type: mirror
+  - id: nfdicore
+    mirror_from: https://nfdi.fiz-karlsruhe.de/ontology
+    module_type: slme
+    module_type_slme: SUBSET
+    use_base: true

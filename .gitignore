@@ -18,6 +18,11 @@ bin/
 /tto.obo
 /tto.json
 /tto.db
+/tto-base.*
+/tto-basic.*
+/tto-full.*
+/tto-simple.*
+/tto-simple-non-classified.*
 /mappings/
 /patterns/
 /reports/
@@ -69,4 +74,7 @@ docs/odk-workflows/RepositoryFileStructure.md
 /docs/odk-workflows
 /docs/odk-workflows
 /src/ontology/reports
+/src/ontology/tmp
+src/ontology/tmp/merged-tto-edit.ofn
+src/ontology/tmp/tto-preprocess.owl
 /src/ontology/tmp

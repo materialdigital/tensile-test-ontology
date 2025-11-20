@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                d77eb61bd9c7297a6205cde171c4c0fb09911333d9ba28e1efe8d1f15001b298
+CONFIG_HASH=                bb2f8a735b3caa7744c0e5024062bf5d7a0c187a3b19600be6beb77782c1eb90
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pmdco
+IMPORTS =  pmdco nfdicore
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -387,7 +387,7 @@ $(IMPORTSEED): $(PRESEED) | $(TMPDIR)
 
 T_IMPORTSEED = --term-file $(IMPORTSEED)
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 OMO:0002000 
+ANNOTATION_PROPERTIES=rdfs:label rdfs:comment IAO:0000119 IAO:0000115 IAO:0000116 IAO:0000112 skos:definition skos:example skos:comment 
 
 # ----------------------------------------
 # Import modules
@@ -423,6 +423,25 @@ $(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl | all_robot_plugins
 		 odk:normalize --base-iri https://w3id.org/pmd \
 		               --subset-decls true --synonym-decls true \
 		               --add-source true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+
+## Module for ontology: nfdicore (slme)
+$(IMPORTDIR)/nfdicore_import.owl: $(MIRRORDIR)/nfdicore.owl $(IMPORTDIR)/nfdicore_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/nfdicore_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true \
+		         --individuals include \
+		         --method SUBSET \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/nfdicore_terms.txt $(T_IMPORTSEED) \
+		        --select complement --select annotation-properties \
+		 odk:normalize --base-iri https://w3id.org/pmd \
+		               --subset-decls true --synonym-decls true \
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
@@ -464,6 +483,13 @@ ifeq ($(MIR),true)
 .PRECIOUS: $(MIRRORDIR)/pmdco.owl
 mirror-pmdco: | $(TMPDIR)
 	$(ROBOT) convert -I https://w3id.org/pmd/co/3.0.0-alpha4 -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: nfdicore
+.PHONY: mirror-nfdicore
+.PRECIOUS: $(MIRRORDIR)/nfdicore.owl
+mirror-nfdicore: | $(TMPDIR)
+	$(ROBOT) convert -I https://nfdi.fiz-karlsruhe.de/ontology -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
