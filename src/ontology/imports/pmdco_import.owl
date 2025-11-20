@@ -3563,7 +3563,7 @@ AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum
 SubClassOf(co:PMD_0000053 co:PMD_0000833)
 SubClassOf(co:PMD_0000053 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 co:PMD_0020139)))
 
-# Class: co:PMD_0000054 (Heizfunktion)
+# Class: co:PMD_0000054 (heating function)
 
 AnnotationAssertion(rdfs:label co:PMD_0000054 "Heizfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000054 "heating function"@en)
@@ -3919,7 +3919,7 @@ AnnotationAssertion(skos:definition co:PMD_0000541 "A CNC Machine is a Forming M
 AnnotationAssertion(skos:definition co:PMD_0000541 "Eine CNC-Maschine ist eine Formmaschine, die zur präzisen Steuerung von Bearbeitungswerkzeugen für Schneid-, Bohr-, Fräs- und andere Aufgaben computergestützte numerische Steuerung verwendet."@de)
 SubClassOf(co:PMD_0000541 co:PMD_0000648)
 
-# Class: co:PMD_0000542 (CNC-Schweißmaschine)
+# Class: co:PMD_0000542 (cnc welding machine)
 
 AnnotationAssertion(rdfs:label co:PMD_0000542 "CNC-Schweißmaschine"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000542 "cnc welding machine"@en)
@@ -4296,7 +4296,7 @@ AnnotationAssertion(skos:definition co:PMD_0000587 "The crack growth is an evolu
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000587 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000587 co:PMD_0000635)
 
-# Class: co:PMD_0000588 (creep testing machine)
+# Class: co:PMD_0000588 (Kriechprüfmaschine)
 
 AnnotationAssertion(rdfs:label co:PMD_0000588 "Kriechprüfmaschine"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000588 "creep testing machine"@en)
@@ -5695,7 +5695,7 @@ AnnotationAssertion(skos:definition co:PMD_0000874 "A microscope that uses visib
 AnnotationAssertion(skos:definition co:PMD_0000874 "Ein Mikroskop, das sichtbares Licht und Linsen verwendet, um kleine Objekte oder Details zu vergrößern und zu betrachten."@de)
 SubClassOf(co:PMD_0000874 co:PMD_0000855)
 
-# Class: co:PMD_0000875 (optical microscopy)
+# Class: co:PMD_0000875 (Optische Mikroskopie)
 
 AnnotationAssertion(rdfs:label co:PMD_0000875 "Ein Mikroskopieverfahren, das sichtbares Licht und Linsen verwendet, um eine Probe zu vergrößern und abzubilden, und weit verbreitet zur Untersuchung der Mikrostruktur und Morphologie von Materialien ist."@de)
 AnnotationAssertion(rdfs:label co:PMD_0000875 "Optische Mikroskopie"@de)
@@ -6213,7 +6213,7 @@ AnnotationAssertion(skos:definition co:PMD_0000942 "The specific surface area is
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000942 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000942 co:PMD_0020131)
 
-# Class: co:PMD_0000944 (spectrometer)
+# Class: co:PMD_0000944 (Spektrometer)
 
 AnnotationAssertion(rdfs:label co:PMD_0000944 "Spektrometer"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000944 "spectrometer"@en)
@@ -6300,7 +6300,7 @@ AnnotationAssertion(skos:definition co:PMD_0000956 "Ein Simulationsprozess, der 
 AnnotationAssertion(skos:example co:PMD_0000956 "Optimizing the atomic structure of a catalyst to enhance its performance."@en)
 SubClassOf(co:PMD_0000956 co:PMD_0000933)
 
-# Class: co:PMD_0000957 (structural property analyzing process)
+# Class: co:PMD_0000957 (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000957 "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000957 "structural property analyzing process"@en)
