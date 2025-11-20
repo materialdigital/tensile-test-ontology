@@ -30,7 +30,6 @@ Annotation(dcterms:title "Tensile Test Ontology (TTO)")
 Declaration(Class(<https://w3id.org/pmd/TTO_0000000>))
 Declaration(Class(<https://w3id.org/pmd/TTO_0000001>))
 Declaration(Class(<https://w3id.org/pmd/TTO_0000002>))
-Declaration(Class(:TTO_0000000))
 Declaration(Class(:TTO_0000001))
 Declaration(Class(:TTO_0000002))
 Declaration(Class(:TTO_0000004))
@@ -108,35 +107,25 @@ Declaration(AnnotationProperty(pmd:symbol))
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000000> "broken tested piece role"@en)
 SubClassOf(<https://w3id.org/pmd/TTO_0000000> pmd:PMD_0000975)
-SubClassOf(<https://w3id.org/pmd/TTO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> pmd:PMD_0000974))
 
 # Class: <https://w3id.org/pmd/TTO_0000001> (unbroken tested piece role)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000001> "unbroken tested piece role"@en)
 SubClassOf(<https://w3id.org/pmd/TTO_0000001> pmd:PMD_0000975)
-SubClassOf(<https://w3id.org/pmd/TTO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> pmd:PMD_0000974))
 
 # Class: <https://w3id.org/pmd/TTO_0000002> (tensile test result)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000002> "tensile test result"@en)
 SubClassOf(<https://w3id.org/pmd/TTO_0000002> <http://purl.obolibrary.org/obo/IAO_0000027>)
-SubClassOf(<https://w3id.org/pmd/TTO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> ObjectIntersectionOf(pmd:PMD_0000618 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> ObjectUnionOf(<https://w3id.org/pmd/TTO_0000000> <https://w3id.org/pmd/TTO_0000001>)))))))))
+SubClassOf(<https://w3id.org/pmd/TTO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> pmd:PMD_0000618))))
 
 # Class: pmd:PMD_0000974 (Zugprüfverfahren)
 
-SubClassOf(pmd:PMD_0000974 ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/BFO_0000030>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> ObjectUnionOf(<https://w3id.org/pmd/TTO_0000000> <https://w3id.org/pmd/TTO_0000001>))))
 SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> pmd:PMD_0000975))
 SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> pmd:PMD_0000975))))
 SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <https://w3id.org/pmd/TTO_0000002>))
+SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> ObjectUnionOf(<https://w3id.org/pmd/TTO_0000000> <https://w3id.org/pmd/TTO_0000001>)))))
 SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> pmd:PMD_0000973))
-
-# Class: :TTO_0000000 (funder role)
-
-AnnotationAssertion(rdfs:label :TTO_0000000 "Förderungsrolle"@de)
-AnnotationAssertion(rdfs:label :TTO_0000000 "funder role"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000000 "A funder role is a role that describes the capacity in which a party provides financial support to a project or initiative. This role is realized when the party participates in the project specifically as a source of funding, regardless of other potential involvements."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000000 "Eine Förderungsrolle (Rolle einer fördernden Partei) ist eine Rolle, die die Funktion beschreibt, in der eine Partei finanzielle Unterstützung für ein Projekt oder eine Initiative bereitstellt. Diese Rolle wird verwirklicht, wenn die Partei speziell als Geldgeber am Projekt teilnimmt, unabhängig von anderen möglichen Beteiligungen."@de)
-SubClassOf(:TTO_0000000 <http://purl.obolibrary.org/obo/BFO_0000023>)
 
 # Class: :TTO_0000001 (load cell maximum force)
 
@@ -463,7 +452,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (Anfangs-Dicke)
+# Class: :TTO_0000029 (original thickness)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
@@ -554,7 +543,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000035 "DIN EN ISO 6892-1:2019"@e
 SubClassOf(:TTO_0000035 :TTO_0000004)
 SubClassOf(:TTO_0000035 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
 
-# Class: :TTO_0000036 (Bleibende Extensometer-Dehnung)
+# Class: :TTO_0000036 (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000036 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000036 "Bleibende Extensometer-Dehnung"@de)
