@@ -1,0 +1,2 @@
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000139 # funding organization role
+ 
