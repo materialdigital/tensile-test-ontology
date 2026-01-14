@@ -11,12 +11,13 @@ Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
 Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<https://w3id.org/pmd/tto/imports/pmdco_import.owl>
-<https://w3id.org/pmd/tto/releases/2025-11-20/imports/pmdco_import.owl>
-Annotation(dc:source <https://w3id.org/pmd/co/3.0.0-alpha4>)
-Annotation(owl:versionInfo "2025-11-20")
+<https://w3id.org/pmd/tto/releases/2026-01-14/imports/pmdco_import.owl>
+Annotation(dc:source <https://w3id.org/pmd/co/3.0.0-rc1>)
+Annotation(owl:versionInfo "2026-01-14")
 
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
@@ -180,6 +181,8 @@ Declaration(Class(obo:CHEBI_49696))
 Declaration(Class(obo:CHEBI_49828))
 Declaration(Class(obo:CHEBI_49882))
 Declaration(Class(obo:CHEBI_49957))
+Declaration(Class(obo:CHEBI_59999))
+Declaration(Class(obo:CHEBI_60003))
 Declaration(Class(obo:IAO_0000003))
 Declaration(Class(obo:IAO_0000005))
 Declaration(Class(obo:IAO_0000007))
@@ -193,11 +196,8 @@ Declaration(Class(obo:IAO_0000078))
 Declaration(Class(obo:IAO_0000102))
 Declaration(Class(obo:IAO_0000104))
 Declaration(Class(obo:IAO_0000109))
-Declaration(Class(obo:IAO_0000225))
 Declaration(Class(obo:IAO_0000310))
 Declaration(Class(obo:IAO_0000311))
-Declaration(Class(obo:IAO_0000409))
-Declaration(Class(obo:IAO_0000416))
 Declaration(Class(obo:IAO_0000444))
 Declaration(Class(obo:IAO_0020000))
 Declaration(Class(obo:IAO_0020010))
@@ -205,23 +205,28 @@ Declaration(Class(obo:NCBITaxon_9606))
 Declaration(Class(obo:OBI_0000011))
 Declaration(Class(obo:OBI_0000067))
 Declaration(Class(obo:OBI_0000070))
-Declaration(Class(obo:OBI_0000112))
 Declaration(Class(obo:OBI_0000245))
+Declaration(Class(obo:OBI_0000260))
 Declaration(Class(obo:OBI_0000379))
 Declaration(Class(obo:OBI_0000571))
 Declaration(Class(obo:OBI_0000835))
 Declaration(Class(obo:OBI_0001930))
 Declaration(Class(obo:OBI_0001931))
 Declaration(Class(obo:OBI_0001933))
-Declaration(Class(obo:OBI_0100051))
+Declaration(Class(obo:UO_0000000))
 Declaration(Class(obo:UO_0000003))
+Declaration(Class(obo:UO_0000076))
+Declaration(Class(obo:UO_0000163))
+Declaration(Class(obo:UO_0000164))
+Declaration(Class(obo:UO_1000076))
+Declaration(Class(obo:UO_1000163))
+Declaration(Class(obo:UO_1000164))
 Declaration(Class(co:PMD_0000000))
 Declaration(Class(co:PMD_0000001))
 Declaration(Class(co:PMD_0000002))
 Declaration(Class(co:PMD_0000005))
 Declaration(Class(co:PMD_0000007))
 Declaration(Class(co:PMD_0000008))
-Declaration(Class(co:PMD_0000014))
 Declaration(Class(co:PMD_0000051))
 Declaration(Class(co:PMD_0000053))
 Declaration(Class(co:PMD_0000054))
@@ -231,6 +236,7 @@ Declaration(Class(co:PMD_0000057))
 Declaration(Class(co:PMD_0000066))
 Declaration(Class(co:PMD_0000067))
 Declaration(Class(co:PMD_0000068))
+Declaration(Class(co:PMD_0000075))
 Declaration(Class(co:PMD_0000501))
 Declaration(Class(co:PMD_0000502))
 Declaration(Class(co:PMD_0000503))
@@ -241,7 +247,6 @@ Declaration(Class(co:PMD_0000507))
 Declaration(Class(co:PMD_0000508))
 Declaration(Class(co:PMD_0000509))
 Declaration(Class(co:PMD_0000510))
-Declaration(Class(co:PMD_0000511))
 Declaration(Class(co:PMD_0000512))
 Declaration(Class(co:PMD_0000513))
 Declaration(Class(co:PMD_0000517))
@@ -273,7 +278,6 @@ Declaration(Class(co:PMD_0000543))
 Declaration(Class(co:PMD_0000544))
 Declaration(Class(co:PMD_0000546))
 Declaration(Class(co:PMD_0000547))
-Declaration(Class(co:PMD_0000548))
 Declaration(Class(co:PMD_0000549))
 Declaration(Class(co:PMD_0000550))
 Declaration(Class(co:PMD_0000551))
@@ -321,8 +325,6 @@ Declaration(Class(co:PMD_0000594))
 Declaration(Class(co:PMD_0000595))
 Declaration(Class(co:PMD_0000596))
 Declaration(Class(co:PMD_0000597))
-Declaration(Class(co:PMD_0000598))
-Declaration(Class(co:PMD_0000599))
 Declaration(Class(co:PMD_0000600))
 Declaration(Class(co:PMD_0000601))
 Declaration(Class(co:PMD_0000602))
@@ -397,6 +399,7 @@ Declaration(Class(co:PMD_0000774))
 Declaration(Class(co:PMD_0000775))
 Declaration(Class(co:PMD_0000776))
 Declaration(Class(co:PMD_0000777))
+Declaration(Class(co:PMD_0000778))
 Declaration(Class(co:PMD_0000779))
 Declaration(Class(co:PMD_0000780))
 Declaration(Class(co:PMD_0000781))
@@ -409,7 +412,6 @@ Declaration(Class(co:PMD_0000788))
 Declaration(Class(co:PMD_0000789))
 Declaration(Class(co:PMD_0000790))
 Declaration(Class(co:PMD_0000791))
-Declaration(Class(co:PMD_0000793))
 Declaration(Class(co:PMD_0000794))
 Declaration(Class(co:PMD_0000795))
 Declaration(Class(co:PMD_0000796))
@@ -429,8 +431,6 @@ Declaration(Class(co:PMD_0000810))
 Declaration(Class(co:PMD_0000811))
 Declaration(Class(co:PMD_0000812))
 Declaration(Class(co:PMD_0000813))
-Declaration(Class(co:PMD_0000814))
-Declaration(Class(co:PMD_0000815))
 Declaration(Class(co:PMD_0000816))
 Declaration(Class(co:PMD_0000817))
 Declaration(Class(co:PMD_0000818))
@@ -472,14 +472,12 @@ Declaration(Class(co:PMD_0000868))
 Declaration(Class(co:PMD_0000869))
 Declaration(Class(co:PMD_0000870))
 Declaration(Class(co:PMD_0000871))
-Declaration(Class(co:PMD_0000873))
 Declaration(Class(co:PMD_0000874))
 Declaration(Class(co:PMD_0000875))
 Declaration(Class(co:PMD_0000876))
 Declaration(Class(co:PMD_0000877))
 Declaration(Class(co:PMD_0000878))
 Declaration(Class(co:PMD_0000880))
-Declaration(Class(co:PMD_0000881))
 Declaration(Class(co:PMD_0000882))
 Declaration(Class(co:PMD_0000883))
 Declaration(Class(co:PMD_0000884))
@@ -504,7 +502,6 @@ Declaration(Class(co:PMD_0000905))
 Declaration(Class(co:PMD_0000906))
 Declaration(Class(co:PMD_0000907))
 Declaration(Class(co:PMD_0000908))
-Declaration(Class(co:PMD_0000909))
 Declaration(Class(co:PMD_0000910))
 Declaration(Class(co:PMD_0000911))
 Declaration(Class(co:PMD_0000913))
@@ -701,26 +698,41 @@ Declaration(Class(co:PMD_0020116))
 Declaration(Class(co:PMD_0020126))
 Declaration(Class(co:PMD_0020128))
 Declaration(Class(co:PMD_0020129))
+Declaration(Class(co:PMD_0020130))
 Declaration(Class(co:PMD_0020131))
 Declaration(Class(co:PMD_0020132))
 Declaration(Class(co:PMD_0020133))
 Declaration(Class(co:PMD_0020134))
 Declaration(Class(co:PMD_0020135))
+Declaration(Class(co:PMD_0020136))
+Declaration(Class(co:PMD_0020137))
 Declaration(Class(co:PMD_0020138))
 Declaration(Class(co:PMD_0020139))
+Declaration(Class(co:PMD_0020140))
 Declaration(Class(co:PMD_0020142))
 Declaration(Class(co:PMD_0020143))
 Declaration(Class(co:PMD_0020144))
 Declaration(Class(co:PMD_0020145))
 Declaration(Class(co:PMD_0020146))
+Declaration(Class(co:PMD_0020147))
 Declaration(Class(co:PMD_0020148))
+Declaration(Class(co:PMD_0020149))
 Declaration(Class(co:PMD_0020150))
 Declaration(Class(co:PMD_0020151))
 Declaration(Class(co:PMD_0020152))
 Declaration(Class(co:PMD_0020153))
+Declaration(Class(co:PMD_0020154))
 Declaration(Class(co:PMD_0020155))
+Declaration(Class(co:PMD_0020156))
+Declaration(Class(co:PMD_0020157))
+Declaration(Class(co:PMD_0020158))
+Declaration(Class(co:PMD_0020159))
+Declaration(Class(co:PMD_0020160))
+Declaration(Class(co:PMD_0020161))
+Declaration(Class(co:PMD_0020162))
+Declaration(Class(co:PMD_0020163))
+Declaration(Class(co:PMD_0020165))
 Declaration(Class(co:PMD_0020166))
-Declaration(Class(co:PMD_0020199))
 Declaration(Class(co:PMD_0020200))
 Declaration(Class(co:PMD_0020201))
 Declaration(Class(co:PMD_0020202))
@@ -728,8 +740,11 @@ Declaration(Class(co:PMD_0020203))
 Declaration(Class(co:PMD_0020204))
 Declaration(Class(co:PMD_0020205))
 Declaration(Class(co:PMD_0020207))
-Declaration(Class(co:PMD_0020209))
-Declaration(Class(co:PMD_0020210))
+Declaration(Class(co:PMD_0025001))
+Declaration(Class(co:PMD_0025002))
+Declaration(Class(co:PMD_0025003))
+Declaration(Class(co:PMD_0025004))
+Declaration(Class(co:PMD_0025997))
 Declaration(Class(co:PMD_0040001))
 Declaration(Class(co:PMD_0050000))
 Declaration(Class(co:PMD_0050001))
@@ -782,6 +797,7 @@ Declaration(Class(co:PMD_0050047))
 Declaration(Class(co:PMD_0050048))
 Declaration(Class(co:PMD_0050049))
 Declaration(Class(co:PMD_0050050))
+Declaration(Class(co:PMD_0050051))
 Declaration(Class(co:PMD_0050052))
 Declaration(Class(co:PMD_0050053))
 Declaration(Class(co:PMD_0050054))
@@ -882,7 +898,11 @@ Declaration(Class(co:PMD_0050149))
 Declaration(Class(co:PMD_0050150))
 Declaration(Class(co:PMD_0050151))
 Declaration(Class(co:PMD_0050152))
-Declaration(Class(co:PMD_0060005))
+Declaration(Class(co:PMD_0050153))
+Declaration(Class(co:PMD_0050154))
+Declaration(Class(co:PMD_0050155))
+Declaration(Class(co:PMD_0050156))
+Declaration(Class(co:PMD_0050157))
 Declaration(Class(co:PMD_0060006))
 Declaration(Class(co:PMD_0060007))
 Declaration(Class(co:PMD_0060008))
@@ -908,10 +928,6 @@ Declaration(ObjectProperty(obo:BFO_0000181))
 Declaration(ObjectProperty(obo:BFO_0000183))
 Declaration(ObjectProperty(obo:BFO_0000184))
 Declaration(ObjectProperty(obo:BFO_0000185))
-Declaration(ObjectProperty(obo:BFO_0000194))
-Declaration(ObjectProperty(obo:BFO_0000195))
-Declaration(ObjectProperty(obo:BFO_0000196))
-Declaration(ObjectProperty(obo:BFO_0000197))
 Declaration(ObjectProperty(obo:BFO_0000199))
 Declaration(ObjectProperty(obo:BFO_0000200))
 Declaration(ObjectProperty(obo:BFO_0000221))
@@ -923,7 +939,6 @@ Declaration(ObjectProperty(obo:IAO_0000136))
 Declaration(ObjectProperty(obo:IAO_0000219))
 Declaration(ObjectProperty(obo:IAO_0000221))
 Declaration(ObjectProperty(obo:IAO_0000235))
-Declaration(ObjectProperty(obo:IAO_0000413))
 Declaration(ObjectProperty(obo:IAO_0000417))
 Declaration(ObjectProperty(obo:IAO_0000418))
 Declaration(ObjectProperty(obo:IAO_0000419))
@@ -969,39 +984,33 @@ Declaration(ObjectProperty(co:PMD_0000004))
 Declaration(ObjectProperty(co:PMD_0000009))
 Declaration(ObjectProperty(co:PMD_0000069))
 Declaration(ObjectProperty(co:PMD_0000070))
+Declaration(ObjectProperty(co:PMD_0000077))
 Declaration(ObjectProperty(co:PMD_0001026))
 Declaration(ObjectProperty(co:PMD_0001028))
 Declaration(ObjectProperty(co:PMD_0001029))
 Declaration(ObjectProperty(co:PMD_0001030))
 Declaration(ObjectProperty(co:PMD_0001031))
-Declaration(ObjectProperty(co:PMD_0020005))
 Declaration(ObjectProperty(co:PMD_0020020))
 Declaration(ObjectProperty(co:PMD_0020021))
-Declaration(ObjectProperty(co:PMD_0020022))
 Declaration(ObjectProperty(co:PMD_0020127))
-Declaration(ObjectProperty(co:PMD_0020141))
+Declaration(ObjectProperty(co:PMD_0025998))
+Declaration(ObjectProperty(co:PMD_0025999))
 Declaration(DataProperty(obo:IAO_0000004))
 Declaration(DataProperty(obo:OBI_0001937))
 Declaration(DataProperty(obo:OBI_0002135))
 Declaration(DataProperty(co:PMD_0000006))
 Declaration(NamedIndividual(obo:IAO_0000002))
-Declaration(NamedIndividual(obo:IAO_0000103))
 Declaration(NamedIndividual(obo:IAO_0000120))
 Declaration(NamedIndividual(obo:IAO_0000121))
 Declaration(NamedIndividual(obo:IAO_0000122))
 Declaration(NamedIndividual(obo:IAO_0000123))
 Declaration(NamedIndividual(obo:IAO_0000124))
 Declaration(NamedIndividual(obo:IAO_0000125))
-Declaration(NamedIndividual(obo:IAO_0000226))
-Declaration(NamedIndividual(obo:IAO_0000227))
-Declaration(NamedIndividual(obo:IAO_0000228))
-Declaration(NamedIndividual(obo:IAO_0000229))
-Declaration(NamedIndividual(obo:IAO_0000410))
-Declaration(NamedIndividual(obo:IAO_0000420))
-Declaration(NamedIndividual(obo:IAO_0000421))
 Declaration(NamedIndividual(obo:IAO_0000423))
 Declaration(NamedIndividual(obo:IAO_0000428))
-Declaration(NamedIndividual(obo:OMO_0001000))
+Declaration(NamedIndividual(obo:UO_0000076))
+Declaration(NamedIndividual(obo:UO_0000163))
+Declaration(NamedIndividual(obo:UO_0000164))
 Declaration(NamedIndividual(co:PMD_0020006))
 Declaration(NamedIndividual(co:PMD_0020007))
 Declaration(NamedIndividual(co:PMD_0020008))
@@ -1045,6 +1054,7 @@ Declaration(AnnotationProperty(terms:description))
 Declaration(AnnotationProperty(terms:license))
 Declaration(AnnotationProperty(terms:source))
 Declaration(AnnotationProperty(terms:title))
+Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(skos:altLabel))
 Declaration(AnnotationProperty(skos:definition))
@@ -1198,6 +1208,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000051 "Parthood requires the part 
 
 A continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part"@en)
+SubObjectPropertyOf(obo:BFO_0000051 obo:BFO_0000051)
 TransitiveObjectProperty(obo:BFO_0000051)
 
 # Object Property: obo:BFO_0000054 (has realization)
@@ -1371,42 +1382,6 @@ AnnotationAssertion(skos:example obo:BFO_0000185 "This organism has history this
 ObjectPropertyDomain(obo:BFO_0000185 obo:BFO_0000040)
 ObjectPropertyRange(obo:BFO_0000185 obo:BFO_0000182)
 
-# Object Property: obo:BFO_0000194 (specifically depended on by)
-
-AnnotationAssertion(rdfs:label obo:BFO_0000194 "specifically depended on by"@en)
-AnnotationAssertion(skos:definition obo:BFO_0000194 "b specifically depended on by c =Def c specifically depends on b"@en)
-AnnotationAssertion(skos:example obo:BFO_0000194 "Coloured object specifically depended on by colour"@en)
-InverseObjectProperties(obo:BFO_0000194 obo:BFO_0000195)
-ObjectPropertyDomain(obo:BFO_0000194 ObjectUnionOf(obo:BFO_0000020 ObjectIntersectionOf(obo:BFO_0000004 ObjectComplementOf(obo:BFO_0000006))))
-ObjectPropertyRange(obo:BFO_0000194 obo:BFO_0000020)
-
-# Object Property: obo:BFO_0000195 (specifically depends on)
-
-AnnotationAssertion(rdfs:label obo:BFO_0000195 "specifically depends on"@en)
-AnnotationAssertion(skos:definition obo:BFO_0000195 "(Elucidation) specifically depends on is a relation between a specifically dependent continuant b and specifically dependent continuant or independent continuant that is not a spatial region c such that b and c share no parts in common & b is of a nature such that at all times t it cannot exist unless c exists & b is not a boundary of c"@en)
-AnnotationAssertion(skos:example obo:BFO_0000195 "A shape specifically depends on the shaped object; hue, saturation and brightness of a colour sample specifically depends on each other"@en)
-ObjectPropertyDomain(obo:BFO_0000195 obo:BFO_0000020)
-ObjectPropertyRange(obo:BFO_0000195 ObjectUnionOf(obo:BFO_0000020 ObjectIntersectionOf(obo:BFO_0000004 ObjectComplementOf(obo:BFO_0000006))))
-
-# Object Property: obo:BFO_0000196 (bearer of)
-
-AnnotationAssertion(rdfs:label obo:BFO_0000196 "bearer of"@en)
-AnnotationAssertion(skos:definition obo:BFO_0000196 "b bearer of c =Def c inheres in b"@en)
-AnnotationAssertion(skos:example obo:BFO_0000196 "A patch of ink is the bearer of a colour quality; an organism is the bearer of a temperature quality"@en)
-SubObjectPropertyOf(obo:BFO_0000196 obo:BFO_0000194)
-InverseObjectProperties(obo:BFO_0000196 obo:BFO_0000197)
-ObjectPropertyDomain(obo:BFO_0000196 ObjectIntersectionOf(obo:BFO_0000004 ObjectComplementOf(obo:BFO_0000006)))
-ObjectPropertyRange(obo:BFO_0000196 obo:BFO_0000020)
-
-# Object Property: obo:BFO_0000197 (inheres in)
-
-AnnotationAssertion(rdfs:label obo:BFO_0000197 "inheres in"@en)
-AnnotationAssertion(skos:definition obo:BFO_0000197 "b inheres in c =Def b is a specifically dependent continuant & c is an independent continuant that is not a spatial region & b specifically depends on c"@en)
-AnnotationAssertion(skos:example obo:BFO_0000197 "A shape inheres in a shaped object; a mass inheres in a material entity"@en)
-SubObjectPropertyOf(obo:BFO_0000197 obo:BFO_0000195)
-ObjectPropertyDomain(obo:BFO_0000197 obo:BFO_0000020)
-ObjectPropertyRange(obo:BFO_0000197 ObjectIntersectionOf(obo:BFO_0000004 ObjectComplementOf(obo:BFO_0000006)))
-
 # Object Property: obo:BFO_0000199 (occupies temporal region)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000199 "occupies temporal region"@en)
@@ -1541,7 +1516,6 @@ AnnotationAssertion(rdfs:label obo:IAO_0000221 "is quality measurement of"@en)
 SubObjectPropertyOf(obo:IAO_0000221 obo:IAO_0000136)
 InverseObjectProperties(obo:IAO_0000221 obo:IAO_0000417)
 ObjectPropertyDomain(obo:IAO_0000221 obo:IAO_0000109)
-ObjectPropertyRange(obo:IAO_0000221 obo:BFO_0000019)
 
 # Object Property: obo:IAO_0000235 (denoted by)
 
@@ -1549,14 +1523,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000235 "inverse of the relation 'de
 AnnotationAssertion(rdfs:label obo:IAO_0000235 "denoted by"@en)
 ObjectPropertyDomain(obo:IAO_0000235 obo:BFO_0000001)
 ObjectPropertyRange(obo:IAO_0000235 obo:IAO_0000030)
-
-# Object Property: obo:IAO_0000413 (is duration of)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000413 "relates a process to a time-measurement-datum that represents the duration of the process"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000413 "is duration of"@en)
-SubObjectPropertyOf(obo:IAO_0000413 obo:IAO_0000136)
-ObjectPropertyDomain(obo:IAO_0000413 obo:IAO_0000416)
-ObjectPropertyRange(obo:IAO_0000413 obo:BFO_0000015)
 
 # Object Property: obo:IAO_0000417 (is quality measured as)
 
@@ -1595,22 +1561,19 @@ AnnotationAssertion(rdfs:label obo:OBI_0000295 "is specified input of"@en)
 SubObjectPropertyOf(obo:OBI_0000295 obo:RO_0000056)
 ObjectPropertyRange(obo:OBI_0000295 obo:OBI_0000011)
 
-# Object Property: obo:OBI_0000299 (has_specified_output)
+# Object Property: obo:OBI_0000299 (has specified output)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000299 "The inverse property of is specified output of"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000299 "The inverse property of is_specified_output_of"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000299 "has specified output"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000299 "has_specified_output"@en)
 EquivalentObjectProperties(obo:OBI_0000299 ObjectInverseOf(obo:OBI_0000312))
 SubObjectPropertyOf(obo:OBI_0000299 obo:RO_0000057)
 InverseObjectProperties(obo:OBI_0000299 obo:OBI_0000312)
 ObjectPropertyDomain(obo:OBI_0000299 obo:OBI_0000011)
 
-# Object Property: obo:OBI_0000312 (is_specified_output_of)
+# Object Property: obo:OBI_0000312 (is specified output of)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000312 "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000312 "is specified output of"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000312 "is_specified_output_of"@en)
 SubObjectPropertyOf(obo:OBI_0000312 obo:RO_0000056)
 ObjectPropertyRange(obo:OBI_0000312 obo:OBI_0000011)
 
@@ -1629,6 +1592,7 @@ ObjectPropertyRange(obo:OBI_0000417 obo:IAO_0000005)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001927 "A relation between a value specification and an entity which the specification is about."@en)
 AnnotationAssertion(rdfs:label obo:OBI_0001927 "specifies value of")
 SubObjectPropertyOf(obo:OBI_0001927 obo:IAO_0000136)
+InverseObjectProperties(obo:OBI_0001927 co:PMD_0000077)
 ObjectPropertyDomain(obo:OBI_0001927 obo:OBI_0001933)
 
 # Object Property: obo:OBI_0001938 (has value specification)
@@ -1718,6 +1682,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:RO_0000080 "A quality inheres in its bea
 AnnotationAssertion(rdfs:label obo:RO_0000080 "quality of"@en)
 SubObjectPropertyOf(obo:RO_0000080 obo:RO_0000052)
 InverseObjectProperties(obo:RO_0000080 obo:RO_0000086)
+ObjectPropertyDomain(obo:RO_0000080 ObjectIntersectionOf(obo:BFO_0000019 ObjectComplementOf(obo:BFO_0000145)))
 
 # Object Property: obo:RO_0000081 (role of)
 
@@ -1935,6 +1900,12 @@ AnnotationAssertion(rdfs:label co:PMD_0000070 "is state of"@en)
 AnnotationAssertion(skos:definition co:PMD_0000070 "relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of")
 FunctionalObjectProperty(co:PMD_0000070)
 
+# Object Property: co:PMD_0000077 (specified by value)
+
+AnnotationAssertion(rdfs:label co:PMD_0000077 "specified by value"@en)
+AnnotationAssertion(skos:definition co:PMD_0000077 "A relation between an entity and a value specification which is about this entity."@en)
+SubObjectPropertyOf(co:PMD_0000077 co:PMD_0000004)
+
 # Object Property: co:PMD_0001026 (complies with)
 
 AnnotationAssertion(rdfs:label co:PMD_0001026 "complies with"@en)
@@ -1973,13 +1944,6 @@ SubObjectPropertyOf(co:PMD_0001031 obo:BFO_0000055)
 ObjectPropertyDomain(co:PMD_0001031 co:PMD_0000950)
 ObjectPropertyRange(co:PMD_0001031 co:PMD_0000005)
 
-# Object Property: co:PMD_0020005 (consists of)
-
-AnnotationAssertion(rdfs:label co:PMD_0020005 "consists of"@en)
-AnnotationAssertion(skos:definition co:PMD_0020005 "A continuant part property that relates Material Entity Aggregates in the direction of smaller length-scale."@en)
-AnnotationAssertion(skos:example co:PMD_0020005 "A portion of steel consists of a portion of carbon and a portion of iron."@en)
-SubObjectPropertyOf(co:PMD_0020005 obo:BFO_0000051)
-
 # Object Property: co:PMD_0020020 (interacts with)
 
 AnnotationAssertion(rdfs:label co:PMD_0020020 "interacts with"@en)
@@ -1997,17 +1961,6 @@ SubObjectPropertyOf(co:PMD_0020021 co:PMD_0020020)
 ObjectPropertyDomain(co:PMD_0020021 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0020134))
 ObjectPropertyRange(co:PMD_0020021 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0020135))
 
-# Object Property: co:PMD_0020022 (intensive bearer of)
-
-AnnotationAssertion(rdfs:comment co:PMD_0020022 "TODO: check if we should force the 'o' to be a portion of matter' through:
-http://ontologydesignpatterns.org/wiki/Submissions:N-Ary_Relation_Pattern_%28OWL_2%29
-or
-https://www.w3.org/TR/swbp-n-aryRelations/"@en)
-AnnotationAssertion(rdfs:label co:PMD_0020022 "intensive bearer of"@en)
-AnnotationAssertion(skos:definition co:PMD_0020022 "Intensive bearer of is a chain that allows to connect objects to intensive properties through \"the matter they consist of\"."@en)
-AnnotationAssertion(skos:example co:PMD_0020022 "This piece of metal intensive bearer of some temperature."@en)
-SubObjectPropertyOf(co:PMD_0020022 owl:topObjectProperty)
-
 # Object Property: co:PMD_0020127 (refers to)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020127 "Despite has characteristic from RO does not have any domain constraints, it is still not possible to directly connect an instance of a process with an instance of a SDC. 
@@ -2022,15 +1975,23 @@ AnnotationAssertion(skos:example co:PMD_0020127 "a relation to between a process
 ObjectPropertyDomain(co:PMD_0020127 co:PMD_0000008)
 ObjectPropertyRange(co:PMD_0020127 obo:BFO_0000020)
 
-# Object Property: co:PMD_0020141 (integral bearer of)
+# Object Property: co:PMD_0025998 (has relational quality)
 
-AnnotationAssertion(rdfs:label co:PMD_0020141 "integral bearer of"@en)
-AnnotationAssertion(skos:definition co:PMD_0020141 "Integral bearer of is a property chain linking an object or object aggregate O that consits of a portion of matter PM to a SDC Q that inheres in 'portions of matter' only:
-O -consists of-> PM -bearer of-> Q"@en)
-AnnotationAssertion(skos:example co:PMD_0020141 "Talking colloquially about Intensive thermodynamic properties of an object requires this property."@en)
-SubObjectPropertyOf(co:PMD_0020141 obo:BFO_0000196)
-ObjectPropertyDomain(co:PMD_0020141 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030))
-ObjectPropertyRange(co:PMD_0020141 obo:BFO_0000020)
+AnnotationAssertion(rdfs:label co:PMD_0025998 "has relational quality"@en)
+AnnotationAssertion(skos:definition co:PMD_0025998 "a relation between an independent continuant (the bearer) and a relational quality, in which the quality specifically depends on the bearer for its existence"@en)
+AnnotationAssertion(skos:example co:PMD_0025998 "material has relational quality mass proportion m, and portion of iron has the same relational quality mass proportion m"@en)
+SubObjectPropertyOf(co:PMD_0025998 owl:topObjectProperty)
+InverseObjectProperties(co:PMD_0025998 co:PMD_0025999)
+ObjectPropertyRange(co:PMD_0025998 obo:BFO_0000145)
+
+# Object Property: co:PMD_0025999 (relational quality of)
+
+AnnotationAssertion(obo:IAO_0000116 co:PMD_0025999 "The 'relational quality of' is more strict that 'quality of' from RO, since domain is 'relational quality'. The motivtion to introduce an object property for relational qualities is the following:
+RO's 'quality of' is functional i.e., a->b, a->c => b=c. The functionality is relevant for most of the SDC -> IC triples, expect for relational qualities, which per definiton can be simultaneously inherited in >=2 ICs. Thus,  'relational quality of'  has the same intention to connect SDC to IC, however, without cardinality constraints."@en)
+AnnotationAssertion(rdfs:label co:PMD_0025999 "relational quality of"@en)
+AnnotationAssertion(skos:definition co:PMD_0025999 "a relation between a relational quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"@en)
+AnnotationAssertion(skos:example co:PMD_0025999 "mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron"@en)
+SubObjectPropertyOf(co:PMD_0025999 owl:topObjectProperty)
 
 
 ############################
@@ -2041,6 +2002,7 @@ ObjectPropertyRange(co:PMD_0020141 obo:BFO_0000020)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000004 "has measurement value"@en)
 FunctionalDataProperty(obo:IAO_0000004)
+DataPropertyDomain(obo:IAO_0000004 obo:IAO_0000032)
 DataPropertyRange(obo:IAO_0000004 xsd:double)
 
 # Data Property: obo:OBI_0001937 (has specified numeric value)
@@ -2074,19 +2036,12 @@ DataPropertyDomain(co:PMD_0000006 obo:IAO_0000030)
 
 # Class: obo:BFO_0000001 (entity)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000001 "Julius Caesar"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000001 "Verdi’s Requiem"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000001 "the Second World War"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000001 "your body mass index"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000001 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000001 "entity"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000001 "(Elucidation) An entity is anything that exists or has existed or will exist"@en)
 AnnotationAssertion(skos:example obo:BFO_0000001 "Julius Caesar; the Second World War; your body mass index; Verdi's Requiem"@en)
 
 # Class: obo:BFO_0000002 (continuant)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000002 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000002 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000002 "continuant"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000002 "(Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity"@en)
 AnnotationAssertion(skos:example obo:BFO_0000002 "A human being; a tennis ball; a cave; a region of space; someone's temperature"@en)
@@ -2097,9 +2052,6 @@ DisjointClasses(obo:BFO_0000002 ObjectSomeValuesFrom(obo:BFO_0000050 obo:BFO_000
 
 # Class: obo:BFO_0000003 (occurrent)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000003 "An entity that has temporal parts and that happens, unfolds or develops through time."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000003 "BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000003 "BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000003 "occurrent"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000003 "(Elucidation) An occurrent is an entity that unfolds itself in time or it is the start or end of such an entity or it is a temporal or spatiotemporal region"@en)
 AnnotationAssertion(skos:example obo:BFO_0000003 "As for process, history, process boundary, spatiotemporal region, zero-dimensional temporal region, one-dimensional temporal region, temporal interval, temporal instant."@en)
@@ -2109,17 +2061,6 @@ DisjointClasses(obo:BFO_0000003 ObjectSomeValuesFrom(obo:BFO_0000050 obo:BFO_000
 
 # Class: obo:BFO_0000004 (independent continuant)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "a chair"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "a heart"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "a leg"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "a molecule"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "a spatial region"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "an atom"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "an orchestra."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "an organism"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "the bottom right portion of a human torso"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000004 "the interior of your mouth"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000004 "b is an independent continuant =Def b is a continuant & there is no c such that b specifically depends on c or b generically depends on c"@en)
 AnnotationAssertion(skos:example obo:BFO_0000004 "An atom; a molecule; an organism; a heart; a chair; the bottom right portion of a human torso; a leg; the interior of your mouth; a spatial region; an orchestra"@en)
@@ -2162,15 +2103,6 @@ SubClassOf(obo:BFO_0000011 ObjectAllValuesFrom(obo:BFO_0000139 obo:BFO_0000011))
 
 # Class: obo:BFO_0000015 (process)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000015 "a process of cell-division, \\ a beating of the heart"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000015 "a process of meiosis"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000015 "a process of sleeping"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000015 "the course of a disease"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000015 "the flight of a bird"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000015 "the life of an organism"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000015 "your process of aging."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000015 "BFO 2 Reference: The realm of occurrents is less pervasively marked by the presence of natural units than is the case in the realm of independent continuants. Thus there is here no counterpart of ‘object’. In BFO 1.0 ‘process’ served as such a counterpart. In BFO 2.0 ‘process’ is, rather, the occurrent counterpart of ‘material entity’. Those natural – as contrasted with engineered, which here means: deliberately executed – units which do exist in the realm of occurrents are typically either parasitic on the existence of natural units on the continuant side, or they are fiat in nature. Thus we can count lives; we can count football games; we can count chemical reactions performed in experiments or in chemical manufacturing. We cannot count the processes taking place, for instance, in an episode of insect mating behavior.Even where natural units are identifiable, for example cycles in a cyclical process such as the beating of a heart or an organism’s sleep/wake cycle, the processes in question form a sequence with no discontinuities (temporal gaps) of the sort that we find for instance where billiard balls or zebrafish or planets are separated by clear spatial gaps. Lives of organisms are process units, but they too unfold in a continuous series from other, prior processes such as fertilization, and they unfold in turn in continuous series of post-life processes such as post-mortem decay. Clear examples of boundaries of processes are almost always of the fiat sort (midnight, a time of death as declared in an operating theater or on a death certificate, the initiation of a state of war)"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000015 "process"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000015 "(Elucidation) p is a process means p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en)
 AnnotationAssertion(skos:example obo:BFO_0000015 "An act of selling; the life of an organism; a process of sleeping; a process of cell-division; a beating of the heart; a process of meiosis; the taxiing of an aircraft; the programming of a computer"@en)
@@ -2181,11 +2113,6 @@ SubClassOf(obo:BFO_0000015 ObjectAllValuesFrom(obo:BFO_0000139 obo:BFO_0000015))
 
 # Class: obo:BFO_0000016 (disposition)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000016 "an atom of element X has the disposition to decay to an atom of element Y"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000016 "certain people have a predisposition to colon cancer"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000016 "children are innately disposed to categorize objects in certain ways."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000016 "the cell wall is disposed to filter chemicals in endocytosis and exocytosis"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000016 "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000016 "disposition"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000016 "(Elucidation) A disposition b is a realizable entity such that if b ceases to exist then its bearer is physically changed & b's realization occurs when and because this bearer is in some special physical circumstances & this realization occurs in virtue of the bearer's physical make-up"@en)
 AnnotationAssertion(skos:example obo:BFO_0000016 "An atom of element X has the disposition to decay to an atom of element Y; the cell wall is disposed to transport cellular material through endocytosis and exocytosis; certain people have a predisposition to colon cancer; children are innately disposed to categorize objects in certain ways"@en)
@@ -2194,12 +2121,6 @@ DisjointClasses(obo:BFO_0000016 obo:BFO_0000023)
 
 # Class: obo:BFO_0000017 (realizable entity)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000017 "the disposition of this piece of metal to conduct electricity."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000017 "the disposition of your blood to coagulate"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000017 "the function of your reproductive organs"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000017 "the role of being a doctor"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000017 "the role of this boundary to delineate where Utah and Colorado meet"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000017 "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000017 "realizable entity"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000017 "(Elucidation) A realizable entity is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region & which is of a type some instances of which are realized in processes of a correlated type"@en)
 AnnotationAssertion(skos:example obo:BFO_0000017 "The role of being a doctor; the role of this boundary to delineate where Utah and Colorado meet; the function of your reproductive organs; the disposition of your blood to coagulate; the disposition of this piece of metal to conduct electricity"@en)
@@ -2216,12 +2137,6 @@ SubClassOf(obo:BFO_0000018 obo:BFO_0000006)
 
 # Class: obo:BFO_0000019 (quality)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000019 "the ambient temperature of this portion of air"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000019 "the color of a tomato"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000019 "the length of the circumference of your waist"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000019 "the mass of this piece of gold."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000019 "the shape of your nose"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000019 "the shape of your nostril"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000019 "quality"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000019 "(Elucidation) A quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized"@en)
 AnnotationAssertion(skos:example obo:BFO_0000019 "The colour of a tomato; the ambient temperature of this portion of air; the length of the circumference of your waist; the shape of your nose; the shape of your nostril; the mass of this piece of gold"@en)
@@ -2230,18 +2145,6 @@ SubClassOf(obo:BFO_0000019 ObjectAllValuesFrom(obo:BFO_0000050 obo:BFO_0000019))
 
 # Class: obo:BFO_0000020 (specifically dependent continuant)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "of one-sided specifically dependent continuants: the mass of this tomato"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "the disposition of this fish to decay"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "the function of this heart: to pump blood"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "the mutual dependence of proton donors and acceptors in chemical reactions [79"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "the pink color of a medium rare piece of grilled filet mignon at its center"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "the role of being a doctor"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "the shape of this hole."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000020 "the smell of this portion of mozzarella"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000020 "b is a specifically dependent continuant =Def b is a continuant & there is some independent continuant c which is not a spatial region & which is such that b specifically depends on c"@en)
 AnnotationAssertion(skos:example obo:BFO_0000020 "(with multiple bearers) John's love for Mary; the ownership relation between John and this statue; the relation of authority between John and his subordinates"@en)
@@ -2252,15 +2155,6 @@ DisjointClasses(obo:BFO_0000020 obo:BFO_0000031)
 
 # Class: obo:BFO_0000023 (role)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000023 "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000023 "the priest role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000023 "the role of a boundary to demarcate two neighboring administrative territories"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000023 "the role of a building in serving as a military target"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000023 "the role of a stone in marking a property boundary"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000023 "the role of subject in a clinical trial"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000023 "the student role"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000023 "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000023 "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000023 "role"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000023 "(Elucidation) A role b is a realizable entity such that b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be & b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed"@en)
 AnnotationAssertion(skos:example obo:BFO_0000023 "The priest role; the student role; the role of subject in a clinical trial; the role of a stone in marking a property boundary; the role of a boundary to demarcate two neighbouring administrative territories; the role of a building in serving as a military target"@en)
@@ -2310,10 +2204,6 @@ SubClassOf(obo:BFO_0000030 obo:BFO_0000040)
 
 # Class: obo:BFO_0000031 (generically dependent continuant)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000031 "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000031 "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000031 "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000031 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000031 "generically dependent continuant"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000031 "(Elucidation) A generically dependent continuant is an entity that exists in virtue of the fact that there is at least one of what may be multiple copies which is the content or the pattern that multiple copies would share"@en)
 AnnotationAssertion(skos:example obo:BFO_0000031 "The pdf file on your laptop; the pdf file that is a copy thereof on my laptop; the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule; the content that is shared by a string of dots and dashes written on a page and the transmitted Morse code signal; the content of a sentence; an engineering blueprint"@en)
@@ -2322,10 +2212,6 @@ SubClassOf(obo:BFO_0000031 ObjectAllValuesFrom(obo:BFO_0000050 obo:BFO_0000031))
 
 # Class: obo:BFO_0000034 (function)
 
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000034 "the function of a hammer to drive in nails"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000034 "the function of a heart pacemaker to regulate the beating of a heart through electricity"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000034 "the function of amylase in saliva to break down starch into sugar"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000034 "BFO 2 Reference: In the past, we have distinguished two varieties of function, artifactual function and biological function. These are not asserted subtypes of BFO:function however, since the same function – for example: to pump, to transport – can exist both in artifacts and in biological entities. The asserted subtypes of function that would be needed in order to yield a separate monoheirarchy are not artifactual function, biological function, etc., but rather transporting function, pumping function, etc."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000034 "function"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000034 "(Elucidation) A function is a disposition that exists in virtue of its bearer's physical make-up & this physical make-up is something the bearer possesses because it came into being either through evolution (in the case of natural biological entities) or through intentional design (in the case of artefacts) in order to realize processes of a certain sort"@en)
 AnnotationAssertion(skos:example obo:BFO_0000034 "The function of a hammer to drive in nails; the function of a heart pacemaker to regulate the beating of a heart through electricity"@en)
@@ -2354,8 +2240,6 @@ DisjointClasses(obo:BFO_0000038 obo:BFO_0000148)
 
 # Class: obo:BFO_0000040 (material entity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000040 "Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000040 "(Elucidation) A material entity is an independent continuant has some portion of matter as continuant part"@en)
 AnnotationAssertion(skos:example obo:BFO_0000040 "A human being; the undetached arm of a human being; an aggregate of human beings"@en)
@@ -3101,6 +2985,23 @@ AnnotationAssertion(rdfs:label obo:CHEBI_49957 "xenon atom")
 SubClassOf(obo:CHEBI_49957 obo:CHEBI_23367)
 SubClassOf(obo:CHEBI_49957 obo:CHEBI_25585)
 
+# Class: obo:CHEBI_59999 (chemical substance)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_59999 "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types.")
+AnnotationAssertion(rdfs:comment obo:CHEBI_59999 "Frequently used for fluidic portions of matter and/or in the context of chemical reactions. Boundary to material not always sharp."@en)
+AnnotationAssertion(rdfs:label obo:CHEBI_59999 "chemical substance")
+SubClassOf(obo:CHEBI_59999 obo:CHEBI_24431)
+SubClassOf(obo:CHEBI_59999 co:PMD_0000001)
+
+# Class: obo:CHEBI_60003 (pure substance)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_60003 "A pure substance is a chemical substance composed of multiple molecules, which are all of the same kind.")
+AnnotationAssertion(rdfs:label obo:CHEBI_60003 "pure substance")
+AnnotationAssertion(rdfs:seeAlso obo:CHEBI_60003 obo:CHEBI_60003)
+AnnotationAssertion(skos:example obo:CHEBI_60003 "Pure water, a portion of iron atoms. In contrast, salt water 'has part' a portion of pure water and a portion of pure NaCl. Steel 'has part' a 'portion of pure iron', a 'portion of pure carbon' and possibly portions of other alloying- and impurity-elements."@en)
+AnnotationAssertion(co:PMD_0000060 obo:CHEBI_60003 "true"^^xsd:boolean)
+SubClassOf(obo:CHEBI_60003 obo:CHEBI_59999)
+
 # Class: obo:IAO_0000003 (measurement unit label)
 
 AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000003 "Examples of measurement unit labels are liters, inches, weight per volume."@en)
@@ -3248,14 +3149,6 @@ AnnotationAssertion(rdfs:label obo:IAO_0000109 "measurement datum"@en)
 SubClassOf(obo:IAO_0000109 obo:IAO_0000027)
 SubClassOf(obo:IAO_0000109 ObjectSomeValuesFrom(obo:OBI_0001938 obo:OBI_0001933))
 
-# Class: obo:IAO_0000225 (obsolescence reason specification)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000225 "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000225 "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology."@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000225 "obsolescence reason specification"@en)
-EquivalentClasses(obo:IAO_0000225 ObjectOneOf(obo:IAO_0000103 obo:IAO_0000226 obo:IAO_0000227 obo:IAO_0000228 obo:IAO_0000229 obo:OMO_0001000))
-SubClassOf(obo:IAO_0000225 obo:IAO_0000102)
-
 # Class: obo:IAO_0000310 (document)
 
 AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000310 "A journal article, patent application, laboratory notebook, or a book"@en)
@@ -3270,23 +3163,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000311 "A document that is the outp
 AnnotationAssertion(rdfs:label obo:IAO_0000311 "publication"@en)
 EquivalentClasses(obo:IAO_0000311 ObjectIntersectionOf(obo:IAO_0000310 ObjectAllValuesFrom(obo:OBI_0000312 obo:IAO_0000444)))
 SubClassOf(obo:IAO_0000311 obo:IAO_0000310)
-
-# Class: obo:IAO_0000409 (denotator type)
-
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000409 "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000409 "A denotator type indicates how a term should be interpreted from an ontological perspective."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000409 "Barry Smith, Werner Ceusters"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000409 "denotator type"@en)
-EquivalentClasses(obo:IAO_0000409 ObjectOneOf(obo:IAO_0000410 obo:IAO_0000420 obo:IAO_0000421))
-SubClassOf(obo:IAO_0000409 obo:IAO_0000102)
-
-# Class: obo:IAO_0000416 (time measurement datum)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000416 "A scalar measurement datum that is the result of measuring a temporal interval"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000416 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000416 "time measurement datum"@en)
-SubClassOf(obo:IAO_0000416 obo:IAO_0000109)
-SubClassOf(obo:IAO_0000416 ObjectIntersectionOf(ObjectAllValuesFrom(obo:IAO_0000039 obo:UO_0000003) ObjectAllValuesFrom(obo:IAO_0000413 obo:BFO_0000015)))
 
 # Class: obo:IAO_0000444 (publishing process)
 
@@ -3316,8 +3192,7 @@ SubClassOf(obo:IAO_0020010 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0020000)
 # Class: obo:NCBITaxon_9606 (homo sapiens)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "homo sapiens")
-EquivalentClasses(obo:NCBITaxon_9606 co:PMD_0000881)
-SubClassOf(obo:NCBITaxon_9606 obo:BFO_0000030)
+SubClassOf(obo:NCBITaxon_9606 obo:BFO_0000040)
 
 # Class: obo:OBI_0000011 (planned process)
 
@@ -3358,23 +3233,6 @@ SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectIntersecti
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000027 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067))))))
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000417 obo:IAO_0000005))
 
-# Class: obo:OBI_0000112 (specimen role)
-
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000112 "liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient.")
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000112 "A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000112 "22Jun09.  The definition includes whole organisms, and can include a human.  The link between specimen role and study subject role has been removed.  A specimen taken as part of a case study is not considered to be a population representative, while a specimen taken as representing a population, e.g. person taken from a cohort, blood specimen taken from an animal) would be considered a population representative and would also bear material sample role.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000112 "Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000112 "blood taken from animal: animal continues in study, whereas blood has role specimen.
-something taken from study subject, leaves the study and becomes the specimen."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000112 "parasite example
-- when parasite in people we study people, people are subjects and parasites are specimen
-- when parasite extracted, they become subject in the following study
-specimen can later be subject."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000112 "OBI")
-AnnotationAssertion(rdfs:label obo:OBI_0000112 "specimen role"@en)
-SubClassOf(obo:OBI_0000112 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000112 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
-
 # Class: obo:OBI_0000245 (organization)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000245 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en)
@@ -3409,6 +3267,15 @@ for now."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000245 "GROUP: OBI")
 AnnotationAssertion(rdfs:label obo:OBI_0000245 "organization"@en)
 SubClassOf(obo:OBI_0000245 obo:BFO_0000040)
+
+# Class: obo:OBI_0000260 (plan)
+
+AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000260 "The plan of researcher X to perform an experiment according to a protocol.")
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000260 "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000260 "This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the 'plan specification', and 'planned process' class, as we want to avoid to get deep into discussions of 'intend' etc.")
+AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000260 "branch derived"@en)
+AnnotationAssertion(rdfs:label obo:OBI_0000260 "plan"@en)
+SubClassOf(obo:OBI_0000260 obo:BFO_0000017)
 
 # Class: obo:OBI_0000379 (mechanical function)
 
@@ -3454,20 +3321,57 @@ AnnotationAssertion(obo:IAO_0000116 obo:OBI_0001933 "This term is currently a de
 AnnotationAssertion(rdfs:label obo:OBI_0001933 "value specification")
 SubClassOf(obo:OBI_0001933 obo:IAO_0000030)
 
-# Class: obo:OBI_0100051 (specimen)
+# Class: obo:UO_0000000 (unit)
 
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100051 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen; collecting a stone from a site."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0100051 "A material entity that is collected for potential use as an input upon which measurements or observations are performed."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0100051 "GROUP: OBI Biomaterial Branch"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0100051 "specimen"@en)
-EquivalentClasses(obo:OBI_0100051 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000112)))
-SubClassOf(obo:OBI_0100051 obo:BFO_0000040)
-SubClassOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000112))
+AnnotationAssertion(rdfs:comment obo:UO_0000000 "\"A unit of measurement is a standardized quantity of a physical quality.\" [Wikipedia:Wikipedia]")
+AnnotationAssertion(rdfs:label obo:UO_0000000 "unit")
+SubClassOf(obo:UO_0000000 obo:IAO_0000003)
 
 # Class: obo:UO_0000003 (time unit)
 
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:UO_0000003 "time derived unit")
+AnnotationAssertion(rdfs:comment obo:UO_0000003 "\"A unit which is a standard measure of the dimension in which events occur in sequence.\" [Wikipedia:Wikipedia]")
 AnnotationAssertion(rdfs:label obo:UO_0000003 "time unit")
-SubClassOf(obo:UO_0000003 obo:IAO_0000003)
+SubClassOf(obo:UO_0000003 obo:UO_0000000)
+
+# Class: obo:UO_0000076 (mole fraction)
+
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:UO_0000076 "(x)")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:UO_0000076 "chi")
+AnnotationAssertion(rdfs:comment obo:UO_0000076 "\"A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.\" [Wikipedia:Wikipedia]")
+AnnotationAssertion(rdfs:label obo:UO_0000076 "mole fraction")
+SubClassOf(obo:UO_0000076 obo:UO_1000076)
+
+# Class: obo:UO_0000163 (mass percentage)
+
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:UO_0000163 "w/w")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:UO_0000163 "weight-weight percentage")
+AnnotationAssertion(rdfs:comment obo:UO_0000163 "\"A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture.\" [Wikipedia:Wikipedia]")
+AnnotationAssertion(rdfs:label obo:UO_0000163 "mass percentage")
+SubClassOf(obo:UO_0000163 obo:UO_1000163)
+
+# Class: obo:UO_0000164 (mass volume percentage)
+
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:UO_0000164 "(w/v)")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:UO_0000164 "weight-volume percentage")
+AnnotationAssertion(rdfs:comment obo:UO_0000164 "\"A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.\" [UOC:GVG]")
+AnnotationAssertion(rdfs:label obo:UO_0000164 "mass volume percentage")
+SubClassOf(obo:UO_0000164 obo:UO_1000164)
+
+# Class: obo:UO_1000076 (mole fraction based unit)
+
+AnnotationAssertion(rdfs:label obo:UO_1000076 "mole fraction based unit")
+SubClassOf(obo:UO_1000076 obo:UO_0000000)
+
+# Class: obo:UO_1000163 (mass percentage based unit)
+
+AnnotationAssertion(rdfs:label obo:UO_1000163 "mass percentage based unit")
+SubClassOf(obo:UO_1000163 obo:UO_0000000)
+
+# Class: obo:UO_1000164 (mass volume percentage based unit)
+
+AnnotationAssertion(rdfs:label obo:UO_1000164 "mass volume percentage based unit")
+SubClassOf(obo:UO_1000164 obo:UO_0000000)
 
 # Class: co:PMD_0000000 (Material)
 
@@ -3513,7 +3417,7 @@ AnnotationAssertion(skos:definition co:PMD_0000005 "A property is a material tra
 We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000005 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000005 obo:BFO_0000017)
-SubClassOf(co:PMD_0000005 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000056 ObjectIntersectionOf(co:PMD_0000915 ObjectSomeValuesFrom(obo:BFO_0000199 obo:BFO_0000008))) ObjectSomeValuesFrom(obo:RO_0000056 ObjectIntersectionOf(co:PMD_0000950 ObjectSomeValuesFrom(obo:BFO_0000199 obo:BFO_0000008))))) ObjectSomeValuesFrom(co:PMD_0001029 co:PMD_0000915) ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000950)))
+SubClassOf(co:PMD_0000005 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000056 obo:BFO_0000015))))
 SubClassOf(co:PMD_0000005 ObjectAllValuesFrom(obo:RO_0000052 co:PMD_0000000))
 
 # Class: co:PMD_0000007 (vector field specification)
@@ -3537,14 +3441,6 @@ AnnotationAssertion(skos:definition co:PMD_0000008 "a process attribute is a dep
 AnnotationAssertion(skos:example co:PMD_0000008 "Tensile rate in a tensile testing process. Cooling rate in a quenching process"@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000008 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000008 obo:BFO_0000003)
-
-# Class: co:PMD_0000014 (plan)
-
-AnnotationAssertion(rdfs:isDefinedBy co:PMD_0000014 "http://purl.obolibrary.org/obo/OBI_0000260")
-AnnotationAssertion(rdfs:label co:PMD_0000014 "plan"@en)
-AnnotationAssertion(skos:definition co:PMD_0000014 "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.")
-AnnotationAssertion(co:PMD_0000060 co:PMD_0000014 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000014 obo:BFO_0000017)
 
 # Class: co:PMD_0000051 (simulation entity role)
 
@@ -3588,6 +3484,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000056 "Schmelzofen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000056 "melting furnace"@en)
 AnnotationAssertion(skos:definition co:PMD_0000056 "A melting furnace is a device that bears a melting function, typically designed to raise the temperature of a solid material to initiate and sustain its transformation into a melt."@en)
 AnnotationAssertion(skos:definition co:PMD_0000056 "Ein Schmelzofen ist ein Gerät, das eine Schmelzfunktion hat und in der Regel dazu dient, die Temperatur eines festen Materials zu erhöhen, um seine Umwandlung in eine Schmelze einzuleiten und aufrechtzuerhalten."@de)
+SubClassOf(co:PMD_0000056 co:PMD_0000780)
 SubClassOf(co:PMD_0000056 ObjectIntersectionOf(co:PMD_0000655 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000057)))
 
 # Class: co:PMD_0000057 (Schmelzfunktion)
@@ -3627,6 +3524,12 @@ EquivalentClasses(co:PMD_0000068 ObjectIntersectionOf(obo:BFO_0000004 ObjectSome
 SubClassOf(co:PMD_0000068 obo:BFO_0000004)
 SubClassOf(co:PMD_0000068 ObjectSomeValuesFrom(obo:BFO_0000108 obo:BFO_0000008))
 SubClassOf(co:PMD_0000068 ObjectSomeValuesFrom(co:PMD_0000070 ObjectIntersectionOf(obo:BFO_0000004 ObjectComplementOf(co:PMD_0000068))))
+
+# Class: co:PMD_0000075 (mold device)
+
+AnnotationAssertion(rdfs:label co:PMD_0000075 "mold device"@en)
+AnnotationAssertion(skos:definition co:PMD_0000075 "A form used to cast an object of a desired shape."@en)
+SubClassOf(co:PMD_0000075 co:PMD_0000602)
 
 # Class: co:PMD_0000501 (1D)
 
@@ -3709,25 +3612,14 @@ AnnotationAssertion(skos:definition co:PMD_0000510 "Role of a device that is use
 AnnotationAssertion(skos:definition co:PMD_0000510 "Rolle eines Gerätes, das zum Einstellen eines anderen Gerätes (SubjectOfAdjustmentRole) verwendet wird. Die Rolle wird in einem Einstellungsprozess realisiert."@de)
 SubClassOf(co:PMD_0000510 co:PMD_0000603)
 
-# Class: co:PMD_0000511 (age)
-
-AnnotationAssertion(rdfs:label co:PMD_0000511 "age"@en)
-AnnotationAssertion(owl:deprecated co:PMD_0000511 "true"^^xsd:boolean)
-AnnotationAssertion(skos:definition co:PMD_0000511 "The age is a quality denoting the temporal interval since a material entity came into existance.
-
-TODO: should move to \"process characteristic\""@en)
-AnnotationAssertion(co:PMD_0000060 co:PMD_0000511 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000511 obo:BFO_0000019)
-DisjointClasses(co:PMD_0000511 co:PMD_0000768)
-
 # Class: co:PMD_0000512 (aggregate state)
 
 AnnotationAssertion(rdfs:label co:PMD_0000512 "aggregate state"@en)
 AnnotationAssertion(skos:definition co:PMD_0000512 "The aggregate state is a morphological quality representing the physical state of a material, such as solid, liquid, or gas."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000512 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0000512 ObjectExactCardinality(1 obo:RO_0000059 co:PMD_0020116))
+EquivalentClasses(co:PMD_0000512 ObjectExactCardinality(1 ObjectInverseOf(obo:OBI_0001927) co:PMD_0020116))
 SubClassOf(co:PMD_0000512 co:PMD_0020131)
-SubClassOf(co:PMD_0000512 ObjectSomeValuesFrom(obo:RO_0000059 co:PMD_0020116))
+SubClassOf(co:PMD_0000512 ObjectSomeValuesFrom(ObjectInverseOf(obo:OBI_0001927) co:PMD_0020116))
 
 # Class: co:PMD_0000513 (aging process)
 
@@ -3754,25 +3646,25 @@ SubClassOf(co:PMD_0000518 co:PMD_0000522)
 
 AnnotationAssertion(rdfs:label co:PMD_0000519 "application of electric field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000519 "An application of (an) electric field is the process of subjecting a material to an electric field to observe its behavior or modify its properties."@en)
-SubClassOf(co:PMD_0000519 obo:BFO_0000015)
+SubClassOf(co:PMD_0000519 co:PMD_0000950)
 
 # Class: co:PMD_0000520 (application of heat flux)
 
 AnnotationAssertion(rdfs:label co:PMD_0000520 "application of heat flux"@en)
 AnnotationAssertion(skos:definition co:PMD_0000520 "An application of heat flux describes the process of transferring thermal energy to or from a material, often used in thermal property measurements."@en)
-SubClassOf(co:PMD_0000520 obo:BFO_0000015)
+SubClassOf(co:PMD_0000520 co:PMD_0000950)
 
 # Class: co:PMD_0000521 (application of magnetic field)
 
 AnnotationAssertion(rdfs:label co:PMD_0000521 "application of magnetic field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000521 "An application of (a) magnetic field is the process of subjecting a material to a magnetic field to study its magnetic properties or induce magnetization."@en)
-SubClassOf(co:PMD_0000521 obo:BFO_0000015)
+SubClassOf(co:PMD_0000521 co:PMD_0000950)
 
 # Class: co:PMD_0000522 (application of mechanical load)
 
 AnnotationAssertion(rdfs:label co:PMD_0000522 "application of mechanical load"@en)
 AnnotationAssertion(skos:definition co:PMD_0000522 "An application of mechanical load is the process of applying force or stress to a material to observe its response or measure its properties."@en)
-SubClassOf(co:PMD_0000522 obo:BFO_0000015)
+SubClassOf(co:PMD_0000522 co:PMD_0000950)
 
 # Class: co:PMD_0000523 (application of substance)
 
@@ -3919,7 +3811,7 @@ AnnotationAssertion(skos:definition co:PMD_0000541 "A CNC Machine is a Forming M
 AnnotationAssertion(skos:definition co:PMD_0000541 "Eine CNC-Maschine ist eine Formmaschine, die zur präzisen Steuerung von Bearbeitungswerkzeugen für Schneid-, Bohr-, Fräs- und andere Aufgaben computergestützte numerische Steuerung verwendet."@de)
 SubClassOf(co:PMD_0000541 co:PMD_0000648)
 
-# Class: co:PMD_0000542 (cnc welding machine)
+# Class: co:PMD_0000542 (CNC-Schweißmaschine)
 
 AnnotationAssertion(rdfs:label co:PMD_0000542 "CNC-Schweißmaschine"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000542 "cnc welding machine"@en)
@@ -3959,13 +3851,7 @@ SubClassOf(co:PMD_0000546 co:PMD_0000002)
 AnnotationAssertion(rdfs:label co:PMD_0000547 "change of aggregate state"@en)
 AnnotationAssertion(skos:definition co:PMD_0000547 "A change of aggregate state is a phase transition (change of phase) involving the collective state of particles in a material, such as melting or condensation."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000547 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000547 co:PMD_0000548)
-
-# Class: co:PMD_0000548 (change of phase)
-
-AnnotationAssertion(rdfs:label co:PMD_0000548 "change of phase"@en)
-AnnotationAssertion(skos:definition co:PMD_0000548 "A change of phase is a process describing the transition of a material from one state of matter to another, such as from solid to liquid or liquid to gas."@en)
-SubClassOf(co:PMD_0000548 obo:BFO_0000015)
+SubClassOf(co:PMD_0000547 co:PMD_0020136)
 
 # Class: co:PMD_0000549 (change of temperature)
 
@@ -3990,9 +3876,9 @@ SubClassOf(co:PMD_0000550 co:PMD_0000833)
 # Class: co:PMD_0000551 (chemical composition)
 
 AnnotationAssertion(rdfs:label co:PMD_0000551 "chemical composition"@en)
-AnnotationAssertion(skos:definition co:PMD_0000551 "The chemical composition is a morphological quality describing the types and proportions of elements or compounds present in a material."@en)
+AnnotationAssertion(skos:definition co:PMD_0000551 "The chemical composition is a quality describing the types and proportions of elements or compounds present in a material."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000551 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000551 co:PMD_0020131)
+SubClassOf(co:PMD_0000551 co:PMD_0025001)
 
 # Class: co:PMD_0000552 (Analyseverfahren für die chemische Zusammensetzung)
 
@@ -4106,7 +3992,7 @@ AnnotationAssertion(skos:definition co:PMD_0000564 "Eine Unterfunktion der Besch
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000564 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000564 co:PMD_0000575)
 
-# Class: co:PMD_0000565 (Beschichten Durch Löten)
+# Class: co:PMD_0000565 (coating by soldering)
 
 AnnotationAssertion(rdfs:label co:PMD_0000565 "Beschichten Durch Löten"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000565 "coating by soldering"@en)
@@ -4209,7 +4095,7 @@ SubClassOf(co:PMD_0000576 co:PMD_0000602)
 AnnotationAssertion(rdfs:label co:PMD_0000577 "composite material"@en)
 AnnotationAssertion(skos:definition co:PMD_0000577 "A Composite Material is an Engineered Material that 'consists of' some Material that has a Matrix role and of some Material that has a Filler role."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000577 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000577 ObjectIntersectionOf(co:PMD_0000002 ObjectIntersectionOf(ObjectSomeValuesFrom(co:PMD_0020005 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000845))) ObjectSomeValuesFrom(co:PMD_0020005 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0020001))))))
+SubClassOf(co:PMD_0000577 ObjectIntersectionOf(co:PMD_0000002 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000845))) ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0020001))))))
 
 # Class: co:PMD_0000578 (compounding)
 
@@ -4266,7 +4152,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000583 "Rechenprozess"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000583 "computing process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000583 "A process that involves the systematic use of computational methods and tools to perform simulations, analyses, or data transformations to achieve specific scientific or engineering goals."@en)
 AnnotationAssertion(skos:definition co:PMD_0000583 "Ein Prozess, der die systematische Verwendung von rechnerischen Methoden und Werkzeugen umfasst, um Simulationen, Analysen oder Datenumwandlungen durchzuführen, um spezifische wissenschaftliche oder technische Ziele zu erreichen."@de)
-SubClassOf(co:PMD_0000583 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 co:PMD_0000014)))
+SubClassOf(co:PMD_0000583 obo:OBI_0000011)
 
 # Class: co:PMD_0000584 (conditioning process)
 
@@ -4328,9 +4214,9 @@ SubClassOf(co:PMD_0000590 co:PMD_0000968)
 AnnotationAssertion(rdfs:label co:PMD_0000591 "crystal structure"@en)
 AnnotationAssertion(skos:definition co:PMD_0000591 "The crystal structure is a morphologic quality that describes the periodic geometric arrangement of entities in a crystalline material. The finite set of periodic geometric arrangements is described by the 14 possible Bravais Lattices in three-dimensional space."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000591 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0000591 ObjectExactCardinality(1 obo:RO_0000059 co:PMD_0020099))
+EquivalentClasses(co:PMD_0000591 ObjectExactCardinality(1 ObjectInverseOf(obo:OBI_0001927) co:PMD_0020099))
 SubClassOf(co:PMD_0000591 co:PMD_0020131)
-SubClassOf(co:PMD_0000591 ObjectSomeValuesFrom(obo:RO_0000059 co:PMD_0020099))
+SubClassOf(co:PMD_0000591 ObjectSomeValuesFrom(ObjectInverseOf(obo:OBI_0001927) co:PMD_0020099))
 
 # Class: co:PMD_0000592 (cut function)
 
@@ -4373,24 +4259,6 @@ AnnotationAssertion(skos:definition co:PMD_0000597 "The density is a universal i
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000597 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000597 co:PMD_0020131)
 
-# Class: co:PMD_0000598 (Abteilung)
-
-AnnotationAssertion(rdfs:label co:PMD_0000598 "Abteilung"@de)
-AnnotationAssertion(rdfs:label co:PMD_0000598 "department"@en)
-AnnotationAssertion(skos:definition co:PMD_0000598 "Organization that it a distinct part of an organization, typically responsible for a specific area of activity, function, or expertise, and organized under a designated leader or head to carry out its duties in alignment with the broader goals and policies of the organization."@en)
-AnnotationAssertion(co:PMD_0000060 co:PMD_0000598 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0000598 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000599)))
-SubClassOf(co:PMD_0000598 obo:OBI_0000245)
-SubClassOf(co:PMD_0000598 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000599))
-
-# Class: co:PMD_0000599 (department role)
-
-AnnotationAssertion(rdfs:comment co:PMD_0000599 "This role is also an indication that an organization is a sub section of another organization."@en)
-AnnotationAssertion(rdfs:label co:PMD_0000599 "department role"@en)
-AnnotationAssertion(skos:definition co:PMD_0000599 "A department role is a role describing a personal function or position within an organization that defines responsibilities or activities in a specified context."@en)
-AnnotationAssertion(co:PMD_0000060 co:PMD_0000599 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000599 obo:BFO_0000023)
-
 # Class: co:PMD_0000600 (deteriorative property)
 
 AnnotationAssertion(rdfs:label co:PMD_0000600 "deteriorative property"@en)
@@ -4431,7 +4299,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0000604 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000604 co:PMD_0000621)
 DisjointClasses(co:PMD_0000604 co:PMD_0000620)
 
-# Class: co:PMD_0000605 (differential scanning calorimeter)
+# Class: co:PMD_0000605 (Differential-Scanning-Kalorimeter)
 
 AnnotationAssertion(rdfs:label co:PMD_0000605 "Differential-Scanning-Kalorimeter"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000605 "differential scanning calorimeter"@en)
@@ -4694,8 +4562,8 @@ SubClassOf(co:PMD_0000638 co:PMD_0000849)
 AnnotationAssertion(rdfs:label co:PMD_0000639 "ferrous alloy"@en)
 AnnotationAssertion(skos:definition co:PMD_0000639 "A ferrous alloy is a metal describing an alloy containing iron as its principal element, often combined with other elements for enhanced properties."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000639 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000639 co:PMD_0000852)
-SubClassOf(co:PMD_0000639 ObjectSomeValuesFrom(co:PMD_0020005 co:PMD_0020026))
+SubClassOf(co:PMD_0000639 co:PMD_0025004)
+SubClassOf(co:PMD_0000639 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0020026))
 
 # Class: co:PMD_0000641 (filling)
 
@@ -4822,9 +4690,7 @@ AnnotationAssertion(obo:IAO_0000116 co:PMD_0000654 "Classified by the role in a 
 AnnotationAssertion(rdfs:label co:PMD_0000654 "functional material"@en)
 AnnotationAssertion(skos:definition co:PMD_0000654 "A Functional Material F is an Engineered Material which has the disposition to be used for an Object O (O consists of F) and O's function is other/more than mechanical load carrying."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000654 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000654 co:PMD_0000002)
-SubClassOf(co:PMD_0000654 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(ObjectInverseOf(co:PMD_0020005) ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:RO_0000085 obo:BFO_0000034)))))
-SubClassOf(co:PMD_0000654 ObjectSomeValuesFrom(ObjectInverseOf(co:PMD_0020005) ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:RO_0000085 obo:BFO_0000034))))
+SubClassOf(co:PMD_0000654 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(obo:BFO_0000050 ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:RO_0000085 obo:BFO_0000034)))))
 
 # Class: co:PMD_0000655 (Ofen)
 
@@ -4852,7 +4718,7 @@ AnnotationAssertion(skos:definition co:PMD_0000657 "A device used for separating
 AnnotationAssertion(skos:definition co:PMD_0000657 "Ein Gerät zur Trennung und Analyse von Verbindungen in einem Gasgemisch unter Verwendung einer chromatographischen Säule."@de)
 SubClassOf(co:PMD_0000657 co:PMD_0000557)
 
-# Class: co:PMD_0000658 (Gel-Permeations-Chromatographie Verfahren)
+# Class: co:PMD_0000658 (gel permeation chromatography process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000658 "Gel-Permeations-Chromatographie Verfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000658 "gel permeation chromatography process"@en)
@@ -5033,6 +4899,13 @@ SubClassOf(co:PMD_0000777 co:PMD_0000981)
 SubClassOf(co:PMD_0000777 ObjectSomeValuesFrom(co:PMD_0001029 co:PMD_0000549))
 DisjointClasses(co:PMD_0000777 co:PMD_0000978)
 
+# Class: co:PMD_0000778 (material combination)
+
+AnnotationAssertion(obo:IAO_0000112 co:PMD_0000778 "Mixing two fluids. Adding salt into water. Injecting a mouse with PBS.")
+AnnotationAssertion(rdfs:label co:PMD_0000778 "material combination")
+AnnotationAssertion(skos:definition co:PMD_0000778 "A material processing with the objective to combine two or more material entities as input into a single material entity as output."@en)
+SubClassOf(co:PMD_0000778 obo:OBI_0000011)
+
 # Class: co:PMD_0000779 (Wärmebehandlung)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000779 "Official definition can be found in: DIN EN ISO 4885:2018 Wärmebehandlung Page 21, 3.108 Wärmebehandlung - Definition"@en)
@@ -5051,7 +4924,9 @@ AnnotationAssertion(rdfs:label co:PMD_0000780 "Wärmebehandlungsgerät"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000780 "heat treatment device"@en)
 AnnotationAssertion(skos:definition co:PMD_0000780 "A device used for treating materials through heating and cooling processes to alter their properties."@en)
 AnnotationAssertion(skos:definition co:PMD_0000780 "Ein Gerät zur Behandlung von Materialien durch Erwärmungs- und Abkühlungsprozesse zur Veränderung ihrer Eigenschaften."@de)
+EquivalentClasses(co:PMD_0000780 ObjectIntersectionOf(co:PMD_0000602 ObjectSomeValuesFrom(obo:RO_0000085 ObjectUnionOf(co:PMD_0000054 co:PMD_0000055))))
 SubClassOf(co:PMD_0000780 co:PMD_0000602)
+SubClassOf(co:PMD_0000780 ObjectSomeValuesFrom(obo:RO_0000085 ObjectUnionOf(co:PMD_0000054 co:PMD_0000055)))
 
 # Class: co:PMD_0000781 (heat treatment function)
 
@@ -5135,12 +5010,6 @@ AnnotationAssertion(skos:definition co:PMD_0000791 "An Induction Furnace is a Fu
 AnnotationAssertion(skos:definition co:PMD_0000791 "Ein Induktionsofen ist ein Ofen, der Materialien durch elektromagnetische Induktion erhitzt, wobei die Wärme direkt im Material erzeugt wird."@de)
 SubClassOf(co:PMD_0000791 co:PMD_0000655)
 
-# Class: co:PMD_0000793 (initiator role)
-
-AnnotationAssertion(rdfs:label co:PMD_0000793 "initiator role"@en)
-AnnotationAssertion(skos:definition co:PMD_0000793 "An initiator role is a role describing the position or function responsible for starting or catalyzing a process, often related to material testing or experiments."@en)
-SubClassOf(co:PMD_0000793 obo:BFO_0000023)
-
 # Class: co:PMD_0000794 (injection molding machine)
 
 AnnotationAssertion(rdfs:label co:PMD_0000794 "Spritzgießmaschine"@de)
@@ -5191,7 +5060,7 @@ AnnotationAssertion(skos:definition co:PMD_0000799 "A device used for analyzing 
 AnnotationAssertion(skos:definition co:PMD_0000799 "Ein Gerät zur Analyse von Ionen in einer Probe zur Bestimmung ihrer Zusammensetzung und Konzentration."@de)
 SubClassOf(co:PMD_0000799 co:PMD_0000602)
 
-# Class: co:PMD_0000800 (ion spectroscopy)
+# Class: co:PMD_0000800 (Ionenspektroskopie)
 
 AnnotationAssertion(rdfs:label co:PMD_0000800 "Ionenspektroskopie"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000800 "ion spectroscopy"@en)
@@ -5255,7 +5124,7 @@ AnnotationAssertion(skos:definition co:PMD_0000807 "Ein Fügeverfahren, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000807 "Pouring, Embedding, Encasing"@en)
 SubClassOf(co:PMD_0000807 co:PMD_0000806)
 
-# Class: co:PMD_0000808 (joining by shaping)
+# Class: co:PMD_0000808 (Fügen Durch Umformen)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Official definition can be found in: DIN 8593-5"@en)
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Offizielle Definition findet man in: DIN 8593-5"@de)
@@ -5313,23 +5182,6 @@ AnnotationAssertion(rdfs:label co:PMD_0000813 "knife"@en)
 AnnotationAssertion(skos:definition co:PMD_0000813 "A tool with a sharp edge, typically made of metal, used for cutting food, materials, or other substances."@en)
 AnnotationAssertion(skos:definition co:PMD_0000813 "Ein Werkzeug mit einer scharfen Schneide, üblicherweise aus Metall, das zum Schneiden von Lebensmitteln, Materialien oder anderen Substanzen verwendet wird."@de)
 SubClassOf(co:PMD_0000813 co:PMD_0001998)
-
-# Class: co:PMD_0000814 (Labor)
-
-AnnotationAssertion(obo:IAO_0000119 co:PMD_0000814 "“Laboratory.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/laboratory. Accessed 24 Nov. 2022."@en)
-AnnotationAssertion(rdfs:label co:PMD_0000814 "Labor"@de)
-AnnotationAssertion(rdfs:label co:PMD_0000814 "laboratory"@en)
-AnnotationAssertion(skos:definition co:PMD_0000814 "A place equipped for experimental study in a science or for testing and analysis."@en)
-AnnotationAssertion(co:PMD_0000060 co:PMD_0000814 "true"^^xsd:boolean)
-EquivalentClasses(Annotation(co:PMD_0001032 "issue: https://github.com/materialdigital/core-ontology/issues/101") co:PMD_0000814 ObjectIntersectionOf(obo:BFO_0000029 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000815)))
-SubClassOf(co:PMD_0000814 obo:BFO_0000029)
-SubClassOf(co:PMD_0000814 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000815))
-
-# Class: co:PMD_0000815 (laboratory role)
-
-AnnotationAssertion(rdfs:label co:PMD_0000815 "laboratory role"@en)
-AnnotationAssertion(skos:definition co:PMD_0000815 "A laboratory role is a role specifying the functions or activities specific to experimental and analytical tasks performed in a laboratory setting."@en)
-SubClassOf(co:PMD_0000815 obo:BFO_0000023)
 
 # Class: co:PMD_0000816 (Laserspektroskopie)
 
@@ -5465,9 +5317,8 @@ AnnotationAssertion(skos:definition co:PMD_0000833 "A planned process that is dr
 A manufacturing process is always a transformative process."@en)
 AnnotationAssertion(skos:definition co:PMD_0000833 "Ein geplannter Prozess, der von der primären Absicht angetrieben wird, Objekte zu transformieren. Ein Herstellungsprozess ist immer ein Transformationsprozess."@de)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000833 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0000833 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 obo:BFO_0000040)))
+EquivalentClasses(co:PMD_0000833 ObjectIntersectionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 obo:BFO_0000040)))
 SubClassOf(co:PMD_0000833 obo:OBI_0000011)
-SubClassOf(co:PMD_0000833 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 co:PMD_0000014)))
 SubClassOf(co:PMD_0000833 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040))
 SubClassOf(co:PMD_0000833 ObjectSomeValuesFrom(obo:OBI_0000299 obo:BFO_0000040))
 
@@ -5501,6 +5352,8 @@ AnnotationAssertion(rdfs:label co:PMD_0000845 "matrix role"@en)
 AnnotationAssertion(skos:definition co:PMD_0000845 "Matrix is the role of a PortionOfConnectedMatter that implies to host the Filler."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000845 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000845 obo:BFO_0000023)
+DisjointClasses(co:PMD_0000845 co:PMD_0020001)
+DisjointClasses(co:PMD_0000845 co:PMD_0020002)
 
 # Class: co:PMD_0000847 (Messfunktion)
 
@@ -5521,7 +5374,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0000848 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000848 co:PMD_0000005)
 SubClassOf(co:PMD_0000848 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000522))
 
-# Class: co:PMD_0000849 (mechanical property analyzing process)
+# Class: co:PMD_0000849 (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000849 "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000849 "mechanical property analyzing process"@en)
@@ -5544,10 +5397,10 @@ AnnotationAssertion(skos:definition co:PMD_0000852 "A metal is an engineered mat
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000852 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000852 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(co:PMD_0020003 ObjectSomeValuesFrom(obo:RO_0000053 co:PMD_0050002)))))
 
-# Class: co:PMD_0000853 (metallographic texture)
+# Class: co:PMD_0000853 (crystallographic texture)
 
-AnnotationAssertion(rdfs:label co:PMD_0000853 "metallographic texture"@en)
-AnnotationAssertion(skos:definition co:PMD_0000853 "The metallographic texture is a morphological quality describing the arrangement and orientation of grains and phases in a metallic material, observed through metallographic analysis."@en)
+AnnotationAssertion(rdfs:label co:PMD_0000853 "crystallographic texture"@en)
+AnnotationAssertion(skos:definition co:PMD_0000853 "The crystallographic texture is a morphological quality describing the arrangement and orientation of grains in a metallic material, observed through crystallographic analysis."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000853 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000853 co:PMD_0020131)
 
@@ -5580,10 +5433,11 @@ SubClassOf(co:PMD_0000856 co:PMD_0000957)
 
 # Class: co:PMD_0000857 (microstructure)
 
+AnnotationAssertion(rdfs:comment co:PMD_0000857 "The focus of interest when looking at an object throught the microstructure perspective is often its morphology."@en)
 AnnotationAssertion(rdfs:label co:PMD_0000857 "microstructure"@en)
 AnnotationAssertion(skos:definition co:PMD_0000857 "The microstructure represents the small-scale structure of a material, including grains, phases, and defects, visible under a microscope."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000857 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000857 obo:BFO_0000027)
+SubClassOf(co:PMD_0000857 co:PMD_0000001)
 
 # Class: co:PMD_0000858 (microtome)
 
@@ -5664,28 +5518,21 @@ SubClassOf(co:PMD_0000868 co:PMD_0000000)
 
 AnnotationAssertion(rdfs:label co:PMD_0000869 "occurence of chemical reaction"@en)
 AnnotationAssertion(skos:definition co:PMD_0000869 "The occurrence of (a) chemical reaction is the process in which substances interact to form new chemical compounds or alter their molecular structure."@en)
-SubClassOf(co:PMD_0000869 obo:BFO_0000015)
+SubClassOf(co:PMD_0000869 co:PMD_0000915)
 
 # Class: co:PMD_0000870 (occurence of electic field)
 
 AnnotationAssertion(rdfs:label co:PMD_0000870 "occurence of electic field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000870 "The occurrence of (an) electric field is a process describing the presence or generation of an electric field in a material or system."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000870 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000870 obo:BFO_0000015)
+SubClassOf(co:PMD_0000870 co:PMD_0000915)
 
 # Class: co:PMD_0000871 (occurence of magnetic field)
 
 AnnotationAssertion(rdfs:label co:PMD_0000871 "occurence of magnetic field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000871 "The occurrence of (a) magenetic field is a process describing the presence or generation of a magnetic field in a material or system."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000871 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000871 obo:BFO_0000015)
-
-# Class: co:PMD_0000873 (operator role)
-
-AnnotationAssertion(rdfs:label co:PMD_0000873 "operator role"@en)
-AnnotationAssertion(skos:definition co:PMD_0000873 "An operator role is a role indicating responsibility for operating equipment or systems, typically in a laboratory or manufacturing setting."@en)
-AnnotationAssertion(co:PMD_0000060 co:PMD_0000873 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000873 obo:BFO_0000023)
+SubClassOf(co:PMD_0000871 co:PMD_0000915)
 
 # Class: co:PMD_0000874 (Optisches Mikroskop)
 
@@ -5704,7 +5551,7 @@ AnnotationAssertion(skos:definition co:PMD_0000875 "A Microscopy Process that us
 AnnotationAssertion(skos:example co:PMD_0000875 "An example is Light Microscopy."@en)
 SubClassOf(co:PMD_0000875 co:PMD_0000856)
 
-# Class: co:PMD_0000876 (Optisches Profilometer)
+# Class: co:PMD_0000876 (optical profilometer)
 
 AnnotationAssertion(rdfs:label co:PMD_0000876 "Optisches Profilometer"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000876 "optical profilometer"@en)
@@ -5735,20 +5582,13 @@ AnnotationAssertion(skos:definition co:PMD_0000880 "Passing of time is a process
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000880 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000880 obo:BFO_0000015)
 
-# Class: co:PMD_0000881 (person)
-
-AnnotationAssertion(rdfs:label co:PMD_0000881 "person"@en)
-AnnotationAssertion(skos:definition co:PMD_0000881 "A person is a human being."@en)
-AnnotationAssertion(co:PMD_0000060 co:PMD_0000881 "true"^^xsd:boolean)
-SubClassOf(Annotation(co:PMD_0001032 "https://github.com/materialdigital/core-ontology/issues/102") co:PMD_0000881 obo:BFO_0000030)
-
 # Class: co:PMD_0000882 (phase boundary)
 
 AnnotationAssertion(rdfs:label co:PMD_0000882 "phase boundary"@en)
 AnnotationAssertion(skos:definition co:PMD_0000882 "A phase boundary is a morphological property denoting the interface between two distinct phases of a material, such as solid-liquid or liquid-gas boundaries."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000882 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000882 co:PMD_0000864)
-SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(co:PMD_0001029 co:PMD_0000548))
+SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000547))
 SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(co:PMD_0001029 co:PMD_0000549))
 SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000520))
 SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000522))
@@ -5874,7 +5714,7 @@ AnnotationAssertion(skos:definition co:PMD_0000899 "Ein Herstellungsprozess, der
 AnnotationAssertion(skos:example co:PMD_0000899 "Casting, Sintering"@en)
 SubClassOf(co:PMD_0000899 co:PMD_0000833)
 
-# Class: co:PMD_0000900 (Urformen Durch Additive Fertigung)
+# Class: co:PMD_0000900 (primary shaping by additive manufacturing)
 
 AnnotationAssertion(rdfs:label co:PMD_0000900 "Urformen Durch Additive Fertigung"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000900 "primary shaping by additive manufacturing"@en)
@@ -5955,15 +5795,6 @@ AnnotationAssertion(skos:definition co:PMD_0000908 "Ein Urformprozess, der das F
 AnnotationAssertion(skos:example co:PMD_0000908 "Pottery"@en)
 SubClassOf(co:PMD_0000908 co:PMD_0000899)
 
-# Class: co:PMD_0000909 (project)
-
-AnnotationAssertion(rdfs:label co:PMD_0000909 "Projekt"@de)
-AnnotationAssertion(rdfs:label co:PMD_0000909 "project"@en)
-AnnotationAssertion(skos:definition co:PMD_0000909 "A series of goal-orientated (intent) activities and interactions to achieve a specific outcome."@en)
-AnnotationAssertion(skos:definition co:PMD_0000909 "Eine Reihe von zielorientierten (absichtlichen) Aktivitäten und Interaktionen, um ein bestimmtes Ergebnis zu erzielen."@de)
-AnnotationAssertion(co:PMD_0000060 co:PMD_0000909 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000909 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 co:PMD_0000014)))
-
 # Class: co:PMD_0000910 (rebound hardness)
 
 AnnotationAssertion(rdfs:label co:PMD_0000910 "rebound hardness"@en)
@@ -6005,7 +5836,6 @@ AnnotationAssertion(rdfs:label co:PMD_0000915 "responding process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000915 "The responding process is a process describing the reaction of a material or system to an applied stimulus."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000915 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000915 obo:BFO_0000015)
-DisjointClasses(co:PMD_0000915 co:PMD_0000950)
 
 # Class: co:PMD_0000916 (rheological property analyzing process)
 
@@ -6287,9 +6117,7 @@ AnnotationAssertion(obo:IAO_0000116 co:PMD_0000955 "Classified by the role in a 
 AnnotationAssertion(rdfs:label co:PMD_0000955 "structural material"@en)
 AnnotationAssertion(skos:definition co:PMD_0000955 "A Structural Material S is an Engineered Material which has the disposition to be used for an Object O (O consists of S) and O's function is primarily mechanical load carrying."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000955 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000955 co:PMD_0000654)
-SubClassOf(co:PMD_0000955 ObjectIntersectionOf(co:PMD_0000654 ObjectSomeValuesFrom(ObjectInverseOf(co:PMD_0020005) ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000379)))))
-SubClassOf(co:PMD_0000955 ObjectSomeValuesFrom(ObjectInverseOf(co:PMD_0020005) ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000379))))
+SubClassOf(co:PMD_0000955 ObjectIntersectionOf(co:PMD_0000654 ObjectSomeValuesFrom(obo:BFO_0000050 ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000379)))))
 
 # Class: co:PMD_0000956 (structural optimization simulation)
 
@@ -6825,12 +6653,12 @@ EquivalentClasses(co:PMD_0001999 ObjectIntersectionOf(co:PMD_0000602 ObjectSomeV
 SubClassOf(co:PMD_0001999 co:PMD_0000602)
 SubClassOf(co:PMD_0001999 ObjectSomeValuesFrom(obo:RO_0000091 co:PMD_0000769))
 
-# Class: co:PMD_0020000 (phase (spatial))
+# Class: co:PMD_0020000 (phase (thermodynamic))
 
-AnnotationAssertion(rdfs:label co:PMD_0020000 "phase (spatial)"@en)
-AnnotationAssertion(skos:definition co:PMD_0020000 "A phase is a 3D spatial region occupied by a Portion Of Matter whose qualities or dispositions or Material Properties are (considered) uniform at the length scale of interest."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020000 "phase (thermodynamic)"@en)
+AnnotationAssertion(skos:definition co:PMD_0020000 "A thermodynamic phase is portion of matter that is part of a thermodynamic system and has homogeneus thermodynamic properties."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020000 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0020000 obo:BFO_0000006)
+SubClassOf(co:PMD_0020000 obo:BFO_0000040)
 
 # Class: co:PMD_0020001 (filler role)
 
@@ -6853,13 +6681,15 @@ AnnotationAssertion(skos:definition co:PMD_0020003 "A crystal is an object that 
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020003 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020003 obo:BFO_0000030)
 
-# Class: co:PMD_0020004 (chemical composition specification)
+# Class: co:PMD_0020004 (composition specification)
 
-AnnotationAssertion(rdfs:label co:PMD_0020004 "chemical composition specification"@en)
-AnnotationAssertion(skos:definition co:PMD_0020004 "A 'chemical composition specification' is an information content entity that 'specifies the value of' the chemical components of a material. The chemical components that are quanitfied are the 'portions of atomic species' or 'portions of matter' that the material 'consists of'. A 'chemical composition specification' 'has continuant parts' that quantify the mass proportions or molar proportions that the material 'conists of'."@en)
-AnnotationAssertion(skos:example co:PMD_0020004 "A 'portion of steel' has a quality 'chemical composition CC'. The 'chemical composition specification CCS' specifies the value of CC and 'has continuant part' some 'scalar value specifications SVS_Fe and SVS_C'. SVS_Fe 'specifies the value of' the relational property 'mass proportion' that inheres in the 'portion of steel' as well as the 'portion of iron' that the steel 'consists of'. SVS_C 'specifies the value of' the relational property 'mass proportion' that inheres in the 'proportion of steel' as well as the 'portion of carbon' that the steel 'consists of'."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020004 "composition specification"@en)
+AnnotationAssertion(skos:definition co:PMD_0020004 "Composition specification is an information content entity that is conretized by  composition of a portion of matter and has memebers fraction specifications of portions of other matters (but not chemical elements) of which the whole portion of matter consists of (has parts)."@en)
+AnnotationAssertion(skos:example co:PMD_0020004 "Nitric acid solution has quality  composition , which concretizes the composition specification .The composition specification has parts fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications are conretized by relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020004 "true"^^xsd:boolean)
+EquivalentClasses(co:PMD_0020004 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0025001)))
 SubClassOf(co:PMD_0020004 obo:IAO_0000030)
+SubClassOf(co:PMD_0020004 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0025001))
 
 # Class: co:PMD_0020023 (metallic grain structures)
 
@@ -6867,7 +6697,7 @@ AnnotationAssertion(rdfs:label co:PMD_0020023 "metallic grain structures"@en)
 AnnotationAssertion(skos:definition co:PMD_0020023 "Metallic grain structures are descriptors for the morphology of polycrystalline metallic materials. Polycrystalline metallic materials will typically form their grain structures as one of those categories or a transition or mixture state of those."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020023 "true"^^xsd:boolean)
 EquivalentClasses(co:PMD_0020023 ObjectOneOf(co:PMD_0020027 co:PMD_0020097 co:PMD_0020100 co:PMD_0020107 co:PMD_0020109 co:PMD_0020110 co:PMD_0020111))
-SubClassOf(co:PMD_0020023 co:PMD_0020098)
+SubClassOf(co:PMD_0020023 obo:OBI_0001930)
 
 # Class: co:PMD_0020024 (hydrogen bond)
 
@@ -6877,568 +6707,564 @@ AnnotationAssertion(skos:example co:PMD_0020024 "The bond that forms between liq
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020024 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020024 co:PMD_0050000)
 
-# Class: co:PMD_0020025 (pure substance)
+# Class: co:PMD_0020025 (obstacle role)
 
-AnnotationAssertion(rdfs:comment co:PMD_0020025 "TODO: it is not clear if we really need the 'Portion of pure substance\" or if we can just refer to the respecitve chemical entity directly (e.g. in chemical composition)."@en)
-AnnotationAssertion(rdfs:label co:PMD_0020025 "pure substance"@en)
-AnnotationAssertion(skos:altLabel co:PMD_0020025 "Portion of Chemical Entity"@en)
-AnnotationAssertion(skos:definition co:PMD_0020025 "A Pure Substance is a Portion Of Matter that 'has part' only one kind of chebi:chemical entity or other similar entity. It has no structural qualities or realizable entites beyond representing its parts of a single enitiy type."@en)
-AnnotationAssertion(skos:example co:PMD_0020025 "Pure water, a portion of iron atoms. Refer to: http://purl.obolibrary.org/obo/CHEBI_24431
-In contrast, salt water 'consists of' a portion of pure water and a portion of pure NaCl. Steel 'consists of ' a 'portion of pure iron', a 'portion of pure carbon' and possibly portions of other alloying- and impurity-elements."@en)
-AnnotationAssertion(co:PMD_0000060 co:PMD_0020025 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0020025 co:PMD_0000001)
+AnnotationAssertion(rdfs:label co:PMD_0020025 "obstacle role"@en)
+AnnotationAssertion(skos:definition co:PMD_0020025 "An obstacle role is a role of an independent continuant C that is realized in a motion process and indictes that C hinders the motion of a participant in the process."@en)
+AnnotationAssertion(skos:example co:PMD_0020025 "A precipitate or grain boundary may hinder the motion of a dislocation."@en)
+SubClassOf(co:PMD_0020025 obo:BFO_0000023)
 
 # Class: co:PMD_0020026 (portion of iron)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020026 "A Portion Of Matter that consists of only Iron atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020026 "portion of iron"@en)
 AnnotationAssertion(skos:definition co:PMD_0020026 "A 'Portion Of Iron' is a 'Poriton Of Pure Substance' that 'consists of' only chebi:iron atom."@en)
-EquivalentClasses(co:PMD_0020026 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_18248)))
-SubClassOf(co:PMD_0020026 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020026 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_18248)))
+SubClassOf(co:PMD_0020026 co:PMD_0020140)
 
 # Class: co:PMD_0020028 (portion of indium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020028 "A Portion Of Matter that consists of only indium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020028 "portion of indium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020028 "A 'Portion Of Indium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:indium atom."@en)
-EquivalentClasses(co:PMD_0020028 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30430)))
-SubClassOf(co:PMD_0020028 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020028 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30430)))
+SubClassOf(co:PMD_0020028 co:PMD_0020140)
 
 # Class: co:PMD_0020029 (portion of chromium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020029 "A Portion Of Matter that consists of only chromium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020029 "portion of chromium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020029 "A 'Portion Of Chromium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:chromium atom."@en)
-EquivalentClasses(co:PMD_0020029 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_28073)))
-SubClassOf(co:PMD_0020029 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020029 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_28073)))
+SubClassOf(co:PMD_0020029 co:PMD_0020140)
 
 # Class: co:PMD_0020030 (portion of carbon)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020030 "A Portion Of Matter that consists of only carbon atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020030 "portion of carbon"@en)
 AnnotationAssertion(skos:definition co:PMD_0020030 "A 'Portion Of Carbon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:carbon atom."@en)
-EquivalentClasses(co:PMD_0020030 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27594)))
-SubClassOf(co:PMD_0020030 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020030 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27594)))
+SubClassOf(co:PMD_0020030 co:PMD_0020140)
 
 # Class: co:PMD_0020031 (portion of germanium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020031 "A Portion Of Matter that consists of only germanium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020031 "portion of germanium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020031 "A 'Portion Of Germanium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:germanium atom."@en)
-EquivalentClasses(co:PMD_0020031 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30441)))
-SubClassOf(co:PMD_0020031 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020031 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30441)))
+SubClassOf(co:PMD_0020031 co:PMD_0020140)
 
 # Class: co:PMD_0020032 (portion of tungsten)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020032 "A Portion Of Matter that consists of only tungsten atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020032 "portion of tungsten"@en)
 AnnotationAssertion(skos:definition co:PMD_0020032 "A 'Portion Of Tungsten' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tungsten."@en)
-EquivalentClasses(co:PMD_0020032 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27998)))
-SubClassOf(co:PMD_0020032 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020032 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27998)))
+SubClassOf(co:PMD_0020032 co:PMD_0020140)
 
 # Class: co:PMD_0020033 (portion of erbium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020033 "A Portion Of Matter that consists of only erbium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020033 "portion of erbium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020033 "A 'Portion Of Erbium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:erbium."@en)
-EquivalentClasses(co:PMD_0020033 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33379)))
-SubClassOf(co:PMD_0020033 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020033 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33379)))
+SubClassOf(co:PMD_0020033 co:PMD_0020140)
 
 # Class: co:PMD_0020034 (portion of molybdenum)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020034 "A Portion Of Matter that consists of only molybdenum atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020034 "portion of molybdenum"@en)
 AnnotationAssertion(skos:definition co:PMD_0020034 "A 'Portion Of Molybdenum' is a 'Portion Of Pure Substance' that 'consists of' only chebi:molybdenum atom."@en)
-EquivalentClasses(co:PMD_0020034 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_28685)))
-SubClassOf(co:PMD_0020034 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020034 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_28685)))
+SubClassOf(co:PMD_0020034 co:PMD_0020140)
 
 # Class: co:PMD_0020035 (portion of niobium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020035 "A Portion Of Matter that consists of only niobium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020035 "portion of niobium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020035 "A 'Portion Of Niobium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:niobium atom."@en)
-EquivalentClasses(co:PMD_0020035 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33344)))
-SubClassOf(co:PMD_0020035 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020035 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33344)))
+SubClassOf(co:PMD_0020035 co:PMD_0020140)
 
 # Class: co:PMD_0020036 (portion of rhenium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020036 "A Portion Of Matter that consists of only rhenium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020036 "portion of rhenium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020036 "A 'Portion Of Rhenium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:rhenium atom."@en)
-EquivalentClasses(co:PMD_0020036 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_49882)))
-SubClassOf(co:PMD_0020036 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020036 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_49882)))
+SubClassOf(co:PMD_0020036 co:PMD_0020140)
 
 # Class: co:PMD_0020037 (portion of lithium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020037 "A Portion Of Matter that consists of only lithium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020037 "portion of lithium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020037 "A 'Portion Of Lithium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:lithium atom."@en)
-EquivalentClasses(co:PMD_0020037 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30145)))
-SubClassOf(co:PMD_0020037 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020037 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30145)))
+SubClassOf(co:PMD_0020037 co:PMD_0020140)
 
 # Class: co:PMD_0020038 (portion of nitrogen)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020038 "A Portion Of Matter that consists of only nitrogen atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020038 "portion of nitrogen"@en)
 AnnotationAssertion(skos:definition co:PMD_0020038 "A 'Portion Of Nitrogen' is a 'Portion Of Pure Substance' that 'consists of' only chebi:nitrogen atom."@en)
-EquivalentClasses(co:PMD_0020038 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_25555)))
-SubClassOf(co:PMD_0020038 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020038 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_25555)))
+SubClassOf(co:PMD_0020038 co:PMD_0020140)
 
 # Class: co:PMD_0020039 (portion of cobalt)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020039 "A Portion Of Matter that consists of only cobalt atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020039 "portion of cobalt"@en)
 AnnotationAssertion(skos:definition co:PMD_0020039 "A 'Portion Of Cobalt' is a 'Portion Of Pure Substance' that 'consists of' only chebi:cobalt atom."@en)
-EquivalentClasses(co:PMD_0020039 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27638)))
-SubClassOf(co:PMD_0020039 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020039 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27638)))
+SubClassOf(co:PMD_0020039 co:PMD_0020140)
 
 # Class: co:PMD_0020040 (portion of gold)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020040 "A Portion Of Matter that consists of only gold atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020040 "portion of gold"@en)
 AnnotationAssertion(skos:definition co:PMD_0020040 "A 'Portion Of Gold' is a 'Portion Of Pure Substance' that 'consists of' only chebi:gold atom."@en)
-EquivalentClasses(co:PMD_0020040 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_29287)))
-SubClassOf(co:PMD_0020040 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020040 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_29287)))
+SubClassOf(co:PMD_0020040 co:PMD_0020140)
 
 # Class: co:PMD_0020041 (portion of argon)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020041 "A Portion Of Matter that consists of only argon atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020041 "portion of argon"@en)
 AnnotationAssertion(skos:definition co:PMD_0020041 "A 'Portion Of Argon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:argon atom."@en)
-EquivalentClasses(co:PMD_0020041 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_49475)))
-SubClassOf(co:PMD_0020041 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020041 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_49475)))
+SubClassOf(co:PMD_0020041 co:PMD_0020140)
 
 # Class: co:PMD_0020042 (portion of cadmium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020042 "A Portion Of Matter that consists of only cadmium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020042 "portion of cadmium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020042 "A 'Portion Of Cadmium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:cadmium atom."@en)
-EquivalentClasses(co:PMD_0020042 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_22977)))
-SubClassOf(co:PMD_0020042 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020042 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_22977)))
+SubClassOf(co:PMD_0020042 co:PMD_0020140)
 
 # Class: co:PMD_0020043 (portion of barium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020043 "A Portion Of Matter that consists of only barium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020043 "portion of barium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020043 "A 'Portion Of Barium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:barium atom."@en)
-EquivalentClasses(co:PMD_0020043 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_32594)))
-SubClassOf(co:PMD_0020043 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020043 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_32594)))
+SubClassOf(co:PMD_0020043 co:PMD_0020140)
 
 # Class: co:PMD_0020044 (portion of tantalum)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020044 "A Portion Of Matter that consists of only tantalum atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020044 "portion of tantalum"@en)
 AnnotationAssertion(skos:definition co:PMD_0020044 "A 'Portion Of Tantalum' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tantalum atom."@en)
-EquivalentClasses(co:PMD_0020044 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33348)))
-SubClassOf(co:PMD_0020044 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020044 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33348)))
+SubClassOf(co:PMD_0020044 co:PMD_0020140)
 
 # Class: co:PMD_0020045 (portion of antimony)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020045 "A Portion Of Matter that consists of only antimony atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020045 "portion of antimony"@en)
 AnnotationAssertion(skos:definition co:PMD_0020045 "A 'Portion Of Antimony' is a 'Portion Of Pure Substance' that 'consists of' only chebi:antimony atom."@en)
-EquivalentClasses(co:PMD_0020045 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30513)))
-SubClassOf(co:PMD_0020045 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020045 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30513)))
+SubClassOf(co:PMD_0020045 co:PMD_0020140)
 
 # Class: co:PMD_0020046 (portion of potassium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020046 "A Portion Of Matter that consists of only potassium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020046 "portion of potassium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020046 "A 'Portion Of Potassium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:potassium atom."@en)
-EquivalentClasses(co:PMD_0020046 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_26216)))
-SubClassOf(co:PMD_0020046 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020046 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_26216)))
+SubClassOf(co:PMD_0020046 co:PMD_0020140)
 
 # Class: co:PMD_0020047 (portion of phosphorus)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020047 "A Portion Of Matter that consists of only phosphorus atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020047 "portion of phosphorus"@en)
 AnnotationAssertion(skos:definition co:PMD_0020047 "A 'Portion Of Phosphorus' is a 'Portion Of Pure Substance' that 'consists of' only chebi:phosphorus atom."@en)
-EquivalentClasses(co:PMD_0020047 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_28659)))
-SubClassOf(co:PMD_0020047 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020047 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_28659)))
+SubClassOf(co:PMD_0020047 co:PMD_0020140)
 
 # Class: co:PMD_0020048 (portion of boron)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020048 "A Portion Of Matter that consists of only boron atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020048 "portion of boron"@en)
 AnnotationAssertion(skos:definition co:PMD_0020048 "A 'Portion Of Boron' is a 'Portion Of Pure Substance' that 'consists of' only chebi:boron atom."@en)
-EquivalentClasses(co:PMD_0020048 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27560)))
-SubClassOf(co:PMD_0020048 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020048 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27560)))
+SubClassOf(co:PMD_0020048 co:PMD_0020140)
 
 # Class: co:PMD_0020049 (portion of helium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020049 "A Portion Of Matter that consists of only helium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020049 "portion of helium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020049 "A 'Portion Of Helium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:helium atom."@en)
-EquivalentClasses(co:PMD_0020049 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30217)))
-SubClassOf(co:PMD_0020049 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020049 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30217)))
+SubClassOf(co:PMD_0020049 co:PMD_0020140)
 
 # Class: co:PMD_0020050 (portion of silicon)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020050 "A Portion Of Matter that consists of only silicon atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020050 "portion of silicon"@en)
 AnnotationAssertion(skos:definition co:PMD_0020050 "A 'Portion Of Silicon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:silicon atom."@en)
-EquivalentClasses(co:PMD_0020050 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27573)))
-SubClassOf(co:PMD_0020050 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020050 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27573)))
+SubClassOf(co:PMD_0020050 co:PMD_0020140)
 
 # Class: co:PMD_0020051 (portion of nickel)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020051 "A Portion Of Matter that consists of only nickel atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020051 "portion of nickel"@en)
 AnnotationAssertion(skos:definition co:PMD_0020051 "A 'Portion Of Nickel' is a 'Portion Of Pure Substance' that 'consists of' only chebi:nickel atom."@en)
-EquivalentClasses(co:PMD_0020051 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_28112)))
-SubClassOf(co:PMD_0020051 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020051 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_28112)))
+SubClassOf(co:PMD_0020051 co:PMD_0020140)
 
 # Class: co:PMD_0020052 (portion of yttrium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020052 "A Portion Of Matter that consists of only yttrium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020052 "portion of yttrium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020052 "A 'Portion Of Yttrium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:yttrium atom."@en)
-EquivalentClasses(co:PMD_0020052 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33331)))
-SubClassOf(co:PMD_0020052 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020052 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33331)))
+SubClassOf(co:PMD_0020052 co:PMD_0020140)
 
 # Class: co:PMD_0020053 (portion of zirconium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020053 "A Portion Of Matter that consists of only zirconium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020053 "portion of zirconium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020053 "A 'Portion Of Zirconium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:zirconium atom."@en)
-EquivalentClasses(co:PMD_0020053 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33342)))
-SubClassOf(co:PMD_0020053 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020053 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33342)))
+SubClassOf(co:PMD_0020053 co:PMD_0020140)
 
 # Class: co:PMD_0020054 (portion of copper)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020054 "A Portion Of Matter that consists of only copper atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020054 "portion of copper"@en)
 AnnotationAssertion(skos:definition co:PMD_0020054 "A 'Portion Of Copper' is a 'Portion Of Pure Substance' that 'consists of' only chebi:copper atom."@en)
-EquivalentClasses(co:PMD_0020054 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_28694)))
-SubClassOf(co:PMD_0020054 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020054 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_28694)))
+SubClassOf(co:PMD_0020054 co:PMD_0020140)
 
 # Class: co:PMD_0020055 (portion of bohrium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020055 "A Portion Of Matter that consists of only bohrium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020055 "portion of bohrium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020055 "A 'Portion Of Bohrium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:bohrium atom."@en)
-EquivalentClasses(co:PMD_0020055 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33355)))
-SubClassOf(co:PMD_0020055 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020055 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33355)))
+SubClassOf(co:PMD_0020055 co:PMD_0020140)
 
 # Class: co:PMD_0020056 (portion of fluorine)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020056 "A Portion Of Matter that consists of only fluorine atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020056 "portion of fluorine"@en)
 AnnotationAssertion(skos:definition co:PMD_0020056 "A 'Portion Of Fluorine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:fluorine atom."@en)
-EquivalentClasses(co:PMD_0020056 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_24061)))
-SubClassOf(co:PMD_0020056 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020056 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_24061)))
+SubClassOf(co:PMD_0020056 co:PMD_0020140)
 
 # Class: co:PMD_0020057 (portion of platinum)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020057 "A Portion Of Matter that consists of only platinum atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020057 "portion of platinum"@en)
 AnnotationAssertion(skos:definition co:PMD_0020057 "A 'Portion Of Platinum' is a 'Portion Of Pure Substance' that 'consists of' only chebi:platinum."@en)
-EquivalentClasses(co:PMD_0020057 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33364)))
-SubClassOf(co:PMD_0020057 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020057 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33364)))
+SubClassOf(co:PMD_0020057 co:PMD_0020140)
 
 # Class: co:PMD_0020058 (portion of cerium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020058 "A Portion Of Matter that consists of only cerium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020058 "portion of cerium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020058 "A 'Portion Of Cerium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:cerium."@en)
-EquivalentClasses(co:PMD_0020058 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33369)))
-SubClassOf(co:PMD_0020058 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020058 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33369)))
+SubClassOf(co:PMD_0020058 co:PMD_0020140)
 
 # Class: co:PMD_0020059 (portion of sulfur)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020059 "A Portion Of Matter that consists of only sulfur atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020059 "portion of sulfur"@en)
 AnnotationAssertion(skos:definition co:PMD_0020059 "A 'Portion Of Sulfur' is a 'Portion Of Pure Substance' that 'consists of' only chebi:sulfur atom."@en)
-EquivalentClasses(co:PMD_0020059 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_26833)))
-SubClassOf(co:PMD_0020059 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020059 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_26833)))
+SubClassOf(co:PMD_0020059 co:PMD_0020140)
 
 # Class: co:PMD_0020060 (portion of lead)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020060 "A Portion Of Matter that consists of only lead atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020060 "portion of lead"@en)
 AnnotationAssertion(skos:definition co:PMD_0020060 "A 'Portion Of Lead' is a 'Portion Of Pure Substance' that 'consists of' only chebi:lead atom."@en)
-EquivalentClasses(co:PMD_0020060 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_25016)))
-SubClassOf(co:PMD_0020060 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020060 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_25016)))
+SubClassOf(co:PMD_0020060 co:PMD_0020140)
 
 # Class: co:PMD_0020061 (portion of krypton)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020061 "A Portion Of Matter that consists of only krypton atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020061 "portion of krypton"@en)
 AnnotationAssertion(skos:definition co:PMD_0020061 "A 'Portion Of Krypton' is a 'Portion Of Pure Substance' that 'consists of' only chebi:krypton atom."@en)
-EquivalentClasses(co:PMD_0020061 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_49696)))
-SubClassOf(co:PMD_0020061 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020061 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_49696)))
+SubClassOf(co:PMD_0020061 co:PMD_0020140)
 
 # Class: co:PMD_0020062 (portion of bismuth)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020062 "A Portion Of Matter that consists of only bismuth atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020062 "portion of bismuth"@en)
 AnnotationAssertion(skos:definition co:PMD_0020062 "A 'Portion Of Bismuth' is a 'Portion Of Pure Substance' that 'consists of' only chebi:bismuth atom."@en)
-EquivalentClasses(co:PMD_0020062 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33301)))
-SubClassOf(co:PMD_0020062 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020062 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33301)))
+SubClassOf(co:PMD_0020062 co:PMD_0020140)
 
 # Class: co:PMD_0020063 (portion of neon)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020063 "A Portion Of Matter that consists of only neon atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020063 "portion of neon"@en)
 AnnotationAssertion(skos:definition co:PMD_0020063 "A 'Portion Of Neon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:neon atom."@en)
-EquivalentClasses(co:PMD_0020063 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33310)))
-SubClassOf(co:PMD_0020063 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020063 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33310)))
+SubClassOf(co:PMD_0020063 co:PMD_0020140)
 
 # Class: co:PMD_0020064 (portion of thallium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020064 "A Portion Of Matter that consists of only thallium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020064 "portion of thallium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020064 "A 'Portion Of Thallium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:thallium."@en)
-EquivalentClasses(co:PMD_0020064 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30440)))
-SubClassOf(co:PMD_0020064 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020064 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30440)))
+SubClassOf(co:PMD_0020064 co:PMD_0020140)
 
 # Class: co:PMD_0020065 (portion of selenium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020065 "A Portion Of Matter that consists of only selenium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020065 "portion of selenium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020065 "A 'Portion Of Selenium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:selenium atom."@en)
-EquivalentClasses(co:PMD_0020065 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27568)))
-SubClassOf(co:PMD_0020065 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020065 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27568)))
+SubClassOf(co:PMD_0020065 co:PMD_0020140)
 
 # Class: co:PMD_0020066 (portion of ruthenium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020066 "A Portion Of Matter that consists of only ruthenium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020066 "portion of ruthenium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020066 "A 'Portion Of Ruthenium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:ruthenium atom."@en)
-EquivalentClasses(co:PMD_0020066 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30682)))
-SubClassOf(co:PMD_0020066 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020066 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30682)))
+SubClassOf(co:PMD_0020066 co:PMD_0020140)
 
 # Class: co:PMD_0020067 (portion of magnesium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020067 "A Portion Of Matter that consists of only magnesium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020067 "portion of magnesium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020067 "A 'Portion Of Magnesium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:magnesium atom."@en)
-EquivalentClasses(co:PMD_0020067 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_25107)))
-SubClassOf(co:PMD_0020067 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020067 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_25107)))
+SubClassOf(co:PMD_0020067 co:PMD_0020140)
 
 # Class: co:PMD_0020068 (portion of zinc)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020068 "A Portion Of Matter that consists of only zinc atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020068 "portion of zinc"@en)
 AnnotationAssertion(skos:definition co:PMD_0020068 "A 'Portion Of Zinc' is a 'Portion Of Pure Substance' that 'consists of' only chebi:zinc atom."@en)
-EquivalentClasses(co:PMD_0020068 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27363)))
-SubClassOf(co:PMD_0020068 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020068 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27363)))
+SubClassOf(co:PMD_0020068 co:PMD_0020140)
 
 # Class: co:PMD_0020069 (portion of mercury)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020069 "A Portion Of Matter that consists of only mercury atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020069 "portion of mercury"@en)
 AnnotationAssertion(skos:definition co:PMD_0020069 "A 'Portion Of Mercury' is a 'Portion Of Pure Substance' that 'consists of' only chebi:mercury atom."@en)
-EquivalentClasses(co:PMD_0020069 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_25195)))
-SubClassOf(co:PMD_0020069 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020069 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_25195)))
+SubClassOf(co:PMD_0020069 co:PMD_0020140)
 
 # Class: co:PMD_0020070 (portion of xenon)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020070 "A Portion Of Matter that consists of only xenon atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020070 "portion of xenon"@en)
 AnnotationAssertion(skos:definition co:PMD_0020070 "A 'Portion Of Xenon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:xenon atom."@en)
-EquivalentClasses(co:PMD_0020070 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_49957)))
-SubClassOf(co:PMD_0020070 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020070 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_49957)))
+SubClassOf(co:PMD_0020070 co:PMD_0020140)
 
 # Class: co:PMD_0020071 (portion of aluminium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020071 "A Portion Of Matter that consists of only aluminium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020071 "portion of aluminium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020071 "A 'Portion Of Aluminium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:aluminium atom."@en)
-EquivalentClasses(co:PMD_0020071 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_28984)))
-SubClassOf(co:PMD_0020071 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020071 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_28984)))
+SubClassOf(co:PMD_0020071 co:PMD_0020140)
 
 # Class: co:PMD_0020072 (portion of sodium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020072 "A Portion Of Matter that consists of only sodium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020072 "portion of sodium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020072 "A 'Portion Of Sodium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:sodium atom."@en)
-EquivalentClasses(co:PMD_0020072 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_26708)))
-SubClassOf(co:PMD_0020072 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020072 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_26708)))
+SubClassOf(co:PMD_0020072 co:PMD_0020140)
 
 # Class: co:PMD_0020073 (portion of iodine)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020073 "A Portion Of Matter that consists of only iodine atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020073 "portion of iodine"@en)
 AnnotationAssertion(skos:definition co:PMD_0020073 "A 'Portion Of Iodine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:iodine atom."@en)
-EquivalentClasses(co:PMD_0020073 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_24859)))
-SubClassOf(co:PMD_0020073 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020073 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_24859)))
+SubClassOf(co:PMD_0020073 co:PMD_0020140)
 
 # Class: co:PMD_0020074 (portion of caesium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020074 "A Portion Of Matter that consists of only caesium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020074 "portion of caesium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020074 "A 'Portion Of Caesium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:caesium atom."@en)
-EquivalentClasses(co:PMD_0020074 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30514)))
-SubClassOf(co:PMD_0020074 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020074 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30514)))
+SubClassOf(co:PMD_0020074 co:PMD_0020140)
 
 # Class: co:PMD_0020075 (portion of chlorine)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020075 "A Portion Of Matter that consists of only chlorine atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020075 "portion of chlorine"@en)
 AnnotationAssertion(skos:definition co:PMD_0020075 "A 'Portion Of Chlorine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:chlorine atom."@en)
-EquivalentClasses(co:PMD_0020075 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_23116)))
-SubClassOf(co:PMD_0020075 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020075 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_23116)))
+SubClassOf(co:PMD_0020075 co:PMD_0020140)
 
 # Class: co:PMD_0020076 (portion of silver)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020076 "A Portion Of Matter that consists of only silver atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020076 "portion of silver"@en)
 AnnotationAssertion(skos:definition co:PMD_0020076 "A 'Portion Of Silver' is a 'Portion Of Pure Substance' that 'consists of' only chebi:silver atom."@en)
-EquivalentClasses(co:PMD_0020076 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30512)))
-SubClassOf(co:PMD_0020076 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020076 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30512)))
+SubClassOf(co:PMD_0020076 co:PMD_0020140)
 
 # Class: co:PMD_0020077 (portion of samarium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020077 "A Portion Of Matter that consists of only samarium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020077 "portion of samarium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020077 "A 'Portion Of Samarium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:samarium atom."@en)
-EquivalentClasses(co:PMD_0020077 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33374)))
-SubClassOf(co:PMD_0020077 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020077 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33374)))
+SubClassOf(co:PMD_0020077 co:PMD_0020140)
 
 # Class: co:PMD_0020078 (portion of manganese)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020078 "A Portion Of Matter that consists of only manganese atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020078 "portion of manganese"@en)
 AnnotationAssertion(skos:definition co:PMD_0020078 "A 'Portion Of Manganese' is a 'Portion Of Pure Substance' that 'consists of' only chebi:manganese atom."@en)
-EquivalentClasses(co:PMD_0020078 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_18291)))
-SubClassOf(co:PMD_0020078 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020078 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_18291)))
+SubClassOf(co:PMD_0020078 co:PMD_0020140)
 
 # Class: co:PMD_0020079 (portion of arsenic)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020079 "A Portion Of Matter that consists of only arsenic atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020079 "portion of arsenic"@en)
 AnnotationAssertion(skos:definition co:PMD_0020079 "A 'Portion Of Arsenic' is a 'Portion Of Pure Substance' that 'consists of' only chebi:arsenic atom."@en)
-EquivalentClasses(co:PMD_0020079 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27563)))
-SubClassOf(co:PMD_0020079 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020079 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27563)))
+SubClassOf(co:PMD_0020079 co:PMD_0020140)
 
 # Class: co:PMD_0020080 (portion of beryllium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020080 "A Portion Of Matter that consists of only beryllium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020080 "portion of beryllium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020080 "A 'Portion Of Beryllium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:beryllium atom."@en)
-EquivalentClasses(co:PMD_0020080 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30501)))
-SubClassOf(co:PMD_0020080 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020080 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30501)))
+SubClassOf(co:PMD_0020080 co:PMD_0020140)
 
 # Class: co:PMD_0020081 (portion of calcium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020081 "A Portion Of Matter that consists of only calcium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020081 "portion of calcium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020081 "A 'Portion Of Calcium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:calcium atom."@en)
-EquivalentClasses(co:PMD_0020081 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_22984)))
-SubClassOf(co:PMD_0020081 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020081 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_22984)))
+SubClassOf(co:PMD_0020081 co:PMD_0020140)
 
 # Class: co:PMD_0020082 (portion of neodymium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020082 "A Portion Of Matter that consists of only neodymium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020082 "portion of neodymium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020082 "A 'Portion Of Neodymium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:neodymium atom."@en)
-EquivalentClasses(co:PMD_0020082 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33372)))
-SubClassOf(co:PMD_0020082 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020082 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33372)))
+SubClassOf(co:PMD_0020082 co:PMD_0020140)
 
 # Class: co:PMD_0020083 (portion of hydrogen)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020083 "A Portion Of Matter that consists of only hydrogen atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020083 "portion of hydrogen"@en)
 AnnotationAssertion(skos:definition co:PMD_0020083 "A 'Portion Of Hydrogen' is a 'Portion Of Pure Substance' that 'consists of' only chebi:hydrogen atom."@en)
-EquivalentClasses(co:PMD_0020083 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_49637)))
-SubClassOf(co:PMD_0020083 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020083 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_49637)))
+SubClassOf(co:PMD_0020083 co:PMD_0020140)
 
 # Class: co:PMD_0020084 (portion of osmium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020084 "A Portion Of Matter that consists of only osmium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020084 "portion of osmium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020084 "A 'Portion Of Osmium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:osmium atom."@en)
-EquivalentClasses(co:PMD_0020084 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_30687)))
-SubClassOf(co:PMD_0020084 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020084 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_30687)))
+SubClassOf(co:PMD_0020084 co:PMD_0020140)
 
 # Class: co:PMD_0020085 (portion of iridium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020085 "A Portion Of Matter that consists of only iridium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020085 "portion of iridium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020085 "A 'Portion Of Iridium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:iridium atom."@en)
-EquivalentClasses(co:PMD_0020085 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_49666)))
-SubClassOf(co:PMD_0020085 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020085 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_49666)))
+SubClassOf(co:PMD_0020085 co:PMD_0020140)
 
 # Class: co:PMD_0020086 (portion of gallium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020086 "A Portion Of Matter that consists of only gallium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020086 "portion of gallium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020086 "A 'Portion Of Gallium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:gallium atom."@en)
-EquivalentClasses(co:PMD_0020086 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_49631)))
-SubClassOf(co:PMD_0020086 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020086 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_49631)))
+SubClassOf(co:PMD_0020086 co:PMD_0020140)
 
 # Class: co:PMD_0020087 (portion of bromine)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020087 "A Portion Of Matter that consists of only bromine atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020087 "portion of bromine"@en)
 AnnotationAssertion(skos:definition co:PMD_0020087 "A 'Portion Of Bromine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:bromine atom."@en)
-EquivalentClasses(co:PMD_0020087 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_22927)))
-SubClassOf(co:PMD_0020087 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020087 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_22927)))
+SubClassOf(co:PMD_0020087 co:PMD_0020140)
 
 # Class: co:PMD_0020088 (portion of tin)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020088 "A Portion Of Matter that consists of only tin atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020088 "portion of tin"@en)
 AnnotationAssertion(skos:definition co:PMD_0020088 "A 'Portion Of Tin' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tin atom."@en)
-EquivalentClasses(co:PMD_0020088 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27007)))
-SubClassOf(co:PMD_0020088 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020088 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27007)))
+SubClassOf(co:PMD_0020088 co:PMD_0020140)
 
 # Class: co:PMD_0020089 (portion of hafnium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020089 "A Portion Of Matter that consists of only hafnium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020089 "portion of hafnium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020089 "A 'Portion Of Hafnium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:hafnium atom."@en)
-EquivalentClasses(co:PMD_0020089 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33343)))
-SubClassOf(co:PMD_0020089 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020089 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33343)))
+SubClassOf(co:PMD_0020089 co:PMD_0020140)
 
 # Class: co:PMD_0020090 (portion of uranium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020090 "A Portion Of Matter that consists of only uranium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020090 "portion of uranium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020090 "A 'Portion Of Uranium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:uranium atom."@en)
-EquivalentClasses(co:PMD_0020090 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27214)))
-SubClassOf(co:PMD_0020090 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020090 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27214)))
+SubClassOf(co:PMD_0020090 co:PMD_0020140)
 
 # Class: co:PMD_0020091 (portion of oxygen)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020091 "A Portion Of Matter that consists of only oxygen atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020091 "portion of oxygen"@en)
 AnnotationAssertion(skos:definition co:PMD_0020091 "A 'Portion Of Oxygen' is a 'Portion Of Pure Substance' that 'consists of' only chebi:oxygen atom."@en)
-EquivalentClasses(co:PMD_0020091 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_25805)))
-SubClassOf(co:PMD_0020091 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020091 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_25805)))
+SubClassOf(co:PMD_0020091 co:PMD_0020140)
 
 # Class: co:PMD_0020092 (portion of palladium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020092 "A Portion Of Matter that consists of only palladium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020092 "portion of palladium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020092 "A 'Portion Of Palladium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:palladium."@en)
-EquivalentClasses(co:PMD_0020092 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33363)))
-SubClassOf(co:PMD_0020092 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020092 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33363)))
+SubClassOf(co:PMD_0020092 co:PMD_0020140)
 
 # Class: co:PMD_0020093 (portion of vanadium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020093 "A Portion Of Matter that consists of only vanadium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020093 "portion of vanadium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020093 "A 'Portion Of Vanadium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:vanadium atom."@en)
-EquivalentClasses(co:PMD_0020093 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_27698)))
-SubClassOf(co:PMD_0020093 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020093 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_27698)))
+SubClassOf(co:PMD_0020093 co:PMD_0020140)
 
 # Class: co:PMD_0020094 (portion of scandium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020094 "A Portion Of Matter that consists of only scandium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020094 "portion of scandium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020094 "A 'Portion Of Scandium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:scandium atom."@en)
-EquivalentClasses(co:PMD_0020094 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33330)))
-SubClassOf(co:PMD_0020094 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020094 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33330)))
+SubClassOf(co:PMD_0020094 co:PMD_0020140)
 
 # Class: co:PMD_0020095 (portion of titanium)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020095 "A Portion Of Matter that consists of only titanium atoms."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020095 "portion of titanium"@en)
 AnnotationAssertion(skos:definition co:PMD_0020095 "A 'Portion Of Titanium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:titanium atom."@en)
-EquivalentClasses(co:PMD_0020095 ObjectIntersectionOf(co:PMD_0020025 ObjectAllValuesFrom(co:PMD_0020005 obo:CHEBI_33341)))
-SubClassOf(co:PMD_0020095 co:PMD_0020025)
+EquivalentClasses(co:PMD_0020095 ObjectIntersectionOf(co:PMD_0020140 ObjectAllValuesFrom(obo:BFO_0000051 obo:CHEBI_33341)))
+SubClassOf(co:PMD_0020095 co:PMD_0020140)
 
 # Class: co:PMD_0020096 (steel)
 
@@ -7446,7 +7272,7 @@ AnnotationAssertion(rdfs:label co:PMD_0020096 "steel"@en)
 AnnotationAssertion(skos:definition co:PMD_0020096 "Steel is a ferrous alloy that consists of iron and carbon and possibly other alloying elements (and possibly impurities)."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020096 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020096 co:PMD_0000639)
-SubClassOf(co:PMD_0020096 ObjectSomeValuesFrom(co:PMD_0020005 co:PMD_0020030))
+SubClassOf(co:PMD_0020096 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0020030))
 
 # Class: co:PMD_0020098 (nature constant)
 
@@ -7466,7 +7292,7 @@ TODO: possibly extend for 2D (Graphene etc)
 More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso"@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020099 "true"^^xsd:boolean)
 EquivalentClasses(co:PMD_0020099 ObjectOneOf(co:PMD_0020006 co:PMD_0020007 co:PMD_0020008 co:PMD_0020009 co:PMD_0020010 co:PMD_0020011 co:PMD_0020012 co:PMD_0020013 co:PMD_0020014 co:PMD_0020015 co:PMD_0020016 co:PMD_0020017 co:PMD_0020018 co:PMD_0020019))
-SubClassOf(co:PMD_0020099 co:PMD_0020098)
+SubClassOf(co:PMD_0020099 obo:OBI_0001930)
 
 # Class: co:PMD_0020101 (proportion)
 
@@ -7558,7 +7384,7 @@ AnnotationAssertion(rdfs:label co:PMD_0020116 "aggregate state value"@en)
 AnnotationAssertion(skos:definition co:PMD_0020116 "The aggregate state type is a nature constant that concretizes the aggregatge state quality."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020116 "true"^^xsd:boolean)
 EquivalentClasses(co:PMD_0020116 ObjectOneOf(co:PMD_0020117 co:PMD_0020118 co:PMD_0020119 co:PMD_0020120 co:PMD_0020121 co:PMD_0020122 co:PMD_0020123 co:PMD_0020124 co:PMD_0020125))
-SubClassOf(co:PMD_0020116 co:PMD_0020098)
+SubClassOf(co:PMD_0020116 obo:OBI_0001930)
 
 # Class: co:PMD_0020126 (foam)
 
@@ -7584,6 +7410,14 @@ AnnotationAssertion(rdfs:label co:PMD_0020129 "reversible process"@en)
 AnnotationAssertion(skos:definition co:PMD_0020129 "A reversible process is a process whose participants form a thermodynamic system with an entropy S and S remains constant during the process."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020129 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020129 obo:BFO_0000015)
+
+# Class: co:PMD_0020130 (driving force of phase in system)
+
+AnnotationAssertion(rdfs:label co:PMD_0020130 "driving force of phase in system"@en)
+AnnotationAssertion(skos:definition co:PMD_0020130 "The driving force is the the gradient of the activity of a phase in a thermodynamic system."@en)
+AnnotationAssertion(skos:example co:PMD_0020130 "For α → β: ΔG = G_β − G_α. If ΔG < 0, the transformation is thermodynamically favorable; many report the driving force as F = −ΔG > 0."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020130 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020130 obo:BFO_0000145)
 
 # Class: co:PMD_0020131 (intensive quality)
 
@@ -7621,6 +7455,24 @@ AnnotationAssertion(rdfs:label co:PMD_0020135 "stimulation target role"@en)
 AnnotationAssertion(skos:definition co:PMD_0020135 "See 'Stimulus role'"@en)
 SubClassOf(co:PMD_0020135 obo:BFO_0000023)
 
+# Class: co:PMD_0020136 (phase transformation)
+
+AnnotationAssertion(rdfs:comment co:PMD_0020136 "The number of phases involved can vary as well as the mechanisms involved can be different."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020136 "phase transformation"@en)
+AnnotationAssertion(skos:definition co:PMD_0020136 "A thermodynamic phase transformation is a process in/of a thermodynamic system, that involves the transformation of phases of the system to other phases."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020136 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020136 obo:BFO_0000015)
+
+# Class: co:PMD_0020137 (stable phase)
+
+AnnotationAssertion(rdfs:comment co:PMD_0020137 "See metastable phase"@en)
+AnnotationAssertion(rdfs:label co:PMD_0020137 "stable phase"@en)
+AnnotationAssertion(skos:definition co:PMD_0020137 "A stable phase is a phase that does not have a \"pmd:disposition of a phase to transform\" in the \"pmd:phase transformation\" it participates."@en)
+AnnotationAssertion(skos:example co:PMD_0020137 "A phase that participates in a phase transformation pt and pt that is not a metastable phase."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020137 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020137 co:PMD_0020000)
+DisjointClasses(co:PMD_0020137 co:PMD_0020149)
+
 # Class: co:PMD_0020138 (lot)
 
 AnnotationAssertion(rdfs:label co:PMD_0020138 "lot"@en)
@@ -7635,6 +7487,12 @@ AnnotationAssertion(skos:definition co:PMD_0020139 "A melt is an object (materia
 AnnotationAssertion(skos:definition co:PMD_0020139 "Eine Schmelze ist ein Objekt (eine materielle Einheit), das aufgrund des Phasenübergangs von einem Festkörper durch thermische Energiezufuhr in einem flüssigen Zustand vorliegt. In der Werkstoffkunde bezieht sich der Begriff in der Regel auf Metalle, Legierungen oder andere Stoffe, die oberhalb ihres Schmelzpunkts gehalten werden."@de)
 AnnotationAssertion(skos:example co:PMD_0020139 "A pool of molten steel during casting."@en)
 SubClassOf(co:PMD_0020139 co:PMD_0020113)
+
+# Class: co:PMD_0020140 (portion of pure chemical element)
+
+AnnotationAssertion(rdfs:label co:PMD_0020140 "portion of pure chemical element"@en)
+AnnotationAssertion(skos:definition co:PMD_0020140 "A portion of pure chemical element is a pure substance composed of multiple atoms, which are all of the same kind."@en)
+SubClassOf(co:PMD_0020140 obo:CHEBI_60003)
 
 # Class: co:PMD_0020142 (energy)
 
@@ -7668,12 +7526,28 @@ AnnotationAssertion(rdfs:label co:PMD_0020146 "catalyst"@en)
 AnnotationAssertion(skos:definition co:PMD_0020146 "Catalyst is the role of a participant in a chemical reaction that does not alter its qualities/realizable entities  after the chemical reaction."@en)
 SubClassOf(co:PMD_0020146 obo:BFO_0000023)
 
+# Class: co:PMD_0020147 (eutectoid phase transformation)
+
+AnnotationAssertion(rdfs:comment co:PMD_0020147 "It is defined on the phase diagram at fixed composition and typically proceeds by diffusion‑controlled nucleation and growth (e.g., γ → α + Fe3C producing pearlite in steels)."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020147 "eutectoid phase transformation"@de)
+AnnotationAssertion(skos:definition co:PMD_0020147 "A eutectoid phase transformation is a phase transformation in which a solid parent phase of eutectoid composition decomposes into two distinct solid daughter phases at constant temperature and pressure."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020147 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020147 co:PMD_0020136)
+
 # Class: co:PMD_0020148 (extensive quality)
 
 AnnotationAssertion(rdfs:label co:PMD_0020148 "extensive quality"@en)
 AnnotationAssertion(skos:definition co:PMD_0020148 "An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020148 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020148 obo:BFO_0000019)
+
+# Class: co:PMD_0020149 (metastable phase)
+
+AnnotationAssertion(rdfs:comment co:PMD_0020149 "The stability of a phase can only be evaluated in the context of a (possibly unknown) phase transformation process."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020149 "metastable phase"@en)
+AnnotationAssertion(skos:definition co:PMD_0020149 "A metastable phase phase_trans is a phase that has a \"pmd:disposition of a phase to transform\" disp_trans and disp_trans is realized in a \"pmd:phase transformation\" proc_trans and proc_trans has participant sys_trans and sys_trans has part phase_trans."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020149 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020149 co:PMD_0020000)
 
 # Class: co:PMD_0020150 (volume)
 
@@ -7704,6 +7578,14 @@ AnnotationAssertion(skos:definition co:PMD_0020153 "A technical system is an obj
 3. whose continuant parts are some components."@en)
 SubClassOf(co:PMD_0020153 obo:BFO_0000027)
 
+# Class: co:PMD_0020154 (precipitation (phase))
+
+AnnotationAssertion(rdfs:comment co:PMD_0020154 "It proceeds by nucleation and growth."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020154 "precipitation (phase)"@de)
+AnnotationAssertion(skos:definition co:PMD_0020154 "Precipitation from a supersaturated solid solution is a phase transformation process in which a single supersaturated parent phase decomposes into a solute‑depleted matrix and dispersed, compositionally distinct precipitate phases."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020154 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020154 co:PMD_0020136)
+
 # Class: co:PMD_0020155 (interatomic interaction energy)
 
 AnnotationAssertion(rdfs:label co:PMD_0020155 "interatomic interaction energy"@en)
@@ -7711,19 +7593,84 @@ AnnotationAssertion(skos:definition co:PMD_0020155 "Interatomic interaction ener
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020155 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020155 co:PMD_0020148)
 
+# Class: co:PMD_0020156 (peritectic phase transformation)
+
+AnnotationAssertion(rdfs:comment co:PMD_0020156 "It is marked on phase diagrams by a peritectic point and proceeds by an interfacial, diffusion‑controlled reaction that is often kinetically sluggish, leading to incomplete transformation or complex microstructures during solidification."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020156 "peritectic phase transformation"@de)
+AnnotationAssertion(skos:definition co:PMD_0020156 "A peritectic phase transformation is a phase transformation in which a liquid parent phase and an existing solid phase react on cooling to form a different solid phase (L + α → β)."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020156 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020156 co:PMD_0020136)
+
+# Class: co:PMD_0020157 (spinodal decomposition)
+
+AnnotationAssertion(rdfs:comment co:PMD_0020157 "Unlike nucleation and growth transformations, it has no nucleation barrier and proceeds by uphill diffusion and wavelength‑selective amplification of composition modulations, producing an interconnected, compositionally modulated microstructure that coarsens over time."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020157 "spinodal decomposition"@de)
+AnnotationAssertion(skos:definition co:PMD_0020157 "Spinodal decomposition is a diffusion‑controlled  continuous phase transformation in which a single homogeneous solutionspontaneously separates into two compositionally distinct phases by amplification of infinitesimal concentration fluctuations."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020157 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020157 co:PMD_0020136)
+
+# Class: co:PMD_0020158 (parent phase role)
+
+AnnotationAssertion(rdfs:label co:PMD_0020158 "parent phase role"@de)
+AnnotationAssertion(skos:definition co:PMD_0020158 "The parent phase role is the role of a phase that dissolves during the phase transformation process. As such, the bearer is a metastable phase."@en)
+SubClassOf(co:PMD_0020158 obo:BFO_0000023)
+DisjointClasses(co:PMD_0020158 co:PMD_0020159)
+
+# Class: co:PMD_0020159 (daughter phase role)
+
+AnnotationAssertion(rdfs:label co:PMD_0020159 "daughter phase role"@de)
+AnnotationAssertion(skos:definition co:PMD_0020159 "The daugther phase role is the role of a phase that forms during the phase transformation process."@en)
+SubClassOf(co:PMD_0020159 obo:BFO_0000023)
+
+# Class: co:PMD_0020160 (microconstituent (phase mixture))
+
+AnnotationAssertion(rdfs:comment co:PMD_0020160 "In metallography the term phase is sometimes used to denote microconstituents. To avoid confusion, the term phase should only be used for thermodynamic phases."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020160 "microconstituent (phase mixture)"@en)
+AnnotationAssertion(skos:definition co:PMD_0020160 "A portion of matter that has one or more thermodynamic phases arranged in a characteristic spatial configuration (morphology) as parts."@en)
+AnnotationAssertion(skos:example co:PMD_0020160 "Pearlite is a microconstituent that has as parts the thermodynamic phases ferrite (α-Fe) and cementite (Fe3C) as parts. The characteristic spatial arrangement is in that case the lamellar orientation of the phases.
+
+Martensite is a microconstituent that has as part the thermodynamic ferrite phase with characteristic morphologies and chemistry. Its presence and amount is governed by the processing path and kinetics."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020160 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020160 co:PMD_0000001)
+
+# Class: co:PMD_0020161 (activity of a phase)
+
+AnnotationAssertion(obo:IAO_0000116 co:PMD_0020161 "Definition not final"@en)
+AnnotationAssertion(rdfs:comment co:PMD_0020161 "Typical configuration independent contributions to the free energy are temperature, pressure, chemical composition and magnetic contributions.
+
+Typical configuration dependent contributions are interface energy contributions."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020161 "activity of a phase"@en)
+AnnotationAssertion(skos:definition co:PMD_0020161 "Quality of a thermodynamic phase that characterizes its free energy."@en)
+SubClassOf(co:PMD_0020161 co:PMD_0020148)
+
+# Class: co:PMD_0020162 (activation energy)
+
+AnnotationAssertion(obo:IAO_0000116 co:PMD_0020162 "Definition not final"@en)
+AnnotationAssertion(rdfs:label co:PMD_0020162 "activation energy"@en)
+AnnotationAssertion(skos:definition co:PMD_0020162 "Process attribute characterizing the kinetics of a phase transformation (aka chemical reaction)."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020162 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020162 co:PMD_0000008)
+
+# Class: co:PMD_0020163 (eutectic phase transformation)
+
+AnnotationAssertion(rdfs:label co:PMD_0020163 "eutectic phase transformation"@de)
+AnnotationAssertion(skos:definition co:PMD_0020163 "A eutectic phase transformation is a phase transformation in which a liquid parent phase decomposes into two distinct solid daughter phases at constant temperature and pressure."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020163 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020163 co:PMD_0020136)
+
+# Class: co:PMD_0020165 (disposition of a phase to transform)
+
+AnnotationAssertion(rdfs:comment co:PMD_0020165 "The disposition is grounded in the phases activity in the thermodynamic system in question."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020165 "disposition of a phase to transform"@en)
+AnnotationAssertion(skos:definition co:PMD_0020165 "The disposition of a phase to transform into another phase in a phase transformation process."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020165 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020165 obo:BFO_0000016)
+
 # Class: co:PMD_0020166 (heat (metallurgy))
 
 AnnotationAssertion(rdfs:label co:PMD_0020166 "heat (metallurgy)"@en)
 AnnotationAssertion(skos:definition co:PMD_0020166 "A heat is a fixed amount of metallic alloy that may be input to some Manifacturing Process."@en)
 SubClassOf(co:PMD_0020166 ObjectIntersectionOf(co:PMD_0020139 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000534)))
-
-# Class: co:PMD_0020199 (Fläche)
-
-AnnotationAssertion(rdfs:label co:PMD_0020199 "Fläche"@de)
-AnnotationAssertion(rdfs:label co:PMD_0020199 "area"@en)
-AnnotationAssertion(skos:definition co:PMD_0020199 "Area a two dimesional size"@en)
-AnnotationAssertion(skos:example co:PMD_0020199 "Section area or a surface area"@en)
-SubClassOf(co:PMD_0020199 co:PMD_0020132)
 
 # Class: co:PMD_0020200 (force)
 
@@ -7773,15 +7720,51 @@ AnnotationAssertion(rdfs:label co:PMD_0020207 "amount of substance"@en)
 AnnotationAssertion(skos:definition co:PMD_0020207 "Amount of substance n is a molar propotion when the whole is a object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A)."@en)
 SubClassOf(co:PMD_0020207 co:PMD_0020103)
 
-# Class: co:PMD_0020209 (operation)
+# Class: co:PMD_0025001 (composition)
 
-AnnotationAssertion(rdfs:label co:PMD_0020209 "operation"@en)
-SubClassOf(co:PMD_0020209 obo:BFO_0000015)
+AnnotationAssertion(rdfs:label co:PMD_0025001 "composition"@en)
+AnnotationAssertion(skos:definition co:PMD_0025001 "Composition is a morphological quality describing the types and proportions of compounds (but not chemical elements) present in a portion of matter."@en)
+AnnotationAssertion(skos:example co:PMD_0025001 "4 vol.% nitric acid solution, Styrene-Butadiene-Styrene (SBS) Block Copolymer with 50 vol.% of both styrene and butadiene"@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0025001 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0025001 co:PMD_0020131)
 
-# Class: co:PMD_0020210 (alteration of quality)
+# Class: co:PMD_0025002 (chemical composition specification)
 
-AnnotationAssertion(rdfs:label co:PMD_0020210 "alteration of quality"@en)
-SubClassOf(co:PMD_0020210 obo:BFO_0000015)
+AnnotationAssertion(rdfs:label co:PMD_0025002 "chemical composition specification"@en)
+AnnotationAssertion(skos:definition co:PMD_0025002 "Chemical composition specification is an information content entity that is conretized by chemical composition of a material and has memebers fraction specifications of portions of chemical elements of which the material consists of (has parts)."@en)
+AnnotationAssertion(skos:example co:PMD_0025002 "Steel has quality chemical composition , which concretizes the chemical composition specification .The chemical composition specification has parts fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these  fraction specifications are conretized by relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0025002 "true"^^xsd:boolean)
+EquivalentClasses(co:PMD_0025002 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0000551)))
+SubClassOf(co:PMD_0025002 co:PMD_0020004)
+SubClassOf(co:PMD_0025002 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0000551))
+
+# Class: co:PMD_0025003 (metallic grain structure)
+
+AnnotationAssertion(rdfs:label co:PMD_0025003 "metallic grain structure"@en)
+AnnotationAssertion(skos:definition co:PMD_0025003 "metallic grain structure characterizes the distinct phases in the microscopic structure of a metallic material. It concretizes ferrite, austenite, martensite, etc."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0025003 "false"^^xsd:boolean)
+EquivalentClasses(co:PMD_0025003 ObjectExactCardinality(1 ObjectInverseOf(obo:OBI_0001927) co:PMD_0020023))
+SubClassOf(co:PMD_0025003 co:PMD_0020131)
+SubClassOf(co:PMD_0025003 ObjectSomeValuesFrom(ObjectInverseOf(obo:OBI_0001927) co:PMD_0020023))
+
+# Class: co:PMD_0025004 (alloy)
+
+AnnotationAssertion(rdfs:label co:PMD_0025004 "alloy"@en)
+AnnotationAssertion(skos:definition co:PMD_0025004 "An alloy is a material containing any metallic element as its principal element, often combined with other elements for enhanced properties."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0025004 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0025004 co:PMD_0000852)
+
+# Class: co:PMD_0025997 (fraction value specification)
+
+AnnotationAssertion(rdfs:label co:PMD_0025997 "fraction value specification"@en)
+AnnotationAssertion(skos:definition co:PMD_0025997 "Fraction value specification is a value specification that contains information about quantative share of a part relative to a specified whole."@en)
+AnnotationAssertion(skos:example co:PMD_0025997 "2.05 wt.% of carbon in steel, 4 vol.% of nictric acid in a solution"@en)
+SubClassOf(co:PMD_0025997 obo:OBI_0001933)
+SubClassOf(co:PMD_0025997 ObjectIntersectionOf(ObjectIntersectionOf(obo:OBI_0001933 ObjectSomeValuesFrom(obo:OBI_0001927 obo:CHEBI_60003) ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(obo:CHEBI_59999 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CHEBI_60003))) ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0002351) co:PMD_0020004)) ObjectIntersectionOf(obo:OBI_0001933 ObjectSomeValuesFrom(obo:OBI_0001927 co:PMD_0020140) ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(co:PMD_0000000 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0020140))) ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0002351) co:PMD_0020004))))
+SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(obo:OBI_0001927 co:PMD_0020140))
+SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(obo:CHEBI_59999 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CHEBI_60003))))
+SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(co:PMD_0000000 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0020140))))
+SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0002351) co:PMD_0020004))
 
 # Class: co:PMD_0040001 (length)
 
@@ -8066,8 +8049,9 @@ SubClassOf(co:PMD_0050035 co:PMD_0050032)
 
 # Class: co:PMD_0050036 (biodegradable polymers)
 
+AnnotationAssertion(rdfs:isDefinedBy co:PMD_0050036 co:PMD_0200001)
 AnnotationAssertion(rdfs:label co:PMD_0050036 "biodegradable polymers"@en)
-AnnotationAssertion(skos:definition co:PMD_0050036 "Biodegradable Polymers are Polymers that can be decomposed by biological organisms into environmentally benign substances."@en)
+AnnotationAssertion(skos:definition co:PMD_0050036 "Biodegradable Polymers are Polymers that have the biodegradability disposition. They can be decomposed by biological organisms into environmentally benign substances (carbon dioxide and methane, mineral salts or new biomass) in a non-harmful timescale."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0050036 "true"^^xsd:boolean)
 AnnotationAssertion(co:PMD_0001032 co:PMD_0050036 "https://github.com/materialdigital/core-ontology/issues/126")
 EquivalentClasses(co:PMD_0050036 ObjectIntersectionOf(co:PMD_0000888 ObjectSomeValuesFrom(obo:RO_0000091 co:PMD_0200001)))
@@ -8172,6 +8156,16 @@ AnnotationAssertion(skos:definition co:PMD_0050050 "Glass-Ceramics are Non-Clay 
 AnnotationAssertion(co:PMD_0000060 co:PMD_0050050 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0050050 co:PMD_0000661)
 SubClassOf(co:PMD_0050050 co:PMD_0050049)
+
+# Class: co:PMD_0050051 (Durchmesser)
+
+AnnotationAssertion(obo:IAO_0000119 co:PMD_0050051 "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022.")
+AnnotationAssertion(rdfs:label co:PMD_0050051 "Durchmesser"@de)
+AnnotationAssertion(rdfs:label co:PMD_0050051 "diameter"@en)
+AnnotationAssertion(rdfs:seeAlso co:PMD_0050051 <https://w3id.org/pmd/co/2.0.8/Diameter>)
+AnnotationAssertion(skos:definition co:PMD_0050051 "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de)
+AnnotationAssertion(skos:definition co:PMD_0050051 "The length of a straight line through the center of an object or space."@en)
+SubClassOf(co:PMD_0050051 co:PMD_0040001)
 
 # Class: co:PMD_0050052 (leucite-based glass-ceramics)
 
@@ -8890,13 +8884,52 @@ AnnotationAssertion(skos:definition co:PMD_0050152 "Zirconium-Based Metallic Gla
 AnnotationAssertion(co:PMD_0000060 co:PMD_0050152 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0050152 co:PMD_0050149)
 
-# Class: co:PMD_0060005 (categorical measurement datum)
+# Class: co:PMD_0050153 (thickness)
 
-AnnotationAssertion(obo:IAO_0000119 co:PMD_0060005 "http://purl.obolibrary.org/obo/OBI_0000938")
-AnnotationAssertion(rdfs:label co:PMD_0060005 "categorical measurement datum"@en)
-AnnotationAssertion(skos:definition co:PMD_0060005 "A measurement datum that is reported on a categorical scale.")
-AnnotationAssertion(co:PMD_0000060 co:PMD_0060005 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0060005 obo:IAO_0000109)
+AnnotationAssertion(rdfs:label co:PMD_0050153 "Dicke"@de)
+AnnotationAssertion(rdfs:label co:PMD_0050153 "thickness"@en)
+AnnotationAssertion(rdfs:seeAlso co:PMD_0050153 <https://w3id.org/pmd/co/2.0.8/Thickness>)
+AnnotationAssertion(skos:definition co:PMD_0050153 "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de)
+AnnotationAssertion(skos:definition co:PMD_0050153 "This class describes the measured dimension in one direction of a test piece."@en)
+SubClassOf(co:PMD_0050153 co:PMD_0040001)
+
+# Class: co:PMD_0050154 (Breite)
+
+AnnotationAssertion(rdfs:label co:PMD_0050154 "Breite"@de)
+AnnotationAssertion(rdfs:label co:PMD_0050154 "width"@en)
+AnnotationAssertion(rdfs:seeAlso co:PMD_0050154 <https://w3id.org/pmd/co/2.0.8/Width>)
+AnnotationAssertion(rdfs:seeAlso co:PMD_0050154 <https://www.merriam-webster.com/dictionary/width>)
+AnnotationAssertion(skos:definition co:PMD_0050154 "Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird."@de)
+AnnotationAssertion(skos:definition co:PMD_0050154 "This class describes a horizontal measurement of an object taken at right angles to the length of the object."@en)
+SubClassOf(co:PMD_0050154 co:PMD_0040001)
+
+# Class: co:PMD_0050155 (shape)
+
+AnnotationAssertion(obo:IAO_0000119 co:PMD_0050155 "“Shape.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/shape. Accessed 13 Jan. 2023.")
+AnnotationAssertion(rdfs:label co:PMD_0050155 "Form"@de)
+AnnotationAssertion(rdfs:label co:PMD_0050155 "shape"@en)
+AnnotationAssertion(skos:definition co:PMD_0050155 "Das sichtbare Ausstattungsmerkmal (räumliche Form oder Kontur) eines bestimmten Objektes oder einer Art von Objekt."@de)
+AnnotationAssertion(skos:definition co:PMD_0050155 "The visible makeup characteristic (spatial form or contour) of a particular item or kind of item.a"@en)
+SubClassOf(co:PMD_0050155 co:PMD_0020148)
+
+# Class: co:PMD_0050156 (Geometrische Form)
+
+AnnotationAssertion(obo:IAO_0000119 co:PMD_0050156 "DIN EN ISO 6892-1:2019")
+AnnotationAssertion(rdfs:label co:PMD_0050156 "Geometrische Form"@de)
+AnnotationAssertion(rdfs:label co:PMD_0050156 "geometry shape"@en)
+AnnotationAssertion(skos:definition co:PMD_0050156 "Dieses Konzept beschreibt die geometrischen Abmessungen und das Erscheinungsbild (Form und Abmaße) einer Probe, eines Prüfkörpers oder eines Prüfstücks, wie sie üblicherweise durch eine entsprechende Norm definiert sind. Dementsprechend ist der angegebene Formwert in Übereinstimmung mit der definierenden Norm anzugeben, z. B. \"Zugprüfstück Form 1 gemäß Anhang B der Zugversuchsnorm\"."@de)
+AnnotationAssertion(skos:definition co:PMD_0050156 "This concept describes the geometric dimensions and appearance (shape and dimensions) of a sample, specimen, or test piece as usually defined by a corresponding standard. Accordingly, the shape value given is in accordance with the defining standard, e.g., ‘tensile test piece shape 1 in accordance with annex B of the tensile test standard’."@en)
+SubClassOf(co:PMD_0050156 co:PMD_0050155)
+
+# Class: co:PMD_0050157 (3D Geometrie)
+
+AnnotationAssertion(rdfs:label co:PMD_0050157 "3D Geometrie"@de)
+AnnotationAssertion(rdfs:label co:PMD_0050157 "shape 3d"@en)
+AnnotationAssertion(skos:definition co:PMD_0050157 "A shape 3D is a geometry shape that exists in three dimensions, having length, width, and height, and can be defined by its spatial properties such as volume and surface area."@en)
+AnnotationAssertion(skos:definition co:PMD_0050157 "Eine 3D Geometrie ist eine geometrische Form, die in drei Dimensionen existiert, mit Länge, Breite und Höhe, und die durch ihre räumlichen Eigenschaften wie Volumen und Oberfläche definiert werden kann."@de)
+AnnotationAssertion(skos:example co:PMD_0050157 "Beispiele sind Formen wie Würfel, Kugeln und Pyramiden."@de)
+AnnotationAssertion(skos:example co:PMD_0050157 "Examples include shapes like cubes, spheres, and pyramids."@en)
+SubClassOf(co:PMD_0050157 co:PMD_0050156)
 
 # Class: co:PMD_0060006 (device specification)
 
@@ -8932,6 +8965,7 @@ AnnotationAssertion(rdfs:label co:PMD_0200001 "Biologische Abbaubarkeit"@de)
 AnnotationAssertion(rdfs:label co:PMD_0200001 "biodegradabilty"@en)
 AnnotationAssertion(skos:definition co:PMD_0200001 "\"[Biodegradabilty] [...] is understood as the microbial conversion of all its organic constituents to carbon dioxide (or carbon dioxide and methane in conditions where oxygen is not present), new microbial biomass and mineral salts, within a timescale short enough not to lead to lasting harm or accumulation in the open environment.\""@en)
 AnnotationAssertion(skos:definition co:PMD_0200001 "\"[Biologische Abbaubarkeit] [...] beschreibt die mikrobielle Umwandlung all seiner organischen Bestandteile in Kohlendioxid oder – unter sauerstofffreien Bedingungen – in Kohlendioxid und Methan, neue mikrobielle Biomasse und Mineralsalze verstanden, und zwar innerhalb eines Zeitraums, der so kurz ist, dass es nicht zu dauerhaften Schäden oder Anreicherungen in der offenen Umwelt kommt.\""@de)
+AnnotationAssertion(skos:definition co:PMD_0200001 "Biodegradability is a disposition of a material which specifies its capability to be fully microbially converted into inorganic end products (CO₂, CH₄, mineral salts, biomass) within an environmentally non-harmful timescale."@en)
 AnnotationAssertion(co:PMD_0001032 co:PMD_0200001 "https://github.com/materialdigital/core-ontology/issues/126")
 SubClassOf(co:PMD_0200001 obo:BFO_0000016)
 
@@ -8943,11 +8977,6 @@ SubClassOf(co:PMD_0200001 obo:BFO_0000016)
 # Individual: obo:IAO_0000002 (example to be eventually removed)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000002 "example to be eventually removed"@en)
-
-# Individual: obo:IAO_0000103 (failed exploratory term)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000103 "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000103 "failed exploratory term"@en)
 
 # Individual: obo:IAO_0000120 (metadata complete)
 
@@ -8979,43 +9008,6 @@ AnnotationAssertion(rdfs:label obo:IAO_0000124 "uncurated"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000125 "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000125 "pending final vetting"@en)
 
-# Individual: obo:IAO_0000226 (placeholder removed)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000226 "placeholder removed"@en)
-
-# Individual: obo:IAO_0000227 (terms merged)
-
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000227 "An editor note should explain what were the merged terms and the reason for the merge."@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000227 "terms merged"@en)
-
-# Individual: obo:IAO_0000228 (term imported)
-
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000228 "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000228 "term imported"@en)
-
-# Individual: obo:IAO_0000229 (term split)
-
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000229 "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000229 "term split"@en)
-
-# Individual: obo:IAO_0000410 (universal)
-
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000410 "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000410 "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000410 "universal"@en)
-
-# Individual: obo:IAO_0000420 (defined class)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000420 "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000420 "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000420 "defined class"@en)
-
-# Individual: obo:IAO_0000421 (named class expression)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000421 "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000421 "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000421 "named class expression"@en)
-
 # Individual: obo:IAO_0000423 (to be replaced with external ontology term)
 
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000423 "Terms with this status should eventually replaced with a term from another ontology."@en)
@@ -9027,12 +9019,6 @@ AnnotationAssertion(rdfs:label obo:IAO_0000423 "to be replaced with external ont
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000428 "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000428 "group:OBI"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000428 "requires discussion"@en)
-
-# Individual: obo:OMO_0001000 (out of scope)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMO_0001000 "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OMO_0001000 "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."@en)
-AnnotationAssertion(rdfs:label obo:OMO_0001000 "out of scope")
 
 # Individual: co:PMD_0020006 (bravais lattice triclinic primitve)
 
@@ -9201,27 +9187,51 @@ DisjointClasses(obo:BFO_0000008 obo:BFO_0000011 obo:BFO_0000015 obo:BFO_0000035)
 DisjointClasses(obo:BFO_0000009 obo:BFO_0000018 obo:BFO_0000026 obo:BFO_0000028)
 DisjointClasses(obo:BFO_0000142 obo:BFO_0000146 obo:BFO_0000147)
 DisjointClasses(co:PMD_0000503 co:PMD_0000512 co:PMD_0000551 co:PMD_0000591 co:PMD_0000595 co:PMD_0000597 co:PMD_0000853 co:PMD_0000896 co:PMD_0000942 co:PMD_0000967 co:PMD_0020112)
+DisjointClasses(co:PMD_0000503 co:PMD_0000512 co:PMD_0000591 co:PMD_0000595 co:PMD_0000597 co:PMD_0000853 co:PMD_0000896 co:PMD_0000942 co:PMD_0000967 co:PMD_0020112 co:PMD_0025001)
+DisjointClasses(co:PMD_0000503 co:PMD_0000512 co:PMD_0000591 co:PMD_0000595 co:PMD_0000597 co:PMD_0000853 co:PMD_0000896 co:PMD_0000942 co:PMD_0000967 co:PMD_0020112 co:PMD_0025001 co:PMD_0025003)
 DisjointClasses(co:PMD_0000519 co:PMD_0000520 co:PMD_0000521 co:PMD_0000522 co:PMD_0000523 co:PMD_0000802 co:PMD_0000880)
 DisjointClasses(co:PMD_0000519 co:PMD_0000520 co:PMD_0000521 co:PMD_0000522 co:PMD_0000802)
 DisjointClasses(co:PMD_0000535 co:PMD_0000851 co:PMD_0000961 co:PMD_0000996)
 DisjointClasses(co:PMD_0000549 co:PMD_0000596 co:PMD_0000629 co:PMD_0000635 co:PMD_0000869 co:PMD_0000870 co:PMD_0000871)
 DisjointClasses(co:PMD_0000549 co:PMD_0000596 co:PMD_0000629 co:PMD_0000869 co:PMD_0000870 co:PMD_0000871)
 DisjointClasses(co:PMD_0000553 co:PMD_0000619 co:PMD_0020132 co:PMD_0020133 co:PMD_0020142 co:PMD_0020151 co:PMD_0020155)
+DisjointClasses(co:PMD_0000553 co:PMD_0000619 co:PMD_0020132 co:PMD_0020133 co:PMD_0020142 co:PMD_0020151 co:PMD_0020155 co:PMD_0020161 co:PMD_0050155)
 DisjointClasses(co:PMD_0000587 co:PMD_0000889 co:PMD_0000953)
 DisjointClasses(co:PMD_0020102 co:PMD_0020103 co:PMD_0020104)
 DisjointClasses(co:PMD_0020202 co:PMD_0020203 co:PMD_0020204)
 DifferentIndividuals(co:PMD_0020006 co:PMD_0020007 co:PMD_0020008 co:PMD_0020009 co:PMD_0020010 co:PMD_0020011 co:PMD_0020012 co:PMD_0020013 co:PMD_0020014 co:PMD_0020015 co:PMD_0020016 co:PMD_0020017 co:PMD_0020018 co:PMD_0020019)
 DifferentIndividuals(co:PMD_0020117 co:PMD_0020118 co:PMD_0020119 co:PMD_0020120 co:PMD_0020121 co:PMD_0020122 co:PMD_0020123 co:PMD_0020124 co:PMD_0020125)
 SubObjectPropertyOf(ObjectPropertyChain(obo:BFO_0000051 obo:RO_0000057) obo:RO_0000057)
+SubObjectPropertyOf(ObjectPropertyChain(obo:BFO_0000051 co:PMD_0025998) co:PMD_0025998)
 SubObjectPropertyOf(ObjectPropertyChain(obo:BFO_0000055 obo:RO_0000059) obo:STATO_0000102)
 SubObjectPropertyOf(ObjectPropertyChain(obo:RO_0001025 obo:BFO_0000050) obo:RO_0001025)
 SubObjectPropertyOf(ObjectPropertyChain(obo:RO_0002224 obo:RO_0002233) obo:RO_0002233)
 SubObjectPropertyOf(ObjectPropertyChain(obo:RO_0002230 obo:RO_0002234) obo:RO_0002234)
-SubObjectPropertyOf(ObjectPropertyChain(co:PMD_0020005 obo:BFO_0000196) co:PMD_0020022)
 DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000016 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000091 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000019 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000086 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000023 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000087 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000034 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000085 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000103 "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000103 "failed exploratory term"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000226 "placeholder removed"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000227 "An editor note should explain what were the merged terms and the reason for the merge."@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000227 "terms merged"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000228 "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000228 "term imported"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000229 "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000229 "term split"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000410 "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000410 "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000410 "universal"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000420 "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000420 "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000420 "defined class"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000421 "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000421 "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000421 "named class expression"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMO_0001000 "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:OMO_0001000 "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."@en)
+AnnotationAssertion(rdfs:label obo:OMO_0001000 "out of scope")
 AnnotationAssertion(rdfs:label dc:license "dc:license")
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6772-1943> "Martin Glauer")
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-7192-7143> "Jörg Waitelonis")
