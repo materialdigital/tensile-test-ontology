@@ -20,7 +20,8 @@ import_group:
   annotation_properties: ['rdfs:label','rdfs:comment', 'IAO:0000119','IAO:0000115', 'IAO:0000116', 'IAO:0000112', 'skos:definition', 'skos:example', 'skos:comment' ]
   products:
   - id: pmdco
-    mirror_from: https://w3id.org/pmd/co/3.0.0-alpha4
+    #mirror_from: https://w3id.org/pmd/co/3.0.0-alpha4
+    mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/src/ontology/pmdco.ttl
     module_type: mirror
   - id: nfdicore
     mirror_from: https://nfdi.fiz-karlsruhe.de/ontology
