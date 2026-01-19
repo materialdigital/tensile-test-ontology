@@ -30,6 +30,9 @@ Annotation(dcterms:title "Tensile Test Ontology (TTO)")
 Declaration(Class(<https://w3id.org/pmd/TTO_0000000>))
 Declaration(Class(<https://w3id.org/pmd/TTO_0000001>))
 Declaration(Class(<https://w3id.org/pmd/TTO_0000002>))
+Declaration(Class(<https://w3id.org/pmd/TTO_1000000>))
+Declaration(Class(<https://w3id.org/pmd/TTO_1000001>))
+Declaration(Class(pmd:PMD_0020199))
 Declaration(Class(:TTO_0000001))
 Declaration(Class(:TTO_0000002))
 Declaration(Class(:TTO_0000004))
@@ -122,6 +125,26 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000002> "Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung."@de)
 SubClassOf(<https://w3id.org/pmd/TTO_0000002> <http://purl.obolibrary.org/obo/IAO_0000027>)
 SubClassOf(<https://w3id.org/pmd/TTO_0000002> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000109>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> pmd:PMD_0000974)))
+
+# Class: <https://w3id.org/pmd/TTO_1000000> (yield strength ratio)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_1000000> "Streckgrenzenverhältnis"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_1000000> "yield strength ratio"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/TTO_1000000> "Yield strength ratio is a mechanical property which is determined as a ratio between the offset yield Rp0.2 and the ultimate tensile strength Rm."@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/TTO_1000000> "https://www.zwickroell.com/industries/materials-testing/tensile-test/yield-point/")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_1000000> "Streckgrenzenverhältnis ist eine mechanische Eigenschaft, die als Verhältnis zwischen der Dehngrenze Rp0.2 und der Zugfestigkeit Rm bestimmt wird."@de)
+AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/TTO_1000000> "Rp0.2 / Rm")
+SubClassOf(<https://w3id.org/pmd/TTO_1000000> pmd:PMD_0000848)
+
+# Class: <https://w3id.org/pmd/TTO_1000001> (offset yield point)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_1000001> "Dehngrenze"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_1000001> "offset yield point"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_1000001> "Die Dehngrenze ist eine mechanische Eigenschaft, die der Zugspannung im einaxialen Zugversuch, bei der die plastische Extensometer-Dehnung einem Prozentanteil von 0,2 % der Extensometer-Messlänge entspricht. Die Dehngrenze wird hauptsächlich für Werkstoffe verwendet, die keine ausgeprägte Streckgrenze aufweisen."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_1000001> "The offset yield point is a mechanical property, which characterizes the tensile stress in a uniaxial tensile test, at which the plastic elongation corresponds to a percentage of 0.2% of the extensometer gauge length. The offset yield point is mainly used for materials that do not have a pronounced yield strength."@en)
+AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/TTO_1000001> "https://www.zwickroell.com/de/branchen/werkstoffpruefung-materialpruefung/zugversuch/streckgrenze/")
+AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/TTO_1000001> "Rp0.2")
+SubClassOf(<https://w3id.org/pmd/TTO_1000001> :TTO_0000009)
 
 # Class: pmd:PMD_0000973 (tensile testing machine)
 
@@ -286,7 +309,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000015 "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(:TTO_0000015 :TTO_0000002)
 
-# Class: :TTO_0000016 (estimated strain rate over the parallel length)
+# Class: :TTO_0000016 (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000016 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000016 "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -298,7 +321,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000016 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000016 "e^._L_c"@en)
 SubClassOf(:TTO_0000016 pmd:PMD_0000008)
 
-# Class: :TTO_0000017 (extensometer gauge length)
+# Class: :TTO_0000017 (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)
@@ -450,7 +473,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (Anfangs-Dicke)
+# Class: :TTO_0000029 (original thickness)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
