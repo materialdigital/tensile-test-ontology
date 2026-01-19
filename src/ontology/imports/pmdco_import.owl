@@ -6,6 +6,7 @@ Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(doap:=<http://usefulinc.com/ns/doap#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
@@ -15,9 +16,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<https://w3id.org/pmd/tto/imports/pmdco_import.owl>
-<https://w3id.org/pmd/tto/releases/2026-01-14/imports/pmdco_import.owl>
-Annotation(dc:source <https://w3id.org/pmd/co/3.0.0-rc1>)
-Annotation(owl:versionInfo "2026-01-14")
+<https://w3id.org/pmd/tto/releases/2026-01-19/imports/pmdco_import.owl>
+Annotation(dc:source <https://w3id.org/pmd/co/3.0.0-rc2>)
+Annotation(owl:versionInfo "2026-01-19")
 
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
@@ -128,6 +129,7 @@ Declaration(Class(obo:CHEBI_33324))
 Declaration(Class(obo:CHEBI_33325))
 Declaration(Class(obo:CHEBI_33330))
 Declaration(Class(obo:CHEBI_33331))
+Declaration(Class(obo:CHEBI_33336))
 Declaration(Class(obo:CHEBI_33337))
 Declaration(Class(obo:CHEBI_33341))
 Declaration(Class(obo:CHEBI_33342))
@@ -187,10 +189,10 @@ Declaration(Class(obo:IAO_0000003))
 Declaration(Class(obo:IAO_0000005))
 Declaration(Class(obo:IAO_0000007))
 Declaration(Class(obo:IAO_0000009))
+Declaration(Class(obo:IAO_0000010))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000028))
 Declaration(Class(obo:IAO_0000030))
-Declaration(Class(obo:IAO_0000032))
 Declaration(Class(obo:IAO_0000033))
 Declaration(Class(obo:IAO_0000078))
 Declaration(Class(obo:IAO_0000102))
@@ -199,6 +201,7 @@ Declaration(Class(obo:IAO_0000109))
 Declaration(Class(obo:IAO_0000310))
 Declaration(Class(obo:IAO_0000311))
 Declaration(Class(obo:IAO_0000444))
+Declaration(Class(obo:IAO_0000591))
 Declaration(Class(obo:IAO_0020000))
 Declaration(Class(obo:IAO_0020010))
 Declaration(Class(obo:NCBITaxon_9606))
@@ -227,6 +230,13 @@ Declaration(Class(co:PMD_0000002))
 Declaration(Class(co:PMD_0000005))
 Declaration(Class(co:PMD_0000007))
 Declaration(Class(co:PMD_0000008))
+Declaration(Class(co:PMD_0000010))
+Declaration(Class(co:PMD_0000011))
+Declaration(Class(co:PMD_0000012))
+Declaration(Class(co:PMD_0000013))
+Declaration(Class(co:PMD_0000014))
+Declaration(Class(co:PMD_0000015))
+Declaration(Class(co:PMD_0000016))
 Declaration(Class(co:PMD_0000051))
 Declaration(Class(co:PMD_0000053))
 Declaration(Class(co:PMD_0000054))
@@ -506,7 +516,6 @@ Declaration(Class(co:PMD_0000910))
 Declaration(Class(co:PMD_0000911))
 Declaration(Class(co:PMD_0000913))
 Declaration(Class(co:PMD_0000914))
-Declaration(Class(co:PMD_0000915))
 Declaration(Class(co:PMD_0000916))
 Declaration(Class(co:PMD_0000917))
 Declaration(Class(co:PMD_0000918))
@@ -608,6 +617,8 @@ Declaration(Class(co:PMD_0020001))
 Declaration(Class(co:PMD_0020002))
 Declaration(Class(co:PMD_0020003))
 Declaration(Class(co:PMD_0020004))
+Declaration(Class(co:PMD_0020005))
+Declaration(Class(co:PMD_0020022))
 Declaration(Class(co:PMD_0020023))
 Declaration(Class(co:PMD_0020024))
 Declaration(Class(co:PMD_0020025))
@@ -709,6 +720,7 @@ Declaration(Class(co:PMD_0020137))
 Declaration(Class(co:PMD_0020138))
 Declaration(Class(co:PMD_0020139))
 Declaration(Class(co:PMD_0020140))
+Declaration(Class(co:PMD_0020141))
 Declaration(Class(co:PMD_0020142))
 Declaration(Class(co:PMD_0020143))
 Declaration(Class(co:PMD_0020144))
@@ -731,8 +743,13 @@ Declaration(Class(co:PMD_0020160))
 Declaration(Class(co:PMD_0020161))
 Declaration(Class(co:PMD_0020162))
 Declaration(Class(co:PMD_0020163))
+Declaration(Class(co:PMD_0020164))
 Declaration(Class(co:PMD_0020165))
 Declaration(Class(co:PMD_0020166))
+Declaration(Class(co:PMD_0020167))
+Declaration(Class(co:PMD_0020168))
+Declaration(Class(co:PMD_0020169))
+Declaration(Class(co:PMD_0020171))
 Declaration(Class(co:PMD_0020200))
 Declaration(Class(co:PMD_0020201))
 Declaration(Class(co:PMD_0020202))
@@ -744,6 +761,17 @@ Declaration(Class(co:PMD_0025001))
 Declaration(Class(co:PMD_0025002))
 Declaration(Class(co:PMD_0025003))
 Declaration(Class(co:PMD_0025004))
+Declaration(Class(co:PMD_0025005))
+Declaration(Class(co:PMD_0025007))
+Declaration(Class(co:PMD_0025008))
+Declaration(Class(co:PMD_0025009))
+Declaration(Class(co:PMD_0025010))
+Declaration(Class(co:PMD_0025011))
+Declaration(Class(co:PMD_0025012))
+Declaration(Class(co:PMD_0025014))
+Declaration(Class(co:PMD_0025015))
+Declaration(Class(co:PMD_0025016))
+Declaration(Class(co:PMD_0025017))
 Declaration(Class(co:PMD_0025997))
 Declaration(Class(co:PMD_0040001))
 Declaration(Class(co:PMD_0050000))
@@ -907,7 +935,15 @@ Declaration(Class(co:PMD_0060006))
 Declaration(Class(co:PMD_0060007))
 Declaration(Class(co:PMD_0060008))
 Declaration(Class(co:PMD_0060009))
+Declaration(Class(co:PMD_0200000))
 Declaration(Class(co:PMD_0200001))
+Declaration(Class(co:PMD_0200002))
+Declaration(Class(co:PMD_0200003))
+Declaration(Class(co:PMD_0200004))
+Declaration(Class(co:PMD_0200005))
+Declaration(Class(co:PMD_0200006))
+Declaration(Class(co:PMD_0200007))
+Declaration(Class(co:PMD_0200008))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -974,6 +1010,7 @@ Declaration(ObjectProperty(obo:RO_0002229))
 Declaration(ObjectProperty(obo:RO_0002230))
 Declaration(ObjectProperty(obo:RO_0002233))
 Declaration(ObjectProperty(obo:RO_0002234))
+Declaration(ObjectProperty(obo:RO_0002350))
 Declaration(ObjectProperty(obo:RO_0002351))
 Declaration(ObjectProperty(obo:RO_0002352))
 Declaration(ObjectProperty(obo:RO_0002353))
@@ -988,17 +1025,18 @@ Declaration(ObjectProperty(co:PMD_0000077))
 Declaration(ObjectProperty(co:PMD_0001026))
 Declaration(ObjectProperty(co:PMD_0001028))
 Declaration(ObjectProperty(co:PMD_0001029))
-Declaration(ObjectProperty(co:PMD_0001030))
-Declaration(ObjectProperty(co:PMD_0001031))
 Declaration(ObjectProperty(co:PMD_0020020))
 Declaration(ObjectProperty(co:PMD_0020021))
 Declaration(ObjectProperty(co:PMD_0020127))
+Declaration(ObjectProperty(co:PMD_0025006))
+Declaration(ObjectProperty(co:PMD_0025013))
 Declaration(ObjectProperty(co:PMD_0025998))
 Declaration(ObjectProperty(co:PMD_0025999))
-Declaration(DataProperty(obo:IAO_0000004))
 Declaration(DataProperty(obo:OBI_0001937))
 Declaration(DataProperty(obo:OBI_0002135))
 Declaration(DataProperty(co:PMD_0000006))
+Declaration(DataProperty(co:PMD_0001857))
+Declaration(DataProperty(co:PMD_0001877))
 Declaration(NamedIndividual(obo:IAO_0000002))
 Declaration(NamedIndividual(obo:IAO_0000120))
 Declaration(NamedIndividual(obo:IAO_0000121))
@@ -1054,6 +1092,7 @@ Declaration(AnnotationProperty(terms:description))
 Declaration(AnnotationProperty(terms:license))
 Declaration(AnnotationProperty(terms:source))
 Declaration(AnnotationProperty(terms:title))
+Declaration(AnnotationProperty(doap:repository))
 Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(skos:altLabel))
@@ -1830,6 +1869,15 @@ AnnotationAssertion(rdfs:label obo:RO_0002234 "has output"@en)
 SubObjectPropertyOf(obo:RO_0002234 obo:RO_0000057)
 InverseObjectProperties(obo:RO_0002234 obo:RO_0002353)
 
+# Object Property: obo:RO_0002350 (member of)
+
+AnnotationAssertion(obo:IAO_0000112 obo:RO_0002350 "An organism that is a member of a population of organisms")
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0002350 "is member of is a mereological relation between a item and a collection.")
+AnnotationAssertion(obo:IAO_0000119 obo:RO_0002350 "SIO")
+AnnotationAssertion(rdfs:label obo:RO_0002350 "member of"@en)
+SubObjectPropertyOf(obo:RO_0002350 obo:BFO_0000050)
+InverseObjectProperties(obo:RO_0002350 obo:RO_0002351)
+
 # Object Property: obo:RO_0002351 (has member)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0002351 "has member is a mereological relation between a collection and an item.")
@@ -1877,10 +1925,11 @@ AnnotationAssertion(skos:definition co:PMD_0000004 "Inverse of 'is about'."@en)
 
 # Object Property: co:PMD_0000009 (has process attribute)
 
-AnnotationAssertion(rdfs:label co:PMD_0000009 "has process attribute"@de)
+AnnotationAssertion(rdfs:label co:PMD_0000009 "has process attribute"@en)
 AnnotationAssertion(rdfs:seeAlso co:PMD_0000009 "has process attribute from OEO https://openenergyplatform.org/ontology/oeo/OEO_00000500"@en)
 AnnotationAssertion(skos:definition co:PMD_0000009 "A relation between a process and a process attribute that depends on it."@en)
 AnnotationAssertion(skos:example co:PMD_0000009 "Tensile testing process has process attribute tensile rate"@en)
+InverseObjectProperties(co:PMD_0000009 co:PMD_0025006)
 ObjectPropertyDomain(co:PMD_0000009 obo:BFO_0000015)
 ObjectPropertyRange(co:PMD_0000009 co:PMD_0000008)
 
@@ -1927,22 +1976,6 @@ AnnotationAssertion(rdfs:label co:PMD_0001029 "responds with"@en)
 AnnotationAssertion(skos:definition co:PMD_0001029 "The realizable entity must be \"stimulated\" by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response.")
 SubObjectPropertyOf(co:PMD_0001029 owl:topObjectProperty)
 ObjectPropertyDomain(co:PMD_0001029 obo:BFO_0000017)
-ObjectPropertyRange(co:PMD_0001029 co:PMD_0000915)
-
-# Object Property: co:PMD_0001030 (stimulated by)
-
-AnnotationAssertion(rdfs:label co:PMD_0001030 "stimulated by"@en)
-AnnotationAssertion(skos:definition co:PMD_0001030 "inverse of stimulates"@en)
-SubObjectPropertyOf(co:PMD_0001030 obo:BFO_0000054)
-ObjectPropertyRange(co:PMD_0001030 co:PMD_0000950)
-
-# Object Property: co:PMD_0001031 (stimulates)
-
-AnnotationAssertion(rdfs:label co:PMD_0001031 "stimulates"@en)
-AnnotationAssertion(skos:definition co:PMD_0001031 "A relation between a stimulating process and material property, where there is some material entity that is bearer of the material property and participates in the stimulating process, and the material property comes to be realized in the course of the stimulating process."@en)
-SubObjectPropertyOf(co:PMD_0001031 obo:BFO_0000055)
-ObjectPropertyDomain(co:PMD_0001031 co:PMD_0000950)
-ObjectPropertyRange(co:PMD_0001031 co:PMD_0000005)
 
 # Object Property: co:PMD_0020020 (interacts with)
 
@@ -1975,6 +2008,19 @@ AnnotationAssertion(skos:example co:PMD_0020127 "a relation to between a process
 ObjectPropertyDomain(co:PMD_0020127 co:PMD_0000008)
 ObjectPropertyRange(co:PMD_0020127 obo:BFO_0000020)
 
+# Object Property: co:PMD_0025006 (process attribute of)
+
+AnnotationAssertion(rdfs:label co:PMD_0025006 "process attribute of"@en)
+AnnotationAssertion(skos:definition co:PMD_0025006 "A relation between a process attribute and a process, which \"bears\" the attribute."@en)
+AnnotationAssertion(skos:example co:PMD_0025006 "Tensile rate is a process attribute of tensile test"@en)
+
+# Object Property: co:PMD_0025013 (changes quality)
+
+AnnotationAssertion(rdfs:label co:PMD_0025013 "changes quality"@en)
+AnnotationAssertion(skos:definition co:PMD_0025013 "indicates that a process changes a quality"@en)
+ObjectPropertyDomain(co:PMD_0025013 obo:BFO_0000015)
+ObjectPropertyRange(co:PMD_0025013 obo:BFO_0000019)
+
 # Object Property: co:PMD_0025998 (has relational quality)
 
 AnnotationAssertion(rdfs:label co:PMD_0025998 "has relational quality"@en)
@@ -1998,13 +2044,6 @@ SubObjectPropertyOf(co:PMD_0025999 owl:topObjectProperty)
 #   Data Properties
 ############################
 
-# Data Property: obo:IAO_0000004 (has measurement value)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000004 "has measurement value"@en)
-FunctionalDataProperty(obo:IAO_0000004)
-DataPropertyDomain(obo:IAO_0000004 obo:IAO_0000032)
-DataPropertyRange(obo:IAO_0000004 xsd:double)
-
 # Data Property: obo:OBI_0001937 (has specified numeric value)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001937 "A relation between a value specification and a number that quantifies it."@en)
@@ -2027,6 +2066,19 @@ DataPropertyDomain(obo:OBI_0002135 obo:OBI_0001933)
 AnnotationAssertion(rdfs:label co:PMD_0000006 "has value"@en)
 AnnotationAssertion(skos:definition co:PMD_0000006 "data property that relates an information content entity to a literal"@en)
 DataPropertyDomain(co:PMD_0000006 obo:IAO_0000030)
+
+# Data Property: co:PMD_0001857 (has parameter position)
+
+AnnotationAssertion(rdfs:label co:PMD_0001857 "has parameter position"@en)
+AnnotationAssertion(skos:definition co:PMD_0001857 "specifies the position of a parameter in a programming function"@en)
+SubDataPropertyOf(co:PMD_0001857 co:PMD_0000006)
+DataPropertyRange(co:PMD_0001857 xsd:int)
+
+# Data Property: co:PMD_0001877 (has default literal value)
+
+AnnotationAssertion(rdfs:label co:PMD_0001877 "has default literal value"@en)
+AnnotationAssertion(skos:definition co:PMD_0001877 "specifies a default value"@en)
+SubDataPropertyOf(co:PMD_0001877 co:PMD_0000006)
 
 
 
@@ -2710,6 +2762,11 @@ SubClassOf(obo:CHEBI_33330 obo:CHEBI_33521)
 AnnotationAssertion(rdfs:label obo:CHEBI_33331 "yttrium atom")
 SubClassOf(obo:CHEBI_33331 obo:CHEBI_33521)
 
+# Class: obo:CHEBI_33336 (lanthanum atom)
+
+AnnotationAssertion(rdfs:label obo:CHEBI_33336 "lanthanum atom")
+SubClassOf(obo:CHEBI_33336 obo:CHEBI_33319)
+
 # Class: obo:CHEBI_33337 (actinium atom)
 
 AnnotationAssertion(rdfs:label obo:CHEBI_33337 "actinium atom")
@@ -3042,6 +3099,15 @@ AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000009 "http://www.golovchenko.org/
 AnnotationAssertion(rdfs:label obo:IAO_0000009 "datum label"@en)
 SubClassOf(obo:IAO_0000009 obo:IAO_0000030)
 
+# Class: obo:IAO_0000010 (software)
+
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000010 "Software is a plan specification composed of a series of instructions that can be 
+interpreted by or directly executed by a processing unit."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000010 "see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&aid=1958818&group_id=177891&atid=886178"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000010 "GROUP: OBI"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000010 "software"@en)
+SubClassOf(obo:IAO_0000010 obo:IAO_0000104)
+
 # Class: obo:IAO_0000027 (data item)
 
 AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000027 "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
@@ -3084,17 +3150,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000030 "OBI_0000142"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000030 "information content entity"@en)
 SubClassOf(obo:IAO_0000030 obo:BFO_0000031)
 SubClassOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:IAO_0000136 obo:BFO_0000001))
-
-# Class: obo:IAO_0000032 (scalar measurement datum)
-
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000032 "10 feet. 3 ml."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000032 "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000032 "2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
-this case we explicitly refer to the singular form"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000032 "Would write this as: has_part some 'measurement unit label' and has_part some numeral and has_part exactly 2, except for the fact that this won't let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them."@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000032 "scalar measurement datum"@en)
-SubClassOf(obo:IAO_0000032 obo:IAO_0000030)
-SubClassOf(obo:IAO_0000032 ObjectSomeValuesFrom(obo:OBI_0001938 obo:OBI_0001931))
 
 # Class: obo:IAO_0000033 (directive information entity)
 
@@ -3171,6 +3226,13 @@ AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000444 "https://en.wikipedia.org/wi
 AnnotationAssertion(rdfs:label obo:IAO_0000444 "publishing process"@en)
 SubClassOf(obo:IAO_0000444 obo:OBI_0000011)
 
+# Class: obo:IAO_0000591 (software method)
+
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000591 "A software method (also called subroutine, subprogram, procedure, method, function, or routine) is software designed to execute a specific task."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000591 "https://github.com/information-artifact-ontology/IAO/issues/80"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000591 "software method"@en)
+SubClassOf(obo:IAO_0000591 obo:IAO_0000010)
+
 # Class: obo:IAO_0020000 (identifier)
 
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0020000 "An information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity."@en)
@@ -3206,6 +3268,7 @@ AnnotationAssertion(rdfs:label obo:OBI_0000011 "planned process"@en)
 EquivalentClasses(obo:OBI_0000011 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:IAO_0000104)))
 SubClassOf(obo:OBI_0000011 obo:BFO_0000015)
 SubClassOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:IAO_0000104)))
+DisjointClasses(obo:OBI_0000011 co:PMD_0025009)
 
 # Class: obo:OBI_0000067 (evaluant role)
 
@@ -3232,6 +3295,7 @@ SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000067)
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067))))
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000027 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067))))))
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000417 obo:IAO_0000005))
+SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:RO_0009006 ObjectUnionOf(obo:BFO_0000019 co:PMD_0000005)))
 
 # Class: obo:OBI_0000245 (organization)
 
@@ -3375,14 +3439,17 @@ SubClassOf(obo:UO_1000164 obo:UO_0000000)
 
 # Class: co:PMD_0000000 (Material)
 
-AnnotationAssertion(rdfs:comment co:PMD_0000000 "Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a Manufacturing Process may be SemiFinishedProdcuts."@en)
+AnnotationAssertion(rdfs:comment co:PMD_0000000 "Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a manufacturing process may be (subclasses of) objects that bear a 'blank role' in the context of the manufacturing process."@en)
+AnnotationAssertion(rdfs:comment co:PMD_0000000 "Material is defined in terms of the three main perspectives that material specifications rely on: the structure of the material (\"intensive quality\"), the performance of the material (\"behavoiral material property\") and the processing the material must have undergone (\"output of some process\").
+
+When defining specific materials/material taxonomies, these three aspects shall be taken into account in the aristotelian (\"per genus et differentiam\") as differentiation."@en)
 AnnotationAssertion(rdfs:comment co:PMD_0000000 "The sum of portions of matter of the same type form a portion of matter of that type."@en)
 AnnotationAssertion(rdfs:label co:PMD_0000000 "Material"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000000 "material"@en)
 AnnotationAssertion(skos:altLabel co:PMD_0000000 "Portion of Material"@en)
 AnnotationAssertion(skos:definition co:PMD_0000000 "A Material is a Portion Of Matter that may participate in some Manifacturing Process and whose shape is not relevant for its participation in the Manifacuring Process."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000000 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000000 co:PMD_0000001)
+SubClassOf(co:PMD_0000000 ObjectIntersectionOf(co:PMD_0000001 ObjectSomeValuesFrom(obo:RO_0000053 co:PMD_0000005) ObjectSomeValuesFrom(obo:RO_0000086 co:PMD_0020131) ObjectSomeValuesFrom(obo:RO_0002353 obo:BFO_0000015)))
 
 # Class: co:PMD_0000001 (portion of matter)
 
@@ -3417,8 +3484,8 @@ AnnotationAssertion(skos:definition co:PMD_0000005 "A property is a material tra
 We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000005 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000005 obo:BFO_0000017)
+SubClassOf(co:PMD_0000005 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000950))
 SubClassOf(co:PMD_0000005 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000056 obo:BFO_0000015))))
-SubClassOf(co:PMD_0000005 ObjectAllValuesFrom(obo:RO_0000052 co:PMD_0000000))
 
 # Class: co:PMD_0000007 (vector field specification)
 
@@ -3442,6 +3509,48 @@ AnnotationAssertion(skos:example co:PMD_0000008 "Tensile rate in a tensile testi
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000008 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000008 obo:BFO_0000003)
 
+# Class: co:PMD_0000010 (workflow function)
+
+AnnotationAssertion(rdfs:label co:PMD_0000010 "workflow function"@en)
+AnnotationAssertion(skos:definition co:PMD_0000010 "A plan specification representing a callable software method that prescribes a specific computational action, including execution instructions and a defined set of input and output specifications."@en)
+SubClassOf(co:PMD_0000010 obo:IAO_0000591)
+
+# Class: co:PMD_0000011 (workflow node)
+
+AnnotationAssertion(rdfs:label co:PMD_0000011 "workflow node"@en)
+AnnotationAssertion(skos:definition co:PMD_0000011 "A computing process that executes a workflow function within a workflow run, consuming input data and producing output data according to the function’s specifications."@en)
+SubClassOf(co:PMD_0000011 ObjectIntersectionOf(co:PMD_0000583 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectUnionOf(co:PMD_0000066 co:PMD_0000067)) ObjectSomeValuesFrom(obo:RO_0000059 co:PMD_0000010)))
+
+# Class: co:PMD_0000012 (workflow definition)
+
+AnnotationAssertion(rdfs:label co:PMD_0000012 "workflow definition"@en)
+AnnotationAssertion(skos:definition co:PMD_0000012 "A plan specification that prescribes the ordered application of one or more workflow functions, including their interconnections via input and output specifications, in order to achieve a specified computational objective."@en)
+SubClassOf(co:PMD_0000012 obo:IAO_0000104)
+
+# Class: co:PMD_0000013 (parameter specification)
+
+AnnotationAssertion(rdfs:label co:PMD_0000013 "parameter specification"@en)
+AnnotationAssertion(skos:definition co:PMD_0000013 "A directive information entity that specifies a parameter required or produced by a workflow function, including its intended role, position, and constraints."@en)
+SubClassOf(co:PMD_0000013 ObjectIntersectionOf(obo:IAO_0000033 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000027)))
+
+# Class: co:PMD_0000014 (input specification)
+
+AnnotationAssertion(rdfs:label co:PMD_0000014 "input specification"@en)
+AnnotationAssertion(skos:definition co:PMD_0000014 "A parameter specification that prescribes a data item required as input for the execution of a workflow function."@en)
+SubClassOf(co:PMD_0000014 co:PMD_0000013)
+
+# Class: co:PMD_0000015 (output specification)
+
+AnnotationAssertion(rdfs:label co:PMD_0000015 "output specification"@en)
+AnnotationAssertion(skos:definition co:PMD_0000015 "A parameter specification that prescribes a data item intended to be produced as output by the execution of a workflow function."@en)
+SubClassOf(co:PMD_0000015 co:PMD_0000013)
+
+# Class: co:PMD_0000016 (workflow run)
+
+AnnotationAssertion(rdfs:label co:PMD_0000016 "workflow run"@en)
+AnnotationAssertion(skos:definition co:PMD_0000016 "A computing process that realizes a workflow definition by executing its prescribed workflow nodes in a concrete temporal order, consuming and producing specific data items."@en)
+SubClassOf(co:PMD_0000016 ObjectIntersectionOf(co:PMD_0000583 ObjectSomeValuesFrom(obo:RO_0000059 co:PMD_0000012)))
+
 # Class: co:PMD_0000051 (simulation entity role)
 
 AnnotationAssertion(rdfs:label co:PMD_0000051 "simulation entity role"@en)
@@ -3456,8 +3565,8 @@ AnnotationAssertion(rdfs:label co:PMD_0000053 "melting process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000053 "A melting process is a thermally induced process during which a solid material undergoes a phase transition into a liquid state. It involves the absorption of heat and occurs at or above the material's melting point."@en)
 AnnotationAssertion(skos:definition co:PMD_0000053 "Ein Schmelzvorgang ist ein thermisch induzierter Prozess, bei dem ein festes Material einen Phasenübergang in einen flüssigen Zustand erfährt. Er beinhaltet die Absorption von Wärme und findet bei oder oberhalb des Schmelzpunkts des Materials statt."@de)
 AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum ingots in preparation for extrusion."@en)
-SubClassOf(co:PMD_0000053 co:PMD_0000833)
-SubClassOf(co:PMD_0000053 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 co:PMD_0020139)))
+SubClassOf(co:PMD_0000053 obo:OBI_0000011)
+SubClassOf(co:PMD_0000053 ObjectIntersectionOf(co:PMD_0000547 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 co:PMD_0020139)))
 
 # Class: co:PMD_0000054 (heating function)
 
@@ -3487,7 +3596,7 @@ AnnotationAssertion(skos:definition co:PMD_0000056 "Ein Schmelzofen ist ein Ger�
 SubClassOf(co:PMD_0000056 co:PMD_0000780)
 SubClassOf(co:PMD_0000056 ObjectIntersectionOf(co:PMD_0000655 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000057)))
 
-# Class: co:PMD_0000057 (Schmelzfunktion)
+# Class: co:PMD_0000057 (melting function)
 
 AnnotationAssertion(rdfs:label co:PMD_0000057 "Schmelzfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000057 "melting function"@en)
@@ -3575,7 +3684,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000506 "accoustic property"@en)
 AnnotationAssertion(skos:definition co:PMD_0000506 "An accoustic property is a mechanical property representing characteristics of a material that determine its interaction with sound waves, such as absorption, reflection, and transmission."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000506 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000506 co:PMD_0000005)
-SubClassOf(co:PMD_0000506 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000517))
+SubClassOf(co:PMD_0000506 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000517))
 
 # Class: co:PMD_0000507 (Akustische Eigenschaften Analyseverfahren)
 
@@ -3585,6 +3694,7 @@ AnnotationAssertion(skos:definition co:PMD_0000507 "An assay, that measures the 
 AnnotationAssertion(skos:definition co:PMD_0000507 "Eine Analyse, die die akustischen Eigenschaften von Materialien misst, indem es analysiert, wie Schallwellen mit dem Material interagieren. Dieser Prozess umfasst die Erzeugung von Schallwellen und die Beobachtung ihrer Reflexion, Übertragung, Absorption oder Streuung, um Eigenschaften wie akustische Impedanz, Absorptionskoeffizient und Schallgeschwindigkeit zu bestimmen."@de)
 AnnotationAssertion(skos:example co:PMD_0000507 "For example, acoustic emission testing (AET) is used to monitor the release of energy from a material under stress, which can indicate the onset of failure or the presence of defects."@en)
 SubClassOf(co:PMD_0000507 obo:OBI_0000070)
+SubClassOf(co:PMD_0000507 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000506))
 
 # Class: co:PMD_0000508 (Additive Fertigungsgerät)
 
@@ -3617,9 +3727,9 @@ SubClassOf(co:PMD_0000510 co:PMD_0000603)
 AnnotationAssertion(rdfs:label co:PMD_0000512 "aggregate state"@en)
 AnnotationAssertion(skos:definition co:PMD_0000512 "The aggregate state is a morphological quality representing the physical state of a material, such as solid, liquid, or gas."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000512 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0000512 ObjectExactCardinality(1 ObjectInverseOf(obo:OBI_0001927) co:PMD_0020116))
+EquivalentClasses(co:PMD_0000512 ObjectExactCardinality(1 co:PMD_0000077 co:PMD_0020116))
 SubClassOf(co:PMD_0000512 co:PMD_0020131)
-SubClassOf(co:PMD_0000512 ObjectSomeValuesFrom(ObjectInverseOf(obo:OBI_0001927) co:PMD_0020116))
+SubClassOf(co:PMD_0000512 ObjectSomeValuesFrom(co:PMD_0000077 co:PMD_0020116))
 
 # Class: co:PMD_0000513 (aging process)
 
@@ -3646,25 +3756,25 @@ SubClassOf(co:PMD_0000518 co:PMD_0000522)
 
 AnnotationAssertion(rdfs:label co:PMD_0000519 "application of electric field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000519 "An application of (an) electric field is the process of subjecting a material to an electric field to observe its behavior or modify its properties."@en)
-SubClassOf(co:PMD_0000519 co:PMD_0000950)
+SubClassOf(co:PMD_0000519 obo:BFO_0000015)
 
 # Class: co:PMD_0000520 (application of heat flux)
 
 AnnotationAssertion(rdfs:label co:PMD_0000520 "application of heat flux"@en)
 AnnotationAssertion(skos:definition co:PMD_0000520 "An application of heat flux describes the process of transferring thermal energy to or from a material, often used in thermal property measurements."@en)
-SubClassOf(co:PMD_0000520 co:PMD_0000950)
+SubClassOf(co:PMD_0000520 obo:BFO_0000015)
 
 # Class: co:PMD_0000521 (application of magnetic field)
 
 AnnotationAssertion(rdfs:label co:PMD_0000521 "application of magnetic field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000521 "An application of (a) magnetic field is the process of subjecting a material to a magnetic field to study its magnetic properties or induce magnetization."@en)
-SubClassOf(co:PMD_0000521 co:PMD_0000950)
+SubClassOf(co:PMD_0000521 obo:BFO_0000015)
 
 # Class: co:PMD_0000522 (application of mechanical load)
 
 AnnotationAssertion(rdfs:label co:PMD_0000522 "application of mechanical load"@en)
 AnnotationAssertion(skos:definition co:PMD_0000522 "An application of mechanical load is the process of applying force or stress to a material to observe its response or measure its properties."@en)
-SubClassOf(co:PMD_0000522 co:PMD_0000950)
+SubClassOf(co:PMD_0000522 obo:BFO_0000015)
 
 # Class: co:PMD_0000523 (application of substance)
 
@@ -3758,9 +3868,9 @@ SubClassOf(co:PMD_0000534 obo:BFO_0000023)
 # Class: co:PMD_0000535 (boiling point)
 
 AnnotationAssertion(rdfs:label co:PMD_0000535 "boiling point"@en)
-AnnotationAssertion(skos:definition co:PMD_0000535 "The boiling point is a phase boundary described by the temperature at which a liquid changes to a gas under standard atmospheric pressure."@en)
+AnnotationAssertion(skos:definition co:PMD_0000535 "The boiling point is a state of matter boundary realized by transition form the liquid state to the gaseous state (or vice versa)."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000535 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000535 co:PMD_0000882)
+SubClassOf(co:PMD_0000535 co:PMD_0020164)
 
 # Class: co:PMD_0000536 (Brinell 2.5 62.5 ISO 6506)
 
@@ -3811,7 +3921,7 @@ AnnotationAssertion(skos:definition co:PMD_0000541 "A CNC Machine is a Forming M
 AnnotationAssertion(skos:definition co:PMD_0000541 "Eine CNC-Maschine ist eine Formmaschine, die zur präzisen Steuerung von Bearbeitungswerkzeugen für Schneid-, Bohr-, Fräs- und andere Aufgaben computergestützte numerische Steuerung verwendet."@de)
 SubClassOf(co:PMD_0000541 co:PMD_0000648)
 
-# Class: co:PMD_0000542 (CNC-Schweißmaschine)
+# Class: co:PMD_0000542 (cnc welding machine)
 
 AnnotationAssertion(rdfs:label co:PMD_0000542 "CNC-Schweißmaschine"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000542 "cnc welding machine"@en)
@@ -3887,6 +3997,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000552 "chemical composition analyzing pr
 AnnotationAssertion(skos:definition co:PMD_0000552 "A Structural Property Analyzing Process that determines the chemical composition of a material by identifying and quantifying its constituent elements and compounds."@en)
 AnnotationAssertion(skos:definition co:PMD_0000552 "Ein Struktur Eigenschaften Analyseverfahren, das die chemische Zusammensetzung eines Materials bestimmt, indem es dessen Bestandteile und Verbindungen identifiziert und quantifiziert."@de)
 SubClassOf(co:PMD_0000552 co:PMD_0000957)
+SubClassOf(co:PMD_0000552 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000551))
 
 # Class: co:PMD_0000553 (chemical potential)
 
@@ -3919,6 +4030,8 @@ AnnotationAssertion(rdfs:label co:PMD_0000556 "chromatography process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000556 "A Structural Property Analyzing Process that enables the separation and analysis of compounds in a mixture by their distribution between a mobile and a stationary phase."@en)
 AnnotationAssertion(skos:definition co:PMD_0000556 "Ein Struktur Eigenschaften Analyseverfahren, das die Trennung und Analyse von Verbindungen in einem Gemisch durch ihre Verteilung zwischen einer mobilen und einer stationären Phase ermöglicht."@de)
 SubClassOf(co:PMD_0000556 co:PMD_0000957)
+SubClassOf(co:PMD_0000556 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0020101))
+SubClassOf(co:PMD_0000556 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0025001))
 
 # Class: co:PMD_0000557 (chromatography system)
 
@@ -4153,6 +4266,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000583 "computing process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000583 "A process that involves the systematic use of computational methods and tools to perform simulations, analyses, or data transformations to achieve specific scientific or engineering goals."@en)
 AnnotationAssertion(skos:definition co:PMD_0000583 "Ein Prozess, der die systematische Verwendung von rechnerischen Methoden und Werkzeugen umfasst, um Simulationen, Analysen oder Datenumwandlungen durchzuführen, um spezifische wissenschaftliche oder technische Ziele zu erreichen."@de)
 SubClassOf(co:PMD_0000583 obo:OBI_0000011)
+SubClassOf(co:PMD_0000583 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000293 obo:IAO_0000030) ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000030)))
 
 # Class: co:PMD_0000584 (conditioning process)
 
@@ -4214,9 +4328,9 @@ SubClassOf(co:PMD_0000590 co:PMD_0000968)
 AnnotationAssertion(rdfs:label co:PMD_0000591 "crystal structure"@en)
 AnnotationAssertion(skos:definition co:PMD_0000591 "The crystal structure is a morphologic quality that describes the periodic geometric arrangement of entities in a crystalline material. The finite set of periodic geometric arrangements is described by the 14 possible Bravais Lattices in three-dimensional space."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000591 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0000591 ObjectExactCardinality(1 ObjectInverseOf(obo:OBI_0001927) co:PMD_0020099))
+EquivalentClasses(co:PMD_0000591 ObjectExactCardinality(1 co:PMD_0000077 co:PMD_0020099))
 SubClassOf(co:PMD_0000591 co:PMD_0020131)
-SubClassOf(co:PMD_0000591 ObjectSomeValuesFrom(ObjectInverseOf(obo:OBI_0001927) co:PMD_0020099))
+SubClassOf(co:PMD_0000591 ObjectSomeValuesFrom(co:PMD_0000077 co:PMD_0020099))
 
 # Class: co:PMD_0000592 (cut function)
 
@@ -4351,6 +4465,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000611 "dimension measuring process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000611 "A Structural Property Analyzing Process that determines the physical dimensions of a material or object, such as length, width, height, diameter, and thickness, with high accuracy and precision."@en)
 AnnotationAssertion(skos:definition co:PMD_0000611 "Ein Struktur Eigenschaften Analyseverfahren, das die physikalischen Dimensionen eines Materials oder Objekts, wie Länge, Breite, Höhe, Durchmesser und Dicke, mit hoher Genauigkeit und Präzision bestimmt."@de)
 SubClassOf(co:PMD_0000611 co:PMD_0000957)
+SubClassOf(co:PMD_0000611 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0020132))
 
 # Class: co:PMD_0000612 (disassembling)
 
@@ -4435,7 +4550,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000621 "electrical property"@en)
 AnnotationAssertion(skos:definition co:PMD_0000621 "An electrical property is a material property that represents the characteristics of a material that determine its behavior under the influence of an electric field, such as conductivity, resistivity, and permittivity."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000621 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000621 co:PMD_0000005)
-SubClassOf(co:PMD_0000621 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000519))
+SubClassOf(co:PMD_0000621 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000519))
 
 # Class: co:PMD_0000622 (electrical property analyzing process)
 
@@ -4444,6 +4559,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000622 "electrical property analyzing pro
 AnnotationAssertion(skos:definition co:PMD_0000622 "An assay that determines the electrical properties of materials, including electrical conductivity, resistivity, dielectric strength, and electrical charge storage capabilities."@en)
 AnnotationAssertion(skos:definition co:PMD_0000622 "Eine Analyse, die die elektrischen Eigenschaften von Materialien bestimmt, einschließlich elektrischer Leitfähigkeit, Widerstand, dielektrischer Festigkeit und elektrischer Ladungsspeicherkapazitäten."@de)
 SubClassOf(co:PMD_0000622 obo:OBI_0000070)
+SubClassOf(co:PMD_0000622 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000621))
 
 # Class: co:PMD_0000623 (Elektronenstrahlschweißmaschine)
 
@@ -4480,6 +4596,7 @@ AnnotationAssertion(skos:definition co:PMD_0000626 "A Spectroscopy Process, that
 AnnotationAssertion(skos:definition co:PMD_0000626 "Ein Spektroskopie Verfahren, das die Energieverteilung von Elektronen untersucht, die aus einer Probe emittiert werden, wenn diese mit elektromagnetischer Strahlung bestrahlt oder mit Teilchen bombardiert wird."@de)
 AnnotationAssertion(skos:example co:PMD_0000626 "Examples are e.g. Auger electron spectroscopy, electron energy loss spectroscopy, secondary electron spectroscopy."@en)
 SubClassOf(co:PMD_0000626 co:PMD_0000945)
+SubClassOf(co:PMD_0000626 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000595))
 
 # Class: co:PMD_0000627 (emission of accoustic wave)
 
@@ -4642,7 +4759,7 @@ AnnotationAssertion(skos:definition co:PMD_0000649 "Ein Umform Prozess, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000649 "Stripping, Deep Drawing, Spinning"@en)
 SubClassOf(co:PMD_0000649 co:PMD_0000646)
 
-# Class: co:PMD_0000650 (forming under compressive conditions)
+# Class: co:PMD_0000650 (Druckumformen)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000650 "Official definition can be found in: DIN 8583-1"@en)
 AnnotationAssertion(terms:source co:PMD_0000650 "Offizielle Definition findet man in: DIN 8583-1"@de)
@@ -4692,7 +4809,7 @@ AnnotationAssertion(skos:definition co:PMD_0000654 "A Functional Material F is a
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000654 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000654 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(obo:BFO_0000050 ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:RO_0000085 obo:BFO_0000034)))))
 
-# Class: co:PMD_0000655 (Ofen)
+# Class: co:PMD_0000655 (furnace)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000655 "“Furnace.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/furnace. Accessed 13 Jan. 2023."@en)
 AnnotationAssertion(rdfs:label co:PMD_0000655 "Ofen"@de)
@@ -4765,11 +4882,13 @@ AnnotationAssertion(skos:definition co:PMD_0000662 "Ein Füge Prozess, bei dem K
 AnnotationAssertion(skos:example co:PMD_0000662 "Bonding With Physically Hardening Adhesives, Bonding With Chemically Hardening Adhesives (Reaction Bonding)"@en)
 SubClassOf(co:PMD_0000662 co:PMD_0000806)
 
-# Class: co:PMD_0000663 (Korn)
+# Class: co:PMD_0000663 (kristallit)
 
-AnnotationAssertion(rdfs:label co:PMD_0000663 "Korn"@de)
-AnnotationAssertion(rdfs:label co:PMD_0000663 "crystal grain"@en)
-AnnotationAssertion(skos:definition co:PMD_0000663 "A crystal grain is a crystal that is continuant part of a polycrystal."@en)
+AnnotationAssertion(rdfs:label co:PMD_0000663 "crystallite"@en)
+AnnotationAssertion(rdfs:label co:PMD_0000663 "kristallit"@de)
+AnnotationAssertion(skos:altLabel co:PMD_0000663 "Korn"@de)
+AnnotationAssertion(skos:altLabel co:PMD_0000663 "grain"@en)
+AnnotationAssertion(skos:definition co:PMD_0000663 "A crystal grain is a crystal that is part of a polycrystal."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000663 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000663 co:PMD_0020003)
 
@@ -4789,6 +4908,8 @@ AnnotationAssertion(skos:definition co:PMD_0000666 "A Structural Property Analyz
 AnnotationAssertion(skos:definition co:PMD_0000666 "Ein Struktur Eigenschaften Analyseverfahren, das die Menge einer Substanz durch ihre Masse misst und dabei häufig die Fällung, Filtration, Trocknung und Wägung der Substanz umfasst."@de)
 AnnotationAssertion(skos:example co:PMD_0000666 "An example of a Gravimetrical Analyzing Process is the determination of sulfate content in a sample by precipitating it as barium sulfate, filtering, drying, and weighing the precipitate."@en)
 SubClassOf(co:PMD_0000666 co:PMD_0000957)
+SubClassOf(co:PMD_0000666 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0020102))
+SubClassOf(co:PMD_0000666 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0020133))
 
 # Class: co:PMD_0000667 (grinding machine)
 
@@ -5051,6 +5172,7 @@ AnnotationAssertion(skos:definition co:PMD_0000798 "A Microscopy Process that us
 AnnotationAssertion(skos:definition co:PMD_0000798 "Ein Mikroskopieverfahren, das einen fokussierten Ionenstrahl verwendet, um ein Bild einer Probe zu erzeugen, hochauflösende Bilder und Zusammensetzungsinformationen liefert und häufig für Oberflächenanalysen und Tiefenprofilierung verwendet wird."@de)
 AnnotationAssertion(skos:example co:PMD_0000798 "An example of an ion microscopy process is Helium Ion Microscopy (HIM), which offers high-resolution imaging with minimal sample damage, or Field Ion Microscopy, which provides atomic-level resolution imaging by using a strong electric field to ionize atoms at the surface of a sharp tip, or Focused Ion Beam Scanning Electron Microscopy (FIB-SEM), which allows for high-precision material removal and imaging by using a focused beam of ions to mill the sample surface while simultaneously capturing detailed SEM images."@en)
 SubClassOf(co:PMD_0000798 co:PMD_0000856)
+SubClassOf(co:PMD_0000798 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0025001))
 
 # Class: co:PMD_0000799 (ion spectrometer)
 
@@ -5124,7 +5246,7 @@ AnnotationAssertion(skos:definition co:PMD_0000807 "Ein Fügeverfahren, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000807 "Pouring, Embedding, Encasing"@en)
 SubClassOf(co:PMD_0000807 co:PMD_0000806)
 
-# Class: co:PMD_0000808 (Fügen Durch Umformen)
+# Class: co:PMD_0000808 (joining by shaping)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Official definition can be found in: DIN 8593-5"@en)
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Offizielle Definition findet man in: DIN 8593-5"@de)
@@ -5181,7 +5303,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000813 "Messer"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000813 "knife"@en)
 AnnotationAssertion(skos:definition co:PMD_0000813 "A tool with a sharp edge, typically made of metal, used for cutting food, materials, or other substances."@en)
 AnnotationAssertion(skos:definition co:PMD_0000813 "Ein Werkzeug mit einer scharfen Schneide, üblicherweise aus Metall, das zum Schneiden von Lebensmitteln, Materialien oder anderen Substanzen verwendet wird."@de)
-SubClassOf(co:PMD_0000813 co:PMD_0001998)
+SubClassOf(co:PMD_0000813 ObjectIntersectionOf(co:PMD_0000602 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000592)))
 
 # Class: co:PMD_0000816 (Laserspektroskopie)
 
@@ -5191,6 +5313,8 @@ AnnotationAssertion(skos:definition co:PMD_0000816 "A Spectroscopy Process, that
 AnnotationAssertion(skos:definition co:PMD_0000816 "Ein Spektroskopie Verfahren, das Laserlicht verwendet, um die Eigenschaften von Materialien zu untersuchen."@de)
 AnnotationAssertion(skos:example co:PMD_0000816 "Examples are e.g. laser absorption spectroscopy, laser emission spectroscopy, ultra-fast laser spectroscopy."@en)
 SubClassOf(co:PMD_0000816 co:PMD_0000945)
+SubClassOf(co:PMD_0000816 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000512))
+SubClassOf(co:PMD_0000816 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000591))
 
 # Class: co:PMD_0000817 (lasercutter)
 
@@ -5198,7 +5322,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000817 "Laserschneider"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000817 "lasercutter"@en)
 AnnotationAssertion(skos:definition co:PMD_0000817 "A device that utilizes laser beams to create precise cuts in various materials such as wood, plastic, metal, etc."@en)
 AnnotationAssertion(skos:definition co:PMD_0000817 "Ein Gerät, das Laserstrahlen verwendet, um präzise Schnitte in verschiedenen Materialien wie Holz, Kunststoff, Metall usw. zu erzeugen."@de)
-SubClassOf(co:PMD_0000817 co:PMD_0001998)
+SubClassOf(co:PMD_0000817 ObjectIntersectionOf(co:PMD_0000602 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000592)))
 
 # Class: co:PMD_0000818 (Drehmaschine)
 
@@ -5263,7 +5387,6 @@ AnnotationAssertion(rdfs:label co:PMD_0000825 "magnetic property"@en)
 AnnotationAssertion(skos:definition co:PMD_0000825 "A magnetic property is a material property representing characteristics that describe how a material responds to magnetic fields, such as permeability and coercivity."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000825 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000825 co:PMD_0000005)
-SubClassOf(co:PMD_0000825 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000521))
 
 # Class: co:PMD_0000826 (magnetizing)
 
@@ -5299,6 +5422,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000829 "magneto electrical property analy
 AnnotationAssertion(skos:definition co:PMD_0000829 "An assay that investigates the magnetic and electrical properties of materials, including conductivity, resistivity, permittivity, permeability, and magnetization."@en)
 AnnotationAssertion(skos:definition co:PMD_0000829 "Eine Analyse, die die magnetischen und elektrischen Eigenschaften von Materialien untersucht, einschließlich Leitfähigkeit, Widerstand, Permittivität, Permeabilität und Magnetisierung."@de)
 SubClassOf(co:PMD_0000829 obo:OBI_0000070)
+SubClassOf(co:PMD_0000829 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000825))
 
 # Class: co:PMD_0000832 (manufacturing function)
 
@@ -5311,16 +5435,19 @@ SubClassOf(co:PMD_0000832 obo:BFO_0000034)
 
 # Class: co:PMD_0000833 (manufacturing process)
 
+AnnotationAssertion(rdfs:comment co:PMD_0000833 "Manufacturing processes alternate qualities of materials, i.e., a value specification of some quality of a material entity, which is a specified input to the process, cannot be the same as a value specification of the same quality of another material entity, which is a specified output of the process. 
+
+Unfortunately is is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains."@en)
 AnnotationAssertion(rdfs:label co:PMD_0000833 "Herstellungsprozess"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000833 "manufacturing process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000833 "A planned process that is driven by the primary intent to transform objects
 A manufacturing process is always a transformative process."@en)
 AnnotationAssertion(skos:definition co:PMD_0000833 "Ein geplannter Prozess, der von der primären Absicht angetrieben wird, Objekte zu transformieren. Ein Herstellungsprozess ist immer ein Transformationsprozess."@de)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000833 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0000833 ObjectIntersectionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 obo:BFO_0000040)))
+EquivalentClasses(co:PMD_0000833 ObjectIntersectionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030)) ObjectSomeValuesFrom(obo:OBI_0000299 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030))))
 SubClassOf(co:PMD_0000833 obo:OBI_0000011)
-SubClassOf(co:PMD_0000833 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040))
-SubClassOf(co:PMD_0000833 ObjectSomeValuesFrom(obo:OBI_0000299 obo:BFO_0000040))
+SubClassOf(co:PMD_0000833 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030)))
+SubClassOf(co:PMD_0000833 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030)))
 
 # Class: co:PMD_0000834 (map)
 
@@ -5345,6 +5472,7 @@ AnnotationAssertion(skos:definition co:PMD_0000836 "A Spectroscopy Process, that
 AnnotationAssertion(skos:definition co:PMD_0000836 "Ein Spektroskopie Verfahren, das das Masse-zu-Ladung-Verhältnis von Ionen misst, um Moleküle in einer Probe zu identifizieren und zu quantifizieren."@de)
 AnnotationAssertion(skos:example co:PMD_0000836 "Examples are e.g. time-of-flight mass spectroscopy, particle beam mass spectrometry."@en)
 SubClassOf(co:PMD_0000836 co:PMD_0000945)
+SubClassOf(co:PMD_0000836 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000597))
 
 # Class: co:PMD_0000845 (matrix role)
 
@@ -5372,22 +5500,23 @@ AnnotationAssertion(skos:definition co:PMD_0000848 "A mechanical property is a m
 TODO: Check general class axiom and defintion altogether !!!"@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000848 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000848 co:PMD_0000005)
-SubClassOf(co:PMD_0000848 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000522))
+SubClassOf(co:PMD_0000848 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000522))
 
-# Class: co:PMD_0000849 (Mechanische Eigenschaften Analyseverfahren)
+# Class: co:PMD_0000849 (mechanical property analyzing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000849 "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000849 "mechanical property analyzing process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000849 "An assay that evaluates the mechanical characteristics of materials, such as strength, hardness, elasticity, and tensile properties, often through tests that measure response to forces and loads."@en)
 AnnotationAssertion(skos:definition co:PMD_0000849 "Eine Analyse, die die mechanischen Eigenschaften von Materialien bewertet, wie z.B. Festigkeit, Härte, Elastizität und Zugfestigkeit, oft durch Tests, die die Reaktion auf Kräfte und Lasten messen."@de)
 SubClassOf(co:PMD_0000849 obo:OBI_0000070)
+SubClassOf(co:PMD_0000849 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000848))
 
 # Class: co:PMD_0000851 (melting point)
 
 AnnotationAssertion(rdfs:label co:PMD_0000851 "melting point"@en)
-AnnotationAssertion(skos:definition co:PMD_0000851 "The melting point is a phase boundary described by the temperature at which a solid becomes a liquid under standard atmospheric pressure."@en)
+AnnotationAssertion(skos:definition co:PMD_0000851 "The melting point is a state of matter boundary realized by transition form the solid state to the liquid state (or vice versa)."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000851 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000851 co:PMD_0000882)
+SubClassOf(co:PMD_0000851 co:PMD_0020164)
 
 # Class: co:PMD_0000852 (metal)
 
@@ -5403,6 +5532,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000853 "crystallographic texture"@en)
 AnnotationAssertion(skos:definition co:PMD_0000853 "The crystallographic texture is a morphological quality describing the arrangement and orientation of grains in a metallic material, observed through crystallographic analysis."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000853 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000853 co:PMD_0020131)
+SubClassOf(co:PMD_0000853 ObjectSomeValuesFrom(obo:RO_0000080 co:PMD_0020106))
 
 # Class: co:PMD_0000854 (micrometer gauge)
 
@@ -5478,7 +5608,7 @@ SubClassOf(co:PMD_0000862 co:PMD_0000933)
 AnnotationAssertion(rdfs:label co:PMD_0000864 "morphological property"@en)
 AnnotationAssertion(skos:definition co:PMD_0000864 "A morphological property is a material property representing the characteristics of a material's structure, such as shape, size, and distribution of its features."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000864 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000864 co:PMD_0000005)
+SubClassOf(co:PMD_0000864 obo:BFO_0000019)
 
 # Class: co:PMD_0000865 (multimodal deep learning)
 
@@ -5518,21 +5648,21 @@ SubClassOf(co:PMD_0000868 co:PMD_0000000)
 
 AnnotationAssertion(rdfs:label co:PMD_0000869 "occurence of chemical reaction"@en)
 AnnotationAssertion(skos:definition co:PMD_0000869 "The occurrence of (a) chemical reaction is the process in which substances interact to form new chemical compounds or alter their molecular structure."@en)
-SubClassOf(co:PMD_0000869 co:PMD_0000915)
+SubClassOf(co:PMD_0000869 obo:BFO_0000015)
 
 # Class: co:PMD_0000870 (occurence of electic field)
 
 AnnotationAssertion(rdfs:label co:PMD_0000870 "occurence of electic field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000870 "The occurrence of (an) electric field is a process describing the presence or generation of an electric field in a material or system."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000870 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000870 co:PMD_0000915)
+SubClassOf(co:PMD_0000870 obo:BFO_0000015)
 
 # Class: co:PMD_0000871 (occurence of magnetic field)
 
 AnnotationAssertion(rdfs:label co:PMD_0000871 "occurence of magnetic field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000871 "The occurrence of (a) magenetic field is a process describing the presence or generation of a magnetic field in a material or system."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000871 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000871 co:PMD_0000915)
+SubClassOf(co:PMD_0000871 obo:BFO_0000015)
 
 # Class: co:PMD_0000874 (Optisches Mikroskop)
 
@@ -5551,7 +5681,7 @@ AnnotationAssertion(skos:definition co:PMD_0000875 "A Microscopy Process that us
 AnnotationAssertion(skos:example co:PMD_0000875 "An example is Light Microscopy."@en)
 SubClassOf(co:PMD_0000875 co:PMD_0000856)
 
-# Class: co:PMD_0000876 (optical profilometer)
+# Class: co:PMD_0000876 (Optisches Profilometer)
 
 AnnotationAssertion(rdfs:label co:PMD_0000876 "Optisches Profilometer"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000876 "optical profilometer"@en)
@@ -5565,7 +5695,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000877 "optical property"@en)
 AnnotationAssertion(skos:definition co:PMD_0000877 "An optical property is a material property representing the characteristics that describe how a material interacts with light, including reflection, refraction, and absorption."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000877 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000877 co:PMD_0000005)
-SubClassOf(co:PMD_0000877 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0001008))
+SubClassOf(co:PMD_0000877 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0001008))
 
 # Class: co:PMD_0000878 (optical property analyzing process)
 
@@ -5574,6 +5704,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000878 "optical property analyzing proces
 AnnotationAssertion(skos:definition co:PMD_0000878 "An assay that assesses the optical characteristics of materials, such as refractive index, absorption, transmission, reflectivity, and luminescence."@en)
 AnnotationAssertion(skos:definition co:PMD_0000878 "Eine Analyse, die die optischen Eigenschaften von Materialien bewertet, wie z.B. Brechungsindex, Absorption, Transmission, Reflexion und Lumineszenz."@de)
 SubClassOf(co:PMD_0000878 obo:OBI_0000070)
+SubClassOf(co:PMD_0000878 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000877))
 
 # Class: co:PMD_0000880 (passing of time)
 
@@ -5582,17 +5713,12 @@ AnnotationAssertion(skos:definition co:PMD_0000880 "Passing of time is a process
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000880 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000880 obo:BFO_0000015)
 
-# Class: co:PMD_0000882 (phase boundary)
+# Class: co:PMD_0000882 (phase boundary (realization))
 
-AnnotationAssertion(rdfs:label co:PMD_0000882 "phase boundary"@en)
-AnnotationAssertion(skos:definition co:PMD_0000882 "A phase boundary is a morphological property denoting the interface between two distinct phases of a material, such as solid-liquid or liquid-gas boundaries."@en)
+AnnotationAssertion(rdfs:label co:PMD_0000882 "phase boundary (realization)"@en)
+AnnotationAssertion(skos:definition co:PMD_0000882 "A phase boundary is a realizable entity that is realized by the transition between distinct phases."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000882 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000882 co:PMD_0000864)
-SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000547))
-SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(co:PMD_0001029 co:PMD_0000549))
-SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000520))
-SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000522))
-SubClassOf(co:PMD_0000882 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000523))
+SubClassOf(co:PMD_0000882 obo:BFO_0000017)
 
 # Class: co:PMD_0000883 (Photochemische Verfahren)
 
@@ -5613,11 +5739,9 @@ SubClassOf(co:PMD_0000884 co:PMD_0000931)
 # Class: co:PMD_0000885 (pole figure)
 
 AnnotationAssertion(rdfs:label co:PMD_0000885 "pole figure"@en)
-AnnotationAssertion(skos:definition co:PMD_0000885 "A pole figure is a map representing a graphical representation of the orientation of crystallographic planes in a polycrystalline sample."@en)
+AnnotationAssertion(skos:definition co:PMD_0000885 "A pole figure is a map depicting a 2D stereographic projection which represents crystallographic orientations of grains in a polycrystalline material in respect to the sample's reference frame."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000885 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000885 co:PMD_0000834)
-SubClassOf(co:PMD_0000885 ObjectIntersectionOf(co:PMD_0000834 ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0000059) co:PMD_0000853)))
-SubClassOf(co:PMD_0000885 ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0000059) co:PMD_0000853))
+SubClassOf(co:PMD_0000885 ObjectIntersectionOf(co:PMD_0000834 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0000853)))
 
 # Class: co:PMD_0000886 (polishing machine)
 
@@ -5714,7 +5838,7 @@ AnnotationAssertion(skos:definition co:PMD_0000899 "Ein Herstellungsprozess, der
 AnnotationAssertion(skos:example co:PMD_0000899 "Casting, Sintering"@en)
 SubClassOf(co:PMD_0000899 co:PMD_0000833)
 
-# Class: co:PMD_0000900 (primary shaping by additive manufacturing)
+# Class: co:PMD_0000900 (Urformen Durch Additive Fertigung)
 
 AnnotationAssertion(rdfs:label co:PMD_0000900 "Urformen Durch Additive Fertigung"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000900 "primary shaping by additive manufacturing"@en)
@@ -5830,13 +5954,6 @@ AnnotationAssertion(skos:definition co:PMD_0000914 "Ein Trennprozess, bei dem Ma
 AnnotationAssertion(skos:example co:PMD_0000914 "Electrical Discharge Machining, Thermal Ablation"@en)
 SubClassOf(co:PMD_0000914 co:PMD_0000927)
 
-# Class: co:PMD_0000915 (responding process)
-
-AnnotationAssertion(rdfs:label co:PMD_0000915 "responding process"@en)
-AnnotationAssertion(skos:definition co:PMD_0000915 "The responding process is a process describing the reaction of a material or system to an applied stimulus."@en)
-AnnotationAssertion(co:PMD_0000060 co:PMD_0000915 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000915 obo:BFO_0000015)
-
 # Class: co:PMD_0000916 (rheological property analyzing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000916 "Rheologische Eigenschaften Analyseverfahren"@de)
@@ -5882,7 +5999,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000920 "saw"@en)
 AnnotationAssertion(skos:definition co:PMD_0000920 "A saw is a device used to cut materials, especially wood. It usually consists of a thin, sharp metal blade fitted with teeth and a handle or frame that allows the user to guide the saw. There are different types of saws designed for different applications, including handsaws, circular saws, hacksaws and band saws. Each type of saw is designed for specific tasks and materials to enable efficient cutting."@en)
 AnnotationAssertion(skos:definition co:PMD_0000920 "Eine Säge ist ein Gerät, das zum Zerteilen von Materialien, insbesondere von Holz, verwendet wird. Sie besteht in der Regel aus einem dünnen, scharfen Metallblatt, das mit Zähnen versehen ist, und einem Griff oder Rahmen, der es dem Benutzer ermöglicht, die Säge zu führen. Es gibt verschiedene Arten von Sägen, die für verschiedene Anwendungen konzipiert sind, darunter Handsägen, Kreissägen, Bügelsägen und Bandsägen. Jede Art von Säge ist auf bestimmte Aufgaben und Materialien abgestimmt, um effizientes Schneiden zu ermöglichen."@de)
 AnnotationAssertion(skos:definition co:PMD_0000920 "Säge"@de)
-SubClassOf(co:PMD_0000920 co:PMD_0001998)
+SubClassOf(co:PMD_0000920 ObjectIntersectionOf(co:PMD_0000602 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000592)))
 
 # Class: co:PMD_0000922 (scanning electron microscope)
 
@@ -5890,7 +6007,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000922 "Rasterelektronenmikroskop"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000922 "scanning electron microscope"@en)
 AnnotationAssertion(skos:definition co:PMD_0000922 "A Scanning Electron Microscope (SEM) is a Measuring Device that produces high-resolution images of a sample surface by scanning it with a focused beam of electrons."@en)
 AnnotationAssertion(skos:definition co:PMD_0000922 "Ein Rasterelektronenmikroskop (REM) ist ein Messgerät, das hochauflösende Bilder einer Probenoberfläche erzeugt, indem es sie mit einem fokussierten Elektronenstrahl abtastet."@de)
-SubClassOf(co:PMD_0000922 co:PMD_0000855)
+SubClassOf(co:PMD_0000922 co:PMD_0000624)
 
 # Class: co:PMD_0000923 (Schere)
 
@@ -5898,7 +6015,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000923 "Schere"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000923 "pair of scissors"@en)
 AnnotationAssertion(skos:definition co:PMD_0000923 "A tool with two sharp blades that are brought together by pressure on the handles to cut paper, fabric, or other materials."@en)
 AnnotationAssertion(skos:definition co:PMD_0000923 "Ein Werkzeug mit zwei scharfen Klingen, die durch Druck auf die Griffe zusammengeführt werden, um Papier, Stoff oder andere Materialien zu schneiden."@de)
-SubClassOf(co:PMD_0000923 co:PMD_0001998)
+SubClassOf(co:PMD_0000923 ObjectIntersectionOf(co:PMD_0000602 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000592)))
 
 # Class: co:PMD_0000924 (scratch hardness)
 
@@ -6043,7 +6160,7 @@ AnnotationAssertion(skos:definition co:PMD_0000942 "The specific surface area is
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000942 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000942 co:PMD_0020131)
 
-# Class: co:PMD_0000944 (Spektrometer)
+# Class: co:PMD_0000944 (spectrometer)
 
 AnnotationAssertion(rdfs:label co:PMD_0000944 "Spektrometer"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000944 "spectrometer"@en)
@@ -6058,6 +6175,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000945 "spectroscopy process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000945 "A Structural Property Analyzing Process that measures the interaction of electromagnetic radiation with matter to determine e.g. the composition, structure, and other properties of materials."@en)
 AnnotationAssertion(skos:definition co:PMD_0000945 "Ein Struktur Eigenschaften Analyseverfahren, das die Wechselwirkung von elektromagnetischer Strahlung mit Materie misst, um die Zusammensetzung, Struktur und physikalischen Eigenschaften von Materialien zu bestimmen."@de)
 SubClassOf(co:PMD_0000945 co:PMD_0000957)
+SubClassOf(co:PMD_0000945 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0025001))
 
 # Class: co:PMD_0000946 (spectrum)
 
@@ -6088,7 +6206,9 @@ DisjointClasses(co:PMD_0000949 co:PMD_0000952)
 AnnotationAssertion(rdfs:label co:PMD_0000950 "stimulating process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000950 "The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000950 "true"^^xsd:boolean)
+EquivalentClasses(co:PMD_0000950 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectIntersectionOf(ObjectUnionOf(obo:BFO_0000016 co:PMD_0000005) ObjectSomeValuesFrom(obo:RO_0000052 co:PMD_0000001)))))
 SubClassOf(co:PMD_0000950 obo:BFO_0000015)
+SubClassOf(co:PMD_0000950 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectIntersectionOf(ObjectUnionOf(obo:BFO_0000016 co:PMD_0000005) ObjectSomeValuesFrom(obo:RO_0000052 co:PMD_0000001))))
 
 # Class: co:PMD_0000951 (stochastic simulation)
 
@@ -6156,9 +6276,9 @@ SubClassOf(co:PMD_0000960 co:PMD_0000603)
 # Class: co:PMD_0000961 (sublimation point)
 
 AnnotationAssertion(rdfs:label co:PMD_0000961 "sublimation point"@en)
-AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a phase boundary that describes the temperature at which a material transitions directly from a solid to a gaseous state without passing through the liquid phase."@en)
+AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a state of matter boundary realized by transition form the solid state to the gaseous state (or vice versa)."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000961 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000961 co:PMD_0000882)
+SubClassOf(co:PMD_0000961 co:PMD_0020164)
 
 # Class: co:PMD_0000962 (Überkritische Fluidchromatographie Verfahren)
 
@@ -6244,7 +6364,6 @@ AnnotationAssertion(rdfs:label co:PMD_0000972 "temporal property"@en)
 AnnotationAssertion(skos:definition co:PMD_0000972 "A temporal property is a material property that represents attributes related to the time-dependent behavior of a material or process."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000972 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000972 co:PMD_0000005)
-SubClassOf(co:PMD_0000972 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000880))
 
 # Class: co:PMD_0000973 (tensile testing machine)
 
@@ -6315,7 +6434,7 @@ AnnotationAssertion(skos:example co:PMD_0000979 "Measuring the thermal conductiv
 AnnotationAssertion(co:PMD_0050117 co:PMD_0000979 "TCMP"@en)
 SubClassOf(co:PMD_0000979 co:PMD_0000982)
 
-# Class: co:PMD_0000980 (thermal conductivity measuring function)
+# Class: co:PMD_0000980 (Wärmeleitfähigkeitsmessfunktion)
 
 AnnotationAssertion(rdfs:label co:PMD_0000980 "Wärmeleitfähigkeitsmessfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000980 "thermal conductivity measuring function"@en)
@@ -6330,7 +6449,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000981 "thermal property"@en)
 AnnotationAssertion(skos:definition co:PMD_0000981 "A thermal property is a material property representing attributes of a material that describe its behavior under temperature changes, such as thermal conductivity and expansion."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000981 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000981 co:PMD_0000005)
-SubClassOf(co:PMD_0000981 ObjectSomeValuesFrom(co:PMD_0001030 co:PMD_0000520))
+SubClassOf(co:PMD_0000981 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000520))
 
 # Class: co:PMD_0000982 (Thermische Eigenschaften Analyseverfahren)
 
@@ -6339,6 +6458,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000982 "thermal property analyzing proces
 AnnotationAssertion(skos:definition co:PMD_0000982 "An assay that measures the thermal behavior of materials, including heat capacity, thermal conductivity, thermal expansion, and phase transitions in response to temperature changes."@en)
 AnnotationAssertion(skos:definition co:PMD_0000982 "Eine Analyse, die das thermische Verhalten von Materialien misst, einschließlich Wärmekapazität, Wärmeleitfähigkeit, thermischer Ausdehnung und Phasenübergängen in Reaktion auf Temperaturänderungen."@de)
 SubClassOf(co:PMD_0000982 obo:OBI_0000070)
+SubClassOf(co:PMD_0000982 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000981))
 
 # Class: co:PMD_0000983 (Thermoelement)
 
@@ -6439,9 +6559,9 @@ SubClassOf(co:PMD_0000995 co:PMD_0000849)
 # Class: co:PMD_0000996 (triple point)
 
 AnnotationAssertion(rdfs:label co:PMD_0000996 "triple point"@en)
-AnnotationAssertion(skos:definition co:PMD_0000996 "The triple point is a phase boundary described by the specific temperature and pressure at which three phases of a substance coexist in equilibrium."@en)
+AnnotationAssertion(skos:definition co:PMD_0000996 "The triple point is a state of matter point realized by transition form the solid state to the liquid state or the the gaseous state (or vice versa)."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000996 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000996 co:PMD_0000882)
+SubClassOf(co:PMD_0000996 co:PMD_0020164)
 
 # Class: co:PMD_0000997 (ultrasonic cleaner)
 
@@ -6500,7 +6620,7 @@ AnnotationAssertion(rdfs:label co:PMD_0001007 "Wasserstrahlschneider"@de)
 AnnotationAssertion(rdfs:label co:PMD_0001007 "waterjet cutter"@en)
 AnnotationAssertion(skos:definition co:PMD_0001007 "A device that utilizes a high-pressure stream of water or a water stream with abrasive particles to cut materials such as metal, stone, plastic, etc."@en)
 AnnotationAssertion(skos:definition co:PMD_0001007 "Ein Gerät, das einen Hochdruckwasserstrahl oder einen Wasserstrahl mit abrasiven Partikeln verwendet, um Materialien wie Metall, Stein, Kunststoff usw. zu schneiden."@de)
-SubClassOf(co:PMD_0001007 co:PMD_0001998)
+SubClassOf(co:PMD_0001007 ObjectIntersectionOf(co:PMD_0000602 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000592)))
 
 # Class: co:PMD_0001008 (waver irradiation)
 
@@ -6559,6 +6679,8 @@ AnnotationAssertion(skos:definition co:PMD_0001015 "Ein Röntgenanalyseverfahren
 AnnotationAssertion(skos:example co:PMD_0001015 "For example, X-ray Computed Tomography can be used to analyze the porosity of cement. This process allows researchers to visualize and quantify the distribution, size, and connectivity of pores within the cement."@en)
 AnnotationAssertion(co:PMD_0050117 co:PMD_0001015 "CT"@en)
 SubClassOf(co:PMD_0001015 co:PMD_0001014)
+SubClassOf(co:PMD_0001015 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0020132))
+SubClassOf(co:PMD_0001015 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0050155))
 
 # Class: co:PMD_0001016 (x-ray diffraction process)
 
@@ -6569,6 +6691,8 @@ AnnotationAssertion(skos:definition co:PMD_0001016 "Ein Röntgenanalyseverfahren
 AnnotationAssertion(skos:example co:PMD_0001016 "XRD is used to e.g. determine the crystal structure of newly synthesized compounds to determine the crystal lattice arrangement."@en)
 AnnotationAssertion(co:PMD_0050117 co:PMD_0001016 "XRD"@en)
 SubClassOf(co:PMD_0001016 co:PMD_0001014)
+SubClassOf(co:PMD_0001016 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000591))
+SubClassOf(co:PMD_0001016 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000853))
 
 # Class: co:PMD_0001017 (Röntgen-Mapping)
 
@@ -6578,6 +6702,7 @@ AnnotationAssertion(skos:definition co:PMD_0001017 "An X-ray Analyzing Process t
 AnnotationAssertion(skos:definition co:PMD_0001017 "Ein Röntgenanalyseverfahren, das eine räumliche Verteilungskarte der Elemente innerhalb einer Probe erstellt, indem die Probe mit einem Elektronen- oder Röntgenstrahl abgetastet und die emittierten Röntgenstrahlen detektiert werden, wodurch detaillierte Zusammensetzungsinformationen über die Oberfläche der Probe geliefert werden."@de)
 AnnotationAssertion(skos:example co:PMD_0001017 "An example of an X-ray Mapping process is X-ray Absorption Spectroscopy, X-ray Fluorescence, or X-ray Photoelectron Spectroscopy."@en)
 SubClassOf(co:PMD_0001017 co:PMD_0001014)
+SubClassOf(co:PMD_0001017 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000551))
 
 # Class: co:PMD_0001018 (x-ray microanalysis)
 
@@ -6587,6 +6712,7 @@ AnnotationAssertion(skos:definition co:PMD_0001018 "An X-ray Analyzing Process t
 AnnotationAssertion(skos:definition co:PMD_0001018 "Ein Röntgenanalyseverfahren, das die elementare Zusammensetzung und chemischen Eigenschaften einer Probe bestimmt, indem die charakteristischen Röntgenstrahlen detektiert und analysiert werden, die von der Probe emittiert werden, wenn sie mit einem fokussierten Elektronenstrahl bestrahlt wird."@de)
 AnnotationAssertion(skos:example co:PMD_0001018 "An example for X-ray Microanalysis process is Energy Dispersive X-ray Spectroscopy."@en)
 SubClassOf(co:PMD_0001018 co:PMD_0001014)
+SubClassOf(co:PMD_0001018 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000551))
 
 # Class: co:PMD_0001019 (Röntgenspektroskopie)
 
@@ -6641,9 +6767,7 @@ SubClassOf(co:PMD_0001024 co:PMD_0000602)
 
 AnnotationAssertion(rdfs:label co:PMD_0001998 "cutting device"@en)
 AnnotationAssertion(skos:definition co:PMD_0001998 "A device designed to cut, slice, divide, or sever objects."@en)
-EquivalentClasses(co:PMD_0001998 ObjectIntersectionOf(co:PMD_0000602 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000592)))
-SubClassOf(co:PMD_0001998 co:PMD_0000602)
-SubClassOf(co:PMD_0001998 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000592))
+SubClassOf(co:PMD_0001998 ObjectIntersectionOf(co:PMD_0000602 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000592)))
 
 # Class: co:PMD_0001999 (hand held device)
 
@@ -6687,14 +6811,27 @@ AnnotationAssertion(rdfs:label co:PMD_0020004 "composition specification"@en)
 AnnotationAssertion(skos:definition co:PMD_0020004 "Composition specification is an information content entity that is conretized by  composition of a portion of matter and has memebers fraction specifications of portions of other matters (but not chemical elements) of which the whole portion of matter consists of (has parts)."@en)
 AnnotationAssertion(skos:example co:PMD_0020004 "Nitric acid solution has quality  composition , which concretizes the composition specification .The composition specification has parts fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications are conretized by relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020004 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0020004 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0025001)))
-SubClassOf(co:PMD_0020004 obo:IAO_0000030)
-SubClassOf(co:PMD_0020004 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0025001))
+SubClassOf(co:PMD_0020004 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0025001)))
+
+# Class: co:PMD_0020005 (porosity)
+
+AnnotationAssertion(rdfs:label co:PMD_0020005 "porosity"@en)
+AnnotationAssertion(skos:definition co:PMD_0020005 "The porosity is a quality describing the fraction of the materials (enclosing) spatial region occupied by pores."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020005 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020005 co:PMD_0020131)
+
+# Class: co:PMD_0020022 (corrosion process)
+
+AnnotationAssertion(rdfs:comment co:PMD_0020022 "Corrosion is typically of interest when the change of the material affects the objects ability to fulfill its function."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020022 "corrosion process"@en)
+AnnotationAssertion(skos:definition co:PMD_0020022 "Corrosion is a process that affects a material by changing it in a slow chemical reaction."@en)
+SubClassOf(co:PMD_0020022 obo:BFO_0000015)
+SubClassOf(co:PMD_0020022 ObjectSomeValuesFrom(co:PMD_0025013 ObjectIntersectionOf(co:PMD_0000551 ObjectSomeValuesFrom(obo:RO_0000080 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000091 obo:BFO_0000016))))))
 
 # Class: co:PMD_0020023 (metallic grain structures)
 
 AnnotationAssertion(rdfs:label co:PMD_0020023 "metallic grain structures"@en)
-AnnotationAssertion(skos:definition co:PMD_0020023 "Metallic grain structures are descriptors for the morphology of polycrystalline metallic materials. Polycrystalline metallic materials will typically form their grain structures as one of those categories or a transition or mixture state of those."@en)
+AnnotationAssertion(skos:definition co:PMD_0020023 "The metallic grain structures is a categorical value specification that specifies value of the  metallic grain structure quality. It describes the morphology of polycrystalline metallic materials. Polycrystalline metallic materials will typically form their grain structures as one of those categories or a transition or mixture state of those."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020023 "true"^^xsd:boolean)
 EquivalentClasses(co:PMD_0020023 ObjectOneOf(co:PMD_0020027 co:PMD_0020097 co:PMD_0020100 co:PMD_0020107 co:PMD_0020109 co:PMD_0020110 co:PMD_0020111))
 SubClassOf(co:PMD_0020023 obo:OBI_0001930)
@@ -7278,18 +7415,17 @@ SubClassOf(co:PMD_0020096 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0020030))
 
 AnnotationAssertion(rdfs:label co:PMD_0020098 "nature constant"@en)
 AnnotationAssertion(skos:definition co:PMD_0020098 "A nature constant is a generically dependent continuant whose value, magintude or configuration is determined by nature including physics and mathematics."@en)
-AnnotationAssertion(skos:example co:PMD_0020098 "Examples of nature constants are the speed of light, pi, and the 14 Bravais lattices."@en)
+AnnotationAssertion(skos:example co:PMD_0020098 "Examples of nature constants are the speed of light, pi, etc."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020098 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020098 obo:BFO_0000031)
 
 # Class: co:PMD_0020099 (bravais lattice (3d))
 
-AnnotationAssertion(rdfs:label co:PMD_0020099 "bravais lattice (3d)"@en)
-AnnotationAssertion(skos:definition co:PMD_0020099 "The Bravais Lattice is a nature constant that describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements. 
-
-TODO: possibly extend for 2D (Graphene etc)
+AnnotationAssertion(rdfs:comment co:PMD_0020099 "TODO: possibly extend for 2D (Graphene etc)
 
 More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso"@en)
+AnnotationAssertion(rdfs:label co:PMD_0020099 "bravais lattice (3d)"@en)
+AnnotationAssertion(skos:definition co:PMD_0020099 "The Bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020099 "true"^^xsd:boolean)
 EquivalentClasses(co:PMD_0020099 ObjectOneOf(co:PMD_0020006 co:PMD_0020007 co:PMD_0020008 co:PMD_0020009 co:PMD_0020010 co:PMD_0020011 co:PMD_0020012 co:PMD_0020013 co:PMD_0020014 co:PMD_0020015 co:PMD_0020016 co:PMD_0020017 co:PMD_0020018 co:PMD_0020019))
 SubClassOf(co:PMD_0020099 obo:OBI_0001930)
@@ -7338,9 +7474,11 @@ SubClassOf(co:PMD_0020105 co:PMD_0000000)
 # Class: co:PMD_0020106 (polycrystal)
 
 AnnotationAssertion(rdfs:label co:PMD_0020106 "polycrystal"@en)
-AnnotationAssertion(skos:definition co:PMD_0020106 "Polycrystal is an object aggregate that has continuant part some crystal grains"@en)
+AnnotationAssertion(skos:altLabel co:PMD_0020106 "Polycrystalline structure"@en)
+AnnotationAssertion(skos:definition co:PMD_0020106 "Polycrystal is a connected object aggregate that has continuant part some crystal grains"@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020106 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0020106 obo:BFO_0000027)
+SubClassOf(co:PMD_0020106 co:PMD_0000890)
+SubClassOf(co:PMD_0020106 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0000663))
 
 # Class: co:PMD_0020108 (graphite)
 
@@ -7381,7 +7519,7 @@ SubClassOf(co:PMD_0020115 co:PMD_0000891)
 # Class: co:PMD_0020116 (aggregate state value)
 
 AnnotationAssertion(rdfs:label co:PMD_0020116 "aggregate state value"@en)
-AnnotationAssertion(skos:definition co:PMD_0020116 "The aggregate state type is a nature constant that concretizes the aggregatge state quality."@en)
+AnnotationAssertion(skos:definition co:PMD_0020116 "The aggregate state value is a categorical value specification that specifies value of the aggregatge state quality."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020116 "true"^^xsd:boolean)
 EquivalentClasses(co:PMD_0020116 ObjectOneOf(co:PMD_0020117 co:PMD_0020118 co:PMD_0020119 co:PMD_0020120 co:PMD_0020121 co:PMD_0020122 co:PMD_0020123 co:PMD_0020124 co:PMD_0020125))
 SubClassOf(co:PMD_0020116 obo:OBI_0001930)
@@ -7414,7 +7552,7 @@ SubClassOf(co:PMD_0020129 obo:BFO_0000015)
 # Class: co:PMD_0020130 (driving force of phase in system)
 
 AnnotationAssertion(rdfs:label co:PMD_0020130 "driving force of phase in system"@en)
-AnnotationAssertion(skos:definition co:PMD_0020130 "The driving force is the the gradient of the activity of a phase in a thermodynamic system."@en)
+AnnotationAssertion(skos:definition co:PMD_0020130 "Driving force is relational property between two material entities, the species and the material (system). The driving force is a factor that promotes a physical process or (eletro-)chemical reaction in a material (system) to occur and proceed towards completion. It can be quantified as the gradient of the activity of the participating species."@en)
 AnnotationAssertion(skos:example co:PMD_0020130 "For α → β: ΔG = G_β − G_α. If ΔG < 0, the transformation is thermodynamically favorable; many report the driving force as F = −ΔG > 0."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020130 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020130 obo:BFO_0000145)
@@ -7494,6 +7632,13 @@ AnnotationAssertion(rdfs:label co:PMD_0020140 "portion of pure chemical element"
 AnnotationAssertion(skos:definition co:PMD_0020140 "A portion of pure chemical element is a pure substance composed of multiple atoms, which are all of the same kind."@en)
 SubClassOf(co:PMD_0020140 obo:CHEBI_60003)
 
+# Class: co:PMD_0020141 (fatigue process)
+
+AnnotationAssertion(rdfs:comment co:PMD_0020141 "Fatigue is typically of interest when the change of the material affects the objects ability to fulfill its function."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020141 "fatigue process"@en)
+AnnotationAssertion(skos:definition co:PMD_0020141 "Fatigue is a process that affects a material by changes in its stress state."@en)
+SubClassOf(co:PMD_0020141 obo:BFO_0000015)
+
 # Class: co:PMD_0020142 (energy)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0020142 <http://openenergy-platform.org/ontology/oeo/OEO_00000150>)
@@ -7529,7 +7674,7 @@ SubClassOf(co:PMD_0020146 obo:BFO_0000023)
 # Class: co:PMD_0020147 (eutectoid phase transformation)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020147 "It is defined on the phase diagram at fixed composition and typically proceeds by diffusion‑controlled nucleation and growth (e.g., γ → α + Fe3C producing pearlite in steels)."@en)
-AnnotationAssertion(rdfs:label co:PMD_0020147 "eutectoid phase transformation"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020147 "eutectoid phase transformation"@en)
 AnnotationAssertion(skos:definition co:PMD_0020147 "A eutectoid phase transformation is a phase transformation in which a solid parent phase of eutectoid composition decomposes into two distinct solid daughter phases at constant temperature and pressure."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020147 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020147 co:PMD_0020136)
@@ -7561,7 +7706,8 @@ SubClassOf(co:PMD_0020150 co:PMD_0020132)
 AnnotationAssertion(rdfs:label co:PMD_0020151 "internal energy"@en)
 AnnotationAssertion(skos:definition co:PMD_0020151 "Internal energy is a universal extensive quality that specifies the bearers potential to do work."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020151 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0020151 co:PMD_0020148)
+SubClassOf(co:PMD_0020151 co:PMD_0020142)
+DisjointClasses(co:PMD_0020151 co:PMD_0020155)
 
 # Class: co:PMD_0020152 (component)
 
@@ -7581,7 +7727,7 @@ SubClassOf(co:PMD_0020153 obo:BFO_0000027)
 # Class: co:PMD_0020154 (precipitation (phase))
 
 AnnotationAssertion(rdfs:comment co:PMD_0020154 "It proceeds by nucleation and growth."@en)
-AnnotationAssertion(rdfs:label co:PMD_0020154 "precipitation (phase)"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020154 "precipitation (phase)"@en)
 AnnotationAssertion(skos:definition co:PMD_0020154 "Precipitation from a supersaturated solid solution is a phase transformation process in which a single supersaturated parent phase decomposes into a solute‑depleted matrix and dispersed, compositionally distinct precipitate phases."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020154 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020154 co:PMD_0020136)
@@ -7591,12 +7737,12 @@ SubClassOf(co:PMD_0020154 co:PMD_0020136)
 AnnotationAssertion(rdfs:label co:PMD_0020155 "interatomic interaction energy"@en)
 AnnotationAssertion(skos:definition co:PMD_0020155 "Interatomic interaction energy is added/removed from the atom aggregate if one atom is moved infinitely away from the rest of the aggregate."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020155 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0020155 co:PMD_0020148)
+SubClassOf(co:PMD_0020155 co:PMD_0020142)
 
 # Class: co:PMD_0020156 (peritectic phase transformation)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020156 "It is marked on phase diagrams by a peritectic point and proceeds by an interfacial, diffusion‑controlled reaction that is often kinetically sluggish, leading to incomplete transformation or complex microstructures during solidification."@en)
-AnnotationAssertion(rdfs:label co:PMD_0020156 "peritectic phase transformation"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020156 "peritectic phase transformation"@en)
 AnnotationAssertion(skos:definition co:PMD_0020156 "A peritectic phase transformation is a phase transformation in which a liquid parent phase and an existing solid phase react on cooling to form a different solid phase (L + α → β)."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020156 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020156 co:PMD_0020136)
@@ -7604,21 +7750,21 @@ SubClassOf(co:PMD_0020156 co:PMD_0020136)
 # Class: co:PMD_0020157 (spinodal decomposition)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020157 "Unlike nucleation and growth transformations, it has no nucleation barrier and proceeds by uphill diffusion and wavelength‑selective amplification of composition modulations, producing an interconnected, compositionally modulated microstructure that coarsens over time."@en)
-AnnotationAssertion(rdfs:label co:PMD_0020157 "spinodal decomposition"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020157 "spinodal decomposition"@en)
 AnnotationAssertion(skos:definition co:PMD_0020157 "Spinodal decomposition is a diffusion‑controlled  continuous phase transformation in which a single homogeneous solutionspontaneously separates into two compositionally distinct phases by amplification of infinitesimal concentration fluctuations."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020157 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020157 co:PMD_0020136)
 
 # Class: co:PMD_0020158 (parent phase role)
 
-AnnotationAssertion(rdfs:label co:PMD_0020158 "parent phase role"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020158 "parent phase role"@en)
 AnnotationAssertion(skos:definition co:PMD_0020158 "The parent phase role is the role of a phase that dissolves during the phase transformation process. As such, the bearer is a metastable phase."@en)
 SubClassOf(co:PMD_0020158 obo:BFO_0000023)
 DisjointClasses(co:PMD_0020158 co:PMD_0020159)
 
 # Class: co:PMD_0020159 (daughter phase role)
 
-AnnotationAssertion(rdfs:label co:PMD_0020159 "daughter phase role"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020159 "daughter phase role"@en)
 AnnotationAssertion(skos:definition co:PMD_0020159 "The daugther phase role is the role of a phase that forms during the phase transformation process."@en)
 SubClassOf(co:PMD_0020159 obo:BFO_0000023)
 
@@ -7633,30 +7779,32 @@ Martensite is a microconstituent that has as part the thermodynamic ferrite phas
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020160 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020160 co:PMD_0000001)
 
-# Class: co:PMD_0020161 (activity of a phase)
+# Class: co:PMD_0020161 (activity (thermodynamic))
 
-AnnotationAssertion(obo:IAO_0000116 co:PMD_0020161 "Definition not final"@en)
-AnnotationAssertion(rdfs:comment co:PMD_0020161 "Typical configuration independent contributions to the free energy are temperature, pressure, chemical composition and magnetic contributions.
-
-Typical configuration dependent contributions are interface energy contributions."@en)
-AnnotationAssertion(rdfs:label co:PMD_0020161 "activity of a phase"@en)
-AnnotationAssertion(skos:definition co:PMD_0020161 "Quality of a thermodynamic phase that characterizes its free energy."@en)
-SubClassOf(co:PMD_0020161 co:PMD_0020148)
+AnnotationAssertion(rdfs:label co:PMD_0020161 "activity (thermodynamic)"@en)
+AnnotationAssertion(skos:definition co:PMD_0020161 "Activity (a_X) is a relational property between a chemical species X and a non-ideal solution. a_X is a measure of the effective concentration of a chemical species X in the non-ideal solution, accounting for interactions between particles. It is defined as the product of the concentration and an activity coefficient, where the activity coefficient corrects for non-ideal behavior."@en)
+SubClassOf(co:PMD_0020161 obo:BFO_0000145)
 
 # Class: co:PMD_0020162 (activation energy)
 
-AnnotationAssertion(obo:IAO_0000116 co:PMD_0020162 "Definition not final"@en)
 AnnotationAssertion(rdfs:label co:PMD_0020162 "activation energy"@en)
-AnnotationAssertion(skos:definition co:PMD_0020162 "Process attribute characterizing the kinetics of a phase transformation (aka chemical reaction)."@en)
+AnnotationAssertion(skos:definition co:PMD_0020162 "Activation energy (E_a) a process attribute characterizing the minimum amount of energy required to initiate a reaction, allowing educts to overcome an energy barrier to transform into products."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020162 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020162 co:PMD_0000008)
 
 # Class: co:PMD_0020163 (eutectic phase transformation)
 
-AnnotationAssertion(rdfs:label co:PMD_0020163 "eutectic phase transformation"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020163 "eutectic phase transformation"@en)
 AnnotationAssertion(skos:definition co:PMD_0020163 "A eutectic phase transformation is a phase transformation in which a liquid parent phase decomposes into two distinct solid daughter phases at constant temperature and pressure."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020163 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020163 co:PMD_0020136)
+
+# Class: co:PMD_0020164 (state of matter boundary)
+
+AnnotationAssertion(rdfs:label co:PMD_0020164 "state of matter boundary"@en)
+AnnotationAssertion(skos:definition co:PMD_0020164 "A state of matter boundary is a phase boundary that is realized by the transition from one aggregate state to another aggregate state."@en)
+AnnotationAssertion(co:PMD_0000060 co:PMD_0020164 "true"^^xsd:boolean)
+SubClassOf(co:PMD_0020164 co:PMD_0000882)
 
 # Class: co:PMD_0020165 (disposition of a phase to transform)
 
@@ -7671,6 +7819,34 @@ SubClassOf(co:PMD_0020165 obo:BFO_0000016)
 AnnotationAssertion(rdfs:label co:PMD_0020166 "heat (metallurgy)"@en)
 AnnotationAssertion(skos:definition co:PMD_0020166 "A heat is a fixed amount of metallic alloy that may be input to some Manifacturing Process."@en)
 SubClassOf(co:PMD_0020166 ObjectIntersectionOf(co:PMD_0020139 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000534)))
+
+# Class: co:PMD_0020167 (structural boundary)
+
+AnnotationAssertion(rdfs:label co:PMD_0020167 "structural boundary"@en)
+AnnotationAssertion(skos:definition co:PMD_0020167 "Structural phase boundary is a phase boundary that is realized in the transition from one structure to another structure."@en)
+AnnotationAssertion(skos:example co:PMD_0020167 "ɑ-Ɣ transformation in iron at 910 °C"@en)
+SubClassOf(co:PMD_0020167 co:PMD_0000882)
+
+# Class: co:PMD_0020168 (magnetic boundary)
+
+AnnotationAssertion(rdfs:label co:PMD_0020168 "magnetic boundary"@en)
+AnnotationAssertion(skos:definition co:PMD_0020168 "A magnetic boundary is a phase boundary that is realized by the transition from one magnetic ordering to another magnetic ordering."@en)
+SubClassOf(co:PMD_0020168 co:PMD_0000882)
+
+# Class: co:PMD_0020169 (mixture boundary)
+
+AnnotationAssertion(rdfs:label co:PMD_0020169 "mixture boundary"@en)
+AnnotationAssertion(skos:definition co:PMD_0020169 "A mixture boundary boundary is a phase boundary that is realized by the transition from one phase to another phase in a system involving also chemical variations."@en)
+SubClassOf(co:PMD_0020169 co:PMD_0000882)
+
+# Class: co:PMD_0020171 (phase boundary (spatial))
+
+AnnotationAssertion(obo:IAO_0000116 co:PMD_0020171 "Should it have exactly two phases as member parts?"@en)
+AnnotationAssertion(rdfs:label co:PMD_0020171 "phase boundary (spatial)"@en)
+AnnotationAssertion(skos:definition co:PMD_0020171 "A fiat surface separating one phase from another phase."@en)
+AnnotationAssertion(skos:example co:PMD_0020171 "The phase boundary between liquid and the gaseous phase in at ank. 
+The phase boundary between Fe3C and Fe of a pearlite lamellae."@en)
+SubClassOf(co:PMD_0020171 obo:BFO_0000146)
 
 # Class: co:PMD_0020200 (force)
 
@@ -7734,18 +7910,16 @@ AnnotationAssertion(rdfs:label co:PMD_0025002 "chemical composition specificatio
 AnnotationAssertion(skos:definition co:PMD_0025002 "Chemical composition specification is an information content entity that is conretized by chemical composition of a material and has memebers fraction specifications of portions of chemical elements of which the material consists of (has parts)."@en)
 AnnotationAssertion(skos:example co:PMD_0025002 "Steel has quality chemical composition , which concretizes the chemical composition specification .The chemical composition specification has parts fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these  fraction specifications are conretized by relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0025002 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0025002 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0000551)))
-SubClassOf(co:PMD_0025002 co:PMD_0020004)
-SubClassOf(co:PMD_0025002 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0000551))
+SubClassOf(co:PMD_0025002 ObjectIntersectionOf(co:PMD_0020004 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0000551)))
 
 # Class: co:PMD_0025003 (metallic grain structure)
 
 AnnotationAssertion(rdfs:label co:PMD_0025003 "metallic grain structure"@en)
 AnnotationAssertion(skos:definition co:PMD_0025003 "metallic grain structure characterizes the distinct phases in the microscopic structure of a metallic material. It concretizes ferrite, austenite, martensite, etc."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0025003 "false"^^xsd:boolean)
-EquivalentClasses(co:PMD_0025003 ObjectExactCardinality(1 ObjectInverseOf(obo:OBI_0001927) co:PMD_0020023))
+EquivalentClasses(co:PMD_0025003 ObjectExactCardinality(1 co:PMD_0000077 co:PMD_0020023))
 SubClassOf(co:PMD_0025003 co:PMD_0020131)
-SubClassOf(co:PMD_0025003 ObjectSomeValuesFrom(ObjectInverseOf(obo:OBI_0001927) co:PMD_0020023))
+SubClassOf(co:PMD_0025003 ObjectSomeValuesFrom(co:PMD_0000077 co:PMD_0020023))
 
 # Class: co:PMD_0025004 (alloy)
 
@@ -7754,17 +7928,92 @@ AnnotationAssertion(skos:definition co:PMD_0025004 "An alloy is a material conta
 AnnotationAssertion(co:PMD_0000060 co:PMD_0025004 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0025004 co:PMD_0000852)
 
+# Class: co:PMD_0025005 (3D)
+
+AnnotationAssertion(rdfs:label co:PMD_0025005 "3D"@en)
+AnnotationAssertion(skos:definition co:PMD_0025005 "A three-dimensional information content entity is a representation or analysis, commonly applied in studying material properties in its volume or describing a dependency of one variable on two other variables."@en)
+AnnotationAssertion(skos:example co:PMD_0025005 "Orientation distribution function (ODF), potential energy landscape"@en)
+SubClassOf(co:PMD_0025005 obo:IAO_0000030)
+
+# Class: co:PMD_0025007 (frequency)
+
+AnnotationAssertion(rdfs:label co:PMD_0025007 "frequency"@en)
+AnnotationAssertion(skos:definition co:PMD_0025007 "frequency is a process attribute which characterizes the rate per second of oscillation or vibration."@en)
+AnnotationAssertion(skos:example co:PMD_0025007 "Frequency of electromagnetic wave, Frequency of sound wave."@en)
+SubClassOf(co:PMD_0025007 co:PMD_0000008)
+
+# Class: co:PMD_0025008 (Transmissionselektronenmikroskop)
+
+AnnotationAssertion(rdfs:label co:PMD_0025008 "Transmissionselektronenmikroskop"@de)
+AnnotationAssertion(rdfs:label co:PMD_0025008 "transmission electron microscope"@en)
+AnnotationAssertion(skos:definition co:PMD_0025008 "A Transmission Electron Microscope (SEM) is a Measuring Device that produces high-resolution images of a sample's internal structure by transmitting electrons through the sample."@en)
+AnnotationAssertion(skos:definition co:PMD_0025008 "Ein Transmissionselektronenmikroskop (TEM) ist ein Messgerät, das hochauflösende Bilder der inneren Struktur einer Probe erzeugt, indem es Elektronen durch die Probe strahlt."@de)
+SubClassOf(co:PMD_0025008 co:PMD_0000624)
+
+# Class: co:PMD_0025009 (material reacting process)
+
+AnnotationAssertion(rdfs:label co:PMD_0025009 "material reacting process"@en)
+AnnotationAssertion(skos:definition co:PMD_0025009 "Material reacting process is a process which occurs in a portion of matter due to some of its disposition or behavioral material property which has realization in some  stimulating process. Both the material reacting process and stimulating process must be occurent parts of a planned process, if the planned process takes place."@en)
+EquivalentClasses(co:PMD_0025009 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000066 co:PMD_0000001) ObjectSomeValuesFrom(co:PMD_0001028 ObjectIntersectionOf(ObjectUnionOf(obo:BFO_0000016 co:PMD_0000005) ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000950)))))
+SubClassOf(co:PMD_0025009 obo:BFO_0000015)
+SubClassOf(co:PMD_0025009 ObjectSomeValuesFrom(obo:BFO_0000066 co:PMD_0000001))
+SubClassOf(co:PMD_0025009 ObjectSomeValuesFrom(co:PMD_0001028 ObjectIntersectionOf(ObjectUnionOf(obo:BFO_0000016 co:PMD_0000005) ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000950))))
+
+# Class: co:PMD_0025010 (heating)
+
+AnnotationAssertion(rdfs:label co:PMD_0025010 "heating"@en)
+AnnotationAssertion(skos:definition co:PMD_0025010 "Heating is a change of temperature which corresponds to the increase of temperature in the system or object."@en)
+SubClassOf(co:PMD_0025010 co:PMD_0000549)
+
+# Class: co:PMD_0025011 (cooling)
+
+AnnotationAssertion(rdfs:label co:PMD_0025011 "cooling"@en)
+AnnotationAssertion(skos:definition co:PMD_0025011 "Cooling is a change of temperature which corresponds to the decrease of temperature in the system or object."@en)
+SubClassOf(co:PMD_0025011 co:PMD_0000549)
+
+# Class: co:PMD_0025012 (analytical calculation)
+
+AnnotationAssertion(rdfs:label co:PMD_0025012 "analytical calculation"@en)
+AnnotationAssertion(skos:definition co:PMD_0025012 "Analytical calculation is a computing process which has value specification or measurement datum as a specified output. It applies a closed-form mathematical expression or formula to a set it specified inputs (value specifications) without requiring stochastic sampling, iterative numerical solving, or data-driven training."@en)
+SubClassOf(co:PMD_0025012 co:PMD_0000583)
+
+# Class: co:PMD_0025014 (single crystal)
+
+AnnotationAssertion(rdfs:label co:PMD_0025014 "single crystal"@en)
+AnnotationAssertion(skos:definition co:PMD_0025014 "Single crystal is a crystal which is not part of a polycrystal and its boundaries are its exteral surfaces."@en)
+SubClassOf(co:PMD_0025014 co:PMD_0020003)
+
+# Class: co:PMD_0025015 (portion of lanthanum)
+
+AnnotationAssertion(rdfs:comment co:PMD_0025015 "'portion of pure chemical element' and 'has part' only CHEBI:33336")
+AnnotationAssertion(rdfs:label co:PMD_0025015 "portion of lanthanum"@en)
+AnnotationAssertion(skos:definition co:PMD_0025015 "A portion of lanthanum is a portion of pure substance that has parts only chebi:lanthanum atom."@en)
+SubClassOf(co:PMD_0025015 co:PMD_0020140)
+
+# Class: co:PMD_0025016 (Innendurchmesser)
+
+AnnotationAssertion(rdfs:label co:PMD_0025016 "Innendurchmesser"@de)
+AnnotationAssertion(rdfs:label co:PMD_0025016 "inner diameter"@en)
+AnnotationAssertion(skos:definition co:PMD_0025016 "Der Innendurchmesser ist die Länge einer geraden Linie von einer Innenfläche eines Objekts oder Raums zur anderen Seite seiner Innenfläche durch den Mittelpunkt eines Objekts oder Raums, wenn es eine Innen- und Außenfläche hat."@de)
+AnnotationAssertion(skos:definition co:PMD_0025016 "Inner diameter is a length of a straight line from one inner surface of an object or space to the other side of its inner surface through the center of an object or space when it has the inside and outside surface."@en)
+SubClassOf(co:PMD_0025016 co:PMD_0050051)
+
+# Class: co:PMD_0025017 (outer diameter)
+
+AnnotationAssertion(rdfs:label co:PMD_0025017 "Außendurchmesser"@de)
+AnnotationAssertion(rdfs:label co:PMD_0025017 "outer diameter"@en)
+AnnotationAssertion(skos:definition co:PMD_0025017 "Der Außendurchmesser ist die Länge einer geraden Linie von einer Außenfläche eines Objekts oder Raums zur anderen Seite seiner Außenfläche durch den Mittelpunkt eines Objekts oder Raums, wenn es eine Innen- und Außenfläche hat."@de)
+AnnotationAssertion(skos:definition co:PMD_0025017 "Outer diameter is a length of a straight line from one outer surface of an object or space to the other side of its outer surface through the center of an object or space when it has the inside and outside surface."@en)
+SubClassOf(co:PMD_0025017 co:PMD_0050051)
+
 # Class: co:PMD_0025997 (fraction value specification)
 
 AnnotationAssertion(rdfs:label co:PMD_0025997 "fraction value specification"@en)
 AnnotationAssertion(skos:definition co:PMD_0025997 "Fraction value specification is a value specification that contains information about quantative share of a part relative to a specified whole."@en)
 AnnotationAssertion(skos:example co:PMD_0025997 "2.05 wt.% of carbon in steel, 4 vol.% of nictric acid in a solution"@en)
-SubClassOf(co:PMD_0025997 obo:OBI_0001933)
-SubClassOf(co:PMD_0025997 ObjectIntersectionOf(ObjectIntersectionOf(obo:OBI_0001933 ObjectSomeValuesFrom(obo:OBI_0001927 obo:CHEBI_60003) ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(obo:CHEBI_59999 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CHEBI_60003))) ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0002351) co:PMD_0020004)) ObjectIntersectionOf(obo:OBI_0001933 ObjectSomeValuesFrom(obo:OBI_0001927 co:PMD_0020140) ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(co:PMD_0000000 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0020140))) ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0002351) co:PMD_0020004))))
-SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(obo:OBI_0001927 co:PMD_0020140))
-SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(obo:CHEBI_59999 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CHEBI_60003))))
-SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(co:PMD_0000000 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0020140))))
-SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0002351) co:PMD_0020004))
+SubClassOf(co:PMD_0025997 obo:OBI_0001931)
+SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(co:PMD_0020101 ObjectSomeValuesFrom(co:PMD_0025999 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:BFO_0000050 obo:BFO_0000040))))))
+SubClassOf(co:PMD_0025997 ObjectAllValuesFrom(obo:RO_0002350 co:PMD_0020004))
 
 # Class: co:PMD_0040001 (length)
 
@@ -8958,6 +9207,17 @@ AnnotationAssertion(skos:definition co:PMD_0060009 "A data item that provides sp
 AnnotationAssertion(co:PMD_0000060 co:PMD_0060009 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0060009 obo:IAO_0000027)
 
+# Class: co:PMD_0200000 (compression molding)
+
+AnnotationAssertion(dc:source co:PMD_0200000 "Official definition can be found in: DIN 8580, group 1.2.1 “Pressformen”."@de)
+AnnotationAssertion(dc:source co:PMD_0200000 "Offizielle Definition findet man in: DIN 8580, Gruppe 1.2.1 „Pressformen“."@de)
+AnnotationAssertion(rdfs:label co:PMD_0200000 "Pressformen"@de)
+AnnotationAssertion(rdfs:label co:PMD_0200000 "compression molding"@en)
+AnnotationAssertion(skos:altLabel co:PMD_0200000 "compression moulding"@en)
+AnnotationAssertion(skos:definition co:PMD_0200000 "A primary shaping process in which a pre-measured, usually preheated molding compound is placed in an open, heated mold cavity and shaped by closing the mold and applying pressure until the material cures or solidifies to the final part geometry."@en)
+AnnotationAssertion(skos:definition co:PMD_0200000 "Ein Urformverfahren, bei dem eine dosierte, meist vorgewärmte Formmasse in eine offene, beheizte Formkavität eingelegt und durch Schließen des Werkzeugs unter Druck zur endgültigen Bauteilgeometrie ausgehärtet bzw. erstarrt wird."@de)
+SubClassOf(co:PMD_0200000 co:PMD_0000907)
+
 # Class: co:PMD_0200001 (biodegradabilty)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0200001 "European Commission: Directorate-General for Research and Innovation, Biodegradability of plastics in the open environment, Publications Office of the European Union, 2021, https://data.europa.eu/doi/10.2777/690248")
@@ -8968,6 +9228,85 @@ AnnotationAssertion(skos:definition co:PMD_0200001 "\"[Biologische Abbaubarkeit]
 AnnotationAssertion(skos:definition co:PMD_0200001 "Biodegradability is a disposition of a material which specifies its capability to be fully microbially converted into inorganic end products (CO₂, CH₄, mineral salts, biomass) within an environmentally non-harmful timescale."@en)
 AnnotationAssertion(co:PMD_0001032 co:PMD_0200001 "https://github.com/materialdigital/core-ontology/issues/126")
 SubClassOf(co:PMD_0200001 obo:BFO_0000016)
+
+# Class: co:PMD_0200002 (Spritzgießen)
+
+AnnotationAssertion(dc:source co:PMD_0200002 "Official definition can be found in: DIN 8580, group 1.2.2 “Spritzgießen”."@en)
+AnnotationAssertion(dc:source co:PMD_0200002 "Offizielle Definition findet man in: DIN 8580, Gruppe 1.2.2 „Spritzgießen“."@de)
+AnnotationAssertion(rdfs:label co:PMD_0200002 "Spritzgießen"@de)
+AnnotationAssertion(rdfs:label co:PMD_0200002 "injection molding"@en)
+AnnotationAssertion(skos:altLabel co:PMD_0200002 "injection moulding; plastic injection molding"@en)
+AnnotationAssertion(skos:definition co:PMD_0200002 "A primary shaping process in which plastic granules are plasticised in an injection unit and the melt is injected under high pressure into a closed mold cavity, where it cools and solidifies to the final part shape."@en)
+AnnotationAssertion(skos:definition co:PMD_0200002 "Urformverfahren, bei dem Kunststoffgranulat in einem Plastifizieraggregat aufgeschmolzen und die Schmelze mit hohem Druck in einen geschlossenen Formhohlraum eingespritzt wird, wo sie verdichtet, abkühlt und zum Formteil erstarrt."@de)
+AnnotationAssertion(skos:example co:PMD_0200002 "Injection molding of polypropylene housings."@en)
+SubClassOf(co:PMD_0200002 co:PMD_0000907)
+
+# Class: co:PMD_0200003 (Spritzpressen)
+
+AnnotationAssertion(dc:source co:PMD_0200003 "Official definition can be found in: DIN 8580, group 1.2.3 “Spritzpressen”."@en)
+AnnotationAssertion(dc:source co:PMD_0200003 "Offizielle Definition findet man in: DIN 8580, Gruppe 1.2.3 „Spritzpressen“."@de)
+AnnotationAssertion(rdfs:label co:PMD_0200003 "Spritzpressen"@de)
+AnnotationAssertion(rdfs:label co:PMD_0200003 "injection-compression molding"@en)
+AnnotationAssertion(skos:altLabel co:PMD_0200003 "injection–compression moulding; transfer molding (Spritzpressen)"@en)
+AnnotationAssertion(skos:definition co:PMD_0200003 "A hybrid primary shaping process that combines injection and compression: a pre-plasticised charge or melt is injected into a closed or partially open mold and then compressed by further mold closure or a plunger so that the material completely fills the cavity and cures or solidifies under heat and pressure."@en)
+AnnotationAssertion(skos:definition co:PMD_0200003 "Urformverfahren, bei dem eine vorplastifizierte Formmasse aus einer beheizten Vorkammer bzw. einem Plastifizieraggregat in ein (teil-)geschlossenes Werkzeug eingespritzt und anschließend durch Schließen des Werkzeugs bzw. Nachdrücken verpresst wird, bis der Werkstoff unter Wärme und Druck aushärtet."@de)
+AnnotationAssertion(skos:example co:PMD_0200003 "Injection-compression molding of epoxy-encapsulated electronic components."@en)
+SubClassOf(co:PMD_0200003 co:PMD_0000907)
+
+# Class: co:PMD_0200004 (strangpressen (extrudieren))
+
+AnnotationAssertion(dc:source co:PMD_0200004 "Official definition can be found in: DIN 8580, group 1.2.4 "@en)
+AnnotationAssertion(dc:source co:PMD_0200004 "Offizielle Definition findet man in: DIN 8580, Gruppe 1.2.4 "@de)
+AnnotationAssertion(rdfs:label co:PMD_0200004 "extrusion"@en)
+AnnotationAssertion(rdfs:label co:PMD_0200004 "strangpressen (extrudieren)"@de)
+AnnotationAssertion(skos:definition co:PMD_0200004 "A primary shaping process in which a plastically deformable material, typically a polymer melt, is continuously forced by pressure through a shaping die to produce an endless strand with constant cross-section, which solidifies by cooling or curing."@en)
+AnnotationAssertion(skos:definition co:PMD_0200004 "Ein Urformverfahren, bei dem ein plastifizierter Werkstoff, meist eine Polymerschmelze, kontinuierlich unter Druck durch eine formgebende Düse gepresst wird und dabei einen Strang mit konstantem Querschnitt bildet, der durch Abkühlen oder Aushärten verfestigt wird."@de)
+AnnotationAssertion(skos:example co:PMD_0200004 "Extrusion of PVC window profiles; extrusion of plastic films or pipes from polyethylene melt."@en)
+SubClassOf(co:PMD_0200004 co:PMD_0000907)
+
+# Class: co:PMD_0200005 (Ziehformen)
+
+AnnotationAssertion(dc:source co:PMD_0200005 "Official definition can be found in: DIN 8580, group 1.2.5 "@en)
+AnnotationAssertion(dc:source co:PMD_0200005 "Offizielle Definition findet man in: DIN 8580, Gruppe 1.2.5 "@de)
+AnnotationAssertion(rdfs:label co:PMD_0200005 "Ziehformen"@de)
+AnnotationAssertion(rdfs:label co:PMD_0200005 "drawing forming"@en)
+AnnotationAssertion(skos:definition co:PMD_0200005 "A primary shaping process in which a plastically deformable mass (for example fibre-reinforced resin or glass/plastic strands) is pulled through one or more shaping tools or dies so that the cross-section and surface are formed by tensile forces, while the material solidifies or cures to produce continuous profiles. It is conceptually related to pultrusion / profile drawing."@en)
+AnnotationAssertion(skos:definition co:PMD_0200005 "Ein Urformverfahren, bei dem eine plastisch verformbare Masse (z. B. faserverstärkte Harzsysteme oder glasige/kunststoffhaltige Stränge) durch Zugkräfte durch formgebende Düsen oder Werkzeuge gezogen wird, sodass Querschnitt und Oberfläche ausgebildet und der Werkstoff dabei verfestigt bzw. ausgehärtet wird. Das Verfahren ist verwandt mit dem Strangzieh- bzw. Pultrusionsverfahren."@de)
+AnnotationAssertion(skos:example co:PMD_0200005 "Pultrusion of glass-fibre-reinforced polymer profiles; drawing of continuous fibre-reinforced rods through a heated die."@en)
+SubClassOf(co:PMD_0200005 co:PMD_0000907)
+
+# Class: co:PMD_0200006 (calendering)
+
+AnnotationAssertion(dc:source co:PMD_0200006 "Official definition can be found in: DIN 8580, group 1.2.6 "@en)
+AnnotationAssertion(dc:source co:PMD_0200006 "Offizielle Definition findet man in: DIN 8580, Gruppe 1.2.6 "@de)
+AnnotationAssertion(rdfs:label co:PMD_0200006 "Kalandrieren"@de)
+AnnotationAssertion(rdfs:label co:PMD_0200006 "calendering"@en)
+AnnotationAssertion(skos:definition co:PMD_0200006 "A primary shaping process in which a viscous polymer melt or plastic mass is passed through the narrow gaps between several counter-rotating, polished rolls so that it is compressed and rolled out into sheet or film of defined thickness and surface quality, then cooled to solidify."@en)
+AnnotationAssertion(skos:definition co:PMD_0200006 "Ein Urformverfahren, bei dem eine zähflüssige Polymerschmelze oder plastische Masse durch enge Spalte zwischen mehreren gegenläufig rotierenden, polierten Walzen geführt wird, wodurch sie verdichtet und zu Platten oder Folien definierter Dicke und Oberflächenqualität ausgewalzt und anschließend verfestigt wird."@de)
+AnnotationAssertion(skos:example co:PMD_0200006 "Calendering of plasticised PVC into rigid or flexible sheets and films; calendering of ABS sheet for thermoforming."@en)
+SubClassOf(co:PMD_0200006 co:PMD_0000907)
+
+# Class: co:PMD_0200007 (blow molding)
+
+AnnotationAssertion(dc:source co:PMD_0200007 "Official definition can be found in: DIN 8580, group 1.2.7 "@en)
+AnnotationAssertion(dc:source co:PMD_0200007 "Offizielle Definition findet man in: DIN 8580, Gruppe 1.2.7 "@de)
+AnnotationAssertion(rdfs:label co:PMD_0200007 "Blasformen"@de)
+AnnotationAssertion(rdfs:label co:PMD_0200007 "blow molding"@en)
+AnnotationAssertion(skos:definition co:PMD_0200007 "A primary shaping process in which a tube or preform of molten or plasticised material is enclosed in a mold and expanded by internal gas pressure so that it conforms to the mold cavity, producing hollow bodies which then solidify."@en)
+AnnotationAssertion(skos:definition co:PMD_0200007 "Ein Urformverfahren, bei dem ein Schlauch oder ein Vorformling aus geschmolzenem bzw. plastifizierten Werkstoff in ein Werkzeug eingelegt und durch inneren Gasdruck an die Formwand aufgeblasen wird, sodass ein Hohlkörper entsteht, der anschließend verfestigt wird."@de)
+AnnotationAssertion(skos:example co:PMD_0200007 "Extrusion blow molding of HDPE bottles; stretch-blow molding of PET beverage containers; blow molding of fuel tanks for automotive applications."@en)
+SubClassOf(co:PMD_0200007 co:PMD_0000907)
+
+# Class: co:PMD_0200008 (modelling)
+
+AnnotationAssertion(dc:source co:PMD_0200008 "Official definition can be found in: DIN 8580, group 1.2.8 "@en)
+AnnotationAssertion(dc:source co:PMD_0200008 "Offizielle Definition findet man in: DIN 8580, Gruppe 1.2.8 "@de)
+AnnotationAssertion(rdfs:label co:PMD_0200008 "Modellieren"@de)
+AnnotationAssertion(rdfs:label co:PMD_0200008 "modelling"@en)
+AnnotationAssertion(skos:definition co:PMD_0200008 "A primary shaping process in which a manually workable plastic mass (such as clay, wax, plastiline or gypsum paste) is shaped directly by hand and simple tools into a final or intermediate geometry and subsequently hardened, dried or fired to obtain a solid body."@en)
+AnnotationAssertion(skos:definition co:PMD_0200008 "Ein Urformverfahren, bei dem eine mit Hand und einfachen Werkzeugen formbare plastische Masse (z. B. Ton, Wachs, Plastilin oder Gipspaste) direkt zur gewünschten Geometrie modelliert und anschließend durch Trocknen, Brennen oder Aushärten zu einem festen Körper verfestigt wird."@de)
+AnnotationAssertion(skos:example co:PMD_0200008 "Hand modelling of clay prior to firing (e.g. pottery, sculptures); modelling of wax or plasticine for casting patterns."@en)
+SubClassOf(co:PMD_0200008 co:PMD_0000907)
 
 
 ############################
@@ -9186,18 +9525,15 @@ DisjointClasses(obo:BFO_0000006 obo:BFO_0000029 obo:BFO_0000140)
 DisjointClasses(obo:BFO_0000008 obo:BFO_0000011 obo:BFO_0000015 obo:BFO_0000035)
 DisjointClasses(obo:BFO_0000009 obo:BFO_0000018 obo:BFO_0000026 obo:BFO_0000028)
 DisjointClasses(obo:BFO_0000142 obo:BFO_0000146 obo:BFO_0000147)
-DisjointClasses(co:PMD_0000503 co:PMD_0000512 co:PMD_0000551 co:PMD_0000591 co:PMD_0000595 co:PMD_0000597 co:PMD_0000853 co:PMD_0000896 co:PMD_0000942 co:PMD_0000967 co:PMD_0020112)
-DisjointClasses(co:PMD_0000503 co:PMD_0000512 co:PMD_0000591 co:PMD_0000595 co:PMD_0000597 co:PMD_0000853 co:PMD_0000896 co:PMD_0000942 co:PMD_0000967 co:PMD_0020112 co:PMD_0025001)
-DisjointClasses(co:PMD_0000503 co:PMD_0000512 co:PMD_0000591 co:PMD_0000595 co:PMD_0000597 co:PMD_0000853 co:PMD_0000896 co:PMD_0000942 co:PMD_0000967 co:PMD_0020112 co:PMD_0025001 co:PMD_0025003)
+DisjointClasses(co:PMD_0000503 co:PMD_0000512 co:PMD_0000591 co:PMD_0000595 co:PMD_0000597 co:PMD_0000853 co:PMD_0000896 co:PMD_0000942 co:PMD_0000967 co:PMD_0020005 co:PMD_0020112 co:PMD_0025001 co:PMD_0025003)
 DisjointClasses(co:PMD_0000519 co:PMD_0000520 co:PMD_0000521 co:PMD_0000522 co:PMD_0000523 co:PMD_0000802 co:PMD_0000880)
 DisjointClasses(co:PMD_0000519 co:PMD_0000520 co:PMD_0000521 co:PMD_0000522 co:PMD_0000802)
 DisjointClasses(co:PMD_0000535 co:PMD_0000851 co:PMD_0000961 co:PMD_0000996)
 DisjointClasses(co:PMD_0000549 co:PMD_0000596 co:PMD_0000629 co:PMD_0000635 co:PMD_0000869 co:PMD_0000870 co:PMD_0000871)
-DisjointClasses(co:PMD_0000549 co:PMD_0000596 co:PMD_0000629 co:PMD_0000869 co:PMD_0000870 co:PMD_0000871)
-DisjointClasses(co:PMD_0000553 co:PMD_0000619 co:PMD_0020132 co:PMD_0020133 co:PMD_0020142 co:PMD_0020151 co:PMD_0020155)
-DisjointClasses(co:PMD_0000553 co:PMD_0000619 co:PMD_0020132 co:PMD_0020133 co:PMD_0020142 co:PMD_0020151 co:PMD_0020155 co:PMD_0020161 co:PMD_0050155)
+DisjointClasses(co:PMD_0000553 co:PMD_0000619 co:PMD_0020132 co:PMD_0020133 co:PMD_0020142 co:PMD_0020161 co:PMD_0050155)
 DisjointClasses(co:PMD_0000587 co:PMD_0000889 co:PMD_0000953)
 DisjointClasses(co:PMD_0020102 co:PMD_0020103 co:PMD_0020104)
+DisjointClasses(co:PMD_0020164 co:PMD_0020167 co:PMD_0020168 co:PMD_0020169)
 DisjointClasses(co:PMD_0020202 co:PMD_0020203 co:PMD_0020204)
 DifferentIndividuals(co:PMD_0020006 co:PMD_0020007 co:PMD_0020008 co:PMD_0020009 co:PMD_0020010 co:PMD_0020011 co:PMD_0020012 co:PMD_0020013 co:PMD_0020014 co:PMD_0020015 co:PMD_0020016 co:PMD_0020017 co:PMD_0020018 co:PMD_0020019)
 DifferentIndividuals(co:PMD_0020117 co:PMD_0020118 co:PMD_0020119 co:PMD_0020120 co:PMD_0020121 co:PMD_0020122 co:PMD_0020123 co:PMD_0020124 co:PMD_0020125)
@@ -9207,6 +9543,7 @@ SubObjectPropertyOf(ObjectPropertyChain(obo:BFO_0000055 obo:RO_0000059) obo:STAT
 SubObjectPropertyOf(ObjectPropertyChain(obo:RO_0001025 obo:BFO_0000050) obo:RO_0001025)
 SubObjectPropertyOf(ObjectPropertyChain(obo:RO_0002224 obo:RO_0002233) obo:RO_0002233)
 SubObjectPropertyOf(ObjectPropertyChain(obo:RO_0002230 obo:RO_0002234) obo:RO_0002234)
+SubObjectPropertyOf(ObjectPropertyChain(co:PMD_0025999 obo:BFO_0000050) co:PMD_0025999)
 DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000016 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000091 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000019 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000086 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000023 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000087 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
