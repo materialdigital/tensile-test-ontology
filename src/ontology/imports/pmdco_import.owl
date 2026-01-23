@@ -16,9 +16,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<https://w3id.org/pmd/tto/imports/pmdco_import.owl>
-<https://w3id.org/pmd/tto/releases/2026-01-19/imports/pmdco_import.owl>
+<https://w3id.org/pmd/tto/releases/2026-01-23/imports/pmdco_import.owl>
 Annotation(dc:source <https://w3id.org/pmd/co/3.0.0-rc2>)
-Annotation(owl:versionInfo "2026-01-19")
+Annotation(owl:versionInfo "2026-01-23")
 
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
@@ -944,7 +944,6 @@ Declaration(Class(co:PMD_0200005))
 Declaration(Class(co:PMD_0200006))
 Declaration(Class(co:PMD_0200007))
 Declaration(Class(co:PMD_0200008))
-Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000050>))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -1180,7 +1179,7 @@ AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
 
 AnnotationAssertion(rdfs:label dc:source "Source")
 
-# Annotation Property: terms:license (license)
+# Annotation Property: terms:license (dcterms:license)
 
 AnnotationAssertion(rdfs:label terms:license "dcterms:license")
 
@@ -3569,7 +3568,7 @@ AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum
 SubClassOf(co:PMD_0000053 obo:OBI_0000011)
 SubClassOf(co:PMD_0000053 ObjectIntersectionOf(co:PMD_0000547 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 co:PMD_0020139)))
 
-# Class: co:PMD_0000054 (heating function)
+# Class: co:PMD_0000054 (Heizfunktion)
 
 AnnotationAssertion(rdfs:label co:PMD_0000054 "Heizfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000054 "heating function"@en)
@@ -3840,7 +3839,7 @@ AnnotationAssertion(skos:definition co:PMD_0000530 "Ein Mechanische Eigenschafte
 AnnotationAssertion(skos:example co:PMD_0000530 "Testing the flexural strength of a plastic beam to ensure it can withstand the required load in an engineering application."@en)
 SubClassOf(co:PMD_0000530 co:PMD_0000849)
 
-# Class: co:PMD_0000531 (Analyseverfahren der Biokompatibilität)
+# Class: co:PMD_0000531 (biocompatibility analyzing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000531 "Analyseverfahren der Biokompatibilität"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000531 "biocompatibility analyzing process"@en)
@@ -3922,7 +3921,7 @@ AnnotationAssertion(skos:definition co:PMD_0000541 "A CNC Machine is a Forming M
 AnnotationAssertion(skos:definition co:PMD_0000541 "Eine CNC-Maschine ist eine Formmaschine, die zur präzisen Steuerung von Bearbeitungswerkzeugen für Schneid-, Bohr-, Fräs- und andere Aufgaben computergestützte numerische Steuerung verwendet."@de)
 SubClassOf(co:PMD_0000541 co:PMD_0000648)
 
-# Class: co:PMD_0000542 (CNC-Schweißmaschine)
+# Class: co:PMD_0000542 (cnc welding machine)
 
 AnnotationAssertion(rdfs:label co:PMD_0000542 "CNC-Schweißmaschine"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000542 "cnc welding machine"@en)
@@ -4106,7 +4105,7 @@ AnnotationAssertion(skos:definition co:PMD_0000564 "Eine Unterfunktion der Besch
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000564 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000564 co:PMD_0000575)
 
-# Class: co:PMD_0000565 (coating by soldering)
+# Class: co:PMD_0000565 (Beschichten Durch Löten)
 
 AnnotationAssertion(rdfs:label co:PMD_0000565 "Beschichten Durch Löten"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000565 "coating by soldering"@en)
@@ -4297,7 +4296,7 @@ AnnotationAssertion(skos:definition co:PMD_0000587 "The crack growth is an evolu
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000587 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000587 co:PMD_0000635)
 
-# Class: co:PMD_0000588 (Kriechprüfmaschine)
+# Class: co:PMD_0000588 (creep testing machine)
 
 AnnotationAssertion(rdfs:label co:PMD_0000588 "Kriechprüfmaschine"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000588 "creep testing machine"@en)
@@ -4528,7 +4527,7 @@ SubClassOf(co:PMD_0000617 co:PMD_0000602)
 AnnotationAssertion(rdfs:label co:PMD_0000618 "elastic modulus"@en)
 AnnotationAssertion(skos:definition co:PMD_0000618 "An elastic modulus is a measure of a material's stiffness, defined as the ratio of stress to strain in the elastic deformation region."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000618 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000618 <https://w3id.org/pmd/tto/TTO_0000050>)
+SubClassOf(co:PMD_0000618 co:PMD_0000949)
 SubClassOf(co:PMD_0000618 ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030 co:PMD_0000538)))
 
 # Class: co:PMD_0000619 (electric potential)
@@ -4836,7 +4835,7 @@ AnnotationAssertion(skos:definition co:PMD_0000657 "A device used for separating
 AnnotationAssertion(skos:definition co:PMD_0000657 "Ein Gerät zur Trennung und Analyse von Verbindungen in einem Gasgemisch unter Verwendung einer chromatographischen Säule."@de)
 SubClassOf(co:PMD_0000657 co:PMD_0000557)
 
-# Class: co:PMD_0000658 (Gel-Permeations-Chromatographie Verfahren)
+# Class: co:PMD_0000658 (gel permeation chromatography process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000658 "Gel-Permeations-Chromatographie Verfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000658 "gel permeation chromatography process"@en)
@@ -5247,7 +5246,7 @@ AnnotationAssertion(skos:definition co:PMD_0000807 "Ein Fügeverfahren, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000807 "Pouring, Embedding, Encasing"@en)
 SubClassOf(co:PMD_0000807 co:PMD_0000806)
 
-# Class: co:PMD_0000808 (joining by shaping)
+# Class: co:PMD_0000808 (Fügen Durch Umformen)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Official definition can be found in: DIN 8593-5"@en)
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Offizielle Definition findet man in: DIN 8593-5"@de)
@@ -6161,7 +6160,7 @@ AnnotationAssertion(skos:definition co:PMD_0000942 "The specific surface area is
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000942 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000942 co:PMD_0020131)
 
-# Class: co:PMD_0000944 (spectrometer)
+# Class: co:PMD_0000944 (Spektrometer)
 
 AnnotationAssertion(rdfs:label co:PMD_0000944 "Spektrometer"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000944 "spectrometer"@en)
@@ -6249,7 +6248,7 @@ AnnotationAssertion(skos:definition co:PMD_0000956 "Ein Simulationsprozess, der 
 AnnotationAssertion(skos:example co:PMD_0000956 "Optimizing the atomic structure of a catalyst to enhance its performance."@en)
 SubClassOf(co:PMD_0000956 co:PMD_0000933)
 
-# Class: co:PMD_0000957 (structural property analyzing process)
+# Class: co:PMD_0000957 (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000957 "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000957 "structural property analyzing process"@en)
@@ -6435,7 +6434,7 @@ AnnotationAssertion(skos:example co:PMD_0000979 "Measuring the thermal conductiv
 AnnotationAssertion(co:PMD_0050117 co:PMD_0000979 "TCMP"@en)
 SubClassOf(co:PMD_0000979 co:PMD_0000982)
 
-# Class: co:PMD_0000980 (thermal conductivity measuring function)
+# Class: co:PMD_0000980 (Wärmeleitfähigkeitsmessfunktion)
 
 AnnotationAssertion(rdfs:label co:PMD_0000980 "Wärmeleitfähigkeitsmessfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000980 "thermal conductivity measuring function"@en)
@@ -9545,10 +9544,10 @@ SubObjectPropertyOf(ObjectPropertyChain(obo:RO_0001025 obo:BFO_0000050) obo:RO_0
 SubObjectPropertyOf(ObjectPropertyChain(obo:RO_0002224 obo:RO_0002233) obo:RO_0002233)
 SubObjectPropertyOf(ObjectPropertyChain(obo:RO_0002230 obo:RO_0002234) obo:RO_0002234)
 SubObjectPropertyOf(ObjectPropertyChain(co:PMD_0025999 obo:BFO_0000050) co:PMD_0025999)
-DLSafeRule(Body(ClassAtom(obo:BFO_0000016 Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000091 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-DLSafeRule(Body(ClassAtom(obo:BFO_0000019 Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000086 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-DLSafeRule(Body(ClassAtom(obo:BFO_0000023 Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000087 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-DLSafeRule(Body(ClassAtom(obo:BFO_0000034 Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000085 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000016 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000091 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000019 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000086 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000023 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000087 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ObjectPropertyAtom(obo:RO_0000053 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(obo:BFO_0000034 Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(obo:RO_0000085 Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000103 "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000103 "failed exploratory term"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000226 "placeholder removed"@en)
