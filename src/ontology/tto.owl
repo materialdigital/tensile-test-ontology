@@ -15180,13 +15180,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <!-- https://w3id.org/pmd/tto/TTO_0000004 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000004">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Verlängerung</rdfs:label>
         <rdfs:label xml:lang="en">elongation</rdfs:label>
@@ -15604,6 +15598,12 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000032">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Dehnung</rdfs:label>
         <rdfs:label xml:lang="en">percentage elongation</rdfs:label>
@@ -15662,6 +15662,12 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000035">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Bleibende Dehnung</rdfs:label>
         <rdfs:label xml:lang="en">percentage permanent elongation</rdfs:label>
@@ -15727,7 +15733,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000049"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025018"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -15912,19 +15918,6 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
         <skos:definition xml:lang="en">stress at which the plastic extension is equal to 0.2 percent of the extensometer gauge length</skos:definition>
         <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
         <pmd:symbol xml:lang="en">R_p_0.2</pmd:symbol>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/tto/TTO_0000049 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000049">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Größenrelation</rdfs:label>
-        <rdfs:label xml:lang="en">size proportion</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/SizeRelation"/>
     </owl:Class>
     
 

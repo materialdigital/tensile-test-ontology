@@ -68,7 +68,6 @@ Declaration(Class(:TTO_0000044))
 Declaration(Class(:TTO_0000045))
 Declaration(Class(:TTO_0000046))
 Declaration(Class(:TTO_0000047))
-Declaration(Class(:TTO_0000049))
 Declaration(Class(:TTO_0000051))
 Declaration(Class(:TTO_0000052))
 Declaration(Class(:TTO_0000053))
@@ -148,8 +147,7 @@ AnnotationAssertion(rdfs:seeAlso :TTO_0000004 :Elongation)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000004 "Zunahme der Anfangsmesslänge zu einem beliebigen Zeitpunkt während des Versuchs"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000004 "increase in the original gauge length at any moment during the test"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000004 "DIN EN ISO 6892-1:2019"@en)
-SubClassOf(:TTO_0000004 pmd:PMD_0040001)
-SubClassOf(:TTO_0000004 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
+SubClassOf(:TTO_0000004 pmd:PMD_0000848)
 
 # Class: :TTO_0000005 (extension)
 
@@ -251,7 +249,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000016 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000016 "e^._L_c"@en)
 SubClassOf(:TTO_0000016 pmd:PMD_0000008)
 
-# Class: :TTO_0000017 (Extensometer-Messlänge)
+# Class: :TTO_0000017 (extensometer gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)
@@ -391,7 +389,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (original thickness)
+# Class: :TTO_0000029 (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
@@ -450,7 +448,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000003
 AnnotationAssertion(pmd:definitionSource :TTO_0000033 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000033 "A"@en)
 SubClassOf(:TTO_0000033 :TTO_0000004)
-SubClassOf(:TTO_0000033 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
 
 # Class: :TTO_0000034 (percentage extension)
 
@@ -517,7 +514,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000003
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000038 "maximum change in cross-sectional area which has occurred during the test (S_o − S_u), expressed as a percentage of the original cross-sectional area, S_o"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000038 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000038 "Z")
-SubClassOf(:TTO_0000038 :TTO_0000049)
+SubClassOf(:TTO_0000038 pmd:PMD_0025018)
 SubClassOf(:TTO_0000038 ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000024) ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000026)))
 
 # Class: :TTO_0000039 (percentage total extension at fracture)
@@ -627,15 +624,6 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000047 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000047 "R_p_0.2"@en)
 SubClassOf(:TTO_0000047 :TTO_0000044)
 
-# Class: :TTO_0000049 (Größenrelation)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> :TTO_0000049 <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000049 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000049 "Größenrelation"@de)
-AnnotationAssertion(rdfs:label :TTO_0000049 "size proportion"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000049 :SizeRelation)
-SubClassOf(:TTO_0000049 pmd:PMD_0020101)
-
 # Class: :TTO_0000051 (strain rate)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000051 <https://w3id.org/pmd/tto>)
@@ -707,7 +695,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000057 "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(:TTO_0000057 pmd:PMD_0000008)
 
-# Class: :TTO_0000058 (transition point testing rate)
+# Class: :TTO_0000058 (Umschaltpunkt der Prüfgeschwindigkeit)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000058 "Umschaltpunkt der Prüfgeschwindigkeit"@de)

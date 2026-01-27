@@ -41,9 +41,9 @@ https://w3id.org/pmd/co/PMD_0000952
 https://w3id.org/pmd/co/PMD_0000973
 https://w3id.org/pmd/co/PMD_0000974
 https://w3id.org/pmd/co/PMD_0000975
-https://w3id.org/pmd/co/PMD_0020101
 https://w3id.org/pmd/co/PMD_0020132
 https://w3id.org/pmd/co/PMD_0020200
+https://w3id.org/pmd/co/PMD_0025018
 https://w3id.org/pmd/co/PMD_0040001
 https://w3id.org/pmd/co/PMD_0050051
 https://w3id.org/pmd/co/PMD_0050153
@@ -86,7 +86,6 @@ https://w3id.org/pmd/tto/ProofStrengthPlasticExtension
 https://w3id.org/pmd/tto/ProofStrengthTotalExtension
 https://w3id.org/pmd/tto/Rp01
 https://w3id.org/pmd/tto/Rp02
-https://w3id.org/pmd/tto/SizeRelation
 https://w3id.org/pmd/tto/StrainRate
 https://w3id.org/pmd/tto/StressRate
 https://w3id.org/pmd/tto/TTO_0000001
@@ -127,7 +126,6 @@ https://w3id.org/pmd/tto/TTO_0000044
 https://w3id.org/pmd/tto/TTO_0000045
 https://w3id.org/pmd/tto/TTO_0000046
 https://w3id.org/pmd/tto/TTO_0000047
-https://w3id.org/pmd/tto/TTO_0000049
 https://w3id.org/pmd/tto/TTO_0000051
 https://w3id.org/pmd/tto/TTO_0000052
 https://w3id.org/pmd/tto/TTO_0000053
