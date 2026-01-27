@@ -21,8 +21,8 @@ ERROR	multiple_labels	crosshead separation rate	rdfs:label	Traversengeschwindigk
 ERROR	multiple_labels	crosshead separation rate	rdfs:label	crosshead separation rate@en
 ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	End-Probendurchmesser@de
 ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	diameter after fracture@en
-ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge@de
-ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	estimated strain rate over the parallel length@en
+ERROR	multiple_labels	estimated strain rate over the parallel length	rdfs:label	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge@de
+ERROR	multiple_labels	estimated strain rate over the parallel length	rdfs:label	estimated strain rate over the parallel length@en
 ERROR	multiple_labels	Extensometer-Messlänge	rdfs:label	Extensometer-Messlänge@de
 ERROR	multiple_labels	Extensometer-Messlänge	rdfs:label	extensometer gauge length@en
 ERROR	multiple_labels	final gauge length after fracture	rdfs:label	Messlänge nach dem Bruch@de
@@ -57,8 +57,8 @@ ERROR	multiple_labels	percentage extension	rdfs:label	Extensometer-Dehnung@de
 ERROR	multiple_labels	percentage extension	rdfs:label	percentage extension@en
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	Bleibende Dehnung@de
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	percentage permanent elongation@en
-ERROR	multiple_labels	percentage permanent extension	rdfs:label	Bleibende Extensometer-Dehnung@de
-ERROR	multiple_labels	percentage permanent extension	rdfs:label	percentage permanent extension@en
+ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	Bleibende Extensometer-Dehnung@de
+ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	percentage permanent extension@en
 ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	Plastische Extensometer-Dehnung bei Höchstkraft@de
 ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	percentage plastic extension at maximum force@en
 ERROR	multiple_labels	percentage reduction of area	rdfs:label	Brucheinschnürung@de
@@ -91,8 +91,8 @@ ERROR	multiple_labels	thickness after fracture	rdfs:label	End-Dicke@de
 ERROR	multiple_labels	thickness after fracture	rdfs:label	thickness after fracture@en
 ERROR	multiple_labels	Umschaltpunkt	rdfs:label	Umschaltpunkt@de
 ERROR	multiple_labels	Umschaltpunkt	rdfs:label	transition point@en
-ERROR	multiple_labels	Umschaltpunkt der Prüfgeschwindigkeit	rdfs:label	Umschaltpunkt der Prüfgeschwindigkeit@de
-ERROR	multiple_labels	Umschaltpunkt der Prüfgeschwindigkeit	rdfs:label	transition point testing rate@en
+ERROR	multiple_labels	transition point testing rate	rdfs:label	Umschaltpunkt der Prüfgeschwindigkeit@de
+ERROR	multiple_labels	transition point testing rate	rdfs:label	transition point testing rate@en
 ERROR	multiple_labels	Obere Streckgrenze	rdfs:label	Obere Streckgrenze@de
 ERROR	multiple_labels	Obere Streckgrenze	rdfs:label	upper yield strength@en
 ERROR	multiple_labels	End-Breite	rdfs:label	End-Breite@de
@@ -113,7 +113,7 @@ WARN	missing_definition	cross section area	IAO:0000115
 WARN	missing_definition	crosshead separation	IAO:0000115	
 WARN	missing_definition	crosshead separation rate	IAO:0000115	
 WARN	missing_definition	End-Probendurchmesser	IAO:0000115	
-WARN	missing_definition	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	IAO:0000115	
+WARN	missing_definition	estimated strain rate over the parallel length	IAO:0000115	
 WARN	missing_definition	Extensometer-Messlänge	IAO:0000115	
 WARN	missing_definition	final gauge length after fracture	IAO:0000115	
 WARN	missing_definition	gauge length	IAO:0000115	
@@ -131,7 +131,7 @@ WARN	missing_definition	percentage elongation	IAO:0000115
 WARN	missing_definition	percentage elongation after fracture	IAO:0000115	
 WARN	missing_definition	percentage extension	IAO:0000115	
 WARN	missing_definition	percentage permanent elongation	IAO:0000115	
-WARN	missing_definition	percentage permanent extension	IAO:0000115	
+WARN	missing_definition	Bleibende Extensometer-Dehnung	IAO:0000115	
 WARN	missing_definition	percentage plastic extension at maximum force	IAO:0000115	
 WARN	missing_definition	percentage reduction of area	IAO:0000115	
 WARN	missing_definition	percentage total extension at fracture	IAO:0000115	
@@ -148,7 +148,7 @@ WARN	missing_definition	tensile strength	IAO:0000115
 WARN	missing_definition	tensile test method	IAO:0000115	
 WARN	missing_definition	thickness after fracture	IAO:0000115	
 WARN	missing_definition	Umschaltpunkt	IAO:0000115	
-WARN	missing_definition	Umschaltpunkt der Prüfgeschwindigkeit	IAO:0000115	
+WARN	missing_definition	transition point testing rate	IAO:0000115	
 WARN	missing_definition	Obere Streckgrenze	IAO:0000115	
 WARN	missing_definition	End-Breite	IAO:0000115	
 WARN	missing_definition	area	IAO:0000115	

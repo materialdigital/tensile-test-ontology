@@ -140,6 +140,13 @@ SubClassOf(:TTO_0000001 pmd:PMD_0020200)
 
 # Class: :TTO_0000004 (elongation)
 
+AnnotationAssertion(rdfs:comment :TTO_0000004 "'characteristic of' some 
+    (object
+     and ('is specified output of' some 
+        ('tensile testing process'
+         and ('has specified input' some 
+            (object
+             and ('has quality' some 'original gauge length'))))))")
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000004 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000004 "Verlängerung"@de)
 AnnotationAssertion(rdfs:label :TTO_0000004 "elongation"@en)
@@ -148,6 +155,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000000
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000004 "increase in the original gauge length at any moment during the test"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000004 "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(:TTO_0000004 pmd:PMD_0000848)
+SubClassOf(:TTO_0000004 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> ObjectIntersectionOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> :TTO_0000028))))))
 
 # Class: :TTO_0000005 (extension)
 
@@ -237,7 +245,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000015 "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(:TTO_0000015 pmd:PMD_0050051)
 
-# Class: :TTO_0000016 (estimated strain rate over the parallel length)
+# Class: :TTO_0000016 (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000016 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000016 "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -249,7 +257,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000016 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000016 "e^._L_c"@en)
 SubClassOf(:TTO_0000016 pmd:PMD_0000008)
 
-# Class: :TTO_0000017 (extensometer gauge length)
+# Class: :TTO_0000017 (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)
@@ -389,7 +397,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (Anfangs-Dicke)
+# Class: :TTO_0000029 (original thickness)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
@@ -695,7 +703,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000057 "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(:TTO_0000057 pmd:PMD_0000008)
 
-# Class: :TTO_0000058 (Umschaltpunkt der Prüfgeschwindigkeit)
+# Class: :TTO_0000058 (transition point testing rate)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000058 "Umschaltpunkt der Prüfgeschwindigkeit"@de)

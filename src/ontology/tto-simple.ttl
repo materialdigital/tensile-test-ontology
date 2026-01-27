@@ -111,6 +111,15 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
                 rdfs:label "has part"@en .
 
 
+###  http://purl.obolibrary.org/obo/BFO_0000054
+obo:BFO_0000054 rdf:type owl:ObjectProperty ;
+                owl:inverseOf obo:BFO_0000055 ;
+                rdfs:label "has realization"@en ;
+                skos:altLabel "realized in"@en ;
+                skos:definition "b has realization c =Def c realizes b"@en ;
+                skos:example "As for realizes"@en .
+
+
 ###  http://purl.obolibrary.org/obo/BFO_0000055
 obo:BFO_0000055 rdf:type owl:ObjectProperty ;
                 rdfs:label "realizes"@en ;
@@ -152,6 +161,14 @@ obo:RO_0000057 rdf:type owl:ObjectProperty ;
                obo:IAO_0000115 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en ;
                obo:IAO_0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."@en ;
                rdfs:label "has participant"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000086
+obo:RO_0000086 rdf:type owl:ObjectProperty ;
+               obo:IAO_0000112 "this apple has quality this red color"@en ;
+               obo:IAO_0000115 "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence"@en ;
+               obo:IAO_0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist."@en ;
+               rdfs:label "has quality"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000087

@@ -1,4 +1,4 @@
 term
-https://w3id.org/pmd/TTO_0000002
 https://w3id.org/pmd/TTO_0000001
 https://w3id.org/pmd/TTO_0000000
+https://w3id.org/pmd/TTO_0000002

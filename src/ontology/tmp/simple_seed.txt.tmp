@@ -9,11 +9,13 @@ http://purl.org/dc/terms/title
 http://www.w3.org/2004/02/skos/core#definition
 http://purl.org/dc/terms/creator
 http://purl.org/dc/terms/license
-https://w3id.org/pmd/co/relatesTo
 http://purl.obolibrary.org/obo/RO_0000087
-http://purl.obolibrary.org/obo/RO_0000057
-http://purl.obolibrary.org/obo/OBI_0000312
+http://purl.obolibrary.org/obo/RO_0000086
 http://purl.obolibrary.org/obo/OBI_0000299
+https://w3id.org/pmd/co/relatesTo
+http://purl.obolibrary.org/obo/BFO_0000051
+http://purl.obolibrary.org/obo/RO_0000057
 http://purl.obolibrary.org/obo/OBI_0000293
 http://purl.obolibrary.org/obo/BFO_0000055
-http://purl.obolibrary.org/obo/BFO_0000051
+http://purl.obolibrary.org/obo/OBI_0000312
+http://purl.obolibrary.org/obo/BFO_0000054
