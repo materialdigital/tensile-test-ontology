@@ -25,7 +25,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-
+      - name: ODK update
+        run: cd src/ontology && odk.py update
       - name: Build ontology
         env:
           DEFAULT_BRANCH: main
@@ -34,6 +35,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           message: "updated ontology"
-          add: "*.* --force"
-          cwd: "./src/ontology/imports"
+          add: "*.* src/**/* --force"
+          cwd: "."
           default_author: github_actions
