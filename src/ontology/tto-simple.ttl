@@ -11,7 +11,7 @@
 @base <https://w3id.org/pmd/tto/tto-simple.ttl> .
 
 <https://w3id.org/pmd/tto/tto-simple.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/tto/releases/2025-11-19/tto-simple.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/tto/releases/2026-01-27/tto-simple.ttl> ;
                                            terms:contributor "https://orcid.org/0000-0003-1649-6832" ;
                                            terms:creator <https://orcid.org/0000-0001-7192-7143> ,
                                                          <https://orcid.org/0000-0002-3717-7104> ,
@@ -26,14 +26,26 @@ Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualis
 The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated."""@en ;
                                            terms:license <http://creativecommons.org/licenses/by/4.0/> ;
                                            terms:title "Tensile Test Ontology (TTO)" ;
-                                           owl:versionInfo "2025-11-19" .
+                                           owl:versionInfo "2026-01-27" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.obolibrary.org/obo/IAO_0000112
+obo:IAO_0000112 rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000114
 obo:IAO_0000114 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+obo:IAO_0000116 rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/contributor
@@ -45,12 +57,14 @@ terms:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/description
-terms:description rdf:type owl:AnnotationProperty .
+terms:description rdf:type owl:AnnotationProperty ;
+                  rdfs:label "description" .
 
 
 ###  http://purl.org/dc/terms/license
 terms:license rdf:type owl:AnnotationProperty ;
-              rdfs:label "dcterms:license" .
+              rdfs:label "dcterms:license" ,
+                         "license" .
 
 
 ###  http://purl.org/dc/terms/title
@@ -81,15 +95,100 @@ co:symbol rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://purl.obolibrary.org/obo/BFO_0000196
-obo:BFO_0000196 rdf:type owl:ObjectProperty ;
-                rdfs:label "bearer of"@en ;
-                skos:definition "b bearer of c =Def c inheres in b"@en ;
-                skos:example "A patch of ink is the bearer of a colour quality; an organism is the bearer of a temperature quality"@en .
+###  http://purl.obolibrary.org/obo/BFO_0000051
+obo:BFO_0000051 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf obo:BFO_0000051 ;
+                rdf:type owl:TransitiveProperty ;
+                obo:IAO_0000112 "my body has part my brain (continuant parthood, two material entities)"@en ,
+                                "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)"@en ,
+                                "this year has part this day (occurrent parthood)"@en ;
+                obo:IAO_0000115 "a core relation that holds between a whole and its part"@en ;
+                obo:IAO_0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."@en ,
+                                "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"@en ,
+                                """Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)
+
+A continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."""@en ;
+                rdfs:label "has part"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+obo:BFO_0000055 rdf:type owl:ObjectProperty ;
+                rdfs:label "realizes"@en ;
+                skos:definition "(Elucidation) realizes is a relation between a process b and realizable entity c such that c inheres in some d & for all t, if b has participant d then c exists & the type instantiated by b is correlated with the type instantiated by c"@en ;
+                skos:example "A balding process realizes a disposition to go bald; a studying process realizes a student role; a process of pumping blood realizes the pumping function of a heart"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000293
+obo:OBI_0000293 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf obo:RO_0000057 ;
+                obo:IAO_0000112 "see is_input_of example_of_usage"@en ;
+                obo:IAO_0000115 "The inverse property of is specified input of"@en ;
+                obo:IAO_0000116 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works." ;
+                rdfs:label "has specified input"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000299
+obo:OBI_0000299 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf obo:RO_0000057 ;
+                owl:inverseOf obo:OBI_0000312 ;
+                obo:IAO_0000115 "The inverse property of is specified output of"@en ;
+                rdfs:label "has specified output"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000312
+obo:OBI_0000312 rdf:type owl:ObjectProperty ;
+                obo:IAO_0000115 "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en ;
+                rdfs:label "is specified output of"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000057
+obo:RO_0000057 rdf:type owl:ObjectProperty ;
+               owl:propertyChainAxiom ( obo:BFO_0000051
+                                        obo:RO_0000057
+                                      ) ;
+               obo:IAO_0000112 "this blood coagulation has participant this blood clot"@en ,
+                               "this investigation has participant this investigator"@en ,
+                               "this process has participant this input material (or this output material)"@en ;
+               obo:IAO_0000115 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en ;
+               obo:IAO_0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."@en ;
+               rdfs:label "has participant"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000087
+obo:RO_0000087 rdf:type owl:ObjectProperty ;
+               obo:IAO_0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)"@en ;
+               obo:IAO_0000115 "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"@en ;
+               obo:IAO_0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists."@en ;
+               rdfs:label "has role"@en .
 
 
 ###  https://w3id.org/pmd/co/relatesTo
 co:relatesTo rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/pmd/TTO_0000000
+<https://w3id.org/pmd/TTO_0000000> rdf:type owl:Class ;
+                                   rdfs:label "broken tested test piece role"@en ;
+                                   skos:definition "The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test."@en .
+
+
+###  https://w3id.org/pmd/TTO_0000001
+<https://w3id.org/pmd/TTO_0000001> rdf:type owl:Class ;
+                                   rdfs:comment "An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage."@en ;
+                                   rdfs:label "unbroken tested test piece role"@en ;
+                                   skos:definition "The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test."@en .
+
+
+###  https://w3id.org/pmd/TTO_0000002
+<https://w3id.org/pmd/TTO_0000002> rdf:type owl:Class ;
+                                   rdfs:label "Ergebnis eines Zugversuches"@de ,
+                                              "tensile test result"@en ;
+                                   skos:definition "Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format."@en ,
+                                                   "Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung."@de .
 
 
 ###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

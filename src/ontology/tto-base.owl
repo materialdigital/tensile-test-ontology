@@ -8,9 +8,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/tto/tto-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2025-11-19/tto-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-01-27/tto-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
@@ -26,7 +27,7 @@ Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualis
 The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Tensile Test Ontology (TTO)</dcterms:title>
-        <owl:versionInfo>2025-11-19</owl:versionInfo>
+        <owl:versionInfo>2026-01-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -75,6 +76,117 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    
+
+
+    <!-- https://w3id.org/pmd/TTO_0000000 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/TTO_0000000">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
+        <rdfs:label xml:lang="en">broken tested test piece role</rdfs:label>
+        <skos:definition xml:lang="en">The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/TTO_0000001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/TTO_0000001">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
+        <rdfs:comment xml:lang="en">An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage.</rdfs:comment>
+        <rdfs:label xml:lang="en">unbroken tested test piece role</rdfs:label>
+        <skos:definition xml:lang="en">The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/TTO_0000002 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/TTO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Ergebnis eines Zugversuches</rdfs:label>
+        <rdfs:label xml:lang="en">tensile test result</rdfs:label>
+        <skos:definition xml:lang="en">Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format.</skos:definition>
+        <skos:definition xml:lang="de">Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000974 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000975 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000975"/>
 </rdf:RDF>
 
 
