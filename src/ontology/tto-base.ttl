@@ -6,11 +6,12 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/pmd/tto/tto-base.ttl> .
 
 <https://w3id.org/pmd/tto/tto-base.ttl> rdf:type owl:Ontology ;
-                                         owl:versionIRI <https://w3id.org/pmd/tto/releases/2025-11-19/tto-base.ttl> ;
+                                         owl:versionIRI <https://w3id.org/pmd/tto/releases/2026-01-27/tto-base.ttl> ;
                                          dce:type <http://purl.obolibrary.org/obo/IAO_8000001> ;
                                          dcterms:contributor "https://orcid.org/0000-0003-1649-6832" ;
                                          dcterms:creator <https://orcid.org/0000-0001-7192-7143> ,
@@ -26,7 +27,7 @@ Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualis
 The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated."""@en ;
                                          dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
                                          dcterms:title "Tensile Test Ontology (TTO)" ;
-                                         owl:versionInfo "2025-11-19" .
+                                         owl:versionInfo "2026-01-27" .
 
 #################################################################
 #    Annotation properties
@@ -54,6 +55,77 @@ dcterms:license rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/title
 dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+<http://purl.obolibrary.org/obo/BFO_0000051> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000312
+<http://purl.obolibrary.org/obo/OBI_0000312> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000027
+<http://purl.obolibrary.org/obo/IAO_0000027> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000109
+<http://purl.obolibrary.org/obo/IAO_0000109> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmd/TTO_0000000
+<https://w3id.org/pmd/TTO_0000000> rdf:type owl:Class ;
+                                   rdfs:subClassOf pmd:PMD_0000975 ;
+                                   rdfs:label "broken tested test piece role"@en ;
+                                   skos:definition "The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test."@en .
+
+
+###  https://w3id.org/pmd/TTO_0000001
+<https://w3id.org/pmd/TTO_0000001> rdf:type owl:Class ;
+                                   rdfs:subClassOf pmd:PMD_0000975 ;
+                                   rdfs:comment "An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage."@en ;
+                                   rdfs:label "unbroken tested test piece role"@en ;
+                                   skos:definition "The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test."@en .
+
+
+###  https://w3id.org/pmd/TTO_0000002
+<https://w3id.org/pmd/TTO_0000002> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                   [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000109>
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                                                            owl:someValuesFrom pmd:PMD_0000974
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                                   rdfs:label "Ergebnis eines Zugversuches"@de ,
+                                              "tensile test result"@en ;
+                                   skos:definition "Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format."@en ,
+                                                   "Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000974
+pmd:PMD_0000974 rdf:type owl:Class .
+
+
+###  https://w3id.org/pmd/co/PMD_0000975
+pmd:PMD_0000975 rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

@@ -10,6 +10,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<https://w3id.org/pmd/tto/>
+Import(<https://w3id.org/pmd/tto/imports/nfdicore_import.owl>)
 Import(<https://w3id.org/pmd/tto/imports/pmdco_import.owl>)
 Annotation(dcterms:contributor "https://orcid.org/0000-0003-1649-6832")
 Annotation(dcterms:creator <https://orcid.org/0000-0001-7192-7143>)
@@ -26,15 +27,13 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Tensile Test Ontology (TTO)")
 
-Declaration(Class(:TTO_0000000))
+Declaration(Class(<https://w3id.org/pmd/TTO_0000000>))
+Declaration(Class(<https://w3id.org/pmd/TTO_0000001>))
+Declaration(Class(<https://w3id.org/pmd/TTO_0000002>))
 Declaration(Class(:TTO_0000001))
-Declaration(Class(:TTO_0000002))
 Declaration(Class(:TTO_0000004))
 Declaration(Class(:TTO_0000005))
-Declaration(Class(:TTO_0000006))
-Declaration(Class(:TTO_0000008))
 Declaration(Class(:TTO_0000009))
-Declaration(Class(:TTO_0000010))
 Declaration(Class(:TTO_0000011))
 Declaration(Class(:TTO_0000012))
 Declaration(Class(:TTO_0000013))
@@ -45,11 +44,9 @@ Declaration(Class(:TTO_0000017))
 Declaration(Class(:TTO_0000018))
 Declaration(Class(:TTO_0000019))
 Declaration(Class(:TTO_0000020))
-Declaration(Class(:TTO_0000021))
 Declaration(Class(:TTO_0000022))
 Declaration(Class(:TTO_0000023))
 Declaration(Class(:TTO_0000024))
-Declaration(Class(:TTO_0000025))
 Declaration(Class(:TTO_0000026))
 Declaration(Class(:TTO_0000027))
 Declaration(Class(:TTO_0000028))
@@ -66,25 +63,24 @@ Declaration(Class(:TTO_0000038))
 Declaration(Class(:TTO_0000039))
 Declaration(Class(:TTO_0000040))
 Declaration(Class(:TTO_0000041))
-Declaration(Class(:TTO_0000042))
 Declaration(Class(:TTO_0000043))
 Declaration(Class(:TTO_0000044))
 Declaration(Class(:TTO_0000045))
 Declaration(Class(:TTO_0000046))
 Declaration(Class(:TTO_0000047))
-Declaration(Class(:TTO_0000048))
 Declaration(Class(:TTO_0000049))
-Declaration(Class(:TTO_0000050))
 Declaration(Class(:TTO_0000051))
 Declaration(Class(:TTO_0000052))
 Declaration(Class(:TTO_0000053))
 Declaration(Class(:TTO_0000054))
-Declaration(Class(:TTO_0000055))
 Declaration(Class(:TTO_0000056))
 Declaration(Class(:TTO_0000057))
 Declaration(Class(:TTO_0000058))
 Declaration(Class(:TTO_0000059))
 Declaration(Class(:TTO_0000060))
+Declaration(Class(:TTO_0050000))
+Declaration(Class(:TTO_1000000))
+Declaration(Class(:TTO_1000001))
 Declaration(ObjectProperty(pmd:relatesTo))
 Declaration(DataProperty(<http://www.w3.org/ns/prov#value>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
@@ -101,13 +97,39 @@ Declaration(AnnotationProperty(pmd:symbol))
 #   Classes
 ############################
 
-# Class: :TTO_0000000 (funder role)
+# Class: <https://w3id.org/pmd/TTO_0000000> (broken tested test piece role)
 
-AnnotationAssertion(rdfs:label :TTO_0000000 "Förderungsrolle"@de)
-AnnotationAssertion(rdfs:label :TTO_0000000 "funder role"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000000 "A funder role is a role that describes the capacity in which a party provides financial support to a project or initiative. This role is realized when the party participates in the project specifically as a source of funding, regardless of other potential involvements."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000000 "Eine Förderungsrolle (Rolle einer fördernden Partei) ist eine Rolle, die die Funktion beschreibt, in der eine Partei finanzielle Unterstützung für ein Projekt oder eine Initiative bereitstellt. Diese Rolle wird verwirklicht, wenn die Partei speziell als Geldgeber am Projekt teilnimmt, unabhängig von anderen möglichen Beteiligungen."@de)
-SubClassOf(:TTO_0000000 <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000000> "broken tested test piece role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000000> "The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test."@en)
+SubClassOf(<https://w3id.org/pmd/TTO_0000000> pmd:PMD_0000975)
+
+# Class: <https://w3id.org/pmd/TTO_0000001> (unbroken tested test piece role)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/TTO_0000001> "An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000001> "unbroken tested test piece role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000001> "The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test."@en)
+SubClassOf(<https://w3id.org/pmd/TTO_0000001> pmd:PMD_0000975)
+
+# Class: <https://w3id.org/pmd/TTO_0000002> (Ergebnis eines Zugversuches)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000002> "Ergebnis eines Zugversuches"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000002> "tensile test result"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000002> "Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000002> "Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung."@de)
+SubClassOf(<https://w3id.org/pmd/TTO_0000002> <http://purl.obolibrary.org/obo/IAO_0000027>)
+SubClassOf(<https://w3id.org/pmd/TTO_0000002> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000109>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> pmd:PMD_0000974)))
+
+# Class: pmd:PMD_0000973 (tensile testing machine)
+
+SubClassOf(pmd:PMD_0000973 ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> pmd:PMD_0000636) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> pmd:PMD_0000820)))
+
+# Class: pmd:PMD_0000974 (Zugprüfverfahren)
+
+SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> pmd:PMD_0000975))
+SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> pmd:PMD_0000975))))
+SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <https://w3id.org/pmd/TTO_0000002>))
+SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> ObjectUnionOf(<https://w3id.org/pmd/TTO_0000000> <https://w3id.org/pmd/TTO_0000001>)))))
+SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> pmd:PMD_0000973))
 
 # Class: :TTO_0000001 (load cell maximum force)
 
@@ -116,17 +138,6 @@ AnnotationAssertion(rdfs:label :TTO_0000001 "load cell maximum force"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "Die Maximalkraft bezeichnet die größte Kraft, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "The maximum force is the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur."@en)
 SubClassOf(:TTO_0000001 pmd:PMD_0020200)
-
-# Class: :TTO_0000002 (Durchmesser)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000002 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000002 "Durchmesser"@de)
-AnnotationAssertion(rdfs:label :TTO_0000002 "diameter"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000002 <https://w3id.org/pmd/co/2.0.8/Diameter>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000002 "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts oder Raums."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000002 "The length of a straight line through the center of an object or space."@en)
-AnnotationAssertion(pmd:definitionSource :TTO_0000002 "“Diameter.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/diameter. Accessed 5 Dec. 2022.")
-SubClassOf(:TTO_0000002 pmd:PMD_0040001)
 
 # Class: :TTO_0000004 (elongation)
 
@@ -160,27 +171,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000000
 AnnotationAssertion(pmd:definitionSource :TTO_0000005 "DIN EN ISO 6892-1:2019")
 SubClassOf(:TTO_0000005 pmd:PMD_0000848)
 
-# Class: :TTO_0000006 (Dicke)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000006 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000006 "Dicke"@de)
-AnnotationAssertion(rdfs:label :TTO_0000006 "thickness"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000006 <https://w3id.org/pmd/co/2.0.8/Thickness>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000006 "Diese Klasse beschreibt das gemessene Maß in einer Richtung eines Prüfkörpers."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000006 "This class describes the measured dimension in one direction of a test piece."@en)
-SubClassOf(:TTO_0000006 pmd:PMD_0040001)
-
-# Class: :TTO_0000008 (Form)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000008 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000008 "Form"@de)
-AnnotationAssertion(rdfs:label :TTO_0000008 "shape"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000008 :Shape)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000008 "Das sichtbare Ausstattungsmerkmal (räumliche Form oder Kontur) eines bestimmten Objektes oder einer Art von Objekt."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000008 "The visible makeup characteristic (spatial form or contour) of a particular item or kind of item."@en)
-AnnotationAssertion(pmd:definitionSource :TTO_0000008 "“Shape.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/shape. Accessed 13 Jan. 2023.")
-SubClassOf(:TTO_0000008 pmd:PMD_0020148)
-
 # Class: :TTO_0000009 (Streckgrenze)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000009 <https://w3id.org/pmd/tto>)
@@ -191,17 +181,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000000
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000009 "when the metallic material exhibits a yield phenomenon, stress corresponding to the point reached during the test at which plastic deformation occurs without any increase in the force"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000009 "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(:TTO_0000009 pmd:PMD_0000952)
-
-# Class: :TTO_0000010 (width)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000010 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000010 "Breite"@de)
-AnnotationAssertion(rdfs:label :TTO_0000010 "width"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000010 <https://w3id.org/pmd/co/2.0.8/Width>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000010 "Diese Klasse beschreibt eine horizontale Messung eines Objekts, die im rechten Winkel zur Länge des Objekts vorgenommen wird."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000010 "This class describes a horizontal measurement of an object taken at right angles to the length of the object."@en)
-AnnotationAssertion(pmd:definitionSource :TTO_0000010 <https://www.merriam-webster.com/dictionary/width>)
-SubClassOf(:TTO_0000010 pmd:PMD_0040001)
 
 # Class: :TTO_0000011 (change of transverse dimension)
 
@@ -223,7 +202,7 @@ AnnotationAssertion(rdfs:seeAlso :TTO_0000012 <https://w3id.org/pmd/co/2.0.8/Cro
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000012 "Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000012 "The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis."@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000012 <https://www.merriam-webster.com/dictionary/cross%20section>)
-SubClassOf(:TTO_0000012 pmd:PMD_0020199)
+SubClassOf(:TTO_0000012 :TTO_0050000)
 
 # Class: :TTO_0000013 (crosshead separation)
 
@@ -248,7 +227,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000014 "displacement of the crossheads per time"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000014 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000014 "v_c"@en)
-SubClassOf(:TTO_0000014 :TTO_0000025)
+SubClassOf(:TTO_0000014 pmd:PMD_0000008)
 
 # Class: :TTO_0000015 (End-Probendurchmesser)
 
@@ -258,7 +237,7 @@ AnnotationAssertion(rdfs:label :TTO_0000015 "diameter after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000015 :DiameterAfterFracture)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000015 "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000015 "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
-SubClassOf(:TTO_0000015 :TTO_0000002)
+SubClassOf(:TTO_0000015 pmd:PMD_0050051)
 
 # Class: :TTO_0000016 (estimated strain rate over the parallel length)
 
@@ -270,9 +249,9 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000016 "value of the increase of strain over the parallel length of the test piece per time based on the crosshead separation rate and the parallel length of the test piece"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000016 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000016 "e^._L_c"@en)
-SubClassOf(:TTO_0000016 :TTO_0000025)
+SubClassOf(:TTO_0000016 pmd:PMD_0000008)
 
-# Class: :TTO_0000017 (extensometer gauge length)
+# Class: :TTO_0000017 (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)
@@ -322,18 +301,6 @@ AnnotationAssertion(rdfs:seeAlso :TTO_0000020 :GaugeLengthMarks)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000020 "Dieses Konzept wird verwendet, um die sichtbaren Markierungen zu beschreiben, die in der Regel während eines Zugversuchs zur Messung der Dehnung an den Prüfkörpern angebracht werden."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000020 "This concept is used to describe the visible markers usually attached to test pieces during a tensile test for elongation / extension measurements."@en)
 SubClassOf(:TTO_0000020 pmd:PMD_0000602)
-
-# Class: :TTO_0000021 (Geometrische Form)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> :TTO_0000021 <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000021 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000021 "Geometrische Form"@de)
-AnnotationAssertion(rdfs:label :TTO_0000021 "geometry shape"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000021 :GeometryShape)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000021 "Dieses Konzept beschreibt die geometrischen Abmessungen und das Erscheinungsbild (Form und Abmaße) einer Probe, eines Prüfkörpers oder eines Prüfstücks, wie sie üblicherweise durch eine entsprechende Norm definiert sind. Dementsprechend ist der angegebene Formwert in Übereinstimmung mit der definierenden Norm anzugeben, z. B. \"Zugprüfstück Form 1 gemäß Anhang B\"."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000021 "This concept describes the geometric dimensions and appearance (shape and dimensions) of a sample, specimen, or test piece as usually defined by a corresponding standard. Accordingly, the shape value given is in accordance with the defining standard, e.g., ‘tensile test piece shape 1 in accordance with annex B’."@en)
-AnnotationAssertion(pmd:definitionSource :TTO_0000021 "DIN EN ISO 6892-1:2019"@en)
-SubClassOf(:TTO_0000021 :TTO_0000008)
 
 # Class: :TTO_0000022 (lower yield strength)
 
@@ -388,16 +355,6 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000024 "DIN EN ISO 6892-1:2019")
 SubClassOf(:TTO_0000024 :TTO_0000012)
 SubClassOf(:TTO_0000024 ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000056) ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000060)) ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000015)))
 
-# Class: :TTO_0000025 (Bewegungsqualität)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000025 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000025 "Bewegungsqualität"@de)
-AnnotationAssertion(rdfs:label :TTO_0000025 "movement quality"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000025 :MovementQuality)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000025 "A movement quality is a physical quality that inheres in a material entity and represents a property of the entity's motion or change of position over time."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000025 "Eine Bewegungsqualität ist eine physikalische Qualität, die einer materiellen Entität innewohnt und eine Eigenschaft der Bewegung oder Positionsänderung der Entität im Laufe der Zeit darstellt."@de)
-SubClassOf(:TTO_0000025 :TTO_0000042)
-
 # Class: :TTO_0000026 (Anfangsquerschnitt innerhalb der parallelen Länge)
 
 AnnotationAssertion(rdfs:comment :TTO_0000026 "Symbol: S_o")
@@ -420,7 +377,7 @@ AnnotationAssertion(rdfs:seeAlso :TTO_0000027 :OriginalDiameter)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000027 "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Zugprüfkörpers), die vor einer Prüfung gemessen wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000027 "The length of a straight line through the center of an object (tensile test piece) as measured prior to a tensile test."@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000027 "DIN EN ISO 6892-1:2019"@en)
-SubClassOf(:TTO_0000027 :TTO_0000002)
+SubClassOf(:TTO_0000027 pmd:PMD_0050051)
 
 # Class: :TTO_0000028 (original gauge length)
 
@@ -434,7 +391,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (Anfangs-Dicke)
+# Class: :TTO_0000029 (original thickness)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
@@ -442,7 +399,7 @@ AnnotationAssertion(rdfs:label :TTO_0000029 "original thickness"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000029 :OriginalThickness)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000029 "Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000029 "This entity describes the measured dimension in one direction of a test piece, as measured before the test."@en)
-SubClassOf(:TTO_0000029 :TTO_0000006)
+SubClassOf(:TTO_0000029 pmd:PMD_0050153)
 
 # Class: :TTO_0000030 (original width)
 
@@ -452,7 +409,7 @@ AnnotationAssertion(rdfs:label :TTO_0000030 "original width"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000030 :OriginalWidth)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000030 "Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie vor einer Prüfung gemessen wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000030 "This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured before a test."@en)
-SubClassOf(:TTO_0000030 :TTO_0000010)
+SubClassOf(:TTO_0000030 pmd:PMD_0050154)
 
 # Class: :TTO_0000031 (Parallele Länge)
 
@@ -525,7 +482,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000035 "DIN EN ISO 6892-1:2019"@e
 SubClassOf(:TTO_0000035 :TTO_0000004)
 SubClassOf(:TTO_0000035 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
 
-# Class: :TTO_0000036 (Bleibende Extensometer-Dehnung)
+# Class: :TTO_0000036 (percentage permanent extension)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000036 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000036 "Bleibende Extensometer-Dehnung"@de)
@@ -601,16 +558,6 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000041 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000041 "A_e"@en)
 SubClassOf(:TTO_0000041 :TTO_0000005)
 
-# Class: :TTO_0000042 (physical quality)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000042 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000042 "Physikalische Qualität"@de)
-AnnotationAssertion(rdfs:label :TTO_0000042 "physical quality"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000042 :PhysicalQuality)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000042 "A physical quality is a quality that inheres in a material entity and represents a measurable or observable property related to its physical state."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000042 "Eine physikalische Qualität ist eine Eigenschaft, die einer materiellen Einheit innewohnt und eine messbare oder beobachtbare Eigenschaft darstellt, die mit ihrem physikalischen Zustand zusammenhängt."@de)
-SubClassOf(:TTO_0000042 <http://purl.obolibrary.org/obo/BFO_0000019>)
-
 # Class: :TTO_0000043 (proof strength)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000043 <https://w3id.org/pmd/tto>)
@@ -680,37 +627,14 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000047 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000047 "R_p_0.2"@en)
 SubClassOf(:TTO_0000047 :TTO_0000044)
 
-# Class: :TTO_0000048 (3D Geometrie)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000048 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000048 "3D Geometrie"@de)
-AnnotationAssertion(rdfs:label :TTO_0000048 "shape 3d"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000048 :Shape3D)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000048 "A shape 3D is a geometry shape that exists in three dimensions, having length, width, and height, and can be defined by its spatial properties such as volume and surface area."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000048 "Eine 3D Geometrie ist eine geometrische Form, die in drei Dimensionen existiert, mit Länge, Breite und Höhe, und die durch ihre räumlichen Eigenschaften wie Volumen und Oberfläche definiert werden kann."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> :TTO_0000048 "Beispiele sind Formen wie Würfel, Kugeln und Pyramiden."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> :TTO_0000048 "Examples include shapes like cubes, spheres, and pyramids."@en)
-SubClassOf(:TTO_0000048 :TTO_0000021)
-
-# Class: :TTO_0000049 (size relation)
+# Class: :TTO_0000049 (Größenrelation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> :TTO_0000049 <http://purl.obolibrary.org/obo/IAO_0000428>)
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000049 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000049 "Größenrelation"@de)
-AnnotationAssertion(rdfs:label :TTO_0000049 "size relation"@en)
+AnnotationAssertion(rdfs:label :TTO_0000049 "size proportion"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000049 :SizeRelation)
-SubClassOf(:TTO_0000049 :TTO_0000042)
-
-# Class: :TTO_0000050 (Steigung des elastischen Bereichs)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000050 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000050 "Steigung des elastischen Bereichs"@de)
-AnnotationAssertion(rdfs:label :TTO_0000050 "slope of the elastic part"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000050 :SlopeOfTheElasticPart)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000050 "Dieses Konzept beschreibt den Wert der Steigung des ersten linear ansteigenden Teils (\"elastischer Teil\") in der bei einem Zugversuch erhaltenen Spannungs-Dehnungs-Kurve. Im elastischen Teil der Spannungs-Dehnungs-Kurve muss der Wert der Steigung nicht unbedingt dem Elastizitätsmodul entsprechen. Dieser Wert kann mit dem Wert des Elastizitätsmoduls (nur) sehr gut übereinstimmen, wenn optimale Bedingungen herrschten."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000050 "This concept describes the value of the slope of the first linear increasing part (‘elastic part’) in the stress-percentage extension curve obtained during a tensile test. In the elastic part of the stress‐percentage extension curve, the value of the slope may not necessarily represent the modulus of elasticity. This value may closely agree with the value of the modulus of elasticity if optimal conditions were used."@en)
-AnnotationAssertion(pmd:definitionSource :TTO_0000050 "DIN EN ISO 6892-1:2019"@en)
-SubClassOf(:TTO_0000050 pmd:PMD_0000618)
+SubClassOf(:TTO_0000049 pmd:PMD_0020101)
 
 # Class: :TTO_0000051 (strain rate)
 
@@ -722,7 +646,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000051 "increase of strain, measured with an extensometer, in extensometer gauge length, per time"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000051 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000051 "e^._L_e"@en)
-SubClassOf(:TTO_0000051 :TTO_0000025)
+SubClassOf(:TTO_0000051 pmd:PMD_0000008)
 
 # Class: :TTO_0000052 (stress rate)
 
@@ -738,7 +662,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 Note: Stress rate is only used in the elastic part of the test."@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000052 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000052 "R"@en)
-SubClassOf(:TTO_0000052 :TTO_0000025)
+SubClassOf(:TTO_0000052 pmd:PMD_0000008)
 
 # Class: :TTO_0000053 (tensile strength)
 
@@ -763,17 +687,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000054 "Eine Zugversuchsmethode ist eine Planspezifikation, die die Durchführung eines kontrollierten Versuchs zur Bestimmung der mechanischen Eigenschaften eines Materials unter einachsiger Zugbelastung vorschreibt. Der Plan legt Verfahrensschritte, Bedingungen und Messkriterien fest, um Eigenschaften wie die Zugfestigkeit, die Streckgrenze und die Bruchdehnung zu bestimmen."@de)
 SubClassOf(:TTO_0000054 <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: :TTO_0000055 (test piece)
-
-AnnotationAssertion(rdfs:isDefinedBy :TTO_0000055 <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label :TTO_0000055 "Prüfkörper"@de)
-AnnotationAssertion(rdfs:label :TTO_0000055 "test piece"@en)
-AnnotationAssertion(rdfs:seeAlso :TTO_0000055 <https://w3id.org/pmd/co/2.0.8/TestPiece>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000055 "Part of a sample with specified dimensions, machined or un-machined, brought to a required condition for submission to a given test."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000055 "Teil einer Probe mit bestimmten Dimensionen, bearbeitet oder unbearbeitet, der in einen erforderlichen Zustand gebracht wird, um einer bestimmten Prüfung unterzogen zu werden."@de)
-AnnotationAssertion(pmd:definitionSource :TTO_0000055 "EN 10021:2006-12 (European standardization committee: CEN/TC 459/SC 12/WG 4)")
-SubClassOf(:TTO_0000055 ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> pmd:PMD_0000975)))
-
 # Class: :TTO_0000056 (thickness after fracture)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000056 <https://w3id.org/pmd/tto>)
@@ -782,7 +695,7 @@ AnnotationAssertion(rdfs:label :TTO_0000056 "thickness after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000056 :ThicknessAfterFracture)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000056 "Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000056 "This entity describes the measured dimension in one direction of a test piece, as measured after the test."@en)
-SubClassOf(:TTO_0000056 :TTO_0000006)
+SubClassOf(:TTO_0000056 pmd:PMD_0050153)
 
 # Class: :TTO_0000057 (Umschaltpunkt)
 
@@ -824,7 +737,32 @@ AnnotationAssertion(rdfs:label :TTO_0000060 "width after fracture"@en)
 AnnotationAssertion(rdfs:seeAlso :TTO_0000060 :WidthAfterFracture)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000060 "Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie nach einer Prüfung gemessen wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000060 "This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured after a test."@en)
-SubClassOf(:TTO_0000060 :TTO_0000010)
+SubClassOf(:TTO_0000060 pmd:PMD_0050154)
+
+# Class: :TTO_0050000 (area)
+
+AnnotationAssertion(rdfs:label :TTO_0050000 "area"@en)
+SubClassOf(:TTO_0050000 pmd:PMD_0020132)
+
+# Class: :TTO_1000000 (Streckgrenzenverhältnis)
+
+AnnotationAssertion(rdfs:label :TTO_1000000 "Streckgrenzenverhältnis"@de)
+AnnotationAssertion(rdfs:label :TTO_1000000 "yield strength ratio"@en)
+AnnotationAssertion(rdfs:seeAlso :TTO_1000000 "Yield strength ratio is a mechanical property which is determined as a ratio between the offset yield Rp0.2 and the ultimate tensile strength Rm."@en)
+AnnotationAssertion(rdfs:seeAlso :TTO_1000000 "https://www.zwickroell.com/industries/materials-testing/tensile-test/yield-point/")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_1000000 "Streckgrenzenverhältnis ist eine mechanische Eigenschaft, die als Verhältnis zwischen der Dehngrenze Rp0.2 und der Zugfestigkeit Rm bestimmt wird."@de)
+AnnotationAssertion(pmd:symbol :TTO_1000000 "Rp0.2 / Rm")
+SubClassOf(:TTO_1000000 pmd:PMD_0000848)
+
+# Class: :TTO_1000001 (Dehngrenze)
+
+AnnotationAssertion(rdfs:label :TTO_1000001 "Dehngrenze"@de)
+AnnotationAssertion(rdfs:label :TTO_1000001 "offset yield point"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_1000001 "Die Dehngrenze ist eine mechanische Eigenschaft, die der Zugspannung im einaxialen Zugversuch, bei der die plastische Extensometer-Dehnung einem Prozentanteil von 0,2 % der Extensometer-Messlänge entspricht. Die Dehngrenze wird hauptsächlich für Werkstoffe verwendet, die keine ausgeprägte Streckgrenze aufweisen."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_1000001 "The offset yield point is a mechanical property, which characterizes the tensile stress in a uniaxial tensile test, at which the plastic elongation corresponds to a percentage of 0.2% of the extensometer gauge length. The offset yield point is mainly used for materials that do not have a pronounced yield strength."@en)
+AnnotationAssertion(pmd:definitionSource :TTO_1000001 "https://www.zwickroell.com/de/branchen/werkstoffpruefung-materialpruefung/zugversuch/streckgrenze/")
+AnnotationAssertion(pmd:symbol :TTO_1000001 "Rp0.2")
+SubClassOf(:TTO_1000001 :TTO_0000009)
 
 
 )
