@@ -11182,11 +11182,7 @@ pmd:PMD_0200008 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000004
 <https://w3id.org/pmd/tto/TTO_0000004> rdf:type owl:Class ;
-                                       rdfs:subClassOf pmd:PMD_0040001 ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty pmd:relatesTo ;
-                                                         owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000028>
-                                                       ] ;
+                                       rdfs:subClassOf pmd:PMD_0000848 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Verlängerung"@de ,
                                                   "elongation"@en ;
@@ -11529,7 +11525,11 @@ Note: The concept of parallel length is replaced by the concept of distance betw
 
 ###  https://w3id.org/pmd/tto/TTO_0000032
 <https://w3id.org/pmd/tto/TTO_0000032> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000004> ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000004> ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty pmd:relatesTo ;
+                                                         owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000028>
+                                                       ] ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Dehnung"@de ,
                                                   "percentage elongation"@en ;
@@ -11576,7 +11576,11 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000035
 <https://w3id.org/pmd/tto/TTO_0000035> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000004> ;
+                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000004> ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty pmd:relatesTo ;
+                                                         owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000028>
+                                                       ] ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Bleibende Dehnung"@de ,
                                                   "percentage permanent elongation"@en ;
@@ -11628,7 +11632,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000038
 <https://w3id.org/pmd/tto/TTO_0000038> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000049> ,
+                                       rdfs:subClassOf pmd:PMD_0025018 ,
                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty pmd:relatesTo ;
                                                                                 owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000024>
@@ -11779,16 +11783,6 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
                                                        "stress at which the plastic extension is equal to 0.2 percent of the extensometer gauge length"@en ;
                                        pmd:definitionSource "DIN EN ISO 6892-1:2019"@en ;
                                        pmd:symbol "R_p_0.2"@en .
-
-
-###  https://w3id.org/pmd/tto/TTO_0000049
-<https://w3id.org/pmd/tto/TTO_0000049> rdf:type owl:Class ;
-                                       rdfs:subClassOf pmd:PMD_0020101 ;
-                                       obo:IAO_0000114 obo:IAO_0000428 ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Größenrelation"@de ,
-                                                  "size proportion"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/tto/SizeRelation> .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000051

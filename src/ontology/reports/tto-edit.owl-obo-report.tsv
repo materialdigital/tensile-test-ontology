@@ -57,8 +57,8 @@ ERROR	multiple_labels	percentage extension	rdfs:label	Extensometer-Dehnung@de
 ERROR	multiple_labels	percentage extension	rdfs:label	percentage extension@en
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	Bleibende Dehnung@de
 ERROR	multiple_labels	percentage permanent elongation	rdfs:label	percentage permanent elongation@en
-ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	Bleibende Extensometer-Dehnung@de
-ERROR	multiple_labels	Bleibende Extensometer-Dehnung	rdfs:label	percentage permanent extension@en
+ERROR	multiple_labels	percentage permanent extension	rdfs:label	Bleibende Extensometer-Dehnung@de
+ERROR	multiple_labels	percentage permanent extension	rdfs:label	percentage permanent extension@en
 ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	Plastische Extensometer-Dehnung bei Höchstkraft@de
 ERROR	multiple_labels	percentage plastic extension at maximum force	rdfs:label	percentage plastic extension at maximum force@en
 ERROR	multiple_labels	percentage reduction of area	rdfs:label	Brucheinschnürung@de
@@ -79,8 +79,6 @@ ERROR	multiple_labels	Dehngrenze bei plastischer Extensometer-Dehnung Rp01	rdfs:
 ERROR	multiple_labels	Dehngrenze bei plastischer Extensometer-Dehnung Rp01	rdfs:label	proof strength plastic extension rp01@en
 ERROR	multiple_labels	proof strength plastic extension rp02	rdfs:label	Dehngrenze bei plastischer Extensometer-Dehnung Rp02@de
 ERROR	multiple_labels	proof strength plastic extension rp02	rdfs:label	proof strength plastic extension rp02@en
-ERROR	multiple_labels	Größenrelation	rdfs:label	Größenrelation@de
-ERROR	multiple_labels	Größenrelation	rdfs:label	size proportion@en
 ERROR	multiple_labels	strain rate	rdfs:label	Dehngeschwindigkeit@de
 ERROR	multiple_labels	strain rate	rdfs:label	strain rate@en
 ERROR	multiple_labels	stress rate	rdfs:label	Spannungsgeschwindigkeit@de
@@ -133,7 +131,7 @@ WARN	missing_definition	percentage elongation	IAO:0000115
 WARN	missing_definition	percentage elongation after fracture	IAO:0000115	
 WARN	missing_definition	percentage extension	IAO:0000115	
 WARN	missing_definition	percentage permanent elongation	IAO:0000115	
-WARN	missing_definition	Bleibende Extensometer-Dehnung	IAO:0000115	
+WARN	missing_definition	percentage permanent extension	IAO:0000115	
 WARN	missing_definition	percentage plastic extension at maximum force	IAO:0000115	
 WARN	missing_definition	percentage reduction of area	IAO:0000115	
 WARN	missing_definition	percentage total extension at fracture	IAO:0000115	
@@ -144,7 +142,6 @@ WARN	missing_definition	proof strength plastic extension	IAO:0000115
 WARN	missing_definition	proof strength total extension	IAO:0000115	
 WARN	missing_definition	Dehngrenze bei plastischer Extensometer-Dehnung Rp01	IAO:0000115	
 WARN	missing_definition	proof strength plastic extension rp02	IAO:0000115	
-WARN	missing_definition	Größenrelation	IAO:0000115	
 WARN	missing_definition	strain rate	IAO:0000115	
 WARN	missing_definition	stress rate	IAO:0000115	
 WARN	missing_definition	tensile strength	IAO:0000115	
