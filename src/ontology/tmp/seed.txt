@@ -139,7 +139,6 @@ https://w3id.org/pmd/tto/TTO_0000059
 https://w3id.org/pmd/tto/TTO_0000060
 https://w3id.org/pmd/tto/TTO_0050000
 https://w3id.org/pmd/tto/TTO_1000000
-https://w3id.org/pmd/tto/TTO_1000001
 https://w3id.org/pmd/tto/TensileStrength
 https://w3id.org/pmd/tto/TensileTestMethod
 https://w3id.org/pmd/tto/ThicknessAfterFracture

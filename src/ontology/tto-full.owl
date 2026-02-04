@@ -16,7 +16,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/tto/tto-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-01-27/tto-full.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-02-04/tto-full.owl"/>
         <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
@@ -31,7 +31,7 @@ Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualis
 The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Tensile Test Ontology (TTO)</dcterms:title>
-        <owl:versionInfo>2026-01-27</owl:versionInfo>
+        <owl:versionInfo>2026-02-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -147,6 +147,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
         <rdfs:label>Source</rdfs:label>
+        <rdfs:label xml:lang="en-us">Source</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -212,13 +213,22 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112>disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
+        <obo:IAO_0000115>An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</dcterms:created>
+        <rdfs:label>has cross-reference</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -307,6 +317,29 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -360,6 +393,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">has realization</rdfs:label>
+        <rdfs:label xml:lang="en">realized in</rdfs:label>
         <skos:altLabel xml:lang="en">realized in</skos:altLabel>
         <skos:definition xml:lang="en">b has realization c =Def c realizes b</skos:definition>
         <skos:example xml:lang="en">As for realizes</skos:example>
@@ -372,6 +406,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000115 xml:lang="en">Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</obo:IAO_0000115>
         <rdfs:label xml:lang="en">realizes</rdfs:label>
         <skos:definition xml:lang="en">(Elucidation) realizes is a relation between a process b and realizable entity c such that c inheres in some d &amp; for all t, if b has participant d then c exists &amp; the type instantiated by b is correlated with the type instantiated by c</skos:definition>
         <skos:example xml:lang="en">A balding process realizes a disposition to go bald; a studying process realizes a student role; a process of pumping blood realizes the pumping function of a heart</skos:example>
@@ -386,6 +421,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">preceded by</rdfs:label>
         <skos:definition xml:lang="en">b preceded by c =Def b precedes c</skos:definition>
         <skos:example xml:lang="en">The temporal region occupied by the second half of the match is preceded by the temporal region occupied by the first half of the match</skos:example>
@@ -399,6 +435,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">precedes</rdfs:label>
         <skos:definition xml:lang="en">(Elucidation) precedes is a relation between occurrents o, o&apos; such that if t is the temporal extent of o &amp; t&apos; is the temporal extent of o&apos; then either the last instant of o is before the first instant of o&apos; or the last instant of o is the first instant of o&apos; &amp; neither o nor o&apos; are temporal instants</skos:definition>
         <skos:example xml:lang="en">The temporal region occupied by Mary&apos;s birth precedes the temporal region occupied by Mary&apos;s death.</skos:example>
@@ -723,6 +760,14 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000081 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000081">
+        <rdfs:label xml:lang="en">intended to realize</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000039 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000039">
@@ -867,9 +912,9 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is specified input of</obo:IAO_0000115>
+        <obo:IAO_0000115>The inverse property of is specified input of</obo:IAO_0000115>
         <obo:IAO_0000116>8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &apos;has participant&apos; works.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">has specified input</rdfs:label>
     </owl:ObjectProperty>
@@ -880,9 +925,9 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000112 xml:lang="en">some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">is specified input of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -898,8 +943,8 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is specified output of</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <obo:IAO_0000115>The inverse property of is specified output of</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has specified output</rdfs:label>
     </owl:ObjectProperty>
     
@@ -921,8 +966,8 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">is specified output of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -931,7 +976,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <obo:IAO_0000112>A cell sorting process achieves the objective specification &apos;material separation objective&apos;</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
@@ -1044,6 +1089,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">is concretized as</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1063,6 +1109,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">concretizes</rdfs:label>
     </owl:ObjectProperty>
@@ -1610,6 +1657,7 @@ An example of such case can be &quot;Temperature of during the annealing process
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025998">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -2176,6 +2224,8 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
         <skos:definition xml:lang="en">(Elucidation) A material entity is an independent continuant has some portion of matter as continuant part</skos:definition>
         <skos:example xml:lang="en">A human being; the undetached arm of a human being; an aggregate of human beings</skos:example>
@@ -2430,7 +2480,6 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
         <obo:IAO_0000115>Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">We are assuming that every molecular entity has to be completely connected by chemical bonds. This excludes protein complexes, which are comprised of minimally two separate molecular entities. We will follow up with Chebi to ensure this is their understanding as well</obo:IAO_0000116>
         <rdfs:label>molecular entity</rdfs:label>
     </owl:Class>
     
@@ -2840,6 +2889,12 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30682">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33521"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>ruthenium atom</rdfs:label>
     </owl:Class>
     
@@ -3105,6 +3160,12 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33359">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33521"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cobalt group element atom of atomic number 45.</obo:IAO_0000115>
         <rdfs:label>rhodium atom</rdfs:label>
     </owl:Class>
@@ -3198,6 +3259,12 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33375">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33319"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>gadolinium atom</rdfs:label>
     </owl:Class>
     
@@ -3207,6 +3274,12 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33376">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33319"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>terbium atom</rdfs:label>
     </owl:Class>
     
@@ -3505,6 +3578,42 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000083"/>
+        <rdfs:label xml:lang="en">completely executed planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0025009"/>
+        <obo:IAO_0000115 xml:lang="en">A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:label xml:lang="en">failed planned process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
@@ -3625,6 +3734,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Pier: &apos;data, information or knowledge&apos;. OR &apos;representation&apos;</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
 
 Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
@@ -3801,7 +3911,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- http://purl.obolibrary.org/obo/IAO_0000444 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000444">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000115 xml:lang="en">A planned process of making information, such as literature, music, and software etc., available to the public for sale or for free.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Publishing</obo:IAO_0000119>
         <rdfs:label xml:lang="en">publishing process</rdfs:label>
@@ -3864,7 +3974,7 @@ Previous. An information content entity is a non-realizable information entity t
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
@@ -3872,7 +3982,7 @@ Previous. An information content entity is a non-realizable information entity t
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -3889,6 +3999,7 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label>Homo sapiens</rdfs:label>
         <rdfs:label>homo sapiens</rdfs:label>
     </owl:Class>
     
@@ -3897,37 +4008,14 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0025009"/>
         <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
         <obo:IAO_0000116>&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
-        <obo:IAO_0000116>We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
-objectives is a planned process.</obo:IAO_0000116>
+        <obo:IAO_0000116>PMDco : migration: https://github.com/materialdigital/core-ontology/issues/269</obo:IAO_0000116>
+        <obo:IAO_0000116>We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000119>branch derived</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
+        <rdfs:label>obsolete planned process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3961,7 +4049,21 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -4039,6 +4141,20 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000112 xml:lang="en">The person perform microarray experiments and submit microarray results (including raw data, processed data) with experiment description to ArrayExpress.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role borne by an entity and that is realized in a process that is part of an investigation in which an objective is achieved. These processes include, among others: planning, overseeing, funding, reviewing.</obo:IAO_0000115>
+        <obo:IAO_0000116>Implementing a study means carrying out or performing the study and providing reagents or other materials used in the study and other tasks without which the study would not happen.</obo:IAO_0000116>
+        <obo:IAO_0000116>Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable representing investigations run by robot scientists such as ADAM (King et al, Science, 2009)</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
+        <rdfs:label>investigation agent role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
@@ -4082,8 +4198,14 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000260">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112>The plan of researcher X to perform an experiment according to a protocol.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process.</obo:IAO_0000115>
         <obo:IAO_0000116>This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the &apos;plan specification&apos;, and &apos;planned process&apos; class, as we want to avoid to get deep into discussions of &apos;intend&apos; etc.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">branch derived</obo:IAO_0000119>
         <rdfs:label xml:lang="en">plan</rdfs:label>
@@ -4106,6 +4228,12 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000571">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -4173,6 +4301,12 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001931">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A value specification that consists of two parts: a numeral and a unit label</obo:IAO_0000115>
         <rdfs:label>scalar value specification</rdfs:label>
     </owl:Class>
@@ -4187,6 +4321,29 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">An information content entity that specifies a value within a classification scheme or on a quantitative scale.</obo:IAO_0000115>
         <obo:IAO_0000116>This term is currently a descendant of &apos;information content entity&apos;, which requires that it &apos;is about&apos; something. A value specification of &apos;20g&apos; for a measurement data item of the mass of a particular mouse &apos;is about&apos; the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change &apos;value specification&apos; to remove the &apos;is about&apos; requirement.</obo:IAO_0000116>
         <rdfs:label>value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process that is used to assess whether an assay will provide reliable results based on the conditions or qualities of the inputs, devices, and other participants of the assay.</obo:IAO_0000115>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>determination if assay will provide reliable results</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302911 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302911">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18557814 . Chemical and genetic validation of dihydrofolate reductase-thymidylate synthase as a drug target in African trypanosomes. Mol Microbiol. 2008 Jun 16.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a planned process with objective to check that the accuracy or the quality of a claim or prediction  satisfies some criteria and which is assessed by comparing with independent results</obo:IAO_0000115>
+        <obo:IAO_0000119>adapted from wordnet (wkipedia)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">validation</rdfs:label>
     </owl:Class>
     
 
@@ -4429,7 +4586,7 @@ As a consequence, the behavoiral material properties in the ontology are differe
 
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
-We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules.</skos:definition>
+We only deal with intensive (system-size independent) material properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -4441,7 +4598,7 @@ We only deal with intensive (system-size independent) materrial properties. Exte
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
         <obo:IAO_0000116 xml:lang="en">also see &quot;The Ontology of Fields&quot; - Report of a Specialist Meeting Held under the Auspices of the Varenius Project: Donna Peuquet, Barry Smith, and Berit Brogaard; Bar Harbor, Maine 1998</obo:IAO_0000116>
         <rdfs:label xml:lang="en">vector field specification</rdfs:label>
-        <skos:definition xml:lang="en">a value specifcation that represents an assignment of a vector to each point in a discretized spacial region</skos:definition>
+        <skos:definition xml:lang="en">Vector field specification is a value specification that represents an assignment of a vector to each point in a discretized spatial region.</skos:definition>
     </owl:Class>
     
 
@@ -4622,7 +4779,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     <!-- https://w3id.org/pmd/co/PMD_0000053 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000053">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4831,10 +4988,62 @@ https://github.com/pyiron/semantikon/pull/278</pmd:PMD_0001032>
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0000100 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000006"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">function name</rdfs:label>
+        <skos:definition xml:lang="en">A textual entity that denotes a workflow function</skos:definition>
+        <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/280"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000101 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000006"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">import path</rdfs:label>
+        <skos:definition xml:lang="en">A textual entity that denotes a workflow function via import resolution rules</skos:definition>
+        <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/280"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0000123 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000123">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000006"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">doc string</rdfs:label>
         <skos:definition xml:lang="en">A docstring is a textual entity that describes an associated section of some source code</skos:definition>
         <pmd:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/270</pmd:PMD_0001032>
@@ -4845,7 +5054,7 @@ https://github.com/pyiron/semantikon/pull/278</pmd:PMD_0001032>
     <!-- https://w3id.org/pmd/co/PMD_0000501 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000501">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">1D</rdfs:label>
         <skos:definition xml:lang="en">1-D is an information content entity representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
@@ -4856,7 +5065,7 @@ https://github.com/pyiron/semantikon/pull/278</pmd:PMD_0001032>
     <!-- https://w3id.org/pmd/co/PMD_0000502 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000502">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">2D</rdfs:label>
         <skos:definition xml:lang="en">A two-dimensional information content entity is a representation or analysis, commonly applied in studying planar material properties or surface phenomena.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
@@ -4898,8 +5107,8 @@ https://github.com/pyiron/semantikon/pull/278</pmd:PMD_0001032>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000627"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">accoustic absorption coefficient</rdfs:label>
-        <skos:definition xml:lang="en">The accoustic absorption coefficient is an accoustic property representing a measure of how much sound energy is absorbed by a material per unit area.</skos:definition>
+        <rdfs:label xml:lang="en">acoustic absorption coefficient</rdfs:label>
+        <skos:definition xml:lang="en">The acoustic absorption coefficient is an accoustic property representing a measure of how much sound energy is absorbed by a material per unit area.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -4915,8 +5124,8 @@ https://github.com/pyiron/semantikon/pull/278</pmd:PMD_0001032>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000517"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">accoustic property</rdfs:label>
-        <skos:definition xml:lang="en">An accoustic property is a mechanical property representing characteristics of a material that determine its interaction with sound waves, such as absorption, reflection, and transmission.</skos:definition>
+        <rdfs:label xml:lang="en">acoustic property</rdfs:label>
+        <skos:definition xml:lang="en">An acoustic property is a mechanical property representing characteristics of a material that determine its interaction with sound waves, such as absorption, reflection, and transmission.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -5541,7 +5750,7 @@ https://github.com/pyiron/semantikon/pull/278</pmd:PMD_0001032>
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8592</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Reinigen</rdfs:label>
         <rdfs:label xml:lang="en">cleaning</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem unerwünschtes Material von einer Oberfläche durch Reinigungsmethoden entfernt wird, die Verfahren wie Strahlen, Waschen oder chemische Reinigung umfassen können.</skos:definition>
         <skos:example xml:lang="en">Chemical Cleaning, Mechanical Cleaning</skos:example>
     </owl:Class>
@@ -5862,7 +6071,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
     <!-- https://w3id.org/pmd/co/PMD_0000583 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000583">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -6211,7 +6420,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8591</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Zerlegen</rdfs:label>
         <rdfs:label xml:lang="en">disassembling</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves disassembling a composite or assembled unit into its constituent parts or sections.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves disassembling a composite or assembled unit into its constituent parts or sections.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem eine zusammengesetzte oder montierte Einheit in ihre Einzelteile oder Abschnitte zerlegt wird.</skos:definition>
         <skos:example xml:lang="en">Dismantling, Emptying</skos:example>
     </owl:Class>
@@ -6237,7 +6446,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8588</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Zerteilen</rdfs:label>
         <rdfs:label xml:lang="en">dividing</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem das Material durch Techniken wie Scherschneiden, Spalten, Reißen oder Brechen in verschiedene Teile zerlegt wird. Es wird in der Regel bei Prozessen eingesetzt, bei denen eine genaue Kontrolle über den Schnitt weniger wichtig ist.</skos:definition>
         <skos:example xml:lang="en">Shearing, Cracking</skos:example>
     </owl:Class>
@@ -6539,10 +6748,18 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000638">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000849"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="de">Ermüdungsprüfverfahren</rdfs:label>
         <rdfs:label xml:lang="en">fatigue testing process</rdfs:label>
-        <skos:definition xml:lang="en">A Mechanical Property Analyzing Process that assesses a material&apos;s ability to withstand cyclic loading, determining its fatigue life and endurance limit.</skos:definition>
+        <skos:altLabel xml:lang="en">S-N testing process</skos:altLabel>
+        <skos:altLabel xml:lang="en">fatigue testing series</skos:altLabel>
         <skos:definition xml:lang="de">Ein Mechanische Eigenschaften Analyseverfahren, das die Fähigkeit eines Materials bewertet, zyklischen Belastungen standzuhalten, und seine Ermüdungslebensdauer und -grenze bestimmt.</skos:definition>
+        <skos:definition xml:lang="en">Fatigue testing process is a  mechanical property analyzing process that assesses a material&apos;s ability to withstand cyclic loading, determining its fatigue life and endurance limit. It must have occurent parts single fatigue tests.</skos:definition>
         <skos:example xml:lang="en">Fatigue testing of metal components in bridges to predict their lifespan under repetitive loading conditions.</skos:example>
     </owl:Class>
     
@@ -7109,9 +7326,10 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
     <!-- https://w3id.org/pmd/co/PMD_0000778 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000778">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000833"/>
         <obo:IAO_0000112>Mixing two fluids. Adding salt into water. Injecting a mouse with PBS.</obo:IAO_0000112>
         <rdfs:label>material combination</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <skos:definition xml:lang="en">A material processing with the objective to combine two or more material entities as input into a single material entity as output.</skos:definition>
     </owl:Class>
     
@@ -7669,7 +7887,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8589-0</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Spanen Mit Geometrisch Bestimmten Schneiden</rdfs:label>
         <rdfs:label xml:lang="en">machining geometrically defined</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem Material mit einem Werkzeug mit definierter Form und scharfen Kanten entfernt wird, wie z. B. beim Sägen und Bohren.</skos:definition>
         <skos:example xml:lang="en">Drilling, Turning</skos:example>
     </owl:Class>
@@ -7684,7 +7902,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8589-0</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Spanen Mit Geometrisch Unbestimmten Schneiden</rdfs:label>
         <rdfs:label xml:lang="en">machining geometrically undefined</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn&apos;t clearly defined.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn&apos;t clearly defined.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem Material mit Werkzeugen mit undefinierten Schneiden abgetragen wird, wie z. B. beim Schleifen oder bei der abrasiven Bearbeitung, bei der die genaue Form des zu schneidenden Teils nicht klar definiert ist.</skos:definition>
         <skos:example xml:lang="en">Grinding, Blasting</skos:example>
     </owl:Class>
@@ -7778,7 +7996,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                         <owl:someValuesFrom>
@@ -7804,7 +8022,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -7833,7 +8051,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Manufacturing processes alternate qualities of materials, i.e., a value specification of some quality of a material entity, which is a specified input to the process, cannot be the same as a value specification of the same quality of another material entity, which is a specified output of the process. 
 
-Unfortunately is is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains.</rdfs:comment>
+Unfortunately it is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains.</rdfs:comment>
         <rdfs:label xml:lang="de">Herstellungsprozess</rdfs:label>
         <rdfs:label xml:lang="en">manufacturing process</rdfs:label>
         <skos:definition xml:lang="en">A planned process that is driven by the primary intent to transform objects
@@ -7922,10 +8140,15 @@ A manufacturing process is always a transformative process.</skos:definition>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000522"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc.</rdfs:comment>
         <rdfs:label xml:lang="en">mechanical property</rdfs:label>
-        <skos:definition xml:lang="en">A mechanical property is a material property that inheres in a material M when an object O_target that consists of M is stimulated in a process through an interaction with an object O_stimulus and M changes its stress/strain/..(mechanical?) SDCs.
-
-TODO: Check general class axiom and defintion altogether !!!</skos:definition>
+        <skos:definition xml:lang="en">A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -8050,9 +8273,9 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000957"/>
         <rdfs:label xml:lang="de">Mikroskopie Verfahren</rdfs:label>
         <rdfs:label xml:lang="en">microscopy process</rdfs:label>
-        <skos:definition xml:lang="en">A Structural Property Analyzing Process that uses various types of microscopy techniques to visualize and analyze the microstructure and morphology of materials at different scales.</skos:definition>
         <skos:definition xml:lang="de">Ein Struktur Eigenschaften Analyseverfahren, das verschiedene Arten von Mikroskopietechniken verwendet, um die Mikrostruktur und Morphologie von Materialien auf verschiedenen Ebenen zu visualisieren und zu analysieren.</skos:definition>
-        <skos:example xml:lang="en">Examples of Microscopy Processes include Electron Microscopy, which provides detailed images at high resolution; Ion Microscopy, which offers high-precision imaging and material milling capabilites; and Optical Microscopy, which uses visible light to study e.g. the microstructure of materials.</skos:example>
+        <skos:definition xml:lang="en">Microscopy process that uses various types of microscopy techniques to visualize and analyze the microstructure and morphology of materials at different scales.</skos:definition>
+        <skos:example xml:lang="en">Electron microscopy, which provides detailed images at high resolution; ion microscopy, which offers high-precision imaging and material milling capabilities; and optical microscopy, which uses visible light to study e.g. the microstructure of materials.</skos:example>
         <pmd:PMD_0050117 xml:lang="de">Mikroskopie</pmd:PMD_0050117>
     </owl:Class>
     
@@ -8062,7 +8285,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000857">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
-        <rdfs:comment xml:lang="en">The focus of interest when looking at an object throught the microstructure perspective is often its morphology.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The focus of interest when looking at an object through the microstructure perspective is often its morphology.</rdfs:comment>
         <rdfs:label xml:lang="en">microstructure</rdfs:label>
         <skos:definition xml:lang="en">The microstructure represents the small-scale structure of a material, including grains, phases, and defects, visible under a microscope.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
@@ -8185,7 +8408,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000869">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">occurence of chemical reaction</rdfs:label>
+        <rdfs:label xml:lang="en">occurrence of chemical reaction</rdfs:label>
         <skos:definition xml:lang="en">The occurrence of (a) chemical reaction is the process in which substances interact to form new chemical compounds or alter their molecular structure.</skos:definition>
     </owl:Class>
     
@@ -8195,7 +8418,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000870">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">occurence of electic field</rdfs:label>
+        <rdfs:label xml:lang="en">occurrence of electic field</rdfs:label>
         <skos:definition xml:lang="en">The occurrence of (an) electric field is a process describing the presence or generation of an electric field in a material or system.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
@@ -8206,7 +8429,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000871">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">occurence of magnetic field</rdfs:label>
+        <rdfs:label xml:lang="en">occurrence of magnetic field</rdfs:label>
         <skos:definition xml:lang="en">The occurrence of (a) magenetic field is a process describing the presence or generation of a magnetic field in a material or system.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
@@ -8339,7 +8562,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000834"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                         <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000853"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -8381,7 +8604,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000889">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000635"/>
         <rdfs:label xml:lang="en">pore growth</rdfs:label>
-        <skos:definition xml:lang="en">Pore Growth is an evolution of damagfe describing the process by which voids or pores in a material increase in size, often affecting its mechanical and physical properties.</skos:definition>
+        <skos:definition xml:lang="en">Pore growth is an evolution of damage describing the process by which voids or pores in a material increase in size, often affecting its mechanical and physical properties.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -8652,7 +8875,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <obo:IAO_0000119 xml:lang="de">Offizielle Definition findet man in: DIN 8590</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Abtragen</rdfs:label>
         <rdfs:label xml:lang="en">removing</rdfs:label>
-        <skos:definition xml:lang="en">A Seperating process that involves removing material through thermical, chemical and electrochemical methods.</skos:definition>
+        <skos:definition xml:lang="en">A Separating process that involves removing material through thermal, chemical and electrochemical methods.</skos:definition>
         <skos:definition xml:lang="de">Ein Trennprozess, bei dem Material durch thermische, chemische und elektrochemische Methoden abgetragen wird.</skos:definition>
         <skos:example xml:lang="en">Electrical Discharge Machining, Thermal Ablation</skos:example>
     </owl:Class>
@@ -8689,8 +8912,8 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000916"/>
         <rdfs:label xml:lang="de">Rheometry</rdfs:label>
         <rdfs:label xml:lang="en">rheometry</rdfs:label>
-        <skos:definition xml:lang="en">A Rheological Property Analyzing Process that measures the flow and deformation behavior of materials, including complex fluids and soft solids, to provide comprehensive data on viscoelastic properties using rheometers.</skos:definition>
         <skos:definition xml:lang="de">Ein Rheologisches Eigenschaften Analyseverfahren, das das Fließ- und Verformungsverhalten von Materialien misst, einschließlich komplexer Flüssigkeiten und weicher Feststoffe, um umfassende Daten zu viskoelastischen Eigenschaften unter Verwendung von Rheometern zu liefern.</skos:definition>
+        <skos:definition xml:lang="en">Rheological property analyzing process that measures the flow and deformation behavior of materials, including complex fluids and soft solids, to provide comprehensive data on viscoelastic properties using rheometers.</skos:definition>
     </owl:Class>
     
 
@@ -9245,7 +9468,7 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000961">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020164"/>
         <rdfs:label xml:lang="en">sublimation point</rdfs:label>
-        <skos:definition xml:lang="en">The sublimation point is a state of matter boundary realized by transition form the solid state to the gaseous state (or vice versa).</skos:definition>
+        <skos:definition xml:lang="en">The sublimation point is a state of matter boundary realized by transition from the solid state to the gaseous state (or vice versa).</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -9330,7 +9553,7 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000967">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
-        <rdfs:comment xml:lang="en">The concept refers to an absolute tempeature, not to be mistaken with temperature difference.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The concept refers to an absolute temperature, not to be mistaken with temperature difference.</rdfs:comment>
         <rdfs:comment xml:lang="en">To express that an object has a temperature, the property &apos;intensive bearer of&apos; can be used. It implies a chain of: object consists of some portion of matter and portion of matter bearer of some temperature.</rdfs:comment>
         <rdfs:label xml:lang="en">temperature</rdfs:label>
         <skos:definition xml:lang="en">The temperature is a fundamental intensive quality representing the average atomic or molcular movement or vibration of a portion of matter.</skos:definition>
@@ -9522,7 +9745,7 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000977">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000806"/>
         <obo:IAO_0000119 xml:lang="de">Keine offizielle Definition in DIN</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">No offical definition in DIN</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">No official definition in DIN</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Textiles Fügen</rdfs:label>
         <rdfs:label xml:lang="en">textile joining</rdfs:label>
         <skos:definition xml:lang="en">A joining process that involves connecting textile materials.</skos:definition>
@@ -9750,7 +9973,7 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000996">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020164"/>
         <rdfs:label xml:lang="en">triple point</rdfs:label>
-        <skos:definition xml:lang="en">The triple point is a state of matter point realized by transition form the solid state to the liquid state or the the gaseous state (or vice versa).</skos:definition>
+        <skos:definition xml:lang="en">The triple point is a state of matter point realized by transition from the solid state to the liquid state or the the gaseous state (or vice versa).</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -10088,32 +10311,10 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0001033 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <rdfs:label xml:lang="en">test piece material designation</rdfs:label>
-        <skos:definition>an identifier assigned to specify the material of a test piece</skos:definition>
-        <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0001034 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">reporting process</rdfs:label>
-        <skos:definition>A process of collecting, organizing, and presenting information or results in a structured form for communication or documentation.</skos:definition>
-        <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0001035 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025018"/>
         <rdfs:label xml:lang="en">angle</rdfs:label>
         <skos:definition>A property that represents the measure of rotation or inclination between two intersecting lines or planes, independent of the size of the object.</skos:definition>
         <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
@@ -10124,31 +10325,9 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
     <!-- https://w3id.org/pmd/co/PMD_0001036 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label xml:lang="en">uncertainty</rdfs:label>
         <skos:definition>A quantitative indication of the doubt about a measurement result, expressing the range within which the true value is expected to lie.</skos:definition>
-        <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0001037 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <rdfs:label xml:lang="en">device designation</rdfs:label>
-        <skos:definition>an identifier assigned to distinguish and reference a specific device.</skos:definition>
-        <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0001038 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <rdfs:label xml:lang="en">project designation</rdfs:label>
-        <skos:definition>an identifier assigned to distinguish and reference a specific project.</skos:definition>
         <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
     </owl:Class>
     
@@ -10157,7 +10336,7 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
     <!-- https://w3id.org/pmd/co/PMD_0001039 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:label xml:lang="en">calibration process</rdfs:label>
         <skos:definition>A process of comparing measurement values delivered by an instrument or system with known reference standards to ensure accuracy and traceability.</skos:definition>
         <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
@@ -10168,20 +10347,9 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
     <!-- https://w3id.org/pmd/co/PMD_0001040 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:label xml:lang="en">expriment designing process</rdfs:label>
         <skos:definition>A planned process of planning and structuring experimental methods, conditions, and variables to reliably test hypotheses or obtain data.</skos:definition>
-        <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0001041 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:label xml:lang="en">measuring process</rdfs:label>
-        <skos:definition>A planned process of determining the value of a physical quantity by comparing it with a defined unit or standard.</skos:definition>
         <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
     </owl:Class>
     
@@ -10190,21 +10358,10 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
     <!-- https://w3id.org/pmd/co/PMD_0001042 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000119>https://www.britannica.com/science/sample-preparation</obo:IAO_0000119>
         <rdfs:label xml:lang="en">test piece preparation process</rdfs:label>
         <skos:definition>A planned processes in which a representative piece of material is extracted from a larger amount and readied for analysis. </skos:definition>
-        <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0001043 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001043">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:label xml:lang="en">verification process</rdfs:label>
-        <skos:definition>A process of evaluating whether a system, component, or result meets specified requirements or standards.</skos:definition>
         <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
     </owl:Class>
     
@@ -10216,17 +10373,6 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
         <rdfs:label xml:lang="en">date value specification</rdfs:label>
         <skos:definition>A datum that represents a date or time interval associated with another specification.</skos:definition>
-        <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0001045 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001045">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000583"/>
-        <rdfs:label xml:lang="en">calculating process</rdfs:label>
-        <skos:definition>A process in which numerical or symbolic operations are performed to derive a result from given data or parameters.</skos:definition>
         <pmd:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
     </owl:Class>
     
@@ -10359,10 +10505,17 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0025997"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">These portions of other matters do not have to be portions of specific chemical elements, i.e., atomic composition, but rather portions of other substances, such as nitric acid and water.</rdfs:comment>
         <rdfs:label xml:lang="en">composition data item</rdfs:label>
         <skos:altLabel xml:lang="en">composition specification</skos:altLabel>
-        <skos:definition xml:lang="en">Composition data item is an information content entity that is about composition of a portion of matter, and it has memebers fraction specifications of portions of other matters (but not chemical elements), which are parts of the whole portion of matter.</skos:definition>
-        <skos:example xml:lang="en">Nitric acid solution has quality  composition , which concretizes the composition specification .The composition specification has parts fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications are conretized by relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water.</skos:example>
+        <skos:definition xml:lang="en">Composition data item is an information content entity that is about composition of a portion of matter, and it has members fraction specifications of portions of other matters, which are parts of the whole portion of matter.</skos:definition>
+        <skos:example xml:lang="en">Nitric acid solution has quality  composition, and  the composition data item is about this composition.The composition data item has members fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications specify values of relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water.</skos:example>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -10446,7 +10599,7 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050000"/>
         <rdfs:label xml:lang="en">hydrogen bond</rdfs:label>
         <skos:definition xml:lang="en">A hydrogen bond is a bond that binds one molecule’s hydrogen atom with the electronegative atoms of another molecule.</skos:definition>
-        <skos:example xml:lang="en">The bond that forms between liquid water molecules at one molecules hydrogen ends and the other molecules oxigen end.</skos:example>
+        <skos:example xml:lang="en">The bond that forms between liquid water molecules at one molecules hydrogen ends and the other molecules oxygen end.</skos:example>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -12003,7 +12156,7 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020098">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:label xml:lang="en">nature constant</rdfs:label>
-        <skos:definition xml:lang="en">A nature constant is a generically dependent continuant whose value, magintude or configuration is determined by nature including physics and mathematics.</skos:definition>
+        <skos:definition xml:lang="en">A nature constant is a generically dependent continuant whose value, maginitude or configuration is determined by nature including physics and mathematics.</skos:definition>
         <skos:example xml:lang="en">Examples of nature constants are the speed of light, pi, etc.</skos:example>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
@@ -12052,7 +12205,7 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
         <rdfs:label xml:lang="en">proportion</rdfs:label>
         <skos:altLabel xml:lang="en">concentration</skos:altLabel>
         <skos:altLabel xml:lang="en">fraction</skos:altLabel>
-        <skos:definition xml:lang="en">A Proportion is a relational quality between two entites (the whole and the part) which quantifies the relation between the whole and its part.</skos:definition>
+        <skos:definition xml:lang="en">A proportion is a relational quality between two entities (the whole and the part) which quantifies the relation between the whole and its part.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -12063,7 +12216,7 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020102">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">mass proportion</rdfs:label>
-        <skos:definition xml:lang="en">The Mass Proportion is a Proportion which quantifies the mass of the part relative to the mass of the whole.</skos:definition>
+        <skos:definition xml:lang="en">Mass proportion is a proportion which quantifies the mass of the part relative to the mass of the whole.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -12072,11 +12225,12 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
     <!-- https://w3id.org/pmd/co/PMD_0020103 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020103">
+        <owl:equivalentClass rdf:resource="https://w3id.org/pmd/co/PMD_0020207"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">molar proportion</rdfs:label>
         <skos:altLabel xml:lang="en">Molar Ratio</skos:altLabel>
-        <skos:definition xml:lang="en">The Molar Proportion is the proportion which quantifies the entities count of the part in relation to the entites count of the whole.</skos:definition>
-        <skos:example xml:lang="en">The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxigen molecules O2 to water molecules is 2/1.
+        <skos:definition xml:lang="en">Molar proportion is the proportion which quantifies the entities count of the part in relation to the entities count of the whole.</skos:definition>
+        <skos:example xml:lang="en">The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxygen molecules O2 to water molecules is 2/1.
 The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 2022 AD.</skos:example>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
@@ -12088,7 +12242,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020104">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">volume proportion</rdfs:label>
-        <skos:definition xml:lang="en">The Mass Proportion is a Proportion which quantifies the volume of the part relative to the volume of the whole.</skos:definition>
+        <skos:definition xml:lang="en">Volume proportion is a proportion which quantifies the volume of the part relative to the volume of the whole.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -12150,7 +12304,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="en">fluid (object)</rdfs:label>
-        <skos:definition xml:lang="en">fuild (object) is an object that consists of some portion of matter which bears an aggregate state that concretizes a liquid or gaseous aggregate state.</skos:definition>
+        <skos:definition xml:lang="en">fluid (object) is an object that consists of some portion of matter which bears an aggregate state that concretizes a liquid or gaseous aggregate state.</skos:definition>
     </owl:Class>
     
 
@@ -12199,7 +12353,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <rdfs:label xml:lang="en">aggregate state value</rdfs:label>
-        <skos:definition xml:lang="en">The aggregate state value is a categorical value specification that specifies value of the aggregatge state quality.</skos:definition>
+        <skos:definition xml:lang="en">The aggregate state value is a categorical value specification that specifies value of the aggregate state quality.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -12210,11 +12364,11 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020126">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000890"/>
         <rdfs:label xml:lang="en">foam</rdfs:label>
-        <skos:definition xml:lang="en">A foam is a material entity aggregate that conssists of some &apos;Composite Material&apos; c. 
-The parts of c that bear the filler role are vacuum-filled or gas filled pores. 
-The parts of c that bear the matrix role consist of a material that is bearer of solid or liquid aggregate state. 
-One pore with its sourrounding matrix is called &apos;cell&apos;. 
-Depending of the interconnectedness of the pores the foam is open- or closed-cell.</skos:definition>
+        <skos:definition xml:lang="en">A foam is a material entity aggregate that is also a composite material c. 
+The parts of c that have the filler role are vacuum-filled or gas filled pores. 
+The parts of c that have the matrix role consist of a material that is bearer of solid or liquid aggregate state. 
+One pore with its surrounding matrix is called &apos;cell&apos;. 
+Depending on the interconnectedness of the pores the foam is open- or closed-cell.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -12261,7 +12415,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
         <rdfs:label xml:lang="en">intensive quality</rdfs:label>
         <skos:altLabel xml:lang="en">Point property</skos:altLabel>
-        <skos:definition xml:lang="en">An intensive quality is a qualty that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
+        <skos:definition xml:lang="en">An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -12341,7 +12495,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020138">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:label xml:lang="en">lot</rdfs:label>
-        <skos:definition xml:lang="en">A lot is an object aggregate whose parts are output of the same prodction process.</skos:definition>
+        <skos:definition xml:lang="en">A lot is an object aggregate whose parts are output of the same production process.</skos:definition>
     </owl:Class>
     
 
@@ -12397,7 +12551,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">process chain</rdfs:label>
-        <skos:definition xml:lang="en">A process chain is a process that &apos;has contiuant part&apos; subprocesses S1...Sn where S1...Sn precede each other and where some object or object aggregate that are output of Sn are then input to Sn+1.</skos:definition>
+        <skos:definition xml:lang="en">A process chain is a process that &apos;has continuant part&apos; subprocesses S1...Sn where S1...Sn precede each other and where some object or object aggregate that are output of Sn are then input to Sn+1.</skos:definition>
     </owl:Class>
     
 
@@ -12504,10 +12658,28 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020153">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000833"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">technical system</rdfs:label>
-        <skos:definition xml:lang="en">A technical system is an object aggretate: 
+        <skos:definition xml:lang="en">A technical system is an object aggregate: 
 1. that is output of a manufacturing process, 
-2. that bears some function 
+2. that has some function 
 3. whose continuant parts are some components.</skos:definition>
     </owl:Class>
     
@@ -12554,7 +12726,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020136"/>
         <rdfs:comment xml:lang="en">Unlike nucleation and growth transformations, it has no nucleation barrier and proceeds by uphill diffusion and wavelength‑selective amplification of composition modulations, producing an interconnected, compositionally modulated microstructure that coarsens over time.</rdfs:comment>
         <rdfs:label xml:lang="en">spinodal decomposition</rdfs:label>
-        <skos:definition xml:lang="en">Spinodal decomposition is a diffusion‑controlled  continuous phase transformation in which a single homogeneous solutionspontaneously separates into two compositionally distinct phases by amplification of infinitesimal concentration fluctuations.</skos:definition>
+        <skos:definition xml:lang="en">Spinodal decomposition is a diffusion‑controlled  continuous phase transformation in which a single homogeneous solution spontaneously separates into two compositionally distinct phases by amplification of infinitesimal concentration fluctuations.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -12576,7 +12748,7 @@ Depending of the interconnectedness of the pores the foam is open- or closed-cel
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020159">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label xml:lang="en">daughter phase role</rdfs:label>
-        <skos:definition xml:lang="en">The daugther phase role is the role of a phase that forms during the phase transformation process.</skos:definition>
+        <skos:definition xml:lang="en">The daughter phase role is the role of a phase that forms during the phase transformation process.</skos:definition>
     </owl:Class>
     
 
@@ -12666,7 +12838,7 @@ Martensite is a microconstituent that has as part the thermodynamic ferrite phas
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">heat (metallurgy)</rdfs:label>
-        <skos:definition xml:lang="en">A heat is a fixed amount of metallic alloy that may be input to some Manifacturing Process.</skos:definition>
+        <skos:definition xml:lang="en">A heat is a fixed amount of metallic alloy that may be input to some manufacturing process.</skos:definition>
     </owl:Class>
     
 
@@ -12697,7 +12869,7 @@ Martensite is a microconstituent that has as part the thermodynamic ferrite phas
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020169">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000882"/>
         <rdfs:label xml:lang="en">mixture boundary</rdfs:label>
-        <skos:definition xml:lang="en">A mixture boundary boundary is a phase boundary that is realized by the transition from one phase to another phase in a system involving also chemical variations.</skos:definition>
+        <skos:definition xml:lang="en">A mixture boundary is a phase boundary that is realized by the transition from one phase to another phase in a system involving also chemical variations.</skos:definition>
     </owl:Class>
     
 
@@ -12721,7 +12893,7 @@ Martensite is a microconstituent that has as part the thermodynamic ferrite phas
         <obo:IAO_0000116 xml:lang="en">Should it have exactly two phases as member parts?</obo:IAO_0000116>
         <rdfs:label xml:lang="en">phase boundary (spatial)</rdfs:label>
         <skos:definition xml:lang="en">A fiat surface separating one phase from another phase.</skos:definition>
-        <skos:example xml:lang="en">The phase boundary between liquid and the gaseous phase in at ank. 
+        <skos:example xml:lang="en">The phase boundary between liquid and the gaseous phase in a tank. 
 The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     </owl:Class>
     
@@ -12752,7 +12924,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020174">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="en">foil</rdfs:label>
-        <skos:definition xml:lang="en">A plate is a very thin rectangular object that may bear a semi finished product role. At the same time it is a material.</skos:definition>
+        <skos:definition xml:lang="en">A plate is a very thin rectangular object that may bear a semi finished product role. At the same time it may be a material.</skos:definition>
     </owl:Class>
     
 
@@ -12763,7 +12935,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:comment xml:lang="en">Coils may have several sheets that are joined together.</rdfs:comment>
         <rdfs:label xml:lang="en">coil (coiled sheet)</rdfs:label>
-        <skos:definition xml:lang="en">A coil is an object that has part some sheets or foils.</skos:definition>
+        <skos:definition xml:lang="en">A coil is an object that has part some sheets or foils. At the same time it may be a material.</skos:definition>
     </owl:Class>
     
 
@@ -12773,7 +12945,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020176">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="en">plate</rdfs:label>
-        <skos:definition xml:lang="en">A plate is a thick rectangular object that may bear a semi finished product role. At the same time it is a material.</skos:definition>
+        <skos:definition xml:lang="en">A plate is a thick rectangular object that may bear a semi finished product role. At the same time it may be a material.</skos:definition>
     </owl:Class>
     
 
@@ -12783,7 +12955,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020177">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="en">bar</rdfs:label>
-        <skos:definition xml:lang="en">A bar is a long object with rectangular section that may bear a semi finished product role. At the same time it is a material.</skos:definition>
+        <skos:definition xml:lang="en">A bar is a long object with rectangular section that may bear a semi finished product role. At the same time it may be a material.</skos:definition>
     </owl:Class>
     
 
@@ -12793,7 +12965,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="en">rod</rdfs:label>
-        <skos:definition xml:lang="en">A rod is a long object with oval or round section that may bear a semi finished product role. At the same time it is a material.</skos:definition>
+        <skos:definition xml:lang="en">A rod is a long object with oval or round section that may bear a semi finished product role. At the same time it may be a material.</skos:definition>
     </owl:Class>
     
 
@@ -12814,7 +12986,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="en">tube</rdfs:label>
-        <skos:definition xml:lang="en">A tube is a long object with a hollow section and moderate wall thickness that may bear a semi finished product role. At the same time it is a material.</skos:definition>
+        <skos:definition xml:lang="en">A tube is a long object with a hollow section and moderate wall thickness that may bear a semi finished product role. At the same time it may be a material.</skos:definition>
     </owl:Class>
     
 
@@ -12824,7 +12996,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020181">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="en">pipe</rdfs:label>
-        <skos:definition xml:lang="en">A tube is a long object with a hollow section and pronounced wall thickness that may bear a semi finished product role. At the same time it is a material.</skos:definition>
+        <skos:definition xml:lang="en">A tube is a long object with a hollow section and pronounced wall thickness that may bear a semi finished product role. At the same time it may be a material.</skos:definition>
     </owl:Class>
     
 
@@ -12834,7 +13006,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020182">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:label xml:lang="en">profile (semi finished product)</rdfs:label>
-        <skos:definition xml:lang="en">A profile is a long object with determined section shape that may bear a semi finished product role. At the same time it is a material.</skos:definition>
+        <skos:definition xml:lang="en">A profile is a long object with determined section shape that may bear a semi finished product role. At the same time it may be a material.</skos:definition>
     </owl:Class>
     
 
@@ -12936,12 +13108,53 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0020190 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020190">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000965"/>
+        <rdfs:comment xml:lang="en">A metallographic section is part of an object which at the same time is a metal and the object is specified output of a planned process which describes the preparation of the surface.</rdfs:comment>
+        <rdfs:label xml:lang="en">metallographic section (surface)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020191 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="en">A metallographic section (embedded sample) is an object that has two parts: a metallic object that has a metallographic section (surface) as part and the mounting which is produced during a hot embedding or cold embedding process.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Typical dimensions of the round mountings are a diameter of 20-50 mm and a thickness of 10-20 mm.</rdfs:comment>
+        <rdfs:label xml:lang="en">metallographic section (embedded sample)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020192 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020192">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020190"/>
+        <rdfs:comment xml:lang="en">A macrosection (metallography) is a metallographic section (surface) that is produced directly on an object. The object may be cut in order to make accessible a section (fiat surface) of interest.</rdfs:comment>
+        <rdfs:label xml:lang="en">macrosection (metallography)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020193 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label xml:lang="en">tensile testpiece</rdfs:label>
+        <skos:definition xml:lang="en">A tensile testpiece is a longitudinal object that has two parts which were designed for gripping (gripping section) at its ends and a part between the gripping sections that has been designed to observe the materials or the objects reaction to tensile loading.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0020200 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020200">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:label xml:lang="en">force</rdfs:label>
-        <skos:definition xml:lang="en">Force is a reciprocal relation realized between two objects where the other object exerces the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects.</skos:definition>
+        <skos:definition xml:lang="en">Force is a reciprocal relation realized between two objects where the other object exerts the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -13005,9 +13218,9 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <!-- https://w3id.org/pmd/co/PMD_0020207 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020207">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020103"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">amount of substance</rdfs:label>
-        <skos:definition xml:lang="en">Amount of substance n is a molar propotion when the whole is a object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A).</skos:definition>
+        <skos:definition xml:lang="en">Amount of substance n is a molar proportion when the whole is an object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A).</skos:definition>
     </owl:Class>
     
 
@@ -13040,8 +13253,8 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">chemical composition data item</rdfs:label>
         <skos:altLabel xml:lang="en">chemical composition specification</skos:altLabel>
-        <skos:definition xml:lang="en">Chemical composition data item is an information content entity that is about chemical composition of a material and has memebers fraction specifications of portions of chemical elements, which are parts of the material.</skos:definition>
-        <skos:example xml:lang="en">Steel has quality chemical composition , which concretizes the chemical composition specification .The chemical composition specification has parts fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these  fraction specifications are conretized by relational qualities (mass) proportion of iron and (mass) proportion of carbon.</skos:example>
+        <skos:definition xml:lang="en">Chemical composition data item is an information content entity that is about chemical composition of a material and has members fraction specifications of portions of chemical elements, which are parts of the material.</skos:definition>
+        <skos:example xml:lang="en">Steel has quality chemical composition , and the chemical composition data item is about the chemical composition .The chemical composition data item has members fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these fraction specifications specify  values of relational qualities (mass) proportion of iron and (mass) proportion of carbon.</skos:example>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -13085,7 +13298,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <!-- https://w3id.org/pmd/co/PMD_0025005 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">3D</rdfs:label>
         <skos:definition xml:lang="en">A three-dimensional information content entity is a representation or analysis, commonly applied in studying material properties in its volume or describing a dependency of one variable on two other variables.</skos:definition>
         <skos:example xml:lang="en">Orientation distribution function (ODF), potential energy landscape</skos:example>
@@ -13218,7 +13431,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025014">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
         <rdfs:label xml:lang="en">single crystal</rdfs:label>
-        <skos:definition xml:lang="en">Single crystal is a crystal which is not part of a polycrystal and its boundaries are its exteral surfaces.</skos:definition>
+        <skos:definition xml:lang="en">Single crystal is a crystal which is not part of a polycrystal and its boundaries are its external surfaces.</skos:definition>
     </owl:Class>
     
 
@@ -13295,6 +13508,29 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0025020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000849"/>
+        <rdfs:label xml:lang="en">single fatigue testing process</rdfs:label>
+        <skos:definition xml:lang="en">A single fatigue testing process is a occurent part of a fatigue testing process (S-N testing process). A single fatigue testing process assesses how many cycles a material can withstand under the given loading.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0025021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Stamping_press</obo:IAO_0000119>
+        <rdfs:label xml:lang="de">Stanzmachine</rdfs:label>
+        <rdfs:label xml:lang="en">stamping press</rdfs:label>
+        <skos:definition xml:lang="en">Eine Stanzmachine ist ein Werkzeug zur Metallbearbeitung, das dazu dient, geschnittenes Metall durch Verformung mit einer Matrize zu formen.</skos:definition>
+        <skos:definition xml:lang="en">Stamping press is a metalworking tool which is used to shape a cut metal by deforming it with a die.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0025997 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025997">
@@ -13332,8 +13568,8 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">fraction value specification</rdfs:label>
-        <skos:definition xml:lang="en">Fraction value specification is a value specification that contains information about quantative share of a part relative to a specified whole.</skos:definition>
-        <skos:example xml:lang="en">2.05 wt.% of carbon in steel, 4 vol.% of nictric acid in a solution</skos:example>
+        <skos:definition xml:lang="en">Fraction value specification is a value specification that contains information about quantitative share of a part relative to a specified whole.</skos:definition>
+        <skos:example xml:lang="en">2.05 wt.% of carbon in steel, 4 vol.% of nitric acid in a solution</skos:example>
     </owl:Class>
     
 
@@ -13342,7 +13578,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0040001">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
-        <rdfs:comment xml:lang="en">Length is a size that describes the spacial extend of its bearer in one dimension.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Length is a size that describes the spatial extent of its bearer in one dimension.</rdfs:comment>
         <rdfs:label xml:lang="en">length</rdfs:label>
         <skos:altLabel xml:lang="en">dimension</skos:altLabel>
         <skos:definition>Length is a one dimensional size.</skos:definition>
@@ -13416,7 +13652,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0050005">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050004"/>
         <rdfs:label xml:lang="en">polyethylene</rdfs:label>
-        <skos:definition xml:lang="en">Polyethylene is a Thermoplastic that is composed of repeating ethylene monomer units.</skos:definition>
+        <skos:definition xml:lang="en">Polyethylene is a thermoplastic that is composed of repeating ethylene monomer units.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
         <pmd:PMD_0050117>PE</pmd:PMD_0050117>
     </owl:Class>
@@ -13464,7 +13700,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0050009">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050004"/>
         <rdfs:label xml:lang="en">polypropylene</rdfs:label>
-        <skos:definition xml:lang="en">Polypropylene is a Thermoplastic that is composed of repeating propylene monomer units.</skos:definition>
+        <skos:definition xml:lang="en">Polypropylene is a thermoplastic that is composed of repeating propylene monomer units.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
         <pmd:PMD_0050117>PP</pmd:PMD_0050117>
     </owl:Class>
@@ -13618,7 +13854,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0050022">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000888"/>
         <rdfs:label xml:lang="en">thermosetting polymers</rdfs:label>
-        <skos:definition xml:lang="en">A Thermosetting Polymer is a Polymer that, once cured, irreversibly sets into a permanent shape.</skos:definition>
+        <skos:definition xml:lang="en">Thermosetting polymer is a polymer that, once cured, irreversibly sets into a permanent shape.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -14713,7 +14949,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0050119">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0050118"/>
         <rdfs:label xml:lang="en">fused silica glass</rdfs:label>
-        <skos:definition xml:lang="en">Fused Silica Glass is an Optical Glass that is made from pure silica, prized for its high transparency and thermal stability.</skos:definition>
+        <skos:definition xml:lang="en">Fused silica glass is an optical glass that is made from pure silica, prized for its high transparency and thermal stability.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -15185,9 +15421,11 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <!-- https://w3id.org/pmd/co/PMD_0060009 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0060009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:comment xml:lang="en">The intend of the specification datum is to express the &quot;Sollwert&quot; of some qualitiy or behavioral material property. Then, the specification datum can be further specified by  some value specification.</rdfs:comment>
         <rdfs:label xml:lang="en">specification datum</rdfs:label>
-        <skos:definition>A data item that provides specification for entities</skos:definition>
+        <skos:definition xml:lang="en">Specification datum is a data item that provides an information of a setpoint of some value, i.e., it is an intended value.</skos:definition>
+        <skos:example xml:lang="en">The setpoint value of a ultimate tensile strength of some steel material</skos:example>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -15215,9 +15453,9 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
         <obo:IAO_0000119>European Commission: Directorate-General for Research and Innovation, Biodegradability of plastics in the open environment, Publications Office of the European Union, 2021, https://data.europa.eu/doi/10.2777/690248</obo:IAO_0000119>
         <rdfs:label xml:lang="de">Biologische Abbaubarkeit</rdfs:label>
         <rdfs:label xml:lang="en">biodegradabilty</rdfs:label>
-        <skos:definition xml:lang="en">&quot;[Biodegradabilty] [...] is understood as the microbial conversion of all its organic constituents to carbon dioxide (or carbon dioxide and methane in conditions where oxygen is not present), new microbial biomass and mineral salts, within a timescale short enough not to lead to lasting harm or accumulation in the open environment.&quot;</skos:definition>
         <skos:definition xml:lang="de">&quot;[Biologische Abbaubarkeit] [...] beschreibt die mikrobielle Umwandlung all seiner organischen Bestandteile in Kohlendioxid oder – unter sauerstofffreien Bedingungen – in Kohlendioxid und Methan, neue mikrobielle Biomasse und Mineralsalze verstanden, und zwar innerhalb eines Zeitraums, der so kurz ist, dass es nicht zu dauerhaften Schäden oder Anreicherungen in der offenen Umwelt kommt.&quot;</skos:definition>
-        <skos:definition xml:lang="en">Biodegradability is a disposition of a material which specifies its capability to be fully microbially converted into inorganic end products (CO₂, CH₄, mineral salts, biomass) within an environmentally non-harmful timescale.</skos:definition>
+        <skos:definition xml:lang="en">&quot;[biodegradability] [...] is understood as the microbial conversion of all its organic constituents to carbon dioxide (or carbon dioxide and methane in conditions where oxygen is not present), new microbial biomass and mineral salts, within a timescale short enough not to lead to lasting harm or accumulation in the open environment.&quot;</skos:definition>
+        <skos:definition xml:lang="en">biodegradability is a disposition of a material which specifies its capability to be fully microbially converted into inorganic end products (CO₂, CH₄, mineral salts, biomass) within an environmentally non-harmful timescale.</skos:definition>
         <pmd:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/126</pmd:PMD_0001032>
     </owl:Class>
     
@@ -16282,20 +16520,6 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     
 
 
-    <!-- https://w3id.org/pmd/tto/TTO_1000001 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_1000001">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000009"/>
-        <rdfs:label xml:lang="de">Dehngrenze</rdfs:label>
-        <rdfs:label xml:lang="en">offset yield point</rdfs:label>
-        <skos:definition xml:lang="de">Die Dehngrenze ist eine mechanische Eigenschaft, die der Zugspannung im einaxialen Zugversuch, bei der die plastische Extensometer-Dehnung einem Prozentanteil von 0,2 % der Extensometer-Messlänge entspricht. Die Dehngrenze wird hauptsächlich für Werkstoffe verwendet, die keine ausgeprägte Streckgrenze aufweisen.</skos:definition>
-        <skos:definition xml:lang="en">The offset yield point is a mechanical property, which characterizes the tensile stress in a uniaxial tensile test, at which the plastic elongation corresponds to a percentage of 0.2% of the extensometer gauge length. The offset yield point is mainly used for materials that do not have a pronounced yield strength.</skos:definition>
-        <pmd:definitionSource>https://www.zwickroell.com/de/branchen/werkstoffpruefung-materialpruefung/zugversuch/streckgrenze/</pmd:definitionSource>
-        <pmd:symbol>Rp0.2</pmd:symbol>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -16600,7 +16824,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020117">
         <rdfs:label xml:lang="en">aggregate state solid</rdfs:label>
-        <skos:definition xml:lang="en">A state where the bonds between entites trasmit shear forces.</skos:definition>
+        <skos:definition xml:lang="en">A state where the bonds between entities transmit shear forces.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -16610,7 +16834,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020118">
         <rdfs:label xml:lang="en">aggregate state liquid</rdfs:label>
-        <skos:definition xml:lang="en">A state where the bonds of the entites transmit no shear force.</skos:definition>
+        <skos:definition xml:lang="en">A state where the bonds of the entities transmit no shear force.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -16619,7 +16843,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- https://w3id.org/pmd/co/PMD_0020119 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020119">
-        <rdfs:label xml:lang="en">aggregate state gasous</rdfs:label>
+        <rdfs:label xml:lang="en">aggregate state gaseous</rdfs:label>
         <skos:definition xml:lang="en">A state where the entities have no bonding.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:NamedIndividual>
@@ -16630,7 +16854,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020120">
         <rdfs:label xml:lang="en">aggregate state plasma</rdfs:label>
-        <skos:definition xml:lang="en">An aggregate state where the entites are atom nuclei and have no bonds.</skos:definition>
+        <skos:definition xml:lang="en">An aggregate state where the entities are atom nuclei and have no bonds.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -16650,7 +16874,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020122">
         <rdfs:label xml:lang="en">aggregate state supercritical fluid</rdfs:label>
-        <skos:definition xml:lang="en">A state with strong bindings between entites that do not transmit shear force.</skos:definition>
+        <skos:definition xml:lang="en">A state with strong bindings between entities that do not transmit shear force.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:NamedIndividual>
     
@@ -16670,7 +16894,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020124">
         <rdfs:label xml:lang="en">aggregate state suprafluid</rdfs:label>
-        <skos:definition xml:lang="en">A state with frictionless binding that transmits no shear force between entites.</skos:definition>
+        <skos:definition xml:lang="en">A state with frictionless binding that transmits no shear force between entities.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:NamedIndividual>
     

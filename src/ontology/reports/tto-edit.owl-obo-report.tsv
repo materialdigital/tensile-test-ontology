@@ -1,6 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_label	proof strength	rdfs:label	Dehngrenze@de
-ERROR	duplicate_label	Dehngrenze	rdfs:label	Dehngrenze@de
 ERROR	multiple_labels	Ergebnis eines Zugversuches	rdfs:label	Ergebnis eines Zugversuches@de
 ERROR	multiple_labels	Ergebnis eines Zugversuches	rdfs:label	tensile test result@en
 ERROR	multiple_labels	load cell maximum force	rdfs:label	Höchstkraft der Kraftmessdose@de
@@ -21,10 +19,10 @@ ERROR	multiple_labels	crosshead separation rate	rdfs:label	Traversengeschwindigk
 ERROR	multiple_labels	crosshead separation rate	rdfs:label	crosshead separation rate@en
 ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	End-Probendurchmesser@de
 ERROR	multiple_labels	End-Probendurchmesser	rdfs:label	diameter after fracture@en
-ERROR	multiple_labels	estimated strain rate over the parallel length	rdfs:label	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge@de
-ERROR	multiple_labels	estimated strain rate over the parallel length	rdfs:label	estimated strain rate over the parallel length@en
-ERROR	multiple_labels	Extensometer-Messlänge	rdfs:label	Extensometer-Messlänge@de
-ERROR	multiple_labels	Extensometer-Messlänge	rdfs:label	extensometer gauge length@en
+ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge@de
+ERROR	multiple_labels	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	rdfs:label	estimated strain rate over the parallel length@en
+ERROR	multiple_labels	extensometer gauge length	rdfs:label	Extensometer-Messlänge@de
+ERROR	multiple_labels	extensometer gauge length	rdfs:label	extensometer gauge length@en
 ERROR	multiple_labels	final gauge length after fracture	rdfs:label	Messlänge nach dem Bruch@de
 ERROR	multiple_labels	final gauge length after fracture	rdfs:label	final gauge length after fracture@en
 ERROR	multiple_labels	gauge length	rdfs:label	Messlänge@de
@@ -99,8 +97,6 @@ ERROR	multiple_labels	End-Breite	rdfs:label	End-Breite@de
 ERROR	multiple_labels	End-Breite	rdfs:label	width after fracture@en
 ERROR	multiple_labels	Streckgrenzenverhältnis	rdfs:label	Streckgrenzenverhältnis@de
 ERROR	multiple_labels	Streckgrenzenverhältnis	rdfs:label	yield strength ratio@en
-ERROR	multiple_labels	Dehngrenze	rdfs:label	Dehngrenze@de
-ERROR	multiple_labels	Dehngrenze	rdfs:label	offset yield point@en
 WARN	missing_definition	broken tested test piece role	IAO:0000115	
 WARN	missing_definition	unbroken tested test piece role	IAO:0000115	
 WARN	missing_definition	Ergebnis eines Zugversuches	IAO:0000115	
@@ -113,8 +109,8 @@ WARN	missing_definition	cross section area	IAO:0000115
 WARN	missing_definition	crosshead separation	IAO:0000115	
 WARN	missing_definition	crosshead separation rate	IAO:0000115	
 WARN	missing_definition	End-Probendurchmesser	IAO:0000115	
-WARN	missing_definition	estimated strain rate over the parallel length	IAO:0000115	
-WARN	missing_definition	Extensometer-Messlänge	IAO:0000115	
+WARN	missing_definition	Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge	IAO:0000115	
+WARN	missing_definition	extensometer gauge length	IAO:0000115	
 WARN	missing_definition	final gauge length after fracture	IAO:0000115	
 WARN	missing_definition	gauge length	IAO:0000115	
 WARN	missing_definition	gauge length marks	IAO:0000115	
@@ -153,4 +149,3 @@ WARN	missing_definition	Obere Streckgrenze	IAO:0000115
 WARN	missing_definition	End-Breite	IAO:0000115	
 WARN	missing_definition	area	IAO:0000115	
 WARN	missing_definition	Streckgrenzenverhältnis	IAO:0000115	
-WARN	missing_definition	Dehngrenze	IAO:0000115	

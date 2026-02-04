@@ -16,9 +16,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<https://w3id.org/pmd/tto/imports/pmdco_import.owl>
-<https://w3id.org/pmd/tto/releases/2026-01-27/imports/pmdco_import.owl>
-Annotation(dce:source <https://w3id.org/pmd/co/releases/2026-01-27/pmdco.ttl>)
-Annotation(owl:versionInfo "2026-01-27")
+<https://w3id.org/pmd/tto/releases/2026-02-04/imports/pmdco_import.owl>
+Annotation(dce:source <https://w3id.org/pmd/co/releases/2026-02-04/pmdco.ttl>)
+Annotation(owl:versionInfo "2026-02-04")
 
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
@@ -185,6 +185,9 @@ Declaration(Class(obo:CHEBI_49882))
 Declaration(Class(obo:CHEBI_49957))
 Declaration(Class(obo:CHEBI_59999))
 Declaration(Class(obo:CHEBI_60003))
+Declaration(Class(obo:COB_0000035))
+Declaration(Class(obo:COB_0000082))
+Declaration(Class(obo:COB_0000083))
 Declaration(Class(obo:IAO_0000003))
 Declaration(Class(obo:IAO_0000005))
 Declaration(Class(obo:IAO_0000007))
@@ -210,6 +213,7 @@ Declaration(Class(obo:NCBITaxon_9606))
 Declaration(Class(obo:OBI_0000011))
 Declaration(Class(obo:OBI_0000067))
 Declaration(Class(obo:OBI_0000070))
+Declaration(Class(obo:OBI_0000202))
 Declaration(Class(obo:OBI_0000245))
 Declaration(Class(obo:OBI_0000260))
 Declaration(Class(obo:OBI_0000379))
@@ -218,6 +222,8 @@ Declaration(Class(obo:OBI_0000835))
 Declaration(Class(obo:OBI_0001930))
 Declaration(Class(obo:OBI_0001931))
 Declaration(Class(obo:OBI_0001933))
+Declaration(Class(obo:OBI_0002201))
+Declaration(Class(obo:OBI_0302911))
 Declaration(Class(obo:UO_0000000))
 Declaration(Class(obo:UO_0000003))
 Declaration(Class(obo:UO_0000076))
@@ -249,6 +255,8 @@ Declaration(Class(co:PMD_0000066))
 Declaration(Class(co:PMD_0000067))
 Declaration(Class(co:PMD_0000068))
 Declaration(Class(co:PMD_0000075))
+Declaration(Class(co:PMD_0000100))
+Declaration(Class(co:PMD_0000101))
 Declaration(Class(co:PMD_0000123))
 Declaration(Class(co:PMD_0000501))
 Declaration(Class(co:PMD_0000502))
@@ -614,19 +622,12 @@ Declaration(Class(co:PMD_0001021))
 Declaration(Class(co:PMD_0001022))
 Declaration(Class(co:PMD_0001023))
 Declaration(Class(co:PMD_0001024))
-Declaration(Class(co:PMD_0001033))
-Declaration(Class(co:PMD_0001034))
 Declaration(Class(co:PMD_0001035))
 Declaration(Class(co:PMD_0001036))
-Declaration(Class(co:PMD_0001037))
-Declaration(Class(co:PMD_0001038))
 Declaration(Class(co:PMD_0001039))
 Declaration(Class(co:PMD_0001040))
-Declaration(Class(co:PMD_0001041))
 Declaration(Class(co:PMD_0001042))
-Declaration(Class(co:PMD_0001043))
 Declaration(Class(co:PMD_0001044))
-Declaration(Class(co:PMD_0001045))
 Declaration(Class(co:PMD_0001046))
 Declaration(Class(co:PMD_0001047))
 Declaration(Class(co:PMD_0001998))
@@ -788,6 +789,10 @@ Declaration(Class(co:PMD_0020186))
 Declaration(Class(co:PMD_0020187))
 Declaration(Class(co:PMD_0020188))
 Declaration(Class(co:PMD_0020189))
+Declaration(Class(co:PMD_0020190))
+Declaration(Class(co:PMD_0020191))
+Declaration(Class(co:PMD_0020192))
+Declaration(Class(co:PMD_0020193))
 Declaration(Class(co:PMD_0020200))
 Declaration(Class(co:PMD_0020201))
 Declaration(Class(co:PMD_0020202))
@@ -812,6 +817,8 @@ Declaration(Class(co:PMD_0025016))
 Declaration(Class(co:PMD_0025017))
 Declaration(Class(co:PMD_0025018))
 Declaration(Class(co:PMD_0025019))
+Declaration(Class(co:PMD_0025020))
+Declaration(Class(co:PMD_0025021))
 Declaration(Class(co:PMD_0025997))
 Declaration(Class(co:PMD_0040001))
 Declaration(Class(co:PMD_0050000))
@@ -1010,6 +1017,7 @@ Declaration(ObjectProperty(obo:BFO_0000221))
 Declaration(ObjectProperty(obo:BFO_0000222))
 Declaration(ObjectProperty(obo:BFO_0000223))
 Declaration(ObjectProperty(obo:BFO_0000224))
+Declaration(ObjectProperty(obo:COB_0000081))
 Declaration(ObjectProperty(obo:IAO_0000039))
 Declaration(ObjectProperty(obo:IAO_0000136))
 Declaration(ObjectProperty(obo:IAO_0000219))
@@ -1144,6 +1152,8 @@ Declaration(AnnotationProperty(co:PMD_0000060))
 Declaration(AnnotationProperty(co:PMD_0000064))
 Declaration(AnnotationProperty(co:PMD_0001032))
 Declaration(AnnotationProperty(co:PMD_0050117))
+Declaration(Datatype(rdfs:Literal))
+Declaration(Datatype(xsd:date))
 ############################
 #   Annotation Properties
 ############################
@@ -1157,6 +1167,7 @@ AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage"@en)
 
 # Annotation Property: obo:IAO_0000115 (definition)
 
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000115 "2012-04-05: 
 Barry Smith
@@ -1201,6 +1212,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000115 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
 
 # Annotation Property: obo:IAO_0000116 (editor note)
 
@@ -1220,10 +1232,24 @@ AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
 # Annotation Property: dce:source (Source)
 
 AnnotationAssertion(rdfs:label dce:source "Source")
+AnnotationAssertion(rdfs:label dce:source "Source"@en-us)
 
 # Annotation Property: dcterms:license (dcterms:license)
 
 AnnotationAssertion(rdfs:label dcterms:license "dcterms:license")
+
+# Annotation Property: oboInOwl:hasDbXref (has cross-reference)
+
+AnnotationAssertion(obo:IAO_0000112 oboInOwl:hasDbXref "disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) \"NCIT:C41009\"^^xsd:string")
+AnnotationAssertion(obo:IAO_0000115 oboInOwl:hasDbXref "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.")
+AnnotationAssertion(dcterms:contributor oboInOwl:hasDbXref <https://orcid.org/0000-0002-7356-1779>)
+AnnotationAssertion(dcterms:created oboInOwl:hasDbXref "2024-03-18"^^xsd:date)
+AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "has cross-reference")
+
+# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
+
+AnnotationAssertion(obo:IAO_0000115 oboInOwl:hasExactSynonym "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.")
+AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has exact synonym"@en)
 
 # Annotation Property: rdfs:label (label)
 
@@ -1292,9 +1318,10 @@ AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part"@en)
 SubObjectPropertyOf(obo:BFO_0000051 obo:BFO_0000051)
 TransitiveObjectProperty(obo:BFO_0000051)
 
-# Object Property: obo:BFO_0000054 (has realization)
+# Object Property: obo:BFO_0000054 (realized in)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000054 "has realization"@en)
+AnnotationAssertion(rdfs:label obo:BFO_0000054 "realized in"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000054 "b has realization c =Def c realizes b"@en)
 AnnotationAssertion(skos:example obo:BFO_0000054 "As for realizes"@en)
 InverseObjectProperties(obo:BFO_0000054 obo:BFO_0000055)
@@ -1303,6 +1330,7 @@ ObjectPropertyRange(obo:BFO_0000054 obo:BFO_0000015)
 
 # Object Property: obo:BFO_0000055 (realizes)
 
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000055 "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000055 "realizes"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000055 "(Elucidation) realizes is a relation between a process b and realizable entity c such that c inheres in some d & for all t, if b has participant d then c exists & the type instantiated by b is correlated with the type instantiated by c"@en)
 AnnotationAssertion(skos:example obo:BFO_0000055 "A balding process realizes a disposition to go bald; a studying process realizes a student role; a process of pumping blood realizes the pumping function of a heart"@en)
@@ -1311,6 +1339,7 @@ ObjectPropertyRange(obo:BFO_0000055 obo:BFO_0000017)
 
 # Object Property: obo:BFO_0000062 (preceded by)
 
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000062 "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded by"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000062 "b preceded by c =Def b precedes c"@en)
 AnnotationAssertion(skos:example obo:BFO_0000062 "The temporal region occupied by the second half of the match is preceded by the temporal region occupied by the first half of the match"@en)
@@ -1321,6 +1350,7 @@ ObjectPropertyRange(obo:BFO_0000062 obo:BFO_0000003)
 
 # Object Property: obo:BFO_0000063 (precedes)
 
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000063 "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000063 "precedes"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000063 "(Elucidation) precedes is a relation between occurrents o, o' such that if t is the temporal extent of o & t' is the temporal extent of o' then either the last instant of o is before the first instant of o' or the last instant of o is the first instant of o' & neither o nor o' are temporal instants"@en)
 AnnotationAssertion(skos:example obo:BFO_0000063 "The temporal region occupied by Mary's birth precedes the temporal region occupied by Mary's death."@en)
@@ -1517,6 +1547,10 @@ FunctionalObjectProperty(obo:BFO_0000224)
 ObjectPropertyDomain(obo:BFO_0000224 obo:BFO_0000008)
 ObjectPropertyRange(obo:BFO_0000224 obo:BFO_0000203)
 
+# Object Property: obo:COB_0000081 (intended to realize)
+
+AnnotationAssertion(rdfs:label obo:COB_0000081 "intended to realize"@en)
+
 # Object Property: obo:IAO_0000039 (has measurement unit label)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000039 "has measurement unit label"@en)
@@ -1627,29 +1661,29 @@ AnnotationAssertion(rdfs:label obo:IAO_0000419 "quality is specified as"@en)
 # Object Property: obo:OBI_0000293 (has specified input)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000293 "see is_input_of example_of_usage"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000293 "The inverse property of is specified input of"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000293 "The inverse property of is specified input of")
 AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000293 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works.")
 AnnotationAssertion(rdfs:label obo:OBI_0000293 "has specified input"@en)
 SubObjectPropertyOf(obo:OBI_0000293 obo:RO_0000057)
 InverseObjectProperties(obo:OBI_0000293 obo:OBI_0000295)
-ObjectPropertyDomain(obo:OBI_0000293 obo:OBI_0000011)
+ObjectPropertyDomain(obo:OBI_0000293 obo:COB_0000035)
 
 # Object Property: obo:OBI_0000295 (is specified input of)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000295 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000295 "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000295 "A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.")
 AnnotationAssertion(rdfs:label obo:OBI_0000295 "is specified input of"@en)
 SubObjectPropertyOf(obo:OBI_0000295 obo:RO_0000056)
-ObjectPropertyRange(obo:OBI_0000295 obo:OBI_0000011)
+ObjectPropertyRange(obo:OBI_0000295 obo:COB_0000035)
 
 # Object Property: obo:OBI_0000299 (has specified output)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000299 "The inverse property of is specified output of"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000299 "The inverse property of is specified output of")
 AnnotationAssertion(rdfs:label obo:OBI_0000299 "has specified output"@en)
 EquivalentObjectProperties(obo:OBI_0000299 ObjectInverseOf(obo:OBI_0000312))
 SubObjectPropertyOf(obo:OBI_0000299 obo:RO_0000057)
 InverseObjectProperties(obo:OBI_0000299 obo:OBI_0000312)
-ObjectPropertyDomain(obo:OBI_0000299 obo:OBI_0000011)
+ObjectPropertyDomain(obo:OBI_0000299 obo:COB_0000035)
 
 # Object Property: obo:OBI_0000304 (is_manufactured_by)
 
@@ -1661,10 +1695,10 @@ ObjectPropertyRange(obo:OBI_0000304 obo:OBI_0000835)
 
 # Object Property: obo:OBI_0000312 (is specified output of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000312 "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000312 "A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000312 "is specified output of"@en)
 SubObjectPropertyOf(obo:OBI_0000312 obo:RO_0000056)
-ObjectPropertyRange(obo:OBI_0000312 obo:OBI_0000011)
+ObjectPropertyRange(obo:OBI_0000312 obo:COB_0000035)
 
 # Object Property: obo:OBI_0000417 (achieves_planned_objective)
 
@@ -1673,7 +1707,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000417 "This relation obtains betwe
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000417 "PPPB branch derived")
 AnnotationAssertion(rdfs:label obo:OBI_0000417 "achieves_planned_objective")
 AnnotationAssertion(co:PMD_0000064 obo:OBI_0000417 "https://github.com/search?q=repo%3Amaterialdigital%2Fcore-ontology+path%3A%2F%5Epatterns%5C%2F%2F+OBI_0000417&type=code")
-ObjectPropertyDomain(obo:OBI_0000417 obo:OBI_0000011)
+ObjectPropertyDomain(obo:OBI_0000417 obo:COB_0000035)
 ObjectPropertyRange(obo:OBI_0000417 obo:IAO_0000005)
 
 # Object Property: obo:OBI_0001927 (specifies value of)
@@ -1739,6 +1773,7 @@ ObjectPropertyRange(obo:RO_0000057 obo:BFO_0000002)
 AnnotationAssertion(obo:IAO_0000112 obo:RO_0000058 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en)
 AnnotationAssertion(obo:IAO_0000112 obo:RO_0000058 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000058 "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0000058 "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."@en)
 AnnotationAssertion(rdfs:label obo:RO_0000058 "is concretized as"@en)
 InverseObjectProperties(obo:RO_0000058 obo:RO_0000059)
 ObjectPropertyDomain(obo:RO_0000058 obo:BFO_0000031)
@@ -1748,6 +1783,7 @@ ObjectPropertyRange(obo:RO_0000058 ObjectUnionOf(obo:BFO_0000015 obo:BFO_0000020
 
 AnnotationAssertion(obo:IAO_0000112 obo:RO_0000059 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en)
 AnnotationAssertion(obo:IAO_0000112 obo:RO_0000059 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0000059 "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000059 "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant."@en)
 AnnotationAssertion(rdfs:label obo:RO_0000059 "concretizes"@en)
 ObjectPropertyDomain(obo:RO_0000059 ObjectUnionOf(obo:BFO_0000015 obo:BFO_0000020))
@@ -2078,6 +2114,7 @@ AnnotationAssertion(skos:definition co:PMD_0025998 "a relation between an indepe
 AnnotationAssertion(skos:example co:PMD_0025998 "material has relational quality mass proportion m, and portion of iron has the same relational quality mass proportion m"@en)
 SubObjectPropertyOf(co:PMD_0025998 owl:topObjectProperty)
 InverseObjectProperties(co:PMD_0025998 co:PMD_0025999)
+ObjectPropertyDomain(co:PMD_0025998 obo:BFO_0000004)
 ObjectPropertyRange(co:PMD_0025998 obo:BFO_0000145)
 
 # Object Property: co:PMD_0025999 (relational quality of)
@@ -2342,6 +2379,8 @@ DisjointClasses(obo:BFO_0000038 obo:BFO_0000148)
 
 # Class: obo:BFO_0000040 (material entity)
 
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000040 "Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity"@en)
 AnnotationAssertion(skos:definition obo:BFO_0000040 "(Elucidation) A material entity is an independent continuant has some portion of matter as continuant part"@en)
 AnnotationAssertion(skos:example obo:BFO_0000040 "A human being; the undetached arm of a human being; an aggregate of human beings"@en)
@@ -2496,7 +2535,6 @@ SubClassOf(obo:CHEBI_23116 obo:CHEBI_25585)
 # Class: obo:CHEBI_23367 (molecular entity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_23367 "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.")
-AnnotationAssertion(obo:IAO_0000116 obo:CHEBI_23367 "We are assuming that every molecular entity has to be completely connected by chemical bonds. This excludes protein complexes, which are comprised of minimally two separate molecular entities. We will follow up with Chebi to ensure this is their understanding as well"@en)
 AnnotationAssertion(rdfs:label obo:CHEBI_23367 "molecular entity")
 SubClassOf(obo:CHEBI_23367 obo:CHEBI_24431)
 
@@ -2732,6 +2770,7 @@ SubClassOf(obo:CHEBI_30514 obo:CHEBI_33521)
 
 AnnotationAssertion(rdfs:label obo:CHEBI_30682 "ruthenium atom")
 SubClassOf(obo:CHEBI_30682 obo:CHEBI_33521)
+SubClassOf(obo:CHEBI_30682 ObjectSomeValuesFrom(obo:BFO_0000051 obo:BFO_0000040))
 
 # Class: obo:CHEBI_30687 (osmium atom)
 
@@ -2882,6 +2921,7 @@ SubClassOf(obo:CHEBI_33357 obo:CHEBI_33521)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_33359 "A cobalt group element atom of atomic number 45.")
 AnnotationAssertion(rdfs:label obo:CHEBI_33359 "rhodium atom")
 SubClassOf(obo:CHEBI_33359 obo:CHEBI_33521)
+SubClassOf(obo:CHEBI_33359 ObjectSomeValuesFrom(obo:BFO_0000051 obo:BFO_0000040))
 
 # Class: obo:CHEBI_33361 (meitnerium atom)
 
@@ -2934,11 +2974,13 @@ SubClassOf(obo:CHEBI_33374 obo:CHEBI_33319)
 
 AnnotationAssertion(rdfs:label obo:CHEBI_33375 "gadolinium atom")
 SubClassOf(obo:CHEBI_33375 obo:CHEBI_33319)
+SubClassOf(obo:CHEBI_33375 ObjectSomeValuesFrom(obo:BFO_0000051 obo:BFO_0000040))
 
 # Class: obo:CHEBI_33376 (terbium atom)
 
 AnnotationAssertion(rdfs:label obo:CHEBI_33376 "terbium atom")
 SubClassOf(obo:CHEBI_33376 obo:CHEBI_33319)
+SubClassOf(obo:CHEBI_33376 ObjectSomeValuesFrom(obo:BFO_0000051 obo:BFO_0000040))
 
 # Class: obo:CHEBI_33377 (dysprosium atom)
 
@@ -3109,6 +3151,25 @@ AnnotationAssertion(skos:example obo:CHEBI_60003 "Pure water, a portion of iron 
 AnnotationAssertion(co:PMD_0000060 obo:CHEBI_60003 "true"^^xsd:boolean)
 SubClassOf(obo:CHEBI_60003 obo:CHEBI_59999)
 
+# Class: obo:COB_0000035 (completely executed planned process)
+
+AnnotationAssertion(rdfs:label obo:COB_0000035 "completely executed planned process"@en)
+SubClassOf(obo:COB_0000035 obo:COB_0000082)
+SubClassOf(obo:COB_0000035 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000260))
+DisjointClasses(obo:COB_0000035 obo:COB_0000083)
+
+# Class: obo:COB_0000082 (planned process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:COB_0000082 "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en)
+AnnotationAssertion(rdfs:label obo:COB_0000082 "planned process"@en)
+SubClassOf(obo:COB_0000082 obo:BFO_0000015)
+DisjointClasses(obo:COB_0000082 co:PMD_0025009)
+
+# Class: obo:COB_0000083 (failed planned process)
+
+AnnotationAssertion(rdfs:label obo:COB_0000083 "failed planned process"@en)
+SubClassOf(obo:COB_0000083 obo:COB_0000082)
+
 # Class: obo:IAO_0000003 (measurement unit label)
 
 AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000003 "Examples of measurement unit labels are liters, inches, weight per volume."@en)
@@ -3193,6 +3254,7 @@ SubClassOf(obo:IAO_0000028 obo:IAO_0000030)
 AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000030 "Examples of information content entites include journal articles, data, graphical layouts, and graphs."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000030 "A generically dependent continuant that is about some thing."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000030 "2014-03-10: The use of \"thing\" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ)."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000030 "Pier: 'data, information or knowledge'. OR 'representation'"@en)
 AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000030 "information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
 
 Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity."@en)
@@ -3290,7 +3352,7 @@ SubClassOf(obo:IAO_0000311 obo:IAO_0000310)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000444 "A planned process of making information, such as literature, music, and software etc., available to the public for sale or for free."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000444 "https://en.wikipedia.org/wiki/Publishing")
 AnnotationAssertion(rdfs:label obo:IAO_0000444 "publishing process"@en)
-SubClassOf(obo:IAO_0000444 obo:OBI_0000011)
+SubClassOf(obo:IAO_0000444 obo:COB_0000035)
 
 # Class: obo:IAO_0000591 (software method)
 
@@ -3313,28 +3375,26 @@ SubClassOf(obo:IAO_0020000 ObjectSomeValuesFrom(obo:OBI_0000312 obo:IAO_0020010)
 
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0020010 "A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity."@en)
 AnnotationAssertion(rdfs:label obo:IAO_0020010 "identifier creating process"@en)
-EquivalentClasses(obo:IAO_0020010 ObjectIntersectionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0020000)))
-SubClassOf(obo:IAO_0020010 obo:OBI_0000011)
+EquivalentClasses(obo:IAO_0020010 ObjectIntersectionOf(obo:COB_0000035 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0020000)))
+SubClassOf(obo:IAO_0020010 obo:COB_0000035)
 SubClassOf(obo:IAO_0020010 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0020000))
 
-# Class: obo:NCBITaxon_9606 (homo sapiens)
+# Class: obo:NCBITaxon_9606 (Homo sapiens)
 
+AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "Homo sapiens")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "homo sapiens")
 SubClassOf(obo:NCBITaxon_9606 obo:BFO_0000040)
 
-# Class: obo:OBI_0000011 (planned process)
+# Class: obo:OBI_0000011 (obsolete planned process)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000011 "Injecting mice with a vaccine in order to test its efficacy")
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000011 "A process that realizes a plan which is the concretization of a plan specification."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000011 "'Plan' includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn't have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000011 "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
-objectives is a planned process.")
+AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000011 "PMDco : migration: https://github.com/materialdigital/core-ontology/issues/269")
+AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000011 "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process.")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000011 "branch derived")
-AnnotationAssertion(rdfs:label obo:OBI_0000011 "planned process"@en)
-EquivalentClasses(obo:OBI_0000011 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:IAO_0000104)))
-SubClassOf(obo:OBI_0000011 obo:BFO_0000015)
-SubClassOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:IAO_0000104)))
-DisjointClasses(obo:OBI_0000011 co:PMD_0025009)
+AnnotationAssertion(rdfs:label obo:OBI_0000011 "obsolete planned process")
+AnnotationAssertion(owl:deprecated obo:OBI_0000011 "true"^^xsd:boolean)
 
 # Class: obo:OBI_0000067 (evaluant role)
 
@@ -3356,12 +3416,23 @@ AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000070 "12/3/12: BP: the reference 
 AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000070 "Discussion on OBI call 2023-05-01 resulted in an agreement to revise the textual definition of 'assay'.  https://github.com/obi-ontology/obi/issues/1683.")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000070 "OBI branch derived"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000070 "assay"@en)
-SubClassOf(obo:OBI_0000070 obo:OBI_0000011)
+SubClassOf(obo:OBI_0000070 obo:COB_0000035)
+SubClassOf(obo:OBI_0000070 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000027)))
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000067))
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067))))
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000027 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067))))))
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000417 obo:IAO_0000005))
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:RO_0009006 ObjectUnionOf(obo:BFO_0000019 co:PMD_0000005)))
+
+# Class: obo:OBI_0000202 (investigation agent role)
+
+AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000202 "The person perform microarray experiments and submit microarray results (including raw data, processed data) with experiment description to ArrayExpress."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000202 "A role borne by an entity and that is realized in a process that is part of an investigation in which an objective is achieved. These processes include, among others: planning, overseeing, funding, reviewing."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000202 "Implementing a study means carrying out or performing the study and providing reagents or other materials used in the study and other tasks without which the study would not happen.")
+AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000202 "Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable representing investigations run by robot scientists such as ADAM (King et al, Science, 2009)")
+AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000202 "OBI"@en)
+AnnotationAssertion(rdfs:label obo:OBI_0000202 "investigation agent role")
+SubClassOf(obo:OBI_0000202 obo:BFO_0000023)
 
 # Class: obo:OBI_0000245 (organization)
 
@@ -3401,11 +3472,12 @@ SubClassOf(obo:OBI_0000245 obo:BFO_0000040)
 # Class: obo:OBI_0000260 (plan)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000260 "The plan of researcher X to perform an experiment according to a protocol.")
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000260 "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000260 "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000260 "This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the 'plan specification', and 'planned process' class, as we want to avoid to get deep into discussions of 'intend' etc.")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000260 "branch derived"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000260 "plan"@en)
 SubClassOf(obo:OBI_0000260 obo:BFO_0000017)
+SubClassOf(obo:OBI_0000260 ObjectSomeValuesFrom(obo:RO_0000059 obo:IAO_0000104))
 
 # Class: obo:OBI_0000379 (mechanical function)
 
@@ -3421,6 +3493,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000571 "Manufacturer role is a role
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000571 "OBI")
 AnnotationAssertion(rdfs:label obo:OBI_0000571 "manufacturer role")
 SubClassOf(obo:OBI_0000571 obo:BFO_0000023)
+SubClassOf(obo:OBI_0000571 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
 SubClassOf(obo:OBI_0000571 ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245)))
 
 # Class: obo:OBI_0000835 (manufacturer)
@@ -3442,6 +3515,7 @@ SubClassOf(obo:OBI_0001930 obo:OBI_0001933)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001931 "A value specification that consists of two parts: a numeral and a unit label"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0001931 "scalar value specification")
 SubClassOf(obo:OBI_0001931 obo:OBI_0001933)
+SubClassOf(obo:OBI_0001931 DataMinCardinality(1 obo:OBI_0001937))
 
 # Class: obo:OBI_0001933 (value specification)
 
@@ -3450,6 +3524,21 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001933 "An information content enti
 AnnotationAssertion(obo:IAO_0000116 obo:OBI_0001933 "This term is currently a descendant of 'information content entity', which requires that it 'is about' something. A value specification of '20g' for a measurement data item of the mass of a particular mouse 'is about' the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change 'value specification' to remove the 'is about' requirement.")
 AnnotationAssertion(rdfs:label obo:OBI_0001933 "value specification")
 SubClassOf(obo:OBI_0001933 obo:IAO_0000030)
+
+# Class: obo:OBI_0002201 (determination if assay will provide reliable results)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002201 "A planned process that is used to assess whether an assay will provide reliable results based on the conditions or qualities of the inputs, devices, and other participants of the assay."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002201 "OBI")
+AnnotationAssertion(rdfs:label obo:OBI_0002201 "determination if assay will provide reliable results")
+SubClassOf(obo:OBI_0002201 obo:COB_0000082)
+
+# Class: obo:OBI_0302911 (validation)
+
+AnnotationAssertion(obo:IAO_0000112 obo:OBI_0302911 "PMID: 18557814 . Chemical and genetic validation of dihydrofolate reductase-thymidylate synthase as a drug target in African trypanosomes. Mol Microbiol. 2008 Jun 16."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302911 "a planned process with objective to check that the accuracy or the quality of a claim or prediction  satisfies some criteria and which is assessed by comparing with independent results"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302911 "adapted from wordnet (wkipedia)")
+AnnotationAssertion(rdfs:label obo:OBI_0302911 "validation"@en)
+SubClassOf(obo:OBI_0302911 obo:COB_0000035)
 
 # Class: obo:UO_0000000 (unit)
 
@@ -3547,7 +3636,7 @@ AnnotationAssertion(skos:definition co:PMD_0000005 "A property is a material tra
 
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
-We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."@en)
+We only deal with intensive (system-size independent) material properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000005 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000005 obo:BFO_0000017)
 SubClassOf(co:PMD_0000005 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000950))
@@ -3557,7 +3646,7 @@ SubClassOf(co:PMD_0000005 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersection
 
 AnnotationAssertion(obo:IAO_0000116 co:PMD_0000007 "also see \"The Ontology of Fields\" - Report of a Specialist Meeting Held under the Auspices of the Varenius Project: Donna Peuquet, Barry Smith, and Berit Brogaard; Bar Harbor, Maine 1998"@en)
 AnnotationAssertion(rdfs:label co:PMD_0000007 "vector field specification"@en)
-AnnotationAssertion(skos:definition co:PMD_0000007 "a value specifcation that represents an assignment of a vector to each point in a discretized spacial region"@en)
+AnnotationAssertion(skos:definition co:PMD_0000007 "Vector field specification is a value specification that represents an assignment of a vector to each point in a discretized spatial region."@en)
 SubClassOf(co:PMD_0000007 obo:OBI_0001933)
 
 # Class: co:PMD_0000008 (process attribute)
@@ -3638,10 +3727,10 @@ AnnotationAssertion(rdfs:label co:PMD_0000053 "melting process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000053 "A melting process is a thermally induced process during which a solid material undergoes a phase transition into a liquid state. It involves the absorption of heat and occurs at or above the material's melting point."@en)
 AnnotationAssertion(skos:definition co:PMD_0000053 "Ein Schmelzvorgang ist ein thermisch induzierter Prozess, bei dem ein festes Material einen Phasenübergang in einen flüssigen Zustand erfährt. Er beinhaltet die Absorption von Wärme und findet bei oder oberhalb des Schmelzpunkts des Materials statt."@de)
 AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum ingots in preparation for extrusion."@en)
-SubClassOf(co:PMD_0000053 obo:OBI_0000011)
+SubClassOf(co:PMD_0000053 obo:COB_0000035)
 SubClassOf(co:PMD_0000053 ObjectIntersectionOf(co:PMD_0000547 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 co:PMD_0020139)))
 
-# Class: co:PMD_0000054 (Heizfunktion)
+# Class: co:PMD_0000054 (heating function)
 
 AnnotationAssertion(rdfs:label co:PMD_0000054 "Heizfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000054 "heating function"@en)
@@ -3669,7 +3758,7 @@ AnnotationAssertion(skos:definition co:PMD_0000056 "Ein Schmelzofen ist ein Ger�
 SubClassOf(co:PMD_0000056 co:PMD_0000780)
 SubClassOf(co:PMD_0000056 ObjectIntersectionOf(co:PMD_0000655 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000057)))
 
-# Class: co:PMD_0000057 (melting function)
+# Class: co:PMD_0000057 (Schmelzfunktion)
 
 AnnotationAssertion(rdfs:label co:PMD_0000057 "Schmelzfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000057 "melting function"@en)
@@ -3713,26 +3802,45 @@ AnnotationAssertion(rdfs:label co:PMD_0000075 "mold device"@en)
 AnnotationAssertion(skos:definition co:PMD_0000075 "A form used to cast an object of a desired shape."@en)
 SubClassOf(co:PMD_0000075 co:PMD_0000602)
 
+# Class: co:PMD_0000100 (function name)
+
+AnnotationAssertion(rdfs:label co:PMD_0000100 "function name"@en)
+AnnotationAssertion(skos:definition co:PMD_0000100 "A textual entity that denotes a workflow function"@en)
+AnnotationAssertion(co:PMD_0001032 co:PMD_0000100 <https://github.com/materialdigital/core-ontology/issues/280>)
+SubClassOf(co:PMD_0000100 obo:IAO_0000300)
+SubClassOf(co:PMD_0000100 ObjectSomeValuesFrom(obo:IAO_0000219 co:PMD_0000010))
+SubClassOf(co:PMD_0000100 DataSomeValuesFrom(co:PMD_0000006 rdfs:Literal))
+
+# Class: co:PMD_0000101 (import path)
+
+AnnotationAssertion(rdfs:label co:PMD_0000101 "import path"@en)
+AnnotationAssertion(skos:definition co:PMD_0000101 "A textual entity that denotes a workflow function via import resolution rules"@en)
+AnnotationAssertion(co:PMD_0001032 co:PMD_0000101 <https://github.com/materialdigital/core-ontology/issues/280>)
+SubClassOf(co:PMD_0000101 obo:IAO_0000300)
+SubClassOf(co:PMD_0000101 ObjectSomeValuesFrom(obo:IAO_0000219 co:PMD_0000010))
+SubClassOf(co:PMD_0000101 DataSomeValuesFrom(co:PMD_0000006 rdfs:Literal))
+
 # Class: co:PMD_0000123 (doc string)
 
 AnnotationAssertion(rdfs:label co:PMD_0000123 "doc string"@en)
 AnnotationAssertion(skos:definition co:PMD_0000123 "A docstring is a textual entity that describes an associated section of some source code"@en)
 AnnotationAssertion(co:PMD_0001032 co:PMD_0000123 "https://github.com/materialdigital/core-ontology/issues/270")
 SubClassOf(co:PMD_0000123 obo:IAO_0000300)
+SubClassOf(co:PMD_0000123 DataSomeValuesFrom(co:PMD_0000006 rdfs:Literal))
 
 # Class: co:PMD_0000501 (1D)
 
 AnnotationAssertion(rdfs:label co:PMD_0000501 "1D"@en)
 AnnotationAssertion(skos:definition co:PMD_0000501 "1-D is an information content entity representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000501 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000501 obo:IAO_0000030)
+SubClassOf(co:PMD_0000501 obo:IAO_0000027)
 
 # Class: co:PMD_0000502 (2D)
 
 AnnotationAssertion(rdfs:label co:PMD_0000502 "2D"@en)
 AnnotationAssertion(skos:definition co:PMD_0000502 "A two-dimensional information content entity is a representation or analysis, commonly applied in studying planar material properties or surface phenomena."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000502 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000502 obo:IAO_0000030)
+SubClassOf(co:PMD_0000502 obo:IAO_0000027)
 
 # Class: co:PMD_0000503 (ASTM grainsize)
 
@@ -3750,18 +3858,18 @@ AnnotationAssertion(skos:definition co:PMD_0000504 "Ein Simulationsprozess, der 
 AnnotationAssertion(skos:example co:PMD_0000504 "Simulating the electronic structure and dynamics of a new alloy to predict its mechanical properties."@en)
 SubClassOf(co:PMD_0000504 co:PMD_0000933)
 
-# Class: co:PMD_0000505 (accoustic absorption coefficient)
+# Class: co:PMD_0000505 (acoustic absorption coefficient)
 
-AnnotationAssertion(rdfs:label co:PMD_0000505 "accoustic absorption coefficient"@en)
-AnnotationAssertion(skos:definition co:PMD_0000505 "The accoustic absorption coefficient is an accoustic property representing a measure of how much sound energy is absorbed by a material per unit area."@en)
+AnnotationAssertion(rdfs:label co:PMD_0000505 "acoustic absorption coefficient"@en)
+AnnotationAssertion(skos:definition co:PMD_0000505 "The acoustic absorption coefficient is an accoustic property representing a measure of how much sound energy is absorbed by a material per unit area."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000505 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000505 co:PMD_0000506)
 SubClassOf(co:PMD_0000505 ObjectSomeValuesFrom(co:PMD_0001029 co:PMD_0000627))
 
-# Class: co:PMD_0000506 (accoustic property)
+# Class: co:PMD_0000506 (acoustic property)
 
-AnnotationAssertion(rdfs:label co:PMD_0000506 "accoustic property"@en)
-AnnotationAssertion(skos:definition co:PMD_0000506 "An accoustic property is a mechanical property representing characteristics of a material that determine its interaction with sound waves, such as absorption, reflection, and transmission."@en)
+AnnotationAssertion(rdfs:label co:PMD_0000506 "acoustic property"@en)
+AnnotationAssertion(skos:definition co:PMD_0000506 "An acoustic property is a mechanical property representing characteristics of a material that determine its interaction with sound waves, such as absorption, reflection, and transmission."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000506 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000506 co:PMD_0000005)
 SubClassOf(co:PMD_0000506 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000517))
@@ -3919,7 +4027,7 @@ AnnotationAssertion(skos:definition co:PMD_0000530 "Ein Mechanische Eigenschafte
 AnnotationAssertion(skos:example co:PMD_0000530 "Testing the flexural strength of a plastic beam to ensure it can withstand the required load in an engineering application."@en)
 SubClassOf(co:PMD_0000530 co:PMD_0000849)
 
-# Class: co:PMD_0000531 (Analyseverfahren der Biokompatibilität)
+# Class: co:PMD_0000531 (biocompatibility analyzing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000531 "Analyseverfahren der Biokompatibilität"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000531 "biocompatibility analyzing process"@en)
@@ -4001,7 +4109,7 @@ AnnotationAssertion(skos:definition co:PMD_0000541 "A CNC Machine is a Forming M
 AnnotationAssertion(skos:definition co:PMD_0000541 "Eine CNC-Maschine ist eine Formmaschine, die zur präzisen Steuerung von Bearbeitungswerkzeugen für Schneid-, Bohr-, Fräs- und andere Aufgaben computergestützte numerische Steuerung verwendet."@de)
 SubClassOf(co:PMD_0000541 co:PMD_0000648)
 
-# Class: co:PMD_0000542 (CNC-Schweißmaschine)
+# Class: co:PMD_0000542 (cnc welding machine)
 
 AnnotationAssertion(rdfs:label co:PMD_0000542 "CNC-Schweißmaschine"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000542 "cnc welding machine"@en)
@@ -4143,7 +4251,7 @@ AnnotationAssertion(obo:IAO_0000119 co:PMD_0000560 "Official definition can be f
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000560 "Offizielle Definition findet man in: DIN 8592"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000560 "Reinigen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000560 "cleaning"@en)
-AnnotationAssertion(skos:definition co:PMD_0000560 "A Seperating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning."@en)
+AnnotationAssertion(skos:definition co:PMD_0000560 "A Separating process that involves removing unwanted material from a surface through cleaning methods, which may include processes like blasting, washing, or chemical cleaning."@en)
 AnnotationAssertion(skos:definition co:PMD_0000560 "Ein Trennprozess, bei dem unerwünschtes Material von einer Oberfläche durch Reinigungsmethoden entfernt wird, die Verfahren wie Strahlen, Waschen oder chemische Reinigung umfassen können."@de)
 AnnotationAssertion(skos:example co:PMD_0000560 "Chemical Cleaning, Mechanical Cleaning"@en)
 SubClassOf(co:PMD_0000560 co:PMD_0000927)
@@ -4345,7 +4453,7 @@ AnnotationAssertion(rdfs:label co:PMD_0000583 "Rechenprozess"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000583 "computing process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000583 "A process that involves the systematic use of computational methods and tools to perform simulations, analyses, or data transformations to achieve specific scientific or engineering goals."@en)
 AnnotationAssertion(skos:definition co:PMD_0000583 "Ein Prozess, der die systematische Verwendung von rechnerischen Methoden und Werkzeugen umfasst, um Simulationen, Analysen oder Datenumwandlungen durchzuführen, um spezifische wissenschaftliche oder technische Ziele zu erreichen."@de)
-SubClassOf(co:PMD_0000583 obo:OBI_0000011)
+SubClassOf(co:PMD_0000583 obo:COB_0000035)
 SubClassOf(co:PMD_0000583 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000293 obo:IAO_0000030) ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000030)))
 
 # Class: co:PMD_0000584 (conditioning process)
@@ -4493,7 +4601,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0000604 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000604 co:PMD_0000621)
 DisjointClasses(co:PMD_0000604 co:PMD_0000620)
 
-# Class: co:PMD_0000605 (differential scanning calorimeter)
+# Class: co:PMD_0000605 (Differential-Scanning-Kalorimeter)
 
 AnnotationAssertion(rdfs:label co:PMD_0000605 "Differential-Scanning-Kalorimeter"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000605 "differential scanning calorimeter"@en)
@@ -4553,7 +4661,7 @@ AnnotationAssertion(obo:IAO_0000119 co:PMD_0000612 "Official definition can be f
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000612 "Offizielle Definition findet man in: DIN 8591"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000612 "Zerlegen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000612 "disassembling"@en)
-AnnotationAssertion(skos:definition co:PMD_0000612 "A Seperating process that involves disassembling a composite or assembled unit into its constituent parts or sections."@en)
+AnnotationAssertion(skos:definition co:PMD_0000612 "A Separating process that involves disassembling a composite or assembled unit into its constituent parts or sections."@en)
 AnnotationAssertion(skos:definition co:PMD_0000612 "Ein Trennprozess, bei dem eine zusammengesetzte oder montierte Einheit in ihre Einzelteile oder Abschnitte zerlegt wird."@de)
 AnnotationAssertion(skos:example co:PMD_0000612 "Dismantling, Emptying"@en)
 SubClassOf(co:PMD_0000612 co:PMD_0000927)
@@ -4571,7 +4679,7 @@ AnnotationAssertion(obo:IAO_0000119 co:PMD_0000614 "Official definition can be f
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000614 "Offizielle Definition findet man in: DIN 8588"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000614 "Zerteilen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000614 "dividing"@en)
-AnnotationAssertion(skos:definition co:PMD_0000614 "A Seperating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical."@en)
+AnnotationAssertion(skos:definition co:PMD_0000614 "A Separating process that involves separating material into distinct parts using techniques like shear cutting, splitting, tearing, or breaking, typically employed in processes where precise control over the cut is less critical."@en)
 AnnotationAssertion(skos:definition co:PMD_0000614 "Ein Trennprozess, bei dem das Material durch Techniken wie Scherschneiden, Spalten, Reißen oder Brechen in verschiedene Teile zerlegt wird. Es wird in der Regel bei Prozessen eingesetzt, bei denen eine genaue Kontrolle über den Schnitt weniger wichtig ist."@de)
 AnnotationAssertion(skos:example co:PMD_0000614 "Shearing, Cracking"@en)
 SubClassOf(co:PMD_0000614 co:PMD_0000927)
@@ -4755,10 +4863,13 @@ SubClassOf(co:PMD_0000637 co:PMD_0000602)
 
 AnnotationAssertion(rdfs:label co:PMD_0000638 "Ermüdungsprüfverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000638 "fatigue testing process"@en)
-AnnotationAssertion(skos:definition co:PMD_0000638 "A Mechanical Property Analyzing Process that assesses a material's ability to withstand cyclic loading, determining its fatigue life and endurance limit."@en)
+AnnotationAssertion(skos:altLabel co:PMD_0000638 "S-N testing process"@en)
+AnnotationAssertion(skos:altLabel co:PMD_0000638 "fatigue testing series"@en)
 AnnotationAssertion(skos:definition co:PMD_0000638 "Ein Mechanische Eigenschaften Analyseverfahren, das die Fähigkeit eines Materials bewertet, zyklischen Belastungen standzuhalten, und seine Ermüdungslebensdauer und -grenze bestimmt."@de)
+AnnotationAssertion(skos:definition co:PMD_0000638 "Fatigue testing process is a  mechanical property analyzing process that assesses a material's ability to withstand cyclic loading, determining its fatigue life and endurance limit. It must have occurent parts single fatigue tests."@en)
 AnnotationAssertion(skos:example co:PMD_0000638 "Fatigue testing of metal components in bridges to predict their lifespan under repetitive loading conditions."@en)
 SubClassOf(co:PMD_0000638 co:PMD_0000849)
+SubClassOf(co:PMD_0000638 ObjectSomeValuesFrom(obo:BFO_0000117 co:PMD_0025020))
 
 # Class: co:PMD_0000639 (ferrous alloy)
 
@@ -4845,7 +4956,7 @@ AnnotationAssertion(skos:definition co:PMD_0000649 "Ein Umform Prozess, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000649 "Stripping, Deep Drawing, Spinning"@en)
 SubClassOf(co:PMD_0000649 co:PMD_0000646)
 
-# Class: co:PMD_0000650 (Druckumformen)
+# Class: co:PMD_0000650 (forming under compressive conditions)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000650 "Official definition can be found in: DIN 8583-1"@en)
 AnnotationAssertion(dcterms:source co:PMD_0000650 "Offizielle Definition findet man in: DIN 8583-1"@de)
@@ -4921,7 +5032,7 @@ AnnotationAssertion(skos:definition co:PMD_0000657 "A device used for separating
 AnnotationAssertion(skos:definition co:PMD_0000657 "Ein Gerät zur Trennung und Analyse von Verbindungen in einem Gasgemisch unter Verwendung einer chromatographischen Säule."@de)
 SubClassOf(co:PMD_0000657 co:PMD_0000557)
 
-# Class: co:PMD_0000658 (gel permeation chromatography process)
+# Class: co:PMD_0000658 (Gel-Permeations-Chromatographie Verfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000658 "Gel-Permeations-Chromatographie Verfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000658 "gel permeation chromatography process"@en)
@@ -5110,8 +5221,9 @@ DisjointClasses(co:PMD_0000777 co:PMD_0000978)
 
 AnnotationAssertion(obo:IAO_0000112 co:PMD_0000778 "Mixing two fluids. Adding salt into water. Injecting a mouse with PBS.")
 AnnotationAssertion(rdfs:label co:PMD_0000778 "material combination")
+AnnotationAssertion(owl:deprecated co:PMD_0000778 "true"^^xsd:boolean)
 AnnotationAssertion(skos:definition co:PMD_0000778 "A material processing with the objective to combine two or more material entities as input into a single material entity as output."@en)
-SubClassOf(co:PMD_0000778 obo:OBI_0000011)
+SubClassOf(co:PMD_0000778 co:PMD_0000833)
 
 # Class: co:PMD_0000779 (Wärmebehandlung)
 
@@ -5268,7 +5380,7 @@ AnnotationAssertion(skos:definition co:PMD_0000799 "A device used for analyzing 
 AnnotationAssertion(skos:definition co:PMD_0000799 "Ein Gerät zur Analyse von Ionen in einer Probe zur Bestimmung ihrer Zusammensetzung und Konzentration."@de)
 SubClassOf(co:PMD_0000799 co:PMD_0000602)
 
-# Class: co:PMD_0000800 (Ionenspektroskopie)
+# Class: co:PMD_0000800 (ion spectroscopy)
 
 AnnotationAssertion(rdfs:label co:PMD_0000800 "Ionenspektroskopie"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000800 "ion spectroscopy"@en)
@@ -5451,7 +5563,7 @@ AnnotationAssertion(obo:IAO_0000119 co:PMD_0000822 "Official definition can be f
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000822 "Offizielle Definition findet man in: DIN 8589-0"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000822 "Spanen Mit Geometrisch Bestimmten Schneiden"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000822 "machining geometrically defined"@en)
-AnnotationAssertion(skos:definition co:PMD_0000822 "A Seperating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations."@en)
+AnnotationAssertion(skos:definition co:PMD_0000822 "A Separating process that involves removing material with a tool that has a defined shape and sharp edges, such as in sawing and drilling operations."@en)
 AnnotationAssertion(skos:definition co:PMD_0000822 "Ein Trennprozess, bei dem Material mit einem Werkzeug mit definierter Form und scharfen Kanten entfernt wird, wie z. B. beim Sägen und Bohren."@de)
 AnnotationAssertion(skos:example co:PMD_0000822 "Drilling, Turning"@en)
 SubClassOf(co:PMD_0000822 co:PMD_0000927)
@@ -5462,7 +5574,7 @@ AnnotationAssertion(obo:IAO_0000119 co:PMD_0000823 "Official definition can be f
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000823 "Offizielle Definition findet man in: DIN 8589-0"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000823 "Spanen Mit Geometrisch Unbestimmten Schneiden"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000823 "machining geometrically undefined"@en)
-AnnotationAssertion(skos:definition co:PMD_0000823 "A Seperating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn't clearly defined."@en)
+AnnotationAssertion(skos:definition co:PMD_0000823 "A Separating process that involves removing material using tools with undefined cutting edges, such as grinding or abrasive machining, where the exact shape of the cutting part isn't clearly defined."@en)
 AnnotationAssertion(skos:definition co:PMD_0000823 "Ein Trennprozess, bei dem Material mit Werkzeugen mit undefinierten Schneiden abgetragen wird, wie z. B. beim Schleifen oder bei der abrasiven Bearbeitung, bei der die genaue Form des zu schneidenden Teils nicht klar definiert ist."@de)
 AnnotationAssertion(skos:example co:PMD_0000823 "Grinding, Blasting"@en)
 SubClassOf(co:PMD_0000823 co:PMD_0000927)
@@ -5523,15 +5635,15 @@ SubClassOf(co:PMD_0000832 obo:BFO_0000034)
 
 AnnotationAssertion(rdfs:comment co:PMD_0000833 "Manufacturing processes alternate qualities of materials, i.e., a value specification of some quality of a material entity, which is a specified input to the process, cannot be the same as a value specification of the same quality of another material entity, which is a specified output of the process. 
 
-Unfortunately is is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains."@en)
+Unfortunately it is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains."@en)
 AnnotationAssertion(rdfs:label co:PMD_0000833 "Herstellungsprozess"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000833 "manufacturing process"@en)
 AnnotationAssertion(skos:definition co:PMD_0000833 "A planned process that is driven by the primary intent to transform objects
 A manufacturing process is always a transformative process."@en)
 AnnotationAssertion(skos:definition co:PMD_0000833 "Ein geplannter Prozess, der von der primären Absicht angetrieben wird, Objekte zu transformieren. Ein Herstellungsprozess ist immer ein Transformationsprozess."@de)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000833 "true"^^xsd:boolean)
-EquivalentClasses(co:PMD_0000833 ObjectIntersectionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030)) ObjectSomeValuesFrom(obo:OBI_0000299 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030))))
-SubClassOf(co:PMD_0000833 obo:OBI_0000011)
+EquivalentClasses(co:PMD_0000833 ObjectIntersectionOf(obo:COB_0000035 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030)) ObjectSomeValuesFrom(obo:OBI_0000299 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030))))
+SubClassOf(co:PMD_0000833 obo:COB_0000035)
 SubClassOf(co:PMD_0000833 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030)))
 SubClassOf(co:PMD_0000833 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030)))
 
@@ -5580,15 +5692,15 @@ SubClassOf(co:PMD_0000847 obo:BFO_0000034)
 
 # Class: co:PMD_0000848 (mechanical property)
 
+AnnotationAssertion(rdfs:comment co:PMD_0000848 "The axiom that mechanical property has realization some application of mechanical load treats only conventional materials and not such effects as magnetostriction etc."@en)
 AnnotationAssertion(rdfs:label co:PMD_0000848 "mechanical property"@en)
-AnnotationAssertion(skos:definition co:PMD_0000848 "A mechanical property is a material property that inheres in a material M when an object O_target that consists of M is stimulated in a process through an interaction with an object O_stimulus and M changes its stress/strain/..(mechanical?) SDCs.
-
-TODO: Check general class axiom and defintion altogether !!!"@en)
+AnnotationAssertion(skos:definition co:PMD_0000848 "A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000848 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000848 co:PMD_0000005)
 SubClassOf(co:PMD_0000848 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000522))
+SubClassOf(co:PMD_0000848 ObjectSomeValuesFrom(obo:RO_0000052 co:PMD_0000000))
 
-# Class: co:PMD_0000849 (Mechanische Eigenschaften Analyseverfahren)
+# Class: co:PMD_0000849 (mechanical property analyzing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000849 "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000849 "mechanical property analyzing process"@en)
@@ -5641,15 +5753,15 @@ SubClassOf(co:PMD_0000855 co:PMD_0000602)
 
 AnnotationAssertion(rdfs:label co:PMD_0000856 "Mikroskopie Verfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000856 "microscopy process"@en)
-AnnotationAssertion(skos:definition co:PMD_0000856 "A Structural Property Analyzing Process that uses various types of microscopy techniques to visualize and analyze the microstructure and morphology of materials at different scales."@en)
 AnnotationAssertion(skos:definition co:PMD_0000856 "Ein Struktur Eigenschaften Analyseverfahren, das verschiedene Arten von Mikroskopietechniken verwendet, um die Mikrostruktur und Morphologie von Materialien auf verschiedenen Ebenen zu visualisieren und zu analysieren."@de)
-AnnotationAssertion(skos:example co:PMD_0000856 "Examples of Microscopy Processes include Electron Microscopy, which provides detailed images at high resolution; Ion Microscopy, which offers high-precision imaging and material milling capabilites; and Optical Microscopy, which uses visible light to study e.g. the microstructure of materials."@en)
+AnnotationAssertion(skos:definition co:PMD_0000856 "Microscopy process that uses various types of microscopy techniques to visualize and analyze the microstructure and morphology of materials at different scales."@en)
+AnnotationAssertion(skos:example co:PMD_0000856 "Electron microscopy, which provides detailed images at high resolution; ion microscopy, which offers high-precision imaging and material milling capabilities; and optical microscopy, which uses visible light to study e.g. the microstructure of materials."@en)
 AnnotationAssertion(co:PMD_0050117 co:PMD_0000856 "Mikroskopie"@de)
 SubClassOf(co:PMD_0000856 co:PMD_0000957)
 
 # Class: co:PMD_0000857 (microstructure)
 
-AnnotationAssertion(rdfs:comment co:PMD_0000857 "The focus of interest when looking at an object throught the microstructure perspective is often its morphology."@en)
+AnnotationAssertion(rdfs:comment co:PMD_0000857 "The focus of interest when looking at an object through the microstructure perspective is often its morphology."@en)
 AnnotationAssertion(rdfs:label co:PMD_0000857 "microstructure"@en)
 AnnotationAssertion(skos:definition co:PMD_0000857 "The microstructure represents the small-scale structure of a material, including grains, phases, and defects, visible under a microscope."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000857 "true"^^xsd:boolean)
@@ -5730,22 +5842,22 @@ AnnotationAssertion(skos:definition co:PMD_0000868 "Natural organic materials ar
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000868 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000868 co:PMD_0000000)
 
-# Class: co:PMD_0000869 (occurence of chemical reaction)
+# Class: co:PMD_0000869 (occurrence of chemical reaction)
 
-AnnotationAssertion(rdfs:label co:PMD_0000869 "occurence of chemical reaction"@en)
+AnnotationAssertion(rdfs:label co:PMD_0000869 "occurrence of chemical reaction"@en)
 AnnotationAssertion(skos:definition co:PMD_0000869 "The occurrence of (a) chemical reaction is the process in which substances interact to form new chemical compounds or alter their molecular structure."@en)
 SubClassOf(co:PMD_0000869 obo:BFO_0000015)
 
-# Class: co:PMD_0000870 (occurence of electic field)
+# Class: co:PMD_0000870 (occurrence of electic field)
 
-AnnotationAssertion(rdfs:label co:PMD_0000870 "occurence of electic field"@en)
+AnnotationAssertion(rdfs:label co:PMD_0000870 "occurrence of electic field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000870 "The occurrence of (an) electric field is a process describing the presence or generation of an electric field in a material or system."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000870 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000870 obo:BFO_0000015)
 
-# Class: co:PMD_0000871 (occurence of magnetic field)
+# Class: co:PMD_0000871 (occurrence of magnetic field)
 
-AnnotationAssertion(rdfs:label co:PMD_0000871 "occurence of magnetic field"@en)
+AnnotationAssertion(rdfs:label co:PMD_0000871 "occurrence of magnetic field"@en)
 AnnotationAssertion(skos:definition co:PMD_0000871 "The occurrence of (a) magenetic field is a process describing the presence or generation of a magnetic field in a material or system."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000871 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000871 obo:BFO_0000015)
@@ -5827,7 +5939,7 @@ SubClassOf(co:PMD_0000884 co:PMD_0000931)
 AnnotationAssertion(rdfs:label co:PMD_0000885 "pole figure"@en)
 AnnotationAssertion(skos:definition co:PMD_0000885 "A pole figure is a map depicting a 2D stereographic projection which represents crystallographic orientations of grains in a polycrystalline material in respect to the sample's reference frame."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000885 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000885 ObjectIntersectionOf(co:PMD_0000834 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0000853)))
+SubClassOf(co:PMD_0000885 ObjectIntersectionOf(co:PMD_0000834 ObjectSomeValuesFrom(obo:IAO_0000136 co:PMD_0000853)))
 
 # Class: co:PMD_0000886 (polishing machine)
 
@@ -5848,7 +5960,7 @@ SubClassOf(co:PMD_0000888 co:PMD_0000002)
 # Class: co:PMD_0000889 (pore growth)
 
 AnnotationAssertion(rdfs:label co:PMD_0000889 "pore growth"@en)
-AnnotationAssertion(skos:definition co:PMD_0000889 "Pore Growth is an evolution of damagfe describing the process by which voids or pores in a material increase in size, often affecting its mechanical and physical properties."@en)
+AnnotationAssertion(skos:definition co:PMD_0000889 "Pore growth is an evolution of damage describing the process by which voids or pores in a material increase in size, often affecting its mechanical and physical properties."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000889 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000889 co:PMD_0000635)
 
@@ -6035,7 +6147,7 @@ AnnotationAssertion(obo:IAO_0000119 co:PMD_0000914 "Official definition can be f
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000914 "Offizielle Definition findet man in: DIN 8590"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000914 "Abtragen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000914 "removing"@en)
-AnnotationAssertion(skos:definition co:PMD_0000914 "A Seperating process that involves removing material through thermical, chemical and electrochemical methods."@en)
+AnnotationAssertion(skos:definition co:PMD_0000914 "A Separating process that involves removing material through thermal, chemical and electrochemical methods."@en)
 AnnotationAssertion(skos:definition co:PMD_0000914 "Ein Trennprozess, bei dem Material durch thermische, chemische und elektrochemische Methoden abgetragen wird."@de)
 AnnotationAssertion(skos:example co:PMD_0000914 "Electrical Discharge Machining, Thermal Ablation"@en)
 SubClassOf(co:PMD_0000914 co:PMD_0000927)
@@ -6060,8 +6172,8 @@ SubClassOf(co:PMD_0000917 co:PMD_0000602)
 
 AnnotationAssertion(rdfs:label co:PMD_0000918 "Rheometry"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000918 "rheometry"@en)
-AnnotationAssertion(skos:definition co:PMD_0000918 "A Rheological Property Analyzing Process that measures the flow and deformation behavior of materials, including complex fluids and soft solids, to provide comprehensive data on viscoelastic properties using rheometers."@en)
 AnnotationAssertion(skos:definition co:PMD_0000918 "Ein Rheologisches Eigenschaften Analyseverfahren, das das Fließ- und Verformungsverhalten von Materialien misst, einschließlich komplexer Flüssigkeiten und weicher Feststoffe, um umfassende Daten zu viskoelastischen Eigenschaften unter Verwendung von Rheometern zu liefern."@de)
+AnnotationAssertion(skos:definition co:PMD_0000918 "Rheological property analyzing process that measures the flow and deformation behavior of materials, including complex fluids and soft solids, to provide comprehensive data on viscoelastic properties using rheometers."@en)
 SubClassOf(co:PMD_0000918 co:PMD_0000916)
 
 # Class: co:PMD_0000919 (Probe-Rolle)
@@ -6334,7 +6446,7 @@ AnnotationAssertion(skos:definition co:PMD_0000956 "Ein Simulationsprozess, der 
 AnnotationAssertion(skos:example co:PMD_0000956 "Optimizing the atomic structure of a catalyst to enhance its performance."@en)
 SubClassOf(co:PMD_0000956 co:PMD_0000933)
 
-# Class: co:PMD_0000957 (structural property analyzing process)
+# Class: co:PMD_0000957 (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000957 "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000957 "structural property analyzing process"@en)
@@ -6362,11 +6474,11 @@ SubClassOf(co:PMD_0000960 co:PMD_0000603)
 # Class: co:PMD_0000961 (sublimation point)
 
 AnnotationAssertion(rdfs:label co:PMD_0000961 "sublimation point"@en)
-AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a state of matter boundary realized by transition form the solid state to the gaseous state (or vice versa)."@en)
+AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a state of matter boundary realized by transition from the solid state to the gaseous state (or vice versa)."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000961 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000961 co:PMD_0020164)
 
-# Class: co:PMD_0000962 (supercritical fluid chromatography process)
+# Class: co:PMD_0000962 (Überkritische Fluidchromatographie Verfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000962 "supercritical fluid chromatography process"@en)
 AnnotationAssertion(rdfs:label co:PMD_0000962 "Überkritische Fluidchromatographie Verfahren"@de)
@@ -6411,7 +6523,7 @@ SubClassOf(co:PMD_0000966 co:PMD_0000602)
 
 # Class: co:PMD_0000967 (temperature)
 
-AnnotationAssertion(rdfs:comment co:PMD_0000967 "The concept refers to an absolute tempeature, not to be mistaken with temperature difference."@en)
+AnnotationAssertion(rdfs:comment co:PMD_0000967 "The concept refers to an absolute temperature, not to be mistaken with temperature difference."@en)
 AnnotationAssertion(rdfs:comment co:PMD_0000967 "To express that an object has a temperature, the property 'intensive bearer of' can be used. It implies a chain of: object consists of some portion of matter and portion of matter bearer of some temperature."@en)
 AnnotationAssertion(rdfs:label co:PMD_0000967 "temperature"@en)
 AnnotationAssertion(skos:definition co:PMD_0000967 "The temperature is a fundamental intensive quality representing the average atomic or molcular movement or vibration of a portion of matter."@en)
@@ -6495,7 +6607,7 @@ SubClassOf(co:PMD_0000976 obo:BFO_0000034)
 # Class: co:PMD_0000977 (Textiles Fügen)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000977 "Keine offizielle Definition in DIN"@de)
-AnnotationAssertion(obo:IAO_0000119 co:PMD_0000977 "No offical definition in DIN"@en)
+AnnotationAssertion(obo:IAO_0000119 co:PMD_0000977 "No official definition in DIN"@en)
 AnnotationAssertion(rdfs:label co:PMD_0000977 "Textiles Fügen"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000977 "textile joining"@en)
 AnnotationAssertion(skos:definition co:PMD_0000977 "A joining process that involves connecting textile materials."@en)
@@ -6645,7 +6757,7 @@ SubClassOf(co:PMD_0000995 co:PMD_0000849)
 # Class: co:PMD_0000996 (triple point)
 
 AnnotationAssertion(rdfs:label co:PMD_0000996 "triple point"@en)
-AnnotationAssertion(skos:definition co:PMD_0000996 "The triple point is a state of matter point realized by transition form the solid state to the liquid state or the the gaseous state (or vice versa)."@en)
+AnnotationAssertion(skos:definition co:PMD_0000996 "The triple point is a state of matter point realized by transition from the solid state to the liquid state or the the gaseous state (or vice versa)."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000996 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000996 co:PMD_0020164)
 
@@ -6849,68 +6961,33 @@ AnnotationAssertion(skos:definition co:PMD_0001024 "A device used for microanaly
 AnnotationAssertion(skos:definition co:PMD_0001024 "Ein Gerät zur Mikroanalyse von Materialien unter Verwendung von Röntgentechniken zur Bestimmung der Elementzusammensetzung auf mikroskopischer Ebene."@de)
 SubClassOf(co:PMD_0001024 co:PMD_0000602)
 
-# Class: co:PMD_0001033 (test piece material designation)
-
-AnnotationAssertion(rdfs:label co:PMD_0001033 "test piece material designation"@en)
-AnnotationAssertion(skos:definition co:PMD_0001033 "an identifier assigned to specify the material of a test piece")
-AnnotationAssertion(co:PMD_0001032 co:PMD_0001033 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001033 obo:IAO_0020000)
-
-# Class: co:PMD_0001034 (reporting process)
-
-AnnotationAssertion(rdfs:label co:PMD_0001034 "reporting process"@en)
-AnnotationAssertion(skos:definition co:PMD_0001034 "A process of collecting, organizing, and presenting information or results in a structured form for communication or documentation.")
-AnnotationAssertion(co:PMD_0001032 co:PMD_0001034 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001034 obo:BFO_0000015)
-
 # Class: co:PMD_0001035 (angle)
 
 AnnotationAssertion(rdfs:label co:PMD_0001035 "angle"@en)
 AnnotationAssertion(skos:definition co:PMD_0001035 "A property that represents the measure of rotation or inclination between two intersecting lines or planes, independent of the size of the object.")
 AnnotationAssertion(co:PMD_0001032 co:PMD_0001035 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001035 obo:BFO_0000145)
+SubClassOf(co:PMD_0001035 co:PMD_0025018)
 
 # Class: co:PMD_0001036 (uncertainty)
 
 AnnotationAssertion(rdfs:label co:PMD_0001036 "uncertainty"@en)
 AnnotationAssertion(skos:definition co:PMD_0001036 "A quantitative indication of the doubt about a measurement result, expressing the range within which the true value is expected to lie.")
 AnnotationAssertion(co:PMD_0001032 co:PMD_0001036 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001036 obo:BFO_0000145)
-
-# Class: co:PMD_0001037 (device designation)
-
-AnnotationAssertion(rdfs:label co:PMD_0001037 "device designation"@en)
-AnnotationAssertion(skos:definition co:PMD_0001037 "an identifier assigned to distinguish and reference a specific device.")
-AnnotationAssertion(co:PMD_0001032 co:PMD_0001037 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001037 obo:IAO_0020000)
-
-# Class: co:PMD_0001038 (project designation)
-
-AnnotationAssertion(rdfs:label co:PMD_0001038 "project designation"@en)
-AnnotationAssertion(skos:definition co:PMD_0001038 "an identifier assigned to distinguish and reference a specific project.")
-AnnotationAssertion(co:PMD_0001032 co:PMD_0001038 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001038 obo:IAO_0020000)
+SubClassOf(co:PMD_0001036 obo:IAO_0000030)
 
 # Class: co:PMD_0001039 (calibration process)
 
 AnnotationAssertion(rdfs:label co:PMD_0001039 "calibration process"@en)
 AnnotationAssertion(skos:definition co:PMD_0001039 "A process of comparing measurement values delivered by an instrument or system with known reference standards to ensure accuracy and traceability.")
 AnnotationAssertion(co:PMD_0001032 co:PMD_0001039 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001039 obo:OBI_0000011)
+SubClassOf(co:PMD_0001039 obo:COB_0000035)
 
 # Class: co:PMD_0001040 (expriment designing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0001040 "expriment designing process"@en)
 AnnotationAssertion(skos:definition co:PMD_0001040 "A planned process of planning and structuring experimental methods, conditions, and variables to reliably test hypotheses or obtain data.")
 AnnotationAssertion(co:PMD_0001032 co:PMD_0001040 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001040 obo:OBI_0000011)
-
-# Class: co:PMD_0001041 (measuring process)
-
-AnnotationAssertion(rdfs:label co:PMD_0001041 "measuring process"@en)
-AnnotationAssertion(skos:definition co:PMD_0001041 "A planned process of determining the value of a physical quantity by comparing it with a defined unit or standard.")
-AnnotationAssertion(co:PMD_0001032 co:PMD_0001041 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001041 obo:OBI_0000011)
+SubClassOf(co:PMD_0001040 obo:COB_0000035)
 
 # Class: co:PMD_0001042 (test piece preparation process)
 
@@ -6918,14 +6995,7 @@ AnnotationAssertion(obo:IAO_0000119 co:PMD_0001042 "https://www.britannica.com/s
 AnnotationAssertion(rdfs:label co:PMD_0001042 "test piece preparation process"@en)
 AnnotationAssertion(skos:definition co:PMD_0001042 "A planned processes in which a representative piece of material is extracted from a larger amount and readied for analysis. ")
 AnnotationAssertion(co:PMD_0001032 co:PMD_0001042 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001042 obo:OBI_0000011)
-
-# Class: co:PMD_0001043 (verification process)
-
-AnnotationAssertion(rdfs:label co:PMD_0001043 "verification process"@en)
-AnnotationAssertion(skos:definition co:PMD_0001043 "A process of evaluating whether a system, component, or result meets specified requirements or standards.")
-AnnotationAssertion(co:PMD_0001032 co:PMD_0001043 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001043 obo:OBI_0000011)
+SubClassOf(co:PMD_0001042 obo:COB_0000082)
 
 # Class: co:PMD_0001044 (date value specification)
 
@@ -6933,13 +7003,6 @@ AnnotationAssertion(rdfs:label co:PMD_0001044 "date value specification"@en)
 AnnotationAssertion(skos:definition co:PMD_0001044 "A datum that represents a date or time interval associated with another specification.")
 AnnotationAssertion(co:PMD_0001032 co:PMD_0001044 <https://github.com/materialdigital/core-ontology/issues/278>)
 SubClassOf(co:PMD_0001044 obo:OBI_0001933)
-
-# Class: co:PMD_0001045 (calculating process)
-
-AnnotationAssertion(rdfs:label co:PMD_0001045 "calculating process"@en)
-AnnotationAssertion(skos:definition co:PMD_0001045 "A process in which numerical or symbolic operations are performed to derive a result from given data or parameters.")
-AnnotationAssertion(co:PMD_0001032 co:PMD_0001045 <https://github.com/materialdigital/core-ontology/issues/278>)
-SubClassOf(co:PMD_0001045 co:PMD_0000583)
 
 # Class: co:PMD_0001046 (depth)
 
@@ -6999,12 +7062,14 @@ SubClassOf(co:PMD_0020003 obo:BFO_0000030)
 
 # Class: co:PMD_0020004 (composition data item)
 
+AnnotationAssertion(rdfs:comment co:PMD_0020004 "These portions of other matters do not have to be portions of specific chemical elements, i.e., atomic composition, but rather portions of other substances, such as nitric acid and water."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020004 "composition data item"@en)
 AnnotationAssertion(skos:altLabel co:PMD_0020004 "composition specification"@en)
-AnnotationAssertion(skos:definition co:PMD_0020004 "Composition data item is an information content entity that is about composition of a portion of matter, and it has memebers fraction specifications of portions of other matters (but not chemical elements), which are parts of the whole portion of matter."@en)
-AnnotationAssertion(skos:example co:PMD_0020004 "Nitric acid solution has quality  composition , which concretizes the composition specification .The composition specification has parts fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications are conretized by relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en)
+AnnotationAssertion(skos:definition co:PMD_0020004 "Composition data item is an information content entity that is about composition of a portion of matter, and it has members fraction specifications of portions of other matters, which are parts of the whole portion of matter."@en)
+AnnotationAssertion(skos:example co:PMD_0020004 "Nitric acid solution has quality  composition, and  the composition data item is about this composition.The composition data item has members fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications specify values of relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020004 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020004 ObjectIntersectionOf(obo:IAO_0000027 ObjectSomeValuesFrom(obo:IAO_0000136 co:PMD_0025001)))
+SubClassOf(co:PMD_0020004 ObjectSomeValuesFrom(obo:RO_0002351 co:PMD_0025997))
 
 # Class: co:PMD_0020005 (porosity)
 
@@ -7033,7 +7098,7 @@ SubClassOf(co:PMD_0020023 obo:OBI_0001930)
 
 AnnotationAssertion(rdfs:label co:PMD_0020024 "hydrogen bond"@en)
 AnnotationAssertion(skos:definition co:PMD_0020024 "A hydrogen bond is a bond that binds one molecule’s hydrogen atom with the electronegative atoms of another molecule."@en)
-AnnotationAssertion(skos:example co:PMD_0020024 "The bond that forms between liquid water molecules at one molecules hydrogen ends and the other molecules oxigen end."@en)
+AnnotationAssertion(skos:example co:PMD_0020024 "The bond that forms between liquid water molecules at one molecules hydrogen ends and the other molecules oxygen end."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020024 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020024 co:PMD_0050000)
 
@@ -7607,7 +7672,7 @@ SubClassOf(co:PMD_0020096 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0020030))
 # Class: co:PMD_0020098 (nature constant)
 
 AnnotationAssertion(rdfs:label co:PMD_0020098 "nature constant"@en)
-AnnotationAssertion(skos:definition co:PMD_0020098 "A nature constant is a generically dependent continuant whose value, magintude or configuration is determined by nature including physics and mathematics."@en)
+AnnotationAssertion(skos:definition co:PMD_0020098 "A nature constant is a generically dependent continuant whose value, maginitude or configuration is determined by nature including physics and mathematics."@en)
 AnnotationAssertion(skos:example co:PMD_0020098 "Examples of nature constants are the speed of light, pi, etc."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020098 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020098 obo:BFO_0000031)
@@ -7628,7 +7693,7 @@ SubClassOf(co:PMD_0020099 obo:OBI_0001930)
 AnnotationAssertion(rdfs:label co:PMD_0020101 "proportion"@en)
 AnnotationAssertion(skos:altLabel co:PMD_0020101 "concentration"@en)
 AnnotationAssertion(skos:altLabel co:PMD_0020101 "fraction"@en)
-AnnotationAssertion(skos:definition co:PMD_0020101 "A Proportion is a relational quality between two entites (the whole and the part) which quantifies the relation between the whole and its part."@en)
+AnnotationAssertion(skos:definition co:PMD_0020101 "A proportion is a relational quality between two entities (the whole and the part) which quantifies the relation between the whole and its part."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020101 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020101 obo:BFO_0000145)
 DisjointClasses(co:PMD_0020101 co:PMD_0050000)
@@ -7636,7 +7701,7 @@ DisjointClasses(co:PMD_0020101 co:PMD_0050000)
 # Class: co:PMD_0020102 (mass proportion)
 
 AnnotationAssertion(rdfs:label co:PMD_0020102 "mass proportion"@en)
-AnnotationAssertion(skos:definition co:PMD_0020102 "The Mass Proportion is a Proportion which quantifies the mass of the part relative to the mass of the whole."@en)
+AnnotationAssertion(skos:definition co:PMD_0020102 "Mass proportion is a proportion which quantifies the mass of the part relative to the mass of the whole."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020102 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020102 co:PMD_0020101)
 
@@ -7644,16 +7709,17 @@ SubClassOf(co:PMD_0020102 co:PMD_0020101)
 
 AnnotationAssertion(rdfs:label co:PMD_0020103 "molar proportion"@en)
 AnnotationAssertion(skos:altLabel co:PMD_0020103 "Molar Ratio"@en)
-AnnotationAssertion(skos:definition co:PMD_0020103 "The Molar Proportion is the proportion which quantifies the entities count of the part in relation to the entites count of the whole."@en)
-AnnotationAssertion(skos:example co:PMD_0020103 "The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxigen molecules O2 to water molecules is 2/1.
+AnnotationAssertion(skos:definition co:PMD_0020103 "Molar proportion is the proportion which quantifies the entities count of the part in relation to the entities count of the whole."@en)
+AnnotationAssertion(skos:example co:PMD_0020103 "The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxygen molecules O2 to water molecules is 2/1.
 The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 2022 AD."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020103 "true"^^xsd:boolean)
+EquivalentClasses(co:PMD_0020103 co:PMD_0020207)
 SubClassOf(co:PMD_0020103 co:PMD_0020101)
 
 # Class: co:PMD_0020104 (volume proportion)
 
 AnnotationAssertion(rdfs:label co:PMD_0020104 "volume proportion"@en)
-AnnotationAssertion(skos:definition co:PMD_0020104 "The Mass Proportion is a Proportion which quantifies the volume of the part relative to the volume of the whole."@en)
+AnnotationAssertion(skos:definition co:PMD_0020104 "Volume proportion is a proportion which quantifies the volume of the part relative to the volume of the whole."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020104 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020104 co:PMD_0020101)
 
@@ -7690,7 +7756,7 @@ SubClassOf(co:PMD_0020112 co:PMD_0020131)
 # Class: co:PMD_0020113 (fluid (object))
 
 AnnotationAssertion(rdfs:label co:PMD_0020113 "fluid (object)"@en)
-AnnotationAssertion(skos:definition co:PMD_0020113 "fuild (object) is an object that consists of some portion of matter which bears an aggregate state that concretizes a liquid or gaseous aggregate state."@en)
+AnnotationAssertion(skos:definition co:PMD_0020113 "fluid (object) is an object that consists of some portion of matter which bears an aggregate state that concretizes a liquid or gaseous aggregate state."@en)
 SubClassOf(co:PMD_0020113 obo:BFO_0000030)
 
 # Class: co:PMD_0020114 (medium role)
@@ -7712,7 +7778,7 @@ SubClassOf(co:PMD_0020115 co:PMD_0000891)
 # Class: co:PMD_0020116 (aggregate state value)
 
 AnnotationAssertion(rdfs:label co:PMD_0020116 "aggregate state value"@en)
-AnnotationAssertion(skos:definition co:PMD_0020116 "The aggregate state value is a categorical value specification that specifies value of the aggregatge state quality."@en)
+AnnotationAssertion(skos:definition co:PMD_0020116 "The aggregate state value is a categorical value specification that specifies value of the aggregate state quality."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020116 "true"^^xsd:boolean)
 EquivalentClasses(co:PMD_0020116 ObjectOneOf(co:PMD_0020117 co:PMD_0020118 co:PMD_0020119 co:PMD_0020120 co:PMD_0020121 co:PMD_0020122 co:PMD_0020123 co:PMD_0020124 co:PMD_0020125))
 SubClassOf(co:PMD_0020116 obo:OBI_0001930)
@@ -7720,11 +7786,11 @@ SubClassOf(co:PMD_0020116 obo:OBI_0001930)
 # Class: co:PMD_0020126 (foam)
 
 AnnotationAssertion(rdfs:label co:PMD_0020126 "foam"@en)
-AnnotationAssertion(skos:definition co:PMD_0020126 "A foam is a material entity aggregate that conssists of some 'Composite Material' c. 
-The parts of c that bear the filler role are vacuum-filled or gas filled pores. 
-The parts of c that bear the matrix role consist of a material that is bearer of solid or liquid aggregate state. 
-One pore with its sourrounding matrix is called 'cell'. 
-Depending of the interconnectedness of the pores the foam is open- or closed-cell."@en)
+AnnotationAssertion(skos:definition co:PMD_0020126 "A foam is a material entity aggregate that is also a composite material c. 
+The parts of c that have the filler role are vacuum-filled or gas filled pores. 
+The parts of c that have the matrix role consist of a material that is bearer of solid or liquid aggregate state. 
+One pore with its surrounding matrix is called 'cell'. 
+Depending on the interconnectedness of the pores the foam is open- or closed-cell."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020126 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020126 co:PMD_0000890)
 
@@ -7754,7 +7820,7 @@ SubClassOf(co:PMD_0020130 obo:BFO_0000145)
 
 AnnotationAssertion(rdfs:label co:PMD_0020131 "intensive quality"@en)
 AnnotationAssertion(skos:altLabel co:PMD_0020131 "Point property"@en)
-AnnotationAssertion(skos:definition co:PMD_0020131 "An intensive quality is a qualty that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en)
+AnnotationAssertion(skos:definition co:PMD_0020131 "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020131 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020131 obo:BFO_0000019)
 DisjointClasses(co:PMD_0020131 co:PMD_0020148)
@@ -7807,7 +7873,7 @@ DisjointClasses(co:PMD_0020137 co:PMD_0020149)
 # Class: co:PMD_0020138 (lot)
 
 AnnotationAssertion(rdfs:label co:PMD_0020138 "lot"@en)
-AnnotationAssertion(skos:definition co:PMD_0020138 "A lot is an object aggregate whose parts are output of the same prodction process."@en)
+AnnotationAssertion(skos:definition co:PMD_0020138 "A lot is an object aggregate whose parts are output of the same production process."@en)
 SubClassOf(co:PMD_0020138 obo:BFO_0000027)
 
 # Class: co:PMD_0020139 (melt)
@@ -7843,7 +7909,7 @@ SubClassOf(co:PMD_0020142 co:PMD_0020148)
 # Class: co:PMD_0020143 (process chain)
 
 AnnotationAssertion(rdfs:label co:PMD_0020143 "process chain"@en)
-AnnotationAssertion(skos:definition co:PMD_0020143 "A process chain is a process that 'has contiuant part' subprocesses S1...Sn where S1...Sn precede each other and where some object or object aggregate that are output of Sn are then input to Sn+1."@en)
+AnnotationAssertion(skos:definition co:PMD_0020143 "A process chain is a process that 'has continuant part' subprocesses S1...Sn where S1...Sn precede each other and where some object or object aggregate that are output of Sn are then input to Sn+1."@en)
 SubClassOf(co:PMD_0020143 obo:BFO_0000015)
 
 # Class: co:PMD_0020144 (product (chemical reaction))
@@ -7911,11 +7977,14 @@ SubClassOf(co:PMD_0020152 obo:BFO_0000027)
 # Class: co:PMD_0020153 (technical system)
 
 AnnotationAssertion(rdfs:label co:PMD_0020153 "technical system"@en)
-AnnotationAssertion(skos:definition co:PMD_0020153 "A technical system is an object aggretate: 
+AnnotationAssertion(skos:definition co:PMD_0020153 "A technical system is an object aggregate: 
 1. that is output of a manufacturing process, 
-2. that bears some function 
+2. that has some function 
 3. whose continuant parts are some components."@en)
 SubClassOf(co:PMD_0020153 obo:BFO_0000027)
+SubClassOf(co:PMD_0020153 ObjectSomeValuesFrom(obo:BFO_0000051 obo:BFO_0000030))
+SubClassOf(co:PMD_0020153 ObjectSomeValuesFrom(obo:OBI_0000312 co:PMD_0000833))
+SubClassOf(co:PMD_0020153 ObjectSomeValuesFrom(obo:RO_0000085 obo:BFO_0000034))
 
 # Class: co:PMD_0020154 (precipitation (phase))
 
@@ -7944,7 +8013,7 @@ SubClassOf(co:PMD_0020156 co:PMD_0020136)
 
 AnnotationAssertion(rdfs:comment co:PMD_0020157 "Unlike nucleation and growth transformations, it has no nucleation barrier and proceeds by uphill diffusion and wavelength‑selective amplification of composition modulations, producing an interconnected, compositionally modulated microstructure that coarsens over time."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020157 "spinodal decomposition"@en)
-AnnotationAssertion(skos:definition co:PMD_0020157 "Spinodal decomposition is a diffusion‑controlled  continuous phase transformation in which a single homogeneous solutionspontaneously separates into two compositionally distinct phases by amplification of infinitesimal concentration fluctuations."@en)
+AnnotationAssertion(skos:definition co:PMD_0020157 "Spinodal decomposition is a diffusion‑controlled  continuous phase transformation in which a single homogeneous solution spontaneously separates into two compositionally distinct phases by amplification of infinitesimal concentration fluctuations."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020157 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020157 co:PMD_0020136)
 
@@ -7958,7 +8027,7 @@ DisjointClasses(co:PMD_0020158 co:PMD_0020159)
 # Class: co:PMD_0020159 (daughter phase role)
 
 AnnotationAssertion(rdfs:label co:PMD_0020159 "daughter phase role"@en)
-AnnotationAssertion(skos:definition co:PMD_0020159 "The daugther phase role is the role of a phase that forms during the phase transformation process."@en)
+AnnotationAssertion(skos:definition co:PMD_0020159 "The daughter phase role is the role of a phase that forms during the phase transformation process."@en)
 SubClassOf(co:PMD_0020159 obo:BFO_0000023)
 
 # Class: co:PMD_0020160 (microconstituent (phase mixture))
@@ -8010,7 +8079,7 @@ SubClassOf(co:PMD_0020165 obo:BFO_0000016)
 # Class: co:PMD_0020166 (heat (metallurgy))
 
 AnnotationAssertion(rdfs:label co:PMD_0020166 "heat (metallurgy)"@en)
-AnnotationAssertion(skos:definition co:PMD_0020166 "A heat is a fixed amount of metallic alloy that may be input to some Manifacturing Process."@en)
+AnnotationAssertion(skos:definition co:PMD_0020166 "A heat is a fixed amount of metallic alloy that may be input to some manufacturing process."@en)
 SubClassOf(co:PMD_0020166 ObjectIntersectionOf(co:PMD_0020139 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000534)))
 
 # Class: co:PMD_0020167 (structural boundary)
@@ -8029,7 +8098,7 @@ SubClassOf(co:PMD_0020168 co:PMD_0000882)
 # Class: co:PMD_0020169 (mixture boundary)
 
 AnnotationAssertion(rdfs:label co:PMD_0020169 "mixture boundary"@en)
-AnnotationAssertion(skos:definition co:PMD_0020169 "A mixture boundary boundary is a phase boundary that is realized by the transition from one phase to another phase in a system involving also chemical variations."@en)
+AnnotationAssertion(skos:definition co:PMD_0020169 "A mixture boundary is a phase boundary that is realized by the transition from one phase to another phase in a system involving also chemical variations."@en)
 SubClassOf(co:PMD_0020169 co:PMD_0000882)
 
 # Class: co:PMD_0020170 (Bramme)
@@ -8045,7 +8114,7 @@ SubClassOf(co:PMD_0020170 obo:BFO_0000030)
 AnnotationAssertion(obo:IAO_0000116 co:PMD_0020171 "Should it have exactly two phases as member parts?"@en)
 AnnotationAssertion(rdfs:label co:PMD_0020171 "phase boundary (spatial)"@en)
 AnnotationAssertion(skos:definition co:PMD_0020171 "A fiat surface separating one phase from another phase."@en)
-AnnotationAssertion(skos:example co:PMD_0020171 "The phase boundary between liquid and the gaseous phase in at ank. 
+AnnotationAssertion(skos:example co:PMD_0020171 "The phase boundary between liquid and the gaseous phase in a tank. 
 The phase boundary between Fe3C and Fe of a pearlite lamellae."@en)
 SubClassOf(co:PMD_0020171 obo:BFO_0000146)
 
@@ -8064,32 +8133,32 @@ SubClassOf(co:PMD_0020173 obo:BFO_0000030)
 # Class: co:PMD_0020174 (foil)
 
 AnnotationAssertion(rdfs:label co:PMD_0020174 "foil"@en)
-AnnotationAssertion(skos:definition co:PMD_0020174 "A plate is a very thin rectangular object that may bear a semi finished product role. At the same time it is a material."@en)
+AnnotationAssertion(skos:definition co:PMD_0020174 "A plate is a very thin rectangular object that may bear a semi finished product role. At the same time it may be a material."@en)
 SubClassOf(co:PMD_0020174 obo:BFO_0000030)
 
 # Class: co:PMD_0020175 (coil (coiled sheet))
 
 AnnotationAssertion(rdfs:comment co:PMD_0020175 "Coils may have several sheets that are joined together."@en)
 AnnotationAssertion(rdfs:label co:PMD_0020175 "coil (coiled sheet)"@en)
-AnnotationAssertion(skos:definition co:PMD_0020175 "A coil is an object that has part some sheets or foils."@en)
+AnnotationAssertion(skos:definition co:PMD_0020175 "A coil is an object that has part some sheets or foils. At the same time it may be a material."@en)
 SubClassOf(co:PMD_0020175 obo:BFO_0000030)
 
 # Class: co:PMD_0020176 (plate)
 
 AnnotationAssertion(rdfs:label co:PMD_0020176 "plate"@en)
-AnnotationAssertion(skos:definition co:PMD_0020176 "A plate is a thick rectangular object that may bear a semi finished product role. At the same time it is a material."@en)
+AnnotationAssertion(skos:definition co:PMD_0020176 "A plate is a thick rectangular object that may bear a semi finished product role. At the same time it may be a material."@en)
 SubClassOf(co:PMD_0020176 obo:BFO_0000030)
 
 # Class: co:PMD_0020177 (bar)
 
 AnnotationAssertion(rdfs:label co:PMD_0020177 "bar"@en)
-AnnotationAssertion(skos:definition co:PMD_0020177 "A bar is a long object with rectangular section that may bear a semi finished product role. At the same time it is a material."@en)
+AnnotationAssertion(skos:definition co:PMD_0020177 "A bar is a long object with rectangular section that may bear a semi finished product role. At the same time it may be a material."@en)
 SubClassOf(co:PMD_0020177 obo:BFO_0000030)
 
 # Class: co:PMD_0020178 (rod)
 
 AnnotationAssertion(rdfs:label co:PMD_0020178 "rod"@en)
-AnnotationAssertion(skos:definition co:PMD_0020178 "A rod is a long object with oval or round section that may bear a semi finished product role. At the same time it is a material."@en)
+AnnotationAssertion(skos:definition co:PMD_0020178 "A rod is a long object with oval or round section that may bear a semi finished product role. At the same time it may be a material."@en)
 SubClassOf(co:PMD_0020178 obo:BFO_0000030)
 
 # Class: co:PMD_0020179 (wire (semi finished product))
@@ -8102,19 +8171,19 @@ SubClassOf(co:PMD_0020179 obo:BFO_0000030)
 # Class: co:PMD_0020180 (tube)
 
 AnnotationAssertion(rdfs:label co:PMD_0020180 "tube"@en)
-AnnotationAssertion(skos:definition co:PMD_0020180 "A tube is a long object with a hollow section and moderate wall thickness that may bear a semi finished product role. At the same time it is a material."@en)
+AnnotationAssertion(skos:definition co:PMD_0020180 "A tube is a long object with a hollow section and moderate wall thickness that may bear a semi finished product role. At the same time it may be a material."@en)
 SubClassOf(co:PMD_0020180 obo:BFO_0000030)
 
 # Class: co:PMD_0020181 (pipe)
 
 AnnotationAssertion(rdfs:label co:PMD_0020181 "pipe"@en)
-AnnotationAssertion(skos:definition co:PMD_0020181 "A tube is a long object with a hollow section and pronounced wall thickness that may bear a semi finished product role. At the same time it is a material."@en)
+AnnotationAssertion(skos:definition co:PMD_0020181 "A tube is a long object with a hollow section and pronounced wall thickness that may bear a semi finished product role. At the same time it may be a material."@en)
 SubClassOf(co:PMD_0020181 obo:BFO_0000030)
 
 # Class: co:PMD_0020182 (profile (semi finished product))
 
 AnnotationAssertion(rdfs:label co:PMD_0020182 "profile (semi finished product)"@en)
-AnnotationAssertion(skos:definition co:PMD_0020182 "A profile is a long object with determined section shape that may bear a semi finished product role. At the same time it is a material."@en)
+AnnotationAssertion(skos:definition co:PMD_0020182 "A profile is a long object with determined section shape that may bear a semi finished product role. At the same time it may be a material."@en)
 SubClassOf(co:PMD_0020182 obo:BFO_0000030)
 
 # Class: co:PMD_0020183 (Recker)
@@ -8166,10 +8235,35 @@ AnnotationAssertion(skos:definition co:PMD_0020189 "A titanium alloy is an alloy
 SubClassOf(co:PMD_0020189 co:PMD_0025004)
 SubClassOf(co:PMD_0020189 ObjectSomeValuesFrom(obo:BFO_0000051 co:PMD_0020095))
 
+# Class: co:PMD_0020190 (metallographic section (surface))
+
+AnnotationAssertion(rdfs:comment co:PMD_0020190 "A metallographic section is part of an object which at the same time is a metal and the object is specified output of a planned process which describes the preparation of the surface."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020190 "metallographic section (surface)"@en)
+SubClassOf(co:PMD_0020190 co:PMD_0000965)
+
+# Class: co:PMD_0020191 (metallographic section (embedded sample))
+
+AnnotationAssertion(rdfs:comment co:PMD_0020191 "A metallographic section (embedded sample) is an object that has two parts: a metallic object that has a metallographic section (surface) as part and the mounting which is produced during a hot embedding or cold embedding process."@en)
+AnnotationAssertion(rdfs:comment co:PMD_0020191 "Typical dimensions of the round mountings are a diameter of 20-50 mm and a thickness of 10-20 mm."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020191 "metallographic section (embedded sample)"@en)
+SubClassOf(co:PMD_0020191 obo:BFO_0000030)
+
+# Class: co:PMD_0020192 (macrosection (metallography))
+
+AnnotationAssertion(rdfs:comment co:PMD_0020192 "A macrosection (metallography) is a metallographic section (surface) that is produced directly on an object. The object may be cut in order to make accessible a section (fiat surface) of interest."@en)
+AnnotationAssertion(rdfs:label co:PMD_0020192 "macrosection (metallography)"@en)
+SubClassOf(co:PMD_0020192 co:PMD_0020190)
+
+# Class: co:PMD_0020193 (tensile testpiece)
+
+AnnotationAssertion(rdfs:label co:PMD_0020193 "tensile testpiece"@en)
+AnnotationAssertion(skos:definition co:PMD_0020193 "A tensile testpiece is a longitudinal object that has two parts which were designed for gripping (gripping section) at its ends and a part between the gripping sections that has been designed to observe the materials or the objects reaction to tensile loading."@en)
+SubClassOf(co:PMD_0020193 obo:BFO_0000030)
+
 # Class: co:PMD_0020200 (force)
 
 AnnotationAssertion(rdfs:label co:PMD_0020200 "force"@en)
-AnnotationAssertion(skos:definition co:PMD_0020200 "Force is a reciprocal relation realized between two objects where the other object exerces the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects."@en)
+AnnotationAssertion(skos:definition co:PMD_0020200 "Force is a reciprocal relation realized between two objects where the other object exerts the same force with opposite sign onto the first. Force may be responsible for changes in velocity and/or deformation of objects."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020200 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0020200 obo:BFO_0000017)
 
@@ -8211,8 +8305,8 @@ SubClassOf(co:PMD_0020205 obo:BFO_0000023)
 # Class: co:PMD_0020207 (amount of substance)
 
 AnnotationAssertion(rdfs:label co:PMD_0020207 "amount of substance"@en)
-AnnotationAssertion(skos:definition co:PMD_0020207 "Amount of substance n is a molar propotion when the whole is a object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A)."@en)
-SubClassOf(co:PMD_0020207 co:PMD_0020103)
+AnnotationAssertion(skos:definition co:PMD_0020207 "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A)."@en)
+SubClassOf(co:PMD_0020207 co:PMD_0020101)
 
 # Class: co:PMD_0025001 (composition)
 
@@ -8226,8 +8320,8 @@ SubClassOf(co:PMD_0025001 co:PMD_0020131)
 
 AnnotationAssertion(rdfs:label co:PMD_0025002 "chemical composition data item"@en)
 AnnotationAssertion(skos:altLabel co:PMD_0025002 "chemical composition specification"@en)
-AnnotationAssertion(skos:definition co:PMD_0025002 "Chemical composition data item is an information content entity that is about chemical composition of a material and has memebers fraction specifications of portions of chemical elements, which are parts of the material."@en)
-AnnotationAssertion(skos:example co:PMD_0025002 "Steel has quality chemical composition , which concretizes the chemical composition specification .The chemical composition specification has parts fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these  fraction specifications are conretized by relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en)
+AnnotationAssertion(skos:definition co:PMD_0025002 "Chemical composition data item is an information content entity that is about chemical composition of a material and has members fraction specifications of portions of chemical elements, which are parts of the material."@en)
+AnnotationAssertion(skos:example co:PMD_0025002 "Steel has quality chemical composition , and the chemical composition data item is about the chemical composition .The chemical composition data item has members fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these fraction specifications specify  values of relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0025002 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0025002 ObjectIntersectionOf(co:PMD_0020004 ObjectSomeValuesFrom(obo:IAO_0000136 co:PMD_0000551)))
 
@@ -8252,7 +8346,7 @@ SubClassOf(co:PMD_0025004 co:PMD_0000852)
 AnnotationAssertion(rdfs:label co:PMD_0025005 "3D"@en)
 AnnotationAssertion(skos:definition co:PMD_0025005 "A three-dimensional information content entity is a representation or analysis, commonly applied in studying material properties in its volume or describing a dependency of one variable on two other variables."@en)
 AnnotationAssertion(skos:example co:PMD_0025005 "Orientation distribution function (ODF), potential energy landscape"@en)
-SubClassOf(co:PMD_0025005 obo:IAO_0000030)
+SubClassOf(co:PMD_0025005 obo:IAO_0000027)
 
 # Class: co:PMD_0025007 (frequency)
 
@@ -8299,7 +8393,7 @@ SubClassOf(co:PMD_0025012 co:PMD_0000583)
 # Class: co:PMD_0025014 (single crystal)
 
 AnnotationAssertion(rdfs:label co:PMD_0025014 "single crystal"@en)
-AnnotationAssertion(skos:definition co:PMD_0025014 "Single crystal is a crystal which is not part of a polycrystal and its boundaries are its exteral surfaces."@en)
+AnnotationAssertion(skos:definition co:PMD_0025014 "Single crystal is a crystal which is not part of a polycrystal and its boundaries are its external surfaces."@en)
 SubClassOf(co:PMD_0025014 co:PMD_0020003)
 
 # Class: co:PMD_0025015 (portion of lanthanum)
@@ -8344,18 +8438,33 @@ AnnotationAssertion(skos:definition co:PMD_0025019 "Dieses Konzept beschreibt de
 AnnotationAssertion(skos:definition co:PMD_0025019 "This concept describes the value of the slope of the first linear increasing part (‘elastic part’) in the stress-percentage extension curve obtained during a tensile test. In the elastic part of the stress‐percentage extension curve, the value of the slope may not necessarily represent the modulus of elasticity. This value may closely agree with the value of the modulus of elasticity if optimal conditions were used."@en)
 SubClassOf(co:PMD_0025019 co:PMD_0000949)
 
+# Class: co:PMD_0025020 (single fatigue testing process)
+
+AnnotationAssertion(rdfs:label co:PMD_0025020 "single fatigue testing process"@en)
+AnnotationAssertion(skos:definition co:PMD_0025020 "A single fatigue testing process is a occurent part of a fatigue testing process (S-N testing process). A single fatigue testing process assesses how many cycles a material can withstand under the given loading."@en)
+SubClassOf(co:PMD_0025020 co:PMD_0000849)
+
+# Class: co:PMD_0025021 (Stanzmachine)
+
+AnnotationAssertion(obo:IAO_0000119 co:PMD_0025021 "https://en.wikipedia.org/wiki/Stamping_press")
+AnnotationAssertion(rdfs:label co:PMD_0025021 "Stanzmachine"@de)
+AnnotationAssertion(rdfs:label co:PMD_0025021 "stamping press"@en)
+AnnotationAssertion(skos:definition co:PMD_0025021 "Eine Stanzmachine ist ein Werkzeug zur Metallbearbeitung, das dazu dient, geschnittenes Metall durch Verformung mit einer Matrize zu formen."@en)
+AnnotationAssertion(skos:definition co:PMD_0025021 "Stamping press is a metalworking tool which is used to shape a cut metal by deforming it with a die."@en)
+SubClassOf(co:PMD_0025021 co:PMD_0000602)
+
 # Class: co:PMD_0025997 (fraction value specification)
 
 AnnotationAssertion(rdfs:label co:PMD_0025997 "fraction value specification"@en)
-AnnotationAssertion(skos:definition co:PMD_0025997 "Fraction value specification is a value specification that contains information about quantative share of a part relative to a specified whole."@en)
-AnnotationAssertion(skos:example co:PMD_0025997 "2.05 wt.% of carbon in steel, 4 vol.% of nictric acid in a solution"@en)
+AnnotationAssertion(skos:definition co:PMD_0025997 "Fraction value specification is a value specification that contains information about quantitative share of a part relative to a specified whole."@en)
+AnnotationAssertion(skos:example co:PMD_0025997 "2.05 wt.% of carbon in steel, 4 vol.% of nitric acid in a solution"@en)
 SubClassOf(co:PMD_0025997 obo:OBI_0001931)
 SubClassOf(co:PMD_0025997 ObjectSomeValuesFrom(obo:OBI_0001927 ObjectIntersectionOf(co:PMD_0020101 ObjectSomeValuesFrom(co:PMD_0025999 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:BFO_0000050 obo:BFO_0000040))))))
 SubClassOf(co:PMD_0025997 ObjectAllValuesFrom(obo:RO_0002350 co:PMD_0020004))
 
 # Class: co:PMD_0040001 (length)
 
-AnnotationAssertion(rdfs:comment co:PMD_0040001 "Length is a size that describes the spacial extend of its bearer in one dimension."@en)
+AnnotationAssertion(rdfs:comment co:PMD_0040001 "Length is a size that describes the spatial extent of its bearer in one dimension."@en)
 AnnotationAssertion(rdfs:label co:PMD_0040001 "length"@en)
 AnnotationAssertion(skos:altLabel co:PMD_0040001 "dimension"@en)
 AnnotationAssertion(skos:definition co:PMD_0040001 "Length is a one dimensional size.")
@@ -8405,7 +8514,7 @@ SubClassOf(co:PMD_0050004 co:PMD_0000888)
 # Class: co:PMD_0050005 (polyethylene)
 
 AnnotationAssertion(rdfs:label co:PMD_0050005 "polyethylene"@en)
-AnnotationAssertion(skos:definition co:PMD_0050005 "Polyethylene is a Thermoplastic that is composed of repeating ethylene monomer units."@en)
+AnnotationAssertion(skos:definition co:PMD_0050005 "Polyethylene is a thermoplastic that is composed of repeating ethylene monomer units."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0050005 "true"^^xsd:boolean)
 AnnotationAssertion(co:PMD_0050117 co:PMD_0050005 "PE")
 SubClassOf(co:PMD_0050005 co:PMD_0050004)
@@ -8437,7 +8546,7 @@ SubClassOf(co:PMD_0050008 co:PMD_0050005)
 # Class: co:PMD_0050009 (polypropylene)
 
 AnnotationAssertion(rdfs:label co:PMD_0050009 "polypropylene"@en)
-AnnotationAssertion(skos:definition co:PMD_0050009 "Polypropylene is a Thermoplastic that is composed of repeating propylene monomer units."@en)
+AnnotationAssertion(skos:definition co:PMD_0050009 "Polypropylene is a thermoplastic that is composed of repeating propylene monomer units."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0050009 "true"^^xsd:boolean)
 AnnotationAssertion(co:PMD_0050117 co:PMD_0050009 "PP")
 SubClassOf(co:PMD_0050009 co:PMD_0050004)
@@ -8539,7 +8648,7 @@ SubClassOf(co:PMD_0050021 co:PMD_0050019)
 # Class: co:PMD_0050022 (thermosetting polymers)
 
 AnnotationAssertion(rdfs:label co:PMD_0050022 "thermosetting polymers"@en)
-AnnotationAssertion(skos:definition co:PMD_0050022 "A Thermosetting Polymer is a Polymer that, once cured, irreversibly sets into a permanent shape."@en)
+AnnotationAssertion(skos:definition co:PMD_0050022 "Thermosetting polymer is a polymer that, once cured, irreversibly sets into a permanent shape."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0050022 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0050022 co:PMD_0000888)
 
@@ -9235,7 +9344,7 @@ SubClassOf(co:PMD_0050118 co:PMD_0050133)
 # Class: co:PMD_0050119 (fused silica glass)
 
 AnnotationAssertion(rdfs:label co:PMD_0050119 "fused silica glass"@en)
-AnnotationAssertion(skos:definition co:PMD_0050119 "Fused Silica Glass is an Optical Glass that is made from pure silica, prized for its high transparency and thermal stability."@en)
+AnnotationAssertion(skos:definition co:PMD_0050119 "Fused silica glass is an optical glass that is made from pure silica, prized for its high transparency and thermal stability."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0050119 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0050119 co:PMD_0050118)
 
@@ -9540,10 +9649,12 @@ SubClassOf(co:PMD_0060008 obo:IAO_0000104)
 
 # Class: co:PMD_0060009 (specification datum)
 
+AnnotationAssertion(rdfs:comment co:PMD_0060009 "The intend of the specification datum is to express the \"Sollwert\" of some qualitiy or behavioral material property. Then, the specification datum can be further specified by  some value specification."@en)
 AnnotationAssertion(rdfs:label co:PMD_0060009 "specification datum"@en)
-AnnotationAssertion(skos:definition co:PMD_0060009 "A data item that provides specification for entities")
+AnnotationAssertion(skos:definition co:PMD_0060009 "Specification datum is a data item that provides an information of a setpoint of some value, i.e., it is an intended value."@en)
+AnnotationAssertion(skos:example co:PMD_0060009 "The setpoint value of a ultimate tensile strength of some steel material"@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0060009 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0060009 obo:IAO_0000027)
+SubClassOf(co:PMD_0060009 obo:IAO_0000033)
 
 # Class: co:PMD_0200000 (compression molding)
 
@@ -9561,9 +9672,9 @@ SubClassOf(co:PMD_0200000 co:PMD_0000907)
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0200001 "European Commission: Directorate-General for Research and Innovation, Biodegradability of plastics in the open environment, Publications Office of the European Union, 2021, https://data.europa.eu/doi/10.2777/690248")
 AnnotationAssertion(rdfs:label co:PMD_0200001 "Biologische Abbaubarkeit"@de)
 AnnotationAssertion(rdfs:label co:PMD_0200001 "biodegradabilty"@en)
-AnnotationAssertion(skos:definition co:PMD_0200001 "\"[Biodegradabilty] [...] is understood as the microbial conversion of all its organic constituents to carbon dioxide (or carbon dioxide and methane in conditions where oxygen is not present), new microbial biomass and mineral salts, within a timescale short enough not to lead to lasting harm or accumulation in the open environment.\""@en)
 AnnotationAssertion(skos:definition co:PMD_0200001 "\"[Biologische Abbaubarkeit] [...] beschreibt die mikrobielle Umwandlung all seiner organischen Bestandteile in Kohlendioxid oder – unter sauerstofffreien Bedingungen – in Kohlendioxid und Methan, neue mikrobielle Biomasse und Mineralsalze verstanden, und zwar innerhalb eines Zeitraums, der so kurz ist, dass es nicht zu dauerhaften Schäden oder Anreicherungen in der offenen Umwelt kommt.\""@de)
-AnnotationAssertion(skos:definition co:PMD_0200001 "Biodegradability is a disposition of a material which specifies its capability to be fully microbially converted into inorganic end products (CO₂, CH₄, mineral salts, biomass) within an environmentally non-harmful timescale."@en)
+AnnotationAssertion(skos:definition co:PMD_0200001 "\"[biodegradability] [...] is understood as the microbial conversion of all its organic constituents to carbon dioxide (or carbon dioxide and methane in conditions where oxygen is not present), new microbial biomass and mineral salts, within a timescale short enough not to lead to lasting harm or accumulation in the open environment.\""@en)
+AnnotationAssertion(skos:definition co:PMD_0200001 "biodegradability is a disposition of a material which specifies its capability to be fully microbially converted into inorganic end products (CO₂, CH₄, mineral salts, biomass) within an environmentally non-harmful timescale."@en)
 AnnotationAssertion(co:PMD_0001032 co:PMD_0200001 "https://github.com/materialdigital/core-ontology/issues/126")
 SubClassOf(co:PMD_0200001 obo:BFO_0000016)
 
@@ -9805,25 +9916,25 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0020111 "true"^^xsd:boolean)
 # Individual: co:PMD_0020117 (aggregate state solid)
 
 AnnotationAssertion(rdfs:label co:PMD_0020117 "aggregate state solid"@en)
-AnnotationAssertion(skos:definition co:PMD_0020117 "A state where the bonds between entites trasmit shear forces."@en)
+AnnotationAssertion(skos:definition co:PMD_0020117 "A state where the bonds between entities transmit shear forces."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020117 "true"^^xsd:boolean)
 
 # Individual: co:PMD_0020118 (aggregate state liquid)
 
 AnnotationAssertion(rdfs:label co:PMD_0020118 "aggregate state liquid"@en)
-AnnotationAssertion(skos:definition co:PMD_0020118 "A state where the bonds of the entites transmit no shear force."@en)
+AnnotationAssertion(skos:definition co:PMD_0020118 "A state where the bonds of the entities transmit no shear force."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020118 "true"^^xsd:boolean)
 
-# Individual: co:PMD_0020119 (aggregate state gasous)
+# Individual: co:PMD_0020119 (aggregate state gaseous)
 
-AnnotationAssertion(rdfs:label co:PMD_0020119 "aggregate state gasous"@en)
+AnnotationAssertion(rdfs:label co:PMD_0020119 "aggregate state gaseous"@en)
 AnnotationAssertion(skos:definition co:PMD_0020119 "A state where the entities have no bonding."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020119 "true"^^xsd:boolean)
 
 # Individual: co:PMD_0020120 (aggregate state plasma)
 
 AnnotationAssertion(rdfs:label co:PMD_0020120 "aggregate state plasma"@en)
-AnnotationAssertion(skos:definition co:PMD_0020120 "An aggregate state where the entites are atom nuclei and have no bonds."@en)
+AnnotationAssertion(skos:definition co:PMD_0020120 "An aggregate state where the entities are atom nuclei and have no bonds."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020120 "true"^^xsd:boolean)
 
 # Individual: co:PMD_0020121 (aggregate state atom gas)
@@ -9835,7 +9946,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0020121 "true"^^xsd:boolean)
 # Individual: co:PMD_0020122 (aggregate state supercritical fluid)
 
 AnnotationAssertion(rdfs:label co:PMD_0020122 "aggregate state supercritical fluid"@en)
-AnnotationAssertion(skos:definition co:PMD_0020122 "A state with strong bindings between entites that do not transmit shear force."@en)
+AnnotationAssertion(skos:definition co:PMD_0020122 "A state with strong bindings between entities that do not transmit shear force."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020122 "true"^^xsd:boolean)
 
 # Individual: co:PMD_0020123 (aggregate state mesomorphic)
@@ -9847,7 +9958,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0020123 "true"^^xsd:boolean)
 # Individual: co:PMD_0020124 (aggregate state suprafluid)
 
 AnnotationAssertion(rdfs:label co:PMD_0020124 "aggregate state suprafluid"@en)
-AnnotationAssertion(skos:definition co:PMD_0020124 "A state with frictionless binding that transmits no shear force between entites."@en)
+AnnotationAssertion(skos:definition co:PMD_0020124 "A state with frictionless binding that transmits no shear force between entities."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020124 "true"^^xsd:boolean)
 
 # Individual: co:PMD_0020125 (aggregate state suprasolid)
