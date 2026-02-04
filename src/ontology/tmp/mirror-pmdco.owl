@@ -4762,7 +4762,7 @@ https://github.com/pyiron/semantikon/pull/278</co:PMD_0001032>
     <!-- https://w3id.org/pmd/co/PMD_0000501 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000501">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label xml:lang="en">1D</rdfs:label>
         <skos:definition xml:lang="en">1-D is an information content entity representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
@@ -4773,7 +4773,7 @@ https://github.com/pyiron/semantikon/pull/278</co:PMD_0001032>
     <!-- https://w3id.org/pmd/co/PMD_0000502 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000502">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label xml:lang="en">2D</rdfs:label>
         <skos:definition xml:lang="en">A two-dimensional information content entity is a representation or analysis, commonly applied in studying planar material properties or surface phenomena.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
@@ -6202,7 +6202,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
     <!-- https://w3id.org/pmd/co/PMD_0000618 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000618">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000949"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0025019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -8256,7 +8256,7 @@ TODO: Check general class axiom and defintion altogether !!!</skos:definition>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000834"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
                         <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000853"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -9929,6 +9929,172 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">x-ray microanalysis system</rdfs:label>
         <skos:definition xml:lang="en">A device used for microanalysis of materials using X-ray techniques to determine elemental composition at a microscopic scale.</skos:definition>
         <skos:definition xml:lang="de">Ein Gerät zur Mikroanalyse von Materialien unter Verwendung von Röntgentechniken zur Bestimmung der Elementzusammensetzung auf mikroskopischer Ebene.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001033 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:label xml:lang="en">test piece material designation</rdfs:label>
+        <skos:definition>an identifier assigned to specify the material of a test piece</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001034 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">reporting process</rdfs:label>
+        <skos:definition>A process of collecting, organizing, and presenting information or results in a structured form for communication or documentation.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001035 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:label xml:lang="en">angle</rdfs:label>
+        <skos:definition>A property that represents the measure of rotation or inclination between two intersecting lines or planes, independent of the size of the object.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001036 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:label xml:lang="en">uncertainty</rdfs:label>
+        <skos:definition>A quantitative indication of the doubt about a measurement result, expressing the range within which the true value is expected to lie.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001037 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:label xml:lang="en">device designation</rdfs:label>
+        <skos:definition>an identifier assigned to distinguish and reference a specific device.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001038 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:label xml:lang="en">project designation</rdfs:label>
+        <skos:definition>an identifier assigned to distinguish and reference a specific project.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001039 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">calibration process</rdfs:label>
+        <skos:definition>A process of comparing measurement values delivered by an instrument or system with known reference standards to ensure accuracy and traceability.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001040 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">expriment designing process</rdfs:label>
+        <skos:definition>A planned process of planning and structuring experimental methods, conditions, and variables to reliably test hypotheses or obtain data.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001041 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">measuring process</rdfs:label>
+        <skos:definition>A planned process of determining the value of a physical quantity by comparing it with a defined unit or standard.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001042 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000119>https://www.britannica.com/science/sample-preparation</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">test piece preparation process</rdfs:label>
+        <skos:definition>A planned processes in which a representative piece of material is extracted from a larger amount and readied for analysis. </skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001043 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">verification process</rdfs:label>
+        <skos:definition>A process of evaluating whether a system, component, or result meets specified requirements or standards.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001044 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <rdfs:label xml:lang="en">date value specification</rdfs:label>
+        <skos:definition>A datum that represents a date or time interval associated with another specification.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001045 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000583"/>
+        <rdfs:label xml:lang="en">calculating process</rdfs:label>
+        <skos:definition>A process in which numerical or symbolic operations are performed to derive a result from given data or parameters.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001046 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
+        <rdfs:label xml:lang="en">depth</rdfs:label>
+        <skos:definition>The distance from a reference surface or point to a specific point or feature along a perpendicular or defined direction.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0001047 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
+        <rdfs:label xml:lang="en">diagonal</rdfs:label>
+        <skos:definition>A straight line connecting two non-adjacent corners or vertices of a polygon.</skos:definition>
+        <co:PMD_0001032 rdf:resource="https://github.com/materialdigital/core-ontology/issues/278"/>
     </owl:Class>
     
 
@@ -12410,7 +12576,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020172">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">sheet</rdfs:label>
+        <rdfs:label xml:lang="en">sheet</rdfs:label>
         <skos:definition xml:lang="en">A plate is a thin rectangular object that may bear a semi finished product role. At the same time it is a material.</skos:definition>
     </owl:Class>
     
@@ -12420,7 +12586,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020173">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">billet</rdfs:label>
+        <rdfs:label xml:lang="en">billet</rdfs:label>
         <skos:definition xml:lang="en">An billet is a relatively compact object that may bear a semi finished product role. At the same time it is a material.</skos:definition>
     </owl:Class>
     
@@ -12430,7 +12596,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020174">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">foil</rdfs:label>
+        <rdfs:label xml:lang="en">foil</rdfs:label>
         <skos:definition xml:lang="en">A plate is a very thin rectangular object that may bear a semi finished product role. At the same time it is a material.</skos:definition>
     </owl:Class>
     
@@ -12441,7 +12607,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020175">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:comment xml:lang="en">Coils may have several sheets that are joined together.</rdfs:comment>
-        <rdfs:label xml:lang="de">coil (coiled sheet)</rdfs:label>
+        <rdfs:label xml:lang="en">coil (coiled sheet)</rdfs:label>
         <skos:definition xml:lang="en">A coil is an object that has part some sheets or foils.</skos:definition>
     </owl:Class>
     
@@ -12451,7 +12617,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020176">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">plate</rdfs:label>
+        <rdfs:label xml:lang="en">plate</rdfs:label>
         <skos:definition xml:lang="en">A plate is a thick rectangular object that may bear a semi finished product role. At the same time it is a material.</skos:definition>
     </owl:Class>
     
@@ -12461,7 +12627,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020177">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">bar</rdfs:label>
+        <rdfs:label xml:lang="en">bar</rdfs:label>
         <skos:definition xml:lang="en">A bar is a long object with rectangular section that may bear a semi finished product role. At the same time it is a material.</skos:definition>
     </owl:Class>
     
@@ -12471,7 +12637,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">rod</rdfs:label>
+        <rdfs:label xml:lang="en">rod</rdfs:label>
         <skos:definition xml:lang="en">A rod is a long object with oval or round section that may bear a semi finished product role. At the same time it is a material.</skos:definition>
     </owl:Class>
     
@@ -12492,7 +12658,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">tube</rdfs:label>
+        <rdfs:label xml:lang="en">tube</rdfs:label>
         <skos:definition xml:lang="en">A tube is a long object with a hollow section and moderate wall thickness that may bear a semi finished product role. At the same time it is a material.</skos:definition>
     </owl:Class>
     
@@ -12502,7 +12668,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020181">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">pipe</rdfs:label>
+        <rdfs:label xml:lang="en">pipe</rdfs:label>
         <skos:definition xml:lang="en">A tube is a long object with a hollow section and pronounced wall thickness that may bear a semi finished product role. At the same time it is a material.</skos:definition>
     </owl:Class>
     
@@ -12512,7 +12678,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020182">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">profile (semi finished product)</rdfs:label>
+        <rdfs:label xml:lang="en">profile (semi finished product)</rdfs:label>
         <skos:definition xml:lang="en">A profile is a long object with determined section shape that may bear a semi finished product role. At the same time it is a material.</skos:definition>
     </owl:Class>
     
@@ -12764,7 +12930,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <!-- https://w3id.org/pmd/co/PMD_0025005 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label xml:lang="en">3D</rdfs:label>
         <skos:definition xml:lang="en">A three-dimensional information content entity is a representation or analysis, commonly applied in studying material properties in its volume or describing a dependency of one variable on two other variables.</skos:definition>
         <skos:example xml:lang="en">Orientation distribution function (ODF), potential energy landscape</skos:example>
@@ -14864,11 +15030,9 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <!-- https://w3id.org/pmd/co/PMD_0060009 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0060009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <rdfs:comment xml:lang="en">The intend of the specification datum is to express the &quot;Sollwert&quot; of some qualitiy or behavioral material property. Then, the specification datum can be further specified by  some value specification.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">specification datum</rdfs:label>
-        <skos:definition xml:lang="en">Specification datum is a data item that provides an information of a setpoint of some value, i.e., it is an intended value.</skos:definition>
-        <skos:example xml:lang="en">The setpoint value of a ultimate tensile strength of some steel material</skos:example>
+        <skos:definition>A data item that provides specification for entities</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     

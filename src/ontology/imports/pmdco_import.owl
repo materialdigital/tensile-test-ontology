@@ -614,6 +614,21 @@ Declaration(Class(co:PMD_0001021))
 Declaration(Class(co:PMD_0001022))
 Declaration(Class(co:PMD_0001023))
 Declaration(Class(co:PMD_0001024))
+Declaration(Class(co:PMD_0001033))
+Declaration(Class(co:PMD_0001034))
+Declaration(Class(co:PMD_0001035))
+Declaration(Class(co:PMD_0001036))
+Declaration(Class(co:PMD_0001037))
+Declaration(Class(co:PMD_0001038))
+Declaration(Class(co:PMD_0001039))
+Declaration(Class(co:PMD_0001040))
+Declaration(Class(co:PMD_0001041))
+Declaration(Class(co:PMD_0001042))
+Declaration(Class(co:PMD_0001043))
+Declaration(Class(co:PMD_0001044))
+Declaration(Class(co:PMD_0001045))
+Declaration(Class(co:PMD_0001046))
+Declaration(Class(co:PMD_0001047))
 Declaration(Class(co:PMD_0001998))
 Declaration(Class(co:PMD_0001999))
 Declaration(Class(co:PMD_0020000))
@@ -3626,7 +3641,7 @@ AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum
 SubClassOf(co:PMD_0000053 obo:OBI_0000011)
 SubClassOf(co:PMD_0000053 ObjectIntersectionOf(co:PMD_0000547 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 co:PMD_0020139)))
 
-# Class: co:PMD_0000054 (heating function)
+# Class: co:PMD_0000054 (Heizfunktion)
 
 AnnotationAssertion(rdfs:label co:PMD_0000054 "Heizfunktion"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000054 "heating function"@en)
@@ -3710,14 +3725,14 @@ SubClassOf(co:PMD_0000123 obo:IAO_0000300)
 AnnotationAssertion(rdfs:label co:PMD_0000501 "1D"@en)
 AnnotationAssertion(skos:definition co:PMD_0000501 "1-D is an information content entity representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000501 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000501 obo:IAO_0000027)
+SubClassOf(co:PMD_0000501 obo:IAO_0000030)
 
 # Class: co:PMD_0000502 (2D)
 
 AnnotationAssertion(rdfs:label co:PMD_0000502 "2D"@en)
 AnnotationAssertion(skos:definition co:PMD_0000502 "A two-dimensional information content entity is a representation or analysis, commonly applied in studying planar material properties or surface phenomena."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000502 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000502 obo:IAO_0000027)
+SubClassOf(co:PMD_0000502 obo:IAO_0000030)
 
 # Class: co:PMD_0000503 (ASTM grainsize)
 
@@ -3904,7 +3919,7 @@ AnnotationAssertion(skos:definition co:PMD_0000530 "Ein Mechanische Eigenschafte
 AnnotationAssertion(skos:example co:PMD_0000530 "Testing the flexural strength of a plastic beam to ensure it can withstand the required load in an engineering application."@en)
 SubClassOf(co:PMD_0000530 co:PMD_0000849)
 
-# Class: co:PMD_0000531 (biocompatibility analyzing process)
+# Class: co:PMD_0000531 (Analyseverfahren der Biokompatibilität)
 
 AnnotationAssertion(rdfs:label co:PMD_0000531 "Analyseverfahren der Biokompatibilität"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000531 "biocompatibility analyzing process"@en)
@@ -4170,7 +4185,7 @@ AnnotationAssertion(skos:definition co:PMD_0000564 "Eine Unterfunktion der Besch
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000564 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000564 co:PMD_0000575)
 
-# Class: co:PMD_0000565 (Beschichten Durch Löten)
+# Class: co:PMD_0000565 (coating by soldering)
 
 AnnotationAssertion(rdfs:label co:PMD_0000565 "Beschichten Durch Löten"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000565 "coating by soldering"@en)
@@ -4478,7 +4493,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0000604 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000604 co:PMD_0000621)
 DisjointClasses(co:PMD_0000604 co:PMD_0000620)
 
-# Class: co:PMD_0000605 (Differential-Scanning-Kalorimeter)
+# Class: co:PMD_0000605 (differential scanning calorimeter)
 
 AnnotationAssertion(rdfs:label co:PMD_0000605 "Differential-Scanning-Kalorimeter"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000605 "differential scanning calorimeter"@en)
@@ -4592,7 +4607,7 @@ SubClassOf(co:PMD_0000617 co:PMD_0000602)
 AnnotationAssertion(rdfs:label co:PMD_0000618 "elastic modulus"@en)
 AnnotationAssertion(skos:definition co:PMD_0000618 "An elastic modulus is a measure of a material's stiffness, defined as the ratio of stress to strain in the elastic deformation region."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000618 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000618 co:PMD_0000949)
+SubClassOf(co:PMD_0000618 co:PMD_0025019)
 SubClassOf(co:PMD_0000618 ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:BFO_0000027 obo:BFO_0000030 co:PMD_0000538)))
 
 # Class: co:PMD_0000619 (electric potential)
@@ -4830,7 +4845,7 @@ AnnotationAssertion(skos:definition co:PMD_0000649 "Ein Umform Prozess, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000649 "Stripping, Deep Drawing, Spinning"@en)
 SubClassOf(co:PMD_0000649 co:PMD_0000646)
 
-# Class: co:PMD_0000650 (forming under compressive conditions)
+# Class: co:PMD_0000650 (Druckumformen)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000650 "Official definition can be found in: DIN 8583-1"@en)
 AnnotationAssertion(dcterms:source co:PMD_0000650 "Offizielle Definition findet man in: DIN 8583-1"@de)
@@ -4880,7 +4895,7 @@ AnnotationAssertion(skos:definition co:PMD_0000654 "A Functional Material F is a
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000654 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000654 ObjectIntersectionOf(co:PMD_0000002 ObjectSomeValuesFrom(obo:BFO_0000050 ObjectIntersectionOf(obo:BFO_0000030 ObjectSomeValuesFrom(obo:RO_0000085 obo:BFO_0000034)))))
 
-# Class: co:PMD_0000655 (furnace)
+# Class: co:PMD_0000655 (Ofen)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000655 "“Furnace.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/furnace. Accessed 13 Jan. 2023."@en)
 AnnotationAssertion(rdfs:label co:PMD_0000655 "Ofen"@de)
@@ -5317,7 +5332,7 @@ AnnotationAssertion(skos:definition co:PMD_0000807 "Ein Fügeverfahren, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000807 "Pouring, Embedding, Encasing"@en)
 SubClassOf(co:PMD_0000807 co:PMD_0000806)
 
-# Class: co:PMD_0000808 (Fügen Durch Umformen)
+# Class: co:PMD_0000808 (joining by shaping)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Official definition can be found in: DIN 8593-5"@en)
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000808 "Offizielle Definition findet man in: DIN 8593-5"@de)
@@ -5573,7 +5588,7 @@ AnnotationAssertion(co:PMD_0000060 co:PMD_0000848 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000848 co:PMD_0000005)
 SubClassOf(co:PMD_0000848 ObjectSomeValuesFrom(obo:BFO_0000054 co:PMD_0000522))
 
-# Class: co:PMD_0000849 (mechanical property analyzing process)
+# Class: co:PMD_0000849 (Mechanische Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label co:PMD_0000849 "Mechanische Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000849 "mechanical property analyzing process"@en)
@@ -5743,7 +5758,7 @@ AnnotationAssertion(skos:definition co:PMD_0000874 "A microscope that uses visib
 AnnotationAssertion(skos:definition co:PMD_0000874 "Ein Mikroskop, das sichtbares Licht und Linsen verwendet, um kleine Objekte oder Details zu vergrößern und zu betrachten."@de)
 SubClassOf(co:PMD_0000874 co:PMD_0000855)
 
-# Class: co:PMD_0000875 (optical microscopy)
+# Class: co:PMD_0000875 (Optische Mikroskopie)
 
 AnnotationAssertion(rdfs:label co:PMD_0000875 "Ein Mikroskopieverfahren, das sichtbares Licht und Linsen verwendet, um eine Probe zu vergrößern und abzubilden, und weit verbreitet zur Untersuchung der Mikrostruktur und Morphologie von Materialien ist."@de)
 AnnotationAssertion(rdfs:label co:PMD_0000875 "Optische Mikroskopie"@de)
@@ -5752,7 +5767,7 @@ AnnotationAssertion(skos:definition co:PMD_0000875 "A Microscopy Process that us
 AnnotationAssertion(skos:example co:PMD_0000875 "An example is Light Microscopy."@en)
 SubClassOf(co:PMD_0000875 co:PMD_0000856)
 
-# Class: co:PMD_0000876 (optical profilometer)
+# Class: co:PMD_0000876 (Optisches Profilometer)
 
 AnnotationAssertion(rdfs:label co:PMD_0000876 "Optisches Profilometer"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000876 "optical profilometer"@en)
@@ -5812,7 +5827,7 @@ SubClassOf(co:PMD_0000884 co:PMD_0000931)
 AnnotationAssertion(rdfs:label co:PMD_0000885 "pole figure"@en)
 AnnotationAssertion(skos:definition co:PMD_0000885 "A pole figure is a map depicting a 2D stereographic projection which represents crystallographic orientations of grains in a polycrystalline material in respect to the sample's reference frame."@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000885 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0000885 ObjectIntersectionOf(co:PMD_0000834 ObjectSomeValuesFrom(obo:IAO_0000136 co:PMD_0000853)))
+SubClassOf(co:PMD_0000885 ObjectIntersectionOf(co:PMD_0000834 ObjectSomeValuesFrom(obo:RO_0000058 co:PMD_0000853)))
 
 # Class: co:PMD_0000886 (polishing machine)
 
@@ -6319,7 +6334,7 @@ AnnotationAssertion(skos:definition co:PMD_0000956 "Ein Simulationsprozess, der 
 AnnotationAssertion(skos:example co:PMD_0000956 "Optimizing the atomic structure of a catalyst to enhance its performance."@en)
 SubClassOf(co:PMD_0000956 co:PMD_0000933)
 
-# Class: co:PMD_0000957 (Struktur Eigenschaften Analyseverfahren)
+# Class: co:PMD_0000957 (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000957 "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000957 "structural property analyzing process"@en)
@@ -6351,7 +6366,7 @@ AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a s
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000961 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000961 co:PMD_0020164)
 
-# Class: co:PMD_0000962 (Überkritische Fluidchromatographie Verfahren)
+# Class: co:PMD_0000962 (supercritical fluid chromatography process)
 
 AnnotationAssertion(rdfs:label co:PMD_0000962 "supercritical fluid chromatography process"@en)
 AnnotationAssertion(rdfs:label co:PMD_0000962 "Überkritische Fluidchromatographie Verfahren"@de)
@@ -6833,6 +6848,112 @@ AnnotationAssertion(rdfs:label co:PMD_0001024 "x-ray microanalysis system"@en)
 AnnotationAssertion(skos:definition co:PMD_0001024 "A device used for microanalysis of materials using X-ray techniques to determine elemental composition at a microscopic scale."@en)
 AnnotationAssertion(skos:definition co:PMD_0001024 "Ein Gerät zur Mikroanalyse von Materialien unter Verwendung von Röntgentechniken zur Bestimmung der Elementzusammensetzung auf mikroskopischer Ebene."@de)
 SubClassOf(co:PMD_0001024 co:PMD_0000602)
+
+# Class: co:PMD_0001033 (test piece material designation)
+
+AnnotationAssertion(rdfs:label co:PMD_0001033 "test piece material designation"@en)
+AnnotationAssertion(skos:definition co:PMD_0001033 "an identifier assigned to specify the material of a test piece")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001033 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001033 obo:IAO_0020000)
+
+# Class: co:PMD_0001034 (reporting process)
+
+AnnotationAssertion(rdfs:label co:PMD_0001034 "reporting process"@en)
+AnnotationAssertion(skos:definition co:PMD_0001034 "A process of collecting, organizing, and presenting information or results in a structured form for communication or documentation.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001034 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001034 obo:BFO_0000015)
+
+# Class: co:PMD_0001035 (angle)
+
+AnnotationAssertion(rdfs:label co:PMD_0001035 "angle"@en)
+AnnotationAssertion(skos:definition co:PMD_0001035 "A property that represents the measure of rotation or inclination between two intersecting lines or planes, independent of the size of the object.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001035 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001035 obo:BFO_0000145)
+
+# Class: co:PMD_0001036 (uncertainty)
+
+AnnotationAssertion(rdfs:label co:PMD_0001036 "uncertainty"@en)
+AnnotationAssertion(skos:definition co:PMD_0001036 "A quantitative indication of the doubt about a measurement result, expressing the range within which the true value is expected to lie.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001036 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001036 obo:BFO_0000145)
+
+# Class: co:PMD_0001037 (device designation)
+
+AnnotationAssertion(rdfs:label co:PMD_0001037 "device designation"@en)
+AnnotationAssertion(skos:definition co:PMD_0001037 "an identifier assigned to distinguish and reference a specific device.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001037 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001037 obo:IAO_0020000)
+
+# Class: co:PMD_0001038 (project designation)
+
+AnnotationAssertion(rdfs:label co:PMD_0001038 "project designation"@en)
+AnnotationAssertion(skos:definition co:PMD_0001038 "an identifier assigned to distinguish and reference a specific project.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001038 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001038 obo:IAO_0020000)
+
+# Class: co:PMD_0001039 (calibration process)
+
+AnnotationAssertion(rdfs:label co:PMD_0001039 "calibration process"@en)
+AnnotationAssertion(skos:definition co:PMD_0001039 "A process of comparing measurement values delivered by an instrument or system with known reference standards to ensure accuracy and traceability.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001039 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001039 obo:OBI_0000011)
+
+# Class: co:PMD_0001040 (expriment designing process)
+
+AnnotationAssertion(rdfs:label co:PMD_0001040 "expriment designing process"@en)
+AnnotationAssertion(skos:definition co:PMD_0001040 "A planned process of planning and structuring experimental methods, conditions, and variables to reliably test hypotheses or obtain data.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001040 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001040 obo:OBI_0000011)
+
+# Class: co:PMD_0001041 (measuring process)
+
+AnnotationAssertion(rdfs:label co:PMD_0001041 "measuring process"@en)
+AnnotationAssertion(skos:definition co:PMD_0001041 "A planned process of determining the value of a physical quantity by comparing it with a defined unit or standard.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001041 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001041 obo:OBI_0000011)
+
+# Class: co:PMD_0001042 (test piece preparation process)
+
+AnnotationAssertion(obo:IAO_0000119 co:PMD_0001042 "https://www.britannica.com/science/sample-preparation")
+AnnotationAssertion(rdfs:label co:PMD_0001042 "test piece preparation process"@en)
+AnnotationAssertion(skos:definition co:PMD_0001042 "A planned processes in which a representative piece of material is extracted from a larger amount and readied for analysis. ")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001042 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001042 obo:OBI_0000011)
+
+# Class: co:PMD_0001043 (verification process)
+
+AnnotationAssertion(rdfs:label co:PMD_0001043 "verification process"@en)
+AnnotationAssertion(skos:definition co:PMD_0001043 "A process of evaluating whether a system, component, or result meets specified requirements or standards.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001043 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001043 obo:OBI_0000011)
+
+# Class: co:PMD_0001044 (date value specification)
+
+AnnotationAssertion(rdfs:label co:PMD_0001044 "date value specification"@en)
+AnnotationAssertion(skos:definition co:PMD_0001044 "A datum that represents a date or time interval associated with another specification.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001044 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001044 obo:OBI_0001933)
+
+# Class: co:PMD_0001045 (calculating process)
+
+AnnotationAssertion(rdfs:label co:PMD_0001045 "calculating process"@en)
+AnnotationAssertion(skos:definition co:PMD_0001045 "A process in which numerical or symbolic operations are performed to derive a result from given data or parameters.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001045 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001045 co:PMD_0000583)
+
+# Class: co:PMD_0001046 (depth)
+
+AnnotationAssertion(rdfs:label co:PMD_0001046 "depth"@en)
+AnnotationAssertion(skos:definition co:PMD_0001046 "The distance from a reference surface or point to a specific point or feature along a perpendicular or defined direction.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001046 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001046 co:PMD_0020132)
+
+# Class: co:PMD_0001047 (diagonal)
+
+AnnotationAssertion(rdfs:label co:PMD_0001047 "diagonal"@en)
+AnnotationAssertion(skos:definition co:PMD_0001047 "A straight line connecting two non-adjacent corners or vertices of a polygon.")
+AnnotationAssertion(co:PMD_0001032 co:PMD_0001047 <https://github.com/materialdigital/core-ontology/issues/278>)
+SubClassOf(co:PMD_0001047 co:PMD_0020132)
 
 # Class: co:PMD_0001998 (cutting device)
 
@@ -7930,44 +8051,44 @@ SubClassOf(co:PMD_0020171 obo:BFO_0000146)
 
 # Class: co:PMD_0020172 (sheet)
 
-AnnotationAssertion(rdfs:label co:PMD_0020172 "sheet"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020172 "sheet"@en)
 AnnotationAssertion(skos:definition co:PMD_0020172 "A plate is a thin rectangular object that may bear a semi finished product role. At the same time it is a material."@en)
 SubClassOf(co:PMD_0020172 obo:BFO_0000030)
 
 # Class: co:PMD_0020173 (billet)
 
-AnnotationAssertion(rdfs:label co:PMD_0020173 "billet"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020173 "billet"@en)
 AnnotationAssertion(skos:definition co:PMD_0020173 "An billet is a relatively compact object that may bear a semi finished product role. At the same time it is a material."@en)
 SubClassOf(co:PMD_0020173 obo:BFO_0000030)
 
 # Class: co:PMD_0020174 (foil)
 
-AnnotationAssertion(rdfs:label co:PMD_0020174 "foil"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020174 "foil"@en)
 AnnotationAssertion(skos:definition co:PMD_0020174 "A plate is a very thin rectangular object that may bear a semi finished product role. At the same time it is a material."@en)
 SubClassOf(co:PMD_0020174 obo:BFO_0000030)
 
 # Class: co:PMD_0020175 (coil (coiled sheet))
 
 AnnotationAssertion(rdfs:comment co:PMD_0020175 "Coils may have several sheets that are joined together."@en)
-AnnotationAssertion(rdfs:label co:PMD_0020175 "coil (coiled sheet)"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020175 "coil (coiled sheet)"@en)
 AnnotationAssertion(skos:definition co:PMD_0020175 "A coil is an object that has part some sheets or foils."@en)
 SubClassOf(co:PMD_0020175 obo:BFO_0000030)
 
 # Class: co:PMD_0020176 (plate)
 
-AnnotationAssertion(rdfs:label co:PMD_0020176 "plate"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020176 "plate"@en)
 AnnotationAssertion(skos:definition co:PMD_0020176 "A plate is a thick rectangular object that may bear a semi finished product role. At the same time it is a material."@en)
 SubClassOf(co:PMD_0020176 obo:BFO_0000030)
 
 # Class: co:PMD_0020177 (bar)
 
-AnnotationAssertion(rdfs:label co:PMD_0020177 "bar"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020177 "bar"@en)
 AnnotationAssertion(skos:definition co:PMD_0020177 "A bar is a long object with rectangular section that may bear a semi finished product role. At the same time it is a material."@en)
 SubClassOf(co:PMD_0020177 obo:BFO_0000030)
 
 # Class: co:PMD_0020178 (rod)
 
-AnnotationAssertion(rdfs:label co:PMD_0020178 "rod"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020178 "rod"@en)
 AnnotationAssertion(skos:definition co:PMD_0020178 "A rod is a long object with oval or round section that may bear a semi finished product role. At the same time it is a material."@en)
 SubClassOf(co:PMD_0020178 obo:BFO_0000030)
 
@@ -7980,19 +8101,19 @@ SubClassOf(co:PMD_0020179 obo:BFO_0000030)
 
 # Class: co:PMD_0020180 (tube)
 
-AnnotationAssertion(rdfs:label co:PMD_0020180 "tube"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020180 "tube"@en)
 AnnotationAssertion(skos:definition co:PMD_0020180 "A tube is a long object with a hollow section and moderate wall thickness that may bear a semi finished product role. At the same time it is a material."@en)
 SubClassOf(co:PMD_0020180 obo:BFO_0000030)
 
 # Class: co:PMD_0020181 (pipe)
 
-AnnotationAssertion(rdfs:label co:PMD_0020181 "pipe"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020181 "pipe"@en)
 AnnotationAssertion(skos:definition co:PMD_0020181 "A tube is a long object with a hollow section and pronounced wall thickness that may bear a semi finished product role. At the same time it is a material."@en)
 SubClassOf(co:PMD_0020181 obo:BFO_0000030)
 
 # Class: co:PMD_0020182 (profile (semi finished product))
 
-AnnotationAssertion(rdfs:label co:PMD_0020182 "profile (semi finished product)"@de)
+AnnotationAssertion(rdfs:label co:PMD_0020182 "profile (semi finished product)"@en)
 AnnotationAssertion(skos:definition co:PMD_0020182 "A profile is a long object with determined section shape that may bear a semi finished product role. At the same time it is a material."@en)
 SubClassOf(co:PMD_0020182 obo:BFO_0000030)
 
@@ -8131,7 +8252,7 @@ SubClassOf(co:PMD_0025004 co:PMD_0000852)
 AnnotationAssertion(rdfs:label co:PMD_0025005 "3D"@en)
 AnnotationAssertion(skos:definition co:PMD_0025005 "A three-dimensional information content entity is a representation or analysis, commonly applied in studying material properties in its volume or describing a dependency of one variable on two other variables."@en)
 AnnotationAssertion(skos:example co:PMD_0025005 "Orientation distribution function (ODF), potential energy landscape"@en)
-SubClassOf(co:PMD_0025005 obo:IAO_0000027)
+SubClassOf(co:PMD_0025005 obo:IAO_0000030)
 
 # Class: co:PMD_0025007 (frequency)
 
@@ -9419,12 +9540,10 @@ SubClassOf(co:PMD_0060008 obo:IAO_0000104)
 
 # Class: co:PMD_0060009 (specification datum)
 
-AnnotationAssertion(rdfs:comment co:PMD_0060009 "The intend of the specification datum is to express the \"Sollwert\" of some qualitiy or behavioral material property. Then, the specification datum can be further specified by  some value specification."@en)
 AnnotationAssertion(rdfs:label co:PMD_0060009 "specification datum"@en)
-AnnotationAssertion(skos:definition co:PMD_0060009 "Specification datum is a data item that provides an information of a setpoint of some value, i.e., it is an intended value."@en)
-AnnotationAssertion(skos:example co:PMD_0060009 "The setpoint value of a ultimate tensile strength of some steel material"@en)
+AnnotationAssertion(skos:definition co:PMD_0060009 "A data item that provides specification for entities")
 AnnotationAssertion(co:PMD_0000060 co:PMD_0060009 "true"^^xsd:boolean)
-SubClassOf(co:PMD_0060009 obo:IAO_0000033)
+SubClassOf(co:PMD_0060009 obo:IAO_0000027)
 
 # Class: co:PMD_0200000 (compression molding)
 
