@@ -79,7 +79,6 @@ Declaration(Class(:TTO_0000059))
 Declaration(Class(:TTO_0000060))
 Declaration(Class(:TTO_0050000))
 Declaration(Class(:TTO_1000000))
-Declaration(Class(:TTO_1000001))
 Declaration(ObjectProperty(pmd:relatesTo))
 Declaration(DataProperty(<http://www.w3.org/ns/prov#value>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
@@ -245,7 +244,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000015 "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(:TTO_0000015 pmd:PMD_0050051)
 
-# Class: :TTO_0000016 (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
+# Class: :TTO_0000016 (estimated strain rate over the parallel length)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000016 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000016 "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -397,7 +396,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (original thickness)
+# Class: :TTO_0000029 (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
@@ -487,7 +486,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000035 "DIN EN ISO 6892-1:2019"@e
 SubClassOf(:TTO_0000035 :TTO_0000004)
 SubClassOf(:TTO_0000035 ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000028))
 
-# Class: :TTO_0000036 (percentage permanent extension)
+# Class: :TTO_0000036 (Bleibende Extensometer-Dehnung)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000036 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000036 "Bleibende Extensometer-Dehnung"@de)
@@ -703,7 +702,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000057 "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(:TTO_0000057 pmd:PMD_0000008)
 
-# Class: :TTO_0000058 (Umschaltpunkt der Prüfgeschwindigkeit)
+# Class: :TTO_0000058 (transition point testing rate)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000058 "Umschaltpunkt der Prüfgeschwindigkeit"@de)
@@ -749,16 +748,6 @@ AnnotationAssertion(rdfs:seeAlso :TTO_1000000 "https://www.zwickroell.com/indust
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_1000000 "Streckgrenzenverhältnis ist eine mechanische Eigenschaft, die als Verhältnis zwischen der Dehngrenze Rp0.2 und der Zugfestigkeit Rm bestimmt wird."@de)
 AnnotationAssertion(pmd:symbol :TTO_1000000 "Rp0.2 / Rm")
 SubClassOf(:TTO_1000000 pmd:PMD_0000848)
-
-# Class: :TTO_1000001 (Dehngrenze)
-
-AnnotationAssertion(rdfs:label :TTO_1000001 "Dehngrenze"@de)
-AnnotationAssertion(rdfs:label :TTO_1000001 "offset yield point"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_1000001 "Die Dehngrenze ist eine mechanische Eigenschaft, die der Zugspannung im einaxialen Zugversuch, bei der die plastische Extensometer-Dehnung einem Prozentanteil von 0,2 % der Extensometer-Messlänge entspricht. Die Dehngrenze wird hauptsächlich für Werkstoffe verwendet, die keine ausgeprägte Streckgrenze aufweisen."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_1000001 "The offset yield point is a mechanical property, which characterizes the tensile stress in a uniaxial tensile test, at which the plastic elongation corresponds to a percentage of 0.2% of the extensometer gauge length. The offset yield point is mainly used for materials that do not have a pronounced yield strength."@en)
-AnnotationAssertion(pmd:definitionSource :TTO_1000001 "https://www.zwickroell.com/de/branchen/werkstoffpruefung-materialpruefung/zugversuch/streckgrenze/")
-AnnotationAssertion(pmd:symbol :TTO_1000001 "Rp0.2")
-SubClassOf(:TTO_1000001 :TTO_0000009)
 
 
 )
