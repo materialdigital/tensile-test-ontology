@@ -16,12 +16,8 @@ http://purl.org/dc/terms/license
 http://purl.org/dc/terms/title
 http://www.w3.org/2004/02/skos/core#altLabel
 http://www.w3.org/2004/02/skos/core#definition
-https://w3id.org/pmd/TTO_0000000
-https://w3id.org/pmd/TTO_0000001
-https://w3id.org/pmd/TTO_0000002
 https://w3id.org/pmd/co/definitionSource
 https://w3id.org/pmd/co/relatesTo
 https://w3id.org/pmd/co/symbol
-term
 http://www.geneontology.org/formats/oboInOwl#SubsetProperty
 http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty

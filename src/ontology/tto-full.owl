@@ -4664,53 +4664,6 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- https://w3id.org/pmd/TTO_0000000 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/TTO_0000000">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
-        <rdfs:label xml:lang="en">broken tested test piece role</rdfs:label>
-        <skos:definition xml:lang="en">The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/TTO_0000001 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/TTO_0000001">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
-        <rdfs:comment xml:lang="en">An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage.</rdfs:comment>
-        <rdfs:label xml:lang="en">unbroken tested test piece role</rdfs:label>
-        <skos:definition xml:lang="en">The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/TTO_0000002 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/TTO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="de">Ergebnis eines Zugversuches</rdfs:label>
-        <rdfs:label xml:lang="en">tensile test result</rdfs:label>
-        <skos:definition xml:lang="en">Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format.</skos:definition>
-        <skos:definition xml:lang="de">Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0000000 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000000">
@@ -4802,7 +4755,7 @@ granularity. At these coarser levels, the individual molecules cannot be differe
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000950"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid182"/>
+        <rdfs:subClassOf rdf:nodeID="genid177"/>
         <rdfs:comment xml:lang="en">A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
@@ -4815,7 +4768,7 @@ Extensive properties that depend on the object being tested rather than on the p
         <skos:definition xml:lang="en">a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid182">
+    <owl:Restriction rdf:nodeID="genid177">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
         <owl:someValuesFrom>
             <owl:Class>
@@ -4832,7 +4785,7 @@ Extensive properties that depend on the object being tested rather than on the p
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid182"/>
+        <owl:annotatedTarget rdf:nodeID="genid177"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
@@ -10212,7 +10165,7 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/TTO_0000002"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10227,8 +10180,8 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="https://w3id.org/pmd/TTO_0000000"/>
-                                            <rdf:Description rdf:about="https://w3id.org/pmd/TTO_0000001"/>
+                                            <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000006"/>
+                                            <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000007"/>
                                         </owl:unionOf>
                                     </owl:Class>
                                 </owl:someValuesFrom>
@@ -13584,21 +13537,21 @@ Depending on the interconnectedness of the pores the foam is open- or closed-cel
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:nodeID="genid944"/>
+        <rdfs:subClassOf rdf:nodeID="genid939"/>
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
         <rdfs:label xml:lang="en">intensive quality</rdfs:label>
         <skos:altLabel xml:lang="en">Point property</skos:altLabel>
         <skos:definition xml:lang="en">An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid944">
+    <owl:Restriction rdf:nodeID="genid939">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
         <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid944"/>
+        <owl:annotatedTarget rdf:nodeID="genid939"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
@@ -18704,6 +18657,53 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
         <skos:definition xml:lang="en">Increase in the extensometer gauge length at any moment during a test</skos:definition>
         <skos:definition xml:lang="de">Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs</skos:definition>
         <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000006 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000006">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
+        <rdfs:label xml:lang="en">broken tested test piece role</rdfs:label>
+        <skos:definition xml:lang="en">The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000007 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000007">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
+        <rdfs:comment xml:lang="en">An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage.</rdfs:comment>
+        <rdfs:label xml:lang="en">unbroken tested test piece role</rdfs:label>
+        <skos:definition xml:lang="en">The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Ergebnis eines Zugversuches</rdfs:label>
+        <rdfs:label xml:lang="en">tensile test result</rdfs:label>
+        <skos:definition xml:lang="en">Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format.</skos:definition>
+        <skos:definition xml:lang="de">Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung.</skos:definition>
     </owl:Class>
     
 

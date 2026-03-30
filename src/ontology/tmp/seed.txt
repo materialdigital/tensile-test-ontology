@@ -28,9 +28,6 @@ https://orcid.org/0000-0002-3717-7104
 https://orcid.org/0000-0002-7094-5371
 https://orcid.org/0000-0002-9014-2920
 https://orcid.org/0000-0003-4971-3645
-https://w3id.org/pmd/TTO_0000000
-https://w3id.org/pmd/TTO_0000001
-https://w3id.org/pmd/TTO_0000002
 https://w3id.org/pmd/co/2.0.8/CrossSectionArea
 https://w3id.org/pmd/co/2.0.8/Extension
 https://w3id.org/pmd/co/2.0.8/PercentageExtension
@@ -93,6 +90,9 @@ https://w3id.org/pmd/tto/StressRate
 https://w3id.org/pmd/tto/TTO_0000001
 https://w3id.org/pmd/tto/TTO_0000004
 https://w3id.org/pmd/tto/TTO_0000005
+https://w3id.org/pmd/tto/TTO_0000006
+https://w3id.org/pmd/tto/TTO_0000007
+https://w3id.org/pmd/tto/TTO_0000008
 https://w3id.org/pmd/tto/TTO_0000009
 https://w3id.org/pmd/tto/TTO_0000011
 https://w3id.org/pmd/tto/TTO_0000012

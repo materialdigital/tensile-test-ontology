@@ -266,47 +266,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- https://w3id.org/pmd/co/relatesTo -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/relatesTo"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/pmd/TTO_0000000 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/TTO_0000000">
-        <rdfs:label xml:lang="en">broken tested test piece role</rdfs:label>
-        <skos:definition xml:lang="en">The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/TTO_0000001 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/TTO_0000001">
-        <rdfs:comment xml:lang="en">An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage.</rdfs:comment>
-        <rdfs:label xml:lang="en">unbroken tested test piece role</rdfs:label>
-        <skos:definition xml:lang="en">The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pmd/TTO_0000002 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/TTO_0000002">
-        <rdfs:label xml:lang="de">Ergebnis eines Zugversuches</rdfs:label>
-        <rdfs:label xml:lang="en">tensile test result</rdfs:label>
-        <skos:definition xml:lang="en">Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format.</skos:definition>
-        <skos:definition xml:lang="de">Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung.</skos:definition>
-    </owl:Class>
 </rdf:RDF>
 
 

@@ -27,12 +27,12 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Tensile Test Ontology (TTO)")
 
-Declaration(Class(<https://w3id.org/pmd/TTO_0000000>))
-Declaration(Class(<https://w3id.org/pmd/TTO_0000001>))
-Declaration(Class(<https://w3id.org/pmd/TTO_0000002>))
 Declaration(Class(:TTO_0000001))
 Declaration(Class(:TTO_0000004))
 Declaration(Class(:TTO_0000005))
+Declaration(Class(:TTO_0000006))
+Declaration(Class(:TTO_0000007))
+Declaration(Class(:TTO_0000008))
 Declaration(Class(:TTO_0000009))
 Declaration(Class(:TTO_0000011))
 Declaration(Class(:TTO_0000012))
@@ -95,28 +95,6 @@ Declaration(AnnotationProperty(pmd:symbol))
 #   Classes
 ############################
 
-# Class: <https://w3id.org/pmd/TTO_0000000> (broken tested test piece role)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000000> "broken tested test piece role"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000000> "The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test."@en)
-SubClassOf(<https://w3id.org/pmd/TTO_0000000> pmd:PMD_0000975)
-
-# Class: <https://w3id.org/pmd/TTO_0000001> (unbroken tested test piece role)
-
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/TTO_0000001> "An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage."@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000001> "unbroken tested test piece role"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000001> "The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test."@en)
-SubClassOf(<https://w3id.org/pmd/TTO_0000001> pmd:PMD_0000975)
-
-# Class: <https://w3id.org/pmd/TTO_0000002> (Ergebnis eines Zugversuches)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000002> "Ergebnis eines Zugversuches"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/TTO_0000002> "tensile test result"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000002> "Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/TTO_0000002> "Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung."@de)
-SubClassOf(<https://w3id.org/pmd/TTO_0000002> <http://purl.obolibrary.org/obo/IAO_0000027>)
-SubClassOf(<https://w3id.org/pmd/TTO_0000002> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000109>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> pmd:PMD_0000974)))
-
 # Class: pmd:PMD_0000973 (tensile testing machine)
 
 SubClassOf(pmd:PMD_0000973 ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> pmd:PMD_0000636) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> pmd:PMD_0000820)))
@@ -125,8 +103,8 @@ SubClassOf(pmd:PMD_0000973 ObjectIntersectionOf(ObjectSomeValuesFrom(<http://pur
 
 SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> pmd:PMD_0000975))
 SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> pmd:PMD_0000975))))
-SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <https://w3id.org/pmd/TTO_0000002>))
-SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> ObjectUnionOf(<https://w3id.org/pmd/TTO_0000000> <https://w3id.org/pmd/TTO_0000001>)))))
+SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> :TTO_0000008))
+SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> ObjectUnionOf(:TTO_0000006 :TTO_0000007)))))
 SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> pmd:PMD_0000973))
 
 # Class: :TTO_0000001 (load cell maximum force)
@@ -175,6 +153,28 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000000
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000005 "Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs"@de)
 AnnotationAssertion(pmd:definitionSource :TTO_0000005 "DIN EN ISO 6892-1:2019")
 SubClassOf(:TTO_0000005 pmd:PMD_0000848)
+
+# Class: :TTO_0000006 (broken tested test piece role)
+
+AnnotationAssertion(rdfs:label :TTO_0000006 "broken tested test piece role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000006 "The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test."@en)
+SubClassOf(:TTO_0000006 pmd:PMD_0000975)
+
+# Class: :TTO_0000007 (unbroken tested test piece role)
+
+AnnotationAssertion(rdfs:comment :TTO_0000007 "An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage."@en)
+AnnotationAssertion(rdfs:label :TTO_0000007 "unbroken tested test piece role"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000007 "The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test."@en)
+SubClassOf(:TTO_0000007 pmd:PMD_0000975)
+
+# Class: :TTO_0000008 (tensile test result)
+
+AnnotationAssertion(rdfs:label :TTO_0000008 "Ergebnis eines Zugversuches"@de)
+AnnotationAssertion(rdfs:label :TTO_0000008 "tensile test result"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000008 "Data item that represents any result generated during or after a tensile test, independent of its structure, granularity, or encoding format."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000008 "Datenobjekt, das ein beliebiges Ergebnis beschreibt, das während oder nach einem Zugversuch erzeugt wird, unabhängig von Struktur, Detaillierungsgrad oder Format der Darstellung."@de)
+SubClassOf(:TTO_0000008 <http://purl.obolibrary.org/obo/IAO_0000027>)
+SubClassOf(:TTO_0000008 ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000109>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> pmd:PMD_0000974)))
 
 # Class: :TTO_0000009 (Streckgrenze)
 
@@ -256,7 +256,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000016 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000016 "e^._L_c"@en)
 SubClassOf(:TTO_0000016 pmd:PMD_0000008)
 
-# Class: :TTO_0000017 (Extensometer-Messlänge)
+# Class: :TTO_0000017 (extensometer gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)
@@ -702,7 +702,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000057 "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(:TTO_0000057 pmd:PMD_0000008)
 
-# Class: :TTO_0000058 (transition point testing rate)
+# Class: :TTO_0000058 (Umschaltpunkt der Prüfgeschwindigkeit)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000058 "Umschaltpunkt der Prüfgeschwindigkeit"@de)
