@@ -16,7 +16,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/tto/tto-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-03-30/tto-full.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-04-01/tto-full.owl"/>
         <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
@@ -31,7 +31,7 @@ Die TTO wurde im Rahmen des PMD-Projekts entwickelt. Die TTO bietet Konzeptualis
 The TTO was developed in the frame of the PMD project. The TTO provides conceptualizations valid for the description of tensile tests and corresponding data in accordance with the respective test standard. By using TTO for storing tensile test data, all data will be well structured and based on a common vocabulary agreed on by an expert group (generation of FAIR data) which will lead to enhanced data interoperability. Due to the import of the PMD core ontology (PMDco), the interoperability of tensile test data is enhanced and querying in combination with other aspects and data within the broad field of material science and engineering (MSE) is facilitated.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Tensile Test Ontology (TTO)</dcterms:title>
-        <owl:versionInfo>2026-03-30</owl:versionInfo>
+        <owl:versionInfo>2026-04-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -18723,6 +18723,20 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     
 
 
+    <!-- https://w3id.org/pmd/tto/TTO_0000010 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Kraft bei der unteren Streckgrenze</rdfs:label>
+        <rdfs:label xml:lang="en">force at lower yield strength</rdfs:label>
+        <skos:definition xml:lang="en">A force at lower yield strength is a force that is measured at the lower yield point (lower yield strength condition) during a tensile test.</skos:definition>
+        <skos:definition xml:lang="de">Kraft bei unterer Streckgrenze (F_eL) ist eine Kraft, die am Punkt der unteren Streckgrenze (untere Streckgrenzen‑Bedingung) während eines Zugversuchs gemessen wird.</skos:definition>
+        <pmd:symbol>F_eL</pmd:symbol>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/tto/TTO_0000011 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000011">
@@ -18883,6 +18897,20 @@ Note: For the determination of several properties which are based (partly or com
     
 
 
+    <!-- https://w3id.org/pmd/tto/TTO_0000021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Kraft bei der oberer Streckgrenze</rdfs:label>
+        <rdfs:label xml:lang="en">force at upper yield strength</rdfs:label>
+        <skos:definition xml:lang="de">Die Kraft bei oberer Streckgrenze (F_eH) ist eine Kraft, die am Punkt der oberen Streckgrenze gemessen wird, d. h. bevor der erste Kraftabfall während eines Zugversuchs auftritt.</skos:definition>
+        <skos:definition xml:lang="en">Force at upper yield strength is a force that is measured at the upper yield point (upper yield strength condition), i.e., prior to the first decrease in force during a tensile test.</skos:definition>
+        <pmd:symbol>F_eH</pmd:symbol>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/tto/TTO_0000022 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000022">
@@ -18965,6 +18993,20 @@ Note: It is typically measured perpendicular to the direction of the applied for
 
 Note: It is recommended to measure the original cross-sectional area of the parallel length to an accuracy of ±2 %. However, measuring the original cross-sectional area of the parallel length with an accuracy of ±2 % on small diameter round test pieces, or test pieces with other cross-sectional geometries, may not be possible.</skos:definition>
         <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000025 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000025">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Kraft bei Dehngrenze bei plastischer Extensometer-Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">force at proof strength plastic extension</rdfs:label>
+        <skos:definition xml:lang="en">A force at proof strength plastic extension is a force that is measured at the proof‑strength point defined by a specified plastic extensometer extension during a tensile test.</skos:definition>
+        <skos:definition xml:lang="de">Die Kraft bei Dehngrenze (plastische Extensometer‑Dehnung) ist eine Kraft, die am Dehngrenzen‑Punkt gemessen wird, der durch eine vorgegebene plastische Extensometer‑Dehnung während eines Zugversuchs definiert ist.</skos:definition>
+        <pmd:symbol>F_p</pmd:symbol>
     </owl:Class>
     
 
@@ -19320,6 +19362,20 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     
 
 
+    <!-- https://w3id.org/pmd/tto/TTO_0000042 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Kraft bei Dehngrenze bei plastischer Extensometer-Dehnung Rp02</rdfs:label>
+        <rdfs:label xml:lang="en">force at proof strength plastic extension f02</rdfs:label>
+        <skos:definition xml:lang="de">Die Kraft bei Dehngrenze Rp0,2 (F_p_0,2) ist eine Kraft bei Dehngrenze (plastische Extensometer‑Dehnung), die an dem Punkt gemessen wird, an dem die vorgegebene plastische Extensometer‑Dehnung 0,2 % der Extensometer‑Messlänge während eines Zugversuchs beträgt.</skos:definition>
+        <skos:definition xml:lang="en">Force at proof strength plastic extension f02 is a force at proof strength plastic extension that is measured at the point where the specified plastic extensometer extension is 0.2% of the extensometer gauge length during a tensile test.</skos:definition>
+        <pmd:symbol>F_p_0.2</pmd:symbol>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/tto/TTO_0000043 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000043">
@@ -19410,6 +19466,20 @@ Note: A suffix is added to the subscript to indicate the prescribed percentage, 
         <skos:definition xml:lang="en">stress at which the plastic extension is equal to 0.2 percent of the extensometer gauge length</skos:definition>
         <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
         <pmd:symbol xml:lang="en">R_p_0.2</pmd:symbol>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/tto/TTO_0000048 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000048">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000025"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
+        <rdfs:label xml:lang="de">Kraft bei Dehngrenze bei plastischer Extensometer-Dehnung Rp01</rdfs:label>
+        <rdfs:label xml:lang="en">force at proof strength plastic extension f01</rdfs:label>
+        <skos:definition xml:lang="de">Die Kraft bei Dehngrenze Rp0,1 (F_p_0,1) ist eine Kraft bei Dehngrenze (plastische Extensometer‑Dehnung), die an dem Punkt gemessen wird, an dem die vorgegebene plastische Extensometer‑Dehnung 0,2 % der Extensometer‑Messlänge während eines Zugversuchs beträgt.</skos:definition>
+        <skos:definition xml:lang="en">Force at proof strength plastic extension f01 is a force at proof strength plastic extension that is measured at the point where the specified plastic extensometer extension is 0.1% of the extensometer gauge length during a tensile test.</skos:definition>
+        <pmd:symbol>F_p_0.1</pmd:symbol>
     </owl:Class>
     
 

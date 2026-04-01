@@ -94,6 +94,7 @@ https://w3id.org/pmd/tto/TTO_0000006
 https://w3id.org/pmd/tto/TTO_0000007
 https://w3id.org/pmd/tto/TTO_0000008
 https://w3id.org/pmd/tto/TTO_0000009
+https://w3id.org/pmd/tto/TTO_0000010
 https://w3id.org/pmd/tto/TTO_0000011
 https://w3id.org/pmd/tto/TTO_0000012
 https://w3id.org/pmd/tto/TTO_0000013
@@ -104,9 +105,11 @@ https://w3id.org/pmd/tto/TTO_0000017
 https://w3id.org/pmd/tto/TTO_0000018
 https://w3id.org/pmd/tto/TTO_0000019
 https://w3id.org/pmd/tto/TTO_0000020
+https://w3id.org/pmd/tto/TTO_0000021
 https://w3id.org/pmd/tto/TTO_0000022
 https://w3id.org/pmd/tto/TTO_0000023
 https://w3id.org/pmd/tto/TTO_0000024
+https://w3id.org/pmd/tto/TTO_0000025
 https://w3id.org/pmd/tto/TTO_0000026
 https://w3id.org/pmd/tto/TTO_0000027
 https://w3id.org/pmd/tto/TTO_0000028
@@ -123,11 +126,13 @@ https://w3id.org/pmd/tto/TTO_0000038
 https://w3id.org/pmd/tto/TTO_0000039
 https://w3id.org/pmd/tto/TTO_0000040
 https://w3id.org/pmd/tto/TTO_0000041
+https://w3id.org/pmd/tto/TTO_0000042
 https://w3id.org/pmd/tto/TTO_0000043
 https://w3id.org/pmd/tto/TTO_0000044
 https://w3id.org/pmd/tto/TTO_0000045
 https://w3id.org/pmd/tto/TTO_0000046
 https://w3id.org/pmd/tto/TTO_0000047
+https://w3id.org/pmd/tto/TTO_0000048
 https://w3id.org/pmd/tto/TTO_0000051
 https://w3id.org/pmd/tto/TTO_0000052
 https://w3id.org/pmd/tto/TTO_0000053

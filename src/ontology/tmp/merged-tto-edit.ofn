@@ -52,6 +52,7 @@ Declaration(Class(:TTO_0000006))
 Declaration(Class(:TTO_0000007))
 Declaration(Class(:TTO_0000008))
 Declaration(Class(:TTO_0000009))
+Declaration(Class(:TTO_0000010))
 Declaration(Class(:TTO_0000011))
 Declaration(Class(:TTO_0000012))
 Declaration(Class(:TTO_0000013))
@@ -62,9 +63,11 @@ Declaration(Class(:TTO_0000017))
 Declaration(Class(:TTO_0000018))
 Declaration(Class(:TTO_0000019))
 Declaration(Class(:TTO_0000020))
+Declaration(Class(:TTO_0000021))
 Declaration(Class(:TTO_0000022))
 Declaration(Class(:TTO_0000023))
 Declaration(Class(:TTO_0000024))
+Declaration(Class(:TTO_0000025))
 Declaration(Class(:TTO_0000026))
 Declaration(Class(:TTO_0000027))
 Declaration(Class(:TTO_0000028))
@@ -81,11 +84,13 @@ Declaration(Class(:TTO_0000038))
 Declaration(Class(:TTO_0000039))
 Declaration(Class(:TTO_0000040))
 Declaration(Class(:TTO_0000041))
+Declaration(Class(:TTO_0000042))
 Declaration(Class(:TTO_0000043))
 Declaration(Class(:TTO_0000044))
 Declaration(Class(:TTO_0000045))
 Declaration(Class(:TTO_0000046))
 Declaration(Class(:TTO_0000047))
+Declaration(Class(:TTO_0000048))
 Declaration(Class(:TTO_0000051))
 Declaration(Class(:TTO_0000052))
 Declaration(Class(:TTO_0000053))
@@ -218,6 +223,16 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000000
 AnnotationAssertion(pmd:definitionSource :TTO_0000009 "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(:TTO_0000009 pmd:PMD_0000952)
 
+# Class: :TTO_0000010 (Kraft bei der unteren Streckgrenze)
+
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000010 <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label :TTO_0000010 "Kraft bei der unteren Streckgrenze"@de)
+AnnotationAssertion(rdfs:label :TTO_0000010 "force at lower yield strength"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000010 "A force at lower yield strength is a force that is measured at the lower yield point (lower yield strength condition) during a tensile test."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000010 "Kraft bei unterer Streckgrenze (F_eL) ist eine Kraft, die am Punkt der unteren Streckgrenze (untere Streckgrenzen‑Bedingung) während eines Zugversuchs gemessen wird."@de)
+AnnotationAssertion(pmd:symbol :TTO_0000010 "F_eL")
+SubClassOf(:TTO_0000010 pmd:PMD_0020200)
+
 # Class: :TTO_0000011 (change of transverse dimension)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000011 <https://w3id.org/pmd/tto>)
@@ -275,7 +290,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000015 "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(:TTO_0000015 pmd:PMD_0050051)
 
-# Class: :TTO_0000016 (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
+# Class: :TTO_0000016 (estimated strain rate over the parallel length)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000016 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000016 "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -287,7 +302,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000016 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000016 "e^._L_c"@en)
 SubClassOf(:TTO_0000016 pmd:PMD_0000008)
 
-# Class: :TTO_0000017 (Extensometer-Messlänge)
+# Class: :TTO_0000017 (extensometer gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)
@@ -337,6 +352,16 @@ AnnotationAssertion(rdfs:seeAlso :TTO_0000020 :GaugeLengthMarks)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000020 "Dieses Konzept wird verwendet, um die sichtbaren Markierungen zu beschreiben, die in der Regel während eines Zugversuchs zur Messung der Dehnung an den Prüfkörpern angebracht werden."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000020 "This concept is used to describe the visible markers usually attached to test pieces during a tensile test for elongation / extension measurements."@en)
 SubClassOf(:TTO_0000020 pmd:PMD_0000602)
+
+# Class: :TTO_0000021 (force at upper yield strength)
+
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000021 <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label :TTO_0000021 "Kraft bei der oberer Streckgrenze"@de)
+AnnotationAssertion(rdfs:label :TTO_0000021 "force at upper yield strength"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000021 "Die Kraft bei oberer Streckgrenze (F_eH) ist eine Kraft, die am Punkt der oberen Streckgrenze gemessen wird, d. h. bevor der erste Kraftabfall während eines Zugversuchs auftritt."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000021 "Force at upper yield strength is a force that is measured at the upper yield point (upper yield strength condition), i.e., prior to the first decrease in force during a tensile test."@en)
+AnnotationAssertion(pmd:symbol :TTO_0000021 "F_eH")
+SubClassOf(:TTO_0000021 pmd:PMD_0020200)
 
 # Class: :TTO_0000022 (lower yield strength)
 
@@ -391,6 +416,16 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000024 "DIN EN ISO 6892-1:2019")
 SubClassOf(:TTO_0000024 :TTO_0000012)
 SubClassOf(:TTO_0000024 ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000056) ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000060)) ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000015)))
 
+# Class: :TTO_0000025 (Kraft bei Dehngrenze bei plastischer Extensometer-Dehnung)
+
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000025 <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label :TTO_0000025 "Kraft bei Dehngrenze bei plastischer Extensometer-Dehnung"@de)
+AnnotationAssertion(rdfs:label :TTO_0000025 "force at proof strength plastic extension"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000025 "A force at proof strength plastic extension is a force that is measured at the proof‑strength point defined by a specified plastic extensometer extension during a tensile test."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000025 "Die Kraft bei Dehngrenze (plastische Extensometer‑Dehnung) ist eine Kraft, die am Dehngrenzen‑Punkt gemessen wird, der durch eine vorgegebene plastische Extensometer‑Dehnung während eines Zugversuchs definiert ist."@de)
+AnnotationAssertion(pmd:symbol :TTO_0000025 "F_p")
+SubClassOf(:TTO_0000025 pmd:PMD_0020200)
+
 # Class: :TTO_0000026 (Anfangsquerschnitt innerhalb der parallelen Länge)
 
 AnnotationAssertion(rdfs:comment :TTO_0000026 "Symbol: S_o")
@@ -427,7 +462,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (original thickness)
+# Class: :TTO_0000029 (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
@@ -593,6 +628,16 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000041 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000041 "A_e"@en)
 SubClassOf(:TTO_0000041 :TTO_0000005)
 
+# Class: :TTO_0000042 (force at proof strength plastic extension f02)
+
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000042 <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label :TTO_0000042 "Kraft bei Dehngrenze bei plastischer Extensometer-Dehnung Rp02"@de)
+AnnotationAssertion(rdfs:label :TTO_0000042 "force at proof strength plastic extension f02"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000042 "Die Kraft bei Dehngrenze Rp0,2 (F_p_0,2) ist eine Kraft bei Dehngrenze (plastische Extensometer‑Dehnung), die an dem Punkt gemessen wird, an dem die vorgegebene plastische Extensometer‑Dehnung 0,2 % der Extensometer‑Messlänge während eines Zugversuchs beträgt."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000042 "Force at proof strength plastic extension f02 is a force at proof strength plastic extension that is measured at the point where the specified plastic extensometer extension is 0.2% of the extensometer gauge length during a tensile test."@en)
+AnnotationAssertion(pmd:symbol :TTO_0000042 "F_p_0.2")
+SubClassOf(:TTO_0000042 :TTO_0000025)
+
 # Class: :TTO_0000043 (proof strength)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000043 <https://w3id.org/pmd/tto>)
@@ -661,6 +706,16 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000004
 AnnotationAssertion(pmd:definitionSource :TTO_0000047 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000047 "R_p_0.2"@en)
 SubClassOf(:TTO_0000047 :TTO_0000044)
+
+# Class: :TTO_0000048 (force at proof strength plastic extension f01)
+
+AnnotationAssertion(rdfs:isDefinedBy :TTO_0000048 <https://w3id.org/pmd/tto>)
+AnnotationAssertion(rdfs:label :TTO_0000048 "Kraft bei Dehngrenze bei plastischer Extensometer-Dehnung Rp01"@de)
+AnnotationAssertion(rdfs:label :TTO_0000048 "force at proof strength plastic extension f01"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000048 "Die Kraft bei Dehngrenze Rp0,1 (F_p_0,1) ist eine Kraft bei Dehngrenze (plastische Extensometer‑Dehnung), die an dem Punkt gemessen wird, an dem die vorgegebene plastische Extensometer‑Dehnung 0,2 % der Extensometer‑Messlänge während eines Zugversuchs beträgt."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000048 "Force at proof strength plastic extension f01 is a force at proof strength plastic extension that is measured at the point where the specified plastic extensometer extension is 0.1% of the extensometer gauge length during a tensile test."@en)
+AnnotationAssertion(pmd:symbol :TTO_0000048 "F_p_0.1")
+SubClassOf(:TTO_0000048 :TTO_0000025)
 
 # Class: :TTO_0000051 (strain rate)
 
@@ -733,7 +788,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000057 "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(:TTO_0000057 pmd:PMD_0000008)
 
-# Class: :TTO_0000058 (transition point testing rate)
+# Class: :TTO_0000058 (Umschaltpunkt der Prüfgeschwindigkeit)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000058 "Umschaltpunkt der Prüfgeschwindigkeit"@de)

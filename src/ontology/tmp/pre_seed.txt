@@ -1,10 +1,11 @@
 term
+https://w3id.org/pmd/tto
+https://w3id.org/pmd/co/PMD_0020200
 https://w3id.org/pmd/co/relatesTo
 https://w3id.org/pmd/tto/TTO_0000028
 http://purl.obolibrary.org/obo/BFO_0000051
 http://purl.obolibrary.org/obo/IAO_0000109
 https://w3id.org/pmd/tto/OriginalThickness
-https://w3id.org/pmd/tto
 https://w3id.org/pmd/co/PMD_0050153
 http://purl.obolibrary.org/obo/IAO_0000027
 http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
@@ -14,6 +15,7 @@ https://w3id.org/pmd/co/PMD_0000008
 https://w3id.org/pmd/tto/PercentagePlasticExtensionAtMaximumForce
 https://w3id.org/pmd/tto/TTO_0000005
 https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength
+https://w3id.org/pmd/co/PMD_0000636
 https://w3id.org/pmd/tto/TTO_0000030
 https://w3id.org/pmd/co/PMD_0000974
 https://w3id.org/pmd/tto/TTO_0000043
@@ -35,6 +37,7 @@ https://w3id.org/pmd/tto/GaugeLength
 http://purl.obolibrary.org/obo/OBI_0000312
 http://purl.obolibrary.org/obo/OBI_0000299
 https://w3id.org/pmd/tto/TTO_0000008
+https://w3id.org/pmd/tto/TTO_0000025
 https://w3id.org/pmd/tto/OriginalDiameter
 https://w3id.org/pmd/co/PMD_0050051
 https://w3id.org/pmd/co/PMD_0000975
@@ -43,23 +46,23 @@ http://purl.obolibrary.org/obo/BFO_0000030
 https://w3id.org/pmd/tto/ThicknessAfterFracture
 https://w3id.org/pmd/tto/PercentagePermanentElongation
 https://w3id.org/pmd/tto/CrossheadSeparationRate
+https://w3id.org/pmd/co/PMD_0000820
 http://purl.obolibrary.org/obo/RO_0000086
 https://w3id.org/pmd/tto/ProofStrength
 https://w3id.org/pmd/tto/TTO_0000009
 https://w3id.org/pmd/tto/LowerYieldStrength
-https://w3id.org/pmd/co/PMD_0020200
 https://w3id.org/pmd/tto/StrainRate
 https://w3id.org/pmd/tto/OriginalWidth
 https://w3id.org/pmd/co/PMD_0050154
 https://w3id.org/pmd/tto/YieldStrength
 https://w3id.org/pmd/tto/TTO_0000026
 https://w3id.org/pmd/tto/TTO_0000056
-https://w3id.org/pmd/co/PMD_0000636
 https://w3id.org/pmd/tto/UpperYieldStrength
 https://w3id.org/pmd/co/PMD_0025018
 https://w3id.org/pmd/tto/PercentageReductionOfArea
 https://w3id.org/pmd/tto/ExtensometerGaugeLength
 https://w3id.org/pmd/tto/TTO_0000019
+http://purl.obolibrary.org/obo/BFO_0000055
 http://purl.obolibrary.org/obo/RO_0000087
 https://w3id.org/pmd/tto/TTO_0000044
 https://w3id.org/pmd/tto/Rp01
@@ -81,7 +84,6 @@ https://w3id.org/pmd/tto/OriginalGaugeLength
 https://w3id.org/pmd/tto/TTO_0000060
 http://purl.obolibrary.org/obo/RO_0000057
 https://w3id.org/pmd/co/PMD_0000973
-https://w3id.org/pmd/co/PMD_0000820
 https://w3id.org/pmd/tto/TransitionPoint
 https://w3id.org/pmd/tto/PercentagePermanentExtension
 https://w3id.org/pmd/tto/DiameterAfterFracture
@@ -90,7 +92,6 @@ https://w3id.org/pmd/tto/MaximumForce
 https://w3id.org/pmd/tto/StressRate
 https://w3id.org/pmd/tto/ParallelLength
 https://w3id.org/pmd/co/PMD_0020132
-http://purl.obolibrary.org/obo/BFO_0000055
 https://w3id.org/pmd/tto/WidthAfterFracture
 https://w3id.org/pmd/tto/PercentageTotalExtensionAtFracture
 https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture
@@ -107,6 +108,7 @@ https://w3id.org/pmd/co/2.0.8/Extension
 https://w3id.org/pmd/tto/TTO_0000006
 https://w3id.org/pmd/co/2.0.8/PercentageExtension
 https://w3id.org/pmd/tto/CrossheadSeparation
+https://w3id.org/pmd/tto/TTO_0000021
 https://w3id.org/pmd/co/definitionSource
 https://w3id.org/pmd/tto/TTO_0000058
 https://w3id.org/pmd/tto/TTO_0000037
@@ -117,6 +119,7 @@ https://w3id.org/pmd/tto/TTO_0000053
 https://w3id.org/pmd/tto/TTO_0000032
 https://w3id.org/pmd/tto/TTO_0000011
 https://w3id.org/pmd/tto/TTO_0000040
+https://w3id.org/pmd/tto/TTO_0000048
 http://purl.obolibrary.org/obo/IAO_0000114
 https://w3id.org/pmd/tto/TTO_0000035
 https://w3id.org/pmd/tto/TTO_0000014
@@ -142,6 +145,7 @@ https://w3id.org/pmd/tto/TTO_1000000
 http://purl.org/dc/terms/description
 https://w3id.org/pmd/tto/TTO_0000052
 https://w3id.org/pmd/tto/TTO_0000031
+https://w3id.org/pmd/tto/TTO_0000010
 https://w3id.org/pmd/tto/TTO_0000039
 https://w3id.org/pmd/tto/TTO_0000018
 https://w3id.org/pmd/tto/TTO_0000047
@@ -149,3 +153,4 @@ https://w3id.org/pmd/tto/
 http://purl.org/dc/terms/contributor
 https://w3id.org/pmd/tto/TTO_0000034
 https://w3id.org/pmd/tto/TTO_0000013
+https://w3id.org/pmd/tto/TTO_0000042
