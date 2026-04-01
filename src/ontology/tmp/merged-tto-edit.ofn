@@ -45,6 +45,7 @@ Declaration(Class(pmd:PMD_0040001))
 Declaration(Class(pmd:PMD_0050051))
 Declaration(Class(pmd:PMD_0050153))
 Declaration(Class(pmd:PMD_0050154))
+Declaration(Class(pmd:PMD_0060006))
 Declaration(Class(:TTO_0000001))
 Declaration(Class(:TTO_0000004))
 Declaration(Class(:TTO_0000005))
@@ -147,9 +148,9 @@ SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/
 
 AnnotationAssertion(rdfs:label :TTO_0000001 "Höchstkraft der Kraftmessdose"@de)
 AnnotationAssertion(rdfs:label :TTO_0000001 "load cell maximum force"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "Die Maximalkraft bezeichnet die größte Kraft, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "The maximum force is the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur."@en)
-SubClassOf(:TTO_0000001 pmd:PMD_0020200)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "Die Maximalkraft der Kraftmessdose ist eine Gerätespezifikation, welche die größte Kraft bezeichnet, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "Load cell maximum force is a device specification describing the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur."@en)
+SubClassOf(:TTO_0000001 pmd:PMD_0060006)
 
 # Class: :TTO_0000004 (elongation)
 
@@ -462,7 +463,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (Anfangs-Dicke)
+# Class: :TTO_0000029 (original thickness)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
@@ -788,7 +789,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000057 "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(:TTO_0000057 pmd:PMD_0000008)
 
-# Class: :TTO_0000058 (transition point testing rate)
+# Class: :TTO_0000058 (Umschaltpunkt der Prüfgeschwindigkeit)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000058 "Umschaltpunkt der Prüfgeschwindigkeit"@de)

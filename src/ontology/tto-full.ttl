@@ -13593,11 +13593,11 @@ pmd:PMD_0200008 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000001
 <https://w3id.org/pmd/tto/TTO_0000001> rdf:type owl:Class ;
-                                       rdfs:subClassOf pmd:PMD_0020200 ;
+                                       rdfs:subClassOf pmd:PMD_0060006 ;
                                        rdfs:label "Höchstkraft der Kraftmessdose"@de ,
                                                   "load cell maximum force"@en ;
-                                       skos:definition "Die Maximalkraft bezeichnet die größte Kraft, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können."@de ,
-                                                       "The maximum force is the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur."@en .
+                                       skos:definition "Die Maximalkraft der Kraftmessdose ist eine Gerätespezifikation, welche die größte Kraft bezeichnet, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können."@de ,
+                                                       "Load cell maximum force is a device specification describing the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur."@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000004
