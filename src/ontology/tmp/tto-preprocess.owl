@@ -116,9 +116,9 @@ SubClassOf(pmd:PMD_0000974 ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/
 
 AnnotationAssertion(rdfs:label :TTO_0000001 "Höchstkraft der Kraftmessdose"@de)
 AnnotationAssertion(rdfs:label :TTO_0000001 "load cell maximum force"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "Die Maximalkraft bezeichnet die größte Kraft, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können."@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "The maximum force is the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur."@en)
-SubClassOf(:TTO_0000001 pmd:PMD_0020200)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "Die Maximalkraft der Kraftmessdose ist eine Gerätespezifikation, welche die größte Kraft bezeichnet, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können."@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000001 "Load cell maximum force is a device specification describing the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur."@en)
+SubClassOf(:TTO_0000001 pmd:PMD_0060006)
 
 # Class: :TTO_0000004 (elongation)
 
@@ -259,7 +259,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000001
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000015 "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(:TTO_0000015 pmd:PMD_0050051)
 
-# Class: :TTO_0000016 (estimated strain rate over the parallel length)
+# Class: :TTO_0000016 (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000016 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000016 "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -271,7 +271,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000016 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000016 "e^._L_c"@en)
 SubClassOf(:TTO_0000016 pmd:PMD_0000008)
 
-# Class: :TTO_0000017 (extensometer gauge length)
+# Class: :TTO_0000017 (Extensometer-Messlänge)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)

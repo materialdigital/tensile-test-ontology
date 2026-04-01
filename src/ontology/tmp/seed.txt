@@ -47,6 +47,7 @@ https://w3id.org/pmd/co/PMD_0040001
 https://w3id.org/pmd/co/PMD_0050051
 https://w3id.org/pmd/co/PMD_0050153
 https://w3id.org/pmd/co/PMD_0050154
+https://w3id.org/pmd/co/PMD_0060006
 https://w3id.org/pmd/co/definitionSource
 https://w3id.org/pmd/co/relatesTo
 https://w3id.org/pmd/co/symbol

@@ -18580,11 +18580,11 @@ European Commission: Directorate-General for Research and Innovation, Biodegrada
     <!-- https://w3id.org/pmd/tto/TTO_0000001 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000001">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020200"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0060006"/>
         <rdfs:label xml:lang="de">Höchstkraft der Kraftmessdose</rdfs:label>
         <rdfs:label xml:lang="en">load cell maximum force</rdfs:label>
-        <skos:definition xml:lang="de">Die Maximalkraft bezeichnet die größte Kraft, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können.</skos:definition>
-        <skos:definition xml:lang="en">The maximum force is the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur.</skos:definition>
+        <skos:definition xml:lang="de">Die Maximalkraft der Kraftmessdose ist eine Gerätespezifikation, welche die größte Kraft bezeichnet, die eine Kraftmessdose bei einem Zugversuch zuverlässig und ohne bleibende Beschädigung messen kann. Sie definiert die obere Belastungsgrenze des Sensors, oberhalb derer Messfehler, plastische Verformungen oder ein Ausfall des Messsystems auftreten können.</skos:definition>
+        <skos:definition xml:lang="en">Load cell maximum force is a device specification describing the highest force that a load cell can reliably measure during a tensile test without permanent damage. It defines the upper load limit of the sensor, beyond which measurement errors, plastic deformation, or failure of the system may occur.</skos:definition>
     </owl:Class>
     
 
