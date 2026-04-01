@@ -1,45 +1,55 @@
-PREFIX pmdco: <https://w3id.org/pmd/co/>
-PREFIX obo:   <http://purl.obolibrary.org/obo/>
-PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT DISTINCT ?processLabel 
-       (SAMPLE(?Rp02) AS ?Rp02) (SAMPLE(?Rp02_unit) AS ?Rp02_unit)
-       (SAMPLE(?Rm) AS ?Rm) (SAMPLE(?Rm_unit) AS ?Rm_unit)
-       (SAMPLE(?E) AS ?E) (SAMPLE(?E_unit) AS ?E_unit)
-
-WHERE {
-  ?experiment rdfs:label ?processLabel ;
-              obo:IAO_0000219 ?process .
-
-  # Rp02
-  OPTIONAL {
-    ?process pmdco:PMD_0000016 ?Rp02_quality .
-    ?Rp02_quality obo:IAO_0000417 ?Rp02_smd .
-    ?Rp02_smd pmdco:PMD_0060000 ?Rp02_svs .
+PREFIX pmdco: <https://w3id.org/pmd/co/>PREFIX pmdco: <https://w30136 ?Rp02_q .
+    ?Rp02_q a tto:TTO_0000047 .
     ?Rp02_svs pmdco:PMD_0000006 ?Rp02 .
-    FILTER(CONTAINS(STR(?Rp02_quality), "proofStrength_Rp02"))
     OPTIONAL { ?Rp02_svs pmdco:PMD_0000020 ?Rp02_unit }
   }
 
-  # Rm
+  # --- Rm (tensile strength) ---
+  # class: tto:TTO_0000053 (tensile strength) [2](https://bambund-my.sharepoint.com/personal/markus_schilling_bam_de/Documents/Microsoft%20Copilot-Chatdateien/S355_SPARQL_query.ipynb.txt)
   OPTIONAL {
-    ?process pmdco:PMD_0000016 ?Rm_quality .
-    ?Rm_quality obo:IAO_0000417 ?Rm_smd .
-    ?Rm_smd pmdco:PMD_0060000 ?Rm_svs .
+    ?process obo:OBI_0000299 ?Rm_smd .
+    ?Rm_smd a pmdco:PMD_0000023 ;
+            pmdco:PMD_0060000 ?Rm_svs ;
+            obo:IAO_0000136 ?Rm_q .
+    ?Rm_q a tto:TTO_0000053 .
     ?Rm_svs pmdco:PMD_0000006 ?Rm .
-    FILTER(CONTAINS(STR(?Rm_quality), "tensileStrength_Rm"))
     OPTIONAL { ?Rm_svs pmdco:PMD_0000020 ?Rm_unit }
   }
 
-  # E
+  # --- E (elastic modulus) ---
+  # class: pmdco:PMD_0000618 (elastic modulus) [1](https://bambund-my.sharepoint.com/personal/markus_schilling_bam_de/Documents/Microsoft%20Copilot-Chatdateien/S355_data_tto_pmdco3.ttl.txt)[2](https://bambund-my.sharepoint.com/personal/markus_schilling_bam_de/Documents/Microsoft%20Copilot-Chatdateien/S355_SPARQL_query.ipynb.txt)
   OPTIONAL {
-    ?process pmdco:PMD_0000016 ?E_quality .
-    ?E_quality obo:IAO_0000417 ?E_smd .
-    ?E_smd pmdco:PMD_0060000 ?E_svs .
+    ?process obo:OBI_0000299 ?E_smd .
+    ?E_smd a pmdco:PMD_0000023 ;
+           pmdco:PMD_0060000 ?E_svs ;
+           obo:IAO_0000136 ?E_q .
+    ?E_q a pmdco:PMD_0000618 .
     ?E_svs pmdco:PMD_0000006 ?E .
-    FILTER(CONTAINS(STR(?E_quality), "modulusOfElasticity_E"))
     OPTIONAL { ?E_svs pmdco:PMD_0000020 ?E_unit }
   }
 }
-GROUP BY ?processLabel 
-ORDER BY ?processLabel
+GROUP BY ?processId
+ORDER BY ?processId
+PREFIX tto:   <https://w3id.org/pmd/tto/>
+PREFIX obo:   <http://purl.obolibrary.org/obo/>
+
+SELECT ?processId
+       (SAMPLE(?Rp02) AS ?Rp02) (SAMPLE(?Rp02_unit) AS ?Rp02_unit)
+       (SAMPLE(?Rm)   AS ?Rm)   (SAMPLE(?Rm_unit)   AS ?Rm_unit)
+       (SAMPLE(?E)    AS ?E)    (SAMPLE(?E_unit)    AS ?E_unit)
+WHERE {
+  # --- Parent tensile testing process ---
+  ?process a pmdco:PMD_0000974 .                         
+
+  # --- Process identifier (string) via Identifier pattern ---
+  ?pid a pmdco:PMD_0000017 ;
+       obo:IAO_0000219 ?process ;
+       pmdco:PMD_0060000 ?pid_vs .
+  ?pid_vs pmdco:PMD_0000006 ?processId .
+
+  # --- Rp0.2 (stress at 0.2% plastic extension) ---
+  # class: tto:TTO_0000047 (proof strength plastic extension rp02) [2](https://bambund-my.sharepoint.com/personal/markus_schilling_bam_de/Documents/Microsoft%20Copilot-Chatdateien/S355_SPARQL_query.ipynb.txt)
+  OPTIONAL {
+    ?process obo:OBI_0000299 ?Rp02_smd .
+    ?Rp02_smd a pmdco:PMD_0000023 ;
+              pmdco:PMD_0060000 ?Rp02_svs ;

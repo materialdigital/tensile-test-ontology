@@ -1,14 +1,19 @@
 PREFIX pmdco: <https://w3id.org/pmd/co/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX obo:   <http://purl.obolibrary.org/obo/>
 
 SELECT DISTINCT ?material_tested
 WHERE {
-  # Find the instance describing the material identification
-  ?identifier pmdco:PMD_0060000 ?material_value .
-  FILTER(CONTAINS(STR(?material_value), "_material_identifier_value"))
+  # material entity
+  ?mat pmdco:PMD_0020005 ?mat_part .  # optional: if you want to follow testpiece->material links
+  # simpler: just take any identifier that denotes a material node
+  ?id a pmdco:PMD_0000017 ;
+      obo:IAO_0000219 ?mat ;
+      pmdco:PMD_0060000 ?vs .
 
-  # Get the actual value (literal), regardless of whether it is rdfs:label or rdf:value or similar.
-  ?material_value ?p ?material_tested .
+  # value literal
+  ?vs pmdco:PMD_0000006 ?material_tested .
   FILTER(isLiteral(?material_tested))
+
+  # restrict to the material identifier you created ("Werkstoff")
+  FILTER(CONTAINS(STR(?id), "_material_identifier"))
 }
