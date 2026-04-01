@@ -3,8 +3,6 @@ PREFIX obo:   <http://purl.obolibrary.org/obo/>
 
 SELECT DISTINCT ?material_tested
 WHERE {
-  # material entity
-  ?mat pmdco:PMD_0020005 ?mat_part .  # optional: if you want to follow testpiece->material links
   # simpler: just take any identifier that denotes a material node
   ?id a pmdco:PMD_0000017 ;
       obo:IAO_0000219 ?mat ;

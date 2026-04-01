@@ -1,6 +1,7 @@
 PREFIX pmdco: <https://w3id.org/pmd/co/>
 
-SELECT (COUNT(?process) AS ?numberOfTests)
+SELECT (COUNT(DISTINCT ?process) AS ?numberOfTests)
 WHERE {
   ?process a pmdco:PMD_0000974 .
+  FILTER(CONTAINS(STR(?process), "_process"))
 }

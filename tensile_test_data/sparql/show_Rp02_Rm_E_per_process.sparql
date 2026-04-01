@@ -1,22 +1,22 @@
 PREFIX pmdco: <https://w3id.org/pmd/co/>
 PREFIX tto:   <https://w3id.org/pmd/tto/>
 PREFIX obo:   <http://purl.obolibrary.org/obo/>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?processId
        (SAMPLE(?Rp02)      AS ?Rp02)      (SAMPLE(?Rp02_unit) AS ?Rp02_unit)
        (SAMPLE(?Rm)        AS ?Rm)        (SAMPLE(?Rm_unit)   AS ?Rm_unit)
        (SAMPLE(?E)         AS ?E)         (SAMPLE(?E_unit)    AS ?E_unit)
 WHERE {
-  # --- Parent tensile testing process ---
   ?process a pmdco:PMD_0000974 .
 
-  # --- Process identifier (string) via Identifier pattern ---
+  # Process identifier ONLY (exclude notes etc.)
   ?pid a pmdco:PMD_0000017 ;
        obo:IAO_0000219 ?process ;
-       pmdco:PMD_0060000 ?pid_vs .
+       pmdco:PMD_0060000 ?pid_vs ;
+       rdfs:label "Process identifier" .
   ?pid_vs pmdco:PMD_0000006 ?processId .
 
-  # --- Rp0.2 (proof strength plastic extension rp02) ---
   OPTIONAL {
     ?process obo:OBI_0000299 ?Rp02_smd .
     ?Rp02_smd a pmdco:PMD_0000023 ;
@@ -27,7 +27,6 @@ WHERE {
     OPTIONAL { ?Rp02_svs pmdco:PMD_0000020 ?Rp02_unit }
   }
 
-  # --- Rm (tensile strength) ---
   OPTIONAL {
     ?process obo:OBI_0000299 ?Rm_smd .
     ?Rm_smd a pmdco:PMD_0000023 ;
@@ -38,7 +37,6 @@ WHERE {
     OPTIONAL { ?Rm_svs pmdco:PMD_0000020 ?Rm_unit }
   }
 
-  # --- E (elastic modulus) ---
   OPTIONAL {
     ?process obo:OBI_0000299 ?E_smd .
     ?E_smd a pmdco:PMD_0000023 ;
