@@ -271,7 +271,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000016 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000016 "e^._L_c"@en)
 SubClassOf(:TTO_0000016 pmd:PMD_0000008)
 
-# Class: :TTO_0000017 (Extensometer-Messlänge)
+# Class: :TTO_0000017 (extensometer gauge length)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000017 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000017 "Extensometer-Messlänge"@de)
@@ -431,7 +431,7 @@ AnnotationAssertion(pmd:definitionSource :TTO_0000028 "DIN EN ISO 6892-1:2019"@e
 AnnotationAssertion(pmd:symbol :TTO_0000028 "L_o"@en)
 SubClassOf(:TTO_0000028 :TTO_0000019)
 
-# Class: :TTO_0000029 (original thickness)
+# Class: :TTO_0000029 (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000029 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000029 "Anfangs-Dicke"@de)
@@ -556,7 +556,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000003
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000038 "maximum change in cross-sectional area which has occurred during the test (S_o − S_u), expressed as a percentage of the original cross-sectional area, S_o"@en)
 AnnotationAssertion(pmd:definitionSource :TTO_0000038 "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol :TTO_0000038 "Z")
-SubClassOf(:TTO_0000038 pmd:PMD_0025018)
+SubClassOf(:TTO_0000038 pmd:PMD_0000848)
 SubClassOf(:TTO_0000038 ObjectIntersectionOf(ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000024) ObjectSomeValuesFrom(pmd:relatesTo :TTO_0000026)))
 
 # Class: :TTO_0000039 (percentage total extension at fracture)
@@ -757,7 +757,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_000005
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000057 "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(:TTO_0000057 pmd:PMD_0000008)
 
-# Class: :TTO_0000058 (transition point testing rate)
+# Class: :TTO_0000058 (Umschaltpunkt der Prüfgeschwindigkeit)
 
 AnnotationAssertion(rdfs:isDefinedBy :TTO_0000058 <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label :TTO_0000058 "Umschaltpunkt der Prüfgeschwindigkeit"@de)
