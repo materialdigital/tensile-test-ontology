@@ -42,7 +42,6 @@ https://w3id.org/pmd/co/PMD_0000974
 https://w3id.org/pmd/co/PMD_0000975
 https://w3id.org/pmd/co/PMD_0020132
 https://w3id.org/pmd/co/PMD_0020200
-https://w3id.org/pmd/co/PMD_0025018
 https://w3id.org/pmd/co/PMD_0040001
 https://w3id.org/pmd/co/PMD_0050051
 https://w3id.org/pmd/co/PMD_0050153
