@@ -18834,6 +18834,7 @@ Unit (e.g. SI): mm</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000017">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
+        <obo:IAO_0000116 xml:lang="en">Although the standards definition states it as a property of the extensometer (&quot;... gauge length of the extensometer ...&quot;) this quality (also) applies to the testpieces length between the extensometer tips and is thus a size quality of the testpiece at any time during the measurement.</obo:IAO_0000116>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Extensometer-Messlänge</rdfs:label>
         <rdfs:label xml:lang="en">extensometer gauge length</rdfs:label>

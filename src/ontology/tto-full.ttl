@@ -13794,6 +13794,7 @@ Unit (e.g. SI): mm"""@en ;
 ###  https://w3id.org/pmd/tto/TTO_0000017
 <https://w3id.org/pmd/tto/TTO_0000017> rdf:type owl:Class ;
                                        rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000019> ;
+                                       obo:IAO_0000116 "Although the standards definition states it as a property of the extensometer (\"... gauge length of the extensometer ...\") this quality (also) applies to the testpieces length between the extensometer tips and is thus a size quality of the testpiece at any time during the measurement."@en ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Extensometer-Messlänge"@de ,
                                                   "extensometer gauge length"@en ;
