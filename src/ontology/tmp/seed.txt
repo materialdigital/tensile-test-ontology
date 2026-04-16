@@ -19,6 +19,7 @@ http://purl.org/dc/terms/creator
 http://purl.org/dc/terms/description
 http://purl.org/dc/terms/license
 http://purl.org/dc/terms/title
+http://usefulinc.com/ns/doap#repository
 http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 http://www.w3.org/2004/02/skos/core#altLabel
 http://www.w3.org/2004/02/skos/core#definition

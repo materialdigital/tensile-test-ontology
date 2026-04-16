@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/tto/tto-simple.owl">
         <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-04-16/tto-simple.owl"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1649-6832"/>
+        <terms:contributor>https://orcid.org/0000-0003-1649-6832</terms:contributor>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-7094-5371"/>

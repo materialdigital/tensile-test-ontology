@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/tto/tto-full.owl">
         <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-04-16/tto-full.owl"/>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1649-6832"/>
+        <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-7094-5371"/>
