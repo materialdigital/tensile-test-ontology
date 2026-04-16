@@ -39,10 +39,8 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
 
 ###  http://purl.obolibrary.org/obo/IAO_0000112
 obo:IAO_0000112 rdf:type owl:AnnotationProperty ;
-                obo:IAO_0000115 "A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not." ,
-                                "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
-                obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ,
-                                "IAO" ;
+                obo:IAO_0000115 "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
+                obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:label "example of usage" ,
                            "example of usage"@en .
 
@@ -115,8 +113,7 @@ obo:IAO_0000119 rdf:type owl:AnnotationProperty ;
                 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w" ,
                                 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en ,
                                 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
-                rdfs:label "definition source" ,
-                           "definition source"@en .
+                rdfs:label "definition source"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000232
@@ -230,9 +227,7 @@ skos:definition rdf:type owl:AnnotationProperty ;
 
 
 ###  http://www.w3.org/2004/02/skos/core#example
-skos:example rdf:type owl:AnnotationProperty ;
-             rdfs:label "example"@en ;
-             skos:definition "An example of the use of a concept."@en .
+skos:example rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000060
@@ -622,7 +617,8 @@ obo:IAO_0000039 rdf:type owl:ObjectProperty ;
 
 ###  http://purl.obolibrary.org/obo/IAO_0000136
 obo:IAO_0000136 rdf:type owl:ObjectProperty ;
-                owl:inverseOf pmd:PMD_0000004 ;
+                owl:inverseOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226> ,
+                              pmd:PMD_0000004 ;
                 rdfs:domain obo:IAO_0000030 ;
                 obo:IAO_0000112 "This document is about information artifacts and their representations"@en ;
                 obo:IAO_0000115 "A (currently) primitive relation that relates an information artifact to an entity."@en ;
@@ -700,6 +696,7 @@ Werner suggests a solution based on \"Magnitudes\" a proposal for which we are a
 
 ###  http://purl.obolibrary.org/obo/IAO_0000235
 obo:IAO_0000235 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226> ;
                 rdfs:domain obo:BFO_0000001 ;
                 rdfs:range obo:IAO_0000030 ;
                 obo:IAO_0000115 "inverse of the relation 'denotes'"@en ;
@@ -1164,6 +1161,13 @@ obo:STATO_0000102 rdf:type owl:ObjectProperty ;
                   rdfs:label "executes" .
 
 
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226> rdf:type owl:ObjectProperty ;
+                                                      rdfs:comment "inverse of the relation 'is about'" ;
+                                                      rdfs:label "is subject of"@en ;
+                                                      skos:altLabel "is described by" .
+
+
 ###  https://w3id.org/pmd/co/PMD_0000004
 pmd:PMD_0000004 rdf:type owl:ObjectProperty ;
                 rdfs:label "is subject of"@en ;
@@ -1388,6 +1392,11 @@ pmd:PMD_0001877 rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.obolibrary.org/obo/BFO_0000001
 obo:BFO_0000001 rdf:type owl:Class ;
+                obo:IAO_0000112 "Julius Caesar"@en ,
+                                "Verdi’s Requiem"@en ,
+                                "the Second World War"@en ,
+                                "your body mass index"@en ;
+                obo:IAO_0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81"@en ;
                 rdfs:label "entity"@en ;
                 skos:definition "(Elucidation) An entity is anything that exists or has existed or will exist"@en ;
                 skos:example "Julius Caesar; the Second World War; your body mass index; Verdi's Requiem"@en .
@@ -1405,6 +1414,8 @@ obo:BFO_0000002 rdf:type owl:Class ;
                                    owl:onProperty obo:BFO_0000050 ;
                                    owl:someValuesFrom obo:BFO_0000003
                                  ] ;
+                obo:IAO_0000115 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en ;
+                obo:IAO_0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240"@en ;
                 rdfs:label "continuant"@en ;
                 skos:definition "(Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity"@en ;
                 skos:example "A human being; a tennis ball; a cave; a region of space; someone's temperature"@en .
@@ -1421,6 +1432,7 @@ obo:BFO_0000003 rdf:type owl:Class ;
                                    owl:onProperty obo:BFO_0000050 ;
                                    owl:someValuesFrom obo:BFO_0000002
                                  ] ;
+                obo:IAO_0000115 "An entity that has temporal parts and that happens, unfolds or develops through time."@en ;
                 rdfs:label "occurrent"@en ;
                 skos:definition "(Elucidation) An occurrent is an entity that unfolds itself in time or it is the start or end of such an entity or it is a temporal or spatiotemporal region"@en ;
                 skos:example "As for process, history, process boundary, spatiotemporal region, zero-dimensional temporal region, one-dimensional temporal region, temporal interval, temporal instant."@en .
@@ -1435,6 +1447,17 @@ obo:BFO_0000004 rdf:type owl:Class ;
                                 ] ;
                 owl:disjointWith obo:BFO_0000020 ,
                                  obo:BFO_0000031 ;
+                obo:IAO_0000112 "a chair"@en ,
+                                "a heart"@en ,
+                                "a leg"@en ,
+                                "a molecule"@en ,
+                                "a spatial region"@en ,
+                                "an atom"@en ,
+                                "an orchestra."@en ,
+                                "an organism"@en ,
+                                "the bottom right portion of a human torso"@en ,
+                                "the interior of your mouth"@en ;
+                obo:IAO_0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
                 rdfs:label "independent continuant"@en ;
                 skos:definition "b is an independent continuant =Def b is a continuant & there is no c such that b specifically depends on c or b generically depends on c"@en ;
                 skos:example "An atom; a molecule; an organism; a heart; a chair; the bottom right portion of a human torso; a leg; the interior of your mouth; a spatial region; an orchestra"@en .
@@ -1507,7 +1530,9 @@ obo:BFO_0000015 rdf:type owl:Class ;
                                   owl:onProperty obo:BFO_0000139 ;
                                   owl:allValuesFrom obo:BFO_0000015
                                 ] ;
+                obo:IAO_0000115 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en ;
                 rdfs:label "process"@en ;
+                skos:altLabel "event"@en ;
                 skos:definition "(Elucidation) p is a process means p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en ;
                 skos:example "An act of selling; the life of an organism; a process of sleeping; a process of cell-division; a beating of the heart; a process of meiosis; the taxiing of an aircraft; the programming of a computer"@en .
 
@@ -1516,7 +1541,13 @@ obo:BFO_0000015 rdf:type owl:Class ;
 obo:BFO_0000016 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000017 ;
                 owl:disjointWith obo:BFO_0000023 ;
+                obo:IAO_0000112 "an atom of element X has the disposition to decay to an atom of element Y"@en ,
+                                "certain people have a predisposition to colon cancer"@en ,
+                                "children are innately disposed to categorize objects in certain ways."@en ,
+                                "the cell wall is disposed to filter chemicals in endocytosis and exocytosis"@en ;
+                obo:IAO_0000116 "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type."@en ;
                 rdfs:label "disposition"@en ;
+                skos:altLabel "internally-grounded realizable entity"@en ;
                 skos:definition "(Elucidation) A disposition b is a realizable entity such that if b ceases to exist then its bearer is physically changed & b's realization occurs when and because this bearer is in some special physical circumstances & this realization occurs in virtue of the bearer's physical make-up"@en ;
                 skos:example "An atom of element X has the disposition to decay to an atom of element Y; the cell wall is disposed to transport cellular material through endocytosis and exocytosis; certain people have a predisposition to colon cancer; children are innately disposed to categorize objects in certain ways"@en .
 
@@ -1529,6 +1560,12 @@ obo:BFO_0000017 rdf:type owl:Class ;
                                   owl:allValuesFrom obo:BFO_0000017
                                 ] ;
                 owl:disjointWith obo:BFO_0000019 ;
+                obo:IAO_0000112 "the disposition of this piece of metal to conduct electricity."@en ,
+                                "the disposition of your blood to coagulate"@en ,
+                                "the function of your reproductive organs"@en ,
+                                "the role of being a doctor"@en ,
+                                "the role of this boundary to delineate where Utah and Colorado meet"@en ;
+                obo:IAO_0000115 "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."@en ;
                 rdfs:label "realizable entity"@en ;
                 skos:definition "(Elucidation) A realizable entity is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region & which is of a type some instances of which are realized in processes of a correlated type"@en ;
                 skos:example "The role of being a doctor; the role of this boundary to delineate where Utah and Colorado meet; the function of your reproductive organs; the disposition of your blood to coagulate; the disposition of this piece of metal to conduct electricity"@en .
@@ -1549,6 +1586,12 @@ obo:BFO_0000019 rdf:type owl:Class ;
                                   owl:onProperty obo:BFO_0000050 ;
                                   owl:allValuesFrom obo:BFO_0000019
                                 ] ;
+                obo:IAO_0000112 "the ambient temperature of this portion of air"@en ,
+                                "the color of a tomato"@en ,
+                                "the length of the circumference of your waist"@en ,
+                                "the mass of this piece of gold."@en ,
+                                "the shape of your nose"@en ,
+                                "the shape of your nostril"@en ;
                 rdfs:label "quality"@en ;
                 skos:definition "(Elucidation) A quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized"@en ;
                 skos:example "The colour of a tomato; the ambient temperature of this portion of air; the length of the circumference of your waist; the shape of your nose; the shape of your nostril; the mass of this piece of gold"@en .
@@ -1562,6 +1605,18 @@ obo:BFO_0000020 rdf:type owl:Class ;
                                   owl:allValuesFrom obo:BFO_0000020
                                 ] ;
                 owl:disjointWith obo:BFO_0000031 ;
+                obo:IAO_0000112 "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key"@en ,
+                                "of one-sided specifically dependent continuants: the mass of this tomato"@en ,
+                                "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates."@en ,
+                                "the disposition of this fish to decay"@en ,
+                                "the function of this heart: to pump blood"@en ,
+                                "the mutual dependence of proton donors and acceptors in chemical reactions [79"@en ,
+                                "the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction"@en ,
+                                "the pink color of a medium rare piece of grilled filet mignon at its center"@en ,
+                                "the role of being a doctor"@en ,
+                                "the shape of this hole."@en ,
+                                "the smell of this portion of mozzarella"@en ;
+                obo:IAO_0000115 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en ;
                 rdfs:label "specifically dependent continuant"@en ;
                 skos:definition "b is a specifically dependent continuant =Def b is a continuant & there is some independent continuant c which is not a spatial region & which is such that b specifically depends on c"@en ;
                 skos:example "(with multiple bearers) John's love for Mary; the ownership relation between John and this statue; the relation of authority between John and his subordinates"@en ,
@@ -1571,7 +1626,17 @@ obo:BFO_0000020 rdf:type owl:Class ;
 ###  http://purl.obolibrary.org/obo/BFO_0000023
 obo:BFO_0000023 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000017 ;
+                obo:IAO_0000112 "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married."@en ,
+                                "the priest role"@en ,
+                                "the role of a boundary to demarcate two neighboring administrative territories"@en ,
+                                "the role of a building in serving as a military target"@en ,
+                                "the role of a stone in marking a property boundary"@en ,
+                                "the role of subject in a clinical trial"@en ,
+                                "the student role"@en ;
+                obo:IAO_0000115 "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts."@en ;
+                obo:IAO_0000116 "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives."@en ;
                 rdfs:label "role"@en ;
+                skos:altLabel "externally-grounded realizable entity"@en ;
                 skos:definition "(Elucidation) A role b is a realizable entity such that b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be & b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed"@en ;
                 skos:example "The priest role; the student role; the role of subject in a clinical trial; the role of a stone in marking a property boundary; the role of a boundary to demarcate two neighbouring administrative territories; the role of a building in serving as a military target"@en .
 
@@ -1631,7 +1696,12 @@ obo:BFO_0000031 rdf:type owl:Class ;
                                   owl:onProperty obo:BFO_0000050 ;
                                   owl:allValuesFrom obo:BFO_0000031
                                 ] ;
+                obo:IAO_0000112 "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity."@en ,
+                                "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop"@en ,
+                                "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule."@en ;
+                obo:IAO_0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
                 rdfs:label "generically dependent continuant"@en ;
+                skos:altLabel "g-dependent continuant"@en ;
                 skos:definition "(Elucidation) A generically dependent continuant is an entity that exists in virtue of the fact that there is at least one of what may be multiple copies which is the content or the pattern that multiple copies would share"@en ;
                 skos:example "The pdf file on your laptop; the pdf file that is a copy thereof on my laptop; the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule; the content that is shared by a string of dots and dashes written on a page and the transmitted Morse code signal; the content of a sentence; an engineering blueprint"@en .
 
@@ -1639,6 +1709,10 @@ obo:BFO_0000031 rdf:type owl:Class ;
 ###  http://purl.obolibrary.org/obo/BFO_0000034
 obo:BFO_0000034 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000016 ;
+                obo:IAO_0000112 "the function of a hammer to drive in nails"@en ,
+                                "the function of a heart pacemaker to regulate the beating of a heart through electricity"@en ,
+                                "the function of amylase in saliva to break down starch into sugar"@en ;
+                obo:IAO_0000116 "BFO 2 Reference: In the past, we have distinguished two varieties of function, artifactual function and biological function. These are not asserted subtypes of BFO:function however, since the same function – for example: to pump, to transport – can exist both in artifacts and in biological entities. The asserted subtypes of function that would be needed in order to yield a separate monoheirarchy are not artifactual function, biological function, etc., but rather transporting function, pumping function, etc."@en ;
                 rdfs:label "function"@en ;
                 skos:definition "(Elucidation) A function is a disposition that exists in virtue of its bearer's physical make-up & this physical make-up is something the bearer possesses because it came into being either through evolution (in the case of natural biological entities) or through intentional design (in the case of artefacts) in order to realize processes of a certain sort"@en ;
                 skos:example "The function of a hammer to drive in nails; the function of a heart pacemaker to regulate the beating of a heart through electricity"@en .
@@ -2832,15 +2906,19 @@ obo:IAO_0000030 rdf:type owl:Class ;
                                   owl:onProperty obo:IAO_0000136 ;
                                   owl:someValuesFrom obo:BFO_0000001
                                 ] ;
-                obo:IAO_0000112 "Examples of information content entites include journal articles, data, graphical layouts, and graphs."@en ;
-                obo:IAO_0000115 "A generically dependent continuant that is about some thing."@en ;
+                obo:IAO_0000112 "Examples of information content entites include journal articles, data, graphical layouts, and graphs." ,
+                                "Examples of information content entites include journal articles, data, graphical layouts, and graphs."@en ;
+                obo:IAO_0000115 "A generically dependent continuant that is about some thing."@en ,
+                                "An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity." ;
                 obo:IAO_0000116 "2014-03-10: The use of \"thing\" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ)."@en ,
                                 "Pier: 'data, information or knowledge'. OR 'representation'"@en ,
                                 """information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
 
 Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity."""@en ;
-                obo:IAO_0000119 "OBI_0000142"@en ;
-                rdfs:label "information content entity"@en .
+                obo:IAO_0000119 "IAO" ,
+                                "OBI_0000142"@en ;
+                rdfs:label "information content entity" ,
+                           "information content entity"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000033
@@ -2856,6 +2934,28 @@ obo:IAO_0000033 rdf:type owl:Class ;
                                 "8/6/2009 Alan Ruttenberg: Changed label from \"information entity about a realizable\" after discussions at ICBO"@en ,
                                 "Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan"@en ;
                 rdfs:label "directive information entity"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000078
+obo:IAO_0000078 rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000002
+                                                  obo:IAO_0000120
+                                                  obo:IAO_0000121
+                                                  obo:IAO_0000122
+                                                  obo:IAO_0000123
+                                                  obo:IAO_0000124
+                                                  obo:IAO_0000125
+                                                  obo:IAO_0000423
+                                                  obo:IAO_0000428
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000115 "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en ;
+                obo:IAO_0000116 "Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)"@en ;
+                obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ,
+                                "OBI_0000266"@en ;
+                rdfs:label "curation status specification"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000098
@@ -2882,6 +2982,13 @@ obo:IAO_0000100 rdf:type owl:Class ;
                 obo:IAO_0000119 "OBI_0000042"@en ,
                                 "group:OBI"@en ;
                 rdfs:label "data set"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000102
+obo:IAO_0000102 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000027 ;
+                obo:IAO_0000115 "Data about an ontology part is a data item about a part of an ontology, for example a term"@en ;
+                rdfs:label "data about an ontology part"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000104
@@ -2936,6 +3043,23 @@ obo:IAO_0000129 rdf:type owl:Class ;
                 rdfs:label "version number"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000225
+obo:IAO_0000225 rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000103
+                                                  obo:IAO_0000226
+                                                  obo:IAO_0000227
+                                                  obo:IAO_0000228
+                                                  obo:IAO_0000229
+                                                  obo:OMO_0001000
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000115 "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en ;
+                obo:IAO_0000116 "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology."@en ;
+                rdfs:label "obsolescence reason specification"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000300
 obo:IAO_0000300 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
@@ -2970,6 +3094,21 @@ obo:IAO_0000311 rdf:type owl:Class ;
                 obo:IAO_0000233 <https://github.com/information-artifact-ontology/IAO/issues/232> ;
                 rdfs:comment "Revisit the term in Octorber 2020. Improve the defintion."@en ;
                 rdfs:label "publication"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000409
+obo:IAO_0000409 rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( obo:IAO_0000410
+                                                  obo:IAO_0000420
+                                                  obo:IAO_0000421
+                                                )
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000112 "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities."@en ;
+                obo:IAO_0000115 "A denotator type indicates how a term should be interpreted from an ontological perspective."@en ;
+                obo:IAO_0000119 "Barry Smith, Werner Ceusters"@en ;
+                rdfs:label "denotator type"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000444
@@ -3163,7 +3302,15 @@ obo:OBI_0000202 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000245
 obo:OBI_0000245 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000040 ;
+                rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102> ,
+                                [ owl:intersectionOf ( obo:BFO_0000040
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:RO_0000087 ;
+                                                         owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 obo:IAO_0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en ;
                 obo:IAO_0000115 "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
                 obo:IAO_0000116 """BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:
@@ -3369,6 +3516,22 @@ obo:UO_1000164 rdf:type owl:Class ;
                rdfs:label "mass volume percentage based unit" .
 
 
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102> ,
+                                                                      [ owl:intersectionOf ( obo:BFO_0000030
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty obo:RO_0000087 ;
+                                                                                               owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ;
+                                                      rdfs:comment "An object that represents a single human individual."@en ;
+                                                      rdfs:label "person"@en ;
+                                                      skos:example "Harald Sack, Tabea Tietz, Sasha Bruns, Etienne Posthumus" .
+
+
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000027
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000027> rdf:type owl:Class ;
                                                       rdfs:subClassOf obo:IAO_0000027 ;
@@ -3376,10 +3539,154 @@ obo:UO_1000164 rdf:type owl:Class ;
                                                       rdfs:label "file data item"@en .
 
 
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:IAO_0000030 ;
+                                                      rdfs:comment "An information content entity that specifies the subject area, domain or academic discipline of an entity. An academic discipline, a research field or domain of an entity, e.g. a domain of a data portal or a field of study of a person."@en ;
+                                                      rdfs:label "academic discipline"@en ;
+                                                      skos:example <https://www.wikidata.org/entity/Q12271> ,
+                                                                   "Architecture, Art History, Musicology, Media Studies, Performing Arts"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000004
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty obo:RO_0000087 ;
+                                                                                                   owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ] ;
+                                                      rdfs:subClassOf obo:BFO_0000004 ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty obo:RO_0000087 ;
+                                                                        owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>
+                                                                      ] ;
+                                                      rdfs:comment "An independent continuant that acts autonomously and is entrusted with the authority to represent, negotiate, or act on behalf of another agent."@en ;
+                                                      rdfs:label "agent"@en ;
+                                                      skos:example "Torsten Schrade, Linnaea Söhn, Academy of Sciences and Literature Mainz"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:BFO_0000015 ;
+                                                      rdfs:comment "An process that represents an organized happening that unfolds in time."@en ;
+                                                      rdfs:label "event"@en ;
+                                                      skos:example "conferences, celebrations, workshops, meetings, or any other specific incident or happening that has been planned somehow."@en .
+
+
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000139
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000139> rdf:type owl:Class ;
+                                                      rdfs:subClassOf [ owl:intersectionOf ( <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty obo:RO_0000081 ;
+                                                                                               owl:someValuesFrom obo:OBI_0000245
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ;
                                                       rdfs:comment "A role inherent in an organization that is realized when the organization serves as a funder to endevaours, e.g. projects."@en ;
                                                       rdfs:label "funding organization role"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:IAO_0000033 ,
+                                                                      [ owl:intersectionOf ( obo:IAO_0000033
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty [ owl:inverseOf obo:RO_0002234
+                                                                                                              ] ;
+                                                                                               owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty [ owl:inverseOf obo:RO_0002234
+                                                                                       ] ;
+                                                                        owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224>
+                                                                      ] ;
+                                                      rdfs:comment "A directive information entity that defines the requirements, characteristics, or standards for the design, implementation, or operation of a system, product, or process.Specification is a set of requirements, guidelines, standards contributed by an organization or a person."@en ;
+                                                      rdfs:label "specification"@en ;
+                                                      skos:example "Guidelines, technical specifications, design specifications"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224> rdf:type owl:Class ;
+                                                      rdfs:subClassOf [ owl:intersectionOf ( obo:BFO_0000015
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty obo:RO_0000057 ;
+                                                                                               owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ;
+                                                      rdfs:comment "A process that involves generating, developing, and refining original ideas or concepts through exploration, experimentation, and problem-solving, aiming to produce innovative or expressive outcomes in artistic, scientific, or other creative fields."@en ;
+                                                      rdfs:label "creative process"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229> rdf:type owl:Class ;
+                                                      rdfs:subClassOf [ owl:intersectionOf ( obo:BFO_0000023
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty obo:RO_0000081 ;
+                                                                                               owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ;
+                                                      rdfs:comment "Role of an independent continuant that is realized through an agent's actions, enabling the agent to perform specific functions or achieve particular outcomes within a system or context."@en ;
+                                                      rdfs:label "agent role"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:IAO_0020000 ;
+                                                      rdfs:comment "An academic title is an identifier that denotes an individual’s academic rank, qualification, or honorary designation within educational and research institutions." ;
+                                                      rdfs:label "academic title"@en ;
+                                                      skos:example "Professor, Associate Professor, Dr., PhD, Dr. Ing." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ owl:intersectionOf ( <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203>
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty obo:IAO_0000219 ;
+                                                                                                   owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ] ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty obo:IAO_0000219 ;
+                                                                        owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131>
+                                                                      ] ;
+                                                      rdfs:comment "An event implementation specification is a type of Directive Information Entity that provides formal guidelines, constraints, and details on how an event should be executed. It specifies the mode of implementation, including logistical, technical, and procedural aspects required to carry out an event successfully." ;
+                                                      rdfs:label "event implementation specification"@en ;
+                                                      skos:example "Specifications for organizing conferences, training workshops, and academic seminars in different formats such as virtual, in-person, or hybrid settings." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> ;
+                                                      rdfs:comment "A funding specification is a directive information entity that provides structured guidelines, policies, and requirements for securing, managing, and allocating financial resources for various activities, projects, or organizations." ;
+                                                      rdfs:label "funding specification"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> ;
+                                                      rdfs:comment "An information access specification is a directive information entity that defines the policies, conditions, and mechanisms governing the accessibility of digital or physical information resources for users or organizations." ;
+                                                      rdfs:label "information access specification"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> ;
+                                                      rdfs:comment "A status specification is a directive information entity that defines the current state, progress, or condition of an entity, process, or project based on predefined criteria and operational guidelines." ;
+                                                      rdfs:label "status specification"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000000
@@ -3453,7 +3760,7 @@ pmd:PMD_0000005 rdf:type owl:Class ;
                                   owl:onProperty obo:BFO_0000054 ;
                                   owl:someValuesFrom pmd:PMD_0000950
                                 ] ,
-                                _:genid177 ;
+                                _:genid235 ;
                 rdfs:comment """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
@@ -3466,7 +3773,7 @@ Extensive properties that depend on the object being tested rather than on the p
                 skos:definition "a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities"@en ;
                 pmd:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid177 rdf:type owl:Restriction ;
+_:genid235 rdf:type owl:Restriction ;
             owl:onProperty obo:RO_0000052 ;
             owl:someValuesFrom [ owl:intersectionOf ( pmd:PMD_0000001
                                                       [ rdf:type owl:Restriction ;
@@ -3480,7 +3787,7 @@ _:genid177 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource pmd:PMD_0000005 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid177 ;
+   owl:annotatedTarget _:genid235 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -9956,21 +10263,21 @@ pmd:PMD_0020130 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020131
 pmd:PMD_0020131 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000019 ,
-                                _:genid939 ;
+                                _:genid997 ;
                 owl:disjointWith pmd:PMD_0020148 ;
                 rdfs:label "intensive quality"@en ;
                 skos:altLabel "Point property"@en ;
                 skos:definition "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en ;
                 pmd:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid939 rdf:type owl:Restriction ;
+_:genid997 rdf:type owl:Restriction ;
             owl:onProperty obo:RO_0000080 ;
             owl:someValuesFrom pmd:PMD_0000001 .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource pmd:PMD_0020131 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid939 ;
+   owl:annotatedTarget _:genid997 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -14453,6 +14760,119 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 #    Individuals
 #################################################################
 
+###  http://purl.obolibrary.org/obo/IAO_0000002
+obo:IAO_0000002 rdf:type owl:NamedIndividual ;
+                rdfs:label "example to be eventually removed"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000103
+obo:IAO_0000103 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en ;
+                rdfs:label "failed exploratory term"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000120
+obo:IAO_0000120 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
+                rdfs:label "metadata complete"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000121
+obo:IAO_0000121 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en ;
+                rdfs:label "organizational term"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000122
+obo:IAO_0000122 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
+                rdfs:label "ready for release"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000123
+obo:IAO_0000123 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
+                rdfs:label "metadata incomplete"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000124
+obo:IAO_0000124 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en ;
+                rdfs:label "uncurated"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000125
+obo:IAO_0000125 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
+                rdfs:label "pending final vetting"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000226
+obo:IAO_0000226 rdf:type owl:NamedIndividual ;
+                rdfs:label "placeholder removed"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000227
+obo:IAO_0000227 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000116 "An editor note should explain what were the merged terms and the reason for the merge."@en ;
+                rdfs:label "terms merged"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000228
+obo:IAO_0000228 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000116 "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en ;
+                rdfs:label "term imported"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000229
+obo:IAO_0000229 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000116 "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en ;
+                rdfs:label "term split"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000410
+obo:IAO_0000410 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000116 "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en ;
+                obo:IAO_0000119 "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"@en ;
+                rdfs:label "universal"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000420
+obo:IAO_0000420 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en ;
+                obo:IAO_0000116 "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en ;
+                rdfs:label "defined class"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000421
+obo:IAO_0000421 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en ;
+                obo:IAO_0000116 "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en ;
+                rdfs:label "named class expression"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000423
+obo:IAO_0000423 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "Terms with this status should eventually replaced with a term from another ontology."@en ;
+                obo:IAO_0000119 "group:OBI"@en ;
+                rdfs:label "to be replaced with external ontology term"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000428
+obo:IAO_0000428 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
+                obo:IAO_0000119 "group:OBI"@en ;
+                rdfs:label "requires discussion"@en .
+
+
+###  http://purl.obolibrary.org/obo/OMO_0001000
+obo:OMO_0001000 rdf:type owl:NamedIndividual ;
+                obo:IAO_0000115 "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en ;
+                obo:IAO_0000116 "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."@en ;
+                obo:IAO_0000233 "https://github.com/information-artifact-ontology/ontology-metadata/issues/77" ;
+                rdfs:label "out of scope" .
+
+
 ###  http://purl.obolibrary.org/obo/UO_0000076
 obo:UO_0000076 rdf:type owl:NamedIndividual .
 
@@ -14463,6 +14883,336 @@ obo:UO_0000163 rdf:type owl:NamedIndividual .
 
 ###  http://purl.obolibrary.org/obo/UO_0000164
 obo:UO_0000164 rdf:type owl:NamedIndividual .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the study, design, and application of electrical systems and technologies. Electrical engineering involves the development of devices, circuits, and systems for power generation, communication, electronics, and automation." ;
+                                                      rdfs:label "electrical engineering"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000159
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000159> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the design, optimization, and operation of industrial processes to transform raw materials into valuable products. Process engineering applies principles of chemistry, physics, and engineering to improve efficiency, sustainability, and safety in industries such as manufacturing, energy, and pharmaceuticals."@en ;
+                                                      rdfs:label "process engineering"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      obo:IAO_0000119 "Russell, S., & Norvig, P. (2020). Artificial Intelligence: A Modern Approach. Pearson." ;
+                                                      rdfs:comment "Artificial Intelligence (AI) is a sub-discipline of Computer Science that focuses on creating systems capable of performing tasks that require human-like intelligence, such as learning, reasoning, and problem-solving." ;
+                                                      rdfs:label "artificial intelligence"@en ;
+                                                      skos:example "Deep learning for image recognition, reinforcement learning in robotics, and natural language processing fall under Artificial Intelligence." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001064
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001064> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "Theoretical Computer Science is a sub-discipline of Computer Science that focuses on mathematical models of computation, computational complexity, and algorithmic problem-solving" ;
+                                                      rdfs:label "theoretical computer science"@en ;
+                                                      skos:example "Studies on Turing machines, complexity classes (P vs NP), and formal languages belong to Theoretical Computer Science." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001065
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001065> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "Software Engineering is a sub-discipline of Computer Science that applies engineering principles to the design, development, testing, and maintenance of software systems." ;
+                                                      rdfs:label "software engineering"@en ;
+                                                      skos:example "Agile software development, DevOps practices, and software architecture design fall under Software Engineering." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001066
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001066> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      obo:IAO_0000119 "Provost, F., & Fawcett, T. (2013). Data Science for Business. O'Reilly Media." ;
+                                                      rdfs:comment "Data Science is a sub-discipline of Computer Science that integrates statistical methods, machine learning, and data processing techniques to extract insights and knowledge from structured and unstructured data." ;
+                                                      rdfs:label "data science"@en ;
+                                                      skos:example "Predictive analytics, big data visualization, and recommendation systems are part of Data Science." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001067
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001067> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      obo:IAO_0000119 "Stallings, W. (2020). Network Security Essentials. Pearson." ;
+                                                      rdfs:comment "Cybersecurity is a sub-discipline of Computer Science that focuses on protecting computer systems, networks, and data from cyber threats, vulnerabilities, and unauthorized access." ;
+                                                      rdfs:label "cybersecurity"@en ;
+                                                      skos:example "Encryption techniques, intrusion detection systems, and ethical hacking studies belong to Cybersecurity." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001070
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001070> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Active Status is a status specification that indicates an entity, process, or project is currently operational, ongoing, or in execution." ;
+                                                      rdfs:label "active status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001071
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001071> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Cancelled Status is a status specification that indicates an entity, process, or project has been terminated before reaching completion due to internal or external factors." ;
+                                                      rdfs:label "cancelled status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001072
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001072> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Doctor (PhD or equivalent academic doctorate)" ;
+                                                      rdfs:label "Dr."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001073
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001073> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Doctor of Engineering (German doctorate in engineering)." ;
+                                                      rdfs:label "Dr.-Ing."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001074
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001074> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Finished Status is a status specification that indicates an entity, process, or project has successfully reached its intended goal and is considered complete." ;
+                                                      rdfs:label "finished status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001075
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001075> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050> ;
+                                                      rdfs:comment "Hybrid Implementation is an event implementation specification that defines the organization of an event that integrates both physical (on-site) and virtual (online) participation modes" ;
+                                                      rdfs:label "hybrid implementation"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001076
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001076> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> ;
+                                                      rdfs:comment "Internal Access is an information access specification that defines policies and mechanisms restricting access to information exclusively within an organization, institution, or research group." ;
+                                                      rdfs:label "internal access"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001077
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001077> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Master of Science (graduate degree in science/engineering)." ;
+                                                      rdfs:label "M.Sc."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001078
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001078> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050> ;
+                                                      rdfs:comment "On-Site Implementation is an event implementation specification that defines the organization of an event that occurs exclusively at a physical location with in-person attendance." ;
+                                                      rdfs:label "on site implementation"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001079
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001079> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050> ;
+                                                      rdfs:comment "Online Implementation is an event implementation specification that defines the organization of an event conducted entirely through virtual platforms, enabling remote participation via digital communication technologies." ;
+                                                      rdfs:label "online implementation"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001080
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001080> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> ;
+                                                      rdfs:comment "Open Access is an information access specification that defines policies allowing unrestricted public access to information resources, ensuring free availability without subscription or payment barriers." ;
+                                                      rdfs:label "open access"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001081
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001081> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051> ;
+                                                      rdfs:comment "Organizational Funding is a funding specification that defines the financial structures, budgets, and resource allocation strategies for sustaining the operations of an organization or institution." ;
+                                                      rdfs:label "organizational funding"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001082
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001082> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Paused Status is a status specification that indicates an entity, process, or project is temporarily halted but may resume at a later stage." ;
+                                                      rdfs:label "paused status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001083
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001083> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> ;
+                                                      rdfs:comment "Paywall Access is an information access specification that defines policies requiring users to purchase, subscribe, or obtain institutional licenses to access digital or physical information resources." ;
+                                                      rdfs:label "paywall access"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001084
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001084> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Privatdozent (Dr. with habilitation, qualified to teach at a university)" ;
+                                                      rdfs:label "PD. Dr."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001085
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001085> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Privatdozent with Habilitation (higher academic qualification in Germany)" ;
+                                                      rdfs:label "PD. Dr. habil."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001086
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001086> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Planning Status is a status specification that indicates an entity, process, or project is in a preparatory or strategic development phase before execution." ;
+                                                      rdfs:label "planning status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001087
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001087> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Professor (academic title for a senior faculty member)." ;
+                                                      rdfs:label "Prof."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001088
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001088> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Professor with a doctorate." ;
+                                                      rdfs:label "Prof. Dr."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001089
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001089> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Professor with a doctorate in engineering." ;
+                                                      rdfs:label "Prof. Dr.-Ing."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001090
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001090> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051> ;
+                                                      rdfs:comment "Project Funding is a funding specification that defines the financial mechanisms, grants, and investment strategies used to support specific research, development, or innovation projects." ;
+                                                      rdfs:label "project funding"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001091
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001091> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> ;
+                                                      rdfs:comment "Restricted Access is an information access specification that defines policies limiting access to specific users, organizations, or groups based on predefined criteria such as confidentiality, security, or legal regulations." ;
+                                                      rdfs:label "restricted access"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001092
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001092> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051> ;
+                                                      rdfs:comment "Self-Funding is a funding specification that defines the use of personal, internal, or independently generated financial resources to support activities, projects, or organizations without relying on external funding sources." ;
+                                                      rdfs:label "self funding"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001093
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001093> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Test Phase Status is a status specification that indicates an entity, process, or project is undergoing testing, evaluation, or validation before finalization." ;
+                                                      rdfs:label "test phase status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001094
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001094> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Two Doctor degrees (PhD or equivalent academic doctorate)"@en ;
+                                                      rdfs:label "Dr. Dr."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010001
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010001> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline focused on human culture, thought, and creativity, encompassing disciplines like literature, philosophy, and the arts."@en ;
+                                                      rdfs:label "humanity"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010002
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010002> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that studies society and human behavior through disciplines like sociology, psychology, and economics."@en ;
+                                                      rdfs:label "social science"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010004
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010004> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that studies living organisms, their structures, functions, growth, and interactions with their environment. Biology explores the diversity of life, from microscopic organisms to complex ecosystems, and seeks to understand the underlying processes of life, evolution, and heredity."@en ;
+                                                      rdfs:label "biology"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010005
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010005> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the science and practice of diagnosing, treating, and preventing illnesses and injuries. Medicine involves the study of human health, medical technologies, pharmaceuticals, and patient care to improve well-being and extend life."@en ;
+                                                      rdfs:label "medicine"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010006
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010006> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the science, practice, and business of cultivating plants, raising animals, and producing food, fiber, and other products. Agriculture involves the study of soil management, crop production, livestock care, and sustainable farming practices to ensure food security and environmental sustainability."@en ;
+                                                      rdfs:label "agriculture"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010007
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010007> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that studies the natural world through observation, experimentation, and analysis. Natural science includes fields such as physics, chemistry, biology, and earth sciences, aiming to understand the laws and processes governing the universe and life on Earth." ;
+                                                      rdfs:label "natural science"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010008
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010008> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that studies the composition, structure, properties, and reactions of matter. Chemistry focuses on understanding how substances interact, transform, and combine to form new materials, playing a crucial role in fields such as medicine, energy, and environmental science."@en ;
+                                                      rdfs:label "chemistry"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010010
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010010> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that explores the fundamental principles governing the behavior of matter, energy, and the forces of nature. Physics seeks to understand the laws of the universe, from subatomic particles to cosmic phenomena, through experimentation, observation, and mathematical modeling."@en ;
+                                                      rdfs:label "physics"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010011
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010011> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that involves the study of numbers, quantities, shapes, and patterns, using abstract concepts and logical reasoning. Mathematics is fundamental to various fields, including science, engineering, economics, and technology, providing tools for problem-solving, analysis, and modeling." ;
+                                                      rdfs:label "mathematics"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010012
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010012> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the study of the Earth’s structure, processes, and materials, including the atmosphere, oceans, and landforms. Geoscience encompasses fields such as geology, meteorology, and environmental science to understand Earth’s history, natural resources, and natural hazards."@en ;
+                                                      rdfs:label "geoscience"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010014
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010014> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the design, analysis, manufacturing, and maintenance of mechanical systems. Mechanical engineering applies principles of physics, materials science, and mathematics to develop machines, tools, and devices used in industries such as transportation, energy, and robotics."@en ;
+                                                      rdfs:label "mechanical engineering"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010016
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010016> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that explores the properties, performance, and applications of materials, focusing on the relationship between a material's structure and its characteristics. Materials science and engineering involves the design, development, and testing of materials for use in a wide range of industries, including aerospace, electronics, and manufacturing."@en ;
+                                                      rdfs:label "materials science"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the study of algorithms, data structures, programming, and computational systems. Computer science explores how to design, develop, and analyze software and hardware solutions to solve complex problems and advance technology."@en ;
+                                                      rdfs:label "computer science"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010018
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010018> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the planning, design, and management of construction projects, including buildings, infrastructure, and other structures. Construction engineering integrates principles of civil engineering, project management, and materials science to ensure safety, efficiency, and sustainability in construction processes."@en ;
+                                                      rdfs:label "construction engineering"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020006
@@ -14681,83 +15431,6 @@ pmd:PMD_0020242 rdf:type owl:NamedIndividual ;
 #################################################################
 #    Annotations
 #################################################################
-
-obo:IAO_0000002 rdfs:label "example to be eventually removed"@en .
-
-
-obo:IAO_0000103 obo:IAO_0000115 "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en ;
-                rdfs:label "failed exploratory term"@en .
-
-
-obo:IAO_0000120 obo:IAO_0000115 "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
-                rdfs:label "metadata complete"@en .
-
-
-obo:IAO_0000121 obo:IAO_0000115 "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en ;
-                rdfs:label "organizational term"@en .
-
-
-obo:IAO_0000122 obo:IAO_0000115 "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
-                rdfs:label "ready for release"@en .
-
-
-obo:IAO_0000123 obo:IAO_0000115 "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
-                rdfs:label "metadata incomplete"@en .
-
-
-obo:IAO_0000124 obo:IAO_0000115 "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en ;
-                rdfs:label "uncurated"@en .
-
-
-obo:IAO_0000125 obo:IAO_0000115 "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
-                rdfs:label "pending final vetting"@en .
-
-
-obo:IAO_0000226 rdfs:label "placeholder removed"@en .
-
-
-obo:IAO_0000227 obo:IAO_0000116 "An editor note should explain what were the merged terms and the reason for the merge."@en ;
-                rdfs:label "terms merged"@en .
-
-
-obo:IAO_0000228 obo:IAO_0000116 "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en ;
-                rdfs:label "term imported"@en .
-
-
-obo:IAO_0000229 obo:IAO_0000116 "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en ;
-                rdfs:label "term split"@en .
-
-
-obo:IAO_0000410 obo:IAO_0000116 "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en ;
-                obo:IAO_0000119 "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"@en ;
-                rdfs:label "universal"@en .
-
-
-obo:IAO_0000420 obo:IAO_0000115 "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en ;
-                obo:IAO_0000116 "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en ;
-                rdfs:label "defined class"@en .
-
-
-obo:IAO_0000421 obo:IAO_0000115 "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en ;
-                obo:IAO_0000116 "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en ;
-                rdfs:label "named class expression"@en .
-
-
-obo:IAO_0000423 obo:IAO_0000115 "Terms with this status should eventually replaced with a term from another ontology."@en ;
-                obo:IAO_0000119 "group:OBI"@en ;
-                rdfs:label "to be replaced with external ontology term"@en .
-
-
-obo:IAO_0000428 obo:IAO_0000115 "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
-                obo:IAO_0000119 "group:OBI"@en ;
-                rdfs:label "requires discussion"@en .
-
-
-obo:OMO_0001000 obo:IAO_0000115 "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en ;
-                obo:IAO_0000116 "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."@en ;
-                obo:IAO_0000233 "https://github.com/information-artifact-ontology/ontology-metadata/issues/77" ;
-                rdfs:label "out of scope" .
-
 
 obo:UO_0000076 obo:IAO_0000115 "A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution." ;
                oboInOwl:hasExactSynonym "(x)" ,
