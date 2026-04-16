@@ -13,10 +13,10 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/tto/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/3.0.1"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/3.0.0"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:bibliographicCitation>M. Schilling, B. Bayerlein, P. v. Hartrott, J. Waitelonis, H. Birkholz, P. D. Portella, B. Skrotzki, Advanced Engineering Materials 2024, 2400138.</dcterms:bibliographicCitation>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1649-6832"/>
+        <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:created>2026-04-16</dcterms:created>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
@@ -32,8 +32,8 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Tensile Test Ontology (TTO)</dcterms:title>
         <doap:repository>https://github.com/materialdigital/tensile-test-ontology</doap:repository>
-        <owl:priorVersion rdf:resource="https://w3id.org/pmd/tto/3.0.0"/>
-        <owl:versionInfo>3.0.1</owl:versionInfo>
+        <owl:priorVersion rdf:resource="https://w3id.org/pmd/tto/2.0.1"/>
+        <owl:versionInfo>3.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
