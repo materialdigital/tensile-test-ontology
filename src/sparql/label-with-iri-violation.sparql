@@ -5,5 +5,4 @@ WHERE {
   ?term rdfs:label ?value .
   FILTER (REGEX(?value, "http[s]?[:]"))
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "https://w3id.org/pmd/tto/")))
-  FILTER(lang(?value)="en")
 }

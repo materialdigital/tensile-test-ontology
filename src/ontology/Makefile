@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                59e57586bcc690e4ba2696cdc06b0e33ca390887dee67a03a591c45815c8c73d
+CONFIG_HASH=                889a65c494cb2244505859cda3fbbb44b242ec39b0a1816bdf66bb74f7776387
 
 
 # ----------------------------------------
@@ -489,7 +489,7 @@ mirror-pmdco: | $(TMPDIR)
 .PHONY: mirror-nfdicore
 .PRECIOUS: $(MIRRORDIR)/nfdicore.owl
 mirror-nfdicore: | $(TMPDIR)
-	$(ROBOT) convert -I https://nfdi.fiz-karlsruhe.de/ontology -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://nfdi.fiz-karlsruhe.de/ontology/3.0.4 -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
