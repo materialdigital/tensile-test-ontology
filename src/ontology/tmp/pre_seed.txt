@@ -5,10 +5,10 @@ https://w3id.org/pmd/co/relatesTo
 https://w3id.org/pmd/tto/TTO_0000028
 http://purl.obolibrary.org/obo/BFO_0000051
 http://purl.obolibrary.org/obo/IAO_0000109
+http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 https://w3id.org/pmd/tto/OriginalThickness
 https://w3id.org/pmd/co/PMD_0050153
 http://purl.obolibrary.org/obo/IAO_0000027
-http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 http://purl.obolibrary.org/obo/BFO_0000054
 https://w3id.org/pmd/tto/TransitionPointTestingRate
 https://w3id.org/pmd/co/PMD_0000008
@@ -19,8 +19,6 @@ https://w3id.org/pmd/tto/TTO_0000030
 https://w3id.org/pmd/co/PMD_0000974
 https://w3id.org/pmd/tto/TTO_0000043
 https://w3id.org/pmd/tto/ProofStrengthTotalExtension
-http://purl.obolibrary.org/obo/BFO_0000055
-https://w3id.org/pmd/co/PMD_0000975
 https://w3id.org/pmd/tto/TTO_0000012
 https://w3id.org/pmd/tto/MinimumCrossSectionalAreaAfterFracture
 https://w3id.org/pmd/tto/TTO_0000015
@@ -41,6 +39,7 @@ https://w3id.org/pmd/tto/TTO_0000008
 https://w3id.org/pmd/tto/TTO_0000025
 https://w3id.org/pmd/tto/OriginalDiameter
 https://w3id.org/pmd/co/PMD_0050051
+https://w3id.org/pmd/co/PMD_0000975
 https://w3id.org/pmd/tto/TTO_0000017
 http://purl.obolibrary.org/obo/BFO_0000030
 https://w3id.org/pmd/tto/ThicknessAfterFracture
@@ -63,6 +62,7 @@ https://w3id.org/pmd/tto/PercentageReductionOfArea
 https://w3id.org/pmd/tto/ExtensometerGaugeLength
 https://w3id.org/pmd/tto/TTO_0000019
 http://purl.obolibrary.org/obo/RO_0000087
+https://w3id.org/pmd/co/PMD_0000636
 https://w3id.org/pmd/tto/TTO_0000044
 https://w3id.org/pmd/tto/Rp01
 https://w3id.org/pmd/tto/Elongation
@@ -85,8 +85,8 @@ https://w3id.org/pmd/co/PMD_0000973
 https://w3id.org/pmd/tto/TransitionPoint
 https://w3id.org/pmd/tto/PercentagePermanentExtension
 https://w3id.org/pmd/tto/DiameterAfterFracture
+https://w3id.org/pmd/co/PMD_0000820
 https://w3id.org/pmd/tto/ProofStrengthPlasticExtension
-https://w3id.org/pmd/co/PMD_0000636
 https://w3id.org/pmd/tto/MaximumForce
 https://w3id.org/pmd/tto/StressRate
 https://w3id.org/pmd/tto/ParallelLength
@@ -101,13 +101,13 @@ http://creativecommons.org/licenses/by/4.0/
 https://orcid.org/0000-0002-3717-7104
 https://orcid.org/0000-0003-4971-3645
 https://orcid.org/0000-0002-9014-2920
+http://purl.obolibrary.org/obo/BFO_0000055
 https://w3id.org/pmd/tto/Rp02
 https://w3id.org/pmd/tto/OriginalCrossSectionalArea
 https://w3id.org/pmd/co/2.0.8/Extension
 https://w3id.org/pmd/tto/TTO_0000006
 https://w3id.org/pmd/co/2.0.8/PercentageExtension
 https://w3id.org/pmd/tto/CrossheadSeparation
-https://w3id.org/pmd/co/PMD_0000820
 https://w3id.org/pmd/tto/TTO_0000021
 https://w3id.org/pmd/co/definitionSource
 https://w3id.org/pmd/tto/TTO_0000058
