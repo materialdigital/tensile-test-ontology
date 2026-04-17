@@ -38,7 +38,7 @@ jobs:
         run: |
           pwd
           find . -name "*-full.owl" -type f 
-          ONTOLOGY_FILE=$(find . -name "*-full.owl" -type f | head -1)
+          ONTOLOGY_FILE=$(find . -name "*-full.owl" -type f | tail -1)
           if [ -z "$ONTOLOGY_FILE" ]; then
             echo "No *-full.owl file found in . directory."
             echo "exists=false" >> $GITHUB_OUTPUT
