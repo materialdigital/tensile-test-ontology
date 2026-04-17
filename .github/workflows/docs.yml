@@ -65,6 +65,8 @@ jobs:
           java -jar widoco.jar -ontFile ${{ needs.check.outputs.ontology-file }} -outFolder ./_site -uniteSections -includeAnnotationProperties -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
       - name: add default entry point
         run: |
+          ls
+          ls ./_site
           cp ./_site/index-en.html ./_site/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
