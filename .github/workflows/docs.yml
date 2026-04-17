@@ -36,6 +36,8 @@ jobs:
       - name: Check for ontology file
         id: check
         run: |
+          pwd
+          find . -name "*-full.owl" -type f 
           ONTOLOGY_FILE=$(find . -name "*-full.owl" -type f | head -1)
           if [ -z "$ONTOLOGY_FILE" ]; then
             echo "No *-full.owl file found in . directory."
