@@ -12,7 +12,7 @@
 @base <https://w3id.org/pmd/tto/tto-simple.ttl> .
 
 <https://w3id.org/pmd/tto/tto-simple.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/tto/releases/2026-04-17/tto-simple.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/tto/releases/2026-04-28/tto-simple.ttl> ;
                                            terms:contributor "https://orcid.org/0000-0003-1649-6832" ;
                                            terms:creator <https://orcid.org/0000-0001-7192-7143> ,
                                                          <https://orcid.org/0000-0002-3717-7104> ,
@@ -28,7 +28,7 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
                                            terms:license <http://creativecommons.org/licenses/by/4.0/> ;
                                            terms:title "Tensile Test Ontology (TTO)" ;
                                            doap:repository "https://github.com/materialdigital/tensile-test-ontology" ;
-                                           owl:versionInfo "2026-04-17" .
+                                           owl:versionInfo "2026-04-28" .
 
 #################################################################
 #    Annotation properties
@@ -978,6 +978,130 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
                                        rdfs:seeAlso <https://w3id.org/pmd/tto/WidthAfterFracture> ;
                                        skos:definition "Diese Entität beschreibt eine horizontale Messung eines Objekts (Prüfkörpers) im rechten Winkel zur Länge des Objekts (Prüfkörpers), wie sie nach einer Prüfung gemessen wird."@de ,
                                                        "This entity describes a horizontal measurement of an object (test piece) taken at right angles to the length of the object (test piece), as measured after a test."@en .
+
+
+###  https://w3id.org/pmd/tto/TTO_0000100
+<https://w3id.org/pmd/tto/TTO_0000100> rdf:type owl:Class ;
+                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:OBI_0000299 ;
+                                                         owl:someValuesFrom [ owl:intersectionOf ( <https://w3id.org/pmd/tto/TTO_0000008>
+                                                                                                   [ rdf:type owl:Class ;
+                                                                                                     owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                            owl:onProperty obo:BFO_0000051 ;
+                                                                                                                                            owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000029>
+                                                                                                                                          ]
+                                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                                            owl:onProperty obo:BFO_0000051 ;
+                                                                                                                                            owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000030>
+                                                                                                                                          ]
+                                                                                                                                        ) ;
+                                                                                                                     rdf:type owl:Class
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000027>
+                                                                                                                   ]
+                                                                                                                 )
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Class ;
+                                                                                                     owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000016>
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000051>
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000052>
+                                                                                                                   ]
+                                                                                                                 )
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Class ;
+                                                                                                     owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000022>
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000044>
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000045>
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000059>
+                                                                                                                   ]
+                                                                                                                 )
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Class ;
+                                                                                                     owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000033>
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000037>
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000038>
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000039>
+                                                                                                                   ]
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000040>
+                                                                                                                   ]
+                                                                                                                 )
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000017>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000018>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000023>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000024>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000026>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000028>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000031>
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty obo:BFO_0000051 ;
+                                                                                                     owl:someValuesFrom <https://w3id.org/pmd/tto/TTO_0000053>
+                                                                                                   ]
+                                                                                                 ) ;
+                                                                              rdf:type owl:Class
+                                                                            ]
+                                                       ] ;
+                                       rdfs:comment "Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden."@de ,
+                                                    "Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification."@en ;
+                                       rdfs:label "ISO tensile testing process"@en ,
+                                                  "ISO-konformer Zugversuchsprozess"@de ;
+                                       skos:definition "An ISO tensile testing process (full profile) is a tensile testing process in the sense of the TTO whose documented inputs, participating apparatus, and outputs are described with sufficient completeness such that the essential geometry-related initial quantities, testing-rate/strain-rate information, and mechanical properties specified in ISO 6892-1 for metallic materials at room temperature are represented in a form suitable for inference. This includes, in particular, a test-piece input, a tensile testing machine, and a result object containing initial geometry, gauge lengths, maximum force, tensile strength, yield/proof-strength information, and fracture-related result quantities."@en ,
+                                                       "Ein ISO-konformer Zugversuchsprozess (Vollprofil) ist ein Zugprüfverfahren im Sinne der TTO, dessen dokumentierte Eingaben, beteiligte Apparatur und Ausgaben so vollständig beschrieben sind, dass die wesentlichen in ISO 6892-1 vorgesehenen geometrischen Ausgangsgrößen, Prüfgeschwindigkeits-/Dehngeschwindigkeitsangaben und mechanischen Kennwerte des Zugversuchs für metallische Werkstoffe bei Raumtemperatur inferenzfähig repräsentiert sind. Dazu gehören insbesondere Prüfkörperinput, Zugprüfmaschine, Ergebnisobjekt mit Anfangsgeometrie, Messlängen, Höchstkraft, Zugfestigkeit, Streck- oder Dehngrenzenangaben sowie bruchbezogene Ergebnisgrößen."@de .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0050000
