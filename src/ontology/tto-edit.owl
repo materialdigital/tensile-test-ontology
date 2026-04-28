@@ -1,4 +1,4 @@
-Prefix(:=<https://w3id.org/pmd/tto#>)
+Prefix(:=<https://w3id.org/pmd/tto/>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(pmd:=<https://w3id.org/pmd/co/>)
@@ -83,6 +83,7 @@ Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000057>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000058>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000059>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000060>))
+Declaration(Class(<https://w3id.org/pmd/tto/TTO_0000100>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_0050000>))
 Declaration(Class(<https://w3id.org/pmd/tto/TTO_1000000>))
 Declaration(ObjectProperty(pmd:relatesTo))
@@ -523,7 +524,7 @@ AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/tto/TTO_0000035> 
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> <https://w3id.org/pmd/tto/TTO_0000004>)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000035> ObjectSomeValuesFrom(pmd:relatesTo <https://w3id.org/pmd/tto/TTO_0000028>))
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000036> (percentage permanent extension)
+# Class: <https://w3id.org/pmd/tto/TTO_0000036> (Bleibende Extensometer-Dehnung)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000036> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000036> "Bleibende Extensometer-Dehnung"@de)
@@ -759,7 +760,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000057> "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000057> pmd:PMD_0000008)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000058> (Umschaltpunkt der Prüfgeschwindigkeit)
+# Class: <https://w3id.org/pmd/tto/TTO_0000058> (transition point testing rate)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000058> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000058> "Umschaltpunkt der Prüfgeschwindigkeit"@de)
@@ -805,6 +806,84 @@ AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_1000000> "https:/
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_1000000> "Streckgrenzenverhältnis ist eine mechanische Eigenschaft, die als Verhältnis zwischen der Dehngrenze Rp0.2 und der Zugfestigkeit Rm bestimmt wird."@de)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/tto/TTO_1000000> "Rp0.2 / Rm")
 SubClassOf(<https://w3id.org/pmd/tto/TTO_1000000> pmd:PMD_0000848)
+
+# Class: <https://w3id.org/pmd/tto/TTO_0000100> (ISO tensile testing process)
+
+AnnotationAssertion(rdfs:label :TTO_0000100 "ISO-konformer Zugversuchsprozess"@de)
+AnnotationAssertion(rdfs:label :TTO_0000100 "ISO tensile testing process"@en)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000100
+"Ein ISO-konformer Zugversuchsprozess (Vollprofil) ist ein Zugprüfverfahren im Sinne der TTO, dessen dokumentierte Eingaben, beteiligte Apparatur und Ausgaben so vollständig beschrieben sind, dass die wesentlichen in ISO 6892-1 vorgesehenen geometrischen Ausgangsgrößen, Prüfgeschwindigkeits-/Dehngeschwindigkeitsangaben und mechanischen Kennwerte des Zugversuchs für metallische Werkstoffe bei Raumtemperatur inferenzfähig repräsentiert sind. Dazu gehören insbesondere Prüfkörperinput, Zugprüfmaschine, Ergebnisobjekt mit Anfangsgeometrie, Messlängen, Höchstkraft, Zugfestigkeit, Streck- oder Dehngrenzenangaben sowie bruchbezogene Ergebnisgrößen."@de)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :TTO_0000100
+"An ISO tensile testing process (full profile) is a tensile testing process in the sense of the TTO whose documented inputs, participating apparatus, and outputs are described with sufficient completeness such that the essential geometry-related initial quantities, testing-rate/strain-rate information, and mechanical properties specified in ISO 6892-1 for metallic materials at room temperature are represented in a form suitable for inference. This includes, in particular, a test-piece input, a tensile testing machine, and a result object containing initial geometry, gauge lengths, maximum force, tensile strength, yield/proof-strength information, and fracture-related result quantities."@en)
+
+AnnotationAssertion(rdfs:comment :TTO_0000100
+"Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden."@de)
+
+AnnotationAssertion(rdfs:comment :TTO_0000100
+"Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification."@en)
+
+SubClassOf(:TTO_0000100 pmd:PMD_0000974)
+
+EquivalentClasses(:TTO_0000100
+  ObjectIntersectionOf(
+    pmd:PMD_0000974
+    ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> pmd:PMD_0000973)
+    ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293>
+      ObjectIntersectionOf(
+        <http://purl.obolibrary.org/obo/BFO_0000030>
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> pmd:PMD_0000975)
+      )
+    )
+    ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299>
+      ObjectIntersectionOf(
+        :TTO_0000008
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000026)
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000028)
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000031)
+        ObjectUnionOf(
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000027)
+          ObjectIntersectionOf(
+            ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000029)
+            ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000030)
+          )
+        )
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000017)
+        ObjectUnionOf(
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000051)
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000016)
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000052)
+        )
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000023)
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000053)
+        ObjectUnionOf(
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000059)
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000022)
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000044)
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000045)
+        )
+        ObjectUnionOf(
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000033)
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000038)
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000039)
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000037)
+          ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000040)
+        )
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000018)
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> :TTO_0000024)
+      )
+    )
+    ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299>
+      ObjectIntersectionOf(
+        <http://purl.obolibrary.org/obo/BFO_0000030>
+        ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087>
+          ObjectUnionOf(:TTO_0000006 :TTO_0000007)
+        )
+      )
+    )
+  )
+)
 
 
 )
