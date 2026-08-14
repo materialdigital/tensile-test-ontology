@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                889a65c494cb2244505859cda3fbbb44b242ec39b0a1816bdf66bb74f7776387
+CONFIG_HASH=                fafd3d098b76bdb6b8a3c787dab0f45425b54ebd09c4e169a3bbab54affc8e3a
 
 
 # ----------------------------------------
@@ -482,7 +482,7 @@ ifeq ($(MIR),true)
 .PHONY: mirror-pmdco
 .PRECIOUS: $(MIRRORDIR)/pmdco.owl
 mirror-pmdco: | $(TMPDIR)
-	$(ROBOT) convert -I https://w3id.org/pmd/co/3.0.0 -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://w3id.org/pmd/co/3.1.0 -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: nfdicore

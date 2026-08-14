@@ -12,7 +12,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/tto/tto-simple.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-04-28/tto-simple.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-08-14/tto-simple.owl"/>
         <terms:contributor>https://orcid.org/0000-0003-1649-6832</terms:contributor>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3717-7104"/>
@@ -28,7 +28,7 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Tensile Test Ontology (TTO)</terms:title>
         <doap:repository>https://github.com/materialdigital/tensile-test-ontology</doap:repository>
-        <owl:versionInfo>2026-04-28</owl:versionInfo>
+        <owl:versionInfo>2026-08-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -52,7 +52,12 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -65,6 +70,12 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     
 
 
@@ -91,6 +102,7 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <obo:IAO_0000117>Mark Miller</obo:IAO_0000117>
         <rdfs:label>dcterms:license</rdfs:label>
         <rdfs:label>license</rdfs:label>
     </owl:AnnotationProperty>
@@ -205,8 +217,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>The inverse property of is specified input of</obo:IAO_0000115>
         <obo:IAO_0000116>8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &apos;has participant&apos; works.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Coutot</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has specified input</rdfs:label>
     </owl:ObjectProperty>
     
@@ -217,7 +234,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>The inverse property of is specified output of</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has specified output</rdfs:label>
     </owl:ObjectProperty>
     
@@ -226,7 +248,10 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <rdfs:label xml:lang="en">is specified output of</rdfs:label>
     </owl:ObjectProperty>
     
