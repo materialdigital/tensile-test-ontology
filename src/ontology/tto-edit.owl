@@ -318,17 +318,15 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/tto/TTO_0000021> "F_eH")
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000021> pmd:PMD_0020200)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000022> (lower yield strength)
+# Class: <https://w3id.org/pmd/tto/TTO_0000022> (DEPRECATED lower yield strength)
 
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000022> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000022> "lower yield strength"@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000022> "untere Streckgrenze"@de)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000022> <https://w3id.org/pmd/tto/LowerYieldStrength>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000022> "kleinste Spannung während des plastischen Fließens, wobei Einschwingerscheinungen nicht berücksichtigt werden"@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000022> "lowest value of stress during plastic yielding, ignoring any initial transient effects"@en)
-AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/tto/TTO_0000022> "DIN EN ISO 6892-1:2019"@en)
-AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/tto/TTO_0000022> "R_eL"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000022> <https://w3id.org/pmd/tto/TTO_0000009>)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000022> "Same PMDco class exists")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000022> "DEPRECATED lower yield strength"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000022> "DEPRECATED untere Streckgrenze"@de)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000022> pmd:PMD_0080172)
+AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/tto/TTO_0000022> "true"^^xsd:boolean)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000022> "DEPRECATED kleinste Spannung während des plastischen Fließens, wobei Einschwingerscheinungen nicht berücksichtigt werden"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000022> "DEPRECATED lowest value of stress during plastic yielding, ignoring any initial transient effects"@en)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000023> (Höchstkraft)
 
@@ -412,7 +410,7 @@ AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/tto/TTO_0000028> "true"
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000028> "DEPRECATED Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000028> "DEPRECATED length between gauge length marks on the test piece measured at room temperature before the test"@en)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000029> (original thickness)
+# Class: <https://w3id.org/pmd/tto/TTO_0000029> (Anfangs-Dicke)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000029> "Anfangs-Dicke"@de)
@@ -507,7 +505,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000037> "plastische Verlängerung der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/tto/TTO_0000037> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/tto/TTO_0000037> "A_g"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> pmd:PMD_0020311)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000037> pmd:PMD_0060010)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000038> (DEPRECATED Brucheinschnürung)
 
@@ -537,7 +535,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000040> "total extension (elastic extension plus plastic extension) at maximum force, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/tto/TTO_0000040> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/tto/TTO_0000040> "A_gt"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> pmd:PMD_0020311)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000040> pmd:PMD_0060010)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000041> (Streckgrenzen-Extensometer-Dehnung)
 
@@ -549,7 +547,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000041> "For discontinuous yielding materials: extension between the start of yielding and the start of uniform work-hardening, expressed as a percentage of the extensometer gauge length"@en)
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/tto/TTO_0000041> "DIN EN ISO 6892-1:2019"@en)
 AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/tto/TTO_0000041> "A_e"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> pmd:PMD_0020311)
+SubClassOf(<https://w3id.org/pmd/tto/TTO_0000041> pmd:PMD_0060010)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000042> (force at proof strength plastic extension f02)
 
@@ -711,7 +709,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000057> "This entity describes a single point at which a transition from one condition or state to another occurs, e.g. the point at which different phases of matter are capable of existing together in equilibrium (also called inversion point) or if process parameters are changed that will lead to a transition of the process during its execution."@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000057> pmd:PMD_0000008)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000058> (Umschaltpunkt der Prüfgeschwindigkeit)
+# Class: <https://w3id.org/pmd/tto/TTO_0000058> (transition point testing rate)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000058> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000058> "Umschaltpunkt der Prüfgeschwindigkeit"@de)
@@ -721,17 +719,15 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000058> "This entity describes the the transition point of the testing rate during an analysis / test process, e.g. the point referring to the strain or the stress at which the testing rate is changed during a tensile test. Typically, this transition point is associated with a removal of the extensometer from the test piece during a strain-controlled tensile test."@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000058> pmd:PMD_0000008)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000059> (Obere Streckgrenze)
+# Class: <https://w3id.org/pmd/tto/TTO_0000059> (DEPRECATED Obere Streckgrenze)
 
-AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000059> <https://w3id.org/pmd/tto>)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000059> "Obere Streckgrenze"@de)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000059> "upper yield strength"@en)
-AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000059> <https://w3id.org/pmd/tto/UpperYieldStrength>)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000059> "höchste Spannung, bevor der erste Kraftabfall auftritt"@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000059> "maximum value of stress prior to the first decrease in force"@en)
-AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/tto/TTO_0000059> "DIN EN ISO 6892-1:2019"@en)
-AnnotationAssertion(pmd:symbol <https://w3id.org/pmd/tto/TTO_0000059> "R_eH"@en)
-SubClassOf(<https://w3id.org/pmd/tto/TTO_0000059> <https://w3id.org/pmd/tto/TTO_0000009>)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000059> "Same PMDco class exists")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000059> "DEPRECATED Obere Streckgrenze"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000059> "DEPRECATED upper yield strength"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/tto/TTO_0000059> pmd:PMD_0080173)
+AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/tto/TTO_0000059> "true"^^xsd:boolean)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000059> "DEPRECATED höchste Spannung, bevor der erste Kraftabfall auftritt"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000059> "DEPRECATED maximum value of stress prior to the first decrease in force"@en)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000060> (End-Breite)
 
@@ -745,13 +741,32 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_0000060> pmd:PMD_0050154)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000100> (ISO-konformer Zugversuchsprozess)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "'tensile testing process' and ('has specified input' some 
-(object and ('has role' some 'DEPRECATED test piece role'))) and ('has specified output' some 
-(object and ('has role' some 
-('broken tested test piece role' or 'unbroken tested test piece role')))) and ('has specified output' some 
-('tensile test result' and ((('has part' some 'original thickness') and ('has part' some 'original width')) or ('has part' some 'original diameter')) and (('has part' some 'estimated strain rate over the parallel length') or ('has part' some 'strain rate') or ('has part' some 'stress rate')) and (('has part' some 'lower yield strength') or ('has part' some 'proof strength plastic extension') or ('has part' some 'proof strength total extension') or ('has part' some 'upper yield strength')) and (('has part' some 'DEPRECATED percentage elongation after fracture') or ('has part' some 'percentage plastic extension at maximum force') or ('has part' some 'DEPRECATED percentage reduction of area') or ('has part' some 'DEPRECATED percentage total extension at fracture') or ('has part' some 'percentage total extension at maximum force')) and ('has part' some 'DEPRECATED extensometer gauge length') and ('has part' some 'DEPRECATED final gauge length after fracture') and ('has part' some 'maximum force') and ('has part' some 'minimum cross-sectional area after fracture') and ('has part' some 'original cross-sectional area of the parallel length') and ('has part' some 'DEPRECATED original gauge length') and ('has part' some 'parallel length') and ('has part' some 'tensile strength'))) and ('has participant' some 'tensile testing machine')")
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden."@de)
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification."@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "'tensile testing process'
+ and ('has specified input' some 
+    (object
+     and ('has role' some 'evaluant role')))
+ and ('has specified output' some 
+    (object
+     and ('has role' some 
+        ('broken tested test piece role' or 'unbroken tested test piece role'))))
+ and ('has specified output' some 
+    ('tensile test result'
+     and ((('has part' some 'original thickness')
+     and ('has part' some 'original width')) or ('has part' some 'original diameter'))
+     and (('has part' some 'percentage elongation after fracture') or ('has part' some 'percentage total extension at fracture') or ('has part' some 'percentage reduction of area') or ('has part' some 'percentage plastic extension at maximum force') or ('has part' some 'percentage total extension at maximum force'))
+     and (('has part' some 'lower yield strength') or ('has part' some 'upper yield strength') or ('has part' some 'proof strength plastic extension') or ('has part' some 'proof strength total extension'))
+     and (('has part' some 'estimated strain rate over the parallel length') or ('has part' some 'strain rate') or ('has part' some 'stress rate'))
+     and ('has part' some 'extensometer gauge length')
+     and ('has part' some 'original gauge length')
+     and ('has part' some 'final gauge length after fracture')
+     and ('has part' some 'maximum force')
+     and ('has part' some 'minimum cross-sectional area after fracture')
+     and ('has part' some 'original cross-sectional area of the parallel length')
+     and ('has part' some 'parallel length')
+     and ('has part' some 'tensile strength')))
+ and ('has participant' some 'tensile testing machine')")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000100> "ISO tensile testing process"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000100> "ISO-konformer Zugversuchsprozess"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000100> "An ISO tensile testing process (full profile) is a tensile testing process in the sense of the TTO whose documented inputs, participating apparatus, and outputs are described with sufficient completeness such that the essential geometry-related initial quantities, testing-rate/strain-rate information, and mechanical properties specified in ISO 6892-1 for metallic materials at room temperature are represented in a form suitable for inference. This includes, in particular, a test-piece input, a tensile testing machine, and a result object containing initial geometry, gauge lengths, maximum force, tensile strength, yield/proof-strength information, and fracture-related result quantities."@en)
