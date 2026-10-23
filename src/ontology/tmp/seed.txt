@@ -37,14 +37,16 @@ https://w3id.org/pmd/co/PMD_0000974
 https://w3id.org/pmd/co/PMD_0000975
 https://w3id.org/pmd/co/PMD_0020132
 https://w3id.org/pmd/co/PMD_0020200
-https://w3id.org/pmd/co/PMD_0020311
 https://w3id.org/pmd/co/PMD_0020335
 https://w3id.org/pmd/co/PMD_0040001
 https://w3id.org/pmd/co/PMD_0050051
 https://w3id.org/pmd/co/PMD_0050153
 https://w3id.org/pmd/co/PMD_0050154
 https://w3id.org/pmd/co/PMD_0060006
+https://w3id.org/pmd/co/PMD_0060010
 https://w3id.org/pmd/co/PMD_0080019
+https://w3id.org/pmd/co/PMD_0080172
+https://w3id.org/pmd/co/PMD_0080173
 https://w3id.org/pmd/co/definitionSource
 https://w3id.org/pmd/co/relatesTo
 https://w3id.org/pmd/co/symbol
@@ -55,7 +57,6 @@ https://w3id.org/pmd/tto/CrossheadSeparationRate
 https://w3id.org/pmd/tto/DiameterAfterFracture
 https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength
 https://w3id.org/pmd/tto/GaugeLengthMarks
-https://w3id.org/pmd/tto/LowerYieldStrength
 https://w3id.org/pmd/tto/MaximumForce
 https://w3id.org/pmd/tto/MinimumCrossSectionalAreaAfterFracture
 https://w3id.org/pmd/tto/OriginalCrossSectionalArea
@@ -136,7 +137,6 @@ https://w3id.org/pmd/tto/TensileTestMethod
 https://w3id.org/pmd/tto/ThicknessAfterFracture
 https://w3id.org/pmd/tto/TransitionPoint
 https://w3id.org/pmd/tto/TransitionPointTestingRate
-https://w3id.org/pmd/tto/UpperYieldStrength
 https://w3id.org/pmd/tto/WidthAfterFracture
 https://w3id.org/pmd/tto/YieldStrength
 term

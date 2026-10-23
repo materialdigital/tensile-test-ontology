@@ -140,10 +140,6 @@ pmd:PMD_0020132 rdf:type owl:Class .
 pmd:PMD_0020200 rdf:type owl:Class .
 
 
-###  https://w3id.org/pmd/co/PMD_0020311
-pmd:PMD_0020311 rdf:type owl:Class .
-
-
 ###  https://w3id.org/pmd/co/PMD_0020335
 pmd:PMD_0020335 rdf:type owl:Class .
 
@@ -166,6 +162,10 @@ pmd:PMD_0050154 rdf:type owl:Class .
 
 ###  https://w3id.org/pmd/co/PMD_0060006
 pmd:PMD_0060006 rdf:type owl:Class .
+
+
+###  https://w3id.org/pmd/co/PMD_0060010
+pmd:PMD_0060010 rdf:type owl:Class .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000001
@@ -402,15 +402,13 @@ Note: For the determination of several properties which are based (partly or com
 
 ###  https://w3id.org/pmd/tto/TTO_0000022
 <https://w3id.org/pmd/tto/TTO_0000022> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000009> ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "lower yield strength"@en ,
-                                                  "untere Streckgrenze"@de ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/tto/LowerYieldStrength> ;
-                                       skos:definition "kleinste Spannung während des plastischen Fließens, wobei Einschwingerscheinungen nicht berücksichtigt werden"@de ,
-                                                       "lowest value of stress during plastic yielding, ignoring any initial transient effects"@en ;
-                                       pmd:definitionSource "DIN EN ISO 6892-1:2019"@en ;
-                                       pmd:symbol "R_eL"@en .
+                                       rdfs:comment "Same PMDco class exists" ;
+                                       rdfs:label "DEPRECATED lower yield strength"@en ,
+                                                  "DEPRECATED untere Streckgrenze"@de ;
+                                       rdfs:seeAlso pmd:PMD_0080172 ;
+                                       owl:deprecated "true"^^xsd:boolean ;
+                                       skos:definition "DEPRECATED kleinste Spannung während des plastischen Fließens, wobei Einschwingerscheinungen nicht berücksichtigt werden"@de ,
+                                                       "DEPRECATED lowest value of stress during plastic yielding, ignoring any initial transient effects"@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000023
@@ -596,7 +594,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000037
 <https://w3id.org/pmd/tto/TTO_0000037> rdf:type owl:Class ;
-                                       rdfs:subClassOf pmd:PMD_0020311 ;
+                                       rdfs:subClassOf pmd:PMD_0060010 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Plastische Extensometer-Dehnung bei Höchstkraft"@de ,
                                                   "percentage plastic extension at maximum force"@en ;
@@ -629,7 +627,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000040
 <https://w3id.org/pmd/tto/TTO_0000040> rdf:type owl:Class ;
-                                       rdfs:subClassOf pmd:PMD_0020311 ;
+                                       rdfs:subClassOf pmd:PMD_0060010 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Gesamte Extensometer-Dehnung bei Höchstkraft"@de ,
                                                   "percentage total extension at maximum force"@en ;
@@ -642,7 +640,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
 
 ###  https://w3id.org/pmd/tto/TTO_0000041
 <https://w3id.org/pmd/tto/TTO_0000041> rdf:type owl:Class ;
-                                       rdfs:subClassOf pmd:PMD_0020311 ;
+                                       rdfs:subClassOf pmd:PMD_0060010 ;
                                        rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
                                        rdfs:label "Streckgrenzen-Extensometer-Dehnung"@de ,
                                                   "percentage yield point extension"@en ;
@@ -842,15 +840,13 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 
 ###  https://w3id.org/pmd/tto/TTO_0000059
 <https://w3id.org/pmd/tto/TTO_0000059> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/pmd/tto/TTO_0000009> ;
-                                       rdfs:isDefinedBy <https://w3id.org/pmd/tto> ;
-                                       rdfs:label "Obere Streckgrenze"@de ,
-                                                  "upper yield strength"@en ;
-                                       rdfs:seeAlso <https://w3id.org/pmd/tto/UpperYieldStrength> ;
-                                       skos:definition "höchste Spannung, bevor der erste Kraftabfall auftritt"@de ,
-                                                       "maximum value of stress prior to the first decrease in force"@en ;
-                                       pmd:definitionSource "DIN EN ISO 6892-1:2019"@en ;
-                                       pmd:symbol "R_eH"@en .
+                                       rdfs:comment "Same PMDco class exists" ;
+                                       rdfs:label "DEPRECATED Obere Streckgrenze"@de ,
+                                                  "DEPRECATED upper yield strength"@en ;
+                                       rdfs:seeAlso pmd:PMD_0080173 ;
+                                       owl:deprecated "true"^^xsd:boolean ;
+                                       skos:definition "DEPRECATED höchste Spannung, bevor der erste Kraftabfall auftritt"@de ,
+                                                       "DEPRECATED maximum value of stress prior to the first decrease in force"@en .
 
 
 ###  https://w3id.org/pmd/tto/TTO_0000060
@@ -867,11 +863,30 @@ Note: Stress rate is only used in the elastic part of the test."""@en ;
 ###  https://w3id.org/pmd/tto/TTO_0000100
 <https://w3id.org/pmd/tto/TTO_0000100> rdf:type owl:Class ;
                                        rdfs:subClassOf pmd:PMD_0000974 ;
-                                       rdfs:comment """'tensile testing process' and ('has specified input' some 
-(object and ('has role' some 'DEPRECATED test piece role'))) and ('has specified output' some 
-(object and ('has role' some 
-('broken tested test piece role' or 'unbroken tested test piece role')))) and ('has specified output' some 
-('tensile test result' and ((('has part' some 'original thickness') and ('has part' some 'original width')) or ('has part' some 'original diameter')) and (('has part' some 'estimated strain rate over the parallel length') or ('has part' some 'strain rate') or ('has part' some 'stress rate')) and (('has part' some 'lower yield strength') or ('has part' some 'proof strength plastic extension') or ('has part' some 'proof strength total extension') or ('has part' some 'upper yield strength')) and (('has part' some 'DEPRECATED percentage elongation after fracture') or ('has part' some 'percentage plastic extension at maximum force') or ('has part' some 'DEPRECATED percentage reduction of area') or ('has part' some 'DEPRECATED percentage total extension at fracture') or ('has part' some 'percentage total extension at maximum force')) and ('has part' some 'DEPRECATED extensometer gauge length') and ('has part' some 'DEPRECATED final gauge length after fracture') and ('has part' some 'maximum force') and ('has part' some 'minimum cross-sectional area after fracture') and ('has part' some 'original cross-sectional area of the parallel length') and ('has part' some 'DEPRECATED original gauge length') and ('has part' some 'parallel length') and ('has part' some 'tensile strength'))) and ('has participant' some 'tensile testing machine')""" ,
+                                       rdfs:comment """'tensile testing process'
+ and ('has specified input' some 
+    (object
+     and ('has role' some 'evaluant role')))
+ and ('has specified output' some 
+    (object
+     and ('has role' some 
+        ('broken tested test piece role' or 'unbroken tested test piece role'))))
+ and ('has specified output' some 
+    ('tensile test result'
+     and ((('has part' some 'original thickness')
+     and ('has part' some 'original width')) or ('has part' some 'original diameter'))
+     and (('has part' some 'percentage elongation after fracture') or ('has part' some 'percentage total extension at fracture') or ('has part' some 'percentage reduction of area') or ('has part' some 'percentage plastic extension at maximum force') or ('has part' some 'percentage total extension at maximum force'))
+     and (('has part' some 'lower yield strength') or ('has part' some 'upper yield strength') or ('has part' some 'proof strength plastic extension') or ('has part' some 'proof strength total extension'))
+     and (('has part' some 'estimated strain rate over the parallel length') or ('has part' some 'strain rate') or ('has part' some 'stress rate'))
+     and ('has part' some 'extensometer gauge length')
+     and ('has part' some 'original gauge length')
+     and ('has part' some 'final gauge length after fracture')
+     and ('has part' some 'maximum force')
+     and ('has part' some 'minimum cross-sectional area after fracture')
+     and ('has part' some 'original cross-sectional area of the parallel length')
+     and ('has part' some 'parallel length')
+     and ('has part' some 'tensile strength')))
+ and ('has participant' some 'tensile testing machine')""" ,
                                                     "Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden."@de ,
                                                     "Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification."@en ;
                                        rdfs:label "ISO tensile testing process"@en ,

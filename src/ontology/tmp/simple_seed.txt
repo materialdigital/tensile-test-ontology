@@ -23,7 +23,6 @@ https://w3id.org/pmd/tto/CrossheadSeparationRate
 https://w3id.org/pmd/tto/DiameterAfterFracture
 https://w3id.org/pmd/tto/EstimatedStrainRateOverTheParallelLength
 https://w3id.org/pmd/tto/GaugeLengthMarks
-https://w3id.org/pmd/tto/LowerYieldStrength
 https://w3id.org/pmd/tto/MaximumForce
 https://w3id.org/pmd/tto/MinimumCrossSectionalAreaAfterFracture
 https://w3id.org/pmd/tto/OriginalCrossSectionalArea
@@ -104,7 +103,6 @@ https://w3id.org/pmd/tto/TensileTestMethod
 https://w3id.org/pmd/tto/ThicknessAfterFracture
 https://w3id.org/pmd/tto/TransitionPoint
 https://w3id.org/pmd/tto/TransitionPointTestingRate
-https://w3id.org/pmd/tto/UpperYieldStrength
 https://w3id.org/pmd/tto/WidthAfterFracture
 https://w3id.org/pmd/tto/YieldStrength
 term

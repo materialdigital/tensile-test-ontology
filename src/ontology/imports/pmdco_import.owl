@@ -2910,7 +2910,7 @@ AnnotationAssertion(rdfs:label co:PMD_0025006 "process attribute of"@en)
 AnnotationAssertion(skos:definition co:PMD_0025006 "A relation between a process attribute and a process, which \"bears\" the attribute."@en)
 AnnotationAssertion(skos:example co:PMD_0025006 "Tensile rate is a process attribute of tensile test"@en)
 
-# Object Property: co:PMD_0025013 (changes quality)
+# Object Property: co:PMD_0025013 (verändert die Qualität)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0025013 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0025013 "PERSON: Kamilla Zaripova")
@@ -4189,7 +4189,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000010 "GROUP: OBI"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000010 "software"@en)
 SubClassOf(obo:IAO_0000010 obo:IAO_0000104)
 
-# Class: obo:IAO_0000027 (data item)
+# Class: obo:IAO_0000027 (data entity)
 
 AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000027 "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000027 "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -4862,7 +4862,7 @@ AnnotationAssertion(skos:example co:PMD_0000053 "The process of melting aluminum
 SubClassOf(co:PMD_0000053 obo:COB_0000035)
 SubClassOf(co:PMD_0000053 ObjectIntersectionOf(co:PMD_0000547 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 co:PMD_0020139)))
 
-# Class: co:PMD_0000054 (Heizfunktion)
+# Class: co:PMD_0000054 (heating function)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000054 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000054 "PERSON: Joerg Waitelonis")
@@ -4896,7 +4896,7 @@ AnnotationAssertion(skos:definition co:PMD_0000056 "Ein Schmelzofen ist ein Ger�
 SubClassOf(co:PMD_0000056 co:PMD_0000780)
 SubClassOf(co:PMD_0000056 ObjectIntersectionOf(co:PMD_0000655 ObjectSomeValuesFrom(obo:RO_0000085 co:PMD_0000057)))
 
-# Class: co:PMD_0000057 (melting function)
+# Class: co:PMD_0000057 (Schmelzfunktion)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000057 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000057 "PERSON: Joerg Waitelonis")
@@ -5174,7 +5174,7 @@ AnnotationAssertion(skos:definition co:PMD_0000504 "Ein Simulationsprozess, der 
 AnnotationAssertion(skos:example co:PMD_0000504 "Simulating the electronic structure and dynamics of a new alloy to predict its mechanical properties."@en)
 SubClassOf(co:PMD_0000504 co:PMD_0000933)
 
-# Class: co:PMD_0000505 (acoustic absorption coefficient)
+# Class: co:PMD_0000505 (Schallabsorptionskoeffizient)
 
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000505 "PERSON: Joerg Waitelonis")
 AnnotationAssertion(rdfs:label co:PMD_0000505 "Schallabsorptionskoeffizient"@de)
@@ -5603,7 +5603,7 @@ AnnotationAssertion(skos:definition co:PMD_0000552 "Ein Struktur Eigenschaften A
 SubClassOf(co:PMD_0000552 co:PMD_0000957)
 SubClassOf(co:PMD_0000552 ObjectSomeValuesFrom(obo:RO_0009006 co:PMD_0000551))
 
-# Class: co:PMD_0000553 (chemisches Potential)
+# Class: co:PMD_0000553 (chemical potential)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000553 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000553 "PERSON: Joerg Waitelonis")
@@ -5735,7 +5735,7 @@ AnnotationAssertion(skos:definition co:PMD_0000564 "Eine Unterfunktion der Besch
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000564 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000564 co:PMD_0000575)
 
-# Class: co:PMD_0000565 (Beschichten Durch Löten)
+# Class: co:PMD_0000565 (coating by soldering)
 
 AnnotationAssertion(rdfs:label co:PMD_0000565 "Beschichten Durch Löten"@de)
 AnnotationAssertion(rdfs:label co:PMD_0000565 "coating by soldering"@en)
@@ -5959,7 +5959,7 @@ AnnotationAssertion(skos:definition co:PMD_0000587 "The crack growth is an evolu
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000587 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000587 co:PMD_0000635)
 
-# Class: co:PMD_0000588 (creep testing machine)
+# Class: co:PMD_0000588 (Kriechprüfmaschine)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000588 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000588 "PERSON: Joerg Waitelonis")
@@ -6539,7 +6539,7 @@ AnnotationAssertion(skos:definition co:PMD_0000649 "Ein Umform Prozess, bei dem 
 AnnotationAssertion(skos:example co:PMD_0000649 "Stripping, Deep Drawing, Spinning"@en)
 SubClassOf(co:PMD_0000649 co:PMD_0000646)
 
-# Class: co:PMD_0000650 (forming under compressive conditions)
+# Class: co:PMD_0000650 (Druckumformen)
 
 AnnotationAssertion(obo:IAO_0000119 co:PMD_0000650 "Official definition can be found in: DIN 8583-1"@en)
 AnnotationAssertion(terms:source co:PMD_0000650 "Offizielle Definition findet man in: DIN 8583-1"@de)
@@ -7055,7 +7055,7 @@ AnnotationAssertion(skos:definition co:PMD_0000799 "A device used for analyzing 
 AnnotationAssertion(skos:definition co:PMD_0000799 "Ein Gerät zur Analyse von Ionen in einer Probe zur Bestimmung ihrer Zusammensetzung und Konzentration."@de)
 SubClassOf(co:PMD_0000799 co:PMD_0000602)
 
-# Class: co:PMD_0000800 (Ionenspektroskopie)
+# Class: co:PMD_0000800 (ion spectroscopy)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000800 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000800 "PERSON: Joerg Waitelonis")
@@ -7436,7 +7436,7 @@ AnnotationAssertion(owl:deprecated co:PMD_0000848 "true"^^xsd:boolean)
 AnnotationAssertion(skos:definition co:PMD_0000848 "DEPRECATED A mechanical property is a material property which is a characteristic of material M. Mechanical property has realization in a stimulating process (in most cases, application of mechanical load), and the stimulating process is an occurent part of another process, in which an object O that is an instance of M participates."@en)
 AnnotationAssertion(skos:definition co:PMD_0000848 "DEPRECATED Eine mechanische Eigenschaft ist eine Materialeigenschaft, die eine Eigenschaft des Materials M ist. Eine mechanische Eigenschaft wird in einem stimulierenden Prozess (in den meisten Fällen durch Anwendung einer mechanischen Belastung) verwirklicht, und der stimulierende Prozess ist ein stattfindender Teil eines anderen Prozesses, an dem ein Objekt O, das eine Instanz von M ist, teilnimmt."@de)
 
-# Class: co:PMD_0000849 (Mechanische Eigenschaften Analyseverfahren)
+# Class: co:PMD_0000849 (mechanical property analyzing process)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000849 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000849 "PERSON: Joerg Waitelonis")
@@ -7628,7 +7628,7 @@ AnnotationAssertion(skos:definition co:PMD_0000874 "A microscope that uses visib
 AnnotationAssertion(skos:definition co:PMD_0000874 "Ein Mikroskop, das sichtbares Licht und Linsen verwendet, um kleine Objekte oder Details zu vergrößern und zu betrachten."@de)
 SubClassOf(co:PMD_0000874 co:PMD_0000855)
 
-# Class: co:PMD_0000875 (Optische Mikroskopie)
+# Class: co:PMD_0000875 (optical microscopy)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000875 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000875 "PERSON: Joerg Waitelonis")
@@ -8202,7 +8202,7 @@ SubClassOf(co:PMD_0000942 co:PMD_0020335)
 SubClassOf(co:PMD_0000942 co:PMD_0023004)
 SubClassOf(co:PMD_0000942 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000080 co:PMD_0000001) ObjectSomeValuesFrom(obo:RO_0002328 obo:BFO_0000020) ObjectSomeValuesFrom(obo:RO_0002328 obo:BFO_0000146)))
 
-# Class: co:PMD_0000944 (Spektrometer)
+# Class: co:PMD_0000944 (spectrometer)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000944 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000944 "PERSON: Joerg Waitelonis")
@@ -8358,7 +8358,7 @@ AnnotationAssertion(skos:definition co:PMD_0000961 "The sublimation point is a s
 AnnotationAssertion(co:PMD_0000060 co:PMD_0000961 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0000961 co:PMD_0020164)
 
-# Class: co:PMD_0000962 (supercritical fluid chromatography process)
+# Class: co:PMD_0000962 (Überkritische Fluidchromatographie Verfahren)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000962 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000962 "PERSON: Joerg Waitelonis")
@@ -8553,7 +8553,7 @@ AnnotationAssertion(skos:example co:PMD_0000979 "Measuring the thermal conductiv
 AnnotationAssertion(co:PMD_0050117 co:PMD_0000979 "TCMP"@en)
 SubClassOf(co:PMD_0000979 co:PMD_0000982)
 
-# Class: co:PMD_0000980 (thermal conductivity measuring function)
+# Class: co:PMD_0000980 (Wärmeleitfähigkeitsmessfunktion)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0000980 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0000980 "PERSON: Joerg Waitelonis")
@@ -10568,7 +10568,7 @@ AnnotationAssertion(rdfs:label co:PMD_0020166 "heat (metallurgy)"@en)
 AnnotationAssertion(skos:definition co:PMD_0020166 "A heat is a fixed amount of metallic alloy that may be input to some manufacturing process."@en)
 SubClassOf(co:PMD_0020166 ObjectIntersectionOf(co:PMD_0020139 ObjectSomeValuesFrom(obo:RO_0000087 co:PMD_0000534) ObjectSomeValuesFrom(obo:RO_0001001 co:PMD_0000852)))
 
-# Class: co:PMD_0020167 (strukturelle Grenze)
+# Class: co:PMD_0020167 (structural boundary)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0020167 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0020167 "PERSON: Philipp von Hartrott")
@@ -10697,7 +10697,7 @@ AnnotationAssertion(rdfs:label co:PMD_0020183 "stretch straightener machine"@en)
 AnnotationAssertion(skos:definition co:PMD_0020183 "A strech straightener machine is a forming machine that is used in a \"forming under tensile conditions\" process."@en)
 SubClassOf(co:PMD_0020183 co:PMD_0000648)
 
-# Class: co:PMD_0020184 (Walzwerk)
+# Class: co:PMD_0020184 (rolling mill)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0020184 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0020184 "PERSON: Philipp von Hartrott")
@@ -10934,7 +10934,7 @@ EquivalentClasses(co:PMD_0020210 ObjectExactCardinality(1 obo:RO_0002351 co:PMD_
 SubClassOf(co:PMD_0020210 co:PMD_0020003)
 SubClassOf(co:PMD_0020210 ObjectSomeValuesFrom(obo:RO_0002351 co:PMD_0020140))
 
-# Class: co:PMD_0020211 (allotropy of an elemental crystal)
+# Class: co:PMD_0020211 (Allotropie eines Elementarkristalls)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0020211 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000116 co:PMD_0020211 "different structures of a crystal could be linked by a relational property 'allotrope of'"@en)
@@ -12244,7 +12244,7 @@ AnnotationAssertion(skos:definition co:PMD_0025017 "Der Außendurchmesser ist di
 AnnotationAssertion(skos:definition co:PMD_0025017 "Outer diameter is a length of a straight line from one outer surface of an object or space to the other side of its outer surface through the center of an object or space when it has the inside and outside surface."@en)
 SubClassOf(co:PMD_0025017 co:PMD_0050051)
 
-# Class: co:PMD_0025018 (geometric relational quality)
+# Class: co:PMD_0025018 (geometrische relationale Qualität)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0025018 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 co:PMD_0025018 "PERSON: Kamilla Zaripova")
@@ -14386,7 +14386,7 @@ AnnotationAssertion(rdfs:label co:PMD_0080054 "enthalpy of vaporization"@en)
 AnnotationAssertion(skos:definition co:PMD_0080054 "the amount of energy required to convert an entity from liquid to gaseous aggregtate state at constant temperature and pressure"@en)
 SubClassOf(co:PMD_0080054 co:PMD_0080052)
 
-# Class: co:PMD_0080055 (Selbstzündungstemperatur)
+# Class: co:PMD_0080055 (auto-ignition temperature)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0080055 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000116 co:PMD_0080055 "Necessary and sufficient conditions for 'auto-ignition temperature' have not yet been formalized. The term is defined as a specific subtype of 'thermo dynamic quality'. Distinguishing criteria are domain-specific and depend on measurement conventions not yet expressed as OWL restrictions."@en)
@@ -15938,7 +15938,7 @@ AnnotationAssertion(skos:example co:PMD_0080196 "The thermal expansion coefficie
 AnnotationAssertion(co:PMD_0000060 co:PMD_0080196 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0080196 co:PMD_0020353)
 
-# Class: co:PMD_0080197 (thermischer Volumenausdehnungskoeffizient)
+# Class: co:PMD_0080197 (volumetric thermal expansion coefficient)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0080197 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000116 co:PMD_0080197 "Necessary and sufficient conditions for 'volumetric thermal expansion coefficient' have not yet been formalized. The term is defined as a specific subtype of 'thermal expansion coefficient'. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions."@en)
@@ -15964,7 +15964,7 @@ AnnotationAssertion(skos:example co:PMD_0080198 "Aluminum has a linear thermal e
 AnnotationAssertion(co:PMD_0000060 co:PMD_0080198 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0080198 co:PMD_0080196)
 
-# Class: co:PMD_0080200 (flame resistance)
+# Class: co:PMD_0080200 (Flammbeständigkeit)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0080200 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000116 co:PMD_0080200 "Necessary and sufficient conditions for 'flame resistance' have not yet been formalized. The term is defined as a specific subtype of 'thermal capability', disjoint from 'flammability' as the inverse capability. Distinguishing criteria are domain-specific and depend on measurement conventions not yet expressed as OWL restrictions."@en)
@@ -16004,7 +16004,7 @@ AnnotationAssertion(skos:definition co:PMD_0080202 "Thermoschockbeständigkeit i
 AnnotationAssertion(co:PMD_0000060 co:PMD_0080202 "true"^^xsd:boolean)
 SubClassOf(co:PMD_0080202 co:PMD_0020353)
 
-# Class: co:PMD_0080203 (radiation emission capability)
+# Class: co:PMD_0080203 (Strahlungsemissionsfähigkeit)
 
 AnnotationAssertion(obo:IAO_0000114 co:PMD_0080203 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000116 co:PMD_0080203 "Necessary and sufficient conditions for 'radiation emission capability' have not yet been formalized. The term is defined as a specific subtype of 'physical capability'. Distinguishing criteria are domain-specific and depend on measurement conventions or source terminology not yet expressed as OWL restrictions."@en)
@@ -16448,7 +16448,7 @@ AnnotationAssertion(skos:definition co:PMD_0020007 "Monoklines Bravais-Gitter mi
 AnnotationAssertion(skos:definition co:PMD_0020007 "monoclinic Bravais lattice with primitive centering (mP), having one 2-fold rotation axis with one oblique angle and two right angles between unit cell axes"@en)
 AnnotationAssertion(co:PMD_0000060 co:PMD_0020007 "true"^^xsd:boolean)
 
-# Individual: co:PMD_0020008 (Bravais-Gitter monoklin basiszentriert)
+# Individual: co:PMD_0020008 (OBSOLETE bravais lattice monoclinic base-centered)
 
 AnnotationAssertion(rdfs:label co:PMD_0020008 "Bravais-Gitter monoklin basiszentriert"@de)
 AnnotationAssertion(rdfs:label co:PMD_0020008 "OBSOLETE bravais lattice monoclinic base-centered"@en)

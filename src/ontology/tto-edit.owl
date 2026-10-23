@@ -401,7 +401,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/tto/TTO_0000027> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000027> pmd:PMD_0050051)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000028> (DEPRECATED original gauge length)
+# Class: <https://w3id.org/pmd/tto/TTO_0000028> (DEPRECATED Anfangsmesslänge)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000028> "replaced with uplfted term form PMDco")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000028> "DEPRECATED Anfangsmesslänge"@de)
@@ -410,7 +410,7 @@ AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/tto/TTO_0000028> "true"
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000028> "DEPRECATED Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000028> "DEPRECATED length between gauge length marks on the test piece measured at room temperature before the test"@en)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000029> (Anfangs-Dicke)
+# Class: <https://w3id.org/pmd/tto/TTO_0000029> (original thickness)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000029> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000029> "Anfangs-Dicke"@de)
@@ -741,8 +741,6 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_0000060> pmd:PMD_0050154)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000100> (ISO-konformer Zugversuchsprozess)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden."@de)
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification."@en)
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "'tensile testing process'
  and ('has specified input' some 
     (object
@@ -767,6 +765,8 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "'tensil
      and ('has part' some 'parallel length')
      and ('has part' some 'tensile strength')))
  and ('has participant' some 'tensile testing machine')")
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden."@de)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification."@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000100> "ISO tensile testing process"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000100> "ISO-konformer Zugversuchsprozess"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000100> "An ISO tensile testing process (full profile) is a tensile testing process in the sense of the TTO whose documented inputs, participating apparatus, and outputs are described with sufficient completeness such that the essential geometry-related initial quantities, testing-rate/strain-rate information, and mechanical properties specified in ISO 6892-1 for metallic materials at room temperature are represented in a form suitable for inference. This includes, in particular, a test-piece input, a tensile testing machine, and a result object containing initial geometry, gauge lengths, maximum force, tensile strength, yield/proof-strength information, and fracture-related result quantities."@en)
