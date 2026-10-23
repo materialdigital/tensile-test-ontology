@@ -254,7 +254,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000015> "The length of a straight line through the center of an object (tensile test piece) as measured after a fracture occured during a test."@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000015> pmd:PMD_0050051)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000016> (Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge)
+# Class: <https://w3id.org/pmd/tto/TTO_0000016> (estimated strain rate over the parallel length)
 
 AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/pmd/tto/TTO_0000016> <https://w3id.org/pmd/tto>)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000016> "Abgeschätzte Dehngeschwindigkeit Über Die Parallele Länge"@de)
@@ -403,7 +403,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(pmd:definitionSource <https://w3id.org/pmd/tto/TTO_0000027> "DIN EN ISO 6892-1:2019"@en)
 SubClassOf(<https://w3id.org/pmd/tto/TTO_0000027> pmd:PMD_0050051)
 
-# Class: <https://w3id.org/pmd/tto/TTO_0000028> (DEPRECATED Anfangsmesslänge)
+# Class: <https://w3id.org/pmd/tto/TTO_0000028> (DEPRECATED original gauge length)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000028> "replaced with uplfted term form PMDco")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000028> "DEPRECATED Anfangsmesslänge"@de)
@@ -745,13 +745,13 @@ SubClassOf(<https://w3id.org/pmd/tto/TTO_0000060> pmd:PMD_0050154)
 
 # Class: <https://w3id.org/pmd/tto/TTO_0000100> (ISO-konformer Zugversuchsprozess)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden."@de)
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification."@en)
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "'tensile testing process' and ('has specified input' some 
 (object and ('has role' some 'DEPRECATED test piece role'))) and ('has specified output' some 
 (object and ('has role' some 
 ('broken tested test piece role' or 'unbroken tested test piece role')))) and ('has specified output' some 
 ('tensile test result' and ((('has part' some 'original thickness') and ('has part' some 'original width')) or ('has part' some 'original diameter')) and (('has part' some 'estimated strain rate over the parallel length') or ('has part' some 'strain rate') or ('has part' some 'stress rate')) and (('has part' some 'lower yield strength') or ('has part' some 'proof strength plastic extension') or ('has part' some 'proof strength total extension') or ('has part' some 'upper yield strength')) and (('has part' some 'DEPRECATED percentage elongation after fracture') or ('has part' some 'percentage plastic extension at maximum force') or ('has part' some 'DEPRECATED percentage reduction of area') or ('has part' some 'DEPRECATED percentage total extension at fracture') or ('has part' some 'percentage total extension at maximum force')) and ('has part' some 'DEPRECATED extensometer gauge length') and ('has part' some 'DEPRECATED final gauge length after fracture') and ('has part' some 'maximum force') and ('has part' some 'minimum cross-sectional area after fracture') and ('has part' some 'original cross-sectional area of the parallel length') and ('has part' some 'DEPRECATED original gauge length') and ('has part' some 'parallel length') and ('has part' some 'tensile strength'))) and ('has participant' some 'tensile testing machine')")
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden."@de)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/tto/TTO_0000100> "Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification."@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000100> "ISO tensile testing process"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/tto/TTO_0000100> "ISO-konformer Zugversuchsprozess"@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/tto/TTO_0000100> "An ISO tensile testing process (full profile) is a tensile testing process in the sense of the TTO whose documented inputs, participating apparatus, and outputs are described with sufficient completeness such that the essential geometry-related initial quantities, testing-rate/strain-rate information, and mechanical properties specified in ISO 6892-1 for metallic materials at room temperature are represented in a form suitable for inference. This includes, in particular, a test-piece input, a tensile testing machine, and a result object containing initial geometry, gauge lengths, maximum force, tensile strength, yield/proof-strength information, and fracture-related result quantities."@en)

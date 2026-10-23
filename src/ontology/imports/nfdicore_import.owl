@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/tto/imports/nfdicore_import.owl>
-<https://w3id.org/pmd/tto/releases/2026-08-14/imports/nfdicore_import.owl>
+<https://w3id.org/pmd/tto/releases/2026-10-23/imports/nfdicore_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://nfdi.fiz-karlsruhe.de/ontology/3.0.4>)
-Annotation(owl:versionInfo "2026-08-14")
+Annotation(owl:versionInfo "2026-10-23")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -145,7 +145,6 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#repository>))
-Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
 ############################
@@ -159,12 +158,6 @@ AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/description> "descripti
 # Annotation Property: <http://purl.org/dc/terms/license> (license)
 
 AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/license> "license")
-
-# Annotation Property: <http://www.w3.org/2004/02/skos/core#altLabel> (alternative label)
-
-AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#altLabel> "alternative label"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#altLabel> "An alternative lexical label for a resource."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/2004/02/skos/core#altLabel> "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en)
 
 # Annotation Property: <http://www.w3.org/2004/02/skos/core#definition> (definition)
 
@@ -208,7 +201,6 @@ TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
 # Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (has realization)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "has realization"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000054> "realized in"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000054> "b has realization c =Def c realizes b"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000054> "As for realizes"@en)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/BFO_0000055>)
@@ -384,7 +376,6 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002353> <http://purl.obo
 
 AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226> "inverse of the relation 'is about'")
 AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226> "is subject of"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226> "is described by")
 
 
 
@@ -450,7 +441,6 @@ DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolib
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000015> "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000015> "event"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000015> "(Elucidation) p is a process means p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000015> "An act of selling; the life of an organism; a process of sleeping; a process of cell-division; a beating of the heart; a process of meiosis; the taxiing of an aircraft; the programming of a computer"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000003>)
@@ -463,7 +453,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000016> "the cell wall is disposed to filter chemicals in endocytosis and exocytosis"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000016> "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000016> "disposition"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000016> "internally-grounded realizable entity"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000016> "(Elucidation) A disposition b is a realizable entity such that if b ceases to exist then its bearer is physically changed & b's realization occurs when and because this bearer is in some special physical circumstances & this realization occurs in virtue of the bearer's physical make-up"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000016> "An atom of element X has the disposition to decay to an atom of element Y; the cell wall is disposed to transport cellular material through endocytosis and exocytosis; certain people have a predisposition to colon cancer; children are innately disposed to categorize objects in certain ways"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolibrary.org/obo/BFO_0000017>)
@@ -532,7 +521,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000023> "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000023> "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000023> "role"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000023> "externally-grounded realizable entity"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000023> "(Elucidation) A role b is a realizable entity such that b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be & b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000023> "The priest role; the student role; the role of subject in a clinical trial; the role of a stone in marking a property boundary; the role of a boundary to demarcate two neighbouring administrative territories; the role of a building in serving as a military target"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000023> <http://purl.obolibrary.org/obo/BFO_0000017>)
@@ -551,7 +539,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000031> "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000031> "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000031> "g-dependent continuant"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000031> "(Elucidation) A generically dependent continuant is an entity that exists in virtue of the fact that there is at least one of what may be multiple copies which is the content or the pattern that multiple copies would share"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000031> "The pdf file on your laptop; the pdf file that is a copy thereof on my laptop; the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule; the content that is shared by a string of dots and dashes written on a page and the transmitted Morse code signal; the content of a sentence; an engineering blueprint"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)

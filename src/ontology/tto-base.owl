@@ -13,7 +13,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/tto/tto-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-08-14/tto-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/tto/releases/2026-10-23/tto-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:contributor>https://orcid.org/0000-0003-1649-6832</dcterms:contributor>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
@@ -30,7 +30,7 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Tensile Test Ontology (TTO)</dcterms:title>
         <doap:repository>https://github.com/materialdigital/tensile-test-ontology</doap:repository>
-        <owl:versionInfo>2026-08-14</owl:versionInfo>
+        <owl:versionInfo>2026-10-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -94,12 +94,6 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
@@ -135,45 +129,9 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
     
 
 
@@ -194,15 +152,9 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
     
 
 
@@ -236,33 +188,15 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0000848 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000848"/>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0000952 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000952"/>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0000973 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000973"/>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0000974 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0000975 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000975"/>
     
 
 
@@ -275,6 +209,18 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- https://w3id.org/pmd/co/PMD_0020200 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020200"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020311 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020311"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020335 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020335"/>
     
 
 
@@ -323,34 +269,6 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- https://w3id.org/pmd/tto/TTO_0000004 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>&apos;characteristic of&apos; some 
     (object
      and (&apos;is specified output of&apos; some 
@@ -358,13 +276,12 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
          and (&apos;has specified input&apos; some 
             (object
              and (&apos;has quality&apos; some &apos;original gauge length&apos;))))))</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Verlängerung</rdfs:label>
-        <rdfs:label xml:lang="en">elongation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/Elongation"/>
-        <skos:definition xml:lang="de">Zunahme der Anfangsmesslänge zu einem beliebigen Zeitpunkt während des Versuchs</skos:definition>
-        <skos:definition xml:lang="en">increase in the original gauge length at any moment during the test</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Verlängerung</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED elongation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED Zunahme der Anfangsmesslänge zu einem beliebigen Zeitpunkt während des Versuchs</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED increase in the original gauge length at any moment during the test</skos:definition>
     </owl:Class>
     
 
@@ -372,8 +289,6 @@ The TTO was developed in the frame of the PMD project. The TTO provides conceptu
     <!-- https://w3id.org/pmd/tto/TTO_0000005 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000005">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <rdfs:comment xml:lang="en">Dimensional analysis: L
 Unit (e.g. SI): mm</rdfs:comment>
         <rdfs:comment xml:lang="de">Hinweis: Die Dehnung kann mit verschiedenen Kanälen gemessen werden (z. B. bei Verwendung von einem oder zwei Dehnungsmesserkanälen); in der Regel wird als Dehnungswert der mittlere Durchschnittswert der beteiligten Kanäle angegeben, falls zutreffend.
@@ -382,13 +297,12 @@ Hinweis: Die optische Längenänderungsmessung kann eine besondere Methode der D
         <rdfs:comment xml:lang="en">Note: The extension might be measured using different channels (e.g. when using one or two extensometer channels); usually, the mean average value of involved channels is given as extension value, if applicable.
 
 Note: Optical extensometry may require a specific data storage method.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Verlängerung (der Extensometer-Messlänge)</rdfs:label>
-        <rdfs:label xml:lang="en">extension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/Extension"/>
-        <skos:definition xml:lang="en">Increase in the extensometer gauge length at any moment during a test</skos:definition>
-        <skos:definition xml:lang="de">Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs</skos:definition>
-        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Verlängerung (der Extensometer-Messlänge)</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED extension</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="en">DEPRECATED Increase in the extensometer gauge length at any moment during a test</skos:definition>
+        <skos:definition xml:lang="de">DEPRECATED Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt eines Versuchs</skos:definition>
     </owl:Class>
     
 
@@ -396,7 +310,7 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     <!-- https://w3id.org/pmd/tto/TTO_0000006 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000006">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label xml:lang="en">broken tested test piece role</rdfs:label>
         <skos:definition xml:lang="en">The role of a test piece that, as part of a destructive testing process, has been brought to failure and is therefore in a broken physical state after the test.</skos:definition>
     </owl:Class>
@@ -406,7 +320,7 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     <!-- https://w3id.org/pmd/tto/TTO_0000007 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000007">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:comment xml:lang="en">An unbroken tested test piece role may explicitly also be realized by a destructive testing process that unintendedly actually did not lead to breakage.</rdfs:comment>
         <rdfs:label xml:lang="en">unbroken tested test piece role</rdfs:label>
         <skos:definition xml:lang="en">The role of a test piece that has undergone a test but remains physically intact after the testing process, typically as a result of a non-destructive or non-failure-inducing test.</skos:definition>
@@ -487,14 +401,12 @@ Note: Optical extensometry may require a specific data storage method.</rdfs:com
     <!-- https://w3id.org/pmd/tto/TTO_0000012 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000012">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0050000"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Querschnittsfläche</rdfs:label>
-        <rdfs:label xml:lang="en">cross section area</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/CrossSectionArea"/>
-        <skos:definition xml:lang="de">Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse.</skos:definition>
-        <skos:definition xml:lang="en">The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis.</skos:definition>
-        <pmd:definitionSource rdf:resource="https://www.merriam-webster.com/dictionary/cross%20section"/>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Querschnittsfläche</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED cross section area</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED Die Querschnittsfläche ist die Fläche eines Schnittes oder eines rechtwinklig geschnittenen oder gebrochenen Stücks eines Objektes in Bezug auf eine Achse.</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED The cross section area is an area of a cutting or piece of an object cut off or broken at right angles or related to an axis.</skos:definition>
     </owl:Class>
     
 
@@ -565,19 +477,16 @@ Unit (e.g. SI): mm</rdfs:comment>
     <!-- https://w3id.org/pmd/tto/TTO_0000017 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000017">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Extensometer-Messlänge</rdfs:label>
-        <rdfs:label xml:lang="en">extensometer gauge length</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/ExtensometerGaugeLength"/>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Extensometer-Messlänge</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED extensometer gauge length</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <skos:definition xml:lang="de">Anfangsmesslänge des Dehnungsaufnehmers (Extensometer), die zum Messen der Verlängerung benutzt wird
 
 Anmerkung: Für die Bestimmung mehrerer Eigenschaften, die (teilweise oder vollständig) von der Verlängerung abhängig sind, z. B. R_p, A_e oder A_g, ist die Verwendung eines Extensometers zwingend erforderlich.</skos:definition>
         <skos:definition xml:lang="en">initial gauge length of the extensometer used for measurement of extension
 
 Note: For the determination of several properties which are based (partly or complete) on extension, e. g. R_p, A_e or A_g, the use of an extensometer is mandatory.</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">L_e</pmd:symbol>
     </owl:Class>
     
 
@@ -585,15 +494,12 @@ Note: For the determination of several properties which are based (partly or com
     <!-- https://w3id.org/pmd/tto/TTO_0000018 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000018">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Messlänge nach dem Bruch</rdfs:label>
-        <rdfs:label xml:lang="en">final gauge length after fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/FinalGaugeLengthAfterFracture"/>
-        <skos:definition xml:lang="de">Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die nach dem Bruch bei Raumtemperatur gemessen wird, nachdem die beiden Probenbruchstücke sorgfältig so zusammengefügt wurden, dass ihre Achsen in einer Geraden liegen</skos:definition>
-        <skos:definition xml:lang="en">length between gauge length marks on the test piece measured after rupture, at room temperature, the two pieces having been carefully fitted back together so that their axes lie in a straight line</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">L_u</pmd:symbol>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Messlänge nach dem Bruch</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED final gauge length after fracture</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die nach dem Bruch bei Raumtemperatur gemessen wird, nachdem die beiden Probenbruchstücke sorgfältig so zusammengefügt wurden, dass ihre Achsen in einer Geraden liegen</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED length between gauge length marks on the test piece measured after rupture, at room temperature, the two pieces having been carefully fitted back together so that their axes lie in a straight line</skos:definition>
     </owl:Class>
     
 
@@ -601,15 +507,12 @@ Note: For the determination of several properties which are based (partly or com
     <!-- https://w3id.org/pmd/tto/TTO_0000019 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000019">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Messlänge</rdfs:label>
-        <rdfs:label xml:lang="en">gauge length</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/GaugeLength"/>
-        <skos:definition xml:lang="de">Länge des parallelen Teils der Probe, an dem zu einem beliebigen Zeitpunkt während des Versuchs die Verlängerung gemessen wird</skos:definition>
-        <skos:definition xml:lang="en">length of the parallel portion of the test piece on which elongation is measured at any moment during the test</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">L</pmd:symbol>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Messlänge</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED gauge length</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED Länge des parallelen Teils der Probe, an dem zu einem beliebigen Zeitpunkt während des Versuchs die Verlängerung gemessen wird</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED length of the parallel portion of the test piece on which elongation is measured at any moment during the test</skos:definition>
     </owl:Class>
     
 
@@ -686,29 +589,7 @@ Note: For materials which display discontinuous yielding, but where no work-hard
     <!-- https://w3id.org/pmd/tto/TTO_0000024 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000056"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000060"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000015"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
         <rdfs:comment>Symbol: S_u</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Kleinster Querschnitt nach dem Bruch</rdfs:label>
@@ -746,29 +627,7 @@ Note: It is recommended to measure the original cross-sectional area of the para
     <!-- https://w3id.org/pmd/tto/TTO_0000026 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000026">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000029"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000030"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000027"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
         <rdfs:comment>Symbol: S_o</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Anfangsquerschnitt innerhalb der parallelen Länge</rdfs:label>
@@ -799,15 +658,12 @@ Note: It is recommended to measure the original cross-sectional area of the para
     <!-- https://w3id.org/pmd/tto/TTO_0000028 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000028">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000019"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Anfangsmesslänge</rdfs:label>
-        <rdfs:label xml:lang="en">original gauge length</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/OriginalGaugeLength"/>
-        <skos:definition xml:lang="de">Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird</skos:definition>
-        <skos:definition xml:lang="en">length between gauge length marks on the test piece measured at room temperature before the test</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">L_o</pmd:symbol>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Anfangsmesslänge</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED original gauge length</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED length between gauge length marks on the test piece measured at room temperature before the test</skos:definition>
     </owl:Class>
     
 
@@ -863,20 +719,12 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     <!-- https://w3id.org/pmd/tto/TTO_0000032 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000032">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage elongation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageElongation"/>
-        <skos:definition xml:lang="de">Verlängerung, angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
-        <skos:definition xml:lang="en">elongation expressed as a percentage of the original gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED percentage elongation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED Verlängerung, angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED elongation expressed as a percentage of the original gauge length</skos:definition>
     </owl:Class>
     
 
@@ -884,15 +732,12 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     <!-- https://w3id.org/pmd/tto/TTO_0000033 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Bruchdehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage elongation after fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageElongationAfterFracture"/>
-        <skos:definition xml:lang="de">bleibende Verlängerung der Messlänge nach dem Bruch (L_u − L_o), angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
-        <skos:definition xml:lang="en">permanent elongation of the gauge length after fracture (L_u − L_o), expressed as a percentage of the original gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">A</pmd:symbol>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Bruchdehnung</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED percentage elongation after fracture</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED bleibende Verlängerung der Messlänge nach dem Bruch (L_u − L_o), angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED permanent elongation of the gauge length after fracture (L_u − L_o), expressed as a percentage of the original gauge length</skos:definition>
     </owl:Class>
     
 
@@ -900,26 +745,16 @@ Note: The concept of parallel length is replaced by the concept of distance betw
     <!-- https://w3id.org/pmd/tto/TTO_0000034 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000034">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Extensometer-Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage extension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/2.0.8/PercentageExtension"/>
-        <skos:altLabel xml:lang="en">(engineering) strain</skos:altLabel>
-        <skos:altLabel xml:lang="de">technische Dehnung</skos:altLabel>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Extensometer-Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED percentage extension</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <skos:definition xml:lang="en">extension expressed as a percentage of the extensometer gauge length
 
 Note: The percentage extension is commonly called engineering strain.</skos:definition>
         <skos:definition>in Prozent angegebene Verlängerung der Extensometer-Messlänge
 
 Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.</skos:definition>
-        <pmd:definitionSource>DIN EN ISO 6892-1:2019</pmd:definitionSource>
     </owl:Class>
     
 
@@ -927,20 +762,12 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000035 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000035">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000004"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Bleibende Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage permanent elongation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePermanentElongation"/>
-        <skos:definition xml:lang="de">Zunahme der Anfangsmesslänge einer Probe nach Entfernen einer festgelegten Zugspannung, angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
-        <skos:definition xml:lang="en">increase in the original gauge length of a test piece after removal of a specified stress, expressed as a percentage of the original gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Bleibende Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED percentage permanent elongation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED Zunahme der Anfangsmesslänge einer Probe nach Entfernen einer festgelegten Zugspannung, angegeben in Prozent, bezogen auf die Anfangsmesslänge</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED increase in the original gauge length of a test piece after removal of a specified stress, expressed as a percentage of the original gauge length</skos:definition>
     </owl:Class>
     
 
@@ -948,20 +775,12 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000036 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000036">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Bleibende Extensometer-Dehnung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage permanent extension</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentagePermanentExtension"/>
-        <skos:definition xml:lang="de">Vergrößerung der Extensometer-Messlänge nach Entfernen einer festgelegten, auf die Probe aufgebrachten Zugspannung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
-        <skos:definition xml:lang="en">increase in the extensometer gauge length, after removal of a specified stress from the test piece, expressed as a percentage of the extensometer gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Bleibende Extensometer-Dehnung</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED percentage permanent extension</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED Vergrößerung der Extensometer-Messlänge nach Entfernen einer festgelegten, auf die Probe aufgebrachten Zugspannung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED increase in the extensometer gauge length, after removal of a specified stress from the test piece, expressed as a percentage of the extensometer gauge length</skos:definition>
     </owl:Class>
     
 
@@ -969,21 +788,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000037 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000037">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Plastische Extensometer-Dehnung bei Höchstkraft</rdfs:label>
         <rdfs:label xml:lang="en">percentage plastic extension at maximum force</rdfs:label>
@@ -999,29 +804,12 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000038 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000024"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000026"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Brucheinschnürung</rdfs:label>
-        <rdfs:label xml:lang="en">percentage reduction of area</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageReductionOfArea"/>
-        <skos:definition xml:lang="de">größte während des Versuchs aufgetretene Änderung des Querschnitts (S_o − S_u), angegeben in Prozent, bezogen auf den Anfangsquerschnitt S_o</skos:definition>
-        <skos:definition xml:lang="en">maximum change in cross-sectional area which has occurred during the test (S_o − S_u), expressed as a percentage of the original cross-sectional area, S_o</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol>Z</pmd:symbol>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Brucheinschnürung</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED percentage reduction of area</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED größte während des Versuchs aufgetretene Änderung des Querschnitts (S_o − S_u), angegeben in Prozent, bezogen auf den Anfangsquerschnitt S_o</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED maximum change in cross-sectional area which has occurred during the test (S_o − S_u), expressed as a percentage of the original cross-sectional area, S_o</skos:definition>
     </owl:Class>
     
 
@@ -1029,21 +817,12 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000039 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000039">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
-        <rdfs:label xml:lang="de">Gesamte Extensometer-Dehnung beim Bruch</rdfs:label>
-        <rdfs:label xml:lang="en">percentage total extension at fracture</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/tto/PercentageTotalExtensionAtFracture"/>
-        <skos:definition xml:lang="de">gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge beim Bruch, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
-        <skos:definition xml:lang="en">total extension (elastic extension plus plastic extension) at the moment of fracture, expressed as a percentage of the extensometer gauge length</skos:definition>
-        <pmd:definitionSource xml:lang="en">DIN EN ISO 6892-1:2019</pmd:definitionSource>
-        <pmd:symbol xml:lang="en">A_t</pmd:symbol>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="de">DEPRECATED Gesamte Extensometer-Dehnung beim Bruch</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED percentage total extension at fracture</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="de">DEPRECATED gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge beim Bruch, angegeben in Prozent, bezogen auf die Extensometer-Messlänge</skos:definition>
+        <skos:definition xml:lang="en">DEPRECATED total extension (elastic extension plus plastic extension) at the moment of fracture, expressed as a percentage of the extensometer gauge length</skos:definition>
     </owl:Class>
     
 
@@ -1051,21 +830,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000040 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000040">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/relatesTo"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Gesamte Extensometer-Dehnung bei Höchstkraft</rdfs:label>
         <rdfs:label xml:lang="en">percentage total extension at maximum force</rdfs:label>
@@ -1081,7 +846,7 @@ Anmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bez
     <!-- https://w3id.org/pmd/tto/TTO_0000041 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000041">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/tto/TTO_0000005"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020311"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/tto"/>
         <rdfs:label xml:lang="de">Streckgrenzen-Extensometer-Dehnung</rdfs:label>
         <rdfs:label xml:lang="en">percentage yield point extension</rdfs:label>
@@ -1358,299 +1123,12 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- https://w3id.org/pmd/tto/TTO_0000100 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0000100">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000974"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000975"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:unionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000006"/>
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000007"/>
-                                                </owl:unionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000008"/>
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000029"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000030"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000027"/>
-                                            </owl:Restriction>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000016"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000051"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000052"/>
-                                            </owl:Restriction>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000022"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000045"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000059"/>
-                                            </owl:Restriction>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000037"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000038"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000039"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000040"/>
-                                            </owl:Restriction>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000018"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000024"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000026"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000031"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000973"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000974"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/pmd/tto/TTO_0000008"/>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000029"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000030"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000027"/>
-                                    </owl:Restriction>
-                                </owl:unionOf>
-                            </owl:Class>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000016"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000051"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000052"/>
-                                    </owl:Restriction>
-                                </owl:unionOf>
-                            </owl:Class>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000022"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000044"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000045"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000059"/>
-                                    </owl:Restriction>
-                                </owl:unionOf>
-                            </owl:Class>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000033"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000037"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000038"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000039"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000040"/>
-                                    </owl:Restriction>
-                                </owl:unionOf>
-                            </owl:Class>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000017"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000018"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000023"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000024"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000026"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000028"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000031"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/tto/TTO_0000053"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:comment>&apos;tensile testing process&apos; and (&apos;has specified input&apos; some 
+(object and (&apos;has role&apos; some &apos;DEPRECATED test piece role&apos;))) and (&apos;has specified output&apos; some 
+(object and (&apos;has role&apos; some 
+(&apos;broken tested test piece role&apos; or &apos;unbroken tested test piece role&apos;)))) and (&apos;has specified output&apos; some 
+(&apos;tensile test result&apos; and (((&apos;has part&apos; some &apos;original thickness&apos;) and (&apos;has part&apos; some &apos;original width&apos;)) or (&apos;has part&apos; some &apos;original diameter&apos;)) and ((&apos;has part&apos; some &apos;estimated strain rate over the parallel length&apos;) or (&apos;has part&apos; some &apos;strain rate&apos;) or (&apos;has part&apos; some &apos;stress rate&apos;)) and ((&apos;has part&apos; some &apos;lower yield strength&apos;) or (&apos;has part&apos; some &apos;proof strength plastic extension&apos;) or (&apos;has part&apos; some &apos;proof strength total extension&apos;) or (&apos;has part&apos; some &apos;upper yield strength&apos;)) and ((&apos;has part&apos; some &apos;DEPRECATED percentage elongation after fracture&apos;) or (&apos;has part&apos; some &apos;percentage plastic extension at maximum force&apos;) or (&apos;has part&apos; some &apos;DEPRECATED percentage reduction of area&apos;) or (&apos;has part&apos; some &apos;DEPRECATED percentage total extension at fracture&apos;) or (&apos;has part&apos; some &apos;percentage total extension at maximum force&apos;)) and (&apos;has part&apos; some &apos;DEPRECATED extensometer gauge length&apos;) and (&apos;has part&apos; some &apos;DEPRECATED final gauge length after fracture&apos;) and (&apos;has part&apos; some &apos;maximum force&apos;) and (&apos;has part&apos; some &apos;minimum cross-sectional area after fracture&apos;) and (&apos;has part&apos; some &apos;original cross-sectional area of the parallel length&apos;) and (&apos;has part&apos; some &apos;DEPRECATED original gauge length&apos;) and (&apos;has part&apos; some &apos;parallel length&apos;) and (&apos;has part&apos; some &apos;tensile strength&apos;))) and (&apos;has participant&apos; some &apos;tensile testing machine&apos;)</rdfs:comment>
         <rdfs:comment xml:lang="de">Strenges ISO-Profil auf Basis der bereits in TTO vorhandenen Klassen. Diese Klasse ist als inferenzfähige Profilklasse gedacht und sollte für automatische Klassifikation über EquivalentClasses definiert werden.</rdfs:comment>
         <rdfs:comment xml:lang="en">Strict ISO profile based on classes already present in TTO. This class is intended as an inference-oriented profiling class and should be defined via EquivalentClasses for automatic classification.</rdfs:comment>
         <rdfs:label xml:lang="en">ISO tensile testing process</rdfs:label>
@@ -1664,8 +1142,10 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- https://w3id.org/pmd/tto/TTO_0050000 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_0050000">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020132"/>
-        <rdfs:label xml:lang="en">area</rdfs:label>
+        <rdfs:comment>replaced with uplfted term form PMDco</rdfs:comment>
+        <rdfs:label xml:lang="en">DEPRECATED area</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/pmd/co/PMD_0080019"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1673,7 +1153,7 @@ Note: Stress rate is only used in the elastic part of the test.</skos:definition
     <!-- https://w3id.org/pmd/tto/TTO_1000000 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/tto/TTO_1000000">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000848"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020335"/>
         <rdfs:label xml:lang="de">Streckgrenzenverhältnis</rdfs:label>
         <rdfs:label xml:lang="en">yield strength ratio</rdfs:label>
         <rdfs:seeAlso xml:lang="en">Yield strength ratio is a mechanical property which is determined as a ratio between the offset yield Rp0.2 and the ultimate tensile strength Rm.</rdfs:seeAlso>
